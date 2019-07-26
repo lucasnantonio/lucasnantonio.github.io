@@ -4,6 +4,7 @@ date: "2019-05-04"
 title: "Initial usability testing"
 category: "Petal"
 color: "black"
+cover_image: "../../images/image.jpg"
 ---
 
 # Petal Onboarding 2.0

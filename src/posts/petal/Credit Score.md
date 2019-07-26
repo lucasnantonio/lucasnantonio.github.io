@@ -4,6 +4,7 @@ date: "2019-05-04"
 title: "Credit score"
 category: "Petal"
 color: "red"
+cover_image: "../../images/image.jpg"
 ---
 
 

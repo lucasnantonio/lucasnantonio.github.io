@@ -4,7 +4,7 @@ import { Link } from 'gatsby'
 function PostLink (props) {
   const { post, isListDimmed } = props
   const [isHovered, setHover] = useState(false)
-
+  console.log(post)
   return (
     <Link style={{ textDecoration: 'none', color: 'black' }} to={post.frontmatter.path}>
       <div

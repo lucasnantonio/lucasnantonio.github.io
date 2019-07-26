@@ -4,6 +4,7 @@ date: "2019-05-04"
 title: "My first blog post"
 category: "Petal"
 color: "green"
+cover_image: "../../images/image.jpg"
 ---
 
 # Petal Onboarding 2.0

@@ -64,6 +64,14 @@ export const pageQuery = graphql`
             title
             category
             color
+            cover_image {
+              publicURL
+              childImageSharp {
+                fluid(maxWidth: 700) {
+                  ...GatsbyImageSharpFluid_noBase64
+                }
+              }
+            }
           }
         }
       }
