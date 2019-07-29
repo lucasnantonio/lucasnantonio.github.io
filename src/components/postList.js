@@ -4,12 +4,12 @@ import PostLink from './postLink'
 
 const PostList = (props) => {
   const [isListDimmed, setListDim] = useState(false)
-  const { setColor, posts } = props
+  const { setImage, posts } = props
 
   const list = posts
-    .map(post => <PostLink setColor={setColor} isListDimmed={isListDimmed} key={post.node.id} post={post.node} />)
+    .map(post => <PostLink setImage={setImage} isListDimmed={isListDimmed} key={post.node.id} post={post.node} />)
 
-  return <div className={'mt5'} onMouseOver={() => setListDim(true)} onMouseLeave={() => setListDim(false)}>{list}</div>
+  return <div className={'mt5'} onMouseOver={() => setListDim(true)} onMouseLeave={() => { setListDim(false); setImage(props.mainImage) }}>{list}</div>
 }
 
 export default PostList
