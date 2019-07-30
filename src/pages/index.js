@@ -3,19 +3,13 @@ import Layout from '../components/layout'
 import PostList from '../components/postList'
 import HomeSection from '../components/home-section'
 import SEO from '../components/seo'
-import PhraseWithFootnote from '../components/phraseWithFootnote'
+import Hello from '../components/hello'
 
 const IndexPage = ({ data: { allMarkdownRemark: { edges: posts }, allImageSharp: { nodes: images } } }) => (
 
   <Layout>
     <SEO title="Home" />
-    <div className="vh-75">
-      <h1 className={'w-50-l pt4 pr4-l f3 mb6 lh-copy black-50'}><span className={'b black'} >Lucas Neumann <span style={{ verticalAlign: '-.1em' }}> • </span></span>  <span className=""> product designer, has been helping some of the </span>
-        <PhraseWithFootnote phrase='fastest-growing startups in the world' number='1'/> <PhraseWithFootnote phrase='build cultures of customer understanding,' number='2'/>
-        <PhraseWithFootnote phrase=' design products that empower users,' number='3'/>
-        <PhraseWithFootnote phrase=' and grow healthy, happy design teams.' number='4'/><br></br><br></br>  <PhraseWithFootnote phrase='Available for freelance work and coffee in New York.' number='5'/></h1>
-    </div>
-
+    <Hello/>
     <HomeSection
       mainImage={images.filter((item) => item.fluid.originalName === 'hero-petal.png')[0].fluid}
       posts={posts}
