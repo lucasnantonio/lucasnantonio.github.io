@@ -1,6 +1,7 @@
 import React, { Component, useState } from 'react'
 import PostList from './postList'
 import Img from 'gatsby-image'
+import { CSSTransition } from 'react-transition-group'
 
 const HomeSection = ({ title, date, mainImage, description, posts }) => {
   const sectionPosts = posts.filter((item) => item.node.frontmatter.category === title)
@@ -16,7 +17,7 @@ const HomeSection = ({ title, date, mainImage, description, posts }) => {
         >{description}</p>
         <PostList posts={sectionPosts} setImage={setImage} mainImage={mainImage}/>
       </div>
-      <Img className="h6 w-50 pa5 mt2" fluid={image} />
+      <Img className={'w-50-l'} fluid={image} />
     </div>)
 }
 

@@ -3,6 +3,7 @@ import Layout from '../components/layout'
 import PostList from '../components/postList'
 import HomeSection from '../components/home-section'
 import SEO from '../components/seo'
+import FootnoteIcon from '../components/footnoteIcon'
 
 const circledNumberStyle = {
   padding: '0em 0.6em .3em',
@@ -18,7 +19,7 @@ const IndexPage = ({ data: { allMarkdownRemark: { edges: posts }, allImageSharp:
   <Layout>
     <SEO title="Home" />
     <div className="vh-75">
-      <h1 className={'w-50-l pt4 pr4-l f3 mb6 lh-copy black-50'}><span className={'b black'} >Lucas Neumann <span style={{ verticalAlign: '-.1em' }}> • </span></span>  <span className=""> product designer,</span> has been helping some of the fastest-growing startups in the world <span style={circledNumberStyle}>1</span> build cultures of customer understanding,<span style={circledNumberStyle}>2</span> design products that empower their users,<span style={circledNumberStyle}>3</span> and grow healthy, happy design teams.<span style={circledNumberStyle}>4</span><br></br><br></br> Available for freelance work and coffee in New York. <span style={circledNumberStyle}>5</span></h1>
+      <h1 className={'w-50-l pt4 pr4-l f3 mb6 lh-copy black-50'}><span className={'b black'} >Lucas Neumann <span style={{ verticalAlign: '-.1em' }}> • </span></span>  <span className=""> product designer,</span> has been helping some of the fastest-growing startups in the world <FootnoteIcon number='1'/> build cultures of customer understanding,<FootnoteIcon number='2'/> design products that empower their users,<FootnoteIcon number='3'/> and grow healthy, happy design teams.<FootnoteIcon number='4'/><br></br><br></br> Available for freelance work and coffee in New York. <FootnoteIcon number='5'/></h1>
     </div>
 
     <HomeSection

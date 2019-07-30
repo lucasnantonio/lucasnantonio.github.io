@@ -31,3 +31,18 @@ h1, h2, h3, h4, h5{
 /* System85 */
 /* GT America */
 /* Akkurat Pro */
+
+.my-node-enter {
+  opacity: 0;
+}
+.my-node-enter-active {
+  opacity: 1;
+  transition: opacity 200ms;
+}
+.my-node-exit {
+  opacity: 1;
+}
+.my-node-exit-active {
+  opacity: 0;
+  transition: opacity 200ms;
+}
