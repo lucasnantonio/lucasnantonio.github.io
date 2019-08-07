@@ -5,6 +5,7 @@ title: "Initial usability testing"
 category: "Nubank"
 color: "gray"
 cover_image: "../../images/image.jpg"
+published: true
 ---
 
 1. I want to get my first credit card.

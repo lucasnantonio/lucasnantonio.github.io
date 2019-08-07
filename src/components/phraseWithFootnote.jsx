@@ -5,24 +5,27 @@ const circledNumberStyle = (selectedPhrase, key) => {
     padding: '0em 0.6em .3em',
     borderRadius: '100%',
     fontSize: '.5em',
-    border: selectedPhrase === key ? '1px solid black' : '1px solid rgba(0,0,0,.1)',
+    border: selectedPhrase === key ? '1px solid black'
+      : selectedPhrase === 0 ? '1px solid rgba(0,0,0,.1)'
+        : '1px solid rgba(0,0,0,.1)',
     fontWeight: '400',
-    verticalAlign: '.7rem',
+    verticalAlign: '.3rem',
+    marginLeft: '.3rem',
     backgroundColor: selectedPhrase === key ? 'black' : 'white',
-    color: selectedPhrase === key ? 'white' : 'black'
+    color: selectedPhrase === key ? 'white'
+      : selectedPhrase === 0 ? 'rgba(0,0,0,.5)'
+        : 'rgba(0,0,0,.5)'
   }
 }
 
 const PhraseWithFootnote = ({ index, phrase, number, selectedPhrase, setSelectedPhrase }) => {
-  // const [hover, setHover] = useState(false)
-  console.log(selectedPhrase)
   return (
     <span
       className={'pointer'}
       onMouseEnter={() => { setSelectedPhrase(index) }}
-      onMouseLeave={() => { setSelectedPhrase(0) }}
+      // onMouseLeave={() => { setSelectedPhrase(0) }}
     >
-      <span className={`${selectedPhrase === index ? 'black-50' : 'black-10'}`}>{phrase}</span>
+      <span className={`${index === selectedPhrase ? 'black' : selectedPhrase === 0 ? 'black-50' : 'black-50'}`}>{phrase}</span>
       <span style={circledNumberStyle(selectedPhrase, index)}>{number}</span>
     </span>
   )

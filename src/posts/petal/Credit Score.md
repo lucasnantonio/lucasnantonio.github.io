@@ -1,10 +1,11 @@
 ---
 path: "/blog/petal-credit-score"
 date: "2019-05-04"
-title: "Credit score"
+title: "Credit score in-app"
 category: "Petal"
 color: "red"
 cover_image: "../../images/petal.png"
+published: false
 ---
 
 

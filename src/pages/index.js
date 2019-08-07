@@ -78,6 +78,7 @@ export const pageQuery = graphql`
             title
             category
             color
+            published
             cover_image {
               publicURL
               childImageSharp {

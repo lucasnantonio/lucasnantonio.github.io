@@ -4,7 +4,8 @@ import Img from 'gatsby-image'
 import { CSSTransition } from 'react-transition-group'
 
 const HomeSection = ({ title, date, mainImage, description, posts }) => {
-  const sectionPosts = posts.filter((item) => item.node.frontmatter.category === title)
+  console.log(posts)
+  const sectionPosts = posts.filter((item) => item.node.frontmatter.category === title && item.node.frontmatter.published === 'true')
   const [image, setImage] = useState(mainImage)
   return (
     <div className={'bt bw1 b--light-gray pt2 mt5 flex flex-row-l flex-column'}>

@@ -1,10 +1,11 @@
 ---
 path: "/blog/petal-onboarding"
 date: "2019-05-04"
-title: "My first blog post"
+title: "Settings 2.0"
 category: "Petal"
 color: "blue"
 cover_image: "../../images/image.jpg"
+published: false
 ---
 
 # Petal Onboarding 2.0
