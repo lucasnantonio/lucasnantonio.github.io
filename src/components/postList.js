@@ -9,7 +9,7 @@ const PostList = (props) => {
   const list = posts
     .map(post => <PostLink setImage={setImage} isListDimmed={isListDimmed} key={post.node.id} post={post.node} />)
 
-  return <div className={'mt5'} onMouseOver={() => setListDim(true)} onMouseLeave={() => { setListDim(false); setImage(props.mainImage) }}>{list}</div>
+  return <div className={'w-100'} onMouseOver={() => setListDim(true)} onMouseLeave={() => { setListDim(false); setImage(props.mainImage) }}>{list}</div>
 }
 
 export default PostList

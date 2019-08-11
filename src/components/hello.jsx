@@ -2,21 +2,89 @@ import React, { useState } from 'react'
 import PhraseWithFootnote from '../components/phraseWithFootnote'
 
 const Hello = () => {
-  const [allPhrases, setAllPhrases] = useState(true)
   const [selectedPhrase, setSelectedPhrase] = useState(0)
+  const items = [
+    { index: 1,
+      phrase: 'the fastest-growing startups in the world ¹',
+      links: [
+        { title: 'Fintech decacorn Nubank raises $400M led by TCV', source: 'Tech Crunch', url: '#' },
+        { title: 'Petal: 5th fastest growing company of 2019', source: 'Growjo.com', url: '#' },
+        { title: 'Kano Ships Its First 18,000 Learn-To-Code Computer Kits, Fueled By $1.5M Kickstarter', source: 'Tech Crunch', url: '#' }] },
+    { index: 2,
+      phrase: ' to improve customer understanding, ²',
+      links: [
+        { title: 'First steps to better UX research', source: 'Medium by @lucasnantonio', url: 'https://medium.com/nubank-design/first-steps-for-better-ux-research-6fd863af7c6d' },
+        { title: 'Listening to user feedback', source: 'Medium by @lucasnantonio', url: 'https://medium.com/nubank-design/listening-to-user-feedback-b8380a37e781' }] },
+    { index: 3,
+      phrase: ' design empowering products, ³',
+      links: [
+        { title: 'How we designed our bank account', source: 'Medium by @lucasnantonio', url: 'https://medium.com/nubank-design/nuconta-part-ii-685b446addc6' },
+        { title: 'Kano makes building your own computer and learning to code as easy as legos', source: 'Yahoo! Finance', url: 'https://finance.yahoo.com/news/kano-makes-building-own-computer-171146207.html' }] },
+    { index: 4,
+      phrase: 'and grow healthy, happy design teams. ⁴',
+      links: [
+        { title: 'Design principles at Nubank', source: 'Medium by @lucasnantonio', url: 'https://medium.com/nubank-design/design-principles-at-nubank-d14317715bb1' },
+        { title: 'Scaling a design team culture', source: 'Medium by @gneumann', url: 'https://medium.com/nubank-design/scaling-a-design-team-and-culture-bde035f50e5c' }] },
+    { index: 5,
+      phrase: 'In the past, some of my student and personal projects have been featured around the web and received awards.⁵',
+      links: [
+        { title: 'Airbus’ Award-Winning Concepts Address Aircraft Cabin Waste Problem', source: 'Airbus', url: 'https://apex.aero/2017/10/04/airbus-award-winning-concepts-address-aircraft-cabin-waste-problem' }] },
+    { index: 6,
+      phrase: 'I’m available for freelance work and coffee in New York City.⁶',
+      links: [
+        { title: 'Twitter', source: '@lucasnantonio', url: 'http://twitter.com/lucasnantonio' },
+        { title: 'Email', source: 'lucasneumann.fau@gmail.com', url: 'http://twitter.com/lucasnantonio' },
+        { title: 'Linkedin', source: '@lucasnantonio', url: 'http://twitter.com/lucasnantonio' }] }
+  ]
   return (
-    <div className="vh-75">
-      <h1 className={`w-50-l pt4 pr4-l f3 mb6 lh-copy ${allPhrases ? 'black-50' : 'black-10'}`}>
-        <span onMouseOver={() => setSelectedPhrase(0)} className={`b ${allPhrases ? 'black' : 'black-10'}`} >Lucas Neumann
-        </span>
-        <span > — product designer working with </span>
-        <PhraseWithFootnote index={1} selectedPhrase={selectedPhrase} setSelectedPhrase={setSelectedPhrase} phrase='some of the fastest-growing startups in the world' number='1'/><br></br>
-        <PhraseWithFootnote index={2} selectedPhrase={selectedPhrase} setSelectedPhrase={setSelectedPhrase} phrase='to build cultures of customer understanding,' number='2'/><br></br>
-        <PhraseWithFootnote index={3} selectedPhrase={selectedPhrase} setSelectedPhrase={setSelectedPhrase} phrase=' design products that empower users,' number='3'/><br></br>
-        <PhraseWithFootnote index={4} selectedPhrase={selectedPhrase} setSelectedPhrase={setSelectedPhrase} phrase=' and grow healthy, happy design teams.' number='4'/><br></br><br></br>
-        <PhraseWithFootnote index={5} selectedPhrase={selectedPhrase} setSelectedPhrase={setSelectedPhrase} phrase='Available for freelance work and coffee in New York.' number='5'/></h1>
-      <div className="h3" onMouseOver={() => setSelectedPhrase(0)}></div>
-    </div>)
+    <div>
+      <div className="flex pt4">
+        <div className="w-50-l mr4 flex flex-column justify-between">
+          <h1 className={`mt0 f3 black-50`}>
+            <span onMouseOver={() => setSelectedPhrase(0)} className={`b black`} >Lucas Neumann
+            </span>
+            <span > — designer working with </span><br className="dib-l dn"></br>
+            {items.filter((item) => item.index < 5)
+              .map((item) => {
+                return (
+                  <span key={item.index}>
+                    <PhraseWithFootnote index={item.index} selectedPhrase={selectedPhrase} setSelectedPhrase={setSelectedPhrase} phrase={item.phrase} number={item.index}/><br className="dib-l dn"></br>
+                    {(item.index === 4 || item.index === 7) && <br></br>}
+                  </span>
+                )
+              })}
+          </h1>
+          <h2 className="mt7">{items.filter((item) => item.index >= 5)
+            .map((item) => {
+              return (
+                <span key={item.index}>
+                  <PhraseWithFootnote index={item.index} selectedPhrase={selectedPhrase} setSelectedPhrase={setSelectedPhrase} phrase={item.phrase} number={item.index}/><br className="dib-l dn"></br>
+                  {(item.index === 4 || item.index === 7) && <br></br>}
+                </span>
+              )
+            })}</h2>
+        </div>
+        <div className="w-50 flex-l dn flex-column pt3">
+          {selectedPhrase !== 0 &&
+            items
+              .filter(item => item.index === selectedPhrase)[0].links
+              .map((link) => {
+                return (
+                  <a key={link.title} className='link black' href={link.url}>
+                    <div className="bt bw1 mb3 pt2 pointer  flex">
+                      <div className="measure-narrow">
+                        <div className="f6 b lh-copy ">{link.title}</div>
+                        <div className="f6 lh-copy">{link.source}</div>
+                      </div>
+                    </div>
+                  </a>
+                )
+              })
+          }
+        </div>
+      </div>
+    </div>
+  )
 }
 
 export default Hello

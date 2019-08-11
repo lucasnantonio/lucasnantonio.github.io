@@ -5,7 +5,9 @@ title: "Invalid Payment Accounts"
 category: "Petal"
 color: "pink"
 cover_image: "../../images/image.jpg"
-published: false
+published: true
+tags: 
+	- product
 ---
 
 # Invalid account error

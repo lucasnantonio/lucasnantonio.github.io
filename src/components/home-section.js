@@ -8,17 +8,17 @@ const HomeSection = ({ title, date, mainImage, description, posts }) => {
   const sectionPosts = posts.filter((item) => item.node.frontmatter.category === title && item.node.frontmatter.published === 'true')
   const [image, setImage] = useState(mainImage)
   return (
-    <div className={'bt bw1 b--light-gray pt2 mt5 flex flex-row-l flex-column'}>
-      <div className={'w-50-l mr3'}>
+    <div className={' pt3 mt5 flex flex-row-l flex-column'}>
+      <div className={' w-50-l mr4'}>
         <div className="flex justify-between">
-          <h2 className={'f3 mt0 pt0 sans b'}>{title}</h2>
-          {/* <p className={'f3 mt0 pt0 black-40'}>{date}</p> */}
         </div>
-        <p className={'f3 pt0 lh-copy measure mt4 mr4 black-40' }
-        >{description}</p>
+        <Img className={''} fluid={image} />
+      </div>
+      <div className="w-50-l bt bw1 pt2">
+        <h2 className={'f3 mt0 pt0 sans b'}>{title}</h2>
+        <p className={'f3 pt0 lh-copy measure-narrow mt4 mr4 black-40 mb5' }>{description}</p>
         <PostList posts={sectionPosts} setImage={setImage} mainImage={mainImage}/>
       </div>
-      <Img className={'w-50-l'} fluid={image} />
     </div>)
 }
 

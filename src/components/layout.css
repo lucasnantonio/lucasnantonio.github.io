@@ -21,9 +21,9 @@ h1, h2, h3, h4, h5{
   font-weight: 300;
 }
 
-*{
+/* *{
   transition: all .2s;
-}
+} */
 .sans{
   /* font-family: 'GT America Trial'; */
 }
@@ -32,17 +32,33 @@ h1, h2, h3, h4, h5{
 /* GT America */
 /* Akkurat Pro */
 
-.my-node-enter {
-  opacity: 0;
+.example-enter {
+  opacity: 0.01;
+  /* margin-left:-20px; */
 }
-.my-node-enter-active {
+
+.example-enter.example-enter-active {
   opacity: 1;
-  transition: opacity 200ms;
+  /* margin-left:0px; */
+  transition: opacity 500ms ease-in;
 }
-.my-node-exit {
+
+.example-appear {
+  opacity: 0.01;
+  margin-left:-20px;
+}
+
+.example-appear.example-appear-active {
+  opacity: 1;
+  /* margin-left:0px; */
+  transition: opacity 500ms ease-in;
+}
+
+.example-leave {
   opacity: 1;
 }
-.my-node-exit-active {
-  opacity: 0;
-  transition: opacity 200ms;
+
+.example-leave.example-leave-active {
+  opacity: 0.01;
+  transition: opacity 300ms ease-in;
 }

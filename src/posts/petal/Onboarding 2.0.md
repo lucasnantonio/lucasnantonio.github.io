@@ -6,6 +6,8 @@ category: "Petal"
 color: "yellow"
 cover_image: "../../images/image.jpg"
 published: true
+tags: 
+	- product
 ---
 
 # Petal Onboarding 2.0

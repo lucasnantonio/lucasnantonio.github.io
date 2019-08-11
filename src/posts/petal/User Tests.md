@@ -6,6 +6,8 @@ category: "Petal"
 color: "green"
 cover_image: "../../images/image.jpg"
 published: false
+tags: 
+	- research
 ---
 
 # Petal Onboarding 2.0

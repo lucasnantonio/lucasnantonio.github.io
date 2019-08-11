@@ -7,7 +7,7 @@ function PostLink (props) {
   return (
     <Link style={{ textDecoration: 'none', color: 'black' }} to={post.frontmatter.path}>
       <div
-        className={`flex justify-between pointer pv3 bt b--light-gray f6 ${isHovered ? 'pl2' : 'pl0'} ${isListDimmed && !isHovered ? 'black-20' : 'black'}`}
+        className={`flex justify-between pointer pv3 bt bw1 b f6 ${isHovered ? 'pl2' : 'pl0'} ${isListDimmed && !isHovered ? 'black-20' : 'black'}`}
         onMouseOver={() => { setHover(!isHovered); props.setImage(post.frontmatter.cover_image.childImageSharp.fluid) }}
         onMouseLeave={() => { setHover(!isHovered) }}
       >
