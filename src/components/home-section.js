@@ -9,11 +9,6 @@ const HomeSection = ({ title, date, mainImage, description, posts }) => {
   const [image, setImage] = useState(mainImage)
   return (
     <div className={'mb5 flex flex-row-l flex-column'}>
-      {/* <div className={' w-50-l mr4'}>
-        <div className="flex justify-between">
-        </div>
-        <Img className={''} fluid={image} />
-      </div> */}
       <div style={{ borderTop: '1px solid black' }} className="w-100 pt2 mb5">
         <h2 className={'f5 mt0 pt0 sans b fw4'}>{title}</h2>
         <p className={'f5 pt0 lh-copy measure-narrow mt4 mr4 black-50 mb5' }>{description}</p>

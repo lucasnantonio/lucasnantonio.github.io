@@ -26,11 +26,12 @@ const Hello = () => {
         { title: 'Design principles at Nubank', source: 'Medium by @lucasnantonio', url: 'https://medium.com/nubank-design/design-principles-at-nubank-d14317715bb1' },
         { title: 'Scaling a design team culture', source: 'Medium by @gneumann', url: 'https://medium.com/nubank-design/scaling-a-design-team-and-culture-bde035f50e5c' }] },
     { index: 5,
-      phrase: 'In the past, some of my student and personal projects have been featured around the web and received awards.⁵',
+      phrase: 'Some of my personal projects have been featured internationally ⁴',
       links: [
-        { title: 'Airbus’ Award-Winning Concepts Address Aircraft Cabin Waste Problem', source: 'Airbus', url: 'https://apex.aero/2017/10/04/airbus-award-winning-concepts-address-aircraft-cabin-waste-problem' }] },
+        { title: 'Design principles at Nubank', source: 'Medium by @lucasnantonio', url: 'https://medium.com/nubank-design/design-principles-at-nubank-d14317715bb1' },
+        { title: 'Scaling a design team culture', source: 'Medium by @gneumann', url: 'https://medium.com/nubank-design/scaling-a-design-team-and-culture-bde035f50e5c' }] },
     { index: 6,
-      phrase: 'I’m available for freelance work and coffee in New York City.⁶',
+      phrase: 'Available for freelance and coffee in New York.⁶',
       links: [
         { title: 'Twitter', source: '@lucasnantonio', url: 'http://twitter.com/lucasnantonio' },
         { title: 'Email', source: 'lucasneumann.fau@gmail.com', url: 'http://twitter.com/lucasnantonio' },
@@ -38,24 +39,22 @@ const Hello = () => {
   ]
   return (
     <div className=''>
-      <div className="fixed flex flex-column justify-between h-75 w-30 mt6">
+      <div className="fixed flex flex-column justify-between h-75 w-30">
         <div className="flex flex-column justify-between">
           <h1 className={`mt0 f5 black-50`}>
-            {/* <span onMouseOver={() => setSelectedPhrase(0)} className={`b black`} >Lucas Neumann
-            </span> */}
-            <span > Product designer working with </span><br className="dib-l dn"></br>
-            {items.filter((item) => item.index < 5)
+            <span className='lh-copy'> Product designer working with </span><br className="dib-l dn"></br>
+            {items.filter((item) => item.index <= 6)
               .map((item) => {
                 return (
                   <span key={item.index}>
                     <PhraseWithFootnote index={item.index} selectedPhrase={selectedPhrase} setSelectedPhrase={setSelectedPhrase} phrase={item.phrase} number={item.index}/><br className="dib-l dn"></br>
-                    {(item.index === 4 || item.index === 7) && <br></br>}
+                    {(item.index === 4 || item.index === 5 || item.index === 7) && <br></br>}
                   </span>
                 )
               })}
           </h1>
         </div>
-        <div className="flex-l dn flex-column mt4 mr5">
+        {/* <div className="flex-l dn flex-column mt4 mr5">
           {selectedPhrase !== 0 &&
             items
               .filter(item => item.index === selectedPhrase)[0].links
@@ -72,8 +71,8 @@ const Hello = () => {
                 )
               })
           }
-        </div>
-        <h2 className='w-75 f6'>{items.filter((item) => item.index > 5)
+        </div> */}
+        {/* <h2 className='w-75 f6'>{items.filter((item) => item.index > 5)
           .map((item) => {
             return (
               <span key={item.index}>
@@ -81,7 +80,15 @@ const Hello = () => {
                 {(item.index === 4 || item.index === 7) && <br></br>}
               </span>
             )
-          })}</h2>
+          })}</h2> */}
+        {/* <div>
+          <ul className="list pl0 ml0 f6 black-50 lh-copy">
+            <li>Petal</li>
+            <li>Nubank</li>
+            <li>Kano</li>
+            <li>Personal</li>
+          </ul>
+        </div> */}
       </div>
     </div>
   )

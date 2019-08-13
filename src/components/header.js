@@ -3,27 +3,29 @@ import PropTypes from 'prop-types'
 import React from 'react'
 
 const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      left: '0',
-      right: '0',
-      top: '0',
-      zIndex: '1',
-      borderBottom: '1px solid black'
-    }}
-    className={'pv2 fixed mh4 bg-white'}
-  >
-    <div>
-      <Link
-        to="/"
-        style={{ textDecoration: 'none' }}
-      >
-        <h1 className={'f5 fw4 black link'}>
+  <div className="bg-red mb5">
+    haha
+    <header
+      style={{
+        left: '0',
+        right: '0',
+        top: '0',
+        zIndex: '1'
+      }}
+      className={'fixed mh4 bg-white bb pb2 pt2'}
+    >
+      <div>
+        <Link
+          to="/"
+          style={{ textDecoration: 'none' }}
+        >
+          <h1 className={'f5 fw4 black link'}>
           Lucas Neumann
-        </h1>
-      </Link>
-    </div>
-  </header>
+          </h1>
+        </Link>
+      </div>
+    </header>
+  </div>
 )
 
 Header.propTypes = {

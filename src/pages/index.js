@@ -16,13 +16,11 @@ const IndexPage = ({ data: { allMarkdownRemark: { edges: posts }, allImageSharp:
     <div className='w-100 flex'>
       <div className="w-third">
       </div>
-      <div className="w-two-thirds mt6">
+      <div className="w-two-thirds">
         {/* <div className='vh-75 bg-black mb5'></div> */}
-        {console.log(images.filter((item) => item.fluid.originalName ===
-           'lucas.png')[0].fluid)}
         <div className='vh-75 overflow-hidden mb5'>
           <Img className="w-100" fluid={images.filter((item) => item.fluid.originalName ===
-           'lucas.png')[0].fluid}></Img>
+           'lucas.jpg')[0].fluid}></Img>
         </div>
         <HomeSection
           mainImage={images.filter((item) => item.fluid.originalName === 'hero-petal.png')[0].fluid}
