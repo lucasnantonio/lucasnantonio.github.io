@@ -6,7 +6,7 @@ const PhraseWithFootnote = ({ index, phrase, number, selectedPhrase, setSelected
       className={'pointer'}
       onMouseEnter={() => { setSelectedPhrase(index) }}
     >
-      <span className={`${index === selectedPhrase ? 'black' : selectedPhrase === 0 ? 'black-50' : 'black-50'} ${index > 4 ? 'f5 black-50 lh-copy dib measure' : 'f3 lh-copy'}`}>{phrase}</span>
+      <span className={` ${index === selectedPhrase ? 'black' : selectedPhrase === 0 ? 'black-50' : 'black-50'} ${index > 4 ? 'black-50 lh-copy dib measure' : ' lh-copy'}`}>{phrase}</span>
     </span>
   )
 }

@@ -37,13 +37,13 @@ const Hello = () => {
         { title: 'Linkedin', source: '@lucasnantonio', url: 'http://twitter.com/lucasnantonio' }] }
   ]
   return (
-    <div>
-      <div className="flex pt4">
-        <div className="w-50-l mr4 flex flex-column justify-between">
-          <h1 className={`mt0 f3 black-50`}>
-            <span onMouseOver={() => setSelectedPhrase(0)} className={`b black`} >Lucas Neumann
-            </span>
-            <span > — designer working with </span><br className="dib-l dn"></br>
+    <div className=''>
+      <div className="fixed flex flex-column justify-between h-75 w-30 mt6">
+        <div className="flex flex-column justify-between">
+          <h1 className={`mt0 f5 black-50`}>
+            {/* <span onMouseOver={() => setSelectedPhrase(0)} className={`b black`} >Lucas Neumann
+            </span> */}
+            <span > Product designer working with </span><br className="dib-l dn"></br>
             {items.filter((item) => item.index < 5)
               .map((item) => {
                 return (
@@ -54,27 +54,18 @@ const Hello = () => {
                 )
               })}
           </h1>
-          <h2 className="mt7">{items.filter((item) => item.index >= 5)
-            .map((item) => {
-              return (
-                <span key={item.index}>
-                  <PhraseWithFootnote index={item.index} selectedPhrase={selectedPhrase} setSelectedPhrase={setSelectedPhrase} phrase={item.phrase} number={item.index}/><br className="dib-l dn"></br>
-                  {(item.index === 4 || item.index === 7) && <br></br>}
-                </span>
-              )
-            })}</h2>
         </div>
-        <div className="w-50 flex-l dn flex-column pt3">
+        <div className="flex-l dn flex-column mt4 mr5">
           {selectedPhrase !== 0 &&
             items
               .filter(item => item.index === selectedPhrase)[0].links
               .map((link) => {
                 return (
                   <a key={link.title} className='link black' href={link.url}>
-                    <div className="bt bw1 mb3 pt2 pointer  flex">
+                    <div className="bt mb3 pt2 pointer  flex">
                       <div className="measure-narrow">
-                        <div className="f6 b lh-copy ">{link.title}</div>
-                        <div className="f6 lh-copy">{link.source}</div>
+                        <div className="f6 fw4 lh-copy ">{link.title}</div>
+                        <div className="f7 lh-copy black-50">{link.source}</div>
                       </div>
                     </div>
                   </a>
@@ -82,6 +73,15 @@ const Hello = () => {
               })
           }
         </div>
+        <h2 className='w-75 f6'>{items.filter((item) => item.index > 5)
+          .map((item) => {
+            return (
+              <span key={item.index}>
+                <PhraseWithFootnote index={item.index} selectedPhrase={selectedPhrase} setSelectedPhrase={setSelectedPhrase} phrase={item.phrase} number={item.index}/><br className="dib-l dn"></br>
+                {(item.index === 4 || item.index === 7) && <br></br>}
+              </span>
+            )
+          })}</h2>
       </div>
     </div>
   )
