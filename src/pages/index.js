@@ -55,10 +55,7 @@ const IndexPage = ({ data: { allMarkdownRemark: { edges: posts }, allImageSharp:
         </div>
         <div className="w-two-thirds-l">
           {/* <div className='vh-75 bg-black mb5'></div> */}
-          <div className='vh-75 overflow-hidden mb4'>
-            <Img className="w-100" fluid={images.filter((item) => item.fluid.originalName ===
-           'lucas.jpg')[0].fluid}></Img>
-          </div>
+
           {sections.map((item) => {
             return (
               <HomeSection

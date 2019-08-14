@@ -19,8 +19,8 @@ const HomeSection = ({ title, date, mainImage, description, posts }) => {
   return (
     <div key={title} id={title} className={'pt4 pb5 flex flex-row-l flex-column home-section'}>
       <div className="w-100 pt3 mb5">
-        <h2 className={'f3 lighter fw6 mt0 pt0 sans b fw4 bt bw1 pt3 lh-copy'}>{title}</h2>
-        <p className={'f5 pt0 lh-copy measure-narrow mt4 mr4 black-50 mb5' }>{description}</p>
+        <h2 className={'f2 lighter fw5 mt0 pt0 sans b fw4 bt bw1 pt3 lh-copy'}>{title}</h2>
+        <p className={'f3 pt0 lh-copy measure-narrow mt4 mr4 black-50 mb5' }>{description}</p>
         <PostList posts={sectionPosts} setImage={setImage} mainImage={mainImage}/>
       </div>
     </div>)

@@ -24,24 +24,19 @@ const Hello = () => {
       phrase: 'and grow healthy, happy design teams. ⁴',
       links: [
         { title: 'Design principles at Nubank', source: 'Medium by @lucasnantonio', url: 'https://medium.com/nubank-design/design-principles-at-nubank-d14317715bb1' },
-        { title: 'Scaling a design team culture', source: 'Medium by @gneumann', url: 'https://medium.com/nubank-design/scaling-a-design-team-and-culture-bde035f50e5c' }] },
-    { index: 5,
-      phrase: 'Some of my personal projects have been featured internationally ⁴',
-      links: [
-        { title: 'Design principles at Nubank', source: 'Medium by @lucasnantonio', url: 'https://medium.com/nubank-design/design-principles-at-nubank-d14317715bb1' },
-        { title: 'Scaling a design team culture', source: 'Medium by @gneumann', url: 'https://medium.com/nubank-design/scaling-a-design-team-and-culture-bde035f50e5c' }] },
-    { index: 6,
-      phrase: 'Available for freelance and coffee in New York.⁶',
-      links: [
-        { title: 'Twitter', source: '@lucasnantonio', url: 'http://twitter.com/lucasnantonio' },
-        { title: 'Email', source: 'lucasneumann.fau@gmail.com', url: 'http://twitter.com/lucasnantonio' },
-        { title: 'Linkedin', source: '@lucasnantonio', url: 'http://twitter.com/lucasnantonio' }] }
+        { title: 'Scaling a design team culture', source: 'Medium by @gneumann', url: 'https://medium.com/nubank-design/scaling-a-design-team-and-culture-bde035f50e5c' }] }
+    // { index: 6,
+    //   phrase: 'Available for freelance and coffee in New York.⁶',
+    //   links: [
+    //     { title: 'Twitter', source: '@lucasnantonio', url: 'http://twitter.com/lucasnantonio' },
+    //     { title: 'Email', source: 'lucasneumann.fau@gmail.com', url: 'http://twitter.com/lucasnantonio' },
+    //     { title: 'Linkedin', source: '@lucasnantonio', url: 'http://twitter.com/lucasnantonio' }] }
   ]
   return (
     <div className=''>
-      <div className="fixed-l flex flex-column justify-between h-75-l w-30-l pt5">
+      <div className="flex flex-column justify-between pt6 pb5">
         <div className="flex flex-column justify-between">
-          <h1 className={`mt0 f5 black-50`}>
+          <h1 className={`mt0 f2 black-50`}>
             <span className='lh-copy'> Product designer working with </span><br className="dib-l dn"></br>
             {items.filter((item) => item.index <= 6)
               .map((item) => {
