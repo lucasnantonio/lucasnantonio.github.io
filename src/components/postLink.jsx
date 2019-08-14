@@ -5,7 +5,7 @@ function PostLink (props) {
   const { post, isListDimmed } = props
   const [isHovered, setHover] = useState(false)
   return (
-    <Link className={`flex flex-column pointer b f5 w-25 mr2`} style={{ textDecoration: 'none', color: 'black' }} to={post.frontmatter.path}>
+    <Link className={`flex flex-column pointer b f5 w-100`} style={{ textDecoration: 'none', color: 'black' }} to={post.frontmatter.path}>
       <div
 
         onMouseOver={() => { setHover(!isHovered); props.setImage(post.frontmatter.cover_image.childImageSharp.fluid) }}
