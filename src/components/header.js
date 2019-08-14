@@ -1,10 +1,11 @@
 import { Link } from 'gatsby'
 import PropTypes from 'prop-types'
 import React from 'react'
+import { CSSTransitionGroup } from 'react-transition-group'
+import ReactCSSTransitionGroup from 'react-addons-css-transition-group'
 
 const Header = ({ siteTitle, currentSection }) => (
   <div className="bg-red mb5">
-    haha
     <header
       style={{
         left: '0',
@@ -12,18 +13,29 @@ const Header = ({ siteTitle, currentSection }) => (
         top: '0',
         zIndex: '1'
       }}
-      className={'fixed mh4 bg-white bb pb2 pt2'}
+      className={'fixed mh4 bg-white bb bw1 pb2 pt2'}
     >
       <div>
         <Link
           to="/"
           style={{ textDecoration: 'none' }}
         >
-          <div className='flex'>
-            <h1 className={'f5 fw4 black link w-third'}>
-          Lucas Neumann
-            </h1>
-            <h1 className='f5 fw4 link black'>{currentSection}</h1>
+          <div className='flex justify-between'>
+            <div className="w-third-l w-50">
+              <h1 className={'f3 fw6 black link '}>Lucas Neumann</h1>
+            </div>
+
+            <ReactCSSTransitionGroup
+              component="div"
+              className="relative h2 w-two-thirds-l w-50"
+              transitionName="example"
+              transitionAppear={true}
+              transitionAppearTimeout={200}
+              transitionEnterTimeout={200}
+              transitionLeaveTimeout={200}>
+              <h1 key={currentSection} className='absolute f3 fw6 link black tl-l tr w-100'>{currentSection}</h1>
+            </ReactCSSTransitionGroup>
+
           </div>
         </Link>
       </div>

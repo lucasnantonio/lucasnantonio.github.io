@@ -39,7 +39,7 @@ const Hello = () => {
   ]
   return (
     <div className=''>
-      <div className="fixed flex flex-column justify-between h-75 w-30">
+      <div className="fixed-l flex flex-column justify-between h-75-l w-30-l pt5">
         <div className="flex flex-column justify-between">
           <h1 className={`mt0 f5 black-50`}>
             <span className='lh-copy'> Product designer working with </span><br className="dib-l dn"></br>

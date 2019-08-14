@@ -33,25 +33,25 @@ h1, h2, h3, h4, h5{
 /* Akkurat Pro */
 
 .example-enter {
-  opacity: 0.01;
+  opacity: 0;
+
   /* margin-left:-20px; */
 }
 
 .example-enter.example-enter-active {
   opacity: 1;
-  /* margin-left:0px; */
-  transition: opacity 500ms ease-in;
+
+  transition: opacity 200ms ease-in, margin-bottom 200ms ease-in;
 }
 
 .example-appear {
-  opacity: 0.01;
-  margin-left:-20px;
+  opacity: 0;
+
 }
 
 .example-appear.example-appear-active {
   opacity: 1;
-  /* margin-left:0px; */
-  transition: opacity 500ms ease-in;
+  transition: opacity 200ms ease-in, margin-bottom 200ms ease-in;
 }
 
 .example-leave {
@@ -60,5 +60,5 @@ h1, h2, h3, h4, h5{
 
 .example-leave.example-leave-active {
   opacity: 0.01;
-  transition: opacity 300ms ease-in;
+  transition: opacity 200ms ease-in, margin-top 200ms ease-in;
 }
