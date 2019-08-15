@@ -21,9 +21,9 @@ h1, h2, h3, h4, h5{
   font-weight: 300;
 }
 
-/* *{
-  transition: all .2s;
-} */
+*{
+  transition: left .2s;
+}
 .sans{
   /* font-family: 'GT America Trial'; */
 }

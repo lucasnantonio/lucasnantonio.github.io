@@ -1,69 +1,63 @@
 import { Link } from 'gatsby'
 import PropTypes from 'prop-types'
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import { CSSTransitionGroup } from 'react-transition-group'
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group'
 
-const Header = ({ siteTitle, currentSection }) => (
-  <div className="bg-red mb5">
-    <header
-      style={{
-        left: '0',
-        right: '0',
-        top: '0',
-        zIndex: '1'
-      }}
-      className={'fixed mh4 bg-white'}
-    >
-      <div>
-        <Link
-          to="/"
-          style={{ textDecoration: 'none' }}
-        >
-          <div className='flex justify-between bb bw1 pb3 b--black '>
-            <div className="w-third-l w-50">
-              <h1 className={'f5 fw6 black link pt2 h1'}>Lucas Neumann</h1>
-            </div>
-            <div className="w-two-thirds-l">
-              <ul className="list flex pl0 justify-between black-50 f5 mv0 pt3">
-                <li>
-                  Petal
-                </li>
-                <li>
-                  Nubank
-                </li>
-                <li>
-                  Kano
-                </li>
-                <li>
-                  Writing
-                </li>
-                <li>
-                  Other
-                </li>
-                <li>
-                  Contact
-                </li>
-              </ul>
-            </div>
+const navItems = [
+  { title: 'Lucas Neumann', link: '#' },
+  { title: 'Petal', link: '#' },
+  { title: 'Nubank', link: '#' },
+  { title: 'Kano', link: '#' },
+  { title: 'Personal', link: '#' },
+  { title: 'Contact', link: '#' }]
 
-            {/* <ReactCSSTransitionGroup
-              component="div"
-              className="relative h2 w-two-thirds-l w-50"
-              transitionName="example"
-              transitionAppear={true}
-              transitionAppearTimeout={200}
-              transitionEnterTimeout={200}
-              transitionLeaveTimeout={200}>
-              <h1 key={currentSection} className='absolute f3 fw6 link black tl-l tr w-100'>{currentSection}</h1>
-            </ReactCSSTransitionGroup> */}
+const Header = ({ siteTitle, currentSection }) => {
+  const [hoveredSection, setHoveredSection] = useState(navItems[0])
+  const [leftPosition, setLeftPosition] = useState(0)
+  const [underlineWidth, setUnderlineWidth] = useState(0)
 
-          </div>
-        </Link>
-      </div>
-    </header>
-  </div>
-)
+  const getXPosition = (item) => {
+    return document.getElementById(item.title).getBoundingClientRect().left
+  }
+  const getWidth = (item) => {
+    return document.getElementById(item.title).getBoundingClientRect().width
+  }
+
+  // let underlineStyle
+
+  const underlineStyle =
+    {
+      position: 'absolute',
+      height: '2px',
+      width: underlineWidth,
+      background: 'black',
+      bottom: '0px',
+      left: leftPosition - 35
+    }
+
+  return (
+
+    <div className="mb5 list ml0 pl0 flex relative">
+      <div style={underlineStyle}></div>
+      <h1 id={navItems[0].title} className="w-third f4" onMouseEnter={() => { setHoveredSection(0); setLeftPosition(getXPosition(navItems[0])); setUnderlineWidth(getWidth(navItems[0])) }}>
+        {navItems[0].title}
+      </h1>
+      <ul className="f4 list pl0 flex w-two-thirds justify-between">
+        {navItems.map((item, index) => {
+          return (
+            index > 0 &&
+             <Link id={item.title} to={item.link} key={item.title} onMouseEnter={() => { setHoveredSection(0); setLeftPosition(getXPosition(item)); setUnderlineWidth(getWidth(item)) }}>
+               <li>
+                 {item.title}
+               </li>
+             </Link>
+          )
+        })}
+      </ul>
+    </div>
+  )
+}
 
 Header.propTypes = {
   siteTitle: PropTypes.string
