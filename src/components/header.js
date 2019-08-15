@@ -51,7 +51,7 @@ const Header = ({ siteTitle, currentSection, setCurrentSection }) => {
           return (
             index > 0 &&
              <Link className="link black-50" id={item.title} to={item.link} key={item.title} onMouseEnter={() => { setCurrentSection(item.title) }}>
-               <li className="link">
+               <li className={`link ${item.title === currentSection && 'black'}`}>
                  {item.title}
                </li>
              </Link>
