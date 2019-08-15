@@ -33,8 +33,8 @@ const Hello = () => {
     //     { title: 'Linkedin', source: '@lucasnantonio', url: 'http://twitter.com/lucasnantonio' }] }
   ]
   return (
-    <div className=''>
-      <div className="flex flex-column justify-between pt6 pb5">
+    <div className='pt6'>
+      <div className="flex flex-column justify-between pb5">
         <div className="flex flex-column justify-between">
           <h1 className={`mt0 f2 black-50`}>
             <span className='lh-copy'> Product designer working with </span><br className="dib-l dn"></br>

@@ -41,16 +41,17 @@ const Header = ({ siteTitle, currentSection }) => {
 
   return (
 
-    <div className="mb5 list ml0 pl0 flex relative">
+    <div style={{ left: 0, right: 0 }} className="mb5 list ml0 mh4 flex fixed bg-white bb b--black-20">
+      <div></div>
       <div style={underlineStyle}></div>
       <div className="w-third">
-        <h1 className="dib pointer f4 b" id={navItems[0].title} onMouseEnter={() => { setHoveredSection(navItems[0]) }}>{navItems[0].title}</h1>
+        <h1 className="dib pointer f4 b pv4 mv0" id={navItems[0].title} onMouseEnter={() => { setHoveredSection(navItems[0]) }}>{navItems[0].title}</h1>
       </div>
-      <ul className="f4 list pl0 flex w-two-thirds justify-between">
+      <ul className="pv4 mv0 f4 list pl0 flex w-two-thirds justify-between">
         {navItems.map((item, index) => {
           return (
             index > 0 &&
-             <Link className="link black" id={item.title} to={item.link} key={item.title} onMouseEnter={() => { setHoveredSection(item) }}>
+             <Link className="link black-50" id={item.title} to={item.link} key={item.title} onMouseEnter={() => { setHoveredSection(item) }}>
                <li className="link">
                  {item.title}
                </li>
