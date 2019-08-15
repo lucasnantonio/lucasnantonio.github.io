@@ -8,7 +8,7 @@ import Header from '../components/header'
 import Img from 'gatsby-image'
 
 const IndexPage = ({ data: { allMarkdownRemark: { edges: posts }, allImageSharp: { nodes: images } } }) => {
-  const [currentSection, setCurrentSection] = useState(null)
+  const [currentSection, setCurrentSection] = useState('Lucas Neumann')
   const sections = [
     {
       title: 'Petal',
@@ -42,20 +42,23 @@ const IndexPage = ({ data: { allMarkdownRemark: { edges: posts }, allImageSharp:
   window.onscroll = () => {
     sectionPositions = Array.from(document.querySelectorAll('.home-section'))
       .filter((item) => { return item.getBoundingClientRect().top <= 0 && item.getBoundingClientRect().bottom > 0 })
-    setCurrentSection(sectionPositions[0] ? sectionPositions[0].id : null)
+    setCurrentSection(sectionPositions[0] ? sectionPositions[0].id : 'Lucas Neumann')
   }
 
   return (
     <Layout>
       <SEO title="Home" />
-      <Header currentSection={currentSection}></Header>
+      <Header currentSection={currentSection} setCurrentSection={setCurrentSection}></Header>
       <Hello/>
       <div className='w-100 flex flex-row-l flex-column pt5'>
         <div className="w-third-l">
         </div>
         <div className="w-two-thirds-l">
           {/* <div className='vh-75 bg-black mb5'></div> */}
-
+          <div className='vh-75 overflow-hidden mb4'>
+            <Img className="w-100" fluid={images.filter((item) => item.fluid.originalName ===
+           'lucas.jpg')[0].fluid}></Img>
+          </div>
           {sections.map((item) => {
             return (
               <HomeSection
