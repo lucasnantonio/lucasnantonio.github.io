@@ -24,7 +24,10 @@ const Header = ({ siteTitle, currentSection }) => {
     return document.getElementById(item.title).getBoundingClientRect().width
   }
 
-  // let underlineStyle
+  useEffect(() => {
+    setUnderlineWidth(getWidth(hoveredSection))
+    setLeftPosition(getXPosition(hoveredSection))
+  })
 
   const underlineStyle =
     {
@@ -40,15 +43,15 @@ const Header = ({ siteTitle, currentSection }) => {
 
     <div className="mb5 list ml0 pl0 flex relative">
       <div style={underlineStyle}></div>
-      <h1 id={navItems[0].title} className="w-third f4" onMouseEnter={() => { setHoveredSection(0); setLeftPosition(getXPosition(navItems[0])); setUnderlineWidth(getWidth(navItems[0])) }}>
-        {navItems[0].title}
-      </h1>
+      <div className="w-third">
+        <h1 className="dib pointer f4 b" id={navItems[0].title} onMouseEnter={() => { setHoveredSection(navItems[0]) }}>{navItems[0].title}</h1>
+      </div>
       <ul className="f4 list pl0 flex w-two-thirds justify-between">
         {navItems.map((item, index) => {
           return (
             index > 0 &&
-             <Link id={item.title} to={item.link} key={item.title} onMouseEnter={() => { setHoveredSection(0); setLeftPosition(getXPosition(item)); setUnderlineWidth(getWidth(item)) }}>
-               <li>
+             <Link className="link black" id={item.title} to={item.link} key={item.title} onMouseEnter={() => { setHoveredSection(item) }}>
+               <li className="link">
                  {item.title}
                </li>
              </Link>
