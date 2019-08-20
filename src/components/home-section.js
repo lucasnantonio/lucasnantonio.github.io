@@ -9,18 +9,14 @@ const HomeSection = ({ title, date, mainImage, description, posts }) => {
   const [image, setImage] = useState(mainImage)
 
   const myDiv = null
-  // window.onscroll = () => console.log(myDiv)
-
-  useEffect(() => {
-    // myDiv = document.getElementById(title)
-    // console.log(myDiv)
-  })
 
   return (
-    <div key={title} id={title} className={'pt4 pb5 flex flex-row-l flex-column home-section'}>
-      <div className="w-100 pt3 mb5">
-        <h2 className={'f2 lighter fw5 mt0 pt0 sans b fw4 bt bw1 pt3 lh-copy'}>{title}</h2>
-        <p className={'f3 pt0 lh-copy measure-narrow mt4 mr4 black-50 mb5' }>{description}</p>
+    <div key={title} className={'flex flex-row-l flex-column mt6'}>
+      <div className="w-100 ">
+        <div className="flex mb5">
+          <h2 className={'w-50 f3 lighter fw5 mt0 pt0 sans b fw4 pt3 lh-copy'}>{title}</h2>
+          <p className={'w-50 f5 pt0 lh-copy mr4' }>{description}</p>
+        </div>
         <PostList posts={sectionPosts} setImage={setImage} mainImage={mainImage}/>
       </div>
     </div>)

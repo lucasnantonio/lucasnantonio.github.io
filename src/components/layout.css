@@ -1,14 +1,14 @@
 html {
-  font-family: 'GT America Trial';
+  /* font-family: 'GT America Trial'; */
   /* font-family: 'System85 Trial'; */
   /* font-family: 'GT Zirkon Trial'; */
   /* font-family: 'National Test'; */
-  /* font-family: 'Neue Plak Text'; */
+  font-family: 'Neue Plak Text';
   /* font-family: 'Louize trial'; */
   /* font-family: 'IA Writer Quattro S'; */
   /* font-family: 'GT Walsheim Trial'; */
   font-size: 18px;
-  font-weight:300;
+  font-weight:200;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
@@ -19,6 +19,7 @@ body {
 }
 h1, h2, h3, h4, h5{
   font-weight: 300;
+  color: #283234;
 }
 
 *{
@@ -32,6 +33,9 @@ h1, h2, h3, h4, h5{
 /* GT America */
 /* Akkurat Pro */
 
+*.black{
+  color:#283239 !important; 
+}
 .example-enter {
   opacity: 0;
 
