@@ -1,6 +1,6 @@
 ---
 path: "/blog/petal-onboarding"
-date: "2019-05-04"
+date: "2019-02-04"
 title: "Onboarding 2.0"
 category: "Petal"
 color: "yellow"

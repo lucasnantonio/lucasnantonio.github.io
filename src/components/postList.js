@@ -6,9 +6,10 @@ const PostList = (props) => {
   const { posts } = props
 
   const list = posts
-    .map(post => <PostLink key={post.node.id} post={post.node} />)
+    .map((post, index) =>
+      <PostLink size={index === 0 ? 'w-100' : 'w-50'} key={post.node.id} post={post.node} />)
 
-  return <div className={'w-100 flex flex-column'}>{list}</div>
+  return <div className={'w-100 flex flex-wrap'}>{list}</div>
 }
 
 export default PostList

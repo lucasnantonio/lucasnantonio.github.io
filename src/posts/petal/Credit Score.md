@@ -4,8 +4,8 @@ date: "2019-05-04"
 title: "Credit score in-app"
 category: "Petal"
 color: "red"
-cover_image: "../../images/petal.png"
-published: false
+cover_image: "../../images/petal-credit-score.png"
+published: true
 ---
 
 

@@ -41,7 +41,7 @@ const IndexPage = ({ data: { allMarkdownRemark: { edges: posts }, allImageSharp:
 
   window.onscroll = () => {
     sectionPositions = Array.from(document.querySelectorAll('.home-section'))
-      .filter((item) => { return item.getBoundingClientRect().top <= 0 && item.getBoundingClientRect().bottom > 0 })
+      .filter((item) => { return item.getBoundingClientRect().top <= 180 && item.getBoundingClientRect().bottom > 0 })
     setCurrentSection(sectionPositions[0] ? sectionPositions[0].id : 'Lucas Neumann')
   }
 
@@ -119,7 +119,7 @@ export const pageQuery = graphql`
             cover_image {
               publicURL
               childImageSharp {
-                fluid(maxWidth: 700) {
+                fluid(maxWidth: 1700) {
                   ...GatsbyImageSharpFluid_noBase64
                 }
               }

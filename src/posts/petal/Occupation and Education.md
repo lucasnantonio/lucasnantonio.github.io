@@ -5,7 +5,7 @@ title: "Occupation and Education"
 category: "Petal"
 color: "black"
 cover_image: "../../images/image.jpg"
-published: false
+published: true
 ---
 
 # Petal Onboarding 2.0
