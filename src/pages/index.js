@@ -77,7 +77,6 @@ const IndexPage = ({ data: { allMarkdownRemark: { edges: posts }, allImageSharp:
           </div>
         </div>
       </div>
-)
     </Layout>
   )
 }

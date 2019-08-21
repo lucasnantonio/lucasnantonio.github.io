@@ -16,10 +16,9 @@ const TagList = () => {
         bottom: '3rem'
       }}
       className='fixed flex flex-column items-start'>
-      <div className="mb3">Filter</div>
+      <div className="mb3 f6">Filter work</div>
       {tags.map((item) => <Tag title={item}></Tag>)}
     </div>
-
   )
 }
 
