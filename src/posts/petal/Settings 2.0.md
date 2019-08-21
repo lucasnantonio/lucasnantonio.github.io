@@ -1,11 +1,11 @@
 ---
-path: "/blog/petal-onboarding"
+path: "/blog/petal-settings"
 date: "2019-05-04"
 title: "Settings 2.0"
 category: "Petal"
 color: "blue"
-cover_image: "../../images/image.jpg"
-published: false
+cover_image: "../../images/petal-settings.png"
+published: true
 ---
 
 # Petal Onboarding 2.0

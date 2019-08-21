@@ -14,7 +14,6 @@ const IndexPage = ({ data: { allMarkdownRemark: { edges: posts }, allImageSharp:
       title: 'Petal',
       date: '2019',
       place: 'New York',
-      mainImage: images.filter((item) => item.fluid.originalName === 'hero-petal.png')[0].fluid,
       description: 'In June 2019, I moved to New York to help Petal amplify the access to credit in America by using good design and intelligent underwriting.',
       posts: { posts },
       scrollPosition: null },
@@ -22,7 +21,6 @@ const IndexPage = ({ data: { allMarkdownRemark: { edges: posts }, allImageSharp:
       title: 'Nubank',
       date: '2019',
       place: 'New York',
-      mainImage: images.filter((item) => item.fluid.originalName === 'hero-nubank.png')[0].fluid,
       description: 'During 3 years, I helped Nubank grow from 1 to 10 million customers, 1 to 3 products, and 6 to 35 designers.',
       scrollPosition: null,
       posts: { posts } },
@@ -30,7 +28,6 @@ const IndexPage = ({ data: { allMarkdownRemark: { edges: posts }, allImageSharp:
       title: 'Kano',
       date: '2019',
       place: 'New York',
-      mainImage: images.filter((item) => item.fluid.originalName === 'hero-nubank.png')[0].fluid,
       description: 'During 3 years, I helped Nubank grow from 1 to 10 million customers, 1 to 3 products, and 6 to 35 designers.',
       scrollPosition: null,
       posts: { posts } }
@@ -65,7 +62,6 @@ const IndexPage = ({ data: { allMarkdownRemark: { edges: posts }, allImageSharp:
               return (
                 <HomeSection
                   key={item.title}
-                  mainImage={images.filter((item) => item.fluid.originalName === 'hero-petal.png')[0].fluid}
                   posts={posts}
                   title={item.title}
                   date={item.date}

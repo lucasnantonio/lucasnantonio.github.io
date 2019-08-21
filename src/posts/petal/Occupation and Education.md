@@ -1,11 +1,11 @@
 ---
-path: "/blog/petal-onboarding"
-date: "2019-05-04"
-title: "Occupation and Education"
+path: "/blog/petal-settings"
+date: "2019-01-04"
+title: "Settings Redesign"
 category: "Petal"
 color: "black"
-cover_image: "../../images/image.jpg"
-published: true
+cover_image: "../../images/petal-settings.png"
+published: false
 ---
 
 # Petal Onboarding 2.0

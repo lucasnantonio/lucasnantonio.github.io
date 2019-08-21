@@ -5,7 +5,7 @@ title: "Onboarding 2.0"
 category: "Petal"
 color: "yellow"
 cover_image: "../../images/image.jpg"
-published: true
+published: false
 tags: 
 	- product
 ---

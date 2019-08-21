@@ -1,10 +1,10 @@
 ---
-path: "/blog/nubank-nuconta"
+path: "/blog/nubank-rewards"
 date: "2019-05-04"
-title: "NuConta"
+title: "Rewards"
 category: "Nubank"
 color: "gray"
-cover_image: "../../images/nubank-nuconta.png"
+cover_image: "../../images/nubank-rewards.png"
 published: true
 ---
 
