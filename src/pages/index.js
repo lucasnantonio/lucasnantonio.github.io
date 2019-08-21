@@ -5,6 +5,7 @@ import HomeSection from '../components/home-section'
 import SEO from '../components/seo'
 import Hello from '../components/hello'
 import Header from '../components/header'
+import TagList from '../components/tagList'
 import Img from 'gatsby-image'
 
 const IndexPage = ({ data: { allMarkdownRemark: { edges: posts }, allImageSharp: { nodes: images } } }) => {
@@ -47,6 +48,9 @@ const IndexPage = ({ data: { allMarkdownRemark: { edges: posts }, allImageSharp:
       <SEO title="Home" />
       <Header currentSection={currentSection} setCurrentSection={setCurrentSection}></Header>
       <Hello/>
+      {currentSection !== 'Lucas Neumann' &&
+      <TagList />
+      }
       <div className='w-100 flex flex-row-l flex-column mt6'>
         <div className="w-third-l">
           <div className="">
