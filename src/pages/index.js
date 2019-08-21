@@ -50,12 +50,13 @@ const IndexPage = ({ data: { allMarkdownRemark: { edges: posts }, allImageSharp:
       <SEO title="Home" />
       <Header currentSection={currentSection} setCurrentSection={setCurrentSection}></Header>
       <Hello/>
-      <div className='w-100 flex flex-row-l flex-column mt5'>
+      <div className='w-100 flex flex-row-l flex-column mt6'>
         <div className="w-third-l">
+          <div className="">
+          </div>
         </div>
         <div className="w-two-thirds-l">
-          {/* <div className='vh-75 bg-black mb5'></div> */}
-          <div className='vh-75 overflow-hidden mt5'>
+          <div className='vh-75 overflow-hidden'>
             <Img className="w-100" fluid={images.filter((item) => item.fluid.originalName ===
            'lucas.jpg')[0].fluid}></Img>
           </div>
