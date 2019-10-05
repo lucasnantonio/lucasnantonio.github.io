@@ -5,6 +5,9 @@ html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
+body *{
+  transition: all .2s, backgrond-color 20s;
+}
 body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
