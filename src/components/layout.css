@@ -1,12 +1,5 @@
 html {
-  font-family: 'GT America Trial';
-  /* font-family: 'System85 Trial'; */
-  /* font-family: 'GT Zirkon Trial'; */
-  /* font-family: 'National Test'; */
-  font-family: 'Neue Plak Text';
-  /* font-family: 'Louize trial'; */
-  /* font-family: 'IA Writer Quattro S'; */
-  /* font-family: 'GT Walsheim Trial'; */
+  font-family: 'NeuePlakText-Light';
   font-size: 18px;
   font-weight:300;
   -ms-text-size-adjust: 100%;
@@ -20,18 +13,9 @@ body {
 h1, h2, h3, h4, h5{
   font-weight: 300;
 }
-
-/* *{
-  transition: all .2s;
-} */
-.sans{
-  /* font-family: 'GT America Trial'; */
+.neue-regular{
+  font-family: 'NeuePlakText-Regular';
 }
-/* FONTS I LIKE */
-/* System85 */
-/* GT America */
-/* Akkurat Pro */
-
 .example-enter {
   opacity: 0.01;
   /* margin-left:-20px; */

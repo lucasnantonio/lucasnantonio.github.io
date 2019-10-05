@@ -1,21 +1,12 @@
 import React, { useState } from 'react'
 import { Link } from 'gatsby'
+import Img from 'gatsby-image'
 
-function PostLink (props) {
-  const { post, isListDimmed } = props
-  const [isHovered, setHover] = useState(false)
+function PostLink ({ post, index }) {
   return (
-    <Link style={{ textDecoration: 'none', color: 'black' }} to={post.frontmatter.path}>
-      <div
-        className={`flex justify-between pointer pv3 bt bw1 b f6 ${isHovered ? 'pl2' : 'pl0'} ${isListDimmed && !isHovered ? 'black-20' : 'black'}`}
-        onMouseOver={() => { setHover(!isHovered); props.setImage(post.frontmatter.cover_image.childImageSharp.fluid) }}
-        onMouseLeave={() => { setHover(!isHovered) }}
-      >
-        <span>
-          { post.frontmatter.title }
-        </span>
-        <span className={`${isHovered ? 'o-100' : 'o-0'}`}>‣</span>
-      </div>
+    <Link className={`link black w-third flex flex-column ${index === 0 && 'mr4'}`} to={post.frontmatter.path}>
+      <Img className="w-100 br3 " fluid={post.frontmatter.cover_image.childImageSharp.fluid}></Img>
+      <p className={'neue-regular'}>{ post.frontmatter.title }</p>
     </Link>
   )
 }
