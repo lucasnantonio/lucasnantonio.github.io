@@ -11,7 +11,7 @@ function PostLink ({ post, index }) {
       className={
         `link black w-third flex flex-column br4 pa3
         `}
-      style={{ backgroundColor: isHovered ? '#f7f7f7' : 'white' }}
+      style={{ backgroundColor: isHovered ? '#f7f7f7' : '#ffffff' }}
       to={post.frontmatter.path}>
       <div className="w-100 br3 overflow-hidden">
         <Img

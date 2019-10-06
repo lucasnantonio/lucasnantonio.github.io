@@ -4,11 +4,13 @@ import PostList from '../components/postList'
 import HomeSection from '../components/home-section'
 import SEO from '../components/seo'
 import Hello from '../components/hello'
+import Filters from '../components/filters'
 
 const IndexPage = ({ data: { allMarkdownRemark: { edges: posts }, allImageSharp: { nodes: images } } }) => (
 
   <Layout>
     <SEO title="Home" />
+    <Filters />
     <Hello/>
     <HomeSection
       mainImage={images.filter((item) => item.fluid.originalName === 'hero-petal.png')[0].fluid}
