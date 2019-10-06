@@ -14,7 +14,7 @@ import '../../node_modules/tachyons/css/tachyons.min.css'
 import '../MyFontsWebfontsKit.css'
 import './layout.css'
 
-const Layout = ({ children }) => {
+const Layout = ({ children, isWorkInView }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -27,7 +27,7 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata.title} />
+      <Header isWorkInView={isWorkInView} siteTitle={data.site.siteMetadata.title} />
       <div
         style={{
           margin: `0 auto`,

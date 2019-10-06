@@ -2,7 +2,7 @@ import { Link } from 'gatsby'
 import PropTypes from 'prop-types'
 import React from 'react'
 
-const Header = ({ siteTitle }) => (
+const Header = ({ siteTitle, isWorkInView }) => (
   <header
     className={'pv2 flex fixed bg-white w-100 z-max'}
   >
@@ -16,6 +16,7 @@ const Header = ({ siteTitle }) => (
         </p>
       </Link>
     </div>
+    {!isWorkInView === true &&
     <div className="flex w-two-thirds">
       <a className="ml3 link black" href="#">
         <p >Intro</p>
@@ -27,6 +28,7 @@ const Header = ({ siteTitle }) => (
         <p >Contact</p>
       </a>
     </div>
+    }
   </header>
 )
 

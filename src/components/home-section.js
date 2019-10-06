@@ -8,9 +8,9 @@ const HomeSection = ({ title, date, description, posts }) => {
       <div className="w-third">
 
       </div>
-      <div className="w-two-thirds  bw1  bt bw1 b--black-10 pt5">
+      <div className="w-two-thirds bw1 bt b--black-10 pt5">
         <h2 className={'f3 mt0 pt0 sans b'}>{title}</h2>
-        <p className={'f4 pt0 lh-copy measure-narrow  mr4 black-40 mb5' }>{description}</p>
+        <p className={'f4 pt4 lh-copy measure-narrow  mr4 black-40 mb5' }>{description}</p>
         <PostList posts={sectionPosts}/>
       </div>
     </div>)

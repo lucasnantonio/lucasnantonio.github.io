@@ -4,7 +4,7 @@ date: "2019-05-04"
 title: "Invalid Payment Accounts"
 category: "Petal"
 color: "pink"
-cover_image: "../../images/image.jpg"
+cover_image: "../../images/hero-petal.png"
 published: true
 tags: 
 	- product

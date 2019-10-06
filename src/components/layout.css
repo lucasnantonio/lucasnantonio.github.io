@@ -19,33 +19,34 @@ h1, h2, h3, h4, h5{
 .neue-regular{
   font-family: 'NeuePlakText-Regular';
 }
-.example-enter {
-  opacity: 0.01;
+
+.filter-animation-enter {
+  opacity: 0.1;
   /* margin-left:-20px; */
 }
 
-.example-enter.example-enter-active {
+.filter-animation-enter.filter-animation-enter-active {
   opacity: 1;
   /* margin-left:0px; */
   transition: opacity 500ms ease-in;
 }
 
-.example-appear {
+.filter-animation-appear {
   opacity: 0.01;
   margin-left:-20px;
 }
 
-.example-appear.example-appear-active {
+.filter-animation-appear.filter-animation-appear-active {
   opacity: 1;
   /* margin-left:0px; */
   transition: opacity 500ms ease-in;
 }
 
-.example-leave {
+.filter-animation-leave {
   opacity: 1;
 }
 
-.example-leave.example-leave-active {
+.filter-animation-leave.filter-animation-leave-active {
   opacity: 0.01;
   transition: opacity 300ms ease-in;
 }

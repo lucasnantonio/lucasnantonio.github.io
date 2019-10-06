@@ -9,22 +9,20 @@ import Filters from '../components/filters'
 function IndexPage ({ data: { allMarkdownRemark: { edges: posts }, allImageSharp: { nodes: images } } }) {
   const [isWorkInView, setWorkInView] = useState(false)
 
-  const myFunction = () => {
+  const checkIfWorkIsInView = () => {
     window.onscroll = () => {
       setWorkInView(document.getElementById('work').getBoundingClientRect().top <= 0)
     }
   }
 
   useEffect(
-    myFunction
+    checkIfWorkIsInView
   )
 
   return (
-    <Layout>
+    <Layout isWorkInView={isWorkInView}>
       <SEO title="Home" />
-      { isWorkInView &&
-        <Filters />
-      }
+      <Filters isShowing={isWorkInView}/>
       <Hello/>
       <div id="work">
         <HomeSection
