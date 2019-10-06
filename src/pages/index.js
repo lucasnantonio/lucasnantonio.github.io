@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import Layout from '../components/layout'
 import PostList from '../components/postList'
 import HomeSection from '../components/home-section'
@@ -6,46 +6,62 @@ import SEO from '../components/seo'
 import Hello from '../components/hello'
 import Filters from '../components/filters'
 
-const IndexPage = ({ data: { allMarkdownRemark: { edges: posts }, allImageSharp: { nodes: images } } }) => (
+function IndexPage ({ data: { allMarkdownRemark: { edges: posts }, allImageSharp: { nodes: images } } }) {
+  const [isWorkInView, setWorkInView] = useState(false)
 
-  <Layout>
-    <SEO title="Home" />
-    <Filters />
-    <Hello/>
-    <HomeSection
-      mainImage={images.filter((item) => item.fluid.originalName === 'hero-petal.png')[0].fluid}
-      posts={posts}
-      title="Petal"
-      date="2019"
-      place="New York"
-      description="In June 2019, I moved to New York to help Petal amplify the access to credit in America by using good design and intelligent underwriting."
-    />
-    <HomeSection
-      mainImage={images.filter((item) => item.fluid.originalName === 'hero-nubank.png')[0].fluid}
-      posts={posts}
-      title="Nubank"
-      date="2016—2019"
-      place="São Paulo"
-      description="During 3 years, I helped Nubank grow from 1 to 10 million customers, 1 to 3 products, and 6 to 35 designers."
-    />
-    <HomeSection
-      mainImage={posts[0].node.frontmatter.cover_image.childImageSharp.fluid}
-      posts={posts}
-      title="Kano"
-      date="2013"
-      place="London"
-      description="During 3 years, I helped Nubank grow from 1 to 10 million customers, 1 to 3 products, and 6 to 35 designers."
-    />
-    <HomeSection
-      mainImage={posts[0].node.frontmatter.cover_image.childImageSharp.fluid}
-      posts={posts}
-      title="Personal work"
-      date="2013"
-      place="London"
-      description="During 3 years, I helped Nubank grow from 1 to 10 million customers, 1 to 3 products, and 6 to 35 designers."
-    />
-  </Layout>
-)
+  const myFunction = () => {
+    window.onscroll = () => {
+      setWorkInView(document.getElementById('work').getBoundingClientRect().top <= 0)
+    }
+  }
+
+  useEffect(
+    myFunction
+  )
+
+  return (
+    <Layout>
+      <SEO title="Home" />
+      { isWorkInView &&
+        <Filters />
+      }
+      <Hello/>
+      <div id="work">
+        <HomeSection
+          mainImage={images.filter((item) => item.fluid.originalName === 'hero-petal.png')[0].fluid}
+          posts={posts}
+          title="Petal"
+          date="2019"
+          place="New York"
+          description="In June 2019, I moved to New York to help Petal amplify the access to credit in America by using good design and intelligent underwriting."
+        />
+        <HomeSection
+          mainImage={images.filter((item) => item.fluid.originalName === 'hero-nubank.png')[0].fluid}
+          posts={posts}
+          title="Nubank"
+          date="2016—2019"
+          place="São Paulo"
+          description="During 3 years, I helped Nubank grow from 1 to 10 million customers, 1 to 3 products, and 6 to 35 designers."
+        />
+        <HomeSection
+          mainImage={posts[0].node.frontmatter.cover_image.childImageSharp.fluid}
+          posts={posts}
+          title="Kano"
+          date="2013"
+          place="London"
+          description="During 3 years, I helped Nubank grow from 1 to 10 million customers, 1 to 3 products, and 6 to 35 designers."
+        />
+        <HomeSection
+          mainImage={posts[0].node.frontmatter.cover_image.childImageSharp.fluid}
+          posts={posts}
+          title="Personal work"
+          date="2013"
+          place="London"
+          description="During 3 years, I helped Nubank grow from 1 to 10 million customers, 1 to 3 products, and 6 to 35 designers."
+        />
+      </div>
+    </Layout>)
+}
 
 export default IndexPage
 

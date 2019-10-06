@@ -17,9 +17,15 @@ const Header = ({ siteTitle }) => (
       </Link>
     </div>
     <div className="flex w-two-thirds">
-      <p className="ml3">Intro</p>
-      <p className="ml3">Work</p>
-      <p className="ml3">Contact</p>
+      <a className="ml3 link black" href="#">
+        <p >Intro</p>
+      </a>
+      <a className="ml3 link black" href="#work">
+        <p >Work</p>
+      </a>
+      <a className="ml3 link black" href="#contact">
+        <p >Contact</p>
+      </a>
     </div>
   </header>
 )
