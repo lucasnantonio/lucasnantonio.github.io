@@ -1,24 +1,20 @@
 ---
-path: "/blog/payment-confirmation-redesign"
+path: /blog/settings-page-redesign
 date: "2019-05-04"
-title: Payment confirmation redesign
+title: Settings page redesign
 category: Petal
 tags: 
-	- product design
-	- user research
+- product design
+- user research
 published: true
 role: 
-	- design
-	- user testing
-date: August 2019
-cover_image: "../../images/hero-petal.png"
+- design
+- user testing
+cover_image: "../../images/petal/settings-page-redesign-hero.png"
 impact: Unblocked development and placement of new features such as Friend Referrals, Notification Center, and in-app help center.
 ---
 
-tags: 
-	- product
-
-# Payment confirmation fixes
+# Settings Page redesign
 
 ## Problem
 Petal's app settings controls were very simple to start with, so at the time, the early team decided to design it as a simple stacked list. As new features were implemented and new options added, it quickly became clear that a new, more scalable information architecture model was needed. The list kept growing and it became both visually overwhelming and cognitively confusing for users to find what they were looking for. With big new additions planned ahead, we decided to give the page a redesign.

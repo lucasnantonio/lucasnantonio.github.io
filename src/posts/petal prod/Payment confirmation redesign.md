@@ -1,17 +1,17 @@
 ---
-path: "/blog/payment-summary-redesign"
+path: "/blog/payment-confirmation-redesign"
 date: "2019-05-04"
-title: Payment summary redesign
+title: Payment confirmation redesign
+subtitle: Reducing human error and support tickets
 category: Petal
 tags: 
-	- product design
+- product design
 published: true
 role: 
-	- design
-	- user testing 
-	- project management
-date: August 2019
-cover_image: "../../images/hero-petal.png"
+- design
+- user testing 
+- project management
+cover_image: "../../images/petal/slide-to-confirm-hero.png"
 impact: number of tickets about this reason reduced from X to Y.
 ---
 

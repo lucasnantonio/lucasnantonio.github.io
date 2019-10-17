@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { Link } from 'gatsby'
 import Img from 'gatsby-image'
+import ImageWithBackground from './imageWithBackground'
 
 function PostLink ({ post, index }) {
   const [isHovered, setHover] = useState(false)
@@ -9,16 +10,16 @@ function PostLink ({ post, index }) {
       onMouseEnter={() => setHover(true)}
       onMouseLeave={() => setHover(false)}
       className={
-        `link black w-third flex flex-column br4 pa3
+        `link black w-50  h6 flex flex-column br4 pa3 relative
         `}
-      style={{ backgroundColor: isHovered ? '#f7f7f7' : '#ffffff' }}
+      style={{ backgroundColor: isHovered ? '#fcfcfc' : '#ffffff' }}
       to={post.frontmatter.path}>
-      <div className="w-100 br3 overflow-hidden">
-        <Img
-          style={{ transform: `scale(${isHovered ? '1.1' : '1'})` }}
-          fluid={post.frontmatter.cover_image.childImageSharp.fluid}></Img>
+      <ImageWithBackground snapToBottom={false} isHovered={isHovered} fluid={post.frontmatter.cover_image.childImageSharp.fluid} color={'#E5F8FF'}/>
+      <div className="pl3 pt3">
+        <p className={'neue-regular f4 measure-narrow mb2 mt3'}>{ post.frontmatter.title }</p>
+        <p className={'neue-regular f5 black-30 measure-narrow'}>{ post.frontmatter.subtitle }</p>
       </div>
-      <p className={'neue-regular pl2'}>{ post.frontmatter.title }</p>
+      {/* </div> */}
     </Link>
   )
 }
