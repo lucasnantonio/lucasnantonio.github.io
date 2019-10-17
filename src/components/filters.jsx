@@ -14,7 +14,7 @@ function Filters ({ isShowing }) {
         <div className="fixed pl5" style={{ top: '6rem', left: '0px' }}>
           <p className="neue-regular f7 ttu tracked black-20">work by topic</p>
           <ul className="list pl0 mt4 f6" style={{ marginLeft: '-1rem' }}>
-            {topics.map((item) => <Filter title={item}/>)}
+            {topics.map((item) => <Filter key={item} title={item}/>)}
           </ul>
         </div>
       )}

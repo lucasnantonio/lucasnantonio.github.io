@@ -1,5 +1,5 @@
 ---
-path: "/blog/petal-onboarding"
+path: "/blog/petal-onboardings"
 date: "2019-05-04"
 title: "Initial usability testing"
 category: "Nubank"
