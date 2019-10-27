@@ -1,6 +1,7 @@
 import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
+import ImageWithBackground from "../components/imageWithBackground"
 
 
 export default function Template({
@@ -10,7 +11,17 @@ export default function Template({
   const { frontmatter, html } = markdownRemark
   return (
     <Layout>
-      <div className="pt6 flex flex-row-l flex-column">
+      <div
+      style={{backgroundColor: frontmatter.color}}
+      className="pt5 pb4 db">
+              <ImageWithBackground
+        snapToBottom={false}
+        // isHovered={isHovered}
+        fluid={frontmatter.cover_image.childImageSharp.fluid}
+        color={frontmatter.color}
+      />
+      </div>
+      <div className="pt3 flex flex-row-l flex-column">
         <div className="w-third"></div>
         <div className="w-two-thirds post-content">
           <h2>{frontmatter.date}</h2>
@@ -29,6 +40,15 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         path
         title
+        color
+        cover_image {
+          publicURL
+          childImageSharp {
+            fluid(maxWidth: 700) {
+              ...GatsbyImageSharpFluid_noBase64
+            }
+          }
+        }
       }
     }
   }

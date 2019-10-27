@@ -31,7 +31,7 @@ const Layout = ({ children, isWorkInView }) => {
       <div
         style={{
           margin: `0 auto`,
-          padding: `0rem 3rem 3rem 3rem`,
+          // padding: `0rem 3rem 3rem 3rem`,
           paddingTop: 0
         }}
       >

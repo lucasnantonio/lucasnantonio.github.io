@@ -3,6 +3,7 @@ import React, { useState } from 'react'
 import Img from 'gatsby-image'
 
 function ImageWithBackground ({ fluid, color, snapToBottom = true, isHovered }) {
+  console.log(color)
   return (
     <div
       id="hehe"
