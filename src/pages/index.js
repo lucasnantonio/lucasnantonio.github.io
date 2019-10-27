@@ -11,6 +11,7 @@ function IndexPage ({ data: { allMarkdownRemark: { edges: posts }, allImageSharp
 
   const checkIfWorkIsInView = () => {
     window.onscroll = () => {
+      document.getElementById('work') !== null &&
       setWorkInView(document.getElementById('work').getBoundingClientRect().top <= 0)
     }
   }
