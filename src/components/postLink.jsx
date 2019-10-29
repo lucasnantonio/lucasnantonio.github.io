@@ -11,12 +11,17 @@ function PostLink({ post, index }) {
       onMouseEnter={() => setHover(true)}
       onMouseLeave={() => setHover(false)}
       className={` ${post.frontmatter.size !== "large" ? "w-50" : "w-100"}  
-        link black h-100 flex flex-column br4 pa3 relative
+        link black h-100 flex flex-column br4 pa2 relative
         `}
-      style={{ backgroundColor: isHovered ? "#fafafa" : "#ffffff" }}
+      style={
+        {
+          // border: isHovered ? "2px solid #eee" : "2px solid white",
+        }
+      }
       to={post.frontmatter.path}
     >
       <ImageWithBackground
+        cover={post.frontmatter.cover}
         snapToBottom={post.frontmatter.snapToBottom}
         isHovered={isHovered}
         fluid={post.frontmatter.cover_image.childImageSharp.fluid}
