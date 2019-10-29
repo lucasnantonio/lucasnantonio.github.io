@@ -5,14 +5,14 @@
  * See: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-import React from 'react'
-import PropTypes from 'prop-types'
-import { useStaticQuery, graphql } from 'gatsby'
+import React from "react"
+import PropTypes from "prop-types"
+import { useStaticQuery, graphql } from "gatsby"
 
-import Header from './header'
-import '../../node_modules/tachyons/css/tachyons.min.css'
-import '../MyFontsWebfontsKit.css'
-import './layout.css'
+import Header from "./header"
+import "../../node_modules/tachyons/css/tachyons.min.css"
+import "../MyFontsWebfontsKit.css"
+import "./layout.css"
 
 const Layout = ({ children, isWorkInView }) => {
   const data = useStaticQuery(graphql`
@@ -27,12 +27,17 @@ const Layout = ({ children, isWorkInView }) => {
 
   return (
     <>
-      <Header isWorkInView={isWorkInView} siteTitle={data.site.siteMetadata.title} />
+      <Header
+        isWorkInView={isWorkInView}
+        siteTitle={data.site.siteMetadata.title}
+      />
+
       <div
         style={{
           margin: `0 auto`,
           // padding: `0rem 3rem 3rem 3rem`,
-          paddingTop: 0
+          paddingTop: 0,
+          maxWidth: "800px",
         }}
       >
         <main>{children}</main>
@@ -42,7 +47,7 @@ const Layout = ({ children, isWorkInView }) => {
 }
 
 Layout.propTypes = {
-  children: PropTypes.node.isRequired
+  children: PropTypes.node.isRequired,
 }
 
 export default Layout

@@ -11,8 +11,7 @@ export default function Template({
   return (
     <Layout>
       <div className="pt6 flex mb5">
-        <div className="w-25"></div>
-        <div className="w-75">
+        <div>
           <h1 className="neue-regular">{frontmatter.title}</h1>
           <h2>{frontmatter.date}</h2>
         </div>

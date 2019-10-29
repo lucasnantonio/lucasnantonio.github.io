@@ -11,18 +11,17 @@ function ImageWithBackground({
 }) {
   return (
     <div
-      className={`h5 flex overflow-hidden flex-column center items-center ${
+      className={` flex flex-column center items-center ${
         cover
           ? "pa0"
           : snapToBottom
-          ? "ph5 pt5 justify-end"
+          ? "ph4 pt4 justify-end"
           : "justify-around pa5"
       }`}
-      style={{ backgroundColor: color, width: "100%" }}
+      style={{ backgroundColor: color, width: "100%", overflow: "visible" }}
     >
-      <div className={`w-80 ${!cover && "mw5"}`}>
+      <div className={`w-100`}>
         <Img
-          className={"w-100"}
           style={{
             overflow: "show",
             transform: `scale(${isHovered ? "1.03" : "1"})`,

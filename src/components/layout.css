@@ -1,23 +1,27 @@
 html {
-  font-family: 'NeuePlakText-Light';
-  font-size: 18px;
-  font-weight:300;
+  font-family: "NeuePlakText-Light";
+  font-size: 13px;
+  font-weight: 300;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
-body *{
-  transition: all .2s !important;
+body * {
+  transition: all 0.2s !important;
 }
 body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-h1, h2, h3, h4, h5{
+h1,
+h2,
+h3,
+h4,
+h5 {
   font-weight: 300;
 }
-.neue-regular{
-  font-family: 'NeuePlakText-Regular';
+.neue-regular {
+  font-family: "NeuePlakText-Regular";
 }
 
 .filter-animation-enter {
@@ -33,7 +37,7 @@ h1, h2, h3, h4, h5{
 
 .filter-animation-appear {
   opacity: 0.01;
-  margin-left:-20px;
+  margin-left: -20px;
 }
 
 .filter-animation-appear.filter-animation-appear-active {

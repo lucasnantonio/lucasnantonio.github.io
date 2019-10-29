@@ -8,13 +8,12 @@ const HomeSection = ({ title, date, description, posts }) => {
       item.node.frontmatter.published === true
   )
   return (
-    <div className={" pt3 mt5 flex flex-row-l flex-column"}>
-      <div className="w-25"></div>
-      <div className="w-75 bw1 bt pt4">
-        <h2 className={"f3 mt0 pt0 sans b"}>{title}</h2>
-        <p className={"f4 pt4 lh-copy measure-narrow  mr4 black-40 mb5"}>
+    <div className={"w-100 flex flex-row-l flex-column bt bw2 mb7"}>
+      <div className="pt5 w-100">
+        <h2 className={"pb4 f2 mt0 pt0 sans b"}>{title}</h2>
+        {/* <p className={"f2 pt3 lh-copy measure-narrow  mr4 neue-regular mb5"}>
           {description}
-        </p>
+        </p> */}
         <PostList posts={sectionPosts} />
       </div>
     </div>

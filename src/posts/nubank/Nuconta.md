@@ -1,12 +1,12 @@
 ---
 path: "/blog/petal-onboarding"
-date: "2019-05-04"
+date: "2019-11-04"
 title: "NuConta: a savings account from 0 to 10MM users"
 category: "Nubank"
 color: "#BB6BD9"
 cover_image: "../../images/nubank/nuconta-01.png"
-cover: true
 published: true
+size: "large"
 ---
 
 1. I want to get my first credit card.
