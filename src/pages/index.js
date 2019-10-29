@@ -30,7 +30,7 @@ function IndexPage({
       <SEO title="Home" />
       <Filters isShowing={isWorkInView} />
       <Hello />
-      <div id="work">
+      <div id="work" className="pr4">
         <HomeSection
           mainImage={
             images.filter(

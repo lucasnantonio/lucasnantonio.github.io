@@ -11,7 +11,7 @@ function ImageWithBackground({
 }) {
   return (
     <div
-      className={`flex overflow-hidden flex-column center items-center br4 ${
+      className={`h5 flex overflow-hidden flex-column center items-center ${
         cover
           ? "pa0"
           : snapToBottom

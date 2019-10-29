@@ -10,6 +10,13 @@ export default function Template({
   const { frontmatter, html } = markdownRemark
   return (
     <Layout>
+      <div className="pt6 flex mb5">
+        <div className="w-25"></div>
+        <div className="w-75">
+          <h1 className="neue-regular">{frontmatter.title}</h1>
+          <h2>{frontmatter.date}</h2>
+        </div>
+      </div>
       <div
         style={{ backgroundColor: frontmatter.color }}
         className="pt5 pb4 db"
@@ -24,7 +31,6 @@ export default function Template({
       <div className="pt3 flex flex-row-l flex-column">
         <div className="w-25"></div>
         <div className="w-75 post-content">
-          <h2>{frontmatter.date}</h2>
           <div className="lh-copy" dangerouslySetInnerHTML={{ __html: html }} />
         </div>
       </div>

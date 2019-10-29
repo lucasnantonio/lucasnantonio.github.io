@@ -10,8 +10,8 @@ function PostLink({ post, index }) {
     <Link
       onMouseEnter={() => setHover(true)}
       onMouseLeave={() => setHover(false)}
-      className={` ${post.frontmatter.size !== "large" ? "w-50" : "w-100"}  
-        link black h-100 flex flex-column br4 pa2 relative
+      className={` ${post.frontmatter.size !== "large" ? "w-third" : "w-100"}  
+        link black flex flex-column pa2 relative
         `}
       style={
         {
@@ -27,11 +27,11 @@ function PostLink({ post, index }) {
         fluid={post.frontmatter.cover_image.childImageSharp.fluid}
         color={post.frontmatter.color}
       />
-      <div className="pl3 pt3">
-        <p className={"neue-regular f4 measure-narrow mb2 mt3"}>
+      <div className="pt1">
+        <p className={"neue-regular f4 measure-narrow mb0 mt3"}>
           {post.frontmatter.title}
         </p>
-        <p className={"neue-regular f5 black-30 measure-narrow"}>
+        <p className={"mt2 f5 black-30 measure-narrow lh-copy"}>
           {post.frontmatter.subtitle}
         </p>
       </div>

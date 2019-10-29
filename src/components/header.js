@@ -10,7 +10,7 @@ const Header = ({ siteTitle, isWorkInView }) => (
       </Link>
     </div>
     {!isWorkInView === true && (
-      <div className="flex w-75">
+      <div className="flex w-75 neue-regular">
         <a className="link black" href="#">
           <p>Intro</p>
         </a>
