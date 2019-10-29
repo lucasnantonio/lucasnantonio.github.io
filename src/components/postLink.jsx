@@ -11,7 +11,7 @@ function PostLink({ post, index }) {
       onMouseEnter={() => setHover(true)}
       onMouseLeave={() => setHover(false)}
       className={` ${post.frontmatter.size !== "large" ? "w-50" : "w-100"}  
-        link black h6 flex flex-column br4 pa3 relative
+        link black h-100 flex flex-column br4 pa3 relative
         `}
       style={{ backgroundColor: isHovered ? "#fafafa" : "#ffffff" }}
       to={post.frontmatter.path}
