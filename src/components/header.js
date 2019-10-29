@@ -13,7 +13,7 @@ const Header = ({ siteTitle, isWorkInView }) => (
         marginRight: "auto",
         marginLeft: "auto",
       }}
-      className={"pv1 flex fixed bg-white z-max space-between"}
+      className={"pv1 flex fixed bg-white z-max space-between bb"}
     >
       <div className="w-100">
         <Link to="/" className={"link"}>

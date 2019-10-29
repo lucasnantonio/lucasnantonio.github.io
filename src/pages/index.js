@@ -28,8 +28,9 @@ function IndexPage({
   return (
     <Layout isWorkInView={isWorkInView}>
       <SEO title="Home" />
-      <Filters isShowing={isWorkInView} />
+
       <Hello />
+      <Filters />
       <div id="work">
         <HomeSection
           mainImage={
