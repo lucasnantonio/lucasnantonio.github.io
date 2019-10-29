@@ -97,6 +97,7 @@ export const pageQuery = graphql`
             category
             color
             published
+            snapToBottom
             cover_image {
               publicURL
               childImageSharp {

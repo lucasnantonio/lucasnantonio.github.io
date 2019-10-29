@@ -14,6 +14,7 @@ role:
 cover_image: "../../images/petal/slide-to-confirm-hero.png"
 impact: number of tickets about this reason reduced from X to Y.
 color: "#E1F9FF"
+snapToBottom: true
 ---
 
 tags: 

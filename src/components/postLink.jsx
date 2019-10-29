@@ -17,7 +17,7 @@ function PostLink({ post, index }) {
       to={post.frontmatter.path}
     >
       <ImageWithBackground
-        snapToBottom={false}
+        snapToBottom={post.frontmatter.snapToBottom}
         isHovered={isHovered}
         fluid={post.frontmatter.cover_image.childImageSharp.fluid}
         color={post.frontmatter.color}

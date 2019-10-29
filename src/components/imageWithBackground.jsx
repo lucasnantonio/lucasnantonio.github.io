@@ -1,19 +1,25 @@
 /* eslint-disable react/prop-types */
-import React, { useState } from 'react'
-import Img from 'gatsby-image'
+import React, { useState } from "react"
+import Img from "gatsby-image"
 
-function ImageWithBackground ({ fluid, color, snapToBottom = true, isHovered }) {
-  console.log(color)
+function ImageWithBackground({ fluid, color, snapToBottom = true, isHovered }) {
   return (
     <div
-      id="hehe"
-      className={`w-100 h-100 center flex flex-column overflow-hidden ${snapToBottom ? 'justify-end ph4 pt4' : 'justify-around pa4'}`}
-      style={{ backgroundColor: color, width: '100%', height: '100%' }}
+      className={`flex flex-column center items-center ${
+        snapToBottom ? "ph5 pt5 justify-end" : "justify-around pa5"
+      }`}
+      style={{ backgroundColor: color, width: "100%" }}
     >
-      <Img
-        className={'w-100 mw5 center'}
-        style={{ transform: `scale(${isHovered ? '1.03' : '1'})` }}
-        fluid={fluid}></Img>
+      <div className="w-80">
+        <Img
+          className={"w-100"}
+          style={{
+            overflow: "show",
+            transform: `scale(${isHovered ? "1.03" : "1"})`,
+          }}
+          fluid={fluid}
+        ></Img>
+      </div>
     </div>
   )
 }
