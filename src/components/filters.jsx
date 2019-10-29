@@ -1,8 +1,12 @@
 import React, { useState } from "react"
 import { CSSTransition } from "react-transition-group"
 import Filter from "./filter"
+import Utils from "./utils"
+
 const topics = ["Research", "Design", "Team management", "Code"]
 const sizes = ["P", "M", "G"]
+const { minWidth } = Utils
+
 function Filters() {
   return (
     <div>
@@ -10,7 +14,7 @@ function Filters() {
       <div
         className="bg-white z-max flex items-center bt justify-between"
         style={{
-          maxWidth: "800px",
+          maxWidth: minWidth,
           top: "0px",
           right: "0px",
           left: "0px",

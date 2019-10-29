@@ -13,6 +13,9 @@ import Header from "./header"
 import "../../node_modules/tachyons/css/tachyons.min.css"
 import "../MyFontsWebfontsKit.css"
 import "./layout.css"
+import Utils from "./utils"
+
+const { minWidth } = Utils
 
 const Layout = ({ children, isWorkInView }) => {
   const data = useStaticQuery(graphql`
@@ -24,7 +27,6 @@ const Layout = ({ children, isWorkInView }) => {
       }
     }
   `)
-
   return (
     <>
       <Header
@@ -37,7 +39,7 @@ const Layout = ({ children, isWorkInView }) => {
           margin: `0 auto`,
           // padding: `0rem 3rem 3rem 3rem`,
           paddingTop: 0,
-          maxWidth: "800px",
+          maxWidth: minWidth,
         }}
       >
         <main>{children}</main>

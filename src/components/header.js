@@ -1,12 +1,14 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
+import Utils from "./utils"
+const { minWidth } = Utils
 
 const Header = ({ siteTitle, isWorkInView }) => (
   <div>
     <header
       style={{
-        maxWidth: "800px",
+        maxWidth: minWidth,
         width: "100%",
         left: 0,
         right: 0,
