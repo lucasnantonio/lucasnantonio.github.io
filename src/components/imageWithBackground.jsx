@@ -5,7 +5,7 @@ import Img from "gatsby-image"
 function ImageWithBackground({ fluid, color, snapToBottom = true, isHovered }) {
   return (
     <div
-      className={`flex flex-column center items-center ${
+      className={`flex overflow-hidden flex-column center items-center ${
         snapToBottom ? "ph5 pt5 justify-end" : "justify-around pa5"
       }`}
       style={{ backgroundColor: color, width: "100%" }}
