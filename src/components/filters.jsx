@@ -12,7 +12,7 @@ function Filters() {
     <div>
       {/* <CSSTransition in={isShowing} timeout={200} classNames="filter-animation"> */}
       <div
-        className="bg-white z-max flex items-center bt justify-between"
+        className="bg-white z-max flex items-center justify-between"
         style={{
           maxWidth: minWidth,
           top: "0px",

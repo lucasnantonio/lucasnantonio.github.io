@@ -11,11 +11,11 @@ function ImageWithBackground({
 }) {
   return (
     <div
-      className={` flex flex-column center items-center br3 ${
+      className={` flex flex-column center items-center br4 ${
         cover
           ? "pa0"
           : snapToBottom
-          ? "ph4 pt4 justify-end"
+          ? "ph5 pt5 justify-end"
           : "justify-around pa5"
       }`}
       style={{ backgroundColor: color, width: "100%", overflow: "visible" }}

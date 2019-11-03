@@ -7,7 +7,7 @@ function Filter({ title }) {
     <li
       onMouseEnter={() => setHover(true)}
       onMouseLeave={() => setHover(false)}
-      className={`black br-pill ba pointer pv2 ph3 neue-regular mr3 db nowrap`}
+      className={`black br-pill ba b--near-white bw1 pointer pv2 ph3 neue-regular mr3 db nowrap`}
       style={{ backgroundColor: isHovered ? "#f7f7f7" : "#ffffff" }}
     >
       {title}

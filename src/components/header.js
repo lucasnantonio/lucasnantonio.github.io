@@ -2,6 +2,7 @@ import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 import Utils from "./utils"
+import Filters from "./filters"
 const { minWidth } = Utils
 
 const Header = ({ siteTitle, isWorkInView }) => (
@@ -15,15 +16,17 @@ const Header = ({ siteTitle, isWorkInView }) => (
         marginRight: "auto",
         marginLeft: "auto",
       }}
-      className={"pv1 flex fixed bg-white z-max space-between bb"}
+      className={
+        "pv1 flex fixed bg-white z-max space-between bb b--near-white bw1"
+      }
     >
       <div className="w-100">
         <Link to="/" className={"link"}>
-          <p className="f3 black neue-regular">Lucas Neumann</p>
+          <p className="f4 black neue-regular">Lucas Neumann</p>
         </Link>
       </div>
       {!isWorkInView === true && (
-        <div className="flex neue-regular f3">
+        <div className="flex neue-regular f4">
           <a className="link black" href="#">
             <p>Intro</p>
           </a>
@@ -35,6 +38,7 @@ const Header = ({ siteTitle, isWorkInView }) => (
           </a>
         </div>
       )}
+      {isWorkInView === true && <Filters />}
     </header>
     <div className="pv2">
       <p className="f3 white"> _</p>

@@ -27,7 +27,7 @@ function PostLink({ post, index }) {
         fluid={post.frontmatter.cover_image.childImageSharp.fluid}
         color={post.frontmatter.color}
       />
-      <div className="pt4">
+      <div className="pt4 pl4">
         <p className={"neue-regular f3 measure-narrow mb0 mt3"}>
           {post.frontmatter.title}
         </p>
