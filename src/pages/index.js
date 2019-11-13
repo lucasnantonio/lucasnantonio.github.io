@@ -14,7 +14,7 @@ function IndexPage({
   },
 }) {
   const [isWorkInView, setWorkInView] = useState(false)
-  const [selectedTopics, setSelectedTopics] = useState(["user research"])
+  const [selectedTopics, setSelectedTopics] = useState([])
   const [selectedSizes, setSelectedSizes] = useState(["P"])
 
   const checkIfWorkIsInView = () => {
@@ -30,14 +30,20 @@ function IndexPage({
     posts.filter(
       item =>
         item.node.frontmatter.topics.some(topic =>
-          selectedTopics.includes(topic)
+          selectedTopics.includes(topic.toLowerCase())
         ) && selectedSizes.includes(item.node.frontmatter.size)
     )
 
   useEffect(checkIfWorkIsInView)
 
   return (
-    <Layout isWorkInView={isWorkInView}>
+    <Layout
+      isWorkInView={isWorkInView}
+      selectedTopics={selectedTopics}
+      selectedSizes={selectedSizes}
+      setSelectedTopics={setSelectedTopics}
+      setSelectedSizes={setSelectedSizes}
+    >
       <SEO title="Home" />
       <Hello />
       <Filters

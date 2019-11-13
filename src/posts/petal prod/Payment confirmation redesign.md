@@ -5,7 +5,7 @@ title: Payment confirmation redesign
 subtitle: Reducing human error and support tickets
 category: Petal
 topics:
-  - product design
+  - design
 published: true
 role:
   - design

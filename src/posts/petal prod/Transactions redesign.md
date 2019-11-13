@@ -4,10 +4,10 @@ date: "2019-05-04"
 title: Accounts page redesign
 category: Petal
 topics:
-	- product design
+	- design
 published: true
 role: 
-	- product design
+	- design
 	- copywriting
 date: October 2019
 cover_image: "../../images/hero-petal.png"

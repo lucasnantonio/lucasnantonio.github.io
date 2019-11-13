@@ -4,7 +4,7 @@ date: "2019-05-04"
 title: Payment summary redesign
 category: Petal
 topics:
-	- product design
+	- design
 published: true
 role: 
 	- design

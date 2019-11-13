@@ -4,7 +4,7 @@ date: "2019-05-04"
 title: "Initial usability testing"
 category: "Nubank"
 topics:
-  - user research
+  - research
 size: P
 color: "gray"
 cover_image: "../../images/image.jpg"

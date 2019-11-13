@@ -4,7 +4,7 @@ date: "2019-05-04"
 title: "Settings 2.0"
 category: "Petal"
 topics:
-  - product design
+  - design
 color: "blue"
 cover_image: "../../images/image.jpg"
 published: false

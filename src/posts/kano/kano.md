@@ -5,7 +5,8 @@ title: Kano Computer
 subtitle: My first job as a product designer
 category: Kano
 topics:
-  - product design
+  - design
+  - research
 published: true
 role:
   - design

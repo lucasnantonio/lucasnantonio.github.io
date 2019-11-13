@@ -20,6 +20,8 @@ function Filter({
       setSelectedTopics(removed)
     }
   }
+  useEffect(() => setSelected(selectedTopics.includes(title)))
+  console.log(selectedTopics)
   const getBackgroundColor = () => {
     if (isSelected) {
       return "#222"
@@ -40,7 +42,6 @@ function Filter({
       onMouseEnter={() => setHover(true)}
       onMouseLeave={() => setHover(false)}
       onClick={() => {
-        setSelected(!isSelected)
         addOrRemoveTopics(title, selectedTopics)
       }}
       className={`black br-pill ba b--near-white bw1 pointer pv2 ph3 neue-regular mr3 db nowrap`}

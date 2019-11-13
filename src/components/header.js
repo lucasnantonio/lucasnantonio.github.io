@@ -5,7 +5,14 @@ import Utils from "./utils"
 import Filters from "./filters"
 const { minWidth } = Utils
 
-const Header = ({ siteTitle, isWorkInView }) => (
+const Header = ({
+  siteTitle,
+  isWorkInView,
+  selectedSizes,
+  selectedTopics,
+  setSelectedTopics,
+  setSelectedSizes,
+}) => (
   <div>
     <header
       style={{
@@ -32,7 +39,14 @@ const Header = ({ siteTitle, isWorkInView }) => (
           </a>
         </div>
       )}
-      {isWorkInView === true && <Filters />}
+      {isWorkInView === true && (
+        <Filters
+          selectedTopics={selectedTopics}
+          selectedSizes={selectedSizes}
+          setSelectedTopics={setSelectedTopics}
+          setSelectedSizes={setSelectedSizes}
+        />
+      )}
     </header>
     <div className="pv2">
       <p className="f3 white"> _</p>

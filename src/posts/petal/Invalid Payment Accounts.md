@@ -7,7 +7,7 @@ color: "pink"
 cover_image: "../../images/hero-petal.png"
 published: false
 topics:
-  - product design
+  - design
 ---
 
 # Invalid account error

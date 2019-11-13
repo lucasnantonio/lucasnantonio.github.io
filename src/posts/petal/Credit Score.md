@@ -4,10 +4,11 @@ date: "2019-05-04"
 title: "Credit score in-app"
 category: "Petal"
 topics:
-  - product design
+  - design
 color: "red"
 cover_image: "../../images/petal.png"
-published: false
+published: true
+size: P
 ---
 
 ## Problems

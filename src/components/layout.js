@@ -17,7 +17,14 @@ import Utils from "./utils"
 
 const { minWidth } = Utils
 
-const Layout = ({ children, isWorkInView }) => {
+const Layout = ({
+  children,
+  isWorkInView,
+  selectedSizes,
+  selectedTopics,
+  setSelectedTopics,
+  setSelectedSizes,
+}) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -32,6 +39,10 @@ const Layout = ({ children, isWorkInView }) => {
       <Header
         isWorkInView={isWorkInView}
         siteTitle={data.site.siteMetadata.title}
+        selectedTopics={selectedTopics}
+        selectedSizes={selectedSizes}
+        setSelectedTopics={setSelectedTopics}
+        setSelectedSizes={setSelectedSizes}
       />
 
       <div

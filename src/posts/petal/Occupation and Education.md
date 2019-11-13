@@ -4,7 +4,7 @@ date: "2019-05-04"
 title: "Occupation and Education"
 category: "Petal"
 topics:
-  - product design
+  - design
 color: "black"
 cover_image: "../../images/image.jpg"
 published: false
