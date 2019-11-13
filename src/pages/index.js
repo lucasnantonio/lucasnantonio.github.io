@@ -14,8 +14,8 @@ function IndexPage({
   },
 }) {
   const [isWorkInView, setWorkInView] = useState(false)
-  const [selectedTopics, setTopic] = useState(["user research"])
-  const [selectedSizes, setSizes] = useState(["P"])
+  const [selectedTopics, setSelectedTopics] = useState(["user research"])
+  const [selectedSizes, setSelectedSizes] = useState(["P"])
 
   const checkIfWorkIsInView = () => {
     window.onscroll = () => {
@@ -39,9 +39,13 @@ function IndexPage({
   return (
     <Layout isWorkInView={isWorkInView}>
       <SEO title="Home" />
-      {/* {posts.forEach(item => console.log(item.node.frontmatter))} */}
       <Hello />
-      <Filters />
+      <Filters
+        selectedTopics={selectedTopics}
+        selectedSizes={selectedSizes}
+        setSelectedTopics={setSelectedTopics}
+        setSelectedSizes={setSelectedSizes}
+      />
       <div id="work">
         <HomeSection
           mainImage={

@@ -8,7 +8,12 @@ const sizes = ["P", "M", "G"]
 
 const { minWidth } = Utils
 
-function Filters() {
+function Filters({
+  selectedSizes,
+  setSelectedSizes,
+  selectedTopics,
+  setSelectedTopics,
+}) {
   return (
     <div>
       {/* <CSSTransition in={isShowing} timeout={200} classNames="filter-animation"> */}
@@ -29,7 +34,12 @@ function Filters() {
           </span>
           <ul className="list pl0 f5 flex" style={{ marginLeft: "-1rem" }}>
             {topics.map(item => (
-              <Filter key={item} title={item} />
+              <Filter
+                selectedTopics={selectedTopics}
+                setSelectedTopics={setSelectedTopics}
+                key={item}
+                title={item}
+              />
             ))}
           </ul>
         </div>
@@ -39,7 +49,14 @@ function Filters() {
           </span>
           <ul className="list pl0 f5 flex" style={{ marginLeft: "-1rem" }}>
             {sizes.map(item => (
-              <Filter key={item} title={item} />
+              <Filter
+                selectedTopics={selectedTopics}
+                selectedSizes={selectedSizes}
+                setSelectedTopics={setSelectedTopics}
+                setSelectedSizes={setSelectedSizes}
+                key={item}
+                title={item}
+              />
             ))}
           </ul>
         </div>
