@@ -31,12 +31,7 @@ function Filter({
     }
     return "#fff"
   }
-  const getColor = () => {
-    if (isSelected) {
-      return "white"
-    }
-    return "#222"
-  }
+
   return (
     <li
       onMouseEnter={() => setHover(true)}
@@ -44,8 +39,12 @@ function Filter({
       onClick={() => {
         addOrRemoveTopics(title, selectedTopics)
       }}
-      className={`black br-pill ba b--near-white bw1 pointer pv2 ph3 neue-regular mr3 db nowrap`}
-      style={{ backgroundColor: getBackgroundColor(), color: getColor() }}
+      className={`black br-pill pointer pv2 ph3 neue-regular mr3 db nowrap`}
+      style={{
+        backgroundColor: getBackgroundColor(),
+        color: !isSelected ? "#222" : "white",
+        border: !isSelected ? "2px solid #f3f3f3" : "2px solid #222",
+      }}
     >
       {title}
     </li>
