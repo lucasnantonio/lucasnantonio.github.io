@@ -3,7 +3,7 @@ path: "/blog/transactions-redesign"
 date: "2019-05-04"
 title: Transactions redesign
 category: Petal
-tags:
+topics:
 	- product design
 published: true
 role: 
@@ -17,12 +17,6 @@ Result: increase in taps to link accounts, per user
 
 ## Problem
 
-
 ## Exploration
 
-
 ## Phase 1: Set the playing field
-
-
-
-

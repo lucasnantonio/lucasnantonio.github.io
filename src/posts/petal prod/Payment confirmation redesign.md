@@ -4,7 +4,7 @@ date: "2019-05-04"
 title: Payment confirmation redesign
 subtitle: Reducing human error and support tickets
 category: Petal
-tags:
+topics:
   - product design
 published: true
 role:
@@ -16,8 +16,6 @@ impact: number of tickets about this reason reduced from X to Y.
 color: "lightBlue"
 snapToBottom: true
 ---
-
-tags: - product
 
 # Payment confirmation redesign
 

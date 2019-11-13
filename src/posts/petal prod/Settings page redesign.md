@@ -3,9 +3,8 @@ path: /blog/settings-page-redesign
 date: "2019-05-04"
 title: Settings page redesign
 category: Petal
-tags:
+topics:
   - product design
-  - user research
 published: true
 role:
   - design

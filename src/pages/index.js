@@ -5,6 +5,7 @@ import HomeSection from "../components/home-section"
 import SEO from "../components/seo"
 import Hello from "../components/hello"
 import Filters from "../components/filters"
+import { StaticQuery } from "gatsby"
 
 function IndexPage({
   data: {
@@ -13,6 +14,8 @@ function IndexPage({
   },
 }) {
   const [isWorkInView, setWorkInView] = useState(false)
+  const [selectedTopics, setTopic] = useState(["user research"])
+  const [selectedSizes, setSizes] = useState(["P"])
 
   const checkIfWorkIsInView = () => {
     window.onscroll = () => {
@@ -23,12 +26,20 @@ function IndexPage({
     }
   }
 
+  const getFilteredPosts = () =>
+    posts.filter(
+      item =>
+        item.node.frontmatter.topics.some(topic =>
+          selectedTopics.includes(topic)
+        ) && selectedSizes.includes(item.node.frontmatter.size)
+    )
+
   useEffect(checkIfWorkIsInView)
 
   return (
     <Layout isWorkInView={isWorkInView}>
       <SEO title="Home" />
-
+      {/* {posts.forEach(item => console.log(item.node.frontmatter))} */}
       <Hello />
       <Filters />
       <div id="work">
@@ -38,7 +49,7 @@ function IndexPage({
               item => item.fluid.originalName === "hero-petal.png"
             )[0].fluid
           }
-          posts={posts}
+          posts={getFilteredPosts()}
           title="Petal"
           date="2019"
           place="New York"
@@ -50,7 +61,7 @@ function IndexPage({
               item => item.fluid.originalName === "hero-nubank.png"
             )[0].fluid
           }
-          posts={posts}
+          posts={getFilteredPosts()}
           title="Nubank"
           date="2016—2019"
           place="São Paulo"
@@ -60,7 +71,7 @@ function IndexPage({
           mainImage={
             posts[0].node.frontmatter.cover_image.childImageSharp.fluid
           }
-          posts={posts}
+          posts={getFilteredPosts()}
           title="Kano"
           date="2013"
           place="London"
@@ -70,7 +81,7 @@ function IndexPage({
           mainImage={
             posts[0].node.frontmatter.cover_image.childImageSharp.fluid
           }
-          posts={posts}
+          posts={getFilteredPosts()}
           title="Personal work"
           date="2013"
           place="London"
@@ -116,6 +127,7 @@ export const pageQuery = graphql`
             title
             subtitle
             category
+            topics
             color
             published
             snapToBottom

@@ -10,9 +10,10 @@ export default function Template({
   const { frontmatter, html } = markdownRemark
   return (
     <Layout>
-      <div className="pt6 flex mb5">
+      <div className="pt4 flex mb5">
         <div>
-          <h1 className="neue-regular">{frontmatter.title}</h1>
+          <h1 className="neue-regular f1">{frontmatter.title}</h1>
+          <h2 className="f2 black-40">{frontmatter.subtitle}</h2>
           <h2>{frontmatter.date}</h2>
         </div>
       </div>

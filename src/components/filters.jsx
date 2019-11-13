@@ -3,8 +3,9 @@ import { CSSTransition } from "react-transition-group"
 import Filter from "./filter"
 import Utils from "./utils"
 
-const topics = ["Research", "Design", "Team management", "Code"]
+const topics = ["Research", "Design", "Team management", "Code", "Writing"]
 const sizes = ["P", "M", "G"]
+
 const { minWidth } = Utils
 
 function Filters() {

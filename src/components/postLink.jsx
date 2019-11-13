@@ -10,7 +10,7 @@ function PostLink({ post, index }) {
     <Link
       onMouseEnter={() => setHover(true)}
       onMouseLeave={() => setHover(false)}
-      className={` ${post.frontmatter.size !== "large" ? "w-50" : "w-100"}  
+      className={` ${post.frontmatter.size !== "large" ? "w-third" : "w-100"}  
         link black flex flex-column relative fl pa2
         `}
       style={

@@ -3,10 +3,12 @@ path: "/blog/petal-onboarding"
 date: "2019-11-04"
 title: "NuConta: a savings account from 0 to 10MM users"
 category: "Nubank"
+topics:
+  - product design
 color: "#BB6BD9"
 cover_image: "../../images/nubank/nuconta-01.png"
 published: true
-size: "large"
+size: P
 ---
 
 1. I want to get my first credit card.

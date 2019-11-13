@@ -27,12 +27,6 @@ const Header = ({ siteTitle, isWorkInView }) => (
       </div>
       {!isWorkInView === true && (
         <div className="flex neue-regular f4">
-          <a className="link black" href="#">
-            <p>Intro</p>
-          </a>
-          <a className="ml4 link black" href="#work">
-            <p>Work</p>
-          </a>
           <a className="ml4 link black" href="#contact">
             <p>Contact</p>
           </a>

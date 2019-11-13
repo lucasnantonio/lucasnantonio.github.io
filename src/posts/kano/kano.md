@@ -4,7 +4,7 @@ date: "2019-05-04"
 title: Kano Computer
 subtitle: My first job as a product designer
 category: Kano
-tags:
+topics:
   - product design
 published: true
 role:
@@ -16,8 +16,6 @@ color: "#FF7D01"
 size: "large"
 cover: true
 ---
-
-tags: - product
 
 In the summer of 2014, I got my first job with digital products at Kano Computer, a record-breaking Kickstarter.com startup, as their incredible teams sprinted to ship the first version of Kano.
 
