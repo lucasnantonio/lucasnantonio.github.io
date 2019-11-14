@@ -15,10 +15,13 @@ function Filter({
 
   const addOrRemoveTopics = (title, selectedTopics) => {
     if (isAll) {
-      console.log("all")
       setSelectedTopics([title])
       setAll(false)
       return
+    }
+    if (isSelected && selectedTopics.length === 1) {
+      setSelectedTopics(topics)
+      setAll(true)
     }
     if (!isSelected) {
       const joined = selectedTopics.filter(item => item !== title).concat(title)
@@ -30,8 +33,7 @@ function Filter({
     }
   }
   useEffect(() => setSelected(!isAll && selectedTopics.includes(title)))
-  console.log(isAll)
-  console.log(selectedTopics)
+
   const getBackgroundColor = () => {
     if (!isAll && isSelected) {
       return "#222"
