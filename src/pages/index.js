@@ -32,11 +32,10 @@ function IndexPage({
     if (isAll) {
       return posts
     } else {
-      return posts.filter(
-        item =>
-          item.node.frontmatter.topics.some(topic =>
-            selectedTopics.includes(topic.toLowerCase())
-          ) && selectedSizes.includes(item.node.frontmatter.size)
+      return posts.filter(item =>
+        item.node.frontmatter.topics.some(topic =>
+          selectedTopics.includes(topic)
+        )
       )
     }
   }
