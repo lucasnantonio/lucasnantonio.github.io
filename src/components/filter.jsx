@@ -14,7 +14,7 @@ function Filter({
 
   const addOrRemoveTopics = (title, selectedTopics) => {
     if (!isSelected) {
-      const joined = selectedTopics.concat(title)
+      const joined = selectedTopics.filter(item => item !== title).concat(title)
       setSelectedTopics(joined)
     } else {
       const index = selectedTopics.indexOf(title)
@@ -22,7 +22,7 @@ function Filter({
       setSelectedTopics(removed)
     }
   }
-  useEffect(() => setSelected(selectedTopics.includes(title)))
+  useEffect(() => setSelected(!isAll && selectedTopics.includes(title)))
   console.log(isAll)
   console.log(selectedTopics)
   const getBackgroundColor = () => {

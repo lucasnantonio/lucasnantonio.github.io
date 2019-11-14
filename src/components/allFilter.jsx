@@ -6,7 +6,7 @@ function AllFilter({ setSelectedTopics, isAll, setAll }) {
   const [isSelected, setSelected] = useState(false)
 
   const getBackgroundColor = () => {
-    if (isSelected) {
+    if (isAll) {
       return "#222"
     }
     if (isHovered) {
@@ -20,15 +20,15 @@ function AllFilter({ setSelectedTopics, isAll, setAll }) {
       onMouseEnter={() => setHover(true)}
       onMouseLeave={() => setHover(false)}
       onClick={() => {
-        setSelected(!isSelected)
+        setSelected(isAll)
         setSelectedTopics(topics)
-        setAll(!isAll)
+        setAll(isAll)
       }}
       className={`black br-pill pointer pv2 ph3 neue-regular mr3 dib nowrap`}
       style={{
         backgroundColor: getBackgroundColor(),
-        color: !isSelected ? "#222" : "white",
-        border: !isSelected ? "2px solid #f3f3f3" : "2px solid #222",
+        color: !isAll ? "#222" : "white",
+        border: !isAll ? "2px solid #f3f3f3" : "2px solid #222",
       }}
     >
       All
