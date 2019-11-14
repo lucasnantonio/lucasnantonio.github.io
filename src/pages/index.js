@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react"
+import React, { useState, useEffect, isValidElement } from "react"
 import Layout from "../components/layout"
 import PostList from "../components/postList"
 import HomeSection from "../components/home-section"
@@ -6,6 +6,7 @@ import SEO from "../components/seo"
 import Hello from "../components/hello"
 import Filters from "../components/filters"
 import { StaticQuery } from "gatsby"
+import { minWidth, topics, sizes } from "../components/utils"
 
 function IndexPage({
   data: {
@@ -14,8 +15,9 @@ function IndexPage({
   },
 }) {
   const [isWorkInView, setWorkInView] = useState(false)
+  const [isAll, setAll] = useState(true)
   const [selectedTopics, setSelectedTopics] = useState([])
-  const [selectedSizes, setSelectedSizes] = useState(["P"])
+  const [selectedSizes, setSelectedSizes] = useState([])
 
   const checkIfWorkIsInView = () => {
     window.onscroll = () => {
@@ -26,18 +28,25 @@ function IndexPage({
     }
   }
 
-  const getFilteredPosts = () =>
-    posts.filter(
-      item =>
-        item.node.frontmatter.topics.some(topic =>
-          selectedTopics.includes(topic.toLowerCase())
-        ) && selectedSizes.includes(item.node.frontmatter.size)
-    )
+  const getFilteredPosts = () => {
+    if (isAll) {
+      return posts
+    } else {
+      return posts.filter(
+        item =>
+          item.node.frontmatter.topics.some(topic =>
+            selectedTopics.includes(topic.toLowerCase())
+          ) && selectedSizes.includes(item.node.frontmatter.size)
+      )
+    }
+  }
 
   useEffect(checkIfWorkIsInView)
 
   return (
     <Layout
+      isAll={isAll}
+      setAll={setAll}
       isWorkInView={isWorkInView}
       selectedTopics={selectedTopics}
       selectedSizes={selectedSizes}
@@ -47,6 +56,8 @@ function IndexPage({
       <SEO title="Home" />
       <Hello />
       <Filters
+        isAll={isAll}
+        setAll={setAll}
         selectedTopics={selectedTopics}
         selectedSizes={selectedSizes}
         setSelectedTopics={setSelectedTopics}

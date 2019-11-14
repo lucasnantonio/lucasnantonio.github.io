@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 import React from "react"
 import Utils from "./utils"
 import Filters from "./filters"
-const { minWidth } = Utils
+import { minWidth } from "./utils"
 
 const Header = ({
   siteTitle,

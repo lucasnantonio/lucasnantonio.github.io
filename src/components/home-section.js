@@ -9,7 +9,9 @@ const HomeSection = ({ title, date, description, posts }) => {
   )
   return (
     <div
-      className={"w-100 flex flex-row-l flex-column mb6 bt b--near-white bw1"}
+      className={
+        "w-100 flex flex-row-l flex-column mb6 mt4 bt b--near-white bw1"
+      }
     >
       <div className="pt6 w-100">
         <h2 className={"pb2 f1 mt0 pt0 sans b"}>{title}</h2>

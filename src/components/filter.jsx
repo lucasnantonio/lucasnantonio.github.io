@@ -39,7 +39,7 @@ function Filter({
       onClick={() => {
         addOrRemoveTopics(title, selectedTopics)
       }}
-      className={`black br-pill pointer pv2 ph3 neue-regular mr3 db nowrap`}
+      className={`black br-pill pointer pv2 ph3 neue-regular mr3 dib nowrap`}
       style={{
         backgroundColor: getBackgroundColor(),
         color: !isSelected ? "#222" : "white",

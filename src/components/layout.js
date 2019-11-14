@@ -13,9 +13,7 @@ import Header from "./header"
 import "../../node_modules/tachyons/css/tachyons.min.css"
 import "../MyFontsWebfontsKit.css"
 import "./layout.css"
-import Utils from "./utils"
-
-const { minWidth } = Utils
+import { minWidth } from "./utils"
 
 const Layout = ({
   children,

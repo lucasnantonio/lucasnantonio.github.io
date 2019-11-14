@@ -1,5 +1,9 @@
-const Utils = {
-  minWidth: "1000px",
-}
-
-export default Utils
+export const minWidth = "1000px"
+export const topics = [
+  "research",
+  "design",
+  "team management",
+  "code",
+  "writing",
+]
+export const sizes = ["S", "M", "L"]
