@@ -16,7 +16,7 @@ function IndexPage({
 }) {
   const [isWorkInView, setWorkInView] = useState(false)
   const [isAll, setAll] = useState(true)
-  const [selectedTopics, setSelectedTopics] = useState([])
+  const [selectedTopics, setSelectedTopics] = useState(topics)
   const [selectedSizes, setSelectedSizes] = useState([])
 
   const checkIfWorkIsInView = () => {

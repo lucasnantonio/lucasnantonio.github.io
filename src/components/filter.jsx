@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react"
+import { minWidth, topics, sizes } from "../components/utils"
 
 function Filter({
   title,
@@ -6,6 +7,7 @@ function Filter({
   selectedTopics,
   setSelectedTopics,
   setSelectedSizes,
+  isAll,
 }) {
   const [isHovered, setHover] = useState(false)
   const [isSelected, setSelected] = useState(false)
@@ -21,9 +23,10 @@ function Filter({
     }
   }
   useEffect(() => setSelected(selectedTopics.includes(title)))
+  console.log(isAll)
   console.log(selectedTopics)
   const getBackgroundColor = () => {
-    if (isSelected) {
+    if (selectedTopics.length !== topics && isSelected) {
       return "#222"
     }
     if (isHovered) {

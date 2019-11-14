@@ -1,6 +1,7 @@
 import React, { useState } from "react"
 import { CSSTransition } from "react-transition-group"
 import Filter from "./filter"
+import AllFilter from "./allFilter"
 import { minWidth, topics, sizes } from "./utils"
 
 // const { minWidth, topics, sizes } = Utils
@@ -10,6 +11,8 @@ function Filters({
   setSelectedSizes,
   selectedTopics,
   setSelectedTopics,
+  isAll,
+  setAll,
 }) {
   return (
     <div
@@ -24,14 +27,13 @@ function Filters({
       }}
     >
       <div className="flex items-center">
-        <Filter
+        <AllFilter
           selectedTopics={selectedTopics}
           setSelectedTopics={setSelectedTopics}
           selectedSizes={setSelectedSizes}
           setSelectedSizes={setSelectedSizes}
           isAll={isAll}
-          key="All"
-          title="All"
+          setAll={setAll}
         />
       </div>
       <div className="flex nowrap">
@@ -43,6 +45,8 @@ function Filters({
               selectedSizes={setSelectedSizes}
               setSelectedSizes={setSelectedSizes}
               key={item}
+              isAll={isAll}
+              setAll={setAll}
               title={item}
             />
           ))}
