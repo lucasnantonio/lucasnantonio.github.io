@@ -8,11 +8,18 @@ function Filter({
   setSelectedTopics,
   setSelectedSizes,
   isAll,
+  setAll,
 }) {
   const [isHovered, setHover] = useState(false)
   const [isSelected, setSelected] = useState(false)
 
   const addOrRemoveTopics = (title, selectedTopics) => {
+    if (isAll) {
+      console.log("all")
+      setSelectedTopics([title])
+      setAll(false)
+      return
+    }
     if (!isSelected) {
       const joined = selectedTopics.filter(item => item !== title).concat(title)
       setSelectedTopics(joined)
