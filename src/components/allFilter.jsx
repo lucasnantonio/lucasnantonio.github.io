@@ -22,7 +22,7 @@ function AllFilter({ setSelectedTopics, isAll, setAll }) {
       onClick={() => {
         setSelected(isAll)
         setSelectedTopics(topics)
-        setAll(isAll)
+        setAll(true)
       }}
       className={`black br-pill pointer pv2 ph3 neue-regular mr3 dib nowrap`}
       style={{

@@ -33,13 +33,14 @@ function Filter({
   console.log(isAll)
   console.log(selectedTopics)
   const getBackgroundColor = () => {
-    if (selectedTopics.length !== topics && isSelected) {
+    if (!isAll && isSelected) {
       return "#222"
     }
     if (isHovered) {
       return "#f7f7f7"
+    } else {
+      return "#fff"
     }
-    return "#fff"
   }
 
   return (
