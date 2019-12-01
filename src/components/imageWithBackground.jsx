@@ -17,13 +17,9 @@ function ImageWithBackground({
     >
       <Img
         className="h-auto-l"
-        imgStyle={{
-          transform: !isHovered ? "scale(1)" : "scale(1.02)",
-        }}
         backgroundColor="#f0f0f0"
         fluid={fluid}
         objectFit="contain"
-        // objectPosition="50% 50%"
       ></Img>
     </div>
   )

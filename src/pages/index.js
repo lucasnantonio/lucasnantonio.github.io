@@ -40,18 +40,13 @@ function IndexPage({
     }
   }
 
-  useEffect(checkIfWorkIsInView)
-
   return (
     <Layout
       isIndex
       isAll={isAll}
       setAll={setAll}
-      isWorkInView={isWorkInView}
       selectedTopics={selectedTopics}
-      selectedSizes={selectedSizes}
       setSelectedTopics={setSelectedTopics}
-      setSelectedSizes={setSelectedSizes}
     >
       <SEO title="Home" />
       <Hello />
@@ -64,6 +59,7 @@ function IndexPage({
         setSelectedSizes={setSelectedSizes}
       /> */}
       <div id="work">
+        {console.log(getFilteredPosts())}
         <HomeSection
           mainImage={
             images.filter(

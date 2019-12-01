@@ -6,13 +6,7 @@ import { minWidth, topics, sizes } from "./utils"
 
 // const { minWidth, topics, sizes } = Utils
 
-function Filters({
-  setSelectedSizes,
-  selectedTopics,
-  setSelectedTopics,
-  isAll,
-  setAll,
-}) {
+function Filters({ selectedTopics, setSelectedTopics, isAll, setAll }) {
   return (
     <div
       className="bg-white z-max flex justify-end"
@@ -31,8 +25,6 @@ function Filters({
             <Filter
               selectedTopics={selectedTopics}
               setSelectedTopics={setSelectedTopics}
-              selectedSizes={setSelectedSizes}
-              setSelectedSizes={setSelectedSizes}
               key={item}
               isAll={isAll}
               setAll={setAll}

@@ -32,7 +32,7 @@ function PostLink({ post, index }) {
           bottom: "0px",
         }}
       >
-        <p className={"neue-regular f4 measure-narrow mb0 mt3"}>
+        <p className={"neue-regular f5 measure-narrow mb0 mt3"}>
           {post.frontmatter.title}
         </p>
         <p
