@@ -44,6 +44,7 @@ function IndexPage({
 
   return (
     <Layout
+      isIndex
       isAll={isAll}
       setAll={setAll}
       isWorkInView={isWorkInView}
@@ -54,14 +55,14 @@ function IndexPage({
     >
       <SEO title="Home" />
       <Hello />
-      <Filters
+      {/* <Filters
         isAll={isAll}
         setAll={setAll}
         selectedTopics={selectedTopics}
         selectedSizes={selectedSizes}
         setSelectedTopics={setSelectedTopics}
         setSelectedSizes={setSelectedSizes}
-      />
+      /> */}
       <div id="work">
         <HomeSection
           mainImage={

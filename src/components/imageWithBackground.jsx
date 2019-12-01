@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 import React, { useState } from "react"
-import Img from "gatsby-image"
+import Img from "gatsby-image/withIEPolyfill"
 
 function ImageWithBackground({
   fluid,
@@ -11,24 +11,18 @@ function ImageWithBackground({
 }) {
   return (
     <div
-      className={` flex flex-column center items-center ${
-        cover
-          ? "pa0"
-          : snapToBottom
-          ? "ph5 pt5 justify-end"
-          : "justify-around pa5"
-      }`}
-      style={{ backgroundColor: color, width: "100%", overflow: "visible" }}
+      style={{
+        backgroundColor: !isHovered ? "#f0f0f0" : "#e7e7e7",
+      }}
     >
-      <div className={`w-100`}>
-        <Img
-          style={{
-            overflow: "show",
-            transform: `scale(${isHovered ? "1.03" : "1"})`,
-          }}
-          fluid={fluid}
-        ></Img>
-      </div>
+      <Img
+        className="h-auto-l"
+        imgStyle={{ marginTop: "-2rem" }}
+        backgroundColor="#f0f0f0"
+        fluid={fluid}
+        objectFit="contain"
+        // objectPosition="50% 50%"
+      ></Img>
     </div>
   )
 }

@@ -10,28 +10,37 @@ function PostLink({ post, index }) {
     <Link
       onMouseEnter={() => setHover(true)}
       onMouseLeave={() => setHover(false)}
-      className={` ${post.frontmatter.size !== "large" ? "w-50" : "w-100"}  
-        link black flex flex-column relative fl pa2
+      className={` ${
+        post.frontmatter.size !== "large" ? "w-50-l w-100" : "w-100"
+      }  
+        link black flex flex-column relative fl pa2 mb3
         `}
-      style={
-        {
-          // border: isHovered ? "2px solid #eee" : "2px solid white",
-        }
-      }
       to={post.frontmatter.path}
     >
       <ImageWithBackground
         cover={post.frontmatter.cover}
-        snapToBottom={post.frontmatter.snapToBottom}
         isHovered={isHovered}
         fluid={post.frontmatter.cover_image.childImageSharp.fluid}
         color={post.frontmatter.color}
       />
-      <div className="pt4 pl4">
-        <p className={"neue-regular f3 measure-narrow mb0 mt3"}>
+      <div
+        className="pt2 bg-white black absolute w-100"
+        style={{
+          transition: "all .2s ease-in-out",
+          bottom: "0px",
+        }}
+      >
+        <p className={"neue-regular f5 measure-narrow mb0 mt3"}>
           {post.frontmatter.title}
         </p>
-        <p className={"mt2 f3 black-30 measure-narrow lh-copy"}>
+        <p
+          className={"mt2 f5 black-30 neue-regular measure-narrow lh-copy"}
+          style={{
+            transition: "all 2s ease-in-out",
+            overflow: "hidden",
+            maxHeight: isHovered ? "100px" : "0px",
+          }}
+        >
           {post.frontmatter.subtitle}
         </p>
       </div>

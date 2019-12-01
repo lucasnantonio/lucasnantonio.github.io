@@ -7,7 +7,7 @@ topics:
   - research
 size: P
 color: "#f2f2f2"
-cover_image: "../../images/image.jpg"
+cover_image: "../../images/nubank/testing-hero.png"
 published: true
 ---
 

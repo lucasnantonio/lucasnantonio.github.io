@@ -1,16 +1,14 @@
 ---
-path: "/blog/accounts-page-redesign"
+path: "/blog/transaction-detail-redesign"
 date: "2019-05-04"
-title: Accounts page redesign
+title: Trnsaction detail
 category: Petal
 topics:
-	- design
+  - design
 published: true
-role: 
-	- design
-	- copywriting
-date: October 2019
-cover_image: "../../images/hero-petal.png"
+role:
+  - design
+cover_image: "../../images/petal/transaction-details-hero.png"
 impact: more consistent experience across feed events
 ---
 

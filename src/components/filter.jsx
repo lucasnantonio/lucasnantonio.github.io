@@ -1,15 +1,7 @@
 import React, { useState, useEffect } from "react"
 import { minWidth, topics, sizes } from "../components/utils"
 
-function Filter({
-  title,
-  selectedSizes,
-  selectedTopics,
-  setSelectedTopics,
-  setSelectedSizes,
-  isAll,
-  setAll,
-}) {
+function Filter({ title, selectedTopics, setSelectedTopics, isAll, setAll }) {
   const [isHovered, setHover] = useState(false)
   const [isSelected, setSelected] = useState(false)
 

@@ -7,11 +7,11 @@ import { minWidth } from "./utils"
 
 const Header = ({
   siteTitle,
-  isWorkInView,
-  selectedSizes,
   selectedTopics,
   setSelectedTopics,
-  setSelectedSizes,
+  isAll,
+  setAll,
+  isIndex,
 }) => (
   <div>
     <header
@@ -24,29 +24,22 @@ const Header = ({
         marginLeft: "auto",
       }}
       className={
-        "pv1 flex fixed bg-white z-max space-between bb b--near-white bw1"
+        "pv1 flex fixed bg-white z-max space-between bb b--near-white bw1 ph0-l ph4"
       }
     >
       <div className="w-100">
         <Link to="/" className={"link"}>
-          <p className="f4 black neue-regular">Lucas Neumann</p>
+          <p className="f5 black neue-regular">Lucas Neumann</p>
         </Link>
       </div>
-      {!isWorkInView === true && (
-        <div className="flex neue-regular f4">
-          <a className="ml4 link black" href="#contact">
-            <p>Contact</p>
-          </a>
-        </div>
-      )}
-      {isWorkInView === true && (
+      {/* {isIndex && (
         <Filters
           selectedTopics={selectedTopics}
-          selectedSizes={selectedSizes}
           setSelectedTopics={setSelectedTopics}
-          setSelectedSizes={setSelectedSizes}
+          isAll={isAll}
+          setAll={setAll}
         />
-      )}
+      )} */}
     </header>
     <div className="pv2">
       <p className="f3 white"> _</p>

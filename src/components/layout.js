@@ -18,10 +18,11 @@ import { minWidth } from "./utils"
 const Layout = ({
   children,
   isWorkInView,
-  selectedSizes,
+  isAll,
+  setAll,
   selectedTopics,
   setSelectedTopics,
-  setSelectedSizes,
+  isIndex,
 }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
@@ -38,15 +39,16 @@ const Layout = ({
         isWorkInView={isWorkInView}
         siteTitle={data.site.siteMetadata.title}
         selectedTopics={selectedTopics}
-        selectedSizes={selectedSizes}
         setSelectedTopics={setSelectedTopics}
-        setSelectedSizes={setSelectedSizes}
+        isAll={isAll}
+        setAll={setAll}
+        isIndex={isIndex}
       />
 
       <div
+        className="pt0 ph0-l ph4"
         style={{
           margin: `0 auto`,
-          // padding: `0rem 3rem 3rem 3rem`,
           paddingTop: 0,
           maxWidth: minWidth,
         }}

@@ -7,7 +7,6 @@ import { minWidth, topics, sizes } from "./utils"
 // const { minWidth, topics, sizes } = Utils
 
 function Filters({
-  selectedSizes,
   setSelectedSizes,
   selectedTopics,
   setSelectedTopics,
@@ -16,7 +15,7 @@ function Filters({
 }) {
   return (
     <div
-      className="bg-white z-max flex justify-between"
+      className="bg-white z-max flex justify-end"
       style={{
         maxWidth: minWidth,
         top: "0px",
@@ -30,14 +29,12 @@ function Filters({
         <AllFilter
           selectedTopics={selectedTopics}
           setSelectedTopics={setSelectedTopics}
-          selectedSizes={setSelectedSizes}
-          setSelectedSizes={setSelectedSizes}
           isAll={isAll}
           setAll={setAll}
         />
       </div>
       <div className="flex nowrap">
-        <div className="list pl0 f5 flex items-center br bw1 mr3 b--near-white">
+        <div className="list pl0 f5 flex items-center b--near-white">
           {topics.map(item => (
             <Filter
               selectedTopics={selectedTopics}
@@ -51,7 +48,7 @@ function Filters({
             />
           ))}
         </div>
-        <div className="list pl0 f5 flex items-center">
+        {/* <div className="list pl0 f5 flex items-center">
           {sizes.map(item => (
             <Filter
               isAll={isAll}
@@ -64,7 +61,7 @@ function Filters({
               title={item}
             />
           ))}
-        </div>
+        </div> */}
       </div>
     </div>
   )

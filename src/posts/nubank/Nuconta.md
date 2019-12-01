@@ -1,12 +1,13 @@
 ---
 path: "/blog/petal-onboarding"
 date: "2019-11-04"
-title: "NuConta: a savings account from 0 to 10MM users"
+title: "NuConta"
+subtitle: "A savings account from 0 to 10MM users"
 category: "Nubank"
 topics:
   - design
 color: "#f2f2f2"
-cover_image: "../../images/nubank/nuconta-01.png"
+cover_image: "../../images/nubank/nuconta-hero.png"
 published: true
 size: P
 ---
