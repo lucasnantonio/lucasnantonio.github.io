@@ -8,8 +8,8 @@ problem: Brazilians are locked into bad banking account options because of big b
 solution: A new type of free, integrated, hybrid checking and savings account.
 impact: 10+ Million customers after 1 year of launch, becoming the biggest startup in Latin America.
 topics:
-  - design
-  - research
+  - Design
+  - Research
 roles:
   - design lead
   - research lead
