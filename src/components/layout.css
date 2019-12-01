@@ -4,6 +4,7 @@ html {
   font-weight: 300;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
+  color: #666666;
 }
 body * {
   transition: all 0.2s !important;
@@ -19,6 +20,7 @@ h3,
 h4,
 h5 {
   font-weight: 300;
+  color: black;
 }
 .neue-regular {
   font-family: "NeuePlakText-Regular";

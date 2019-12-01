@@ -2,6 +2,7 @@
 path: /blog/settings-page-redesign
 date: "2019-05-04"
 title: Settings page redesign
+subtitle: Opening space for growth and managing complexity
 category: Petal
 topics:
   - design

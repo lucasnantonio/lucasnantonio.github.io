@@ -2,6 +2,7 @@
 path: "/blog/transaction-detail-redesign"
 date: "2019-05-04"
 title: Trnsaction detail
+subtitle: Creating engagement and deflecting tickets
 category: Petal
 topics:
   - design

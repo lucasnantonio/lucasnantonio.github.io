@@ -24,7 +24,7 @@ function AllFilter({ setSelectedTopics, isAll, setAll }) {
         setSelectedTopics(topics)
         setAll(true)
       }}
-      className={`black br-pill pointer pv2 ph3 neue-regular mr3 dib nowrap`}
+      className={`black br-pill pointer pv2 ph3 neue-regular mr3 dib nowrap f7`}
       style={{
         backgroundColor: getBackgroundColor(),
         color: !isAll ? "#222" : "white",

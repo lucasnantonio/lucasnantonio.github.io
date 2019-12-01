@@ -7,7 +7,7 @@ const PostList = ({ posts }) => {
     <PostLink index={index} key={post.node.id} post={post.node} />
   ))
 
-  return <div className={"w-100 flex flex-wrap"}>{list}</div>
+  return <div className={"cf center"}>{list}</div>
 }
 
 export default PostList

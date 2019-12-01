@@ -1,62 +1,85 @@
 ---
-path: "/blog/petal-onboarding"
+path: "/blog/nubank/nuconta"
 date: "2019-11-04"
 title: "NuConta"
-subtitle: "A savings account from 0 to 10MM users"
+subtitle: The only possible bank account.
 category: "Nubank"
+problem: Design Nubank's second product, in order to expand the reach of the company's banking platform.
+solution: A new type of free, integrated, hybrid checking and savings account.
+impact: 10+ Million customers after 1 year of launch, becoming the biggest startup in Latin America.
 topics:
   - design
+  - research
 color: "#f2f2f2"
 cover_image: "../../images/nubank/nuconta-hero.png"
 published: true
 size: P
+learn_more: nubank.com.br/nuconta
+where: São Paulo
+when: 2017-2018
+design_team:
+  - Lucas Neumann
+  - Rachel Jordan
+  - Erick Mazer
+  - Vitor Gurgel
 ---
 
-1. I want to get my first credit card.
+NuConta is an unprecedented mix of current, savings, and payments accounts, all-in-one. Thanks to a one-year-long co-creative process, our team was able to design and ship a product that uniquely addresses customer needs.
 
-   - To start building my credit score
-   - To get rewards on my purchases
-   - To get help with my cashflow
-   - To sign a lease or commit to a big purchase
+## 1. Discovery
 
-2. I have another card but want a new one.
+### Problem exploration
 
-   - I want a better digital experience
-   - I want better prices, rewards, rates
-   - I want a backup / emergency card
+We were committed to challenging our most basic assumptions about how people understand and use banking services, so our initial conversations were purposefully broad and naive. We started with a simple list of questions, but we frequently adjusted along the way.
 
-3. I want to rebuild my credit score
+We ran in-depth interviews with people from different ages and backgrounds in the office, but also on public places like malls and a public university. We sat down and very informally let people talk about their financial lives, how they felt about saving, investing, transferring, and spending their money. We also experimented with some visual aids such as card-sorting and very cheap prototypes, but honestly, our best feedback tools were our competitor's websites and products. We learned an incredible amount just by having people experiment with things other companies have already built.
 
-   - My credit history was hurt in the past
-   - I've just got divorced
-   - Better credit for big commitments
-   - I need to sign a lease
+## 2. Define
 
-4. I'm new to the US
+### Problem definition
 
----
+By combining the data from these interviews with others conducted in our lab, and also talking to a lot of our employees about their finances, we were able to come up with eight personas that represent a gradient of behavior and demographic patterns.
 
-Which of these apply to you?
+With well-defined personas, we now had a lens through which we could look at the problem. Our initial mission, which was very broad, could now be better expressed in sentences that the whole team could agree on:
 
-- I'm in college and want my first card
-- I want a credit card independently of my parents / spouse
-- I like how the card looks
-- I'm a recent grad
-- I just got divorced
-- I want to upgrade from debit cards
-- I'm new to the country
-- I want better zero fees
-- I want to get rewards on my spending
-- I want a backup / emergency card
-- I'm rebuilding my score - ...ton of scenarios here
-- I'm tired of my current banking experience
-- I want better customer service
-- I want a cool card (early adopter)
-- I want to better manage my finances
-- I'm need money for a big expense
-- I need credit score for a future big expense
+> How might we design an evolution of the current and savings accounts, for people looking for a more accessible and easy-to-use bank account? It should be free of complexity, free of charge abusive fees, and make your money grow at a fair interest rate. Differently from big banks and other fintech pre-paid products, NuConta needs to achieve zero bureaucracy, reduce adoption friction and provide a superior user experience.
 
-I need a new credit card because
-...
-And the things I care the most about are
-...
+We learned from this process that defining a problem is sometimes harder than sitting down to solve it. After dozens of long work days, heated meetings, lots of head-scratching, word-smithing, and sense-making about the material collected during research, the team was finally committed to a unified vision of the product that reflected our customer’s pains and needs instead of our own. We were now ready to deep dive into exploring solutions that would eventually become NuConta.
+
+## 3. Design
+
+### Generating solutions
+
+The first thing we do at Nubank once we have a sound problem definition is what we call a co-design session, which helps us come up with more ideas, better questions, surface constraints and strong stakeholder opinions.
+
+Based on the ideas generated by the team, we started the deepest dive I’ve ever taken on product design exploration. In many ways, both from a technical and a product perspective, NuConta does not fit squarely into a checking, savings or investment account “box”, so we found it a real challenge to align the interface with a user’s pre-existing mental models about money management. A new paradigm for how the money was going to be kept and used required a lot of hard thinking about accounting and how to best represent it on a screen. Given this potential complexity, we spent most of this time collaborating at the white-board without touching a digital design tool.
+
+Only after extensive discussion and brainstorming, we felt ready to start wireframes and pixel pushing: we tried dozens of versions of the UI of onboarding flows, empty states, investment simulators, charts (OMG so many charts), financial goals, investment streaks, etc. We allowed ourselves to go quite crazy in the beginning, bypassing many rules of our current design system, and then adjusted as we got closer to the final result.
+
+### Prototyping
+
+We made every kind of prototype you could imagine when exploring solutions for NuConta. We made cheap paper prototypes to test copywriting and general information architecture. We made quick Keynote animations to show engineers the vision for a specific interaction. We built screens and flows on Principle to test signup flows and empty states. Some prototypes even had fake branding and visuals so we could go outside the building and show it around in stealth mode.
+
+Starting with simpler, lower fidelity prototypes allowed us to trim the rough edges of the product overall concept, until we eventually hit a level of complexity in the tests that required a more high fidelity, versatile prototype. So we decided to invest in a month-long project to create a full-blown Framer + Javascript prototype that passed variables around, reacted to the user’s financial data, and let them simulate deposits. This was of course not just the work of our design team but a coordinated effort with the technical team to support us not only in programming the prototype but also in user-testing it and iterating on the results.
+
+## 4. Deliver
+
+### Documenting the MVP
+
+#### Designing for transparency, with transparency
+
+One key component of the speed and quality of our workflow in this project was to use Figma in the early stages of the UI design process, because of the high level of collaboration and transparency it allows. Just like our live streamed user tests, Figma makes it frictionless for stakeholders to watch, participate, and gain empathy for the design process in real time.
+
+#### Mapping the whole experience
+
+Producing a well-crafted individual screen is satisfying, but we can never forget that every touchpoint is part of a broader ecosystem. Below is an example of how we kept track of every App screen, push notification, email, website page, and social media posts that first-time users would encounter.
+
+## 5. Results
+
+### It's just day one
+
+Defining NuConta’s purpose took a lot of work, and we’re happy to see that after a year-long design process, we have shipped an initial product that meets all the goals we set.
+
+It is currently in controlled rollout for more than three million users, and will soon be available for hundreds of millions of Brazilians.
+
+Here's a demo of the love we got from users:

@@ -3,13 +3,13 @@ import PhraseWithFootnote from "../components/phraseWithFootnote"
 
 const Hello = () => {
   return (
-    <div className="flex pt6   pb6">
+    <div className="flex pv6 mv5">
       <div className="lh-copy">
-        <span className="f3 neue-regular measure-narrow">
+        <span className="f4 neue-regular measure-narrow black">
           Designer at Petal, in New York.
         </span>
         <br />
-        <p className="f3 black-40 measure-narrow lh-title">
+        <p className="f4 black-40 measure-narrow lh-title">
           I help companies cultivate user research, design empowering products,
           and grow healthy design teams.
         </p>

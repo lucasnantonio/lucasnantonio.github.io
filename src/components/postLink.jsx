@@ -13,7 +13,7 @@ function PostLink({ post, index }) {
       className={` ${
         post.frontmatter.size !== "large" ? "w-50-l w-100" : "w-100"
       }  
-        link black flex flex-column relative fl pa2 mb3
+        link black relative fl pa2
         `}
       to={post.frontmatter.path}
     >
@@ -30,15 +30,16 @@ function PostLink({ post, index }) {
           bottom: "0px",
         }}
       >
-        <p className={"neue-regular f5 measure-narrow mb0 mt3"}>
+        <p className={"neue-regular f4 measure-narrow mb0 mt3"}>
           {post.frontmatter.title}
         </p>
         <p
-          className={"mt2 f5 black-30 neue-regular measure-narrow lh-copy"}
+          className={"mt2 f5 black-40 neue-regular  lh-copy"}
           style={{
             transition: "all 2s ease-in-out",
             overflow: "hidden",
             maxHeight: isHovered ? "100px" : "0px",
+            paddingBottom: isHovered ? "1rem" : "0px",
           }}
         >
           {post.frontmatter.subtitle}

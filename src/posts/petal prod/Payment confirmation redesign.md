@@ -11,7 +11,7 @@ role:
   - design
   - user testing
   - project management
-cover_image: "../../images/petal/payment-confirmation-hero.png"
+cover_image: "../../images/petal/slide-to-confirm-hero.png"
 impact: number of tickets about this reason reduced from X to Y.
 color: "#f2f2f2"
 snapToBottom: true

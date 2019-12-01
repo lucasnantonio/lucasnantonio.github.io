@@ -29,17 +29,17 @@ const Header = ({
     >
       <div className="w-100">
         <Link to="/" className={"link"}>
-          <p className="f5 black neue-regular">Lucas Neumann</p>
+          <p className="f4 black neue-regular">Lucas Neumann</p>
         </Link>
       </div>
-      {/* {isIndex && (
+      {isIndex && (
         <Filters
           selectedTopics={selectedTopics}
           setSelectedTopics={setSelectedTopics}
           isAll={isAll}
           setAll={setAll}
         />
-      )} */}
+      )}
     </header>
     <div className="pv2">
       <p className="f3 white"> _</p>

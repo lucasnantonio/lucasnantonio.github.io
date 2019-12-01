@@ -147,6 +147,11 @@ export const pageQuery = graphql`
             path
             title
             subtitle
+            design_team
+            problem
+            solution
+            impact
+            learn_more
             category
             topics
             color

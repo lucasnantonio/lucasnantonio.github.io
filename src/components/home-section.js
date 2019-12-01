@@ -15,10 +15,10 @@ const HomeSection = ({ title, date, description, posts }) => {
     >
       <div className="pt5 w-100">
         <div className="flex mb4">
-          <h2 className={"w-50 pb2 f3 mt0 pt0 sans neue-regular"}>{title}</h2>
-          <p
-            className={"f3 neue-regular lh-copy measure w-50 mr4 black-40 mt0"}
-          >
+          <h2 className={"w-100 pb2 f4 mt0 pt0 sans neue-regular black"}>
+            {title}
+          </h2>
+          <p className={"f4 neue-regular lh-copy w-100 black-40 mt0"}>
             {description}
           </p>
         </div>
