@@ -39,7 +39,7 @@ function Filter({
       return "#222"
     }
     if (isHovered) {
-      return "#f7f7f7"
+      return "#f2f2f2"
     } else {
       return "#fff"
     }

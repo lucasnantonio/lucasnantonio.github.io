@@ -6,7 +6,7 @@ category: "Nubank"
 topics:
   - research
 size: P
-color: "gray"
+color: "#f2f2f2"
 cover_image: "../../images/image.jpg"
 published: true
 ---

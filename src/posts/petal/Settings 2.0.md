@@ -5,7 +5,7 @@ title: "Settings 2.0"
 category: "Petal"
 topics:
   - design
-color: "blue"
+color: "#f2f2f2"
 cover_image: "../../images/image.jpg"
 published: false
 ---

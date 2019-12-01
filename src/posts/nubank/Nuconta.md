@@ -5,7 +5,7 @@ title: "NuConta: a savings account from 0 to 10MM users"
 category: "Nubank"
 topics:
   - design
-color: "#BB6BD9"
+color: "#f2f2f2"
 cover_image: "../../images/nubank/nuconta-01.png"
 published: true
 size: P

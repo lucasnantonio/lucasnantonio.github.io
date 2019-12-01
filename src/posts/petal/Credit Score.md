@@ -5,7 +5,7 @@ title: "Credit score in-app"
 category: "Petal"
 topics:
   - design
-color: "red"
+color: "#f2f2f2"
 cover_image: "../../images/petal.png"
 published: true
 size: P

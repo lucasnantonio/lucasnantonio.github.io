@@ -5,7 +5,7 @@ title: "Occupation and Education"
 category: "Petal"
 topics:
   - design
-color: "black"
+color: "#f2f2f2"
 cover_image: "../../images/image.jpg"
 published: false
 ---

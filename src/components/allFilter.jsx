@@ -10,7 +10,7 @@ function AllFilter({ setSelectedTopics, isAll, setAll }) {
       return "#222"
     }
     if (isHovered) {
-      return "#f7f7f7"
+      return "#f2f2f2"
     }
     return "#fff"
   }

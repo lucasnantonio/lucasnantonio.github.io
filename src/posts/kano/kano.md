@@ -13,7 +13,7 @@ role:
   - user testing
 cover_image: "../../images/kano/kano-003.png"
 impact: number of tickets about this reason reduced from X to Y.
-color: "#FF7D01"
+color: "#f2f2f2"
 size: "large"
 cover: true
 ---

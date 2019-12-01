@@ -3,7 +3,7 @@ path: "/blog/petal-onboarding"
 date: "2019-05-04"
 title: "Invalid Payment Accounts"
 category: "Petal"
-color: "pink"
+color: "#f2f2f2"
 cover_image: "../../images/hero-petal.png"
 published: false
 topics:

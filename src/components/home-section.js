@@ -14,8 +14,8 @@ const HomeSection = ({ title, date, description, posts }) => {
       }
     >
       <div className="pt6 w-100">
-        <h2 className={"pb2 f1 mt0 pt0 sans b"}>{title}</h2>
-        <p className={"f2 lh-copy measure-narrow  mr4 black-40 mb6"}>
+        <h2 className={"pb2 f2 mt0 pt0 sans b"}>{title}</h2>
+        <p className={"f3 neue-regular lh-copy measure w-50 mr4 black-40 mb6"}>
           {description}
         </p>
         <PostList posts={sectionPosts} />
