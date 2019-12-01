@@ -25,14 +25,6 @@ function Filters({
         marginRight: "0px",
       }}
     >
-      <div className="flex items-center">
-        <AllFilter
-          selectedTopics={selectedTopics}
-          setSelectedTopics={setSelectedTopics}
-          isAll={isAll}
-          setAll={setAll}
-        />
-      </div>
       <div className="flex nowrap">
         <div className="list pl0 f5 flex items-center b--near-white">
           {topics.map(item => (
@@ -47,6 +39,14 @@ function Filters({
               title={item}
             />
           ))}
+        </div>
+        <div className="flex items-center">
+          <AllFilter
+            selectedTopics={selectedTopics}
+            setSelectedTopics={setSelectedTopics}
+            isAll={isAll}
+            setAll={setAll}
+          />
         </div>
         {/* <div className="list pl0 f5 flex items-center">
           {sizes.map(item => (

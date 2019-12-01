@@ -19,15 +19,20 @@
  * © 2019 MyFonts Inc
 */
 
-
-
-
-  
 @import url("//hello.myfonts.net/count/3a4a19");
-@font-face {font-family: 'NeuePlakText-Light';src: url('webfonts/3A4A18_0_0.eot');src: url('webfonts/3A4A18_0_0.eot?#iefix') format('embedded-opentype'),url('webfonts/3A4A18_0_0.woff2') format('woff2'),url('webfonts/3A4A18_0_0.woff') format('woff'),url('webfonts/3A4A18_0_0.ttf') format('truetype');}
-@font-face {font-family: 'NeuePlakText-Regular';src: url('webfonts/3A4A19_0_0.eot');src: url('webfonts/3A4A19_0_0.eot?#iefix') format('embedded-opentype'),url('webfonts/3A4A19_0_0.woff2') format('woff2'),url('webfonts/3A4A19_0_0.woff') format('woff'),url('webfonts/3A4A19_0_0.ttf') format('truetype');}
-
-
-.post-content h1, h2, h3, p, ul, li{
-    max-width: 34em;
+@font-face {
+  font-family: "NeuePlakText-Light";
+  src: url("webfonts/3A4A18_0_0.eot");
+  src: url("webfonts/3A4A18_0_0.eot?#iefix") format("embedded-opentype"),
+    url("webfonts/3A4A18_0_0.woff2") format("woff2"),
+    url("webfonts/3A4A18_0_0.woff") format("woff"),
+    url("webfonts/3A4A18_0_0.ttf") format("truetype");
+}
+@font-face {
+  font-family: "NeuePlakText-Regular";
+  src: url("webfonts/3A4A19_0_0.eot");
+  src: url("webfonts/3A4A19_0_0.eot?#iefix") format("embedded-opentype"),
+    url("webfonts/3A4A19_0_0.woff2") format("woff2"),
+    url("webfonts/3A4A19_0_0.woff") format("woff"),
+    url("webfonts/3A4A19_0_0.ttf") format("truetype");
 }

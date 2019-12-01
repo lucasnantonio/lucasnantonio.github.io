@@ -27,6 +27,8 @@ function PostLink({ post, index }) {
         className="pt2 bg-white black absolute w-100"
         style={{
           transition: "all .2s ease-in-out",
+          overflow: "hidden",
+          maxHeight: isHovered ? "800px" : "0px",
           bottom: "0px",
         }}
       >
@@ -37,9 +39,7 @@ function PostLink({ post, index }) {
           className={"mt2 f5 black-40 neue-regular  lh-copy"}
           style={{
             transition: "all 2s ease-in-out",
-            overflow: "hidden",
-            maxHeight: isHovered ? "100px" : "0px",
-            paddingBottom: isHovered ? "1rem" : "0px",
+            paddingBottom: isHovered ? ".5rem" : "0px",
           }}
         >
           {post.frontmatter.subtitle}

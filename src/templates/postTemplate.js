@@ -10,7 +10,19 @@ export default function Template({
   const { frontmatter, html } = markdownRemark
   return (
     <Layout isIndex={false}>
-      <div style={{ backgroundColor: frontmatter.color, height: "500px" }}>
+      <h1 className="neue-regular f2 black mt3 mb0 pb0 w-100">
+        {frontmatter.title}
+      </h1>
+      <h1 className="f2 black-40 mt0 pt0 measure-narrow mb4">
+        {frontmatter.subtitle}
+      </h1>
+
+      <div
+        style={{
+          backgroundColor: frontmatter.color || "#f0f0f0",
+          height: "500px",
+        }}
+      >
         <Img
           className="h-100"
           fluid={frontmatter.cover_image.childImageSharp.fluid}
@@ -19,56 +31,56 @@ export default function Template({
         />
       </div>
 
-      <div className="pt3 flex flex-row-l flex-column w-100">
+      {/* PROBLEM, SOLUTION, IMPACT */}
+      <div className="flex justify-between bt bb bw1 b--near-white mb4 pv3 mt5">
+        <div className="mr3 w-100">
+          <h3>Problem</h3>
+          <p className="lh-copy">{frontmatter.problem}</p>
+        </div>
+        <div className="mr3 w-100">
+          <h3>Solution</h3>
+          <p className="lh-copy">{frontmatter.solution}</p>
+        </div>
+        <div className="mr3 w-100">
+          <h3>Result</h3>
+          <p className="lh-copy">{frontmatter.impact}</p>
+        </div>
+      </div>
+      <div className="pt4 flex flex-row-l flex-column w-100">
+        <div className="post-content center w-100 pr5">
+          {/* ACTUAL CONTENT */}
+          <div className="lh-copy" dangerouslySetInnerHTML={{ __html: html }} />
+        </div>
         {/* METADATA */}
-        <div className="flex flex-column mt4 w-20">
+        <div className="flex flex-column">
           <div className="flex flex-column mb3 lh-copy f7">
-            <span>Where</span>
-            <span className="black">São Paulo</span>
+            <span className="black">Where</span>
+            <span>São Paulo</span>
           </div>
           <div className="flex flex-column mb3 lh-copy f7">
-            <span>When</span>
-            <span className="black">2017-2018</span>
+            <span className="black">When</span>
+            <span>2017-2018</span>
           </div>
           <div className="flex flex-column mb3 lh-copy f7">
-            <span>Design team</span>
-            {frontmatter.design_team.map(item => (
-              <span key={item} className="black">
-                {item}
-              </span>
-            ))}
+            <span className="black nowrap">Design team</span>
+            {frontmatter.design_team &&
+              frontmatter.design_team.map(item => (
+                <span key={item} className="nowrap">
+                  {item}
+                </span>
+              ))}
           </div>
           <div className="flex flex-column mb3 lh-copy f7">
             <span>Learn more</span>
-            <span className="black">São Paulo</span>
+            {/* <span className="black">São Paulo</span> */}
+            <a
+              className="link black"
+              target="blank"
+              href={frontmatter.learn_more}
+            >
+              Website
+            </a>
           </div>
-        </div>
-
-        <div className="post-content center w-80">
-          {/* TITLE */}
-          <h1 className="neue-regular f2 black mt4 mb0 pb0">
-            {frontmatter.title}
-          </h1>
-          <h2 className="f2 black-40 mt0 pt0">{frontmatter.subtitle}</h2>
-
-          {/* PROBLEM, SOLUTION, IMPACT */}
-          <div className="flex justify-between bt bb bw1 b--near-white mb5 mt5 pv3">
-            <div className="mr3 w-100">
-              <h3>Problem</h3>
-              <p className="lh-copy">{frontmatter.problem}</p>
-            </div>
-            <div className="mr3 w-100">
-              <h3>Solution</h3>
-              <p className="lh-copy">{frontmatter.solution}</p>
-            </div>
-            <div className="mr3 w-100">
-              <h3>Result</h3>
-              <p className="lh-copy">{frontmatter.impact}</p>
-            </div>
-          </div>
-
-          {/* ACTUAL CONTENT */}
-          <div className="lh-copy" dangerouslySetInnerHTML={{ __html: html }} />
         </div>
       </div>
     </Layout>
@@ -89,6 +101,7 @@ export const pageQuery = graphql`
         impact
         color
         design_team
+        learn_more
         cover_image {
           publicURL
           childImageSharp {

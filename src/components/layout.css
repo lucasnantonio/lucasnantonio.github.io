@@ -4,7 +4,7 @@ html {
   font-weight: 300;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
-  color: #666666;
+  color: #888888;
 }
 body * {
   transition: all 0.2s !important;
@@ -22,8 +22,33 @@ h5 {
   font-weight: 300;
   color: black;
 }
+
+.post-content h2 {
+  margin-top: 3rem;
+}
+.post-content blockquote {
+  background-color: #f7f7f7;
+  padding: 2rem;
+  margin-left: 0px;
+  margin-right: 0px;
+  display: inline-block;
+}
+.post-content blockquote p {
+  margin: 0px !important;
+  margin-right: 0px;
+}
+.post-content p span.gatsby-resp-image-wrapper {
+  max-width: 100% !important;
+}
+.post-content p + p > span {
+  margin-top: 3rem;
+}
 .neue-regular {
   font-family: "NeuePlakText-Regular";
+}
+.lh-copy p:first-child {
+  padding-top: 0px;
+  margin-top: 0px;
 }
 
 .filter-animation-enter {
