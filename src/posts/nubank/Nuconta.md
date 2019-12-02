@@ -2,7 +2,7 @@
 path: "/blog/nubank/nuconta"
 date: "2019-11-04"
 title: "NuConta"
-subtitle: The only possible bank account
+subtitle: An account for Brazilians
 category: "Nubank"
 problem: Brazilians are locked into bad banking account options because of big bank's monopoly.
 solution: A new type of free, integrated, hybrid checking and savings account.

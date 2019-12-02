@@ -10,10 +10,10 @@ export default function Template({
   const { frontmatter, html } = markdownRemark
   return (
     <Layout isIndex={false}>
-      <h1 className="neue-regular f2 black mt3 mb0 pb0 w-100">
+      <h1 className="neue-regular f4 black mt3 mb2 pb0 w-100">
         {frontmatter.title}
       </h1>
-      <h1 className="f2 black-40 mt0 pt0 measure-narrow mb4">
+      <h1 className="f4 black-40 mt0 pt0 measure-narrow mb4">
         {frontmatter.subtitle}
       </h1>
 
