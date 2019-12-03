@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `Lucas Neumann - design`,
     description: `Portfolio website for Lucas Neumann, product designer`,
-    author: `Lucas Neumann`
+    author: `Lucas Neumann`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -16,7 +16,8 @@ module.exports = {
           {
             resolve: `gatsby-remark-images`,
             options: {
-              maxWidth: 590,
+              maxWidth: 1800,
+              linkImagesToOriginal: false,
             },
           },
         ],
@@ -25,16 +26,16 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: 'images',
-        path: `${__dirname}/src/images`
-      }
+        name: "images",
+        path: `${__dirname}/src/images`,
+      },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: 'posts',
-        path: `${__dirname}/src/posts`
-      }
+        name: "posts",
+        path: `${__dirname}/src/posts`,
+      },
     },
     {
       resolve: `gatsby-plugin-manifest`,
@@ -45,8 +46,8 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png` // This path is relative to the root of the site.
-      }
+        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+      },
     },
-  ]
+  ],
 }

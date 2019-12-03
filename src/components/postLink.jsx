@@ -24,22 +24,24 @@ function PostLink({ post, index }) {
         color={post.frontmatter.color}
       />
       <div
-        className="pt2 bg-white black absolute w-100"
+        className="bg-white black absolute w-50"
         style={{
           transition: "all .2s ease-in-out",
           overflow: "hidden",
           maxHeight: isHovered ? "800px" : "0px",
-          bottom: "0px",
+          padding: isHovered ? "1rem" : "0px",
+          bottom: "1.5rem",
+          left: "1.5rem",
+          right: "0px",
         }}
       >
-        <p className={"neue-regular f5 measure-narrow mb0 mt3"}>
+        <p className={"neue-regular f5 measure-narrow mb0"}>
           {post.frontmatter.title}
         </p>
         <p
-          className={"mt2 f5 black-40 neue-regular  lh-copy"}
+          className={"f5 black-40 neue-regular lh-copy"}
           style={{
             transition: "all 2s ease-in-out",
-            paddingBottom: isHovered ? ".5rem" : "0px",
           }}
         >
           {post.frontmatter.subtitle}

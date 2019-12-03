@@ -34,15 +34,15 @@ export default function Template({
       {/* PROBLEM, SOLUTION, IMPACT */}
       <div className="flex justify-between bt bb bw1 b--near-white mb4 pv3 mt5">
         <div className="mr3 w-100">
-          <h3>Problem</h3>
+          <h4>Problem</h4>
           <p className="lh-copy">{frontmatter.problem}</p>
         </div>
         <div className="mr3 w-100">
-          <h3>Solution</h3>
+          <h4>Solution</h4>
           <p className="lh-copy">{frontmatter.solution}</p>
         </div>
         <div className="mr3 w-100">
-          <h3>Result</h3>
+          <h4>Result</h4>
           <p className="lh-copy">{frontmatter.impact}</p>
         </div>
       </div>
