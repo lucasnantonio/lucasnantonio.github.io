@@ -47,12 +47,12 @@ export default function Template({
         </div>
       </div>
       <div className="pt4 flex flex-row-l flex-column w-100">
-        <div className="post-content center w-100 pr5">
+        <div className="post-content center w-100">
           {/* ACTUAL CONTENT */}
           <div className="lh-copy" dangerouslySetInnerHTML={{ __html: html }} />
         </div>
-        {/* METADATA */}
-        <div className="flex flex-column">
+
+        {/* <div className="flex flex-column">
           <div className="flex flex-column mb3 lh-copy f7">
             <span className="black">Where</span>
             <span>São Paulo</span>
@@ -72,7 +72,6 @@ export default function Template({
           </div>
           <div className="flex flex-column mb3 lh-copy f7">
             <span>Learn more</span>
-            {/* <span className="black">São Paulo</span> */}
             <a
               className="link black"
               target="blank"
@@ -81,7 +80,7 @@ export default function Template({
               Website
             </a>
           </div>
-        </div>
+        </div> */}
       </div>
     </Layout>
   )

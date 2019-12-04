@@ -1,6 +1,7 @@
 /* eslint-disable react/prop-types */
 import React, { useState } from "react"
 import Img from "gatsby-image/withIEPolyfill"
+import { backgroundGray } from "./utils"
 
 function ImageWithBackground({
   fluid,
@@ -12,7 +13,7 @@ function ImageWithBackground({
   return (
     <div
       style={{
-        backgroundColor: !isHovered ? "#f0f0f0" : "#e7e7e7",
+        backgroundColor: backgroundGray,
       }}
     >
       <Img

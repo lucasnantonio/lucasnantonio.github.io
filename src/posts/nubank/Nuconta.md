@@ -41,7 +41,10 @@ We were committed to challenging our most basic assumptions about how people und
 
 We ran in-depth interviews with people from different ages and backgrounds in the office, but also on public places like malls and a public university. We sat down and very informally let people talk about their financial lives, how they felt about saving, investing, transferring, and spending their money. We also experimented with some visual aids such as card-sorting and very cheap prototypes, but honestly, our best feedback tools were our competitor's websites and products. We learned an incredible amount just by having people experiment with things other companies have already built.
 
-![](../../images/nubank/nuconta-009.png)![](../../images/nubank/nuconta-010.png)
+<div class="flex w-100">
+  <img src="../../images/nubank/nuconta-009.png" />
+  <img src="../../images/nubank/nuconta-010.png" />
+</div>
 
 ## Problem definition
 

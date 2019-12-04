@@ -22,7 +22,21 @@ h5 {
   font-weight: 300;
   color: black;
 }
-
+.neue-regular {
+  font-family: "NeuePlakText-Regular";
+}
+.post-content p,
+.post-content h1,
+.post-content h2,
+.post-content h3,
+.post-content h4,
+.post-content blockquote,
+.post-content ul,
+.post-content ol {
+  max-width: 32rem;
+  margin-left: auto;
+  margin-right: auto;
+}
 .post-content h2 {
   margin-top: 3rem;
 }
@@ -37,15 +51,10 @@ h5 {
   margin: 0px !important;
   margin-right: 0px;
 }
-.post-content p span.gatsby-resp-image-wrapper {
-  max-width: 100% !important;
-}
 .post-content p + p > span {
   margin-top: 3rem;
 }
-.neue-regular {
-  font-family: "NeuePlakText-Regular";
-}
+
 .lh-copy p:first-child {
   padding-top: 0px;
   margin-top: 0px;
