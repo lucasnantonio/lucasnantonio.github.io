@@ -59,7 +59,6 @@ function IndexPage({
         setSelectedSizes={setSelectedSizes}
       /> */}
       <div id="work">
-        {console.log(getFilteredPosts())}
         <HomeSection
           mainImage={
             images.filter(

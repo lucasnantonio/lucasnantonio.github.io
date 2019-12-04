@@ -6,22 +6,21 @@ function Filter({ title, selectedTopics, setSelectedTopics, isAll, setAll }) {
   const [isSelected, setSelected] = useState(false)
 
   const addOrRemoveTopics = (title, selectedTopics) => {
-    if (isAll) {
-      setSelectedTopics([title])
-      setAll(false)
-      return
-    }
-    if (isSelected && selectedTopics.length === 1) {
+    if (title === "All") {
       setSelectedTopics(topics)
       setAll(true)
-    }
-    if (!isSelected) {
-      const joined = selectedTopics.filter(item => item !== title).concat(title)
-      setSelectedTopics(joined)
+      return
+      // }
+      // if (isSelected && selectedTopics.length === 1) {
+      //   setSelectedTopics(topics)
+      //   setAll(true)
+      // }
+      // if (!isSelected) {
+      // const joined = selectedTopics.filter(item => item !== title).concat(title)
+      // setSelectedTopics([title])
     } else {
-      const index = selectedTopics.indexOf(title)
-      const removed = selectedTopics.filter(i => i !== title)
-      setSelectedTopics(removed)
+      setSelectedTopics([title])
+      setAll(false)
     }
   }
   useEffect(() => setSelected(!isAll && selectedTopics.includes(title)))
