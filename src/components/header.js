@@ -24,12 +24,12 @@ const Header = ({
         marginLeft: "auto",
       }}
       className={
-        "pv1 flex fixed bg-white z-max space-between bb b--near-white bw1 ph0-l ph4"
+        "flex fixed bg-white z-max space-between bb b--near-white bw1 ph0-l ph4"
       }
     >
       <div className="w-100">
         <Link to="/" className={"link"}>
-          <p className="f4 black neue-regular">Lucas Neumann</p>
+          <p className="f5 black neue-regular">Lucas Neumann</p>
         </Link>
       </div>
       {isIndex && (

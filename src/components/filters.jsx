@@ -9,7 +9,7 @@ import { minWidth, topics, sizes } from "./utils"
 function Filters({ selectedTopics, setSelectedTopics, isAll, setAll }) {
   return (
     <div
-      className="bg-white z-max flex justify-end"
+      className="w-100 bg-white z-max flex justify-end pl2"
       style={{
         maxWidth: minWidth,
         top: "0px",
@@ -19,8 +19,16 @@ function Filters({ selectedTopics, setSelectedTopics, isAll, setAll }) {
         marginRight: "0px",
       }}
     >
-      <div className="flex nowrap">
-        <div className="list pl0 f5 flex items-center b--near-white">
+      <div className="w-100 flex nowrap">
+        <div className="flex items-center">
+          <AllFilter
+            selectedTopics={selectedTopics}
+            setSelectedTopics={setSelectedTopics}
+            isAll={isAll}
+            setAll={setAll}
+          />
+        </div>
+        <div className="list pl0 f5 flex items-center b--near-white w-100">
           {topics.map(item => (
             <Filter
               selectedTopics={selectedTopics}
@@ -32,14 +40,7 @@ function Filters({ selectedTopics, setSelectedTopics, isAll, setAll }) {
             />
           ))}
         </div>
-        <div className="flex items-center">
-          <AllFilter
-            selectedTopics={selectedTopics}
-            setSelectedTopics={setSelectedTopics}
-            isAll={isAll}
-            setAll={setAll}
-          />
-        </div>
+
         {/* <div className="list pl0 f5 flex items-center">
           {sizes.map(item => (
             <Filter
