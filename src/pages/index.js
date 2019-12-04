@@ -49,15 +49,14 @@ function IndexPage({
       setSelectedTopics={setSelectedTopics}
     >
       <SEO title="Home" />
-      <Hello />
-      {/* <Filters
-        isAll={isAll}
-        setAll={setAll}
-        selectedTopics={selectedTopics}
-        selectedSizes={selectedSizes}
-        setSelectedTopics={setSelectedTopics}
-        setSelectedSizes={setSelectedSizes}
-      /> */}
+      {isAll && <Hello />}
+      {!isAll && (
+        <div>
+          <h1>{selectedTopics[0]}</h1>
+          <h2>{getFilteredPosts().length} project</h2>
+        </div>
+      )}
+
       <div id="work">
         <HomeSection
           mainImage={
