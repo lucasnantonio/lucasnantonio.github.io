@@ -43,9 +43,7 @@ h5 {
 .post-content blockquote {
   background-color: #f7f7f7;
   padding: 2rem;
-  margin-left: 0px;
-  margin-right: 0px;
-  display: inline-block;
+  margin: 2rem auto;
 }
 .post-content blockquote p {
   margin: 0px !important;
