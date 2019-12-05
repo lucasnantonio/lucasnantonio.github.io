@@ -58,33 +58,17 @@ h5 {
   margin-top: 0px;
 }
 
-.filter-animation-enter {
-  opacity: 0.1;
-  /* margin-left:-20px; */
+.my-node-enter {
+  opacity: 0;
 }
-
-.filter-animation-enter.filter-animation-enter-active {
+.my-node-enter-active {
   opacity: 1;
-  /* margin-left:0px; */
-  transition: opacity 500ms ease-in;
+  transition: opacity 200ms;
 }
-
-.filter-animation-appear {
-  opacity: 0.01;
-  margin-left: -20px;
-}
-
-.filter-animation-appear.filter-animation-appear-active {
-  opacity: 1;
-  /* margin-left:0px; */
-  transition: opacity 500ms ease-in;
-}
-
-.filter-animation-leave {
+.my-node-exit {
   opacity: 1;
 }
-
-.filter-animation-leave.filter-animation-leave-active {
-  opacity: 0.01;
-  transition: opacity 300ms ease-in;
+.my-node-exit-active {
+  opacity: 0;
+  transition: opacity 200ms;
 }

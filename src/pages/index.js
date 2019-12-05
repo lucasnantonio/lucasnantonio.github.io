@@ -1,6 +1,7 @@
 import React, { useState, useEffect, isValidElement } from "react"
 import Layout from "../components/layout"
 import PostList from "../components/postList"
+import { CSSTransition } from "react-transition-group"
 import HomeSection from "../components/home-section"
 import SEO from "../components/seo"
 import Hello from "../components/hello"
@@ -49,13 +50,28 @@ function IndexPage({
       setSelectedTopics={setSelectedTopics}
     >
       <SEO title="Home" />
-      {isAll && <Hello />}
-      {!isAll && (
+      {/* {isAll && <Hello />} */}
+      <div>
+        <CSSTransition
+          in={isAll}
+          timeout={200}
+          unmountOnExit
+          classNames="my-node"
+        >
+          <Hello />
+        </CSSTransition>
+      </div>
+      <CSSTransition
+        in={!isAll}
+        timeout={200}
+        unmountOnExit
+        classNames={"my-node"}
+      >
         <div>
           <h1>{selectedTopics[0]}</h1>
           <h2>{getFilteredPosts().length} project</h2>
         </div>
-      )}
+      </CSSTransition>
 
       <div id="work">
         <HomeSection
