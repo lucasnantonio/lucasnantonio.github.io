@@ -32,26 +32,26 @@ export default function Template({
       </div>
 
       {/* PROBLEM, SOLUTION, IMPACT */}
-      <div className="flex justify-between bt bb bw1 b--near-white mb4 pv3 mt5">
-        <div className="mr3 w-100">
-          <h4>Problem</h4>
-          <p className="lh-copy">{frontmatter.problem}</p>
+      {frontmatter.solution && frontmatter.problem && frontmatter.impact && (
+        <div className="flex justify-between bt bb bw1 b--near-white mb4 pv3 mt5">
+          <div className="mr3 w-100">
+            <h4>Problem</h4>
+            <p className="lh-copy">{frontmatter.problem}</p>
+          </div>
+          <div className="mr3 w-100">
+            <h4>Solution</h4>
+            <p className="lh-copy">{frontmatter.solution}</p>
+          </div>
+          <div className="mr3 w-100">
+            <h4>Result</h4>
+            <p className="lh-copy">{frontmatter.impact}</p>
+          </div>
         </div>
-        <div className="mr3 w-100">
-          <h4>Solution</h4>
-          <p className="lh-copy">{frontmatter.solution}</p>
-        </div>
-        <div className="mr3 w-100">
-          <h4>Result</h4>
-          <p className="lh-copy">{frontmatter.impact}</p>
-        </div>
-      </div>
+      )}
       <div className="pt4 flex flex-row-l flex-column w-100">
         <div className="post-content center w-100">
-          {/* ACTUAL CONTENT */}
           <div className="lh-copy" dangerouslySetInnerHTML={{ __html: html }} />
         </div>
-
         {/* <div className="flex flex-column">
           <div className="flex flex-column mb3 lh-copy f7">
             <span className="black">Where</span>

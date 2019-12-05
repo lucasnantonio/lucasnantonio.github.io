@@ -43,6 +43,8 @@ We ran in-depth interviews with people from different ages and backgrounds in th
 
 <img className="w-100" src="../../images/nubank/nuconta-009.png" />
 <img src="../../images/nubank/nuconta-010.png" />
+<img src="../../images/golden-art/goldenart-007.gif" />
+<img src="../../images/golden-art/goldenart-006.png" />
 
 ## Problem definition
 
