@@ -1,7 +1,7 @@
 import React, { Component, useState } from "react"
 import PostList from "./postList"
 
-const HomeSection = ({ title, date, description, posts }) => {
+const HomeSection = ({ title, date, description, posts, isAll }) => {
   const sectionPosts = posts.filter(
     item =>
       item.node.frontmatter.category === title &&
@@ -15,14 +15,16 @@ const HomeSection = ({ title, date, description, posts }) => {
         }
       >
         <div className="pt5 w-100">
-          <div className="flex mb4">
-            <h2 className={"w-100 pb2 f4 mt0 pt0 sans neue-regular black"}>
-              {title}
-            </h2>
-            <p className={"f4 neue-regular lh-copy w-100 black-40 mt0"}>
-              {description}
-            </p>
-          </div>
+          {isAll && (
+            <div className="flex mb4">
+              <h2 className={"w-100 pb2 f4 mt0 pt0 sans neue-regular black"}>
+                {title}
+              </h2>
+              <p className={"f4 neue-regular lh-copy w-100 black-40 mt0"}>
+                {description}
+              </p>
+            </div>
+          )}
           <PostList posts={sectionPosts} />
         </div>
       </div>

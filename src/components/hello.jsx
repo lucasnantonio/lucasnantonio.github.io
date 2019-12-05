@@ -3,7 +3,7 @@ import PhraseWithFootnote from "../components/phraseWithFootnote"
 
 const Hello = () => {
   return (
-    <div className="flex pv6 mv5">
+    <div className="flex mb7 mt6">
       <div className="lh-copy">
         <span className="f4 neue-regular measure-narrow black">
           Designer at Petal, in New York.

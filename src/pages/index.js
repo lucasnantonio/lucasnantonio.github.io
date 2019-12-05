@@ -67,14 +67,26 @@ function IndexPage({
         unmountOnExit
         classNames={"my-node"}
       >
-        <div>
-          <h1>{selectedTopics[0]}</h1>
-          <h2>{getFilteredPosts().length} project</h2>
+        <div className="mb5 mt3 flex">
+          <h1 className="w-100">
+            {selectedTopics[0]}{" "}
+            <span className="black-40 f4">{getFilteredPosts().length}</span>
+          </h1>
+          <p className="f4 w-100 lh-copy">
+            {selectedTopics[0] === "Research"
+              ? "The problem contains the solution, they say. As a believer in that phrase, I've dedicate a lot of my time in listening to users, advocating for their needs, and creating the necessary workflows to ensure the teams I collaborate with understand who they're designing for."
+              : selectedTopics[0] === "Product Design"
+              ? "Even though my current is heavily centered around UI, I have designed across disciplines with solutions ranging from offline services and experiences to physical and digital products."
+              : selectedTopics[0] === "Design Ops"
+              ? "I have experience managing teams of designers and working with my peer leads to create and nurture larger design organizations and their culture."
+              : "I'm a coding begginer and enthusiast. This portfolio website is, in itself, an experiment in learning React, and below you can find other projects I've played with."}
+          </p>
         </div>
       </CSSTransition>
 
       <div id="work">
         <HomeSection
+          isAll={isAll}
           mainImage={
             images.filter(
               item => item.fluid.originalName === "hero-petal.png"
@@ -87,6 +99,7 @@ function IndexPage({
           description="In June 2019, I moved to New York to help Petal amplify the access to credit in America by using good design and intelligent underwriting."
         />
         <HomeSection
+          isAll={isAll}
           mainImage={
             images.filter(
               item => item.fluid.originalName === "hero-nubank.png"
@@ -99,6 +112,7 @@ function IndexPage({
           description="During 3 years, I helped Nubank grow from 1 to 10 million customers, 1 to 3 products, and 6 to 35 designers."
         />
         <HomeSection
+          isAll={isAll}
           mainImage={
             posts[0].node.frontmatter.cover_image.childImageSharp.fluid
           }
@@ -109,6 +123,7 @@ function IndexPage({
           description="During 3 years, I helped Nubank grow from 1 to 10 million customers, 1 to 3 products, and 6 to 35 designers."
         />
         <HomeSection
+          isAll={isAll}
           mainImage={
             posts[0].node.frontmatter.cover_image.childImageSharp.fluid
           }
