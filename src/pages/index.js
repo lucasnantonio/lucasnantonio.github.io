@@ -124,14 +124,11 @@ function IndexPage({
         />
         <HomeSection
           isAll={isAll}
-          mainImage={
-            posts[0].node.frontmatter.cover_image.childImageSharp.fluid
-          }
           posts={getFilteredPosts()}
-          title="Personal work"
+          title="Others"
           date="2013"
           place="London"
-          description="During 3 years, I helped Nubank grow from 1 to 10 million customers, 1 to 3 products, and 6 to 35 designers."
+          description=""
         />
       </div>
     </Layout>

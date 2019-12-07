@@ -29,11 +29,7 @@ design_team:
 
 NuConta is an unprecedented mix of current, savings, and payments accounts, all-in-one. Thanks to a one-year-long co-creative process, our team was able to design and ship a product that uniquely addresses customer needs.
 
-<div class="gallery">
-    <div class="gallery__item">
-        <img alt="01" src="../../images/nubank/nuconta-003.png" />
-    </div>
-</div>
+![](../../images/nubank/nuconta-003.png)
 
 ## Problem discovery
 
@@ -41,10 +37,7 @@ We were committed to challenging our most basic assumptions about how people und
 
 We ran in-depth interviews with people from different ages and backgrounds in the office, but also on public places like malls and a public university. We sat down and very informally let people talk about their financial lives, how they felt about saving, investing, transferring, and spending their money. We also experimented with some visual aids such as card-sorting and very cheap prototypes, but honestly, our best feedback tools were our competitor's websites and products. We learned an incredible amount just by having people experiment with things other companies have already built.
 
-<img className="w-100" src="../../images/nubank/nuconta-009.png" />
-<img src="../../images/nubank/nuconta-010.png" />
-<img src="../../images/golden-art/goldenart-007.gif" />
-<img src="../../images/golden-art/goldenart-006.png" />
+![](../../images/nubank/nuconta-009.png)
 
 ## Problem definition
 
