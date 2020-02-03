@@ -35,7 +35,7 @@ const Layout = ({
   `)
   return (
     <>
-      <Header
+      {/* <Header
         isWorkInView={isWorkInView}
         siteTitle={data.site.siteMetadata.title}
         selectedTopics={selectedTopics}
@@ -43,7 +43,7 @@ const Layout = ({
         isAll={isAll}
         setAll={setAll}
         isIndex={isIndex}
-      />
+      /> */}
 
       <div
         className="pt0 ph0-l ph4"

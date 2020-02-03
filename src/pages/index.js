@@ -50,16 +50,21 @@ function IndexPage({
       setSelectedTopics={setSelectedTopics}
     >
       <SEO title="Home" />
-      {/* {isAll && <Hello />} */}
       <div>
-        <CSSTransition
+        {/* <CSSTransition
           in={isAll}
           timeout={200}
           unmountOnExit
           classNames="my-node"
-        >
-          <Hello />
-        </CSSTransition>
+        > */}
+        <Hello />
+        {/* </CSSTransition> */}
+        <Filters
+          selectedTopics={selectedTopics}
+          setSelectedTopics={setSelectedTopics}
+          isAll={isAll}
+          setAll={setAll}
+        />
       </div>
       <CSSTransition
         in={!isAll}
@@ -67,7 +72,7 @@ function IndexPage({
         unmountOnExit
         classNames={"my-node"}
       >
-        <div className="mb5 mt3 flex">
+        <div className="mb5 flex bt bw1 b--black pt4">
           <h1 className="w-100">
             {selectedTopics[0]}{" "}
             <span className="black-40 f4">{getFilteredPosts().length}</span>
@@ -96,7 +101,7 @@ function IndexPage({
           title="Petal"
           date="2019"
           place="New York"
-          description="In June 2019, I moved to New York to help Petal amplify the access to credit in America by using good design and intelligent underwriting."
+          description="On a mission to build credit that is honest, simple, and accessible."
         />
         <HomeSection
           isAll={isAll}

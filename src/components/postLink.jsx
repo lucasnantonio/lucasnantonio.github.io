@@ -6,6 +6,14 @@ import ImageWithBackground from "./imageWithBackground"
 import { backgroundGray } from "./utils"
 
 function PostLink({ post, index }) {
+  const topicTags = post.frontmatter.topics.map(item => {
+    return (
+      <p className="f7 pa2 ba b--light-gray dib br-pill silver hover-bg-light-gray hover-gray">
+        {item}
+      </p>
+    )
+  })
+  console.log(post.frontmatter.topics)
   const [isHovered, setHover] = useState(false)
   return (
     <Link
@@ -14,7 +22,7 @@ function PostLink({ post, index }) {
       className={` ${
         post.frontmatter.size !== "large" ? "w-50-l w-100" : "w-100"
       }  
-        link black relative fl pa1 flex flex-column
+        link black fl pa1 flex flex-column
         `}
       to={post.frontmatter.path}
     >
@@ -24,15 +32,8 @@ function PostLink({ post, index }) {
         fluid={post.frontmatter.cover_image.childImageSharp.fluid}
         color={post.frontmatter.color}
       />
-      <div
-        className="black ph4 pb4 mt0"
-        style={{
-          bottom: "1.5rem",
-          left: "1.5rem",
-          backgroundColor: backgroundGray,
-        }}
-      >
-        <p className={"neue-regular f5 measure-narrow mb0"}>
+      <div className="black pb4 mt2">
+        <p className={"neue-regular f5 measure-narrow mb2 fw5 hover-underline"}>
           {post.frontmatter.title}
         </p>
         <p
@@ -43,8 +44,8 @@ function PostLink({ post, index }) {
         >
           {post.frontmatter.subtitle}
         </p>
+        <div>{topicTags}</div>
       </div>
-      {/* </div> */}
     </Link>
   )
 }

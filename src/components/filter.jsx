@@ -25,16 +25,16 @@ function Filter({ title, selectedTopics, setSelectedTopics, isAll, setAll }) {
   }
   useEffect(() => setSelected(!isAll && selectedTopics.includes(title)))
 
-  // const getBackgroundColor = () => {
-  //   if (!isAll && isSelected) {
-  //     return "#222"
-  //   }
-  //   if (isHovered) {
-  //     return "#f2f2f2"
-  //   } else {
-  //     return "#fff"
-  //   }
-  // }
+  const getBackgroundColor = () => {
+    if (!isAll && isSelected) {
+      return "#000"
+    }
+    if (isHovered) {
+      return "#f7f7f7"
+    } else {
+      return "transparent"
+    }
+  }
 
   return (
     <li
@@ -43,10 +43,11 @@ function Filter({ title, selectedTopics, setSelectedTopics, isAll, setAll }) {
       onClick={() => {
         addOrRemoveTopics(title, selectedTopics)
       }}
-      className={`w-100 tc black pointer pt3 pb3 ph3 neue-regular dib nowrap f5`}
+      className={`br-pill tc black pointer pt3 pb3 ph3 dib nowrap hover-bg-near-white f5 fw1`}
       style={{
-        color: isSelected ? "#222" : "#949494",
-        borderBottom: !isSelected ? "2px solid #ffffff" : "2px solid #222",
+        color: isSelected ? "white" : "#949494",
+        border: !isSelected ? "2px solid #ffffff" : "2px solid #222",
+        backgroundColor: getBackgroundColor(),
       }}
     >
       {title}

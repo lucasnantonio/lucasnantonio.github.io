@@ -1,5 +1,6 @@
+@import url("https://fonts.googleapis.com/css?family=Courier+Prime:400,400i,700,700i|DM+Sans:400,400i,500,500i,700,700i|DM+Serif+Text|Darker+Grotesque:300,400,500,600,700,800,900|Noto+Sans+HK:400,500,700,900&display=swap");
 html {
-  font-family: "NeuePlakText-Regular";
+  font-family: "DM Sans";
   font-size: 18px;
   font-weight: 300;
   -ms-text-size-adjust: 100%;
@@ -19,12 +20,13 @@ h2,
 h3,
 h4,
 h5 {
-  font-weight: 300;
+  /* font-family: "Neue-Plak Sans"; */
   color: black;
+  /* font-weight: 300; */
 }
-.neue-regular {
-  font-family: "NeuePlakText-Regular";
-}
+/* .neue-regular {
+  font-family: "Darker Grotesk";
+} */
 .post-content p,
 .post-content h1,
 .post-content h2,
