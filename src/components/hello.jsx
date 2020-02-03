@@ -8,7 +8,7 @@ const Hello = () => {
         <h1 className="f3 neue-regular black tracked-tight fw5">
           Lucas Neumann
         </h1>
-        <p className="f3 black-40 lh-copy">
+        <p className="f4 measure-narrow black-40 lh-copy">
           <br /> Futurebrand, Insitum, & Nubank alumnus, now managing product
           design at Petal in New York. I help companies cultivate user research,
           design empowering products, and grow healthy design teams.

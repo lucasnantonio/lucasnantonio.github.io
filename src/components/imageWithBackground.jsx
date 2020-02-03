@@ -12,8 +12,9 @@ function ImageWithBackground({
 }) {
   return (
     <div
+      // className="br2"
       style={{
-        backgroundColor: backgroundGray,
+        backgroundColor: color,
       }}
     >
       <Img

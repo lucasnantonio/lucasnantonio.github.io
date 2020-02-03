@@ -9,8 +9,10 @@ topics:
 published: true
 role:
   - design
+size: large
 cover_image: "../../images/petal/transaction-details-hero.png"
 impact: more consistent experience across feed events
+color: "lightpink"
 ---
 
 # Accounts page redesign

@@ -13,7 +13,7 @@ role:
   - project management
 cover_image: "../../images/petal/payment-confirmation-hero.png"
 impact: number of tickets about this reason reduced from X to Y.
-color: "#f2f2f2"
+color: "#E1F5A9"
 snapToBottom: true
 ---
 

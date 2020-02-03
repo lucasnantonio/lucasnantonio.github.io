@@ -10,7 +10,7 @@ published: true
 role:
   - design
   - user testing
-color: "#f2f2f2"
+color: "lightblue"
 cover_image: "../../images/petal/settings-page-hero.png"
 impact: Unblocked development and placement of new features such as Friend Referrals, Notification Center, and in-app help center.
 ---

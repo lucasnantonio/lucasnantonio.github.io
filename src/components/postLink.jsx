@@ -20,9 +20,9 @@ function PostLink({ post, index }) {
       onMouseEnter={() => setHover(true)}
       onMouseLeave={() => setHover(false)}
       className={` ${
-        post.frontmatter.size !== "large" ? "w-50-l w-100" : "w-100"
+        post.frontmatter.size !== "large" ? "w-25-l w-100" : "w-50"
       }  
-        link black fl pa1 flex flex-column
+        link black fl pa2 flex flex-column
         `}
       to={post.frontmatter.path}
     >
@@ -32,12 +32,12 @@ function PostLink({ post, index }) {
         fluid={post.frontmatter.cover_image.childImageSharp.fluid}
         color={post.frontmatter.color}
       />
-      <div className="black pb4 mt2">
-        <p className={"neue-regular f5 measure-narrow mb2 fw5 hover-underline"}>
+      <div className="black pb4 mt2 mr2">
+        <p className={"neue-regular f5 measure-narrow mb2 fw5 underline-hover"}>
           {post.frontmatter.title}
         </p>
         <p
-          className={"f5 black-40 neue-regular lh-copy mv0 pv0"}
+          className={"f5 black-40 neue-regular lh-copy pt2 pv0"}
           style={{
             transition: "all 2s ease-in-out",
           }}
