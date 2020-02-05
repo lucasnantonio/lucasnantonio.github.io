@@ -24,7 +24,7 @@ function AllFilter({ setSelectedTopics, isAll, setAll }) {
         setSelectedTopics(topics)
         setAll(true)
       }}
-      className={`br-pill black pointer pa3-l pa2 neue-regular mr3-l mr0 dib nowrap f5`}
+      className={`br-pill black pointer pa3-l pa2-ns pa1 neue-regular mr3-l mr0 dib nowrap f5-l f6-ns f7 `}
       style={{
         color: isAll ? "white" : "#949494",
         border: !isAll ? "2px solid #ffffff" : "2px solid #222",

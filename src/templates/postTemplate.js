@@ -28,12 +28,12 @@ export default function Template({
   )
   return (
     <Layout isIndex={false}>
-      <div className="flex justify-between items-center mb5">
-        <div>
-          <h1 className="neue-regular f4 black mt3 mb2 pb0 w-100">
+      <div className="flex justify-between mb5">
+        <div className="mr3">
+          <h1 className="neue-regular f4 black mt1 mb2 pb0 w-100">
             {frontmatter.title}
           </h1>
-          <h1 className="f4 black-40 mt0 pt0 measure-narrow  fw4">
+          <h1 className="f4 black-40 mt0 pt0 measure-narrow fw4">
             {frontmatter.subtitle}
           </h1>
         </div>
@@ -42,7 +42,7 @@ export default function Template({
             <Link to={next.frontmatter.path}>
               <span
                 style={{ transform: "rotateZ(180deg)" }}
-                className="flex justify-center center items-center align-center h3 w3 br-pill hover-bg-near-white bn pointer center items-center black-20 hover-dark-gray "
+                className="flex justify-center center items-center align-center pa3-l pa2 br-pill hover-bg-near-white bn pointer center items-center black-20 hover-dark-gray "
               >
                 {caret}
               </span>
@@ -50,7 +50,7 @@ export default function Template({
           )}
           {prev && (
             <Link to={prev.frontmatter.path}>
-              <span className="flex justify-center center items-center align-center h3 w3 br-pill hover-bg-near-white bn pointer center items-center black-20 hover-dark-gray ">
+              <span className="flex justify-center center items-center align-center pa3-l pa2 br-pill hover-bg-near-white bn pointer center items-center black-20 hover-dark-gray ">
                 {caret}
               </span>
             </Link>
@@ -122,6 +122,24 @@ export default function Template({
             </a>
           </div>
         </div> */}
+      </div>
+      <div className="mt5 pv4 bt bw1 b--near-white flex">
+        <div className="f5 mr4 br bw1 b--near-white w-100 pr4">
+          <div className=" lh-title f5 mr4 mb3 ">Previous</div>
+          <div className=" lh-title b f4-l f5 black mb1 ">
+            {prev.frontmatter.title}
+          </div>
+          <div className=" lh-title  f6 mb3 ">{prev.frontmatter.subtitle}</div>
+        </div>
+        <div className="w-100">
+          <div className=" lh-title f5 tr mb3">Next</div>
+          <div className=" lh-title b f4-l f5 black tr mb1">
+            {next.frontmatter.title}
+          </div>
+          <div className=" lh-title  f6 tr mb3">
+            {next.frontmatter.subtitle}
+          </div>
+        </div>
       </div>
     </Layout>
   )

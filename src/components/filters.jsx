@@ -20,7 +20,7 @@ function Filters({ selectedTopics, setSelectedTopics, isAll, setAll }) {
       }}
     >
       <div className="w-100 flex flex-wrap b">
-        <div className="list pl0 f5 flex flex-wrap items-center w-100 justify-between">
+        <div className="list pl0 f5 flex flex-wrap items-center-l w-100 justify-between-l">
           <AllFilter
             selectedTopics={selectedTopics}
             setSelectedTopics={setSelectedTopics}
