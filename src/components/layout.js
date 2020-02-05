@@ -10,6 +10,7 @@ import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
+import Footer from "./footer"
 import "../../node_modules/tachyons/css/tachyons.min.css"
 import "../MyFontsWebfontsKit.css"
 import "./layout.css"
@@ -35,15 +36,17 @@ const Layout = ({
   `)
   return (
     <>
-      {/* <Header
-        isWorkInView={isWorkInView}
-        siteTitle={data.site.siteMetadata.title}
-        selectedTopics={selectedTopics}
-        setSelectedTopics={setSelectedTopics}
-        isAll={isAll}
-        setAll={setAll}
-        isIndex={isIndex}
-      /> */}
+      {!isIndex && (
+        <Header
+          isWorkInView={isWorkInView}
+          siteTitle={data.site.siteMetadata.title}
+          selectedTopics={selectedTopics}
+          setSelectedTopics={setSelectedTopics}
+          isAll={isAll}
+          setAll={setAll}
+          isIndex={isIndex}
+        />
+      )}
 
       <div
         className="pt0 ph0-l ph4"
@@ -54,6 +57,7 @@ const Layout = ({
         }}
       >
         <main>{children}</main>
+        <Footer></Footer>
       </div>
     </>
   )
