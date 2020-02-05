@@ -8,7 +8,10 @@ import { backgroundGray } from "./utils"
 function PostLink({ post, index }) {
   const topicTags = post.frontmatter.topics.map(item => {
     return (
-      <p className="f7 pa2 ba bw1 b--light-gray dib br-pill silver hover-bg-light-gray hover-gray mr2">
+      <p
+        key={item}
+        className="f7 pa2 ba bw1 b--light-gray dib br-pill silver hover-bg-light-gray hover-gray mr2"
+      >
         {item}
       </p>
     )

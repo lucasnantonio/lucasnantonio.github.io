@@ -64,6 +64,7 @@ function IndexPage({
           setSelectedTopics={setSelectedTopics}
           isAll={isAll}
           setAll={setAll}
+          posts={posts}
         />
       </div>
       <CSSTransition

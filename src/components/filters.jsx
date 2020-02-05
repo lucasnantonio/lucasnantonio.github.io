@@ -2,11 +2,12 @@ import React, { useState } from "react"
 import { CSSTransition } from "react-transition-group"
 import Filter from "./filter"
 import AllFilter from "./allFilter"
+import SurpriseButton from "./SurpriseButton"
 import { minWidth, topics, sizes } from "./utils"
 
 // const { minWidth, topics, sizes } = Utils
 
-function Filters({ selectedTopics, setSelectedTopics, isAll, setAll }) {
+function Filters({ selectedTopics, setSelectedTopics, isAll, setAll, posts }) {
   return (
     <div
       className="w-100 bg-white z-max flex justify-end mb6"
@@ -37,6 +38,7 @@ function Filters({ selectedTopics, setSelectedTopics, isAll, setAll }) {
               title={item}
             />
           ))}
+          <SurpriseButton posts={posts} />
         </div>
 
         {/* <div className="list pl0 f5 flex items-center">
