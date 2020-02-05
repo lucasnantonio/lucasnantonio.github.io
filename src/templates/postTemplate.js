@@ -10,15 +10,52 @@ export default function Template({
   const { next, prev } = pageContext
   const { markdownRemark } = data // data.markdownRemark holds our post data
   const { frontmatter, html } = markdownRemark
+  const caret = (
+    <div className="pa2">
+      <svg
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M10 19C9.74401 19 9.48801 18.902 9.29301 18.707C8.90201 18.316 8.90201 17.684 9.29301 17.293L14.586 12L9.29301 6.70701C8.90201 6.31601 8.90201 5.68401 9.29301 5.29301C9.68401 4.90201 10.316 4.90201 10.707 5.29301L16.707 11.293C17.098 11.684 17.098 12.316 16.707 12.707L10.707 18.707C10.512 18.902 10.256 19 10 19"
+          fill="#949494"
+        />
+      </svg>
+    </div>
+  )
   return (
     <Layout isIndex={false}>
-      {next && <Link to={next.frontmatter.path}>{next.frontmatter.title}</Link>}
-      <h1 className="neue-regular f4 black mt3 mb2 pb0 w-100">
-        {frontmatter.title}
-      </h1>
-      <h1 className="f4 black-40 mt0 pt0 measure-narrow mb5 fw4">
-        {frontmatter.subtitle}
-      </h1>
+      <div className="flex justify-between items-center mb5">
+        <div>
+          <h1 className="neue-regular f4 black mt3 mb2 pb0 w-100">
+            {frontmatter.title}
+          </h1>
+          <h1 className="f4 black-40 mt0 pt0 measure-narrow  fw4">
+            {frontmatter.subtitle}
+          </h1>
+        </div>
+        <div className="flex">
+          {next && (
+            <Link to={next.frontmatter.path}>
+              <button className="br-pill hover-bg-near-white bn pointer center items-center gray hover-dark-gray ">
+                {caret}
+              </button>
+            </Link>
+          )}
+          {prev && (
+            <Link to={prev.frontmatter.path}>
+              <button className="br-pill hover-bg-near-white bn pointer center items-center gray hover-dark-gray ">
+                {caret}
+              </button>
+            </Link>
+          )}
+        </div>
+      </div>
 
       <div
         style={{
