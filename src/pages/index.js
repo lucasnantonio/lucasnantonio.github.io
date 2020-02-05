@@ -72,14 +72,14 @@ function IndexPage({
         unmountOnExit
         classNames={"my-node"}
       >
-        <div className="mb5 flex bt bw1 b--black pt4">
+        <div className="mb5 flex bt bw1 b--near-white pt4">
           <h1 className="w-100">
             {selectedTopics[0]}{" "}
             <span className="black-40 f4">{getFilteredPosts().length}</span>
           </h1>
           <p className="f4 w-100 lh-copy">
             {selectedTopics[0] === "Research"
-              ? "The problem contains the solution, they say. As a believer in that phrase, I've dedicate a lot of my time in listening to users, advocating for their needs, and creating the necessary workflows to ensure the teams I collaborate with understand who they're designing for."
+              ? "I dedicate a lot of my time to listening to users, advocating for their needs, and creating the necessary workflows to ensure the teams I collaborate with understand who they're designing for."
               : selectedTopics[0] === "Product Design"
               ? "Even though my current is heavily centered around UI, I have designed across disciplines with solutions ranging from offline services and experiences to physical and digital products."
               : selectedTopics[0] === "Design Ops"

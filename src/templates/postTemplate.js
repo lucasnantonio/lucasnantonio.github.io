@@ -13,7 +13,7 @@ export default function Template({
       <h1 className="neue-regular f4 black mt3 mb2 pb0 w-100">
         {frontmatter.title}
       </h1>
-      <h1 className="f4 black-40 mt0 pt0 measure-narrow mb4">
+      <h1 className="f4 black-40 mt0 pt0 measure-narrow mb5 fw4">
         {frontmatter.subtitle}
       </h1>
 

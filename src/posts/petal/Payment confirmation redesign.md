@@ -17,8 +17,6 @@ color: "#E1F5A9"
 snapToBottom: true
 ---
 
-# Payment confirmation redesign
-
 ## Problem
 
 Petal's app settings controls were very simple to start with, so at the time, the early team decided to design it as a simple stacked list. As new features were implemented and new options added, it quickly became clear that a new, more scalable information architecture model was needed. The list kept growing and it became both visually overwhelming and cognitively confusing for users to find what they were looking for. With big new additions planned ahead, we decided to give the page a redesign.

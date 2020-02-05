@@ -8,12 +8,11 @@ import { backgroundGray } from "./utils"
 function PostLink({ post, index }) {
   const topicTags = post.frontmatter.topics.map(item => {
     return (
-      <p className="f7 pa2 ba b--light-gray dib br-pill silver hover-bg-light-gray hover-gray">
+      <p className="f7 pa2 ba bw1 b--light-gray dib br-pill silver hover-bg-light-gray hover-gray mr2">
         {item}
       </p>
     )
   })
-  console.log(post.frontmatter.topics)
   const [isHovered, setHover] = useState(false)
   return (
     <Link
@@ -21,7 +20,7 @@ function PostLink({ post, index }) {
       onMouseLeave={() => setHover(false)}
       className={` ${
         post.frontmatter.size !== "large" ? "w-25-l w-100" : "w-50"
-      }  
+      }
         link black fl pa2 flex flex-column
         `}
       to={post.frontmatter.path}
@@ -33,18 +32,17 @@ function PostLink({ post, index }) {
         color={post.frontmatter.color}
       />
       <div className="black pb4 mt2 mr2">
-        <p className={"neue-regular f5 measure-narrow mb2 fw5 underline-hover"}>
+        <p
+          className={`neue-regular f5 measure-narrow mb2 fw5 ${
+            isHovered ? "u underline" : ""
+          }`}
+        >
           {post.frontmatter.title}
         </p>
-        <p
-          className={"f5 black-40 neue-regular lh-copy pt2 pv0"}
-          style={{
-            transition: "all 2s ease-in-out",
-          }}
-        >
+        <p className={"f5 black-40 neue-regular lh-copy pt2 pv0 mb0"}>
           {post.frontmatter.subtitle}
         </p>
-        <div>{topicTags}</div>
+        <div style={{ marginLeft: "-.2rem" }}>{topicTags}</div>
       </div>
     </Link>
   )
