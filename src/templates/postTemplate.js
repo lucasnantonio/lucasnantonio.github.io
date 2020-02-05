@@ -126,19 +126,23 @@ export default function Template({
       <div className="mt5 pv4 bt bw1 b--near-white flex">
         <div className="f5 mr4 br bw1 b--near-white w-100 pr4">
           <div className=" lh-title f5 mr4 mb3 ">Previous</div>
-          <div className=" lh-title b f4-l f5 black mb1 ">
+          <Link
+            to={prev.frontmatter.path}
+            className="flex link black underline-hover lh-title b f4-l f5 black mb1 "
+          >
             {prev.frontmatter.title}
-          </div>
+          </Link>
           <div className=" lh-title  f6 mb3 ">{prev.frontmatter.subtitle}</div>
         </div>
         <div className="w-100">
-          <div className=" lh-title f5 tr mb3">Next</div>
-          <div className=" lh-title b f4-l f5 black tr mb1">
+          <div className=" lh-title f5 mb3">Next</div>
+          <Link
+            to={next.frontmatter.path}
+            className="link black underline-hover flex w-100 lh-title b f4-l f5 mb1"
+          >
             {next.frontmatter.title}
-          </div>
-          <div className=" lh-title  f6 tr mb3">
-            {next.frontmatter.subtitle}
-          </div>
+          </Link>
+          <div className=" lh-title  f6 mb3">{next.frontmatter.subtitle}</div>
         </div>
       </div>
     </Layout>
