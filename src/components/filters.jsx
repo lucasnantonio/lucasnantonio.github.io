@@ -19,8 +19,8 @@ function Filters({ selectedTopics, setSelectedTopics, isAll, setAll }) {
         marginRight: "0px",
       }}
     >
-      <div className="w-100 flex nowrap b">
-        <div className="list pl0 f5 flex items-center w-100 justify-between">
+      <div className="w-100 flex flex-wrap b">
+        <div className="list pl0 f5 flex flex-wrap items-center w-100 justify-between">
           <AllFilter
             selectedTopics={selectedTopics}
             setSelectedTopics={setSelectedTopics}

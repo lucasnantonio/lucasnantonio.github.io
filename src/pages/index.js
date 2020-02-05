@@ -72,12 +72,12 @@ function IndexPage({
         unmountOnExit
         classNames={"my-node"}
       >
-        <div className="mb5 flex bt bw1 b--near-white pt4">
-          <h1 className="w-100">
+        <div className="mb5 flex flex-row-l flex-column bt bw1 b--near-white pt4">
+          <h1 className="w-100 f2-l f3">
             {selectedTopics[0]}{" "}
             <span className="black-40 f4">{getFilteredPosts().length}</span>
           </h1>
-          <p className="f4 w-100 lh-copy">
+          <p className="f4-l f5 w-100 lh-copy">
             {selectedTopics[0] === "Research"
               ? "I dedicate a lot of my time to listening to users, advocating for their needs, and creating the necessary workflows to ensure the teams I collaborate with understand who they're designing for."
               : selectedTopics[0] === "Product Design"

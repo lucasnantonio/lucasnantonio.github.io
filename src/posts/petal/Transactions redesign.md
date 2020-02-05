@@ -2,6 +2,9 @@
 path: "/blog/transaction-detail-redesign"
 date: "2019-05-04"
 title: Transaction detail
+problem: Small company with an old website
+solution: aaja
+impact: aahh
 subtitle: Creating engagement and deflecting tickets
 category: Petal
 topics:
@@ -11,13 +14,8 @@ role:
   - design
 size: large
 cover_image: "../../images/petal/transaction-details-hero.png"
-impact: more consistent experience across feed events
 color: "lightpink"
 ---
-
-# Accounts page redesign
-
-## Problem
 
 One of Petal's biggest value proposition is that members can link their bank accounts to our app in order to get continuous financial insights, credit underwriting, and other offers. It is also true that some users prefer not to link accounts, and instead manually add routing and account numbers just to in order to pay their card statements.
 The way we refer to these accounts internally is "linked accounts" and "manually connected accounts". By analyzing various sources of customer feedback and support tickets, it was clear that we could make this distinction clearer in the app.

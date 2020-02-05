@@ -3,16 +3,9 @@ import React, { useState } from "react"
 import Img from "gatsby-image/withIEPolyfill"
 import { backgroundGray } from "./utils"
 
-function ImageWithBackground({
-  fluid,
-  color,
-  snapToBottom = true,
-  cover = false,
-  isHovered,
-}) {
+function ImageWithBackground({ fluid, color }) {
   return (
     <div
-      // className="br2"
       style={{
         backgroundColor: color,
       }}

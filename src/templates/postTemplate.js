@@ -1,15 +1,18 @@
 import React from "react"
-import { graphql } from "gatsby"
+import { graphql, Link } from "gatsby"
 import Layout from "../components/layout"
 import Img from "gatsby-image/withIEPolyfill"
 
 export default function Template({
   data, // this prop will be injected by the GraphQL query below.
+  pageContext,
 }) {
+  const { next, prev } = pageContext
   const { markdownRemark } = data // data.markdownRemark holds our post data
   const { frontmatter, html } = markdownRemark
   return (
     <Layout isIndex={false}>
+      {next && <Link to={next.frontmatter.path}>{next.frontmatter.title}</Link>}
       <h1 className="neue-regular f4 black mt3 mb2 pb0 w-100">
         {frontmatter.title}
       </h1>

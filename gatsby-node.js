@@ -16,13 +16,15 @@ exports.createPages = ({ actions, graphql }) => {
   return graphql(`
     {
       allMarkdownRemark(
-        sort: { order: DESC, fields: [frontmatter___date] }
+        sort: { order: ASC, fields: [frontmatter___date] }
         limit: 1000
       ) {
         edges {
           node {
             frontmatter {
               path
+              title
+              subtitle
             }
           }
         }
@@ -32,12 +34,15 @@ exports.createPages = ({ actions, graphql }) => {
     if (result.errors) {
       return Promise.reject(result.errors)
     }
-
-    return result.data.allMarkdownRemark.edges.forEach(({ node }) => {
+    const posts = result.data.allMarkdownRemark.edges
+    return posts.forEach(({ node }, index) => {
       createPage({
         path: node.frontmatter.path,
         component: blogPostTemplate,
-        context: {}, // additional data can be passed via context
+        context: {
+          prev: index === 0 ? null : posts[index - 1].node,
+          next: index === posts.length - 1 ? null : posts[index + 1].node,
+        }, // additional data can be passed via context
       })
     })
   })
