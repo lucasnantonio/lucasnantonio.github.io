@@ -15,19 +15,8 @@ function IndexPage({
     allImageSharp: { nodes: images },
   },
 }) {
-  const [isWorkInView, setWorkInView] = useState(false)
   const [isAll, setAll] = useState(true)
   const [selectedTopics, setSelectedTopics] = useState(topics)
-  const [selectedSizes, setSelectedSizes] = useState([])
-
-  const checkIfWorkIsInView = () => {
-    window.onscroll = () => {
-      document.getElementById("work") !== null &&
-        setWorkInView(
-          document.getElementById("work").getBoundingClientRect().top <= 0
-        )
-    }
-  }
 
   const getFilteredPosts = () => {
     if (isAll) {

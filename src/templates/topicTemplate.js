@@ -1,7 +1,17 @@
-import React from "react"
+import React, { useState, useEffect, isValidElement } from "react"
 import PropTypes from "prop-types"
+import Layout from "../components/layout"
+import Hello from "../components/hello"
+import Filters from "../components/filters"
+import PostList from "../components/postList"
+
 // Components
 import { Link, graphql } from "gatsby"
+
+// const [isAll, setAll] = useState(true)
+
+// const [selectedTopics, setSelectedTopics] = useState(topics)
+
 const Topics = ({ pageContext, data }) => {
   const { topic } = pageContext
   const { edges, totalCount } = data.allMarkdownRemark
@@ -9,49 +19,25 @@ const Topics = ({ pageContext, data }) => {
     totalCount === 1 ? "" : "s"
   } topicged with "${topic}"`
   return (
-    <div>
-      <h1>{topicHeader}</h1>
-      <ul>
-        {edges.map(({ node }) => {
-          // const { slug } = node.fields
-          const { title } = node.frontmatter
-          return (
-            <li key={""}>
-              <Link to={"#"}>{title}</Link>
-            </li>
-          )
-        })}
-      </ul>
-      {/*
-              This links to a page that does not yet exist.
-              You'll come back to it!
-            */}
-      <Link to="/topics">All topics</Link>
-    </div>
+    <Layout
+      isIndex
+      // isAll={isAll}
+      // setAll={setAll}
+      // selectedTopics={selectedTopics}
+      // setSelectedTopics={setSelectedTopics}
+    >
+      <Hello />
+      {/* <Filters
+      // selectedTopics={selectedTopics}
+      // setSelectedTopics={setSelectedTopics}
+      // isAll={isAll}
+      // setAll={setAll}
+      // posts={posts}
+      /> */}
+    </Layout>
   )
 }
-Topics.propTypes = {
-  pageContext: PropTypes.shape({
-    topic: PropTypes.string.isRequired,
-  }),
-  data: PropTypes.shape({
-    allMarkdownRemark: PropTypes.shape({
-      totalCount: PropTypes.number.isRequired,
-      edges: PropTypes.arrayOf(
-        PropTypes.shape({
-          node: PropTypes.shape({
-            frontmatter: PropTypes.shape({
-              title: PropTypes.string.isRequired,
-            }),
-            fields: PropTypes.shape({
-              slug: PropTypes.string.isRequired,
-            }),
-          }),
-        }).isRequired
-      ),
-    }),
-  }),
-}
+
 export default Topics
 export const pageQuery = graphql`
   query($topic: String) {
