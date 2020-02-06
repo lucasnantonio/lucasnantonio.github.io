@@ -162,7 +162,10 @@ export const pageQuery = graphql`
         }
       }
     }
-    allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date], filter: {frontmatter: {published: {eq: true}}})}) {
+    allMarkdownRemark(
+      sort: { order: DESC, fields: [frontmatter___date] }
+      filter: { frontmatter: { published: { eq: true } } }
+    ) {
       edges {
         node {
           id
