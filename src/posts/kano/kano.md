@@ -7,7 +7,7 @@ category: Kano
 topics:
   - design
   - research
-published: true
+published: false
 role:
   - design
   - user testing
