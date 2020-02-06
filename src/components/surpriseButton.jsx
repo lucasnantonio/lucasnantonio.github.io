@@ -6,9 +6,21 @@ function SurpriseButton({ posts }) {
   const [isHovered, setHover] = useState(false)
   const [randomPost, setRandomPost] = useState("")
 
+  var myAnimation
+
+  function swapColor() {
+    document.getElementById("surpriseLink").classList.add("blinking")
+  }
+
   function startRandom() {
+    swapColor()
     setRandomPost(getRandomPostUrl())
   }
+
+  function stopRandom() {
+    document.getElementById("surpriseLink").classList.remove("blinking")
+  }
+
   function getRandomPostUrl() {
     return posts[Math.floor(Math.random() * posts.length)].node.frontmatter.path
   }
@@ -16,11 +28,11 @@ function SurpriseButton({ posts }) {
   return (
     <>
       <Link
+        id="surpriseLink"
         to={getRandomPostUrl()}
         onMouseEnter={() => startRandom()}
-        onMouseLeave={() => setHover(false)}
-        onClick={() => stopColor()}
-        className={`br-pill pointer pa3-l pa2-ns pa1 neue-regular mr3-l mr0 dib nowrap f5-l f6-ns f7 `}
+        onMouseOut={() => stopRandom()}
+        className={`gray fw2 link hover-white br-pill pointer pa3-l pa2-ns pa1 neue-regular mr3-l mr0 dib nowrap f5-l f6-ns f7 `}
       >
         Surprise me
       </Link>
