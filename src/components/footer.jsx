@@ -3,7 +3,7 @@ import PhraseWithFootnote from "../components/phraseWithFootnote"
 
 const Footer = () => {
   return (
-    <div className="flex mb6 mt3 bt b--near-white bw1 pt4 items-center">
+    <div className="flex mb6 mt3 bt b--near-white bw1 pt4 items-center f5-l f7">
       <p className="mr3">Lucas Neumann © 2009–2020</p>
       <a
         className="link black underline-hover mr3"
