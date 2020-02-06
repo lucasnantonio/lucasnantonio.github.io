@@ -32,9 +32,9 @@ const Hello = () => {
           {visitor && `I'm Lucas Neumann.`}
         </h1>
         <p className="f4 measure-narrow black-40 lh-copy">
-          <br /> Futurebrand, Insitum, & Nubank alumnus, now managing product
-          design at Petal in New York. I help companies cultivate user research,
-          design empowering products, and grow healthy design teams.
+          <br /> Futurebrand, Insitum, & Nubank alumnus, I currently manage
+          product design at Petal in New York. I help companies cultivate user
+          research, design empowering products, and grow healthy design teams.
         </p>
       </div>
     </div>

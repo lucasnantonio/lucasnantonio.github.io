@@ -29,7 +29,7 @@ const Header = ({
     >
       <div className="w-100">
         <Link to="/" className={"link"}>
-          <p className="f5 black neue-regular b">Lucas Neumann</p>
+          <h1 className="f5 black neue-regular">Lucas Neumann</h1>
         </Link>
       </div>
       {isIndex && (

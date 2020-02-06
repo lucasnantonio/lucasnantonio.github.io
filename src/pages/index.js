@@ -78,7 +78,7 @@ function IndexPage({
             {selectedTopics[0]}{" "}
             <span className="black-40 f4">{getFilteredPosts().length}</span>
           </h1>
-          <p className="f4-l f5 w-100 lh-copy">
+          <p className="f4-l f5 w-100 lh-copy mt4">
             {selectedTopics[0] === "Research"
               ? "I dedicate a lot of my time to listening to users, advocating for their needs, and creating the necessary workflows to ensure the teams I collaborate with understand who they're designing for."
               : selectedTopics[0] === "Product Design"
