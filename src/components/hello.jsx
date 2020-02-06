@@ -6,14 +6,6 @@ function capitalizeFirstLetter(string) {
   return string.charAt(0).toUpperCase() + string.slice(1)
 }
 
-// function greet () {
-
-//   if (visitor && atob(visitor)){
-//   greeting.innerHTML = "Hi there, " + capitalizeFirstLetter(atob(visitor)) + "! <br /> It's nice to have you here."
-//   presentation.innerHTML = "I am a product designer at Nubank."
-// }
-// }
-
 const Hello = ({ setSelectedTopics, setAll }) => {
   const [visitor, setVisitor] = useState(null)
   function getVisitor() {
@@ -37,12 +29,12 @@ const Hello = ({ setSelectedTopics, setAll }) => {
           {visitor && `I'm Lucas Neumann.`}
         </h1>
         <p className="f4 w-50-l black-40 lh-copy">
-          <br /> I help companies nurture{" "}
+          <br /> I help companies{" "}
           <span
             className="underline-hover hover-black pointer"
             onClick={() => setTopic("Research")}
           >
-            user research
+            nurture user research
           </span>{" "}
           and{" "}
           <span
@@ -63,6 +55,7 @@ const Hello = ({ setSelectedTopics, setAll }) => {
             className="link black-40 underline-hover hover-black"
             href="http://www.futurebrand.com"
             target="blank"
+            style={{ cursor: "ne-resize" }}
           >
             Futurebrand
           </a>
@@ -71,6 +64,7 @@ const Hello = ({ setSelectedTopics, setAll }) => {
             className="link black-40 underline-hover hover-black"
             href="http://www.insitum.com"
             target="blank"
+            style={{ cursor: "ne-resize" }}
           >
             Insitum
           </a>
@@ -79,6 +73,7 @@ const Hello = ({ setSelectedTopics, setAll }) => {
             className="link black-40 underline-hover hover-black"
             href="http://www.kano.me"
             target="blank"
+            style={{ cursor: "ne-resize" }}
           >
             Kano
           </a>{" "}
@@ -87,6 +82,7 @@ const Hello = ({ setSelectedTopics, setAll }) => {
             className="link black-40 underline-hover hover-black"
             href="http://www.nubank.com.br/en"
             target="blank"
+            style={{ cursor: "ne-resize" }}
           >
             Nubank
           </a>{" "}
@@ -95,6 +91,7 @@ const Hello = ({ setSelectedTopics, setAll }) => {
             className="link black-40 underline-hover hover-black"
             href="http://www.petalcard.com"
             target="blank"
+            style={{ cursor: "ne-resize" }}
           >
             Petal
           </a>
