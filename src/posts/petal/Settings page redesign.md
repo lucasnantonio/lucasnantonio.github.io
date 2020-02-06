@@ -6,7 +6,7 @@ subtitle: Opening space for growth and managing complexity
 category: Petal
 topics:
   - design
-published: true
+published: false
 role:
   - design
   - user testing

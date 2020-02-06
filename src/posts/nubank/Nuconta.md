@@ -15,7 +15,7 @@ roles:
   - research lead
 color: "#D0A9F5"
 cover_image: "../../images/nubank/nuconta-hero.png"
-published: true
+published: false
 size: large
 learn_more: http://nubank.com.br/nuconta
 where: São Paulo
