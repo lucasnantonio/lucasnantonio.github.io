@@ -10,6 +10,9 @@ export default function Template({
   const { next, prev } = pageContext
   const { markdownRemark } = data // data.markdownRemark holds our post data
   const { frontmatter, html } = markdownRemark
+  {
+    console.log(pageContext)
+  }
   const caret = (
     <svg
       width="24"
@@ -146,7 +149,7 @@ export default function Template({
             </div>
           </div>
         )}
-        {next && (
+        {next && next.frontmatter && (
           <div className="w-100">
             <div className=" lh-title f5 mb3">Next</div>
             <Link

@@ -18,6 +18,7 @@ exports.createPages = ({ actions, graphql }) => {
       allMarkdownRemark(
         sort: { order: ASC, fields: [frontmatter___date] }
         limit: 1000
+        filter: { frontmatter: { published: { eq: true } } }
       ) {
         edges {
           node {
