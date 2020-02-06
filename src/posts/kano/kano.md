@@ -6,7 +6,7 @@ subtitle: My first job as a product designer
 category: Kano
 topics:
   - design
-  - research
+  - Research
 published: false
 role:
   - design

@@ -6,7 +6,7 @@ subtitle: The project that probably turned me vegetarian
 category: Others
 topics:
   - industrial design
-  - research
+  - Research
 published: true
 role:
   - design intern
