@@ -20,8 +20,12 @@ function Filters({ selectedTopics, setSelectedTopics, isAll, setAll, posts }) {
         marginRight: "0px",
       }}
     >
-      <div className="w-100 flex flex-wrap b">
-        <div className="list pl0 f5 flex flex-wrap items-center-l w-100 justify-between-l">
+      <div className="w-100 flex b relative bg-red">
+        <div
+          // see css for custom styles
+          id="filters"
+          className="w-100-l 100vw list pl0 f5 flex items-center-l justify-between-l overflow-x-scroll"
+        >
           <AllFilter
             selectedTopics={selectedTopics}
             setSelectedTopics={setSelectedTopics}

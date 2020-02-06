@@ -95,3 +95,12 @@ h5 {
     background-color: yellow;
   }
 }
+#filters {
+  position: absolute;
+  left: -2rem;
+  right: -2rem;
+  padding: 0rem 2rem;
+}
+#filters::-webkit-scrollbar {
+  display: none;
+}
