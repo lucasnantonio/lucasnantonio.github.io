@@ -28,12 +28,12 @@ export default function Template({
   )
   return (
     <Layout isIndex={false}>
-      <div className="flex justify-between mb5">
+      <div className="flex justify-between mb5 mt3">
         <div className="mr3">
-          <h1 className="neue-regular f4 black mt1 mb2 pb0 w-100">
+          <h1 className="neue-regular measure f3 black mt1 mb2 pb0 w-100">
             {frontmatter.title}
           </h1>
-          <h1 className="f4 black-40 mt0 pt0 measure-narrow fw4">
+          <h1 className="f3 lh-copy black-40 mt0 pt0 measure fw4">
             {frontmatter.subtitle}
           </h1>
         </div>
