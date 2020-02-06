@@ -16,7 +16,7 @@ roles:
 color: "#D0A9F5"
 cover_image: "../../images/nubank/nuconta-hero.png"
 published: true
-size: P
+size: large
 learn_more: http://nubank.com.br/nuconta
 where: São Paulo
 when: 2017-2018

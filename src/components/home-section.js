@@ -22,11 +22,7 @@ const HomeSection = ({ title, date, description, posts, isAll }) => {
               >
                 {title}
               </h2>
-              <p
-                className={
-                  "f4 neue-regular lh-copy w-75 black-40 mt0 measure-narrow"
-                }
-              >
+              <p className={"f4 neue-regular lh-copy w-75 black-40 mt0 w-50-l"}>
                 {description}
               </p>
             </div>
