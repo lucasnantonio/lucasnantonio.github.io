@@ -17,7 +17,7 @@ const HomeSection = ({ title, date, description, posts, isAll }) => {
             <div className="flex flex-column pb4">
               <h2
                 className={
-                  "w-25 pb2 f3 tracked-tight mt0 pt0 sans neue-regular black fw5"
+                  "w-25 pb2 f2 tracked-tight mt0 pt0 sans neue-regular black fw5"
                 }
               >
                 {title}

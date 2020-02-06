@@ -14,12 +14,17 @@ function capitalizeFirstLetter(string) {
 // }
 // }
 
-const Hello = () => {
+const Hello = ({ setSelectedTopics, setAll }) => {
   const [visitor, setVisitor] = useState(null)
   function getVisitor() {
     setVisitor(window.location.search.split("?")[1])
   }
   useEffect(() => getVisitor())
+
+  function setTopic(item) {
+    setAll(false)
+    setSelectedTopics([item])
+  }
 
   return (
     <div className="flex flex-column mb6 mt6">
@@ -31,10 +36,69 @@ const Hello = () => {
           <br />
           {visitor && `I'm Lucas Neumann.`}
         </h1>
-        <p className="f4 measure-narrow black-40 lh-copy">
-          <br /> Futurebrand, Insitum, & Nubank alumnus, I currently manage
-          product design at Petal in New York. I help companies cultivate user
-          research, design empowering products, and grow healthy design teams.
+        <p className="f4 w-50-l black-40 lh-copy">
+          <br /> I help companies nurture{" "}
+          <span
+            className="underline-hover hover-black pointer"
+            onClick={() => setTopic("Research")}
+          >
+            user research
+          </span>{" "}
+          and{" "}
+          <span
+            className="underline-hover hover-black pointer"
+            onClick={() => setTopic("Product Design")}
+          >
+            design empowering experiences
+          </span>{" "}
+          while{" "}
+          <span
+            className="underline-hover hover-black pointer"
+            onClick={() => setTopic("Design Ops")}
+          >
+            building healthy teams
+          </span>
+          .{" "}
+          <a
+            className="link black-40 underline-hover hover-black"
+            href="http://www.futurebrand.com"
+            target="blank"
+          >
+            Futurebrand
+          </a>
+          ,{" "}
+          <a
+            className="link black-40 underline-hover hover-black"
+            href="http://www.insitum.com"
+            target="blank"
+          >
+            Insitum
+          </a>
+          ,{" "}
+          <a
+            className="link black-40 underline-hover hover-black"
+            href="http://www.kano.me"
+            target="blank"
+          >
+            Kano
+          </a>{" "}
+          &{" "}
+          <a
+            className="link black-40 underline-hover hover-black"
+            href="http://www.nubank.com.br/en"
+            target="blank"
+          >
+            Nubank
+          </a>{" "}
+          alumnus, I currently manage product design at{" "}
+          <a
+            className="link black-40 underline-hover hover-black"
+            href="http://www.petalcard.com"
+            target="blank"
+          >
+            Petal
+          </a>
+          .
         </p>
       </div>
     </div>

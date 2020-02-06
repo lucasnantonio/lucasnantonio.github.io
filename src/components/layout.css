@@ -76,7 +76,7 @@ h5 {
 }
 
 .blinking {
-  animation: blinkingText 0.2s infinite;
+  animation: blinkingText 0.25s infinite;
 }
 @keyframes blinkingText {
   0% {
@@ -103,4 +103,7 @@ h5 {
 }
 #filters::-webkit-scrollbar {
   display: none;
+}
+.b {
+  font-weight: 500;
 }

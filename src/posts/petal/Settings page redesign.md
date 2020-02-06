@@ -12,6 +12,7 @@ role:
   - user testing
 color: "lightblue"
 cover_image: "../../images/petal/settings-page-hero.png"
+size: large
 impact: Unblocked development and placement of new features such as Friend Referrals, Notification Center, and in-app help center.
 ---
 

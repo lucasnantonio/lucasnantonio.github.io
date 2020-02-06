@@ -43,22 +43,8 @@ function Filters({ selectedTopics, setSelectedTopics, isAll, setAll, posts }) {
             />
           ))}
           <SurpriseButton posts={posts} />
+          {/* <div>Bio</div> */}
         </div>
-
-        {/* <div className="list pl0 f5 flex items-center">
-          {sizes.map(item => (
-            <Filter
-              isAll={isAll}
-              setAll={setAll}
-              selectedTopics={selectedTopics}
-              selectedSizes={selectedSizes}
-              setSelectedTopics={setSelectedTopics}
-              setSelectedSizes={setSelectedSizes}
-              key={item}
-              title={item}
-            />
-          ))}
-        </div> */}
       </div>
     </div>
   )
