@@ -4,11 +4,10 @@ date: "2019-05-04"
 title: Payment summary redesign
 category: Petal
 topics:
-	- design
+  - design
 published: true
-role: 
-	- design
-date: October 2019
+role:
+  - design
 cover_image: "../../images/hero-petal.png"
 Impact: number of tickets about minimum payment before and after; engagement with summary feed event;
 ---

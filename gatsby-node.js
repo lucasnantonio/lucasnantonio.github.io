@@ -7,11 +7,13 @@
 // You can delete this file if you're not using it
 
 const path = require(`path`)
+const _ = require("lodash")
 
 exports.createPages = ({ actions, graphql }) => {
   const { createPage } = actions
 
   const blogPostTemplate = path.resolve(`src/templates/postTemplate.js`)
+  const topicTemplate = path.resolve("src/templates/topicTemplate.js")
 
   return graphql(`
     {
@@ -29,13 +31,18 @@ exports.createPages = ({ actions, graphql }) => {
           }
         }
       }
+      topicsGroup: allMarkdownRemark(limit: 2000) {
+        group(field: frontmatter___topics) {
+          fieldValue
+        }
+      }
     }
   `).then(result => {
     if (result.errors) {
       return Promise.reject(result.errors)
     }
     const posts = result.data.allMarkdownRemark.edges
-    return posts.forEach(({ node }, index) => {
+    posts.forEach(({ node }, index) => {
       createPage({
         path: node.frontmatter.path,
         component: blogPostTemplate,
@@ -43,6 +50,17 @@ exports.createPages = ({ actions, graphql }) => {
           prev: index === 0 ? null : posts[index - 1].node,
           next: index === posts.length - 1 ? null : posts[index + 1].node,
         }, // additional data can be passed via context
+      })
+    })
+    // Make tag pages
+    const topics = result.data.topicsGroup.group
+    topics.forEach(topic => {
+      createPage({
+        path: `/topics/${_.kebabCase(topic.fieldValue)}/`,
+        component: topicTemplate,
+        context: {
+          topic: topic.fieldValue,
+        },
       })
     })
   })
