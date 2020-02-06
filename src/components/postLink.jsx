@@ -8,7 +8,7 @@ import { backgroundGray } from "./utils"
 function PostLink({ post, index }) {
   const topicTags = post.frontmatter.topics.map(item => {
     return (
-      <p key={item} className="f7 pa2 ba b--light-gray dib br-pill silver mr2">
+      <p key={item} className="f7 pa2 ba b--black-10 dib br-pill silver mr2">
         {item}
       </p>
     )
@@ -42,7 +42,9 @@ function PostLink({ post, index }) {
         <p className={"f5 black-40 neue-regular lh-copy pv0 mb0 mt0"}>
           {post.frontmatter.subtitle}
         </p>
-        <div style={{ marginLeft: "-.2rem" }}>{topicTags}</div>
+        <div className="mono" style={{ marginLeft: "-.2rem" }}>
+          {topicTags}
+        </div>
       </div>
     </Link>
   )

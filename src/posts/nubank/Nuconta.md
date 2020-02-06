@@ -20,7 +20,7 @@ size: P
 learn_more: http://nubank.com.br/nuconta
 where: São Paulo
 when: 2017-2018
-design_team:
+team:
   - Lucas Neumann
   - Rachel Jordan
   - Erick Mazer

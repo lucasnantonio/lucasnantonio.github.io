@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Courier+Prime:400,400i,700,700i|DM+Sans:400,400i,500,500i,700,700i|DM+Serif+Text|Darker+Grotesque:300,400,500,600,700,800,900|Noto+Sans+HK:400,500,700,900&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Courier+Prime|DM+Sans:400,500|IBM+Plex+Mono|Space+Mono&display=swap");
 html {
   font-family: "DM Sans";
   font-size: 18px;
@@ -106,4 +106,7 @@ h5 {
 }
 .b {
   font-weight: 500;
+}
+.mono {
+  font-family: "Space Mono";
 }

@@ -28,14 +28,22 @@ export default function Template({
   )
   return (
     <Layout isIndex={false}>
-      <div className="flex justify-between mb5 mt3">
+      <div className="flex justify-between mb5">
         <div className="mr3">
-          <h1 className="neue-regular measure f3 black mt1 mb2 pb0 w-100">
+          <h1 className="neue-regular measure f2 black mt1 mb0 pb0 w-100">
             {frontmatter.title}
           </h1>
-          <h1 className="f3 lh-copy black-40 mt0 pt0 measure fw4">
+          <h1 className="f3 fw1 lh-copy black-40 mt3 pt0 measure">
             {frontmatter.subtitle}
           </h1>
+          <div className="mono f7 silver lh-copy mt4">
+            {frontmatter.where && frontmatter.where + `,`} {frontmatter.date}
+          </div>
+          {frontmatter.team && (
+            <div className="mono f7 silver lh-copy">
+              {frontmatter.team.map(item => `${item}, `)}
+            </div>
+          )}
         </div>
         <div className="flex">
           {next && (
@@ -168,8 +176,10 @@ export const pageQuery = graphql`
         solution
         impact
         color
+        where
         design_team
         learn_more
+        team
         cover_image {
           publicURL
           childImageSharp {
