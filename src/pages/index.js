@@ -81,9 +81,9 @@ function IndexPage({
             {selectedTopics[0] === "Research"
               ? "I dedicate a lot of my time to listening to users, advocating for their needs, and creating the necessary workflows to ensure the teams I collaborate with understand who they're designing for."
               : selectedTopics[0] === "Product Design"
-              ? "Even though my current is heavily centered around UI, I have designed across disciplines with solutions ranging from offline services and experiences to physical and digital products."
+              ? "I've designed products that reach millions of users and are valued in the billions. Most of my current projects are digital, but my roots are strongly generalistic, having spanned industrial and service design."
               : selectedTopics[0] === "Design Ops"
-              ? "I have experience managing teams of designers and working with my peer leads to create and nurture larger design organizations and their culture."
+              ? "Designing how design gets made and keeping the teams I work with happy, engaged and empowered is one of my biggest areas of interest."
               : "I'm a coding begginer and enthusiast. This portfolio website is, in itself, an experiment in learning React, and below you can find other projects I've played with."}
           </p>
         </div>

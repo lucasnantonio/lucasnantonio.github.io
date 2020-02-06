@@ -32,25 +32,26 @@ const Hello = ({ setSelectedTopics, setAll }) => {
           <br /> I help companies{" "}
           <span
             className="underline-hover hover-black pointer"
+            onClick={() => setTopic("Product Design")}
+          >
+            design empowering experiences
+          </span>
+          {" by "}
+          <span
+            className="underline-hover hover-black pointer"
             onClick={() => setTopic("Research")}
           >
-            nurture user research
+            nurturing user research
           </span>{" "}
           and{" "}
           <span
             className="underline-hover hover-black pointer"
-            onClick={() => setTopic("Product Design")}
-          >
-            design empowering experiences
-          </span>{" "}
-          while{" "}
-          <span
-            className="underline-hover hover-black pointer"
             onClick={() => setTopic("Design Ops")}
           >
-            building healthy teams
+            building healthy creative teams
           </span>
-          .{" "}
+          {"."}
+          <br />
           <a
             className="link black-40 underline-hover hover-black"
             href="http://www.futurebrand.com"
@@ -86,7 +87,7 @@ const Hello = ({ setSelectedTopics, setAll }) => {
           >
             Nubank
           </a>{" "}
-          alumnus, I currently manage product design at{" "}
+          alumnus, currently managing product design at{" "}
           <a
             className="link black-40 underline-hover hover-black"
             href="http://www.petalcard.com"
