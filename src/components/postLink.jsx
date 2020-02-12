@@ -3,15 +3,12 @@ import React, { useState } from "react"
 import { Link } from "gatsby"
 import Img from "gatsby-image"
 import ImageWithBackground from "./imageWithBackground"
+import Tag from "./Tag"
 import { backgroundGray } from "./utils"
 
 function PostLink({ post, index }) {
   const topicTags = post.frontmatter.topics.map(item => {
-    return (
-      <p key={item} className="f7 pa2 ba b--black-10 dib br1 silver mr2">
-        {item}
-      </p>
-    )
+    return <Tag title={item} />
   })
   const [isHovered, setHover] = useState(false)
   return (
@@ -25,12 +22,14 @@ function PostLink({ post, index }) {
         `}
       to={post.frontmatter.path}
     >
-      <ImageWithBackground
-        cover={post.frontmatter.cover}
-        isHovered={isHovered}
-        fluid={post.frontmatter.cover_image.childImageSharp.fluid}
-        color={post.frontmatter.color}
-      />
+      <div className="br2 overflow-hidden">
+        <ImageWithBackground
+          cover={post.frontmatter.cover}
+          isHovered={isHovered}
+          fluid={post.frontmatter.cover_image.childImageSharp.fluid}
+          color={post.frontmatter.color}
+        />
+      </div>
       <div className="black pb4 mt2 mr2 flex flex-column">
         <p
           className={`neue-regular f5 measure-narrow fw5 mt2 mb1 ${

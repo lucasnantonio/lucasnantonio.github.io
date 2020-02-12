@@ -110,3 +110,6 @@ h5 {
 .mono {
   font-family: "Space Mono";
 }
+.gatsby-resp-image-wrapper {
+  margin-top: 4rem;
+}

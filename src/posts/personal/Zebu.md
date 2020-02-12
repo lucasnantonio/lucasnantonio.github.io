@@ -13,17 +13,18 @@ role:
   - user testing
 cover_image: "../../images/livestock.png"
 problem: Weighing an ox is a major headache for livestock farmers and extremely stressful for the animals.
-solution: A first-of-its kind precision farming system.
-impact: 20% increase in productivity above other farms in Brazil and more than 10% above the American standard. Also, I became vegetarian.
+solution: 0-1 design thinking process, including ethnographic visits to livestock farms and co-creation with farmers, resulting in a first-of-its kind precision ranching system.
+impact: 20% increase in productivity above other farms in Brazil and more than 10% above the American standard. Also, made me reduce my meat consumption drastically.
 color: "lightblue"
 size: "large"
 cover: true
+team:
+  - Murilo G
+  - Insitum team.
 ---
 
-In the summer of 2014, I got my first job with digital products at Kano Computer, a record-breaking Kickstarter.com startup, as their incredible teams sprinted to ship the first version of Kano.
+This is the story of the most improbable project I've been involved with in my career, and the one that today I have the most mixed feelings about.
 
-## Onboarding
+In one end, I'm extremely grateful for having had such a privileged immersive experience in a place I'd never have access to otherwise, and which helped me learn ethnographic methods and ultimately see the world in a different way. In another, I feel not a small amount of regret. Reducing my meat consumption and advocating for it in my circles has been one of my main goals in the recent times, and to have worked on a project that optimizes the meat industry sometimes gives me some goosebumps.
 
-A the time I joined, the product was expected to ship in 4 months with a hard-coded custom OS, which wouldn't get an update until the user had been successfully onboarded and connected to WiFi. During this time I helped the team with multiple tasks to ensure that users would be correctly onboarded — and have fun! — in their first experience with the product. I touched everything from usability testing with kids in school, to copywriting, usability heuristic reviews, and UI design.
-
-![img](../../images/kano/kano-011.jpg)
+Anyway, at the time, I was a fresh-out-of-school intern taking an opportunity in one of the most important design & research consultancies around, and even though I considered saying no to the project, in my position at the time that would've been foolish.

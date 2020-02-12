@@ -24,6 +24,8 @@ const Layout = ({
   selectedTopics,
   setSelectedTopics,
   isIndex,
+  prev,
+  next,
 }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
@@ -45,6 +47,8 @@ const Layout = ({
           isAll={isAll}
           setAll={setAll}
           isIndex={isIndex}
+          prev={prev}
+          next={next}
         />
       )}
 

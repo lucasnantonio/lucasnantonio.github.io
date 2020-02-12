@@ -2,6 +2,7 @@ import React from "react"
 import { graphql, Link } from "gatsby"
 import Layout from "../components/layout"
 import Img from "gatsby-image/withIEPolyfill"
+import Tag from "../components/Tag"
 
 export default function Template({
   data, // this prop will be injected by the GraphQL query below.
@@ -10,62 +11,35 @@ export default function Template({
   const { next, prev } = pageContext
   const { markdownRemark } = data // data.markdownRemark holds our post data
   const { frontmatter, html } = markdownRemark
-  {
-    console.log(pageContext)
+  String.prototype.capitalize = function() {
+    return this.replace(/(?:^|\s)\S/g, function(a) {
+      return a.toUpperCase()
+    })
   }
-  const caret = (
-    <svg
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
-        d="M10 19C9.74401 19 9.48801 18.902 9.29301 18.707C8.90201 18.316 8.90201 17.684 9.29301 17.293L14.586 12L9.29301 6.70701C8.90201 6.31601 8.90201 5.68401 9.29301 5.29301C9.68401 4.90201 10.316 4.90201 10.707 5.29301L16.707 11.293C17.098 11.684 17.098 12.316 16.707 12.707L10.707 18.707C10.512 18.902 10.256 19 10 19"
-        fill="#cccccc"
-      />
-    </svg>
-  )
+
   return (
-    <Layout isIndex={false}>
-      <div className="flex justify-between mb5">
-        <div className="mr3">
+    <Layout prev={prev} next={next} isIndex={false}>
+      <div className="flex flex-column justify-between mb5">
+        <div className="flex justify-between w-100">
           <h1 className="neue-regular measure f2 black mt1 mb0 pb0 w-100">
             {frontmatter.title}
           </h1>
-          <h1 className="f3 fw1 lh-copy black-40 mt3 pt0 measure">
-            {frontmatter.subtitle}
-          </h1>
-          <div className="mono f7 silver lh-copy mt4">
-            {frontmatter.where && frontmatter.where + `,`} {frontmatter.date}
-          </div>
-          {frontmatter.team && (
-            <div className="mono f7 silver lh-copy">
-              {frontmatter.team.map(item => `${item}, `)}
-            </div>
-          )}
         </div>
-        <div className="flex">
-          {next && (
-            <Link to={next.frontmatter.path}>
-              <span
-                style={{ transform: "rotateZ(180deg)" }}
-                className="flex justify-center center items-center align-center pa3-l pa2 br-pill hover-bg-near-white bn pointer center items-center black-20 hover-dark-gray "
-              >
-                {caret}
-              </span>
-            </Link>
-          )}
-          {prev && (
-            <Link to={prev.frontmatter.path}>
-              <span className="flex justify-center center items-center align-center pa3-l pa2 br-pill hover-bg-near-white bn pointer center items-center black-20 hover-dark-gray ">
-                {caret}
-              </span>
-            </Link>
-          )}
+        <h1 className="f3 fw1 lh-copy black-40 mt0 pt0 measure mb4">
+          {frontmatter.subtitle}
+        </h1>
+        <div className="flex flex-row-l flex-column justify-between">
+          <div className="mono f7 black-20 lh-copy measure">
+            {frontmatter.where && frontmatter.where + `,`} {frontmatter.date}
+            <br></br>
+            {frontmatter.team && frontmatter.team.map(item => `${item}, `)}
+          </div>
+          {/* <div className="flex">
+            {frontmatter.topics &&
+              frontmatter.topics.map(item => (
+                <Tag title={item.capitalize()}></Tag>
+              ))}
+          </div> */}
         </div>
       </div>
 
@@ -85,7 +59,7 @@ export default function Template({
 
       {/* PROBLEM, SOLUTION, IMPACT */}
       {frontmatter.solution && frontmatter.problem && frontmatter.impact && (
-        <div className="flex justify-between bt bb bw1 b--near-white mb4 pv3 mt5">
+        <div className="flex justify-between bb bw1 b--near-white mb4 pb3 mt3">
           <div className="mr3 w-100">
             <h4>Problem</h4>
             <p className="lh-copy">{frontmatter.problem}</p>
@@ -104,35 +78,6 @@ export default function Template({
         <div className="post-content center w-100">
           <div className="lh-copy" dangerouslySetInnerHTML={{ __html: html }} />
         </div>
-        {/* <div className="flex flex-column">
-          <div className="flex flex-column mb3 lh-copy f7">
-            <span className="black">Where</span>
-            <span>São Paulo</span>
-          </div>
-          <div className="flex flex-column mb3 lh-copy f7">
-            <span className="black">When</span>
-            <span>2017-2018</span>
-          </div>
-          <div className="flex flex-column mb3 lh-copy f7">
-            <span className="black nowrap">Design team</span>
-            {frontmatter.design_team &&
-              frontmatter.design_team.map(item => (
-                <span key={item} className="nowrap">
-                  {item}
-                </span>
-              ))}
-          </div>
-          <div className="flex flex-column mb3 lh-copy f7">
-            <span>Learn more</span>
-            <a
-              className="link black"
-              target="blank"
-              href={frontmatter.learn_more}
-            >
-              Website
-            </a>
-          </div>
-        </div> */}
       </div>
       <div className="mt5 pv4 bt bw1 b--near-white flex">
         {prev && (
@@ -174,6 +119,7 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         path
         title
+        topics
         subtitle
         problem
         solution
