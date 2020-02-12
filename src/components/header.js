@@ -53,7 +53,7 @@ const Header = ({
             <Link to={next.frontmatter.path}>
               <span
                 style={{ transform: "rotateZ(180deg)" }}
-                className="flex justify-center center items-center align-center pa3-l pa2 br-pill hover-bg-near-white bn pointer center items-center black-20 hover-dark-gray "
+                className="flex justify-center center items-center align-center ma2 pa2 br-pill hover-bg-near-white bn pointer center items-center black-20 hover-dark-gray "
               >
                 {caret}
               </span>
@@ -61,7 +61,7 @@ const Header = ({
           )}
           {prev && (
             <Link to={prev.frontmatter.path}>
-              <span className="flex justify-center center items-center align-center pa3-l pa2 br-pill hover-bg-near-white bn pointer center items-center black-20 hover-dark-gray ">
+              <span className="flex justify-center center items-center align-center ma2 pa2 br-pill hover-bg-near-white bn pointer center items-center black-20 hover-dark-gray ">
                 {caret}
               </span>
             </Link>
