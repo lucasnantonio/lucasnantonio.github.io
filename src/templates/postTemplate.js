@@ -19,27 +19,21 @@ export default function Template({
 
   return (
     <Layout prev={prev} next={next} isIndex={false}>
-      <div className="flex flex-column justify-between mb5">
-        <div className="flex justify-between w-100">
-          <h1 className="neue-regular measure f2 black mt1 mb0 pb0 w-100">
+      <div className="flex  flex-row-l flex-column justify-between mb3">
+        <div className="flex flex-column w-75-l w-100">
+          <h1 className="neue-regular measure f2 black mt0 mb0 pb0 w-100">
             {frontmatter.title}
           </h1>
+          <h1 className="f3 fw1 lh-copy black-40 mt0 pt0 measure mb4">
+            {frontmatter.subtitle}
+          </h1>
         </div>
-        <h1 className="f3 fw1 lh-copy black-40 mt0 pt0 measure mb4">
-          {frontmatter.subtitle}
-        </h1>
-        <div className="flex flex-row-l flex-column justify-between">
-          <div className="mono f7 black-20 lh-copy measure">
+        <div className="flex flex-row-l flex-column justify-between w-25-l w-100 mb0-l mb4">
+          <div className="mono f7 black-30 lh-copy measure pt2">
             {frontmatter.where && frontmatter.where + `,`} {frontmatter.date}
             <br></br>
             {frontmatter.team && frontmatter.team.map(item => `${item}, `)}
           </div>
-          {/* <div className="flex">
-            {frontmatter.topics &&
-              frontmatter.topics.map(item => (
-                <Tag title={item.capitalize()}></Tag>
-              ))}
-          </div> */}
         </div>
       </div>
 
