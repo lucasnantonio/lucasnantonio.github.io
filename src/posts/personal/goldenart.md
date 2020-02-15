@@ -1,31 +1,36 @@
 ---
 path: "/blog/others/goldenart"
 date: "2019-03-04"
-title: GoldenArt website
+title: GoldenArt Online Catalogue
 subtitle: A 30-year-old company's web catalog
 category: Others
-problem: Small company with an old website
-solution: aaja
-impact: aahh
+problem: Small company with an old Wordpress website
+solution: Redesigned and rebuilt from scratch, the new website allows much easier filtering and navigation.
 topics:
   - Product Design
   - Code
 roles:
   - designer
-cover_image: "../../images/golden-art/goldenart-hero.png"
+cover_image: "../../images/golden-art/golden-website-1.png"
 published: true
 learn_more: http://goldenart.com.br
 where: São Paulo
 when: 2017-2018
 design_team:
   - Lucas Neumann
-color: "#F78181"
+color: "#ffebe9"
 size: large
 ---
 
 This project is a very simple catalog, but I'm proud of it because it's the first full-stack website I've built and shipped while learning to code. It uses Airtable as the CMS, where the client can update the products' information and actually became the source of truth for the company's inventory. It was a steep learning curve and got me a decent understanding of Javascript, Node, and Express.
 
-<img src="../../images/golden-art/goldenart-008.png" />
+## Backend
+
+GoldenArt has over 500 products in their catalog. The old Wordpress website was painful because it required the company to keep the CMS up-to-date with their in-house catalog system, which was an Excel spreadsheet. In researching solutions to this problem, I found Airtable, and the client and I fell in love with it.
+
+It is a very friendly platform, and it became the internal source of truth for all the information about the product lines, which gets shared with their partners and clients. As they change the info on Airtable, the website is updated in real-time.
+
+<img src="../../images/golden-art/golden-website-2.png"></img>
 
 ## Results
 

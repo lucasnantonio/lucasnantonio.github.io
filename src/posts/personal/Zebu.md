@@ -7,7 +7,7 @@ category: Others
 topics:
   - industrial design
   - Research
-published: true
+published: false
 role:
   - design intern
   - user testing
