@@ -40,7 +40,7 @@ export default function Template({
       <div
         style={{
           backgroundColor: frontmatter.color || "#f0f0f0",
-          height: "800px",
+          height: "600px",
           padding: "4rem 0rem",
         }}
       >
