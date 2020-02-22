@@ -3,6 +3,7 @@ import { graphql, Link } from "gatsby"
 import Layout from "../components/layout"
 import Img from "gatsby-image/withIEPolyfill"
 import Tag from "../components/Tag"
+import { minWidth } from "../components/utils"
 
 export default function Template({
   data, // this prop will be injected by the GraphQL query below.
@@ -19,7 +20,10 @@ export default function Template({
 
   return (
     <Layout prev={prev} next={next} isIndex={false}>
-      <div className="flex  flex-row-l flex-column justify-between mb3">
+      <div
+        style={{ maxWidth: minWidth }}
+        className="flex  center flex-row-l flex-column justify-between mb3"
+      >
         <div className="flex flex-column w-100">
           <h1 className="neue-regular measure f2 black mt0 mb0 pb0 w-100">
             {frontmatter.title}
@@ -57,7 +61,10 @@ export default function Template({
 
       {/* PROBLEM, SOLUTION, IMPACT */}
       {frontmatter.solution && frontmatter.problem && frontmatter.impact && (
-        <div className="flex justify-between bb bw1 b--near-white mb4 pb3 mt3">
+        <div
+          style={{ maxWidth: minWidth }}
+          className="flex center justify-between bb bw1 b--near-white mb4 pb3 mt3"
+        >
           <div className="mr3 w-100">
             <h4>Problem</h4>
             <p className="lh-copy">{frontmatter.problem}</p>
@@ -77,7 +84,10 @@ export default function Template({
           <div className="lh-copy" dangerouslySetInnerHTML={{ __html: html }} />
         </div>
       </div>
-      <div className="mt5 pv4 bt bw1 b--near-white flex">
+      <div
+        style={{ maxWidth: minWidth }}
+        className="mt5 center pv4 bt bw1 b--near-white flex"
+      >
         {prev && (
           <div className="f5 mr4 br bw1 b--near-white w-100 pr4">
             <div className=" lh-title f5 mr4 mb3 ">Previous</div>

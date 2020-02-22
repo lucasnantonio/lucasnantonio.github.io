@@ -57,7 +57,7 @@ const Layout = ({
         style={{
           margin: `0 auto`,
           paddingTop: 0,
-          maxWidth: minWidth,
+          maxWidth: isIndex && minWidth,
         }}
       >
         <main>{children}</main>

@@ -1,7 +1,7 @@
 ---
 path: "/blog/nubank/nuconta"
 date: "2019-11-04"
-title: "NuConta"
+title: NuConta
 subtitle: An account for Brazilians
 category: "Nubank"
 problem: Brazilians are locked into bad banking account options because of big bank's monopoly.
@@ -15,7 +15,7 @@ roles:
   - research lead
 color: "#D0A9F5"
 cover_image: "../../images/nubank/nuconta-hero.png"
-published: false
+published: true
 size: large
 learn_more: http://nubank.com.br/nuconta
 where: São Paulo

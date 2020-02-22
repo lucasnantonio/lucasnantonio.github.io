@@ -33,7 +33,7 @@ const Header = ({
   <div>
     <header
       style={{
-        maxWidth: minWidth,
+        maxWidth: isIndex && minWidth,
         width: "100%",
         left: 0,
         right: 0,
@@ -44,7 +44,10 @@ const Header = ({
         "flex fixed bg-white z-max space-between bb b--near-white bw1 ph0-l ph4"
       }
     >
-      <div className="w-100 flex justify-between items-center">
+      <div
+        style={{ maxWidth: minWidth }}
+        className="w-100 flex justify-between center items-center"
+      >
         <Link to="/" className={"link"}>
           <h1 className="f5 black neue-regular">Lucas Neumann</h1>
         </Link>
