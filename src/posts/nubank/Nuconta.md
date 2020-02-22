@@ -2,11 +2,11 @@
 path: "/blog/nubank/nuconta"
 date: "2019-11-04"
 title: NuConta
-subtitle: An account for millions of people, from zero to one.
+subtitle: Designing the most downloaded banking app in the world
 category: "Nubank"
 problem: Brazilians are locked into bad banking account options because of big bank's monopoly.
 solution: A new type of free, integrated, hybrid checking and savings account.
-impact: 10+ Million customers after 1 year of launch, becoming the biggest startup in Latin America.
+impact: 10+ Million customers after 1 year of launch, becoming the largest startup in Latin America.
 topics:
   - Product Design
   - Research
@@ -29,9 +29,13 @@ team:
 
 NuConta is an unprecedented mix of current, savings, and payments accounts, all-in-one. Thanks to a one-year-long co-creative process, our team was able to design and ship a product that uniquely addresses customer needs.
 
-![](../../images/nubank/nuconta-003.png)
+<div class="w-100 bg-hot-pink pa4 tc mt3 flex">
+<img class="w-50 flex br2 mw5 center " src="../../images/nubank/nuconta-001.gif" />
+</div>
 
-<div class="style__DeviceVideoWrapper-pn33h3-2 jEDBqi"><span class="style__FakeMobileBorderOutter-pn33h3-3 ledXkZ"><div class="style__StyledYoutubeIframe-pn33h3-1 eFrasB" data-youtube-iframe="true"><iframe title="Video" width="255" height="454" frameborder="0" src="https://www.youtube.com/embed/p3iiDSudKPI?autoplay=1&amp;controls=0&amp;playlist=p3iiDSudKPI&amp;loop=1&amp;rel=0&amp;modestbranding=1&amp;showinfo=0&amp;mute=1"></iframe></div></span><span class="style__ResponsiveImagesWrapper-pn33h3-0 itlFew"><div class="style__ImageContent-hjcrn2-0 cYneQB component-responsive-image"><div class="component-responsive-image-size" align="center"><picture><source type="image/webp" srcset="/_next/static/images/b1795559843aff4d938d07ab4edfecfc-device-frame@2x.png.webp"><img alt="bordas de um smartphone" title="" src="/_next/static/images/2d0733e66d6a92585f4babf2aedaac20-device-frame@2x.png" type="image/png"></picture></div></div></span></div>
+![](../../images/nubank/nuconta-003.png)
+![](../../images/nubank/nuconta-0009.png)
+![](../../images/nubank/nuconta-0019.png)
 
 ## Problem discovery
 
@@ -40,6 +44,7 @@ We were committed to challenging our most basic assumptions about how people und
 We ran in-depth interviews with people from different ages and backgrounds in the office, but also on public places like malls and a public university. We sat down and very informally let people talk about their financial lives, how they felt about saving, investing, transferring, and spending their money. We also experimented with some visual aids such as card-sorting and very cheap prototypes, but honestly, our best feedback tools were our competitor's websites and products. We learned an incredible amount just by having people experiment with things other companies have already built.
 
 ![](../../images/nubank/nuconta-009.png)
+![](../../images/nubank/nuconta-research.png)
 
 ## Problem definition
 
@@ -92,12 +97,6 @@ Producing a well-crafted individual screen is satisfying, but we can never forge
 
 ![](../../images/nubank/nuconta-028.png)
 
-## 5. Results
+## Nuconta becomes the most downloaded banking app in the world.
 
-### It's just day one
-
-Defining NuConta’s purpose took a lot of work, and we’re happy to see that after a year-long design process, we have shipped an initial product that meets all the goals we set.
-
-It is currently in controlled rollout for more than three million users, and will soon be available for hundreds of millions of Brazilians.
-
-Here's a demo of the love we got from users:
+In an October report, Quartz noted that Nubank’s app has been downloaded 18 million times in the past year, more than Revolut, Monzo, and N26 combined. Nubank's monthly active users have risen 200% during that period, second only to Monzo.

@@ -34,7 +34,7 @@ const Hello = ({ setSelectedTopics, setAll }) => {
             className="underline-hover hover-black pointer"
             onClick={() => setTopic("Design Ops")}
           >
-            build healthy design teams,
+            build healthy teams,
           </span>{" "}
           <span
             className="underline-hover hover-black pointer"
@@ -46,7 +46,7 @@ const Hello = ({ setSelectedTopics, setAll }) => {
             className="underline-hover hover-black pointer"
             onClick={() => setTopic("Product Design")}
           >
-            and design experiences for millions of people.
+            and design experiences that reach millions of people.
           </span>{" "}
           <br />
           <br />
@@ -85,7 +85,7 @@ const Hello = ({ setSelectedTopics, setAll }) => {
           >
             Nubank
           </a>{" "}
-          alumnus, currently managing product design at{" "}
+          alumnus, currently managing design at{" "}
           <a
             className="link black-40 underline-hover hover-black"
             href="http://www.petalcard.com"

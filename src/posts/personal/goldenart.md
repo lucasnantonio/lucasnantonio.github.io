@@ -1,8 +1,8 @@
 ---
 path: "/blog/others/goldenart"
 date: "2019-03-04"
-title: GoldenArt Online Catalogue
-subtitle: My dad's company website, my first code sandbox.
+title: GoldenArt
+subtitle: My family's company website, my code sandbox.
 category: Others
 problem: Small company with an old Wordpress website
 solution: Website redesigned and rebuilt from scratch using Node.js

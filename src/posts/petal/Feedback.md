@@ -1,8 +1,8 @@
 ---
-path: "/blog/petal-help-center"
+path: "/blog/petal-feedback"
 date: "2020-02-15"
-title: Petal Help Center
-subtitle: A quick visual revamp
+title: Collecting in-app feedback
+subtitle: Listening with real curiosity
 problem: Subpar visual design makes Help Center look unreliable.
 solution: A fun weekend of hacking away our Zendesk template.
 impact: Higher engagement with content and reduced support ticket volumes.
@@ -12,8 +12,8 @@ topics:
   - Product Design
 published: true
 size: large
-cover_image: "../../images/petal/petal-help.png"
-color: "#00BBFF"
+cover_image: "../../images/petal/petal-feedback.png"
+color: "paleturquoise"
 ---
 
 When I joined Petal, they hadn't had the time to give some design love to one of their most common touchpoints with the customer: the help center.

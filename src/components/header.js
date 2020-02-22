@@ -49,8 +49,8 @@ const Header = ({
           <h1 className="f5 black neue-regular">Lucas Neumann</h1>
         </Link>
         <div className="flex">
-          {next ? (
-            <Link to={next.frontmatter.path}>
+          {prev ? (
+            <Link to={prev.frontmatter.path}>
               <span
                 style={{ transform: "rotateZ(180deg)" }}
                 className="flex justify-center center items-center align-center ma2 pa2 br-pill hover-bg-near-white bn pointer center items-center black-20 hover-dark-gray "
@@ -61,19 +61,19 @@ const Header = ({
           ) : (
             <span
               style={{ transform: "rotateZ(180deg)" }}
-              className="o-30 flex justify-center center items-center align-center ma2 pa2 br-pill bn center items-center black-10 "
+              className="o-30 flex justify-center center items-center align-center ma2 pa2 br-pill bn center items-center black-10 hover-dark-gray "
             >
               {caret}
             </span>
           )}
-          {prev ? (
-            <Link to={prev.frontmatter.path}>
+          {next ? (
+            <Link to={next.frontmatter.path}>
               <span className="flex justify-center center items-center align-center ma2 pa2 br-pill hover-bg-near-white bn pointer center items-center black-20 hover-dark-gray ">
                 {caret}
               </span>
             </Link>
           ) : (
-            <span className="o-30 flex justify-center center items-center align-center ma2 pa2 br-pill bn center items-center black-10 hover-dark-gray ">
+            <span className="o-30 flex justify-center center items-center align-center ma2 pa2 br-pill bn center items-center black-10 ">
               {caret}
             </span>
           )}
