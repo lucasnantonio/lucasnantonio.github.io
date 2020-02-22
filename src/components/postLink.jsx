@@ -30,18 +30,23 @@ function PostLink({ post, index }) {
           color={post.frontmatter.color}
         />
       </div>
-      <div className="black pb4 mt2 mr2 flex flex-column">
-        <p
-          className={`neue-regular f5 measure-narrow fw5 mt2 mb1 ${
-            isHovered ? "u underline" : ""
-          }`}
+      <div className="black pb4 mt2 flex justify-between">
+        <div className="mr3 w-100">
+          <p
+            className={`neue-regular f5 measure-narrow fw5 mt2 mb1 ${
+              isHovered ? "u underline" : ""
+            }`}
+          >
+            {post.frontmatter.title}
+          </p>
+          <p className={"f5 black-40 neue-regular lh-copy pv0 mb0 mt0"}>
+            {post.frontmatter.subtitle}
+          </p>
+        </div>
+        <div
+          className="mono mt2 flex items-start"
+          style={{ marginLeft: "-.2rem" }}
         >
-          {post.frontmatter.title}
-        </p>
-        <p className={"f5 black-40 neue-regular lh-copy pv0 mb0 mt0"}>
-          {post.frontmatter.subtitle}
-        </p>
-        <div className="mono mt3" style={{ marginLeft: "-.2rem" }}>
           {topicTags}
         </div>
       </div>

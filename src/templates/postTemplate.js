@@ -42,11 +42,11 @@ export default function Template({
           <h1 className="neue-regular measure f2 black mt0 mb0 pb0 w-100">
             {frontmatter.title}
           </h1>
-          <h1 className="f3 fw1 lh-copy black-40 mt0 pt0 measure mb4">
+          <h1 className="f3 fw1 lh-copy black-40 mt0 pt0 measure mb1">
             {frontmatter.subtitle}
           </h1>
         </div>
-        <div className="flex flex-row-l flex-column justify-between mb0-l mb4 w-third">
+        {/* <div className="flex flex-row-l flex-column justify-between mb0-l mb4 w-third">
           <div className="mono f7 black-30 lh-copy measure pt2 w-100">
             <div className="nowrap">
               {" "}
@@ -54,7 +54,7 @@ export default function Template({
             </div>
             {frontmatter.team && frontmatter.team.map(item => `${item}, `)}
           </div>
-        </div>
+        </div> */}
       </div>
 
       {/* PROBLEM, SOLUTION, IMPACT */}
