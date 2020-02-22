@@ -29,30 +29,30 @@ const Hello = ({ setSelectedTopics, setAll }) => {
           {visitor && `I'm Lucas Neumann.`}
         </h1>
         <p className="f4 w-50-l black-40 lh-copy">
-          <br /> I help companies{" "}
-          <span
-            className="underline-hover hover-black pointer"
-            onClick={() => setTopic("Product Design")}
-          >
-            design empowering experiences
-          </span>
-          {" by "}
+          <br /> Design generalist & multi-hat wearer. I help companies{" "}
           <span
             className="underline-hover hover-black pointer"
             onClick={() => setTopic("Research")}
           >
-            nurturing user research
+            do research,
+          </span>{" "}
+          <span
+            className="underline-hover hover-black pointer"
+            onClick={() => setTopic("Product Design")}
+          >
+            design experiences,
           </span>{" "}
           and{" "}
           <span
             className="underline-hover hover-black pointer"
             onClick={() => setTopic("Design Ops")}
           >
-            building healthy creative teams
+            build healthy product teams
           </span>
           {"."}
           <br />
-          <a
+          <br />
+          {/* <a
             className="link black-40 underline-hover hover-black"
             href="http://www.futurebrand.com"
             target="blank"
@@ -78,7 +78,7 @@ const Hello = ({ setSelectedTopics, setAll }) => {
           >
             Kano
           </a>{" "}
-          &{" "}
+          &{" "} */}
           <a
             className="link black-40 underline-hover hover-black"
             href="http://www.nubank.com.br/en"
