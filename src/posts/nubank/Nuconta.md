@@ -2,7 +2,7 @@
 path: "/blog/nubank/nuconta"
 date: "2019-11-04"
 title: NuConta
-subtitle: An account for Brazilians
+subtitle: An account for millions of people, from zero to one.
 category: "Nubank"
 problem: Brazilians are locked into bad banking account options because of big bank's monopoly.
 solution: A new type of free, integrated, hybrid checking and savings account.
@@ -30,6 +30,8 @@ team:
 NuConta is an unprecedented mix of current, savings, and payments accounts, all-in-one. Thanks to a one-year-long co-creative process, our team was able to design and ship a product that uniquely addresses customer needs.
 
 ![](../../images/nubank/nuconta-003.png)
+
+<div class="style__DeviceVideoWrapper-pn33h3-2 jEDBqi"><span class="style__FakeMobileBorderOutter-pn33h3-3 ledXkZ"><div class="style__StyledYoutubeIframe-pn33h3-1 eFrasB" data-youtube-iframe="true"><iframe title="Video" width="255" height="454" frameborder="0" src="https://www.youtube.com/embed/p3iiDSudKPI?autoplay=1&amp;controls=0&amp;playlist=p3iiDSudKPI&amp;loop=1&amp;rel=0&amp;modestbranding=1&amp;showinfo=0&amp;mute=1"></iframe></div></span><span class="style__ResponsiveImagesWrapper-pn33h3-0 itlFew"><div class="style__ImageContent-hjcrn2-0 cYneQB component-responsive-image"><div class="component-responsive-image-size" align="center"><picture><source type="image/webp" srcset="/_next/static/images/b1795559843aff4d938d07ab4edfecfc-device-frame@2x.png.webp"><img alt="bordas de um smartphone" title="" src="/_next/static/images/2d0733e66d6a92585f4babf2aedaac20-device-frame@2x.png" type="image/png"></picture></div></div></span></div>
 
 ## Problem discovery
 

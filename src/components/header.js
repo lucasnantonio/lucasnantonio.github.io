@@ -40,9 +40,7 @@ const Header = ({
         marginRight: "auto",
         marginLeft: "auto",
       }}
-      className={
-        "flex fixed bg-white z-max space-between bb b--near-white bw1 ph0-l ph4"
-      }
+      className={"flex fixed bg-white z-max space-between ph0-l ph4"}
     >
       <div
         style={{ maxWidth: minWidth }}

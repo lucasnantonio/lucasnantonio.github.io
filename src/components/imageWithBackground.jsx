@@ -8,7 +8,7 @@ function ImageWithBackground({ fluid, color }) {
     <div
       style={{
         backgroundColor: color,
-        padding: "2rem",
+        // padding: "2rem",
       }}
     >
       <Img

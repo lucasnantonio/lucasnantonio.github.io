@@ -39,10 +39,10 @@ export default function Template({
         className="flex  center flex-row-l flex-column justify-between mv5"
       >
         <div className="flex flex-column w-two-thirds">
-          <h1 className="neue-regular measure f2 black mt0 mb0 pb0 w-100">
+          <h1 className="neue-regular measure f1 black-80 mt0 mb3 pb0 w-100">
             {frontmatter.title}
           </h1>
-          <h1 className="f3 fw1 lh-copy black-40 mt0 pt0 measure mb1">
+          <h1 className="f3 fw1 lh-copy black-80 mt0 pt0 measure mb1">
             {frontmatter.subtitle}
           </h1>
         </div>
@@ -61,24 +61,27 @@ export default function Template({
       {frontmatter.solution && frontmatter.problem && frontmatter.impact && (
         <div
           style={{ maxWidth: minWidth }}
-          className="flex center justify-between bb bt bw1 b--black mb4 pv3 mt3"
+          className="flex center justify-between bb bt bw1 b--black-80 mb4 pv4 mt3"
         >
-          <div className="mr3 w-100">
+          <div className="mr4 w-100">
             <h4>Problem</h4>
             <p className="lh-copy">{frontmatter.problem}</p>
           </div>
-          <div className="mr3 w-100">
+          <div className="mr4 w-100">
             <h4>Solution</h4>
             <p className="lh-copy">{frontmatter.solution}</p>
           </div>
-          <div className="mr3 w-100">
+          <div className=" w-100">
             <h4>Result</h4>
             <p className="lh-copy">{frontmatter.impact}</p>
           </div>
         </div>
       )}
       <div className="pt4 flex flex-row-l flex-column w-100">
-        <div className="post-content center w-100">
+        <div
+          style={{ maxWidth: minWidth }}
+          className="post-content center w-100"
+        >
           <div className="lh-copy" dangerouslySetInnerHTML={{ __html: html }} />
         </div>
       </div>

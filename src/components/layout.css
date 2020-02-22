@@ -5,7 +5,7 @@ html {
   font-weight: 300;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
-  color: #888888;
+  color: #444444;
 }
 body * {
   transition: all 0.2s !important;
@@ -21,7 +21,7 @@ h3,
 h4,
 h5 {
   /* font-family: "Neue-Plak Sans"; */
-  color: black;
+  color: #424242;
   font-weight: 500;
 }
 /* .neue-regular {
@@ -38,12 +38,12 @@ h5 {
   max-width: 32rem;
   margin-left: auto;
   margin-right: auto;
-}
-.post-content h2 {
   margin-top: 3rem;
+  margin-bottom: 3rem;
 }
+
 .post-content blockquote {
-  background-color: #f7f7f7;
+  background-color: #dcf6ff;
   padding: 2rem;
   margin: 2rem auto;
 }

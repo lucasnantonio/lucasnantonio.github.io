@@ -92,11 +92,6 @@ function IndexPage({
       <div id="work">
         <HomeSection
           isAll={isAll}
-          mainImage={
-            images.filter(
-              item => item.fluid.originalName === "hero-petal.png"
-            )[0].fluid
-          }
           posts={getFilteredPosts()}
           title="Petal"
           date="2019"
@@ -105,11 +100,6 @@ function IndexPage({
         />
         <HomeSection
           isAll={isAll}
-          mainImage={
-            images.filter(
-              item => item.fluid.originalName === "hero-nubank.png"
-            )[0].fluid
-          }
           posts={getFilteredPosts()}
           title="Nubank"
           date="2016—2019"
