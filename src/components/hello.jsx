@@ -85,7 +85,7 @@ const Hello = ({ setSelectedTopics, setAll }) => {
           >
             Nubank
           </a>{" "}
-          alumnus, currently managing design at{" "}
+          alumnus, currently managing product design at{" "}
           <a
             className="link black-40 underline-hover hover-black"
             href="http://www.petalcard.com"

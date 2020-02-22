@@ -11,14 +11,14 @@ topics:
   - Code
 roles:
   - designer
-cover_image: "../../images/golden-art/golden-website-1.png"
+cover_image: "../../images/golden-art/golden-art-hero.png"
 published: true
 learn_more: http://goldenart.com.br
 where: São Paulo
 when: 2017-2018
 design_team:
   - Lucas Neumann
-color: "crimson"
+color: "pink"
 size: large
 ---
 

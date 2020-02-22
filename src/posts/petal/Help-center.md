@@ -8,8 +8,8 @@ solution: A fun weekend of hacking away our Zendesk template.
 impact: Higher engagement with content and reduced support ticket volumes.
 category: Petal
 topics:
-  - code
-  - product design
+  - Code
+  - Product Design
 published: true
 size: large
 cover_image: "../../images/petal/petal-help.png"

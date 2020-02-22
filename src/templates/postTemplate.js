@@ -63,7 +63,7 @@ export default function Template({
       {frontmatter.solution && frontmatter.problem && frontmatter.impact && (
         <div
           style={{ maxWidth: "32rem" }}
-          className="flex center justify-between bb bt bw1 b--black-80 mb4 pv4 mt3"
+          className="flex center justify-between bb bt bw1 b--black-10 mb4 pv4 mt3"
         >
           <div className="mr4 w-100">
             <h4>Problem</h4>

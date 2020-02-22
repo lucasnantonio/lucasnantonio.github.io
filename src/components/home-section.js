@@ -10,12 +10,12 @@ const HomeSection = ({ title, date, description, posts, isAll }) => {
   return (
     sectionPosts.length > 0 && (
       <div className={"w-100 flex flex-row-l flex-column mb3"}>
-        <div className="pt4 w-100">
+        <div className="pt5 w-100 bt bw1 b--black-10">
           {isAll && (
-            <div className="flex flex-column pb3">
+            <div className="flex flex-column pb5">
               <h2
                 className={
-                  "w-25 pb2 f1 tracked-tight mt0 pt0 sans neue-regular black fw5"
+                  "w-25 pb2 f3 tracked-tight mt0 pt0 sans neue-regular black fw5"
                 }
               >
                 {title}
