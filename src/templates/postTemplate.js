@@ -62,20 +62,20 @@ export default function Template({
       {/* PROBLEM, SOLUTION, IMPACT */}
       {frontmatter.solution && frontmatter.problem && frontmatter.impact && (
         <div
-          style={{ maxWidth: "32rem" }}
-          className="flex center justify-between bb bt bw1 b--black-10 mb4 pv4 mt3"
+          style={{ maxWidth: minWidth }}
+          className="mono  f7 flex center justify-between bb bt bw1 b--black-10 mb4 pv4 mt3"
         >
           <div className="mr4 w-100">
-            <h4>Problem</h4>
-            <p className="lh-copy">{frontmatter.problem}</p>
+            <h4 class="fw6">Problem</h4>
+            <p className="lh-copy measure-narrow">{frontmatter.problem}</p>
           </div>
           <div className="mr4 w-100">
-            <h4>Solution</h4>
-            <p className="lh-copy">{frontmatter.solution}</p>
+            <h4 class="fw6">Solution</h4>
+            <p className="lh-copy measure-narrow">{frontmatter.solution}</p>
           </div>
           <div className=" w-100">
-            <h4>Impact</h4>
-            <p className="lh-copy">{frontmatter.impact}</p>
+            <h4 class="fw6">Impact</h4>
+            <p className="lh-copy measure-narrow">{frontmatter.impact}</p>
           </div>
         </div>
       )}

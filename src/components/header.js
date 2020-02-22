@@ -1,7 +1,6 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
-import Utils from "./utils"
 import Filters from "./filters"
 import { minWidth } from "./utils"
 const caret = (
@@ -50,7 +49,7 @@ const Header = ({
           <h1 className="f5 black neue-regular">Lucas Neumann</h1>
         </Link>
         <div className="flex">
-          {next && (
+          {next ? (
             <Link to={next.frontmatter.path}>
               <span
                 style={{ transform: "rotateZ(180deg)" }}
@@ -59,13 +58,24 @@ const Header = ({
                 {caret}
               </span>
             </Link>
+          ) : (
+            <span
+              style={{ transform: "rotateZ(180deg)" }}
+              className="o-30 flex justify-center center items-center align-center ma2 pa2 br-pill bn center items-center black-10 "
+            >
+              {caret}
+            </span>
           )}
-          {prev && (
+          {prev ? (
             <Link to={prev.frontmatter.path}>
               <span className="flex justify-center center items-center align-center ma2 pa2 br-pill hover-bg-near-white bn pointer center items-center black-20 hover-dark-gray ">
                 {caret}
               </span>
             </Link>
+          ) : (
+            <span className="o-30 flex justify-center center items-center align-center ma2 pa2 br-pill bn center items-center black-10 hover-dark-gray ">
+              {caret}
+            </span>
           )}
         </div>
       </div>

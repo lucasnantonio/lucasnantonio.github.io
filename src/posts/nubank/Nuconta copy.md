@@ -15,7 +15,7 @@ roles:
 color: "BlueViolet"
 cover_image: "../../images/nubank-merchants.png"
 image_cover_size: true
-published: true
+published: false
 size: large
 learn_more:
 where: São Paulo

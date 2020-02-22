@@ -13,7 +13,7 @@ topics:
 roles:
   - design lead
   - research lead
-color: "HotPink"
+color: "#AC58FA"
 cover_image: "../../images/nubank/nuconta-hero.png"
 published: true
 size: large
