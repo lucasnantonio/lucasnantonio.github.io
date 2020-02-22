@@ -2,10 +2,11 @@
 path: "/blog/others/goldenart"
 date: "2019-03-04"
 title: GoldenArt Online Catalogue
-subtitle: A 30-year-old company's web catalog
+subtitle: My dad's company website, my first code sandbox.
 category: Others
 problem: Small company with an old Wordpress website
-solution: Redesigned and rebuilt from scratch, the new website allows much easier filtering and navigation.
+solution: Website redesigned and rebuilt from scratch using Node.js
+impact: Higher customer engagement, better usability & better control over content
 topics:
   - Product Design
   - Code
@@ -24,13 +25,29 @@ size: large
 
 This project is a very simple catalog, but I'm proud of it because it's the first full-stack website I've built and shipped while learning to code. It uses Airtable as the CMS, where the client can update the products' information and actually became the source of truth for the company's inventory. It was a steep learning curve and got me a decent understanding of Javascript, Node, and Express.
 
+<div class="w-100 bg-washed-red pa4 tc">
+  <video class="w-100 mw6 br2" autoplay loop>
+  <source src="../../images/golden-art/golden-art-1.mp4" type="video/mp4">
+  </video>
+</div>
+
+One of the customer's biggest problems was picking a color finish from the catalogue. To this date, the company did not have a way to accurately represent all the colors available. We tried scanning and photographing the materials, but the best results came from 3D renderings. I had fun experimenting with Vectary, a browser-based 3D tool, to produce the images below:
+
+<div class="w-100 bg-washed-red pa4 tc">
+  <video class="w-100 mw6 br2" autoplay loop>
+  <source src="../../images/golden-art/golden-art-2.mp4" type="video/mp4">
+  </video>
+</div>
+
 ## Backend
 
 GoldenArt has over 500 products in their catalog. The old Wordpress website was painful because it required the company to keep the CMS up-to-date with their in-house catalog system, which was an Excel spreadsheet. In researching solutions to this problem, I found Airtable, and the client and I fell in love with it.
 
-It is a very friendly platform, and it became the internal source of truth for all the information about the product lines, which gets shared with their partners and clients. As they change the info on Airtable, the website is updated in real-time.
+<div class="w-100 bg-washed-red pa4 tc">
+<img src="../../images/golden-art/goldenart-010.gif">
+</div>
 
-<img src="../../images/golden-art/golden-website-2.png"></img>
+It is a very friendly platform, and it became the internal source of truth for all the information about the product lines, which gets shared with their partners and clients. As they change the info on Airtable, the website is updated in real-time.
 
 ## Results
 
