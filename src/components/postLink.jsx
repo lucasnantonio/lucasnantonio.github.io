@@ -18,7 +18,7 @@ function PostLink({ post, index }) {
       className={` ${
         post.frontmatter.size !== "large" ? "w-25-l w-100" : "w-50-l w-100"
       }
-        link black fl pr3 flex flex-column
+        link black fl pr5 flex flex-column
         `}
       to={post.frontmatter.path}
     >
@@ -33,7 +33,7 @@ function PostLink({ post, index }) {
       <div className="black pb4 mt2 flex justify-between">
         <div className="mr3 w-100">
           <p
-            className={`neue-regular f5 measure-narrow fw5 mt2 mb1 ${
+            className={`neue-regular f4 measure-narrow mt3 mb3 ${
               isHovered ? "u underline" : ""
             }`}
           >
