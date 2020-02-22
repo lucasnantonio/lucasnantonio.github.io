@@ -21,10 +21,12 @@ export default function Template({
   return (
     <Layout prev={prev} next={next} isIndex={false}>
       <div
+        className="center"
         style={{
           backgroundColor: frontmatter.color || "#f0f0f0",
           height: "600px",
           padding: "0rem",
+          maxWidth: minWidth,
         }}
       >
         <Img
@@ -72,7 +74,7 @@ export default function Template({
             <p className="lh-copy">{frontmatter.solution}</p>
           </div>
           <div className=" w-100">
-            <h4>Result</h4>
+            <h4>Impact</h4>
             <p className="lh-copy">{frontmatter.impact}</p>
           </div>
         </div>

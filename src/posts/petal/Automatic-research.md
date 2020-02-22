@@ -13,7 +13,7 @@ topics:
 published: true
 size: large
 cover_image: "../../images/petal/automated-research.png"
-color: "teal"
+color: "PowderBlue"
 ---
 
 Most teams know that talking to users frequently is a key habit to increase empathy, de-risk projects, find innovation opportunities. At Petal, where "listen with curiosity" and "our job is never done" are company values, this is no different.
