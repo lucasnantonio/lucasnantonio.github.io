@@ -18,7 +18,7 @@ where: São Paulo
 when: 2017-2018
 design_team:
   - Lucas Neumann
-color: "#ffebe9"
+color: "crimson"
 size: large
 ---
 

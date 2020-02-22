@@ -81,7 +81,7 @@ const Header = ({
       )}
     </header>
     <div className="pb2 pt1">
-      <p className="f3 white"> _</p>
+      <p className="f6 white"> _</p>
     </div>
   </div>
 )

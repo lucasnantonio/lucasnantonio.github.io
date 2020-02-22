@@ -12,7 +12,7 @@ topics:
 roles:
   - design lead
   - research lead
-color: "#333333"
+color: "BlueViolet"
 cover_image: "../../images/nubank-merchants.png"
 image_cover_size: true
 published: true

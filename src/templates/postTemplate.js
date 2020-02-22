@@ -21,34 +21,10 @@ export default function Template({
   return (
     <Layout prev={prev} next={next} isIndex={false}>
       <div
-        style={{ maxWidth: minWidth }}
-        className="flex  center flex-row-l flex-column justify-between mb3"
-      >
-        <div className="flex flex-column w-100">
-          <h1 className="neue-regular measure f2 black mt0 mb0 pb0 w-100">
-            {frontmatter.title}
-          </h1>
-          <h1 className="f3 fw1 lh-copy black-40 mt0 pt0 measure mb4">
-            {frontmatter.subtitle}
-          </h1>
-        </div>
-        <div className="flex flex-row-l flex-column justify-between mb0-l mb4">
-          <div className="mono f7 black-30 lh-copy measure pt2 w-100">
-            <div className="nowrap">
-              {" "}
-              {frontmatter.where && frontmatter.where + `,`} {frontmatter.date}{" "}
-            </div>
-            <br></br>
-            {frontmatter.team && frontmatter.team.map(item => `${item}, `)}
-          </div>
-        </div>
-      </div>
-
-      <div
         style={{
           backgroundColor: frontmatter.color || "#f0f0f0",
           height: "600px",
-          padding: "4rem 0rem",
+          padding: "3rem 0rem",
         }}
       >
         <Img
@@ -58,12 +34,34 @@ export default function Template({
           objectFit="contain"
         />
       </div>
+      <div
+        style={{ maxWidth: minWidth }}
+        className="flex  center flex-row-l flex-column justify-between mv5"
+      >
+        <div className="flex flex-column w-two-thirds">
+          <h1 className="neue-regular measure f2 black mt0 mb0 pb0 w-100">
+            {frontmatter.title}
+          </h1>
+          <h1 className="f3 fw1 lh-copy black-40 mt0 pt0 measure mb4">
+            {frontmatter.subtitle}
+          </h1>
+        </div>
+        <div className="flex flex-row-l flex-column justify-between mb0-l mb4 w-third">
+          <div className="mono f7 black-30 lh-copy measure pt2 w-100">
+            <div className="nowrap">
+              {" "}
+              {frontmatter.where && frontmatter.where + `,`} {frontmatter.date}{" "}
+            </div>
+            {frontmatter.team && frontmatter.team.map(item => `${item}, `)}
+          </div>
+        </div>
+      </div>
 
       {/* PROBLEM, SOLUTION, IMPACT */}
       {frontmatter.solution && frontmatter.problem && frontmatter.impact && (
         <div
           style={{ maxWidth: minWidth }}
-          className="flex center justify-between bb bw1 b--near-white mb4 pb3 mt3"
+          className="flex center justify-between bb bt bw1 b--black mb4 pv3 mt3"
         >
           <div className="mr3 w-100">
             <h4>Problem</h4>
