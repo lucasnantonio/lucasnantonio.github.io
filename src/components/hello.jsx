@@ -29,27 +29,25 @@ const Hello = ({ setSelectedTopics, setAll }) => {
           {visitor && `I'm Lucas Neumann.`}
         </h1>
         <p className="f4 w-50-l black-40 lh-copy">
-          <br /> Design generalist & multi-hat wearer. I help companies{" "}
+          <br /> Design generalist at heart. I help companies{" "}
+          <span
+            className="underline-hover hover-black pointer"
+            onClick={() => setTopic("Design Ops")}
+          >
+            build healthy design teams,
+          </span>{" "}
           <span
             className="underline-hover hover-black pointer"
             onClick={() => setTopic("Research")}
           >
-            do research,
+            understand users through research,
           </span>{" "}
           <span
             className="underline-hover hover-black pointer"
             onClick={() => setTopic("Product Design")}
           >
-            design experiences,
+            and design experiences for millions of people.
           </span>{" "}
-          and{" "}
-          <span
-            className="underline-hover hover-black pointer"
-            onClick={() => setTopic("Design Ops")}
-          >
-            build healthy product teams
-          </span>
-          {"."}
           <br />
           <br />
           {/* <a
@@ -87,7 +85,7 @@ const Hello = ({ setSelectedTopics, setAll }) => {
           >
             Nubank
           </a>{" "}
-          alumnus, currently managing product design at{" "}
+          alumnus, currently managing design at{" "}
           <a
             className="link black-40 underline-hover hover-black"
             href="http://www.petalcard.com"
