@@ -24,7 +24,7 @@ export default function Template({
         style={{
           backgroundColor: frontmatter.color || "#f0f0f0",
           height: "600px",
-          padding: "3rem 0rem",
+          padding: "0rem",
         }}
       >
         <Img
@@ -35,10 +35,10 @@ export default function Template({
         />
       </div>
       <div
-        style={{ maxWidth: minWidth }}
-        className="flex  center flex-row-l flex-column justify-between mv5"
+        style={{ maxWidth: "32rem" }}
+        className="flex center flex-row-l flex-column justify-between mv5"
       >
-        <div className="flex flex-column w-two-thirds">
+        <div className="flex flex-column">
           <h1 className="neue-regular measure f1 black-80 mt0 mb3 pb0 w-100">
             {frontmatter.title}
           </h1>
@@ -60,7 +60,7 @@ export default function Template({
       {/* PROBLEM, SOLUTION, IMPACT */}
       {frontmatter.solution && frontmatter.problem && frontmatter.impact && (
         <div
-          style={{ maxWidth: minWidth }}
+          style={{ maxWidth: "32rem" }}
           className="flex center justify-between bb bt bw1 b--black-80 mb4 pv4 mt3"
         >
           <div className="mr4 w-100">

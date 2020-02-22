@@ -1,19 +1,19 @@
 ---
-path: "/blog/automatic-research-recruiting"
+path: "/blog/petal-help-center"
 date: "2020-02-15"
-title: Automated Research Recruiting
-subtitle: Talking to users every week
-problem: Recruiting users for interviews is time-consuming
-solution: An automated, self-service flow that allows users to schedule time to talk to our product team
-impact: At least one user interview per week with zero recruiting cost.
+title: Petal Help Center
+subtitle: A quick visual revamp
+problem: Help center visuals not aligned with brand and scaring people away.
+solution: A fun weekend of customizing a Zendesk template with code.
+impact: Higher engagement
 
 category: Petal
 topics:
   - research
 published: true
 size: large
-cover_image: "../../images/petal/automated-research.png"
-color: "teal"
+cover_image: "../../images/petal/petal-help.png"
+color: "lightblue"
 ---
 
 Most teams know that talking to users frequently is a key habit to increase empathy, de-risk projects, find innovation opportunities. At Petal, where "listen with curiosity" and "our job is never done" are company values, this is no different.
