@@ -12,6 +12,7 @@ module.exports = {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
+          `gatsby-remark-unwrap-images`,
           {
             resolve: `gatsby-remark-images`,
             options: {
@@ -19,7 +20,6 @@ module.exports = {
               linkImagesToOriginal: false,
             },
           },
-          `gatsby-remark-unwrap-images`,
           `gatsby-remark-copy-linked-files`,
           `gatsby-remark-smartypants`,
         ],
