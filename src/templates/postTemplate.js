@@ -20,7 +20,7 @@ export default function Template({
   return (
     <Layout prev={prev} next={next} isIndex={false}>
       <div className="flex  flex-row-l flex-column justify-between mb3">
-        <div className="flex flex-column w-75-l w-100">
+        <div className="flex flex-column w-100">
           <h1 className="neue-regular measure f2 black mt0 mb0 pb0 w-100">
             {frontmatter.title}
           </h1>
@@ -28,9 +28,12 @@ export default function Template({
             {frontmatter.subtitle}
           </h1>
         </div>
-        <div className="flex flex-row-l flex-column justify-between w-25-l w-100 mb0-l mb4">
-          <div className="mono f7 black-30 lh-copy measure pt2">
-            {frontmatter.where && frontmatter.where + `,`} {frontmatter.date}
+        <div className="flex flex-row-l flex-column justify-between mb0-l mb4">
+          <div className="mono f7 black-30 lh-copy measure pt2 w-100">
+            <div className="nowrap">
+              {" "}
+              {frontmatter.where && frontmatter.where + `,`} {frontmatter.date}{" "}
+            </div>
             <br></br>
             {frontmatter.team && frontmatter.team.map(item => `${item}, `)}
           </div>

@@ -41,7 +41,7 @@ function PostLink({ post, index }) {
         <p className={"f5 black-40 neue-regular lh-copy pv0 mb0 mt0"}>
           {post.frontmatter.subtitle}
         </p>
-        <div className="mono" style={{ marginLeft: "-.2rem" }}>
+        <div className="mono mt3" style={{ marginLeft: "-.2rem" }}>
           {topicTags}
         </div>
       </div>
