@@ -12,7 +12,7 @@ function ImageWithBackground({ fluid, color }) {
       }}
     >
       <Img
-        className="h-auto-l"
+        className="h-auto-l ph5-l"
         backgroundColor="#f0f0f0"
         fluid={fluid}
         objectFit="contain"
