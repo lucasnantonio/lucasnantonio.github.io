@@ -13,7 +13,7 @@ topics:
 published: true
 size: large
 cover_image: "../../images/petal/petal-help.png"
-color: "#00BBFF"
+color: "lightblue"
 ---
 
 When I joined Petal, they hadn't had the time to give some design love to one of their most common touchpoints with the customer: the help center.

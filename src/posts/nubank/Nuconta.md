@@ -13,7 +13,7 @@ topics:
 roles:
   - design lead
   - research lead
-color: "#AC58FA"
+color: "pink"
 cover_image: "../../images/nubank/nuconta-hero.png"
 published: true
 size: large
@@ -29,7 +29,7 @@ team:
 
 NuConta is an unprecedented mix of current, savings, and payments accounts, all-in-one. Thanks to a one-year-long co-creative process, our team was able to design and ship a product that uniquely addresses customer needs.
 
-<div class="w-100 bg-hot-pink pa4 tc mt3 flex">
+<div class="w-100 bg-pink pa4 tc mt3 flex">
 <img class="w-50 flex br2 mw5 center " src="../../images/nubank/nuconta-001.gif" />
 </div>
 

@@ -12,8 +12,8 @@ topics:
 roles:
   - design lead
   - research lead
-color: "#7135A9"
-cover_image: "../../images/nubank/nubank-rewards.png"
+color: "#A469E9"
+cover_image: "../../images/nubank/rewards-new.png"
 image_cover_size: true
 published: true
 size: large
