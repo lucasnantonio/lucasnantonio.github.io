@@ -19,7 +19,7 @@ function PostLink({ post, index }) {
       ${index % 2 == 0 && "pr4-l"}
       ${index % 2 != 0 && "pl4-l"}
       ${post.frontmatter.size !== "large" ? "w-25-l w-100" : "w-50-l w-100"}
-        link black fl flex flex-column
+        link black fl flex flex-column mb4
         `}
       to={post.frontmatter.path}
     >
