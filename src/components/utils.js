@@ -3,11 +3,11 @@ export const topics = ["Product Design", "Research", "Design Ops", "Code"]
 export const sizes = ["S", "M", "L"]
 export const backgroundGray = "#f5f5f5"
 export const initialFadeAnimation = {
-  x: -15,
+  x: -25,
   opacity: 0,
 }
 export const fadeInAnimation = {
-  x: 15,
+  x: 0,
   opacity: 1,
 }
 export function capitalize(string) {

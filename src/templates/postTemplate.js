@@ -4,6 +4,8 @@ import Layout from "../components/layout"
 import Img from "gatsby-image/withIEPolyfill"
 import Tag from "../components/Tag"
 import { minWidth } from "../components/utils"
+import { motion } from "framer-motion"
+import { initialFadeAnimation, fadeInAnimation } from "../components/utils"
 
 export default function Template({
   data, // this prop will be injected by the GraphQL query below.
@@ -20,17 +22,19 @@ export default function Template({
 
   return (
     <Layout prev={prev} next={next} isIndex={false}>
-      <div
-        style={{ maxWidth: minWidth }}
-        className="flex flex-column center pv5 bt bb"
-      >
-        <h1 className="neue-regular measure f1 black-80 mt0 mb3 pb0 w-100">
-          {frontmatter.title}
-        </h1>
-        <h1 className="f3 lh-copy black-80 mt0 pt0 measure mb1">
-          {frontmatter.subtitle}
-        </h1>
-      </div>
+      <motion.div initial={initialFadeAnimation} animate={fadeInAnimation}>
+        <div
+          style={{ maxWidth: minWidth }}
+          className="flex flex-column center pv5 bt bb"
+        >
+          <h1 className="neue-regular measure f1 black-80 mt0 mb3 pb0 w-100">
+            {frontmatter.title}
+          </h1>
+          <h1 className="f3 lh-copy black-80 mt0 pt0 measure mb1">
+            {frontmatter.subtitle}
+          </h1>
+        </div>
+      </motion.div>
       <div
         className="center"
         style={{
