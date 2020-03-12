@@ -31,7 +31,10 @@ function PostLink({ post, index }) {
           color={post.frontmatter.color}
         />
       </div>
-      <div className="black pb4 mt2 flex justify-between">
+      <div
+        style={{ minHeight: "9rem" }}
+        className="black pb4 mt2 flex justify-between"
+      >
         <div className="mr3 w-100">
           <p
             className={`neue-regular f4 measure-narrow mt3 mb3 ${

@@ -80,15 +80,15 @@ export default function Template({
           className=" flex center justify-between mb4 ph5 pv5 bg-near-white br2 tc"
         >
           <div className="mr4 w-100">
-            <h4 class="fw6 f">Problem</h4>
+            <h4 class="fw6 f4">Problem</h4>
             <p className="lh-copy">{frontmatter.problem}</p>
           </div>
           <div className="mr4 w-100">
-            <h4 class="fw6 f">Solution</h4>
+            <h4 class="fw6 f4">Solution</h4>
             <p className="lh-copy">{frontmatter.solution}</p>
           </div>
           <div className=" w-100">
-            <h4 class="fw6 f">Impact</h4>
+            <h4 class="fw6 f4">Impact</h4>
             <p className="lh-copy">{frontmatter.impact}</p>
           </div>
         </div>
