@@ -1,6 +1,8 @@
 import React, { useState } from "react"
 import PhraseWithFootnote from "../components/phraseWithFootnote"
 import { useEffect } from "react"
+import { motion } from "framer-motion"
+import { initialFadeAnimation, fadeInAnimation } from "../components/utils"
 
 function capitalizeFirstLetter(string) {
   return string.charAt(0).toUpperCase() + string.slice(1)
@@ -20,7 +22,7 @@ const Hello = ({ setSelectedTopics, setAll }) => {
 
   return (
     <div className="flex flex-column mb6 mt6">
-      <div className="">
+      <motion.div initial={initialFadeAnimation} animate={fadeInAnimation}>
         <h1 className="f2-l f3 neue-regular black lh-title mb0">
           {!visitor
             ? `Lucas Neumann`
@@ -95,7 +97,7 @@ const Hello = ({ setSelectedTopics, setAll }) => {
           </a>
           .
         </p>
-      </div>
+      </motion.div>
     </div>
   )
 }
