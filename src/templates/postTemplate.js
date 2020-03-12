@@ -21,6 +21,17 @@ export default function Template({
   return (
     <Layout prev={prev} next={next} isIndex={false}>
       <div
+        style={{ maxWidth: minWidth }}
+        className="flex flex-column center pv5 bt bb"
+      >
+        <h1 className="neue-regular measure f1 black-80 mt0 mb3 pb0 w-100">
+          {frontmatter.title}
+        </h1>
+        <h1 className="f3 lh-copy black-80 mt0 pt0 measure mb1">
+          {frontmatter.subtitle}
+        </h1>
+      </div>
+      <div
         className="center"
         style={{
           backgroundColor: frontmatter.color || "#f0f0f0",
@@ -36,18 +47,11 @@ export default function Template({
           objectFit="contain"
         />
       </div>
+
       <div
         style={{ maxWidth: "32rem" }}
-        className="flex center flex-row-l flex-column justify-between mv5"
+        className="flex center flex-row-l flex-column justify-between mt5 mb2"
       >
-        <div className="flex flex-column">
-          <h1 className="neue-regular measure f1 black-80 mt0 mb3 pb0 w-100">
-            {frontmatter.title}
-          </h1>
-          <h1 className="f3 fw1 lh-copy black-80 mt0 pt0 measure mb1">
-            {frontmatter.subtitle}
-          </h1>
-        </div>
         {/* <div className="flex flex-row-l flex-column justify-between mb0-l mb4 w-third">
           <div className="mono f7 black-30 lh-copy measure pt2 w-100">
             <div className="nowrap">
@@ -63,7 +67,7 @@ export default function Template({
       {frontmatter.solution && frontmatter.problem && frontmatter.impact && (
         <div
           style={{ maxWidth: minWidth }}
-          className="mono  f7 flex center justify-between bb bt bw1 b--black-10 mb4 pv4 mt3"
+          className=" flex center justify-between bb bt bw1 b--black-10 mb4 pv4"
         >
           <div className="mr4 w-100">
             <h4 class="fw6">Problem</h4>

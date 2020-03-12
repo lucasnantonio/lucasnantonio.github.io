@@ -13,11 +13,7 @@ const HomeSection = ({ title, date, description, posts, isAll }) => {
         <div className="pt5 w-100 bt bw1 b--black-10">
           {isAll && (
             <div className="flex flex-column pb5">
-              <h2
-                className={
-                  "w-25 pb2 f3 tracked-tight mt0 pt0 sans neue-regular black fw5"
-                }
-              >
+              <h2 className={"w-25 pb2 f3 mt0 pt0 sans neue-regular black fw5"}>
                 {title}
               </h2>
               {/* <p className={"f4 neue-regular lh-copy w-75 black-40 mt0 w-50-l"}>

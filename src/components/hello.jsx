@@ -21,34 +21,33 @@ const Hello = ({ setSelectedTopics, setAll }) => {
   return (
     <div className="flex flex-column mb6 mt6">
       <div className="">
-        <h1 className="f3 neue-regular black tracked-tight fw5 lh-title">
+        <h1 className="f2 neue-regular black lh-title mb0">
           {!visitor
             ? `Lucas Neumann`
             : `Hi there, ${capitalizeFirstLetter(atob(visitor))}!`}
           <br />
           {visitor && `I'm Lucas Neumann.`}
         </h1>
-        <p className="f4 w-50-l black-40 lh-copy">
-          <br /> Design generalist at heart. I help companies{" "}
+        <p className="f2 measure-narrow black-40 lh-copy mt0">
+          <br /> I help companies{" "}
           <span
             className="underline-hover hover-black pointer"
             onClick={() => setTopic("Design Ops")}
           >
-            build healthy teams,
+            build design teams,
           </span>{" "}
           <span
             className="underline-hover hover-black pointer"
             onClick={() => setTopic("Research")}
           >
-            understand users through research,
+            run user research,
           </span>{" "}
           <span
             className="underline-hover hover-black pointer"
             onClick={() => setTopic("Product Design")}
           >
-            and design experiences that reach millions of people.
+            and design experiences.
           </span>{" "}
-          <br />
           <br />
           {/* <a
             className="link black-40 underline-hover hover-black"

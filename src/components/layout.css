@@ -2,10 +2,9 @@
 html {
   font-family: "DM Sans";
   font-size: 18px;
-  font-weight: 300;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
-  color: #444444;
+  color: #222 !important;
 }
 body * {
   transition: all 0.2s !important;
@@ -20,9 +19,10 @@ h2,
 h3,
 h4,
 h5 {
-  /* font-family: "Neue-Plak Sans"; */
+  /* font-family: "Solanel Trial Light"; */
+  font-family: "DM Sans";
+  font-weight: 400;
   color: #424242;
-  font-weight: 500;
 }
 /* .neue-regular {
   font-family: "Darker Grotesk";
@@ -105,7 +105,7 @@ h5 {
   display: none;
 }
 .b {
-  font-weight: 500;
+  font-weight: 400;
 }
 .mono {
   font-family: "Space Mono";
