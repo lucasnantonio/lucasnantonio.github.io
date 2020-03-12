@@ -21,14 +21,14 @@ const Hello = ({ setSelectedTopics, setAll }) => {
   return (
     <div className="flex flex-column mb6 mt6">
       <div className="">
-        <h1 className="f2 neue-regular black lh-title mb0">
+        <h1 className="f2-l f3 neue-regular black lh-title mb0">
           {!visitor
             ? `Lucas Neumann`
             : `Hi there, ${capitalizeFirstLetter(atob(visitor))}!`}
           <br />
           {visitor && `I'm Lucas Neumann.`}
         </h1>
-        <p className="f2 measure-narrow black-40 lh-copy mt0">
+        <p className="f2-l f3 measure-narrow black-40 lh-copy mt0">
           <br /> I help companies{" "}
           <span
             className="underline-hover hover-black pointer"
