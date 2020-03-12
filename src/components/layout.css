@@ -113,3 +113,25 @@ h5 {
 .gatsby-resp-image-wrapper {
   margin-top: 4rem;
 }
+ol {
+  list-style: none;
+  padding-left: 4rem;
+}
+ol li {
+  counter-increment: li;
+  position: relative;
+  margin-bottom: 2rem;
+}
+ol li:before {
+  content: counter(li);
+  position: absolute;
+  left: -4rem;
+  color: white;
+  height: 1rem;
+  line-height: 1rem;
+  text-align: center;
+  width: 1rem;
+  background-color: black;
+  padding: 0.75rem;
+  border-radius: 100%;
+}
