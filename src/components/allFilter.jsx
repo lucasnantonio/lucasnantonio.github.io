@@ -10,13 +10,13 @@ function AllFilter({ setSelectedTopics, isAll, setAll }) {
       return "#222"
     }
     if (isHovered) {
-      return "#f2f2f2"
+      return "#eeeeee"
     }
     return "#fff"
   }
 
   return (
-    <li
+    <div
       onMouseEnter={() => setHover(true)}
       onMouseLeave={() => setHover(false)}
       onClick={() => {
@@ -24,15 +24,15 @@ function AllFilter({ setSelectedTopics, isAll, setAll }) {
         setSelectedTopics(topics)
         setAll(true)
       }}
-      className={`br-pill black pointer pa3 neue-regular mr3 dib nowrap f5-l f6-ns f7 `}
+      className={`fw5 br-pill black pointer pa3 dib nowrap f5-l f6-ns f7`}
       style={{
         color: isAll ? "white" : "#949494",
-        border: !isAll ? "2px solid #ffffff" : "2px solid #222",
+        border: !isAll ? "2px solid #f7f7f7" : "2px solid #222",
         backgroundColor: isAll ? "#000" : "transparent",
       }}
     >
       All
-    </li>
+    </div>
   )
 }
 

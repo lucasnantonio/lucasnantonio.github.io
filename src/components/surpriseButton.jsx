@@ -32,7 +32,7 @@ function SurpriseButton({ posts }) {
         to={getRandomPostUrl()}
         onMouseEnter={() => startRandom()}
         onMouseOut={() => stopRandom()}
-        className={`ba b--white bw1 gray fw2 link hover-white br-pill pointer pa3 neue-regular mr3-l mr0 dib nowrap f5 `}
+        className={`fw5 ba b--transparent bw1 gray fw2 link hover-white br-pill pointer pa3 neue-regular dib nowrap f5-l f6-ns f7 `}
       >
         Surprise me
       </Link>

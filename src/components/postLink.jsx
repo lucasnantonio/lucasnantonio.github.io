@@ -16,8 +16,8 @@ function PostLink({ post, index }) {
       onMouseEnter={() => setHover(true)}
       onMouseLeave={() => setHover(false)}
       className={` 
-      ${index % 2 == 0 && "pr4-l"}
-      ${index % 2 != 0 && "pl4-l"}
+      ${index % 2 == 0 && "pr3-l"}
+      ${index % 2 != 0 && "pl3-l"}
       ${post.frontmatter.size !== "large" ? "w-25-l w-100" : "w-50-l w-100"}
         link black fl flex flex-column mb4
         `}

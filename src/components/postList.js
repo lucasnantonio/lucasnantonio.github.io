@@ -7,7 +7,7 @@ const PostList = ({ posts }) => {
     <PostLink index={index} key={post.node.id} post={post.node} />
   ))
 
-  return <div className={"cf"}>{list}</div>
+  return <div className={"cf w-100"}>{list}</div>
 }
 
 export default PostList

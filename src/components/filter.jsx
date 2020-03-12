@@ -30,7 +30,7 @@ function Filter({ title, selectedTopics, setSelectedTopics, isAll, setAll }) {
       return "#000"
     }
     if (isHovered) {
-      return "#f7f7f7"
+      return "#eeeeee"
     } else {
       return "transparent"
     }
@@ -43,10 +43,10 @@ function Filter({ title, selectedTopics, setSelectedTopics, isAll, setAll }) {
       onClick={() => {
         addOrRemoveTopics(title, selectedTopics)
       }}
-      className={`br-pill tc black pointer pa3 dib nowrap hover-bg-near-white f5 ma0`}
+      className={`fw5 br-pill tc black pointer pa3 dib nowrap hover-bg-near-white f5-l f6-ns f7 ma0 mr2`}
       style={{
         color: isSelected ? "white" : "gray",
-        border: !isSelected ? "2px solid #ffffff" : "2px solid #222",
+        border: !isSelected ? "2px solid #f7f7f7" : "2px solid #222",
         backgroundColor: getBackgroundColor(),
       }}
     >

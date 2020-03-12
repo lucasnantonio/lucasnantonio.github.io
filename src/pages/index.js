@@ -8,6 +8,8 @@ import Hello from "../components/hello"
 import Filters from "../components/filters"
 import { StaticQuery } from "gatsby"
 import { minWidth, topics, sizes } from "../components/utils"
+import { motion, AnimatePresence } from "framer-motion"
+import { initialFadeAnimation, fadeInAnimation } from "../components/utils"
 
 function IndexPage({
   data: {
@@ -50,14 +52,7 @@ function IndexPage({
     >
       <SEO title="Home" />
       <div>
-        {/* <CSSTransition
-          in={isAll}
-          timeout={200}
-          unmountOnExit
-          classNames="my-node"
-        > */}
         <Hello setSelectedTopics={setSelectedTopics} setAll={setAll} />
-        {/* </CSSTransition> */}
         <Filters
           selectedTopics={selectedTopics}
           setSelectedTopics={setSelectedTopics}
@@ -66,12 +61,7 @@ function IndexPage({
           posts={posts}
         />
       </div>
-      <CSSTransition
-        in={!isAll}
-        timeout={200}
-        unmountOnExit
-        classNames={"my-node"}
-      >
+      {!isAll && (
         <div className="mb5 flex flex-row-l flex-column bt bw1 b--near-white pt4">
           <h1 className="w-100 f2-l f3">
             {selectedTopics[0]}{" "}
@@ -87,7 +77,7 @@ function IndexPage({
               : "I'm a coding begginer and enthusiast. This portfolio website is, in itself, an experiment in learning React, and below you can find other projects I've played with."}
           </p>
         </div>
-      </CSSTransition>
+      )}
 
       <div id="work">
         <HomeSection

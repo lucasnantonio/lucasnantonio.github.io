@@ -25,9 +25,9 @@ export default function Template({
       <motion.div initial={initialFadeAnimation} animate={fadeInAnimation}>
         <div
           style={{ maxWidth: minWidth }}
-          className="flex flex-column center pv5 bt bb"
+          className="flex flex-column center pv5"
         >
-          <h1 className="neue-regular measure f1 black-80 mt0 mb3 pb0 w-100">
+          <h1 className=" fw5 neue-regular measure f1 black-80 mt0 mb3 pb0 w-100">
             {frontmatter.title}
           </h1>
           <h1 className="f3 lh-copy black-80 mt0 pt0 measure mb1">
@@ -35,22 +35,28 @@ export default function Template({
           </h1>
         </div>
       </motion.div>
-      <div
-        className="center"
-        style={{
-          backgroundColor: frontmatter.color || "#f0f0f0",
-          height: "600px",
-          padding: "0rem",
-          maxWidth: minWidth,
-        }}
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 2 }}
       >
-        <Img
-          className="h-100"
-          fluid={frontmatter.cover_image.childImageSharp.fluid}
-          color={frontmatter.color}
-          objectFit="contain"
-        />
-      </div>
+        <div
+          className="center"
+          style={{
+            backgroundColor: frontmatter.color || "#f0f0f0",
+            height: "600px",
+            padding: "0rem",
+            maxWidth: minWidth,
+          }}
+        >
+          <Img
+            className="h-100"
+            fluid={frontmatter.cover_image.childImageSharp.fluid}
+            color={frontmatter.color}
+            objectFit="contain"
+          />
+        </div>
+      </motion.div>
 
       <div
         style={{ maxWidth: "32rem" }}
@@ -71,19 +77,19 @@ export default function Template({
       {frontmatter.solution && frontmatter.problem && frontmatter.impact && (
         <div
           style={{ maxWidth: minWidth }}
-          className=" flex center justify-between bb bt bw1 b--black-10 mb4 pv4"
+          className=" flex center justify-between mb4 ph5 pv5 bg-near-white br2 tc"
         >
           <div className="mr4 w-100">
-            <h4 class="fw6">Problem</h4>
-            <p className="lh-copy measure-narrow">{frontmatter.problem}</p>
+            <h4 class="fw6 f">Problem</h4>
+            <p className="lh-copy">{frontmatter.problem}</p>
           </div>
           <div className="mr4 w-100">
-            <h4 class="fw6">Solution</h4>
-            <p className="lh-copy measure-narrow">{frontmatter.solution}</p>
+            <h4 class="fw6 f">Solution</h4>
+            <p className="lh-copy">{frontmatter.solution}</p>
           </div>
           <div className=" w-100">
-            <h4 class="fw6">Impact</h4>
-            <p className="lh-copy measure-narrow">{frontmatter.impact}</p>
+            <h4 class="fw6 f">Impact</h4>
+            <p className="lh-copy">{frontmatter.impact}</p>
           </div>
         </div>
       )}
