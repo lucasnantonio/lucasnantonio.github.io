@@ -4,11 +4,10 @@ date: "2019-05-04"
 title: Transactions redesign
 category: Petal
 topics:
-	- design
+  - design
 published: false
-role: 
-	- design
-date: October 2019
+role:
+  - design
 cover_image: "../../images/hero-petal.png"
 Result: increase in taps to link accounts, per user
 ---
