@@ -19,6 +19,7 @@ module.exports = {
             options: {
               maxWidth: 1800,
               linkImagesToOriginal: false,
+              // pathPrefix: "/blog",
             },
           },
           `gatsby-remark-copy-linked-files`,
