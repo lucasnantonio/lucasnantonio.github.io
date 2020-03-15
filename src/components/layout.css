@@ -43,6 +43,13 @@ h5 {
   font-size: 1.3rem;
 }
 
+.post-content h1,
+.post-content h2,
+.post-content h3,
+.post-content h4 {
+  font-weight: 600;
+}
+
 .post-content blockquote {
   background-color: #dcf6ff;
   padding: 2rem;
