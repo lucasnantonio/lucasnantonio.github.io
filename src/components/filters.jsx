@@ -24,12 +24,12 @@ function Filters({ selectedTopics, setSelectedTopics, isAll, setAll, posts }) {
     >
       <div className="w-100 flex b relative">
         <div
-          style={{ backgroundColor: "#f7f7f7" }}
+          // style={{ backgroundColor: "#f7f7f7" }}
           id="filters"
           className="
-         pa2 br-pill w-100-l list f5 flex items-center-l justify-between-l overflow-x-scroll"
+         pa2 br4 w-100-l list f5 flex items-center-l overflow-x-scroll"
         >
-          <div className="w-10 mr3">
+          <div className="w-10-l mr2">
             <AllFilter
               selectedTopics={selectedTopics}
               setSelectedTopics={setSelectedTopics}
@@ -37,7 +37,7 @@ function Filters({ selectedTopics, setSelectedTopics, isAll, setAll, posts }) {
               setAll={setAll}
             />
           </div>
-          <div className="w-90 justify-between flex">
+          <div className="w-90 flex">
             {topics.map(item => (
               <Filter
                 selectedTopics={selectedTopics}

@@ -53,7 +53,7 @@ const Layout = ({
       )}
 
       <div
-        className="pt0 ph0-l ph4"
+        className="pt0 ph4 "
         style={{
           margin: `0 auto`,
           paddingTop: 0,

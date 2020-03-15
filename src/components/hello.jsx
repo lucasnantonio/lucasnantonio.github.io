@@ -36,19 +36,19 @@ const Hello = ({ setSelectedTopics, setAll }) => {
             className="underline-hover hover-black pointer"
             onClick={() => setTopic("Design Ops")}
           >
-            build design teams,
+            run design teams,
           </span>{" "}
           <span
             className="underline-hover hover-black pointer"
             onClick={() => setTopic("Research")}
           >
-            run user research,
+            practice user research,
           </span>{" "}
           <span
             className="underline-hover hover-black pointer"
             onClick={() => setTopic("Product Design")}
           >
-            and design experiences.
+            and design empowering experiences.
           </span>{" "}
           <br />
           {/* <a

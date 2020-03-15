@@ -30,7 +30,7 @@ function Filter({ title, selectedTopics, setSelectedTopics, isAll, setAll }) {
       return "#000"
     }
     if (isHovered) {
-      return "#eeeeee"
+      return "#f7f7f7"
     } else {
       return "transparent"
     }

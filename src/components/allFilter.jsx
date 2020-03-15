@@ -28,7 +28,7 @@ function AllFilter({ setSelectedTopics, isAll, setAll }) {
       style={{
         color: isAll ? "white" : "#949494",
         border: !isAll ? "2px solid #f7f7f7" : "2px solid #222",
-        backgroundColor: isAll ? "#000" : "transparent",
+        backgroundColor: isAll ? "#000" : isHovered ? "#f7f7f7" : "transparent",
       }}
     >
       All

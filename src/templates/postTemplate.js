@@ -77,7 +77,7 @@ export default function Template({
       {frontmatter.solution && frontmatter.problem && frontmatter.impact && (
         <div
           style={{ maxWidth: minWidth }}
-          className=" flex center justify-between mb4 ph5 pv5 bg-near-white br2 tc"
+          className=" flex flex-row-ns flex-column center justify-between mb4 ph5 pv5 bg-near-white br2 tc"
         >
           <div className="mr4 w-100">
             <h4 class="fw6 f4">Problem</h4>
