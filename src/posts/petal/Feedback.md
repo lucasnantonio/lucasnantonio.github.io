@@ -10,7 +10,7 @@ category: Petal
 topics:
   - Code
   - Product Design
-published: false
+published: true
 size: large
 cover_image: "../../images/petal/petal-feedback.png"
 color: "paleturquoise"
