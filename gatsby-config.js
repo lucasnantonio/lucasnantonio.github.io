@@ -1,5 +1,4 @@
 module.exports = {
-  pathPrefix: "/lucasn-v2",
   siteMetadata: {
     title: `Lucas Neumann - design`,
     description: `Portfolio website for Lucas Neumann, product designer`,
