@@ -16,6 +16,7 @@ const Footer = () => {
         Email me
       </a>
       <a
+        target="_blank"
         className="link black underline-hover mr3"
         href="https://www.linkedin.com/in/lucasneumann/"
       >
