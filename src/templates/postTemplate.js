@@ -6,6 +6,7 @@ import Tag from "../components/Tag"
 import { minWidth } from "../components/utils"
 import { motion } from "framer-motion"
 import { initialFadeAnimation, fadeInAnimation } from "../components/utils"
+import { ic_problem, ic_solution, ic_impact } from "../components/icons.js"
 
 export default function Template({
   data, // this prop will be injected by the GraphQL query below.
@@ -80,14 +81,17 @@ export default function Template({
           className=" flex flex-row-ns flex-column center justify-between mb4 ph5 pv5 bg-near-white br2 tc"
         >
           <div className="mr4 w-100">
+            {ic_problem}
             <h4 class="fw6 f4">Problem</h4>
             <p className="lh-copy">{frontmatter.problem}</p>
           </div>
           <div className="mr4 w-100">
+            {ic_solution}
             <h4 class="fw6 f4">Solution</h4>
             <p className="lh-copy">{frontmatter.solution}</p>
           </div>
           <div className=" w-100">
+            {ic_impact}
             <h4 class="fw6 f4">Impact</h4>
             <p className="lh-copy">{frontmatter.impact}</p>
           </div>
