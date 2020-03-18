@@ -28,7 +28,7 @@ export default function Template({
           style={{ maxWidth: minWidth }}
           className="flex w-100 justify-between flex-row-l flex-column center"
         >
-          <div className="flex flex-column pt5 pb5-l">
+          <div className="flex flex-column pt5 pb5-l w-100">
             <h1 className=" fw5 neue-regular f1 black-80 mt0 mb3 pb0 w-100">
               {frontmatter.title}
             </h1>
@@ -36,17 +36,16 @@ export default function Template({
               {frontmatter.subtitle}
             </h1>
           </div>
-          <div
-            style={{ maxWidth: "32rem" }}
-            className="flex flex-row-l flex-column justify-between mt5-l mb2"
-          >
-            <div className="mono f7 black-30 lh-copy pt2 w5-l mt0-l mt4 mb0-l mb5">
+          <div className="mt5 pt3 mw5 mono f7 lh-copy">
+            <div className="">
               <div className="nowrap">
-                {" "}
                 {frontmatter.where && frontmatter.where + `,`}{" "}
                 {frontmatter.date}{" "}
               </div>
-              {frontmatter.team && frontmatter.team.map(item => `${item}, `)}
+              {frontmatter.team && <div>—</div>}
+              <div className="">
+                {frontmatter.team && frontmatter.team.map(item => `${item}, `)}
+              </div>
             </div>
           </div>
         </div>
