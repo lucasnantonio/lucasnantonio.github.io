@@ -2,7 +2,7 @@
 path: "/blog/kano"
 date: "2014-05-04"
 title: Kano Computer
-subtitle: My first job as a product designer
+subtitle: My first job in UX
 category: Others
 topics:
   - design

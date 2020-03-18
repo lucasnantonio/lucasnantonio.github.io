@@ -26,14 +26,29 @@ export default function Template({
       <motion.div initial={initialFadeAnimation} animate={fadeInAnimation}>
         <div
           style={{ maxWidth: minWidth }}
-          className="flex flex-column center pv5"
+          className="flex w-100 justify-between flex-row-l flex-column center"
         >
-          <h1 className=" fw5 neue-regular measure f1 black-80 mt0 mb3 pb0 w-100">
-            {frontmatter.title}
-          </h1>
-          <h1 className="f3 lh-copy black-80 mt0 pt0 measure mb1">
-            {frontmatter.subtitle}
-          </h1>
+          <div className="flex flex-column pt5 pb5-l">
+            <h1 className=" fw5 neue-regular f1 black-80 mt0 mb3 pb0 w-100">
+              {frontmatter.title}
+            </h1>
+            <h1 className="f3 lh-copy black-80 mt0 pt0 measure mb1">
+              {frontmatter.subtitle}
+            </h1>
+          </div>
+          <div
+            style={{ maxWidth: "32rem" }}
+            className="flex flex-row-l flex-column justify-between mt5-l mb2"
+          >
+            <div className="mono f7 black-30 lh-copy pt2 w5-l mt0-l mt4 mb0-l mb5">
+              <div className="nowrap">
+                {" "}
+                {frontmatter.where && frontmatter.where + `,`}{" "}
+                {frontmatter.date}{" "}
+              </div>
+              {frontmatter.team && frontmatter.team.map(item => `${item}, `)}
+            </div>
+          </div>
         </div>
       </motion.div>
       <motion.div
@@ -59,26 +74,11 @@ export default function Template({
         </div>
       </motion.div>
 
-      <div
-        style={{ maxWidth: "32rem" }}
-        className="flex center flex-row-l flex-column justify-between mt5 mb2"
-      >
-        {/* <div className="flex flex-row-l flex-column justify-between mb0-l mb4 w-third">
-          <div className="mono f7 black-30 lh-copy measure pt2 w-100">
-            <div className="nowrap">
-              {" "}
-              {frontmatter.where && frontmatter.where + `,`} {frontmatter.date}{" "}
-            </div>
-            {frontmatter.team && frontmatter.team.map(item => `${item}, `)}
-          </div>
-        </div> */}
-      </div>
-
       {/* PROBLEM, SOLUTION, IMPACT */}
       {frontmatter.solution && frontmatter.problem && frontmatter.impact && (
         <div
           style={{ maxWidth: minWidth }}
-          className=" flex flex-row-ns flex-column center justify-between mb4 ph5 pv5 bg-near-white br2 tc"
+          className=" flex flex-row-ns flex-column center justify-between mb4 ph5 pv5 bg-near-white br2 tc mt3"
         >
           <div className="mr4 w-100">
             {ic_problem}
