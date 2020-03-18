@@ -6,6 +6,7 @@ import HomeSection from "../components/home-section"
 import SEO from "../components/seo"
 import Hello from "../components/hello"
 import Filters from "../components/filters"
+import Writing from "../components/writing"
 import { StaticQuery } from "gatsby"
 import { minWidth, topics, sizes } from "../components/utils"
 import { motion, AnimatePresence } from "framer-motion"
@@ -67,7 +68,7 @@ function IndexPage({
             {selectedTopics[0]}{" "}
             <span className="black-40 f4">{getFilteredPosts().length}</span>
           </h1>
-          <p className="f4-l f5 w-100 lh-copy mt4">
+          <p className="f4 w-100 lh-copy mt4 pl3-l">
             {selectedTopics[0] === "Research"
               ? "I dedicate a lot of my time to listening to users, advocating for their needs, and creating the necessary workflows to ensure the teams I collaborate with understand who they're designing for."
               : selectedTopics[0] === "Product Design"
@@ -121,6 +122,7 @@ function IndexPage({
         ) : (
           <PostList posts={getFilteredPosts()} />
         )}
+        {/* <Writing /> */}
       </div>
     </Layout>
   )

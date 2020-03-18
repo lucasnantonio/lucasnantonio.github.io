@@ -129,6 +129,7 @@ ol li:before {
   content: counter(li);
   position: absolute;
   left: -4rem;
+  top: -0.3rem;
   color: white;
   height: 1rem;
   line-height: 1rem;

@@ -19,7 +19,7 @@ function PostLink({ post, index }) {
       ${index % 2 == 0 && "pr3-l"}
       ${index % 2 != 0 && "pl3-l"}
       ${post.frontmatter.size !== "large" ? "w-25-l w-100" : "w-50-l w-100"}
-        link black fl flex flex-column
+        link black fl flex flex-column  pb3
         `}
       to={post.frontmatter.path}
     >
@@ -43,15 +43,15 @@ function PostLink({ post, index }) {
           >
             {post.frontmatter.title}
           </p>
-          <p className={"f4 black-40 neue-regular lh-copy pv0 mb0 mt0"}>
+          <p className={"f4 black-40 neue-regular lh-copy pv0 mb0 mt0 w-100"}>
             {post.frontmatter.subtitle}
           </p>
-        </div>
-        <div
-          className="mono mt2 pt1 flex items-start"
-          style={{ marginLeft: "-.2rem" }}
-        >
-          {topicTags}
+          <div
+            style={{ marginLeft: "-.2rem" }}
+            className="mono mt3 pt1 flex tr items-start"
+          >
+            {topicTags}
+          </div>
         </div>
       </div>
     </Link>
