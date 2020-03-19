@@ -16,9 +16,9 @@ function PostLink({ post, index }) {
       onMouseEnter={() => setHover(true)}
       onMouseLeave={() => setHover(false)}
       className={` 
-      ${index % 2 == 0 && "pr3-l"}
-      ${index % 2 != 0 && "pl3-l"}
-      ${post.frontmatter.size !== "large" ? "w-25-l w-100" : "w-50-l w-100"}
+      ${index % 2 == 0 && "pr3-ns"}
+      ${index % 2 != 0 && "pl3-ns"}
+      ${post.frontmatter.size !== "large" ? "w-25-ns w-100" : "w-50-ns w-100"}
         link black fl flex flex-column  pb3
         `}
       to={post.frontmatter.path}
@@ -32,18 +32,22 @@ function PostLink({ post, index }) {
         />
       </div>
       <div
-        style={{ minHeight: "9rem" }}
+        style={{ minHeight: "12rem" }}
         className="black pb4 mt2 flex justify-between"
       >
         <div className="mr3 w-100">
           <p
-            className={`neue-regular f3 measure-narrow mt3 mb3 ${
+            className={`neue-regular f3-l f4 measure-narrow mt3 mb3 ${
               isHovered ? "u underline" : ""
             }`}
           >
             {post.frontmatter.title}
           </p>
-          <p className={"f4 black-40 neue-regular lh-copy pv0 mb0 mt0 w-100"}>
+          <p
+            className={
+              "f4-l f5 black-40 neue-regular lh-copy pv0 mb0 mt0 w-100"
+            }
+          >
             {post.frontmatter.subtitle}
           </p>
           <div

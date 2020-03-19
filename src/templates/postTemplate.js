@@ -6,7 +6,12 @@ import Tag from "../components/Tag"
 import { minWidth } from "../components/utils"
 import { motion } from "framer-motion"
 import { initialFadeAnimation, fadeInAnimation } from "../components/utils"
-import { ic_problem, ic_solution, ic_impact } from "../components/icons.js"
+import {
+  ic_problem,
+  ic_solution,
+  ic_impact,
+  ic_role,
+} from "../components/icons.js"
 
 export default function Template({
   data, // this prop will be injected by the GraphQL query below.
@@ -28,6 +33,7 @@ export default function Template({
           style={{ maxWidth: minWidth }}
           className="flex w-100 justify-between flex-row-l flex-column center"
         >
+          {/* TITLE */}
           <div className="flex flex-column pt5 pb5-l w-100">
             <h1 className=" fw5 neue-regular f1 black-80 mt0 mb3 pb0 w-100">
               {frontmatter.title}
@@ -36,7 +42,8 @@ export default function Template({
               {frontmatter.subtitle}
             </h1>
           </div>
-          <div className="mv3 pt5-l pt3 pb3 mw5 mono f7 lh-copy black-50">
+          {/* METADATA */}
+          <div className="mv3 pt5-l pt3 pb4 mw5 mono f7 lh-copy black-50">
             <div className="">
               <div className="nowrap">
                 {frontmatter.where && frontmatter.where + `,`}{" "}
@@ -48,8 +55,11 @@ export default function Template({
               </div>
             </div>
           </div>
+          {/* END METADATA */}
         </div>
       </motion.div>
+
+      {/* COVER IMAGE */}
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
@@ -72,27 +82,48 @@ export default function Template({
           />
         </div>
       </motion.div>
+      {/* END COVER IMAGE */}
 
       {/* PROBLEM, SOLUTION, IMPACT */}
-      {frontmatter.solution && frontmatter.problem && frontmatter.impact && (
+      {(frontmatter.solution ||
+        frontmatter.problem ||
+        frontmatter.impact ||
+        frontmatter.myrole) && (
         <div
           style={{ maxWidth: minWidth }}
-          className=" flex flex-row-ns flex-column center justify-between mb4 ph5 pv5 bg-near-white br2 tc mt3"
+          className=" flex flex-row-ns flex-column justify-between mb4 pa5-ns pa4 bg-near-white br2 tl mt3"
         >
-          <div className="mr4 w-100">
-            {ic_problem}
-            <h4 class="fw6 f4">Problem</h4>
-            <p className="lh-copy">{frontmatter.problem}</p>
+          <div className="flex flex-row-ns flex-column">
+            {frontmatter.problem && (
+              <div className="mr4 w-100 mb0-ns mb4">
+                {ic_problem}
+                <h4 class="fw6 f4 mv4-ns mv3">Problem</h4>
+                <p className="lh-copy">{frontmatter.problem}</p>
+              </div>
+            )}
+            {frontmatter.solution && (
+              <div className="mr4 w-100 mb0-ns mb4">
+                {ic_solution}
+                <h4 class="fw6 f4 mv4-ns mv3">Approach</h4>
+                <p className="lh-copy">{frontmatter.solution}</p>
+              </div>
+            )}
           </div>
-          <div className="mr4 w-100">
-            {ic_solution}
-            <h4 class="fw6 f4">Solution</h4>
-            <p className="lh-copy">{frontmatter.solution}</p>
-          </div>
-          <div className=" w-100">
-            {ic_impact}
-            <h4 class="fw6 f4">Impact</h4>
-            <p className="lh-copy">{frontmatter.impact}</p>
+          <div className="flex flex-row-ns flex-column">
+            {frontmatter.impact && (
+              <div className="mr4 w-100 mb0-ns mb4">
+                {ic_impact}
+                <h4 class="fw6 f4 mv4-ns mv3">Impact</h4>
+                <p className="lh-copy">{frontmatter.impact}</p>
+              </div>
+            )}
+            {frontmatter.myrole && (
+              <div className=" w-100 mb0-ns mb4">
+                {ic_role}
+                <h4 class="fw6 f4 mv4-ns mv3">My role</h4>
+                <p className="lh-copy">{frontmatter.myrole}</p>
+              </div>
+            )}
           </div>
         </div>
       )}
@@ -157,6 +188,7 @@ export const pageQuery = graphql`
         design_team
         learn_more
         team
+        myrole
         cover_image {
           publicURL
           childImageSharp {

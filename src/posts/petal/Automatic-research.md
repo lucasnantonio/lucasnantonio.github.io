@@ -6,7 +6,7 @@ subtitle: Talking to users every week
 problem: Recruiting users for interviews is time-consuming
 solution: An automated, self-service flow that allows users to schedule time to talk to our product team
 impact: At least one user interview per week with zero recruiting cost.
-
+myrole: Main advocate and project manager
 category: Petal
 topics:
   - research
