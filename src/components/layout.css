@@ -50,6 +50,10 @@ h5 {
   margin-top: 1rem;
 }
 
+.post-content figure {
+  margin: 0px;
+}
+
 .post-content h1,
 .post-content h2,
 .post-content h3,

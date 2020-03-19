@@ -29,8 +29,8 @@ Nubank's rewards program was already scheduled for launch when I joined the comp
 
 After bringing real beta users to the lab, we found significant issues with the understanding of the program that we then addressed by iterating on screens and other touchpoints. Most of the issues found were about copywriting and metal-modeling, which is a natural problem for breakthrough products that are not based on current models. Nubank Rewards is extremely different from what most users are familiar with in this market, so getting them to see the real value of the program's mechanics was a huge challenge to the team.
 
-![](../../images/nubank/rewards-1.png)
-![](../../images/nubank/rewards-2.png)
+![First user test of the Rewards value proposition](../../images/nubank/rewards-1.png)
+![Stakeholders watching tests from our dedicated lab](../../images/nubank/rewards-2.png)
 
 User testing was not a glamorous part of the Rewards project. It involved a lot of cross-function communication and research gymnastics to help stakeholders build empathy with the early users of the program, feel the existing pains of the to-be-launched experience, and invest in the necessary changes.
 
@@ -38,11 +38,11 @@ At this time, we started experimenting with live-streaming of the tests, so stak
 
 There was little screen design involved in this project. To me, most of the effort was around written docs and presentations, which I used to document and make sense of pain-points, while at the same time exploring alternatives for the next-day tests.
 
-![](../../images/nubank/rewards-3.png)
+![Writing is a key component to my design process](../../images/nubank/rewards-3.png)
 
 To follow-up with the team with recommendations, I developed a unified UX map encompassing all touch-points for the first user experience. Together, we could now discuss the copywriting on each step of the flow, and compose the message with a broader view of the experience. We designed timely emails, push notifications, and empty-states to help onboard users and get them to the successful, desired state: a proud member of our loyalty program and credit card.
 
-![](../../images/nubank/rewards-4.png)
+![Mapping the launch experience across the App, Website, Social Media, Emails, and Support](../../images/nubank/rewards-4.png)
 
 ## Results
 

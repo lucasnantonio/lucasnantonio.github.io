@@ -27,7 +27,7 @@ Instead of designing a specific research study or topic, for this project our ph
 
 ## The workflow
 
-![Schedule after a week of recruiting turned on](../../images/petal/automated-research-workflow.png)
+![Diagram of the apps we used to automate recruiting](../../images/petal/automated-research-workflow.png)
 
 1. NPS survey
 2. Opt-in
@@ -45,7 +45,7 @@ A Zoom call is created, and they get a last confirmation email with instructions
 
 ## Results
 
-![Schedule after a week of recruiting turned on](../../images/petal/automated-research-schedule.png)
+![Schedule full of interviews!](../../images/petal/automated-research-schedule.png)
 
 When we turned the workflow on, we got 10 users scheduled in a week's time, and that's with a low sample of NPS surveys sent. Getting this same number with a hands-on recruiting outreach would have taken much longer, and now we have the ability turn it on or off depending on the demand.
 

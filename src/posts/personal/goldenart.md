@@ -43,7 +43,7 @@ One of the customer's biggest problems was picking a color finish from the catal
 
 The client and I walked through the old website together and listed main issues that needed a fix. Visually, they felt like the website was too dark, and that functionally it was clunky, had many bugs, and was hard to maintain and update. The product pages opened in a lightbox, which made it difficult for users to save and share specific pages. Also, the website was not responsive, which increased a high mobile bounce rate.
 
-<img src="../../images/golden-art/goldenart-006.png">
+![The old website](../../images/golden-art/goldenart-006.png)
 
 1. We found various legibility problems with the colors used in some fields.
 2. Submenus and links were added with time on top of the original structure, which created a very questionable information architecture.
@@ -55,8 +55,11 @@ The client and I walked through the old website together and listed main issues 
 
 GoldenArt has over 500 products in their catalog. The old Wordpress website was painful because it required the company to keep the CMS up-to-date with their in-house catalog system, which was an Excel spreadsheet. In researching solutions to this problem, I found Airtable, and the client and I fell in love with it.
 
+<figure>
 <div class="w-100 bg-washed-red pa4 tc">
 <img src="../../images/golden-art/goldenart-010.gif">
+</figure>
+<figcaption>The product database, built on Airtable</figcaption>
 </div>
 
 It is a very friendly platform, and it became the internal source of truth for all the information about the product lines, which gets shared with their partners and clients. As they change the info on Airtable, the website is updated in real-time.

@@ -36,7 +36,7 @@ export default function Template({
               {frontmatter.subtitle}
             </h1>
           </div>
-          <div className="mt5 pt3 mw5 mono f7 lh-copy">
+          <div className="mv3 pt5-l pt3 pb3 mw5 mono f7 lh-copy black-50">
             <div className="">
               <div className="nowrap">
                 {frontmatter.where && frontmatter.where + `,`}{" "}

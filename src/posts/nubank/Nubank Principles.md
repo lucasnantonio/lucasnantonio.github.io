@@ -25,7 +25,7 @@ To help us navigate this fast-paced transformation, our team started exploring w
 
 ## Inspiration
 
-![My image legend](../../images/nubank/principles-1.png)
+![Dieter Rams](../../images/nubank/principles-1.png)
 
 Design principles are not new. Dieter Rams’ famous 10 principles of good design, formulated during the seventies, was useful not only to his team at Braun, but also as a teaching tool and a personal message to the outside world about what he believed led to better designed products. Needless to say, this list has become such timeless advice that it now hangs in walls of designers building all types of product around the world, both in physical and digital media.
 
@@ -33,7 +33,7 @@ More recently, Facebook’s design team has also published their set of seven pr
 
 The list goes on: Google, Asana, Microsoft and even the UK Government have invested in defining guidelines for maintaining high standards in their designs. By looking at these and other lists, we’ve realized that the process of discussing and writing principles could have a lot of value in itself, regardless of the end result. This is one of the reasons why we decided to give it a try.
 
-![](../../images/nubank/principles-2.jpeg)
+![Brainstorm process for our Design Principles](../../images/nubank/principles-2.jpeg)
 
 ## Goals
 

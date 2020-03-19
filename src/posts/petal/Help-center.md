@@ -22,6 +22,6 @@ In an early-stage, lean product team, this kind of initiative can be hard to pri
 
 Learning Zendesk Developer tools was very instructive, and in addition to refreshing the design we enabled various features that will make our customers better able to self-serve.
 
-![Home page before and after](../../images/petal/help-before-after-a.png)
-![Home page before and after](../../images/petal/help-before-after-b.png)
-![Home page before and after](../../images/petal/help-before-after-c.png)
+![](../../images/petal/help-before-after-a.png)
+![](../../images/petal/help-before-after-b.png)
+![](../../images/petal/help-before-after-c.png)
