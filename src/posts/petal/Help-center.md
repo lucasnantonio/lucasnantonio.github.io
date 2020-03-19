@@ -1,6 +1,6 @@
 ---
 path: "/blog/petal-help-center"
-date: "2020-02-15"
+date: "2019-08-15"
 title: Petal Help Center
 subtitle: A quick visual revamp
 problem: Subpar visual design makes Help Center look unreliable.

@@ -1,6 +1,6 @@
 ---
 path: "/blog/nubank/nuconta"
-date: "2019-11-04"
+date: "2017-09-04"
 title: NuConta
 subtitle: Designing the largest digital banking app in the world
 category: "Nubank"

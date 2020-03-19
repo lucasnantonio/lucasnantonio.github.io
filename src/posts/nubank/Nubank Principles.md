@@ -1,6 +1,6 @@
 ---
 path: "/blog/nubank/design-team"
-date: "2018-12-01"
+date: "2017-06-01"
 title: "Nubank Design Principles"
 subtitle: Defining why and how we work
 category: "Nubank"
