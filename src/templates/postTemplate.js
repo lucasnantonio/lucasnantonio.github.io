@@ -91,18 +91,18 @@ export default function Template({
         frontmatter.myrole) && (
         <div
           style={{ maxWidth: minWidth }}
-          className=" flex flex-row-ns flex-column justify-between mb4 pa5-ns pa4 bg-near-white br2 tl mt3"
+          className=" center flex flex-row-ns flex-column justify-between mb4 pa5-ns pa4 bg-near-white br2 tl mt3"
         >
           <div className="flex flex-row-ns flex-column">
             {frontmatter.problem && (
-              <div className="mr4 w-100 mb0-ns mb4">
+              <div className="mr4 w-100 mb0-ns mb4 measure">
                 {ic_problem}
                 <h4 class="fw6 f4 mv4-ns mv3">Problem</h4>
                 <p className="lh-copy">{frontmatter.problem}</p>
               </div>
             )}
             {frontmatter.solution && (
-              <div className="mr4 w-100 mb0-ns mb4">
+              <div className="mr4 w-100 mb0-ns mb4 measure">
                 {ic_solution}
                 <h4 class="fw6 f4 mv4-ns mv3">Approach</h4>
                 <p className="lh-copy">{frontmatter.solution}</p>
@@ -111,14 +111,14 @@ export default function Template({
           </div>
           <div className="flex flex-row-ns flex-column">
             {frontmatter.impact && (
-              <div className="mr4 w-100 mb0-ns mb4">
+              <div className="mr4 w-100 mb0-ns mb4 measure">
                 {ic_impact}
                 <h4 class="fw6 f4 mv4-ns mv3">Impact</h4>
                 <p className="lh-copy">{frontmatter.impact}</p>
               </div>
             )}
             {frontmatter.myrole && (
-              <div className=" w-100 mb0-ns mb4">
+              <div className=" w-100 mb0-ns mb4 measure">
                 {ic_role}
                 <h4 class="fw6 f4 mv4-ns mv3">My role</h4>
                 <p className="lh-copy">{frontmatter.myrole}</p>

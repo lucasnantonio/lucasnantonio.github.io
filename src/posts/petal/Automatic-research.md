@@ -10,7 +10,7 @@ myrole: Main advocate and project manager
 category: Petal
 topics:
   - research
-  - design ops
+  - Design Ops
 published: true
 size: large
 cover_image: "../../images/petal/automated-research-9.png"

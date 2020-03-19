@@ -1,7 +1,7 @@
 ---
 path: "/blog/nubank/nuconta"
 date: "2017-09-04"
-title: NuConta
+title: Nubank Savings
 subtitle: Designing the largest digital banking app in the world
 category: "Nubank"
 problem: Brazilians are locked into bad banking account options because of big bank's monopoly.
