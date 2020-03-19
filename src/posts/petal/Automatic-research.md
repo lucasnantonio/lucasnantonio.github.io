@@ -10,6 +10,7 @@ impact: At least one user interview per week with zero recruiting cost.
 category: Petal
 topics:
   - research
+  - design ops
 published: true
 size: large
 cover_image: "../../images/petal/automated-research-9.png"

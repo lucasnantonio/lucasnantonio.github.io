@@ -5,7 +5,7 @@ title: "Nubank Design Principles"
 subtitle: Defining why and how we work
 category: "Nubank"
 topics:
-  - Design Mgmt
+  - Design Ops
 color: "#333"
 cover_image: "../../images/nubank/nubank-team-logo.png"
 image_cover_size: true
