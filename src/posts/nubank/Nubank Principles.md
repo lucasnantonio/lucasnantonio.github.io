@@ -25,7 +25,7 @@ To help us navigate this fast-paced transformation, our team started exploring w
 
 ## Inspiration
 
-![](../../images/nubank/principles-1.png)
+![My image legend](../../images/nubank/principles-1.png)
 
 Design principles are not new. Dieter Rams’ famous 10 principles of good design, formulated during the seventies, was useful not only to his team at Braun, but also as a teaching tool and a personal message to the outside world about what he believed led to better designed products. Needless to say, this list has become such timeless advice that it now hangs in walls of designers building all types of product around the world, both in physical and digital media.
 

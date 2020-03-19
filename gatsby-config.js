@@ -18,6 +18,7 @@ module.exports = {
             options: {
               maxWidth: 1800,
               linkImagesToOriginal: false,
+              showCaptions: true,
               // pathPrefix: "/blog",
             },
           },
