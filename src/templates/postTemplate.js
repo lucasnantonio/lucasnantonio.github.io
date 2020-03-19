@@ -97,14 +97,14 @@ export default function Template({
             {frontmatter.problem && (
               <div className="mr4 w-100 mb0-ns mb4 measure">
                 {ic_problem}
-                <h4 class="fw6 f4 mv4-ns mv3">Problem</h4>
+                <h4 className="fw6 f4 mv4-ns mv3">Problem</h4>
                 <p className="lh-copy">{frontmatter.problem}</p>
               </div>
             )}
             {frontmatter.solution && (
               <div className="mr4 w-100 mb0-ns mb4 measure">
                 {ic_solution}
-                <h4 class="fw6 f4 mv4-ns mv3">Approach</h4>
+                <h4 className="fw6 f4 mv4-ns mv3">Approach</h4>
                 <p className="lh-copy">{frontmatter.solution}</p>
               </div>
             )}
@@ -113,14 +113,14 @@ export default function Template({
             {frontmatter.impact && (
               <div className="mr4 w-100 mb0-ns mb4 measure">
                 {ic_impact}
-                <h4 class="fw6 f4 mv4-ns mv3">Impact</h4>
+                <h4 className="fw6 f4 mv4-ns mv3">Impact</h4>
                 <p className="lh-copy">{frontmatter.impact}</p>
               </div>
             )}
             {frontmatter.myrole && (
               <div className=" w-100 mb0-ns mb4 measure">
                 {ic_role}
-                <h4 class="fw6 f4 mv4-ns mv3">My role</h4>
+                <h4 className="fw6 f4 mv4-ns mv3">My role</h4>
                 <p className="lh-copy">{frontmatter.myrole}</p>
               </div>
             )}

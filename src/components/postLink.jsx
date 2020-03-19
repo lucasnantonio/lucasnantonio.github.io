@@ -8,7 +8,7 @@ import { backgroundGray } from "./utils"
 
 function PostLink({ post, index }) {
   const topicTags = post.frontmatter.topics.map(item => {
-    return <Tag title={item} />
+    return <Tag key={item} title={item} />
   })
   const [isHovered, setHover] = useState(false)
   return (
