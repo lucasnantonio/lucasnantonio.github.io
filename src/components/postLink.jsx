@@ -13,17 +13,18 @@ function PostLink({ post, index }) {
   const [isHovered, setHover] = useState(false)
   return (
     <Link
-      onMouseEnter={() => setHover(true)}
+      onMouseEnter={() => setHover(!post.frontmatter.soon && true)}
       onMouseLeave={() => setHover(false)}
-      className={` 
+      style={{ pointerEvents: post.frontmatter.soon && "none" }}
+      className={`
       ${index % 2 == 0 && "pr3-ns"}
       ${index % 2 != 0 && "pl3-ns"}
       ${post.frontmatter.size !== "large" ? "w-25-ns w-100" : "w-50-ns w-100"}
         link black fl flex flex-column  pb3
         `}
-      to={post.frontmatter.path}
+      to={!post.frontmatter.soon ? post.frontmatter.path : null}
     >
-      <div className="br2 overflow-hidden">
+      <div className="br2 overflow-hidden relative">
         <ImageWithBackground
           cover={post.frontmatter.cover}
           isHovered={isHovered}
@@ -35,14 +36,21 @@ function PostLink({ post, index }) {
         style={{ minHeight: "12rem" }}
         className="black pb4 mt2 flex justify-between"
       >
-        <div className="mr3 w-100">
-          <p
-            className={`neue-regular f3-l f4 measure-narrow mt3 mb3 ${
-              isHovered ? "u underline" : ""
-            }`}
-          >
-            {post.frontmatter.title}
-          </p>
+        <div className="w-100">
+          <div className="flex justify-between items-center">
+            <p
+              className={`neue-regular f3-l f4 measure-narrow mt3 mb3 ${
+                isHovered ? "u underline" : ""
+              }`}
+            >
+              {post.frontmatter.title}{" "}
+            </p>
+            {post.frontmatter.soon && (
+              <span className="mono f7 black-50 bg-black-10 pv2 ph3 br-pill flex items-center">
+                Coming Soon
+              </span>
+            )}
+          </div>
           <p
             className={
               "f4-l f5 black-40 neue-regular lh-copy pv0 mb0 mt0 w-100"

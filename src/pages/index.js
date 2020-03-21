@@ -176,6 +176,7 @@ export const pageQuery = graphql`
             published
             snapToBottom
             team
+            soon
             cover_image {
               publicURL
               childImageSharp {

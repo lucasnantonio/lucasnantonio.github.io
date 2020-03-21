@@ -4,7 +4,7 @@ export const topics = [
   "Research",
   "Design Ops",
   "Code",
-  "Favorites",
+  // "Favorites",
 ]
 export const sizes = ["S", "M", "L"]
 export const backgroundGray = "#f5f5f5"

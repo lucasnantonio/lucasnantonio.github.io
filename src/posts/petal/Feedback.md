@@ -14,6 +14,7 @@ published: true
 size: large
 cover_image: "../../images/petal/petal-feedback.png"
 color: "paleturquoise"
+soon: true
 ---
 
 Receiving suggestions, feature requests, complaints, and bug reports from users, like any other type of customer-focused evidence, is essencial fuel for high-performing technology teams.
