@@ -14,7 +14,6 @@ role:
 cover_image: "../../images/kano/kano.png"
 impact: number of tickets about this reason reduced from X to Y.
 color: "#FF7A00"
-size: "large"
 cover: true
 ---
 
