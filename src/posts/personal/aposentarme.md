@@ -14,7 +14,6 @@ problem: How to stay focused at work?
 solution: A device to help you find work-life balance.
 impact: Work published in Wired, FastCompany.
 color: "#E0F4FF"
-size: "large"
 cover: false
 ---
 

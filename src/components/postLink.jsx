@@ -17,10 +17,9 @@ function PostLink({ post, index }) {
       onMouseLeave={() => setHover(false)}
       style={{ pointerEvents: post.frontmatter.soon && "none" }}
       className={`
-      ${index % 2 == 0 && "pr3-ns"}
-      ${index % 2 != 0 && "pl3-ns"}
-      ${post.frontmatter.size !== "large" ? "w-25-ns w-100" : "w-50-ns w-100"}
-        link black fl flex flex-column  pb3
+      pr4
+      ${post.frontmatter.size !== "large" ? "w-50-l w-100" : "w-100"}
+        link black fl flex flex-column  pb1
         `}
       to={!post.frontmatter.soon ? post.frontmatter.path : null}
     >
@@ -28,7 +27,7 @@ function PostLink({ post, index }) {
         <ImageWithBackground
           cover={post.frontmatter.cover}
           isHovered={isHovered}
-          fluid={post.frontmatter.cover_image.childImageSharp.fluid}
+          image={post.frontmatter.cover_image}
           color={post.frontmatter.color}
         />
       </div>
@@ -45,11 +44,6 @@ function PostLink({ post, index }) {
             >
               {post.frontmatter.title}{" "}
             </p>
-            {post.frontmatter.soon && (
-              <span className="mono f7 black-50 bg-black-10 pv2 ph3 br-pill flex items-center">
-                Coming Soon
-              </span>
-            )}
           </div>
           <p
             className={
@@ -62,6 +56,11 @@ function PostLink({ post, index }) {
             style={{ marginLeft: "-.2rem" }}
             className="mono mt3 pt1 flex tr items-start"
           >
+            {post.frontmatter.soon && (
+              <span className="f7 mr2 pv2  ph3 ba br-pill b--near-white bg-near-white dib br1 black-80 fl dib flex flex-column justify-center h1">
+                Coming Soon
+              </span>
+            )}
             {topicTags}
           </div>
         </div>

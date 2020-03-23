@@ -8,11 +8,11 @@ solution: An automated, self-service flow that allows users to schedule time to 
 impact: At least one user interview per week with zero recruiting cost.
 myrole: Main advocate and project manager
 category: Petal
+size: large
 topics:
   - research
   - Design Ops
 published: true
-size: large
 cover_image: "../../images/petal/automated-research-9.png"
 color: "MistyRose"
 ---

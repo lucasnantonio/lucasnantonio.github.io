@@ -11,7 +11,6 @@ topics:
   - Code
   - Product Design
 published: true
-size: large
 cover_image: "../../images/petal/petal-help.png"
 color: "lightblue"
 ---

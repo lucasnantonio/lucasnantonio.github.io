@@ -101,9 +101,6 @@ function IndexPage({
             />
             <HomeSection
               isAll={isAll}
-              mainImage={
-                posts[0].node.frontmatter.cover_image.childImageSharp.fluid
-              }
               posts={getFilteredPosts()}
               title="Kano"
               date="2013"

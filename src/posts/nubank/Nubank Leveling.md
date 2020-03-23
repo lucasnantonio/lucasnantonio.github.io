@@ -1,15 +1,16 @@
 ---
-path: "/blog/nubank/design-team"
-date: "2017-06-01"
-title: "Design Team Principles"
-subtitle: Defining why and how we work
+path: "/blog/nubank/design-leveling"
+date: "2017-06-02"
+title: "Design Team Leveling 1.0"
+subtitle: Growing into a specialized team
 category: "Nubank"
 topics:
   - Design Ops
-color: "#eee"
-cover_image: "../../images/nubank/nubank-team-logo.png"
+color: "#1E0630"
+cover_image: "../../images/nubank/nubank-leveling.png"
 image_cover_size: true
 published: true
+soon: true
 learn_more:
 where: São Paulo
 when: Dec 2017
@@ -17,6 +18,7 @@ team:
   - Ricardo Sato
   - Guilherme Neumann
   - Erick Mazer
+  - Duda di Pietro
 ---
 
 Nubank has been growing from living-room sized startup to a much larger and complex organization in the last three years. This growth has impacted many teams, and design is no exception.

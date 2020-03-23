@@ -16,7 +16,6 @@ color: "#A469E9"
 cover_image: "../../images/nubank/rewards-new.png"
 image_cover_size: true
 published: true
-size: large
 learn_more:
 where: São Paulo
 when: Dec 2016

@@ -20,7 +20,6 @@ when: 2017-2018
 design_team:
   - Lucas Neumann
 color: "pink"
-size: large
 ---
 
 This project is a very simple catalog, but I'm proud of it because it's the first full-stack website I've built and shipped while learning to code. It uses Airtable as the CMS, where the client can update the products' information and actually became the source of truth for the company's inventory. It was a steep learning curve and got me a decent understanding of Javascript, Node, and Express.
