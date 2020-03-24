@@ -4,9 +4,10 @@ date: "2019-03-04"
 title: GoldenArt
 subtitle: My family's company website, my code sandbox.
 category: Others
-problem: Small company with an old Wordpress website
+problem: Old, unmaintained Wordpress website with no flexibility for current content
 solution: Website redesigned and rebuilt from scratch using Node.js
-impact: Higher customer engagement, better usability & better control over content
+impact: Higher customer engagement and satisfaction, better usability & better client control over content
+myrole: CMS Information Architecture, Design and Code (Javascript, Node)
 topics:
   - Product Design
   - Code
@@ -50,7 +51,7 @@ The client and I walked through the old website together and listed main issues 
 4. The bottom menu was fixed, which occupied too much real estate.
 5. The client had little control over the order in which the products were displayed.
 
-## Backend
+## CMS architecture and backend
 
 GoldenArt has over 500 products in their catalog. The old Wordpress website was painful because it required the company to keep the CMS up-to-date with their in-house catalog system, which was an Excel spreadsheet. In researching solutions to this problem, I found Airtable, and the client and I fell in love with it.
 

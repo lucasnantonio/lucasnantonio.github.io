@@ -4,9 +4,10 @@ date: "2017-09-04"
 title: Nubank Savings
 subtitle: Designing the largest digital banking app in the world
 category: "Nubank"
-problem: Brazilians are locked into bad banking account options because of big bank's monopoly.
+problem: Brazilians are stuck with terrible banking account options because of big bank's monopoly.
 solution: A new type of free, integrated, hybrid checking and savings account.
-impact: 10+ Million customers after 1 year of launch, becoming the largest startup in Latin America.
+impact: 10+ Million customers after 1 year of launch, becoming the largest startup in Latin America. As of 2020, most used mobile banking app in the world.
+myrole: Co-led the 0 to 1 yearlong design process, from research to development, alongside my peer Erick Mazer.
 topics:
   - Product Design
   - Research

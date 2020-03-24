@@ -13,7 +13,7 @@ cover_image: "../../images/aposentarme/aposentarme.png"
 problem: How to stay focused at work?
 solution: A device to help you find work-life balance.
 impact: Work published in Wired, FastCompany.
-color: "#E0F4FF"
+color: "#63BCFA"
 cover: false
 ---
 

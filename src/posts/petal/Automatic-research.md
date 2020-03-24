@@ -3,17 +3,19 @@ path: "/blog/automatic-research-recruiting"
 date: "2020-02-15"
 title: Automated Research Recruiting
 subtitle: Talking to users every week
-problem: Recruiting users for interviews is time-consuming
-solution: An automated, self-service flow that allows users to schedule time to talk to our product team
-impact: At least one user interview per week with zero recruiting cost.
-myrole: Main advocate and project manager
+problem: Recruiting users for research is time-consuming, lowering the chances that interviews will be done often
+solution: An automated flow that allows users to schedule a time to talk to our product team
+impact: Recurring interview sessions scheduled without recruiting overhead
+myrole: Main advocate, project lead, and interviewer.
 category: Petal
+team:
+  - Jack Docal
 topics:
   - research
   - Design Ops
 published: true
 cover_image: "../../images/petal/automated-research-9.png"
-color: "MistyRose"
+color: "#343e63"
 ---
 
 Most teams know that talking to users frequently is a key habit to increase empathy, de-risk projects, find innovation opportunities. At Petal, where "listen with curiosity" and "our job is never done" are company values, this is no different.

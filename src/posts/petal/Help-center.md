@@ -2,10 +2,11 @@
 path: "/blog/petal-help-center"
 date: "2019-08-15"
 title: Petal Help Center
-subtitle: A quick visual revamp
-problem: Subpar visual design makes Help Center look unreliable.
-solution: A fun weekend of hacking away our Zendesk template.
-impact: Higher engagement with content and reduced support ticket volumes.
+subtitle: A quick visual revamp to our Zendesk
+problem: Subpar visual design makes Help Center look unreliable and users unengaged with content.
+solution: A fun weekend of hacking away to learn Zendesk developer tools and customize our template.
+impact: Higher user and internal team engagement with content and (hypothetically) reduced support ticket volumes.
+myrole: Zendesk template customization, design and frontend code.
 category: Petal
 topics:
   - Code
