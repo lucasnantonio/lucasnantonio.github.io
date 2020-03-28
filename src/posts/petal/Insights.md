@@ -11,7 +11,7 @@ topics:
   - Product Design
 published: true
 cover_image: "../../images/petal/petal-insights.png"
-color: "#FF9696"
+color: "#ff6798"
 soon: true
 ---
 

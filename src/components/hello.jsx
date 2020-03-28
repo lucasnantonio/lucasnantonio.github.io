@@ -21,7 +21,7 @@ const Hello = ({ setSelectedTopics, setAll }) => {
   }
 
   return (
-    <div className="flex flex-column mb6 mt6">
+    <div className="flex flex-column mb6 mt6 tracked-tight">
       <motion.div initial={initialFadeAnimation} animate={fadeInAnimation}>
         <h1 className="f2-l f3 neue-regular black lh-title mb0">
           {!visitor

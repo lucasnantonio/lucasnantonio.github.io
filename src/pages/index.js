@@ -64,9 +64,9 @@ function IndexPage({
       </div>
       {!isAll && (
         <div className="mb5 flex flex-row-l flex-column bt bw1 b--near-white pt4">
-          <h1 className="w-100 f2-l f3">
+          <h1 className="w-100 f2-l f3 tracked-tight">
             {selectedTopics[0]}{" "}
-            <span className="black-40 f4">{getFilteredPosts().length}</span>
+            <span className="black-40 f4 ">{getFilteredPosts().length}</span>
           </h1>
           <p className="f4 w-100 lh-copy mt4 pl3-l black-40">
             {selectedTopics[0] === "Research"
