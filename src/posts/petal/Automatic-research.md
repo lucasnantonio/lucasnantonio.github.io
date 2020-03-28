@@ -28,7 +28,7 @@ Instead of designing a specific research study or topic, for this project our ph
 
 ## The workflow
 
-![Diagram of the apps we used to automate recruiting](../../images/petal/automated-research-workflow.png)
+![Diagram of the apps we used to automate recruiting](../../images/petal/automated-workflow.png)
 
 1. NPS survey
 2. Opt-in
