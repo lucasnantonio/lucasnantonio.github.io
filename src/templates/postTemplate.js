@@ -27,7 +27,7 @@ export default function Template({
   }
   const title = (
     <div className="flex flex-column pt5 pb5-l w-100">
-      <h1 className=" fw5 neue-regular f1 black-80 mt0 mb3 pb0 w-100">
+      <h1 className=" fw5 neue-regular f1 black-80 mt0 mb3 pb0 w-100 tracked-tight">
         {frontmatter.title}
       </h1>
       <h1 className="f3 lh-copy black-80 mt0 pt0 measure mb1">
@@ -114,7 +114,7 @@ export default function Template({
     frontmatter.myrole) && (
     <div
       style={{ maxWidth: minWidth }}
-      className=" center flex flex-row-ns flex-column justify-between mb4 pa5-ns pa4 bg-near-white br2 tl mt3"
+      className=" center flex flex-row-ns flex-column justify-between mb5 pv5-ns bb b--near-white bw1 pv4 br2 tl mt3"
     >
       <div className="flex flex-row-ns flex-column">
         {frontmatter.problem && (
