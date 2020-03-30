@@ -44,7 +44,13 @@ export default function Template({
         </div>
         {frontmatter.team && <div>—</div>}
         <div className="">
-          {frontmatter.team && frontmatter.team.map(item => `${item}, `)}
+          {frontmatter.team &&
+            frontmatter.team.map(
+              (item, index) =>
+                `${item} ${
+                  index === frontmatter.team.length - 1 ? "and me." : ","
+                } `
+            )}
         </div>
       </div>
     </div>

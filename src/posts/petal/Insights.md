@@ -10,8 +10,8 @@ category: Petal
 topics:
   - Product Design
 published: true
-cover_image: "../../images/petal/petal-insights.png"
-color: "#ff6798"
+cover_image: "../../images/petal/petal-insights-6.png"
+color: "#FFE6E6"
 soon: true
 ---
 

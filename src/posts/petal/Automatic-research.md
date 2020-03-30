@@ -1,7 +1,7 @@
 ---
 path: "/blog/automatic-research-recruiting"
 date: "2020-02-15"
-title: Automated Research Recruiting
+title: Automated User Research Recruiting
 subtitle: Talking to users every week
 problem: Recruiting users for research is time-consuming, lowering the chances that interviews will be done often
 solution: An automated flow that allows users to schedule a time to talk to our product team
@@ -15,7 +15,7 @@ topics:
   - Design Ops
 published: true
 cover_image: "../../images/petal/automated-research-9.png"
-color: "#343e63"
+color: "#f9f6e8"
 ---
 
 Most teams know that talking to users frequently is a key habit to increase empathy, de-risk projects, find innovation opportunities. At Petal, where "listen with curiosity" and "our job is never done" are company values, this is no different.
@@ -28,7 +28,7 @@ Instead of designing a specific research study or topic, for this project our ph
 
 ## The workflow
 
-![Diagram of the apps we used to automate recruiting](../../images/petal/automated-workflow-2.png)
+![Diagram of the apps we used to automate recruiting](../../images/petal/automated-research-workflow-4.png)
 
 1. NPS survey
 2. Opt-in
@@ -46,7 +46,7 @@ A Zoom call is created, and they get a last confirmation email with instructions
 
 ## Results
 
-![Schedule full of interviews!](../../images/petal/automated-research-schedule-2.png)
+![Schedule full of interviews!](../../images/petal/automated-research-schedule-4.png)
 
 When we turned the workflow on, we got 10 users scheduled in a week's time, and that's with a low sample of NPS surveys sent. Getting this same number with a hands-on recruiting outreach would have taken much longer, and now we have the ability turn it on or off depending on the demand.
 
