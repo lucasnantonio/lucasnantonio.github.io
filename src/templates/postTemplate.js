@@ -39,10 +39,10 @@ export default function Template({
   const metadata = (
     <div className="mv3 pt5-l pt3 pb4 mw5 f7 lh-copy black-50">
       <div className="">
-        <div className="nowrap">
+        <div className="nowrap fw5 black-70 mb2">
           {frontmatter.where && frontmatter.where + `,`} {frontmatter.date}{" "}
         </div>
-        {frontmatter.team && <div>—</div>}
+        {/* {frontmatter.team && <div>—</div>} */}
         <div className="">
           {frontmatter.team &&
             frontmatter.team.map(
