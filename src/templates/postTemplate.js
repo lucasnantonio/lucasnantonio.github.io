@@ -30,7 +30,7 @@ export default function Template({
       <h1 className=" fw5 neue-regular f1 black-80 mt0 mb3 pb0 w-100 tracked-tight">
         {frontmatter.title}
       </h1>
-      <h1 className="f3 lh-copy black-80 mt0 pt0 measure mb1">
+      <h1 className="f3 lh-copy black-80 mt0 pt0 measure mb1 black-60">
         {frontmatter.subtitle}
       </h1>
     </div>
