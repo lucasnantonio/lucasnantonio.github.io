@@ -17,7 +17,7 @@ function PostLink({ post, index }) {
       onMouseLeave={() => setHover(false)}
       style={{ pointerEvents: post.frontmatter.soon && "none" }}
       className={`
-      pr4
+      pr4-l
       ${post.frontmatter.size !== "large" ? "w-50-l w-100" : "w-100"}
         link black fl flex flex-column  pb1
         `}
