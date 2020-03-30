@@ -37,7 +37,7 @@ export default function Template({
   )
 
   const metadata = (
-    <div className="mv3 pt5-l pt3 pb4 mw5 mono f7 lh-copy black-50">
+    <div className="mv3 pt5-l pt3 pb4 mw5 f7 lh-copy black-50">
       <div className="">
         <div className="nowrap">
           {frontmatter.where && frontmatter.where + `,`} {frontmatter.date}{" "}
