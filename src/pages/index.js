@@ -31,6 +31,10 @@ function IndexPage({
     }
   }
 
+  const publishedPosts = posts.filter(
+    item => item.node.frontmatter.soon === null
+  )
+
   const getFilteredPosts = () => {
     if (isAll) {
       return posts
@@ -60,6 +64,7 @@ function IndexPage({
           isAll={isAll}
           setAll={setAll}
           posts={posts}
+          publishedPosts={publishedPosts}
         />
       </div>
       {!isAll && (

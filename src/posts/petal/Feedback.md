@@ -11,8 +11,8 @@ topics:
   - Product Design
   - Research
 published: true
-cover_image: "../../images/petal/petal-feedback.png"
-color: "paleturquoise"
+cover_image: "../../images/petal/petal-feedback-2.png"
+color: "#8DE1FD"
 soon: true
 ---
 

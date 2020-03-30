@@ -23,7 +23,7 @@ function PostLink({ post, index }) {
         `}
       to={!post.frontmatter.soon ? post.frontmatter.path : null}
     >
-      <div className="br2 overflow-hidden relative">
+      <div className="br3 overflow-hidden relative">
         <ImageWithBackground
           cover={post.frontmatter.cover}
           isHovered={isHovered}

@@ -1,18 +1,18 @@
 ---
-path: "/blog/petal-insights"
+path: "/blog/petal-empathy-score"
 date: "2020-01-01"
-title: Insights
-subtitle: Helping customers control their spend
+title: User empathy score
+subtitle: How do we know we're being more user-centered?
 problem: How can we collect feedback that is specific, measurable, and actionable?
 solution: Atomized, measurable feedback entry-points across the entire app.
 impact: Strong inflow of user-centered evidence that served as a base for product roadmapping.
 category: Petal
 topics:
-  - Product Design
+  - Design Ops
+  - Research
 published: true
-cover_image: "../../images/petal/petal-insights-13.png"
-color: "#FFE6E6"
-cover: true
+cover_image: "../../images/petal/user-empathy-13.png"
+color: "#8DE1FD"
 soon: true
 ---
 

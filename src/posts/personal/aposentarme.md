@@ -9,11 +9,11 @@ topics:
   - Code
 published: true
 soon: true
-cover_image: "../../images/aposentarme/aposentarme.png"
+cover_image: "../../images/aposentarme/aposentarme-1.png"
 problem: How to stay focused at work?
 solution: A device to help you find work-life balance.
 impact: Work published in Wired, FastCompany.
-color: "#D6F4FD"
+color: "#8DE1FD"
 cover: false
 ---
 

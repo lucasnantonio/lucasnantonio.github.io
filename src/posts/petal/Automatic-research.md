@@ -14,8 +14,8 @@ topics:
   - research
   - Design Ops
 published: true
-cover_image: "../../images/petal/automated-research-9.png"
-color: "#f9f6e8"
+cover_image: "../../images/petal/automated-research-11.png"
+color: "#f7f7f7"
 ---
 
 Most teams know that talking to users frequently is a key habit to increase empathy, de-risk projects, find innovation opportunities. At Petal, where "listen with curiosity" and "our job is never done" are company values, this is no different.

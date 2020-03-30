@@ -5,7 +5,6 @@ import { Link } from "gatsby"
 function SurpriseButton({ posts }) {
   const [isHovered, setHover] = useState(false)
   const [randomPost, setRandomPost] = useState("")
-
   var myAnimation
 
   function swapColor() {

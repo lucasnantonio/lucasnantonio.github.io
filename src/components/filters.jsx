@@ -9,7 +9,14 @@ import { initialFadeAnimation, fadeInAnimation } from "../components/utils"
 
 // const { minWidth, topics, sizes } = Utils
 
-function Filters({ selectedTopics, setSelectedTopics, isAll, setAll, posts }) {
+function Filters({
+  selectedTopics,
+  setSelectedTopics,
+  isAll,
+  setAll,
+  posts,
+  publishedPosts,
+}) {
   return (
     <motion.div
       className="w-100 bg-white z-max flex justify-end mb6"
@@ -49,7 +56,7 @@ function Filters({ selectedTopics, setSelectedTopics, isAll, setAll, posts }) {
               />
             ))}
             <div>
-              <SurpriseButton posts={posts} />
+              <SurpriseButton posts={publishedPosts} />
             </div>
           </div>
           {/* <div>Bio</div> */}
