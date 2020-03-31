@@ -20,8 +20,8 @@ export default function Template({
   const { next, prev } = pageContext
   const { markdownRemark } = data // data.markdownRemark holds our post data
   const { frontmatter, html } = markdownRemark
-  String.prototype.capitalize = function() {
-    return this.replace(/(?:^|\s)\S/g, function(a) {
+  String.prototype.capitalize = function () {
+    return this.replace(/(?:^|\s)\S/g, function (a) {
       return a.toUpperCase()
     })
   }
@@ -53,15 +53,13 @@ export default function Template({
           {frontmatter.where && frontmatter.where + `,`} {frontmatter.date}{" "}
         </div>
         {/* {frontmatter.team && <div>—</div>} */}
-        <div className="">
-          {frontmatter.team &&
-            frontmatter.team.map(
-              (item, index) =>
-                `${item} ${
-                  index === frontmatter.team.length - 1 ? "and me." : ","
-                } `
-            )}
-        </div>
+
+        {frontmatter.team ?
+          `Lucas Neumann, ${frontmatter.team.map(
+            (item) =>
+              ` ${item}`
+          )}` : `Solo project`}
+
       </div>
     </div>
   )
@@ -128,44 +126,44 @@ export default function Template({
     frontmatter.problem ||
     frontmatter.impact ||
     frontmatter.myrole) && (
-    <div
-      style={{ maxWidth: minWidth }}
-      className=" center flex flex-row-ns flex-column justify-between pv4-ns bb b--near-white bw1 pv4 br2 tl mt3"
-    >
-      <div className="flex flex-row-ns flex-column">
-        {frontmatter.problem && (
-          <div className="mr4 w-100 mb0-ns mb4 measure">
-            {ic_problem}
-            <h4 className="fw6 f4 mv4-ns mv3">Problem</h4>
-            <p className="lh-copy">{frontmatter.problem}</p>
-          </div>
-        )}
-        {frontmatter.solution && (
-          <div className="mr4 w-100 mb0-ns mb4 measure">
-            {ic_solution}
-            <h4 className="fw6 f4 mv4-ns mv3">Approach</h4>
-            <p className="lh-copy">{frontmatter.solution}</p>
-          </div>
-        )}
+      <div
+        style={{ maxWidth: minWidth }}
+        className=" center flex flex-row-ns flex-column justify-between pv4-ns bb b--near-white bw1 pv4 br2 tl mt3"
+      >
+        <div className="flex flex-row-ns flex-column">
+          {frontmatter.problem && (
+            <div className="mr4 w-100 mb0-ns mb4 measure">
+              {ic_problem}
+              <h4 className="fw6 f4 mv4-ns mv3">Problem</h4>
+              <p className="lh-copy">{frontmatter.problem}</p>
+            </div>
+          )}
+          {frontmatter.solution && (
+            <div className="mr4 w-100 mb0-ns mb4 measure">
+              {ic_solution}
+              <h4 className="fw6 f4 mv4-ns mv3">Approach</h4>
+              <p className="lh-copy">{frontmatter.solution}</p>
+            </div>
+          )}
+        </div>
+        <div className="flex flex-row-ns flex-column">
+          {frontmatter.impact && (
+            <div className="mr4 w-100 mb0-ns mb4 measure">
+              {ic_impact}
+              <h4 className="fw6 f4 mv4-ns mv3">Impact</h4>
+              <p className="lh-copy">{frontmatter.impact}</p>
+            </div>
+          )}
+          {frontmatter.myrole && (
+            <div className=" w-100 mb0-ns mb4 measure">
+              {ic_role}
+              <h4 className="fw6 f4 mv4-ns mv3">My role</h4>
+              <p className="lh-copy">{frontmatter.myrole}</p>
+            </div>
+          )}
+        </div>
       </div>
-      <div className="flex flex-row-ns flex-column">
-        {frontmatter.impact && (
-          <div className="mr4 w-100 mb0-ns mb4 measure">
-            {ic_impact}
-            <h4 className="fw6 f4 mv4-ns mv3">Impact</h4>
-            <p className="lh-copy">{frontmatter.impact}</p>
-          </div>
-        )}
-        {frontmatter.myrole && (
-          <div className=" w-100 mb0-ns mb4 measure">
-            {ic_role}
-            <h4 className="fw6 f4 mv4-ns mv3">My role</h4>
-            <p className="lh-copy">{frontmatter.myrole}</p>
-          </div>
-        )}
-      </div>
-    </div>
-  )
+    )
   return (
     <Layout prev={prev} next={next} isIndex={false}>
       <motion.div initial={initialFadeAnimation} animate={fadeInAnimation}>

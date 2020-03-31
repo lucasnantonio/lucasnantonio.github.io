@@ -21,7 +21,6 @@ learn_more: http://nubank.com.br/nuconta
 where: São Paulo
 when: 2017-2018
 team:
-  - Lucas Neumann
   - Rachel Jordan
   - Erick Mazer
   - Vitor Gurgel

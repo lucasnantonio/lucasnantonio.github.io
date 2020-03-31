@@ -18,8 +18,6 @@ published: true
 learn_more: http://goldenart.com.br
 where: São Paulo
 when: 2017-2018
-design_team:
-  - Lucas Neumann
 color: "pink"
 link: "http://www.goldenart.com.br"
 ---
