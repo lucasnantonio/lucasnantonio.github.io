@@ -8,6 +8,7 @@ function ImageWithBackground({ image, color }) {
     <div
       style={{
         backgroundColor: color,
+        // backgroundColor: "skyblue",
         // padding: "2rem",
       }}
     >

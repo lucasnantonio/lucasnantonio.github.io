@@ -39,15 +39,24 @@ h5 {
   margin-left: auto;
   margin-right: auto;
   margin-top: 3rem;
-  margin-bottom: 3rem;
+  margin-bottom: 4rem;
   font-size: 1.3rem;
+}
+.post-content p {
+  margin-bottom: 5rem;
+}
+.post-content ol {
+  padding: 2rem;
+  border: 2px solid;
+  padding-left: 6rem;
+  padding-bottom: 0rem;
 }
 
 .post-content figcaption {
-  font-family: "Space Mono";
   font-size: 0.8rem;
   color: #999;
   margin-top: 1rem;
+  text-align: center;
 }
 
 .post-content figure {
@@ -74,10 +83,10 @@ h5 {
   margin-top: 3rem;
 }
 
-.lh-copy p:first-child {
+/* .lh-copy p:first-child {
   padding-top: 0px;
   margin-top: 0px;
-}
+} */
 
 .my-node-enter {
   opacity: 0;
@@ -140,13 +149,15 @@ ol li:before {
   content: counter(li);
   position: absolute;
   left: -4rem;
-  top: -0.3rem;
+  top: 0rem;
   color: white;
-  height: 1rem;
-  line-height: 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  height: 0.7rem;
+  line-height: 0.75rem;
   text-align: center;
-  width: 1rem;
-  background-color: black;
+  width: 0.7rem;
+  background-color: #222;
   padding: 0.75rem;
   border-radius: 100%;
 }

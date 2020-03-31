@@ -32,7 +32,7 @@ function PostLink({ post, index }) {
         />
       </div>
       <div
-        style={{ minHeight: "12rem" }}
+        style={{ minHeight: "13rem" }}
         className="black pb4 mt2 flex justify-between"
       >
         <div className="w-100">
