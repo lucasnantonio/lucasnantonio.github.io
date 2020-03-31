@@ -30,9 +30,17 @@ function PostLink({ post, index }) {
           image={post.frontmatter.cover_image}
           color={post.frontmatter.color}
         />
+        {post.frontmatter.soon && (
+          <span
+            style={{ position: "absolute", bottom: ".75rem", left: ".75rem" }}
+            className="black-50 f7 mr2 pv1  ph2 bg-white-80 dib br2 black-80 fl dib flex flex-column justify-center h1"
+          >
+            Coming Soon
+          </span>
+        )}
       </div>
       <div
-        style={{ minHeight: "13rem" }}
+        style={{ minHeight: "11rem" }}
         className="black pb4 mt2 flex justify-between"
       >
         <div className="w-100">
@@ -56,12 +64,7 @@ function PostLink({ post, index }) {
             style={{ marginLeft: "-.2rem" }}
             className="mono mt3 pt1 flex tr items-start"
           >
-            {post.frontmatter.soon && (
-              <span className="f7 mr2 pv2  ph3 ba br-pill b--near-white bg-near-white dib br1 black-80 fl dib flex flex-column justify-center h1">
-                Coming Soon
-              </span>
-            )}
-            {topicTags}
+            {/* {topicTags} */}
           </div>
         </div>
       </div>

@@ -24,11 +24,11 @@ function AllFilter({ setSelectedTopics, isAll, setAll }) {
         setSelectedTopics(topics)
         setAll(true)
       }}
-      className={`fw5 br-pill black pointer pa3 dib nowrap f5-l f6-ns f7`}
+      className={`fw5 black pointer dib nowrap f4 pb3 mr4`}
       style={{
-        color: isAll ? "white" : "#949494",
-        border: !isAll ? "2px solid #f7f7f7" : "2px solid #222",
-        backgroundColor: isAll ? "#000" : isHovered ? "#f7f7f7" : "transparent",
+        color: isAll ? "black" : "#949494",
+        borderBottom: !isAll ? "2px solid #f7f7f7" : "2px solid #222",
+        // backgroundColor: isAll ? "#000" : isHovered ? "#f7f7f7" : "transparent",
       }}
     >
       All

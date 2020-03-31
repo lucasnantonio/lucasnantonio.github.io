@@ -108,19 +108,19 @@ h5 {
 }
 @keyframes blinkingText {
   0% {
-    background-color: lightpink;
+    border-bottom: 2px solid lightpink;
   }
   49% {
-    background-color: lightblue;
+    border-bottom: 2px solid lightblue;
   }
   60% {
-    background-color: lightseagreen;
+    border-bottom: 2px solid lightseagreen;
   }
   99% {
-    background-color: lightcoral;
+    border-bottom: 2px solid lightcoral;
   }
   100% {
-    background-color: yellow;
+    border-bottom: 2px solid yellow;
   }
 }
 

@@ -11,6 +11,7 @@ import { StaticQuery } from "gatsby"
 import { minWidth, topics, sizes } from "../components/utils"
 import { motion, AnimatePresence } from "framer-motion"
 import { initialFadeAnimation, fadeInAnimation } from "../components/utils"
+import { ic_petal_logo, ic_nu_logo, ic_others } from "../components/icons.js"
 
 function IndexPage({
   data: {
@@ -58,22 +59,27 @@ function IndexPage({
       <SEO title="Home" />
       <div>
         <Hello setSelectedTopics={setSelectedTopics} setAll={setAll} />
-        <Filters
-          selectedTopics={selectedTopics}
-          setSelectedTopics={setSelectedTopics}
-          isAll={isAll}
-          setAll={setAll}
-          posts={posts}
-          publishedPosts={publishedPosts}
-        />
+        <div className="db-ns dn mr4">
+          <Filters
+            selectedTopics={selectedTopics}
+            setSelectedTopics={setSelectedTopics}
+            isAll={isAll}
+            setAll={setAll}
+            posts={posts}
+            publishedPosts={publishedPosts}
+          />
+        </div>
       </div>
       {!isAll && (
-        <div className="mb5 flex flex-row-l flex-column bt bw1 b--near-white pt4">
-          <h1 className="w-100 f2-l f3 tracked-tight">
+        <div
+          style={{ background: "#f7f7f7" }}
+          className="mt5 mb4 flex flex-column pv4 ph5 br3 mr4"
+        >
+          <h1 className="w-100 f2 fw5 tracked-tight mb3">
             {selectedTopics[0]}{" "}
-            <span className="black-40 f4 ">{getFilteredPosts().length}</span>
+            <span className="black-40 f3 ">{getFilteredPosts().length}</span>
           </h1>
-          <p className="f4 w-100 lh-copy mt4 pl3-l black-40">
+          <p className="f3 w-100 lh-copy black-50 ">
             {selectedTopics[0] === "Research"
               ? "I dedicate a lot of my time to listening to users, advocating for their needs, and creating the necessary workflows to ensure the teams I collaborate with understand who they're designing for."
               : selectedTopics[0] === "Product Design"
@@ -91,6 +97,7 @@ function IndexPage({
             <HomeSection
               isAll={isAll}
               posts={getFilteredPosts()}
+              icon={ic_petal_logo}
               title="Petal"
               date="2019"
               place="New York"
@@ -99,6 +106,7 @@ function IndexPage({
             <HomeSection
               isAll={isAll}
               posts={getFilteredPosts()}
+              icon={ic_nu_logo}
               title="Nubank"
               date="2016—2019"
               place="São Paulo"
@@ -107,14 +115,7 @@ function IndexPage({
             <HomeSection
               isAll={isAll}
               posts={getFilteredPosts()}
-              title="Kano"
-              date="2013"
-              place="London"
-              description="During 3 years, I helped Nubank grow from 1 to 10 million customers, 1 to 3 products, and 6 to 35 designers."
-            />
-            <HomeSection
-              isAll={isAll}
-              posts={getFilteredPosts()}
+              icon={ic_others}
               title="Others"
               date="2013"
               place="London"

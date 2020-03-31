@@ -18,25 +18,14 @@ function Filters({
   publishedPosts,
 }) {
   return (
-    <motion.div
-      className="w-100 bg-white z-max flex justify-end mb6"
-      style={{
-        maxWidth: minWidth,
-        top: "0px",
-        right: "0px",
-        left: "0px",
-        marginLeft: "auto",
-        marginRight: "0px",
-      }}
-    >
+    <motion.div className="w-100 bg-white z-max flex justify-end mb5 bb b--near-white bw1 mr4">
       <div className="w-100 flex b relative">
         <div
           // style={{ backgroundColor: "#f7f7f7" }}
           id="filters"
-          className="
-         pa2 br4 w-100-l list f5 flex items-center-l overflow-x-scroll"
+          className=" w-100-l list f4 flex items-end overflow-x-scroll mr5"
         >
-          <div className="w-10-l mr2">
+          <div className="mr3">
             <AllFilter
               selectedTopics={selectedTopics}
               setSelectedTopics={setSelectedTopics}
@@ -44,7 +33,7 @@ function Filters({
               setAll={setAll}
             />
           </div>
-          <div className="w-90 flex">
+          <div className="flex items-end">
             {topics.map(item => (
               <Filter
                 selectedTopics={selectedTopics}
@@ -55,7 +44,7 @@ function Filters({
                 title={item}
               />
             ))}
-            <div>
+            <div className="flex items-end">
               <SurpriseButton posts={publishedPosts} />
             </div>
           </div>

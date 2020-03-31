@@ -43,11 +43,16 @@ function Filter({ title, selectedTopics, setSelectedTopics, isAll, setAll }) {
       onClick={() => {
         addOrRemoveTopics(title, selectedTopics)
       }}
-      className={`fw5 br-pill tc black pointer pa3 dib nowrap hover-bg-near-white f5-l f6-ns f7 ma0 mr2`}
+      className={` tc black pointer nowrap f4 ma0 pb3 mr4`}
       style={{
-        color: isSelected ? "white" : "gray",
-        border: !isSelected ? "2px solid #f7f7f7" : "2px solid #222",
-        backgroundColor: getBackgroundColor(),
+        color: isSelected ? "black" : "gray",
+        borderBottom:
+          !isSelected && !isHovered
+            ? "2px solid white"
+            : !isSelected && isHovered
+            ? "2px solid #999"
+            : "2px solid #222",
+        // backgroundColor: getBackgroundColor(),
       }}
     >
       {title}
