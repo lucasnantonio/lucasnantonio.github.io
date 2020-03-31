@@ -80,12 +80,12 @@ function IndexPage({
           </h1>
           <p className="f3 w-100 lh-copy black-50 ">
             {selectedTopics[0] === "Research"
-              ? "I dedicate a lot of my time to listening to users, advocating for their needs, and creating the necessary workflows to ensure the teams I collaborate with understand who they're designing for."
+              ? "I dedicate a lot of my time to listening to users, advocating for their needs, collaborating with researchers, and creating the necessary workflows to ensure the teams I partner with understand who they're designing for."
               : selectedTopics[0] === "Product Design"
-                ? "Empathize, frame the problem, ideate, prototype, test, deliver, measure, iterate. I've been designing and helping design products that have reached millions of people and spanned the worlds of service, industrial, and digital design."
+                ? "Empathize, frame the problem, ideate, prototype, test, deliver, measure, repeat. I have designed products that have reached millions of people, across the disciplines of service, industrial, and digital design."
                 : selectedTopics[0] === "Design Ops"
-                  ? "Designing how design gets made and keeping the teams I work with happy, engaged and empowered is one of my biggest areas of interest."
-                  : "I'm a coding begginer and enthusiast. This portfolio website is, in itself, an experiment in learning React, and below you can find other projects I've played with."}
+                  ? "Designing how design gets made and keeping the teams I work with happy, engaged and empowered is one of my most recent areas of interest."
+                  : "I'm a coding begginer and enthusiast. This portfolio website is in itself an experiment in learning React. Here are some other things I've played with:"}
           </p>
         </div>
       )}
