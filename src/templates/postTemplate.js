@@ -128,7 +128,7 @@ export default function Template({
     frontmatter.myrole) && (
       <div
         style={{ maxWidth: minWidth }}
-        className=" center flex flex-row-ns flex-column justify-between pv4-ns bb b--near-white bw1 pv4 br2 tl mt3"
+        className=" center flex flex-row-ns flex-column justify-between pv4-ns bb b--near-white bw1 pv4 br2 tl mt3 mb4"
       >
         <div className="flex flex-row-ns flex-column">
           {frontmatter.problem && (

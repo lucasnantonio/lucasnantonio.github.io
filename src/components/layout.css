@@ -38,13 +38,11 @@ h5 {
   max-width: 42rem;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 3rem;
+  /* margin-top: 3rem; */
   margin-bottom: 4rem;
   font-size: 1.3rem;
 }
-.post-content p {
-  margin-bottom: 5rem;
-}
+
 .post-content ol {
   padding: 2rem;
   border: 2px solid;
@@ -61,6 +59,17 @@ h5 {
 
 .post-content figure {
   margin: 0px;
+}
+
+.post-content figure + p, 
+.post-content figure + h2,
+.post-content figure + h3, 
+.post-content figcaption + p, 
+.post-content figcaption + h2,
+.post-content figcaption + h3, 
+div + h2,
+div + p {
+  margin-top: 4rem;
 }
 
 .post-content h1,

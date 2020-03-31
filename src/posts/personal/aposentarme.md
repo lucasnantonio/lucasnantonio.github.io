@@ -1,6 +1,6 @@
 ---
 path: "/blog/aposentar.me"
-date: "2018-04-08"
+date: "2016-04-08"
 title: Retirement calculator
 subtitle: An open-source, approachable way to plan your savings
 category: Others
@@ -13,7 +13,7 @@ cover_image: "../../images/aposentarme/aposentarme-2.png"
 problem: How to stay focused at work?
 solution: A device to help you find work-life balance.
 impact: Work published in Wired, FastCompany.
-color: "#8DE1FD"
+color: "#b2e5fe"
 cover: false
 link: "http://www.aposentar.me"
 ---
