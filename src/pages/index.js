@@ -73,20 +73,19 @@ function IndexPage({
       {!isAll && (
         <div
           style={{ background: "#f7f7f7" }}
-          className="mt5 mb4 flex flex-column pv4 ph5 br3 mr4"
+          className="mt5 mb4 flex flex-column pv5 ph5 br3 mr4"
         >
-          <h1 className="w-100 f2 fw5 tracked-tight mb3">
+          <h1 className="w-100 f3 fw5 tracked-tight mb3">
             {selectedTopics[0]}{" "}
-            <span className="black-40 f3 ">{getFilteredPosts().length}</span>
           </h1>
           <p className="f3 w-100 lh-copy black-50 ">
             {selectedTopics[0] === "Research"
               ? "I dedicate a lot of my time to listening to users, advocating for their needs, and creating the necessary workflows to ensure the teams I collaborate with understand who they're designing for."
               : selectedTopics[0] === "Product Design"
-              ? "Empathize, frame the problem, ideate, prototype, test, deliver, measure, iterate. I've been designing and helping design products that have reached millions of people and spanned the worlds of service, industrial, and digital design."
-              : selectedTopics[0] === "Design Ops"
-              ? "Designing how design gets made and keeping the teams I work with happy, engaged and empowered is one of my biggest areas of interest."
-              : "I'm a coding begginer and enthusiast. This portfolio website is, in itself, an experiment in learning React, and below you can find other projects I've played with."}
+                ? "Empathize, frame the problem, ideate, prototype, test, deliver, measure, iterate. I've been designing and helping design products that have reached millions of people and spanned the worlds of service, industrial, and digital design."
+                : selectedTopics[0] === "Design Ops"
+                  ? "Designing how design gets made and keeping the teams I work with happy, engaged and empowered is one of my biggest areas of interest."
+                  : "I'm a coding begginer and enthusiast. This portfolio website is, in itself, an experiment in learning React, and below you can find other projects I've played with."}
           </p>
         </div>
       )}
@@ -123,8 +122,8 @@ function IndexPage({
             />
           </>
         ) : (
-          <PostList posts={getFilteredPosts()} />
-        )}
+            <PostList posts={getFilteredPosts()} />
+          )}
         {/* <Writing /> */}
       </div>
     </Layout>
@@ -168,7 +167,6 @@ export const pageQuery = graphql`
             path
             title
             subtitle
-            design_team
             problem
             solution
             impact

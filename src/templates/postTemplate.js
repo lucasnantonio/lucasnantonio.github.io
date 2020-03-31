@@ -205,7 +205,6 @@ export const pageQuery = graphql`
         impact
         color
         where
-        design_team
         learn_more
         team
         myrole
