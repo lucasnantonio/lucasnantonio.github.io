@@ -2,7 +2,7 @@
 path: "/blog/petal-empathy-score"
 date: "2020-01-01"
 title: User empathy score
-subtitle: How do we know we're being more user-centered?
+subtitle: How do we know we're getting more user-centered?
 problem: How can we collect feedback that is specific, measurable, and actionable?
 solution: Atomized, measurable feedback entry-points across the entire app.
 impact: Strong inflow of user-centered evidence that served as a base for product roadmapping.
@@ -11,7 +11,7 @@ topics:
   - Design Ops
   - Research
 published: true
-cover_image: "../../images/petal/user-empathy-13.png"
+cover_image: "../../images/petal/user-empathy-3.png"
 color: "#8DE1FD"
 soon: true
 ---

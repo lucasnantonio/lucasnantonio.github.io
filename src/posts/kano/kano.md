@@ -14,6 +14,8 @@ role:
 cover_image: "../../images/kano/kano.png"
 color: "#FF7A00"
 cover: true
+team:
+  - Tommy Sahl
 ---
 
 In the summer of 2014, I got my first job with digital products at Kano Computer, a record-breaking Kickstarter.com startup, as their incredible teams sprinted to ship the first version of Kano.

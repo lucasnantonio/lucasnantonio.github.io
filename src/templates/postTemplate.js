@@ -30,16 +30,26 @@ export default function Template({
       <h1 className=" fw5 neue-regular f1 black-80 mt0 mb3 pb0 w-100 tracked-tight">
         {frontmatter.title}
       </h1>
-      <h1 className="f3 lh-copy black-80 mt0 pt0 measure mb1 black-60">
+      <div className=" flex flex-row-l flex-column items-start f3 lh-copy black-80 mt0 pt0 measure mb1 black-60">
         {frontmatter.subtitle}
-      </h1>
+        {frontmatter.link && (
+          <a
+            href={frontmatter.link}
+            target="_blank"
+            className=" link  mt0-l mt4 black ml3-l pv2 ph3 ba br-pill b--black-10 f5 flex justify-between-l nowrap hover-bg-near-white pointer"
+          >
+            <span className="mr2">See it live</span>
+            <span className="black-30">›</span>
+          </a>
+        )}
+      </div>
     </div>
   )
 
   const metadata = (
     <div className="mv3 pt5-l pt3 pb4 mw5 f7 lh-copy black-50">
       <div className="">
-        <div className="nowrap fw5 black-70 mb2">
+        <div className="nowrap fw5 mb2">
           {frontmatter.where && frontmatter.where + `,`} {frontmatter.date}{" "}
         </div>
         {/* {frontmatter.team && <div>—</div>} */}
@@ -201,6 +211,7 @@ export const pageQuery = graphql`
         learn_more
         team
         myrole
+        link
         cover_image {
           publicURL
           childImageSharp {

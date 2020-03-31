@@ -9,12 +9,13 @@ topics:
   - Code
 published: true
 soon: true
-cover_image: "../../images/aposentarme/aposentarme-1.png"
+cover_image: "../../images/aposentarme/aposentarme-2.png"
 problem: How to stay focused at work?
 solution: A device to help you find work-life balance.
 impact: Work published in Wired, FastCompany.
 color: "#8DE1FD"
 cover: false
+link: "http://www.aposentar.me"
 ---
 
 Bossy was the result of my thesis project at Central Saint Martins in London.

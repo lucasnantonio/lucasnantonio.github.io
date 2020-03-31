@@ -13,7 +13,7 @@ topics:
   - Code
 roles:
   - designer
-cover_image: "../../images/golden-art/golden-art-hero.png"
+cover_image: "../../images/golden-art/golden-art-hero-2.png"
 published: true
 learn_more: http://goldenart.com.br
 where: São Paulo
@@ -21,6 +21,7 @@ when: 2017-2018
 design_team:
   - Lucas Neumann
 color: "pink"
+link: "http://www.goldenart.com.br"
 ---
 
 This project is a very simple catalog, but I'm proud of it because it's the first full-stack website I've built and shipped while learning to code. It uses Airtable as the CMS, where the client can update the products' information and actually became the source of truth for the company's inventory. It was a steep learning curve and got me a decent understanding of Javascript, Node, and Express.
