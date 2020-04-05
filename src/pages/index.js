@@ -82,7 +82,7 @@ function IndexPage({
             {selectedTopics[0] === "Research"
               ? "I dedicate a lot of my time to listening to users, advocating for their needs, collaborating with researchers, and creating the necessary workflows to ensure the teams I partner with understand who they're designing for."
               : selectedTopics[0] === "Product Design"
-                ? "Empathize, frame the problem, ideate, prototype, test, deliver, measure, repeat. I have designed products that have reached millions of people, across the disciplines of service, industrial, and digital design."
+                ? "Understand the user, frame the problem, ideate, prototype, test, deliver, measure, repeat. I have designed products that have reached millions of people, across the disciplines of service, industrial, and digital design."
                 : selectedTopics[0] === "Design Ops"
                   ? "Designing how design gets made and keeping the teams I work with happy, engaged and empowered is one of my most recent areas of interest."
                   : "I'm a coding begginer and enthusiast. This portfolio website is in itself an experiment in learning React. Here are some other things I've played with:"}
