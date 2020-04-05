@@ -26,11 +26,15 @@ export default function Template({
       return a.toUpperCase()
     })
   }
+
   const getIconBackgroundColor = (color) => {
     const brightness = tinycolor(color).getLuminance();
     console.log(brightness);
-    return brightness <= 0.4 ? tinycolor(color).lighten(25) : 
-    brightness > 0.4 && brightness <= 0.7 ? tinycolor(color).lighten(8) :
+    return brightness <= 0.1 ? tinycolor(color).lighten(70) :
+    brightness > 0.1 && brightness <= 0.4 ? tinycolor(color).lighten(30) : 
+    brightness > 0.4 && brightness <= 0.65 ? tinycolor(color).lighten(7) :
+    brightness > 0.4 && brightness <= 0.65 ?  tinycolor(color).lighten(15) :
+      brightness > 0.65 && brightness <= 0.9 ? tinycolor(color).lighten(19) :
       tinycolor(color)
   }
   const getIconColor = (color) => {
@@ -40,6 +44,7 @@ export default function Template({
     brightness > 0.4 && brightness <= 0.7 ? tinycolor(color).darken(35) :
     tinycolor(color).darken(45)
   }
+
   const title = (
     <div className="flex flex-column pt5 pb5-l w-100">
       <h1 className=" fw5 neue-regular f2 black-80 mt0 mb1 pb0 w-100 tracked-tight">
@@ -99,7 +104,7 @@ export default function Template({
   )
 
   const roundIcon = (icon) => {
-    return <span className="pa2 br-pill flex items-center mr2" style={{background: getIconBackgroundColor(frontmatter.color)}}>{icon(getIconColor(frontmatter.color))} </span>
+    return <span className="br-pill flex items-center mr2" style={{padding:".65rem", background: getIconBackgroundColor(frontmatter.color)}}>{icon(getIconColor(frontmatter.color))} </span>
   }
 
   const footer = (
