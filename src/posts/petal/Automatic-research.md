@@ -3,9 +3,9 @@ path: "/blog/automatic-research-recruiting"
 date: "2020-02-15"
 title: Automated User Research Recruiting
 subtitle: Talking to users every week
-problem: Recruiting users for research is time-consuming, lowering the chances that interviews will be done often
-solution: An automated flow that allows users to schedule a time to talk to our product team
-impact: Recurring interview sessions scheduled without recruiting overhead
+problem: Recruiting users for research is time-consuming
+solution: An automated, self-service scheduling workflow
+impact: Recurring interview sessions scheduled at the press of a button
 myrole: Main advocate, project lead, and interviewer.
 category: Petal
 team:

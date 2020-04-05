@@ -4,8 +4,8 @@ date: "2020-01-15"
 title: Collecting in-app feedback
 subtitle: Measuring user satisfaction in an actionable way
 problem: How can we collect feedback that is specific, measurable, and actionable?
-solution: Atomized, measurable feedback entry-points across the entire app.
-impact: Thousands of unique, continuous measurements that served as a base for product roadmapping and iteration.
+solution: Atomized feedback entry-points deployed across the app
+impact: Actionable, continuous app satisfaction measurements
 category: Petal
 topics:
   - Product Design

@@ -132,32 +132,31 @@ export default function Template({
       >
         <div className="flex flex-row-ns flex-column">
           {frontmatter.problem && (
-            <div className="mr4 w-100 mb0-ns mb4 measure">
+            <div className="mr5 w-100 mb0-ns mb4 measure">
               
-              <h4 className="fw6 f4 mv4-ns mv3 flex center items-center">{ic_problem} <span className="ml2">Problem</span> </h4>
-              <p className="lh-copy fw5 black-50">{frontmatter.problem}</p>
+              <h4 className="fw6 f4 mt3 mb0 flex center items-center">{ic_problem} <span className="ml2">Problem</span> </h4>
+              <p className="lh-copy fw5 f4 black-40">{frontmatter.problem}</p>
             </div>
           )}
           {frontmatter.solution && (
-            <div className="mr4 w-100 mb0-ns mb4 measure">
+            <div className="mr5 w-100 mb0-ns mb4 measure">
               
-              <h4 className="fw6 f4 mv4-ns mv3 flex center items-center">{ic_solution} <span className="ml2">Approach</span></h4>
-              <p className="lh-copy fw5 black-50">{frontmatter.solution}</p>
+              <h4 className="fw6 f4 mt3 mb0 flex center items-center">{ic_solution} <span className="ml2">Approach</span></h4>
+              <p className="lh-copy fw5 f4 black-40">{frontmatter.solution}</p>
             </div>
           )}
         </div>
         <div className="flex flex-row-ns flex-column">
           {frontmatter.impact && (
-            <div className="mr4 w-100 mb0-ns mb4 measure">
-              
-              <h4 className="fw6 f4 mv4-ns mv3 flex center items-center">{ic_impact} <span className="ml2">Impact</span></h4>
-              <p className="lh-copy fw5 black-50">{frontmatter.impact}</p>
+            <div className="mr5 w-100 mb0-ns mb4 measure">
+              <h4 className="fw6 f4 mt3 mb0 flex center items-center">{ic_impact} <span className="ml2">Impact</span></h4>
+              <p className="lh-copy fw5 f4 black-40">{frontmatter.impact}</p>
             </div>
           )}
           {frontmatter.myrole && (
             <div className=" w-100 mb0-ns mb4 measure">
-              <h4 className="fw6 f4 mv4-ns mv3 flex center items-center">{ic_role} <span className="ml2">My role</span></h4>
-              <p className="lh-copy fw5 black-50">{frontmatter.myrole}</p>
+              <h4 className="fw6 f4 mt3 mb0 flex center items-center">{ic_role} <span className="ml2">My role</span></h4>
+              <p className="lh-copy fw5 f4 black-40">{frontmatter.myrole}</p>
             </div>
           )}
         </div>

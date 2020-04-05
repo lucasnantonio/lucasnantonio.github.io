@@ -43,9 +43,9 @@ function Filter({ title, selectedTopics, setSelectedTopics, isAll, setAll }) {
       onClick={() => {
         addOrRemoveTopics(title, selectedTopics)
       }}
-      className={` tc black pointer nowrap f4 ma0 pb3 mr4`}
+      className={` tc black pointer nowrap f4 ma0 pb3 mr4 fw5`}
       style={{
-        color: isSelected ? "black" : "gray",
+        color: isSelected ? "black" : "rgba(0,0,0,.4)",
         borderBottom:
           !isSelected && !isHovered
             ? "2px solid white"
