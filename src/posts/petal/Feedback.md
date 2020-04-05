@@ -39,17 +39,14 @@ Last, there's the problem of categorizing and quantifying. User-submitted messag
 
 Observing the challenges above, our requirements for our feedback tool were:
 
-1. __Measurable__. We want to output a number that tells us if feature A causes more dissatisfaction than feature B.
-2. __Specific and actionable__. We want the ability to learn about specific moments in the user's journey, specific pages in the app, and features we launch.
-3. __Contextual__. We want people to give feedback _in the moment_ they're interacting with something, not recalling it days or weeks after.
-4. __Passive__. We don't want feedback prompts to interrupt the action someone is trying to perform.
+1. __Measurable__ We want to output a number that tells us if feature A causes more dissatisfaction than feature B.
+2. __Specific and actionable__ We want the ability to learn about specific moments in the user's journey, specific pages in the app, and features we launch.
+3. __Contextual__ We want people to give feedback _in the moment_ they're interacting with something, not recalling it days or weeks after.
+4. __Passive__ We don't want feedback prompts to interrupt the action someone is trying to perform.
 
 ## The design
 
-So here's what we've built: a reusable feedback module that we can add to any page or flow in our app. By clicking it, users are able to provide immediate feedback about what they're trying to do and how they think we could improve it.
-
-![Feedback widget was placed in the bottom of every main page in the app](../../images/petal/feedback-widgets.png)
-![A secondary, smaller version was produced for modals and other non-main pages](../../images/petal/feedback-widgets-2.png)
+So here's what we've built: a reusable feedback module that we can add to any page or flow in our app. By clicking it, users are able to provide immediate feedback about what they're trying to do and how they think we could improve it. First, users are prompted to submit a 5-scale score, followed by a text field to explain why.
 
 <div style="background: #8DE1FD" class="w-100 pa4 tc mt5">
   <video class="w-100 mw5 br2" autoplay loop>
@@ -57,7 +54,9 @@ So here's what we've built: a reusable feedback module that we can add to any pa
   </video>
 </div>
 
-First, users are prompted to submit a 5-scale score, followed by a text field to explain why.
+![](../../images/petal/feedback-widgets.png)
+![We produced two versions of the CTA. A larger widget to be placed in main pages, and a smaller one to be placed in modals](../../images/petal/feedback-widgets-2.png)
+
 
 ## Results
 

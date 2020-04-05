@@ -42,7 +42,7 @@ One of the customer's biggest problems was picking a color finish from the catal
 
 The client and I walked through the old website together and listed main issues that needed a fix. Visually, they felt like the website was too dark, and that functionally it was clunky, had many bugs, and was hard to maintain and update. The product pages opened in a lightbox, which made it difficult for users to save and share specific pages. Also, the website was not responsive, which increased a high mobile bounce rate.
 
-![The old website](../../images/golden-art/goldenart-006.png)
+![The old website](../../images/golden-art/golden-art-old.png)
 
 1. We found various legibility problems with the colors used in some fields.
 2. Submenus and links were added with time on top of the original structure, which created a very questionable information architecture.

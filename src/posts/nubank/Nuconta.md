@@ -28,7 +28,7 @@ team:
 
 NuConta is an unprecedented mix of current, savings, and payments accounts, all-in-one. Thanks to a one-year-long co-creative process, our team was able to design and ship a product that uniquely addresses customer needs.
 
-<div class="w-100 bg-pink pa4 tc mt3 flex">
+<div style="background: #BB6BD9" class="w-100 pa4 tc mt5 flex">
 <img class="w-50 flex br2 mw5 center " src="../../images/nubank/nuconta-001.gif" />
 </div>
 
@@ -53,7 +53,7 @@ By combining the data from these interviews with others conducted in our lab, an
 
 With well-defined personas, we now had a lens through which we could look at the problem. Our initial mission, which was very broad, could now be better expressed in sentences that the whole team could agree on:
 
-> How might we design an evolution of the current and savings accounts, for people looking for a more accessible and easy-to-use bank account? It should be free of complexity, free of charge abusive fees, and make your money grow at a fair interest rate. Differently from big banks and other fintech pre-paid products, NuConta needs to achieve zero bureaucracy, reduce adoption friction and provide a superior user experience.
+> __How might we design an evolution of the current and savings accounts, for people looking for a more accessible and easy-to-use bank?__
 
 We learned from this process that defining a problem is sometimes harder than sitting down to solve it. After dozens of long work days, heated meetings, lots of head-scratching, word-smithing, and sense-making about the material collected during research, the team was finally committed to a unified vision of the product that reflected our customer’s pains and needs instead of our own. We were now ready to deep dive into exploring solutions that would eventually become NuConta.
 

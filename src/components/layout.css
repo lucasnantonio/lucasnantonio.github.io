@@ -40,9 +40,14 @@ h5 {
 	margin-left: auto;
 	margin-right: auto;
 	/* margin-top: 3rem; */
-	margin-bottom: 4rem;
+	margin-bottom: 3rem;
 	font-size: 1.3rem;
 }
+
+.post-content strong {
+	color: #424242;
+}
+
 ol li h2 {
 	margin-bottom: 0px !important;
 }
@@ -72,6 +77,9 @@ hr {
 .post-content figure + p,
 .post-content figure + h2,
 .post-content figure + h3,
+.gatsby-resp-image-wrapper + p,
+.gatsby-resp-image-wrapper + h2,
+.gatsby-resp-image-wrapper + h3,
 .post-content figcaption + p,
 .post-content figcaption + h2,
 .post-content figcaption + h3,
@@ -88,9 +96,11 @@ div + p {
 }
 
 .post-content blockquote {
-	background-color: #dcf6ff;
-	padding: 2rem;
-	margin: 2rem auto;
+	background-color:;
+	padding: 2.5rem;
+	margin: 4rem auto;
+	border: 2px solid #eee;
+	border-radius: 16px;
 }
 .post-content blockquote p {
 	margin: 0px !important;
