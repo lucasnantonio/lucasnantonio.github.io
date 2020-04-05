@@ -1,20 +1,19 @@
 ---
-path: "/blog/aposentar.me"
-date: "2016-04-08"
-title: Retirement calculator
-subtitle: An open-source and approachable way to plan your savings
+path: "/blog/feito"
+date: "2018-04-08"
+title: Feito.com
+subtitle: A home decor shop based on honest, locally-sourced design
 category: Others
 topics:
   - design
   - Code
 published: true
 soon: true
-cover_image: "../../images/aposentarme/aposentarme-2.png"
+cover_image: "../../images/feito-3.png"
 problem: How to stay focused at work?
 solution: A device to help you find work-life balance.
 impact: Work published in Wired, FastCompany.
-color: "#b2e5fe"
-cover: false
+color: "#f3f3f3"
 link: "http://www.aposentar.me"
 ---
 
