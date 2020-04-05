@@ -23,7 +23,8 @@
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-helmet": "^5.2.1",
-    "react-transition-group": "^4.3.0"
+    "react-transition-group": "^4.3.0",
+    "tinycolor2": "^1.4.1"
   },
   "devDependencies": {
     "eslint": "^6.0.1",

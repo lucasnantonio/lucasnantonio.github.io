@@ -1,5 +1,6 @@
 import React from "react"
 import { graphql, Link } from "gatsby"
+import tinycolor from "tinycolor2"
 import Layout from "../components/layout"
 import Img from "gatsby-image/withIEPolyfill"
 import Tag from "../components/Tag"
@@ -24,6 +25,20 @@ export default function Template({
     return this.replace(/(?:^|\s)\S/g, function (a) {
       return a.toUpperCase()
     })
+  }
+  const getIconBackgroundColor = (color) => {
+    const brightness = tinycolor(color).getLuminance();
+    console.log(brightness);
+    return brightness <= 0.4 ? tinycolor(color).lighten(25) : 
+    brightness > 0.4 && brightness <= 0.7 ? tinycolor(color).lighten(8) :
+      tinycolor(color)
+  }
+  const getIconColor = (color) => {
+    const brightness = tinycolor(color).getLuminance();
+    console.log(brightness);
+    return brightness <= 0.4 ? tinycolor(color) : 
+    brightness > 0.4 && brightness <= 0.7 ? tinycolor(color).darken(35) :
+    tinycolor(color).darken(45)
   }
   const title = (
     <div className="flex flex-column pt5 pb5-l w-100">
@@ -83,6 +98,10 @@ export default function Template({
     </div>
   )
 
+  const roundIcon = (icon) => {
+    return <span className="pa2 br-pill flex items-center mr2" style={{background: getIconBackgroundColor(frontmatter.color)}}>{icon(getIconColor(frontmatter.color))} </span>
+  }
+
   const footer = (
     <div
       style={{ maxWidth: minWidth }}
@@ -134,14 +153,17 @@ export default function Template({
           {frontmatter.problem && (
             <div className="mr5 w-100 mb0-ns mb4 measure">
               
-              <h4 className="fw6 f4 mt3 mb0 flex center items-center">{ic_problem} <span className="ml2">Problem</span> </h4>
+              <h4 className="fw6 f4 mt3 mb0 flex center items-center">
+                {roundIcon(ic_problem)}
+                <span className="ml2">Problem</span> </h4>
               <p className="lh-copy fw5 f4 black-40">{frontmatter.problem}</p>
             </div>
           )}
           {frontmatter.solution && (
             <div className="mr5 w-100 mb0-ns mb4 measure">
-              
-              <h4 className="fw6 f4 mt3 mb0 flex center items-center">{ic_solution} <span className="ml2">Approach</span></h4>
+              <h4 className="fw6 f4 mt3 mb0 flex center items-center">
+                {roundIcon(ic_solution)}
+              <span className="ml2">Approach</span></h4>
               <p className="lh-copy fw5 f4 black-40">{frontmatter.solution}</p>
             </div>
           )}
@@ -149,13 +171,17 @@ export default function Template({
         <div className="flex flex-row-ns flex-column">
           {frontmatter.impact && (
             <div className="mr5 w-100 mb0-ns mb4 measure">
-              <h4 className="fw6 f4 mt3 mb0 flex center items-center">{ic_impact} <span className="ml2">Impact</span></h4>
+              <h4 className="fw6 f4 mt3 mb0 flex center items-center">
+              {roundIcon(ic_impact)}
+                 <span className="ml2">Impact</span></h4>
               <p className="lh-copy fw5 f4 black-40">{frontmatter.impact}</p>
             </div>
           )}
           {frontmatter.myrole && (
             <div className=" w-100 mb0-ns mb4 measure">
-              <h4 className="fw6 f4 mt3 mb0 flex center items-center">{ic_role} <span className="ml2">My role</span></h4>
+              <h4 className="fw6 f4 mt3 mb0 flex center items-center">
+                {roundIcon(ic_role)}
+                 <span className="ml2">My role</span></h4>
               <p className="lh-copy fw5 f4 black-40">{frontmatter.myrole}</p>
             </div>
           )}
