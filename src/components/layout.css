@@ -188,3 +188,7 @@ ol li:before {
 	padding: 0.75rem;
 	border-radius: 100%;
 }
+
+.tracked-tight{
+	letter-spacing: -.04em;
+}

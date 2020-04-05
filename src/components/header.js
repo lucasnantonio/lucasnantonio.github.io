@@ -48,7 +48,7 @@ const Header = ({
         className="w-100 flex justify-between center items-center"
       >
         <Link to="/" className={"link"}>
-          <h1 className="f5 black neue-regular">Lucas Neumann</h1>
+          <h1 className="f5 fw5 tracked-tight black-50 neue-regular">Lucas Neumann</h1>
         </Link>
         <div className="flex">
           {prev ? (

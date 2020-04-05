@@ -27,29 +27,29 @@ export default function Template({
   }
   const title = (
     <div className="flex flex-column pt5 pb5-l w-100">
-      <h1 className=" fw5 neue-regular f2 black-80 mt0 mb3 pb0 w-100 tracked-tight">
+      <h1 className=" fw5 neue-regular f2 black-80 mt0 mb1 pb0 w-100 tracked-tight">
         {frontmatter.title}
       </h1>
-      <div className=" flex flex-row-l flex-column items-start f3 lh-copy black-80 mt0 pt0 measure mb1 black-60">
+      <div className="fw5 measure w-60-l flex flex-row-l flex-column items-start f2 lh-title mt0 pt0 measure mb1 black-40 tracked-tight">
         {frontmatter.subtitle}
-        {frontmatter.link && (
-          <a
-            href={frontmatter.link}
-            target="_blank"
-            className=" link  mt0-l mt4 black ml3-l pv2 ph3 ba br-pill b--black-10 f5 flex justify-between-l nowrap hover-bg-near-white pointer"
-          >
-            <span className="mr2">See it live</span>
-            <span className="black-30">›</span>
-          </a>
-        )}
       </div>
     </div>
   )
 
   const metadata = (
-    <div className="mv3 pt5-l pt3 pb4 mw5 f7 lh-copy black-50">
+    <div className="fw5 black-30 mv3 pt5-l pt3 pb4 mw5 f7 lh-copy black-50 flex flex-column align-start items-start">
+      {frontmatter.link && (
+          <a
+            href={frontmatter.link}
+            target="_blank"
+            className=" mb4 link  mt0-l  black pv2 ph3 bg-near-white br-pill f7 flex justify-between-l nowrap hover-bg-black pointer hover-white"
+          >
+            <span className="mr2 fw5">See it live</span>
+            <span className="">›</span>
+          </a>
+        )}
       <div className="">
-        <div className="nowrap fw5 mb2">
+        <div className="nowrap">
           {frontmatter.where && frontmatter.where + `,`} {frontmatter.date}{" "}
         </div>
         {/* {frontmatter.team && <div>—</div>} */}
@@ -128,37 +128,36 @@ export default function Template({
     frontmatter.myrole) && (
       <div
         style={{ maxWidth: minWidth }}
-        className=" center flex flex-row-ns flex-column justify-between pv4-ns bb b--near-white bw1 pv4 br2 tl mt3 mb4"
+        className=" center flex flex-row-ns flex-column justify-between pv4-ns pv4 br2 tl mt3 "
       >
         <div className="flex flex-row-ns flex-column">
           {frontmatter.problem && (
             <div className="mr4 w-100 mb0-ns mb4 measure">
-              {ic_problem}
-              <h4 className="fw6 f4 mv4-ns mv3">Problem</h4>
-              <p className="lh-copy">{frontmatter.problem}</p>
+              
+              <h4 className="fw6 f4 mv4-ns mv3 flex center items-center">{ic_problem} <span className="ml2">Problem</span> </h4>
+              <p className="lh-copy fw5 black-50">{frontmatter.problem}</p>
             </div>
           )}
           {frontmatter.solution && (
             <div className="mr4 w-100 mb0-ns mb4 measure">
-              {ic_solution}
-              <h4 className="fw6 f4 mv4-ns mv3">Approach</h4>
-              <p className="lh-copy">{frontmatter.solution}</p>
+              
+              <h4 className="fw6 f4 mv4-ns mv3 flex center items-center">{ic_solution} <span className="ml2">Approach</span></h4>
+              <p className="lh-copy fw5 black-50">{frontmatter.solution}</p>
             </div>
           )}
         </div>
         <div className="flex flex-row-ns flex-column">
           {frontmatter.impact && (
             <div className="mr4 w-100 mb0-ns mb4 measure">
-              {ic_impact}
-              <h4 className="fw6 f4 mv4-ns mv3">Impact</h4>
-              <p className="lh-copy">{frontmatter.impact}</p>
+              
+              <h4 className="fw6 f4 mv4-ns mv3 flex center items-center">{ic_impact} <span className="ml2">Impact</span></h4>
+              <p className="lh-copy fw5 black-50">{frontmatter.impact}</p>
             </div>
           )}
           {frontmatter.myrole && (
             <div className=" w-100 mb0-ns mb4 measure">
-              {ic_role}
-              <h4 className="fw6 f4 mv4-ns mv3">My role</h4>
-              <p className="lh-copy">{frontmatter.myrole}</p>
+              <h4 className="fw6 f4 mv4-ns mv3 flex center items-center">{ic_role} <span className="ml2">My role</span></h4>
+              <p className="lh-copy fw5 black-50">{frontmatter.myrole}</p>
             </div>
           )}
         </div>
