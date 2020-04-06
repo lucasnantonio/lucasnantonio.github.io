@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <div
       style={{ maxWidth: minWidth }}
-      className="flex flex-row-ns flex-column center mb6 mt3 bt b--near-white bw1 pt4 items-center f5-ns f6 w-100 justify-between"
+      className="flex flex-row-ns flex-column center mb6 mt3 b--near-white bw1 pt4 items-center f5-ns f6 w-100 justify-between"
     >
       <div className=" flex items-center">
         <p className="mr3">Lucas Neumann © Always</p>
