@@ -5,19 +5,24 @@ import Img from "gatsby-image"
 import ImageWithBackground from "./imageWithBackground"
 import Tag from "./Tag"
 import { backgroundGray } from "./utils"
-
+function isEven(n) {
+  n = Number(n);
+  return n === 0 || !!(n && !(n%2));
+}
 function PostLink({ post, index }) {
   const topicTags = post.frontmatter.topics.map(item => {
     return <Tag key={item} title={item} />
   })
   const [isHovered, setHover] = useState(false)
+
+
   return (
     <Link
       onMouseEnter={() => setHover(!post.frontmatter.soon && true)}
       onMouseLeave={() => setHover(false)}
       style={{ pointerEvents: post.frontmatter.soon && "none" }}
       className={`
-      pr4-l
+      ${!isEven(index) ? "pl3-l" : "pr3-l"}
       ${post.frontmatter.size !== "large" ? "w-50-l w-100" : "w-100"}
         link black fl flex flex-column  pb1
         `}
