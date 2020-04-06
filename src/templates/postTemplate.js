@@ -175,7 +175,7 @@ export default function Template({
         </div>
         <div className="flex flex-row-ns flex-column">
           {frontmatter.impact && (
-            <div className="mr5 w-100 mb0-ns mb4 measure">
+            <div className={`${frontmatter.myrole && "mr5"}  w-100 mb0-ns mb4 measure`}>
               <h4 className="fw6 f4 mt3 mb0 flex center items-center">
               {roundIcon(ic_impact)}
                  <span className="ml2">Impact</span></h4>
