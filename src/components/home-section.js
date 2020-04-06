@@ -14,7 +14,7 @@ const HomeSection = ({ title, date, description, posts, isAll, icon }) => {
         <div className="flex flex-column w-100">
           {isAll && (
             <div className="flex items-center align-center mb5">
-              <div className="pa3 br-pill b--black-10 ba mr3 flex">{icon}</div>
+              <div className="pa3 br-pill b--near-white ba mr3 flex bw1">{icon}</div>
               <h2
                 className={
                   "w-10 mr4 pb2 f2-l f3 mv0 pv0 sans neue-regular black fw5 tracked-tight"
