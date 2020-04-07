@@ -11,7 +11,7 @@ const HomeSection = ({ title, date, description, posts, isAll, icon }) => {
   )
   return (
     sectionPosts.length > 0 && (
-      <div className={"w-100 flex flex-row mb3 pt5-ns"}>
+      <div className={"w-100 flex flex-row mb3 pt4-ns"}>
         <div className="flex flex-column w-100">
           {isAll && (
             <div className="flex items-center align-center mb5">
