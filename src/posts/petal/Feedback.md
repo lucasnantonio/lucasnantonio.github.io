@@ -64,9 +64,9 @@ First of all, we can now look objectively at how our pages and features are bein
 
 ![Easy to tell which page in the app the users are having the most trouble with. Data is randomized for confidenciality](../../images/petal/feedback-chart.png)
 
-Because the call to action to give feedback is contextual, individual messages also become much, much more specific and actionable:
+Also, because the call to action is more contextual than an after-the-fact survey, individual messages become much, much more specific and actionable:
 
-![Refreshingly useful feedback](../../images/petal/feedback-contextual-2.png)
+![Refreshingly useful feedback](../../images/petal/feedback-contextual.png)
 
 By looking at and communicating the impact of design objectively, it becomes easier to earn a "seat at the table", since these measurements can bubble up to company objectives.
 
