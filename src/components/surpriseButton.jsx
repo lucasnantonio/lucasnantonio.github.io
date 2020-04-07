@@ -31,7 +31,7 @@ function SurpriseButton({ posts }) {
         to={getRandomPostUrl()}
         onMouseEnter={() => startRandom()}
         onMouseOut={() => stopRandom()}
-        className={`ba b--white bw1 black-40 fw2 link pointer pa3 neue-regular dib nowrap f4 fw5`}
+        className={`link pa3 br-pill ba bw1 b--near-white fw5 pointer nowrap f4 pointer black-40`}
       >
         Surprise me
       </Link>

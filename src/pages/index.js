@@ -73,7 +73,7 @@ function IndexPage({
       {!isAll && (
         <div
           style={{ background: "#f7f7f7" }}
-          className="mt5 mb4 flex flex-column pv5 ph5 br3 mr4"
+          className="mt5 mb4 flex flex-column pv5 ph5 br3"
         >
           <h1 className="w-100 f3 fw5 tracked-tight mb3">
             {selectedTopics[0]}{" "}

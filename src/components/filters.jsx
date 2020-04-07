@@ -18,7 +18,7 @@ function Filters({
   publishedPosts,
 }) {
   return (
-    <motion.div className="w-100 bg-white z-max flex justify-end mb5 bb b--near-white bw1 mr4">
+    <motion.div className="w-100 bg-white z-max flex justify-end mb5 b--near-white bw1 mr4">
       <div className="w-100 flex b relative">
         <div
           // style={{ backgroundColor: "#f7f7f7" }}

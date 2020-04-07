@@ -30,8 +30,8 @@ const Hello = ({ setSelectedTopics, setAll }) => {
           {visitor && <br />}
           {visitor && `I'm Lucas Neumann.`}
         </h1>
-        <p className="f2-l f3 measure-narrow black-40 lh-copy mt0">
-          <br />I help companies design and deliver empowering
+        <p className="f2-l f3 measure-narrow black-40 lh-copy mt0 fw5">
+        <br />I help companies design and deliver empowering
           experiences.&nbsp;
           <a
             className="link black-40 underline-hover hover-black"
