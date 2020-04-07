@@ -5,6 +5,9 @@ import Img from "gatsby-image"
 import ImageWithBackground from "./imageWithBackground"
 import Tag from "./Tag"
 import { backgroundGray } from "./utils"
+import tinycolor from "tinycolor2"
+import { motion, AnimatePresence } from "framer-motion"
+
 function isEven(n) {
   n = Number(n);
   return n === 0 || !!(n && !(n%2));
@@ -29,6 +32,16 @@ function PostLink({ post, index }) {
       to={!post.frontmatter.soon ? post.frontmatter.path : null}
     >
       <div className="br3 overflow-hidden relative">
+        <AnimatePresence>
+          {isHovered &&
+        <motion.div 
+        transition={{ ease: "easeOut", duration: .12 }}
+        initial={{ opacity: 0, top: "100%", scale: 1 }}
+        animate={{ opacity: 1, top: "100%", scale: 2 }}
+        exit={{ opacity: 0, top: "100%", scale: 1 }}
+        style={{backgroundColor: tinycolor(post.frontmatter.color).darken(4), position:"absolute", top:"50%"}} className="w-100 h-100 br-100"></motion.div>
+          }
+        </AnimatePresence>
         <ImageWithBackground
           cover={post.frontmatter.cover}
           isHovered={isHovered}

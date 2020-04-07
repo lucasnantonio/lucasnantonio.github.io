@@ -29,7 +29,6 @@ export default function Template({
 
   const getIconBackgroundColor = (color) => {
     const brightness = tinycolor(color).getLuminance();
-    console.log(brightness);
     return brightness <= 0.1 ? tinycolor(color).lighten(70) :
     brightness > 0.1 && brightness <= 0.4 ? tinycolor(color).lighten(30) : 
     brightness > 0.4 && brightness <= 0.65 ? tinycolor(color).lighten(7) :
@@ -39,7 +38,6 @@ export default function Template({
   }
   const getIconColor = (color) => {
     const brightness = tinycolor(color).getLuminance();
-    console.log(brightness);
     return brightness <= 0.4 ? tinycolor(color) : 
     brightness > 0.4 && brightness <= 0.7 ? tinycolor(color).darken(35) :
     tinycolor(color).darken(45)
@@ -105,7 +103,6 @@ export default function Template({
   const roundIcon = (icon) => {
     return <span className="br-pill flex items-center mr2" style={{padding:".65rem", background: getIconBackgroundColor(frontmatter.color)}}>{icon(getIconColor(frontmatter.color))} </span>
   }
-  {console.log(prev && prev.frontmatter)}
   const footer = (
     
     <div

@@ -2,6 +2,7 @@ import React, { Component, useState } from "react"
 import PostList from "./postList"
 import { ic_petal_logo } from "../components/icons.js"
 
+
 const HomeSection = ({ title, date, description, posts, isAll, icon }) => {
   const sectionPosts = posts.filter(
     item =>
