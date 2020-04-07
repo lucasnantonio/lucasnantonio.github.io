@@ -55,13 +55,18 @@ export default function Template({
 
   const metadata = (
     <div className="fw5 black-30 mv3 pt5-l pt3 pb4 mw5 f7 lh-copy black-50 flex flex-column align-start items-start">
-      {frontmatter.link && (
+      {frontmatter.link && frontmatter.link_label &&(
           <a
+          style={{marginLeft: "-.25rem"}}
+            // style={{
+            //   color: getIconColor(frontmatter.color),
+            //   background: getIconBackgroundColor(frontmatter.color),
+            // }}
             href={frontmatter.link}
             target="_blank"
-            className=" mb4 link  mt0-l  black pv2 ph3 bg-near-white br-pill f7 flex justify-between-l nowrap hover-bg-black pointer hover-white"
+            className=" mb3 link  mt0-l  black-80 pv2 ph3 bg-near-white br-pill f7 flex justify-between-l nowrap hover-bg-black pointer hover-white"
           >
-            <span className="mr2 fw5">See it live</span>
+            <span className="mr2 fw5">{frontmatter.link_label}</span>
             <span className="">›</span>
           </a>
         )}
@@ -245,6 +250,7 @@ export const pageQuery = graphql`
         team
         myrole
         link
+        link_label
         cover_image {
           publicURL
           childImageSharp {

@@ -17,13 +17,15 @@ roles:
 color: "#BB6BD9"
 cover_image: "../../images/nubank/nuconta-hero.png"
 published: true
-learn_more: http://nubank.com.br/nuconta
+link: http://nubank.com.br/nuconta
+link_label: nubank.com.br
 where: São Paulo
 when: 2017-2018
 team:
   - Rachel Jordan
   - Erick Mazer
   - Vitor Gurgel
+  
 ---
 
 NuConta is an unprecedented mix of current, savings, and payments accounts, all-in-one. Thanks to a one-year-long co-creative process, our team was able to design and ship a product that uniquely addresses customer needs.

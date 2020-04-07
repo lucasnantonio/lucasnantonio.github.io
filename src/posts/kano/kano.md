@@ -16,6 +16,8 @@ color: "#FF7A00"
 cover: true
 team:
   - Tommy Sahl
+link: http://kano.me
+link_label: Kano.me
 ---
 
 In the summer of 2014, I got my first job with digital products at Kano Computer, a record-breaking Kickstarter.com startup, as their incredible teams sprinted to ship the first version of Kano.
