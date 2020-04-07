@@ -22,6 +22,8 @@ team:
 In May 2016, Nubank was in the process of growing from a living-room sized startup to a much larger and complex organization. This growth impacted many teams, and design was no exception.
 To help us navigate this fast-paced transformation, our team started exploring ways to better define and monitor what we believe design should be at Nubank, regardless of scale, direction, external opinions or trends. One of these measures was to get together and write down our own set of design principles.
 
+![Our principles featured on our welcome swag](../../images/nubank/nubank-principles.jpeg)
+
 ## Inspiration
 
 ![Dieter Rams](../../images/nubank/principles-1.png)

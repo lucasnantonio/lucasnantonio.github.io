@@ -22,6 +22,8 @@ when: Dec 2016
 team:
   - Guilherme Neumann
   - Gustavo Bittencourt
+link: https://nubank.com.br/rewards
+link_label: Nubank.com.br
 ---
 
 Nubank's rewards program was already scheduled for launch when I joined the company, and my role in it was to put it under a heavy user-testing agenda to find any rough edges we should address before launch day.
