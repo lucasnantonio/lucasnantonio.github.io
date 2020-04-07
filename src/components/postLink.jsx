@@ -35,11 +35,14 @@ function PostLink({ post, index }) {
         <AnimatePresence>
           {isHovered &&
         <motion.div 
-        transition={{ ease: "easeOut", duration: .12 }}
+        transition={{ ease: "easeOut", duration: .25 }}
         initial={{ opacity: 0, top: "100%", scale: 1 }}
         animate={{ opacity: 1, top: "100%", scale: 2 }}
         exit={{ opacity: 0, top: "100%", scale: 1 }}
-        style={{backgroundColor: tinycolor(post.frontmatter.color).darken(4), position:"absolute", top:"50%"}} className="w-100 h-100 br-100"></motion.div>
+        // style={{backgroundColor: tinycolor(post.frontmatter.color).darken(4), position:"absolute", top:"50%"}} 
+        className="w-100 h-100 br-100">
+
+        </motion.div>
           }
         </AnimatePresence>
         <ImageWithBackground

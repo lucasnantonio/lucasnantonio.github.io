@@ -207,7 +207,7 @@ export default function Template({
     )
   return (
     <Layout prev={prev} next={next} isIndex={false}>
-      <motion.div initial={initialFadeAnimation} animate={fadeInAnimation}>
+      <motion.div transition={{duration: .5}} initial={initialFadeAnimation} animate={fadeInAnimation}>
         <div
           style={{ maxWidth: minWidth }}
           className="flex w-100 justify-between flex-row-l flex-column center"
