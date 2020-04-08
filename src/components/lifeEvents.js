@@ -10,6 +10,16 @@ export const LifeEvents = [
         image: "Ariely"
     },
     {
+        year: 2019,
+        title: "Speaking @ HackConf 2019 Rio",
+        image: "HackConf2019"
+    },
+    {
+        year: 2018,
+        title: "Interview for Hipsters.Tech",
+        image: "Podcast2019"
+    },
+    {
         year: 2013,
         title: "Service Design Internship @ Insitum (Now Fjord)"
     },
