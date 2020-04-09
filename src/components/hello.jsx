@@ -3,6 +3,7 @@ import PhraseWithFootnote from "../components/phraseWithFootnote"
 import { useEffect } from "react"
 import { motion } from "framer-motion"
 import { initialFadeAnimation, fadeInAnimation } from "../components/utils"
+import { minWidth } from "./utils"
 
 function capitalizeFirstLetter(string) {
   return string.charAt(0).toUpperCase() + string.slice(1)
@@ -21,14 +22,14 @@ const Hello = ({ setSelectedTopics, setAll }) => {
   }
 
   return (
-    <div className="flex flex-column mb5 mt6 tracked-tight">
-      <motion.div initial={initialFadeAnimation} animate={fadeInAnimation} transition={{duration: .5}}>
+    <div className="w-100 bg-near-white pv5 mb4">
+    <div 
+    style={{maxWidth: minWidth}}
+    className="flex flex-column mb5 tracked-tight center">
+      <motion.div 
+      initial={initialFadeAnimation} animate={fadeInAnimation} transition={{duration: .5}}>
         <h1 className="f2-l f3 neue-regular black lh-title mb0 fw5">
-          {!visitor
-            ? `Lucas Neumann`
-            : `Hi there, ${capitalizeFirstLetter(atob(visitor))}!`}
-          {visitor && <br />}
-          {visitor && `I'm Lucas Neumann.`}
+          {visitor && `Hi there, ${capitalizeFirstLetter(atob(visitor))}!`}
         </h1>
         <p className="f2-l f3 measure-narrow black-40 lh-copy mt0 fw5">
         <br />I help companies design and deliver empowering
@@ -53,6 +54,7 @@ const Hello = ({ setSelectedTopics, setAll }) => {
           .
         </p>
       </motion.div>
+    </div>
     </div>
   )
 }

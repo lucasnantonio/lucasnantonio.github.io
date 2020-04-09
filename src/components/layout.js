@@ -38,26 +38,24 @@ const Layout = ({
   `)
   return (
     <>
-      {!isIndex && (
         <Header
-          isWorkInView={isWorkInView}
+          // isWorkInView={isWorkInView}
           siteTitle={data.site.siteMetadata.title}
           selectedTopics={selectedTopics}
           setSelectedTopics={setSelectedTopics}
           isAll={isAll}
           setAll={setAll}
           isIndex={isIndex}
-          prev={prev}
-          next={next}
+          prev={prev && prev}
+          next={next && next}
         />
-      )}
 
       <div
-        className="pt0 ph4 "
+        className="pt0 ph0-l ph4 "
         style={{
           margin: `0 auto`,
           paddingTop: 0,
-          maxWidth: isIndex && minWidth,
+          // maxWidth: isIndex && minWidth,
         }}
       >
         <main>{children}</main>

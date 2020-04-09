@@ -57,9 +57,11 @@ function IndexPage({
       setSelectedTopics={setSelectedTopics}
     >
       <SEO title="Home" />
-      <div>
+      <div className="bg">
         <Hello setSelectedTopics={setSelectedTopics} setAll={setAll} />
-        <div className="db-ns dn mr4">
+        <div 
+        style={{maxWidth: minWidth}}
+        className="db-ns dn mr4 center">
           <Filters
             selectedTopics={selectedTopics}
             setSelectedTopics={setSelectedTopics}
@@ -72,8 +74,8 @@ function IndexPage({
       </div>
       {!isAll && (
         <div
-          style={{ background: "#f7f7f7" }}
-          className="mt5 mb4 flex flex-column pv5 ph5 br3"
+          style={{ maxWidth: minWidth}}
+          className="mt5 mb4 flex flex-column pv5 ph5 br3 ba bw1 b--near-white center"
         >
           <h1 className="w-100 f3 fw5 tracked-tight mb3">
             {selectedTopics[0]}{" "}
@@ -92,7 +94,7 @@ function IndexPage({
 
       <div id="work">
         {isAll ? (
-          <>
+          <div style={{ maxWidth: minWidth}} className="center">
             <HomeSection
               isAll={isAll}
               posts={getFilteredPosts()}
@@ -120,7 +122,7 @@ function IndexPage({
               place="London"
               description=""
             />
-          </>
+          </div>
         ) : (
             <PostList posts={getFilteredPosts()} />
           )}

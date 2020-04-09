@@ -24,12 +24,12 @@ function AllFilter({ setSelectedTopics, isAll, setAll }) {
         setSelectedTopics(topics)
         setAll(true)
       }}
-      className={`pa3 br-pill ba bw1 b--near-white fw5 black pointer nowrap f4`}
+      className={`pa3 br-pill ba bw1 b--near-white fw5 black pointer nowrap f5`}
       style={{
         color: isAll ? "white" : "rgba(0,0,0,.4)",
         background:
           !isAll && !isHovered
-            ? "white"
+            ? "black"
             : !isAll && isHovered
             ? "#f3f3f3"
             : "black",

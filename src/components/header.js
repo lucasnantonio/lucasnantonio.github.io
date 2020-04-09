@@ -20,7 +20,6 @@ const caret = (
   </svg>
 )
 const Header = ({
-  siteTitle,
   selectedTopics,
   setSelectedTopics,
   isAll,
@@ -32,7 +31,6 @@ const Header = ({
   <div>
     <header
       style={{
-        maxWidth: isIndex && minWidth,
         width: "100%",
         left: 0,
         right: 0,
@@ -48,8 +46,9 @@ const Header = ({
         className="w-100 flex justify-between center items-center"
       >
         <Link to="/" className={"link"}>
-          <h1 className="f5 fw5 tracked-tight black-50 neue-regular">Lucas Neumann</h1>
+          <h1 className="f5 fw5 tracked-tight black-50 neue-regular pv2">Lucas Neumann</h1>
         </Link>
+        {!isIndex && 
         <div className="flex">
           {prev ? (
             <Link to={prev.frontmatter.path}>
@@ -80,15 +79,8 @@ const Header = ({
             </span>
           )}
         </div>
+        }
       </div>
-      {isIndex && (
-        <Filters
-          selectedTopics={selectedTopics}
-          setSelectedTopics={setSelectedTopics}
-          isAll={isAll}
-          setAll={setAll}
-        />
-      )}
     </header>
     <div className="pb2 pt1">
       <p className="f6 white"> _</p>

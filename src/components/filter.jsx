@@ -43,7 +43,7 @@ function Filter({ title, selectedTopics, setSelectedTopics, isAll, setAll }) {
       onClick={() => {
         addOrRemoveTopics(title, selectedTopics)
       }}
-      className={`ph3 pv3 br-pill bw1 b--near-white ba tc black pointer nowrap f4 ma0 pb3 mr3 fw5`}
+      className={`ph3 pv3 br-pill tc black pointer nowrap f5 ma0 pb3 mr3 fw5`}
       style={{
         color: isSelected ? "white" : "rgba(0,0,0,.4)",
         background:
