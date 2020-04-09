@@ -2,26 +2,51 @@ export const LifeEvents = [
     {
         year: 2020,
         title: "Design Lead @ Petal",
-        description: "I just recently packed my things in São Paulo and moved to New York. I currently lead the small but mighty team designing the future of credit."
+        description: "I recently packed my things in São Paulo and moved to New York City, to lead the small but mighty team designing the future of honest and accessible credit."
     },
     {
         year: 2019,
-        title: "Interviewed Dan Ariely on stage",
-        image: "Ariely"
+        title: "Moved to NYC",
+        isMilestone: true,
+        icon: "🇺🇸",
     },
     {
         year: 2019,
-        title: "Speaking @ HackConf 2019 Rio",
-        image: "HackConf2019"
+        title: "Panel with Dan Ariely",
+        image: "Ariely",
+        description: "Behavior sciences have always fascinated me and been a reliable source of insight for my design work. Dan Ariely is one of the top references in the field and interviewing him in front of hundreds of Nubank employees to inspire their work in helping people with their finances was a great honor."
+    },
+    {
+        year: 2019,
+        title: "Speaking @ HackTudo Rio",
+        image: "HackConf2019",
+        description: "My buddy Pedro Axelrud and I shared a few of the challenges of working on a hyper growth startup like Nubank in the beautiful Cidade das Artes pavillion in Rio."
     },
     {
         year: 2018,
-        title: "Interview for Hipsters.Tech",
+        title: "Podcast Interview for Hipsters.Tech",
         image: "Podcast2019"
     },
     {
+        year: 2016,
+        title: "Product Design @ Nubank",
+        description: "Insitum was a great formative experience, where I was lucky to experience extensive field research in remote areas of the country, as well as designing across the frontiers of service, industrial, and digital design."
+    },
+    {
+        year: 2014,
+        title: "Product Design @ Nossas",
+        description: "Insitum was a great formative experience, where I was lucky to experience extensive field research in remote areas of the country, as well as designing across the frontiers of service, industrial, and digital design."
+    },
+    {
         year: 2013,
-        title: "Service Design Internship @ Insitum (Now Fjord)"
+        title: "Service Design Internship @ Insitum (Now Fjord)",
+        description: "Insitum was a great formative experience, where I was lucky to experience extensive field research in remote areas of the country, as well as designing across the frontiers of service, industrial, and digital design."
+    },
+    {
+        year: 2014,
+        title: "Moved back to São Paulo",
+        isMilestone: true,
+        icon: "🇧🇷",
     },
     {
         year: 2013,
@@ -34,6 +59,12 @@ export const LifeEvents = [
     {
         year: 2013,
         title: "Exchange program @ Central Saint Martins, London"
+    },
+    {
+        year: 2013,
+        title: "Moved to London",
+        isMilestone: true,
+        icon: "🇬🇧",
     },
     {
         year: 2012,
