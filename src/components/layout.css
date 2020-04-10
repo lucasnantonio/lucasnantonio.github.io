@@ -129,29 +129,25 @@ div + p {
 
 .blinking {
 	animation: blinkingText .5s infinite;
-	color:white;
-	transition: background-color .25s;
+	color:#999;
+	transition: all 2s;
 }
+
 @keyframes blinkingText {
 	0% {
-		background-color: lightpink;
-		border: 2px solid lightpink;
+		color: lightpink;
 	}
 	25% {
-		background-color: lightblue;
-		border: 2px solid lightblue;
+		color: lightblue;
 	}
 	50% {
-		background-color: lightgrey;
-		border: 2px solid lightgrey;
+		color: lightgrey;
 	}
 	75% {
-		background-color: lightcoral;
-		border: 2px solid lightcoral;
+		color: lightcoral;
 	}
 	100% {
-		background-color: goldenrod;
-		border: 2px solid goldenrod;
+		color: goldenrod;
 	}
 }
 

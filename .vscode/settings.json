@@ -1,3 +1,4 @@
 {
-    "eslint.provideLintTask": true
+    "eslint.provideLintTask": true,
+    "editor.formatOnSave": true
 }
