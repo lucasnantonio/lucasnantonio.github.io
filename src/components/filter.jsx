@@ -43,7 +43,7 @@ function Filter({ title, selectedTopics, setSelectedTopics, isAll, setAll }) {
       onClick={() => {
         addOrRemoveTopics(title, selectedTopics)
       }}
-      className={`pointer nowrap ma0 mr4 fw5 list tracked-tight`}
+      className={`pointer nowrap ma0 mr4 fw5 list tracked-tight mb0-l mb2`}
       style={{
         borderBottom: isSelected ? "3px solid black" : "3px solid transparent",
         color: !isSelected && !isHovered

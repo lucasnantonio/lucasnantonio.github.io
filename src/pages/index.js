@@ -59,8 +59,8 @@ function IndexPage({
       setSelectedTopics={setSelectedTopics}
     >
       <SEO title="Home" />
-      <div style={{background:"#F3F0F0"}} className="w-100 pb4 mb5 flex">
-        <div className="w-100 flex center" style={{maxWidth:minWidth}}>
+      <div style={{background:"#f9f7f6"}} className="w-100 pb4 mb5 flex">
+        <div className="w-100 flex center ph4" style={{maxWidth:minWidth}}>
 
         <Hello setSelectedTopics={setSelectedTopics} setAll={setAll} />
         {/* <Img objectFit="contain" className="w-70 overflow-x-visible" fluid={nucontaImage}></Img> */}
@@ -68,7 +68,7 @@ function IndexPage({
       </div>
         <div 
         style={{maxWidth: minWidth}}
-        className="db-ns dn mr4 center">
+        className="db-ns dn mr4 center ph4">
           <Filters
             selectedTopics={selectedTopics}
             setSelectedTopics={setSelectedTopics}
@@ -81,18 +81,18 @@ function IndexPage({
       {!isAll && (
         <div
           style={{ maxWidth: minWidth}}
-          className="mt5 mb6 flex flex-column center"
+          className="mt5 mb6 flex flex-column center ph4"
         >
           {/* <h1 className="w-100 f3 fw5 tracked-tight mb3">
             {selectedTopics[0]}{" "}
           </h1> */}
           <p className="f2 fw5 w-100 lh-copy black-80 tracked-tight measure-narrow">
             {selectedTopics[0] === "Research"
-              ? "I dedicate a lot of my time to listening to users, advocating for their needs, collaborating with researchers, and creating the necessary workflows to ensure the teams I partner with understand who they're designing for."
+              ? "A lot of my time is invested in listening to users, advocating for their needs, collaborating with researchers, and creating the necessary workflows so that the team understands who they're designing for."
               : selectedTopics[0] === "Product Design"
                 ? "Understand the user, frame the problem, ideate, prototype, test, deliver, measure, repeat. I have designed products that have reached millions of people, across the disciplines of service, industrial, and digital design."
                 : selectedTopics[0] === "Design Ops"
-                  ? "Designing how design gets made and keeping the teams I work with happy, engaged and empowered is one of my most recent areas of interest."
+                  ? "Designing design. Helping things scale at a healthy pace. Keeping the teams I work with happy, engaged and empowered."
                   : "I'm a coding begginer and enthusiast. This portfolio website is in itself an experiment in learning React. Here are some other things I've played with:"}
           </p>
         </div>
@@ -100,7 +100,7 @@ function IndexPage({
 
       <div id="work">
         {isAll ? (
-          <div style={{ maxWidth: minWidth}} className="center">
+          <div style={{ maxWidth: minWidth}} className="center ph4">
             <HomeSection
               isAll={isAll}
               posts={getFilteredPosts()}
@@ -130,7 +130,7 @@ function IndexPage({
             />
           </div>
         ) : (
-          <div className="center" style={{maxWidth: minWidth}}>
+          <div className="center ph4" style={{maxWidth: minWidth}}>
             <PostList posts={getFilteredPosts()} />
             </div>
           )}

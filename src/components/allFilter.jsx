@@ -24,7 +24,7 @@ function AllFilter({ setSelectedTopics, isAll, setAll }) {
         setSelectedTopics(topics)
         setAll(true)
       }}
-      className={`fw5 black pointer nowrap tracked-tight mr3`}
+      className={`fw5 black pointer nowrap tracked-tight mr3 mb0-l mb3`}
       style={{
         // color: isAll ? "black" : "rgba(0,0,0,.4)",
         borderBottom: isAll ? "3px solid black" : "3px solid transparent",

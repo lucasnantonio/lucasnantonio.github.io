@@ -18,7 +18,7 @@ function Filters({
   publishedPosts,
 }) {
   return (
-    <motion.div className="w-100-l w-50 flex flex-row-l flex-column items-start mb5 lh-copy f2">
+    <motion.div className="w-100-l w-50 flex flex-row-l flex-column items-start mb5 lh-copy f3-l f2">
           <div className="mr3">
             <AllFilter
               selectedTopics={selectedTopics}

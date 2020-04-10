@@ -22,10 +22,10 @@ const Hello = ({ setSelectedTopics, setAll }) => {
   }
 
   return (
-    <div className="w-100 pt4 mb6">
+    <div className="w-100 mv6">
     <div 
     style={{maxWidth: minWidth}}
-    className="flex flex-column mb5 tracked-tight center">
+    className="flex flex-column tracked-tight center">
       <motion.div 
       initial={initialFadeAnimation} animate={fadeInAnimation} transition={{duration: .5}}>
         {visitor ?
@@ -37,17 +37,17 @@ const Hello = ({ setSelectedTopics, setAll }) => {
       </h1>
 }
         <p className="f2 black-40 lh-copy mt0 fw5 measure-narrow">
-        <br />Helping companies research, design and deliver empowering
-          experiences.&nbsp;
+        <br />I help companies research, design, deliver and scale empowering
+          experiences.
           <a
             className="link black-40 underline-hover hover-black"
             href="http://www.nubank.com.br/en"
             target="blank"
             style={{ cursor: "ne-resize" }}
           >
-            Nubank
+            {` Nubank`}
           </a>{" "}
-          alumnus, I now lead design at{" "}
+          alumnus, now design lead at{" "}
           <a
             className="link black-40 underline-hover hover-black"
             href="http://www.petalcard.com"
