@@ -43,15 +43,14 @@ function Filter({ title, selectedTopics, setSelectedTopics, isAll, setAll }) {
       onClick={() => {
         addOrRemoveTopics(title, selectedTopics)
       }}
-      className={`ph3 pv3 br-pill tc black pointer nowrap f5 ma0 pb3 mr3 fw5`}
+      className={`pointer nowrap ma0 mr4 fw5 list tracked-tight`}
       style={{
-        color: isSelected ? "white" : "rgba(0,0,0,.4)",
-        background:
-          !isSelected && !isHovered
-            ? "white"
-            : !isSelected && isHovered
-            ? "#f3f3f3"
-            : "black",
+        borderBottom: isSelected ? "3px solid black" : "3px solid transparent",
+        color: !isSelected && !isHovered
+        ? "#999"
+        : !isSelected && isHovered
+        ? "#666"
+        : "black",
         // backgroundColor: getBackgroundColor(),
       }}
     >

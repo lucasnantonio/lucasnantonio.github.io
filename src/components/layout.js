@@ -38,6 +38,7 @@ const Layout = ({
   `)
   return (
     <>
+    {!isIndex &&
         <Header
           // isWorkInView={isWorkInView}
           siteTitle={data.site.siteMetadata.title}
@@ -49,9 +50,9 @@ const Layout = ({
           prev={prev && prev}
           next={next && next}
         />
-
+    }
       <div
-        className="pt0 ph0-l ph4 "
+        className="pt0"
         style={{
           margin: `0 auto`,
           paddingTop: 0,

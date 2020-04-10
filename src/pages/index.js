@@ -12,6 +12,7 @@ import { minWidth, topics, sizes } from "../components/utils"
 import { motion, AnimatePresence } from "framer-motion"
 import { initialFadeAnimation, fadeInAnimation } from "../components/utils"
 import { ic_petal_logo, ic_nu_logo, ic_others } from "../components/icons.js"
+import Img from "gatsby-image/withIEPolyfill"
 
 function IndexPage({
   data: {
@@ -31,7 +32,8 @@ function IndexPage({
         )
     }
   }
-
+  // const nucontaImage = images.filter((item)=> item.fluid.originalName="nuconta-hero.png")
+  const nucontaImage = images.filter((item)=>item.fluid.originalName === "nuconta-hero-copy.png")[0].fluid
   const publishedPosts = posts.filter(
     item => item.node.frontmatter.soon === null
   )
@@ -57,8 +59,13 @@ function IndexPage({
       setSelectedTopics={setSelectedTopics}
     >
       <SEO title="Home" />
-      <div className="bg">
+      <div style={{background:"#F3F0F0"}} className="w-100 pb4 mb5 flex">
+        <div className="w-100 flex center" style={{maxWidth:minWidth}}>
+
         <Hello setSelectedTopics={setSelectedTopics} setAll={setAll} />
+        {/* <Img objectFit="contain" className="w-70 overflow-x-visible" fluid={nucontaImage}></Img> */}
+        </div>
+      </div>
         <div 
         style={{maxWidth: minWidth}}
         className="db-ns dn mr4 center">
@@ -71,16 +78,15 @@ function IndexPage({
             publishedPosts={publishedPosts}
           />
         </div>
-      </div>
       {!isAll && (
         <div
           style={{ maxWidth: minWidth}}
-          className="mt5 mb4 flex flex-column pv5 ph5 br3 ba bw1 b--near-white center"
+          className="mt5 mb6 flex flex-column center"
         >
-          <h1 className="w-100 f3 fw5 tracked-tight mb3">
+          {/* <h1 className="w-100 f3 fw5 tracked-tight mb3">
             {selectedTopics[0]}{" "}
-          </h1>
-          <p className="f3 w-100 lh-copy black-50 ">
+          </h1> */}
+          <p className="f2 fw5 w-100 lh-copy black-80 tracked-tight measure-narrow">
             {selectedTopics[0] === "Research"
               ? "I dedicate a lot of my time to listening to users, advocating for their needs, collaborating with researchers, and creating the necessary workflows to ensure the teams I partner with understand who they're designing for."
               : selectedTopics[0] === "Product Design"
@@ -124,7 +130,9 @@ function IndexPage({
             />
           </div>
         ) : (
+          <div className="center" style={{maxWidth: minWidth}}>
             <PostList posts={getFilteredPosts()} />
+            </div>
           )}
         {/* <Writing /> */}
       </div>

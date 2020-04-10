@@ -1,4 +1,4 @@
-import { Link } from "gatsby"
+vimport { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 import Filters from "./filters"
@@ -36,9 +36,11 @@ const Header = ({
         right: 0,
         marginRight: "auto",
         marginLeft: "auto",
+        borderColor: "rgba(150,150,150,.1)",
+        background: "white"
       }}
       className={
-        "flex fixed bg-white z-max space-between ph4 bb bw1 b--near-white"
+        "flex z-max space-between ph4 bb bw1"
       }
     >
       <div
@@ -46,7 +48,7 @@ const Header = ({
         className="w-100 flex justify-between center items-center"
       >
         <Link to="/" className={"link"}>
-          <h1 className="f5 fw5 tracked-tight black-50 neue-regular pv2">Lucas Neumann</h1>
+          <h1 className="f3 fw5 tracked-tight black-80 neue-regular pv2">Lucas Neumann</h1>
         </Link>
         {!isIndex && 
         <div className="flex">

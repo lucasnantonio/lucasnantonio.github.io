@@ -22,17 +22,22 @@ const Hello = ({ setSelectedTopics, setAll }) => {
   }
 
   return (
-    <div className="w-100 bg-near-white pv5 mb4">
+    <div className="w-100 pt4 mb6">
     <div 
     style={{maxWidth: minWidth}}
     className="flex flex-column mb5 tracked-tight center">
       <motion.div 
       initial={initialFadeAnimation} animate={fadeInAnimation} transition={{duration: .5}}>
-        <h1 className="f2-l f3 neue-regular black lh-title mb0 fw5">
+        {visitor ?
+        <h1 className="f2 neue-regular black lh-title mb0 fw5">
           {visitor && `Hi there, ${capitalizeFirstLetter(atob(visitor))}!`}
-        </h1>
-        <p className="f2-l f3 measure-narrow black-40 lh-copy mt0 fw5">
-        <br />I help companies design and deliver empowering
+        </h1> :
+        <h1 className="f2 neue-regular black lh-title mb0 fw5">
+        Lucas Neumann
+      </h1>
+}
+        <p className="f2 black-40 lh-copy mt0 fw5 measure-narrow">
+        <br />Helping companies research, design and deliver empowering
           experiences.&nbsp;
           <a
             className="link black-40 underline-hover hover-black"
@@ -42,7 +47,7 @@ const Hello = ({ setSelectedTopics, setAll }) => {
           >
             Nubank
           </a>{" "}
-          alumnus, now leading product design at{" "}
+          alumnus, I now lead design at{" "}
           <a
             className="link black-40 underline-hover hover-black"
             href="http://www.petalcard.com"
@@ -53,6 +58,9 @@ const Hello = ({ setSelectedTopics, setAll }) => {
           </a>
           .
         </p>
+        <a className="f3 fw5 black-20 flex items-center pt4">
+          Full bio <span className="f6 ml2">➜</span>
+        </a>
       </motion.div>
     </div>
     </div>

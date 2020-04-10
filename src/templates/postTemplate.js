@@ -43,7 +43,7 @@ export default function Template({
     tinycolor(color).darken(45)
   }
   const title = (
-    <div className="flex flex-column pt5 pb5-l w-100">
+    <div className="flex flex-column pt3 pb5-l w-100">
       <h1 className=" fw5 neue-regular f2 black-80 mt0 mb1 pb0 w-100 tracked-tight">
         {frontmatter.title}
       </h1>
@@ -54,7 +54,7 @@ export default function Template({
   )
 
   const metadata = (
-    <div className="fw5 black-30 mv3 pt5-l pt3 pb4 mw5 f7 lh-copy black-50 flex flex-column align-start items-start">
+    <div className="fw5 black-30 mv3 pt3-l pt3 pb4 mw5 f7 lh-copy black-50 flex flex-column align-start items-start">
       {frontmatter.link && frontmatter.link_label &&(
           <a
           style={{marginLeft: "-.25rem"}}

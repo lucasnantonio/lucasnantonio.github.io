@@ -31,7 +31,7 @@ function PostLink({ post, index }) {
         `}
       to={!post.frontmatter.soon ? post.frontmatter.path : null}
     >
-      <div className="br3 overflow-hidden relative">
+      <div className="overflow-hidden relative">
         <AnimatePresence>
           {isHovered &&
         <motion.div 
@@ -67,7 +67,7 @@ function PostLink({ post, index }) {
         <div className="w-100">
           <div className="flex justify-between items-center">
             <p
-              className={`neue-regular f3-l f4 measure-narrow mt3 mb3 ${
+              className={`neue-regular f3-l f4 measure-narrow mt3 mb3 fw5 tracked-tight ${
                 isHovered ? "u underline" : ""
               }`}
             >
