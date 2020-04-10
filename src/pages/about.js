@@ -119,5 +119,14 @@ export const query = graphql`
     Podcast2019: file(relativePath: { eq: "life/podcast-interview.jpg" }) {
       ...squareImage
     }
+    PetalWelcome: file(relativePath: { eq: "life/petal-welcome.JPG" }) {
+      ...squareImage
+    }
+    School: file(relativePath: { eq: "life/school.JPG" }) {
+      ...squareImage
+    }
+    NubankLead: file(relativePath: { eq: "life/nubank-lead.jpg" }) {
+      ...squareImage
+    }
   }
 `

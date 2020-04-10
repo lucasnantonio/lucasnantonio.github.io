@@ -2,7 +2,8 @@ export const LifeEvents = [
     {
         year: "Now",
         title: "Design Lead @ Petal",
-        description: "I recently packed my things in São Paulo and moved to New York City, to lead the small but mighty team designing the future of honest and accessible credit."
+        description: "I recently packed my things in São Paulo and moved to New York City, to lead the small but mighty team designing the future of honest and accessible credit.",
+        image: "PetalWelcome"
     },
     {
         year: 2020,
@@ -33,14 +34,15 @@ export const LifeEvents = [
     //     image: "Podcast2019"
     // },
     {
-        year: 2016,
-        title: "Product Design @ Nubank",
-        description: "Insitum was a great formative experience, where I was lucky to experience extensive field research in remote areas of the country, as well as designing across the frontiers of service, industrial, and digital design."
+        year: "2016—2019",
+        title: "Product Design Lead @ Nubank",
+        description: "Nubank was such an incredible experience for my career. I had the opportunity to see a team grow from 5 to 60 designers, and lead the design of what became the most downloaded neobank app on the planet.",
+        image: "NubankLead"
     },
     {
-        year: 2014,
+        year: "2014—2016",
         title: "Product Design @ Nossas",
-        description: "Insitum was a great formative experience, where I was lucky to experience extensive field research in remote areas of the country, as well as designing across the frontiers of service, industrial, and digital design."
+        description: "Nossas is an non-profit with a mission to empower city dwellers to challenge and pressure their local governments into action. I worked as their single UX and product to develop a platform to help communities share their causes."
     },
     {
         year: 2013,
@@ -89,16 +91,17 @@ export const LifeEvents = [
     {
         year: 2010,
         title: "Started Design School in São Paulo",
-        description: "The place that made me fall in love with design. I'm grateful for having gotten such a strong generalist background."
+        description: "The place that made me fall in love with design. I'm grateful for having gotten such a strong generalist background.",
+        image: "School"
     },
-    {
-        year: 2008,
-        title: "My first design award",
-        description: "I learned photoshop while designing this logo for my high school graduation, and won, so everyone got swag with my work on it for the first time!"
-    },
-    {
-        year: 2008,
-        title: "My first design",
-        description: "This is the first design I can find. A logo for my high school band."
-    }
+    // {
+    //     year: 2008,
+    //     title: "My first design award",
+    //     description: "I learned photoshop while designing this logo for my high school graduation, and won, so everyone got swag with my work on it for the first time!"
+    // },
+    // {
+    //     year: 2008,
+    //     title: "My first design",
+    //     description: "This is the first design I can find. A logo for my high school band."
+    // }
 ]
