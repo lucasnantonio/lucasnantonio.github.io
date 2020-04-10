@@ -127,27 +127,28 @@ div + p {
 	transition: opacity 200ms;
 }
 .blinking:after {
-	animation: blinkingText 1s infinite;
+	animation: blinkingText .80s infinite;
 	content: "";
 	display: inline;
 	font-size: 1em;
 	position: absolute;
 	margin-left: .2em;
+	transition: color .1s;
 }
 
 .blinking {
-	animation: blinkingText 1s infinite;
-	color: #999;
+	animation: blinkingText .80s infinite;
+	/* color: #999; */
 	/* transition: all .5s; */
 }
 
 @keyframes blinkingText {
-	1% {
+	0% {
 		color: lightpink;
 		content: " ❃";
 	}
 	20% {
-		color: black;
+		color: skyblue;
 		content: " ✪";
 	}
 	40% {
@@ -161,6 +162,10 @@ div + p {
 	80% {
 		color: goldenrod;
 		content: " ✤";
+	}
+	100% {
+		color: teal;
+		content: " ✹";
 	}
 }
 
