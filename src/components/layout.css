@@ -126,28 +126,42 @@ div + p {
 	opacity: 0;
 	transition: opacity 200ms;
 }
+.blinking:after {
+	animation: blinkingText 1s infinite;
+	content: "";
+	display: inline;
+	font-size: 1em;
+	position: absolute;
+	margin-left: .2em;
+	margin-top: .05em;
+}
 
 .blinking {
-	animation: blinkingText .5s infinite;
-	color:#999;
-	transition: all 2s;
+	animation: blinkingText 1s infinite;
+	color: #999;
+	/* transition: all .5s; */
 }
 
 @keyframes blinkingText {
-	0% {
+	1% {
 		color: lightpink;
+		content: " ❃";
 	}
-	25% {
-		color: lightblue;
+	20% {
+		color: black;
+		content: " ✪";
 	}
-	50% {
-		color: lightgrey;
-	}
-	75% {
-		color: lightcoral;
-	}
-	100% {
+	40% {
 		color: goldenrod;
+		content: " ❋";
+	}
+	60% {
+		color: lightcoral;
+		content: " ✹";
+	}
+	80% {
+		color: goldenrod;
+		content: " ✤";
 	}
 }
 
@@ -189,6 +203,6 @@ ol li:before {
 	border-radius: 100%;
 }
 
-.tracked-tight{
+.tracked-tight {
 	letter-spacing: -.04em;
 }
