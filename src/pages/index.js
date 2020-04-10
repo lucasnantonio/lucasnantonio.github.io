@@ -33,7 +33,7 @@ function IndexPage({
     }
   }
   // const nucontaImage = images.filter((item)=> item.fluid.originalName="nuconta-hero.png")
-  const nucontaImage = images.filter((item)=>item.fluid.originalName === "nuconta-hero-copy.png")[0].fluid
+  const nucontaImage = images.filter((item) => item.fluid.originalName === "nuconta-hero-copy.png")[0].fluid
   const publishedPosts = posts.filter(
     item => item.node.frontmatter.soon === null
   )
@@ -59,34 +59,37 @@ function IndexPage({
       setSelectedTopics={setSelectedTopics}
     >
       <SEO title="Home" />
-      <div style={{background:"#f9f7f6"}} className="w-100 pb4 mb5 flex">
-        <div className="w-100 flex center ph4" style={{maxWidth:minWidth}}>
+      <div
+      // style={{background:"#f9f7f6"}} 
+      // className="w-100 pb4 mb5 flex"
+      >
+        <div className="w-100 flex center  " style={{ maxWidth: minWidth }}>
 
-        <Hello setSelectedTopics={setSelectedTopics} setAll={setAll} />
-        {/* <Img objectFit="contain" className="w-70 overflow-x-visible" fluid={nucontaImage}></Img> */}
+          <Hello setSelectedTopics={setSelectedTopics} setAll={setAll} />
+          {/* <Img objectFit="contain" className="w-70 overflow-x-visible" fluid={nucontaImage}></Img> */}
         </div>
       </div>
-        <div 
-        style={{maxWidth: minWidth}}
-        className="db-ns dn mr4 center ph4">
-          <Filters
-            selectedTopics={selectedTopics}
-            setSelectedTopics={setSelectedTopics}
-            isAll={isAll}
-            setAll={setAll}
-            posts={posts}
-            publishedPosts={publishedPosts}
-          />
-        </div>
+      <div
+        style={{ maxWidth: minWidth }}
+        className="db-ns dn mr4 center  ">
+        <Filters
+          selectedTopics={selectedTopics}
+          setSelectedTopics={setSelectedTopics}
+          isAll={isAll}
+          setAll={setAll}
+          posts={posts}
+          publishedPosts={publishedPosts}
+        />
+      </div>
       {!isAll && (
         <div
-          style={{ maxWidth: minWidth}}
-          className="mt5 mb6 flex flex-column center ph4"
+          style={{ maxWidth: minWidth }}
+          className="mt5 mb6 flex flex-column center  "
         >
           {/* <h1 className="w-100 f3 fw5 tracked-tight mb3">
             {selectedTopics[0]}{" "}
           </h1> */}
-          <p className="f2 fw5 w-100 lh-copy black-80 tracked-tight measure-narrow">
+          <p className="f3 fw5 w-100 lh-copy black-40 tracked-tight measure">
             {selectedTopics[0] === "Research"
               ? "A lot of my time is invested in listening to users, advocating for their needs, collaborating with researchers, and creating the necessary workflows so that the team understands who they're designing for."
               : selectedTopics[0] === "Product Design"
@@ -100,7 +103,7 @@ function IndexPage({
 
       <div id="work">
         {isAll ? (
-          <div style={{ maxWidth: minWidth}} className="center ph4">
+          <div style={{ maxWidth: minWidth }} className="center  ">
             <HomeSection
               isAll={isAll}
               posts={getFilteredPosts()}
@@ -130,8 +133,8 @@ function IndexPage({
             />
           </div>
         ) : (
-          <div className="center ph4" style={{maxWidth: minWidth}}>
-            <PostList posts={getFilteredPosts()} />
+            <div className="center  " style={{ maxWidth: minWidth }}>
+              <PostList posts={getFilteredPosts()} />
             </div>
           )}
         {/* <Writing /> */}

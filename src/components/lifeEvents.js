@@ -1,8 +1,13 @@
 export const LifeEvents = [
     {
-        year: 2020,
+        year: "Now",
         title: "Design Lead @ Petal",
         description: "I recently packed my things in São Paulo and moved to New York City, to lead the small but mighty team designing the future of honest and accessible credit."
+    },
+    {
+        year: 2020,
+        title: "FinLab field research ",
+        description: "Had the amazing opportunity to participate in FinLab's field research training, experiencing first-hand how the unbanked, lower income populations manage their cashflow."
     },
     {
         year: 2019,
@@ -22,11 +27,11 @@ export const LifeEvents = [
         image: "HackConf2019",
         description: "My buddy Pedro Axelrud and I shared a few of the challenges of working on a hyper growth startup like Nubank in the beautiful Cidade das Artes pavillion in Rio."
     },
-    {
-        year: 2018,
-        title: "Podcast Interview for Hipsters.Tech",
-        image: "Podcast2019"
-    },
+    // {
+    //     year: 2018,
+    //     title: "Podcast Interview for Hipsters.Tech",
+    //     image: "Podcast2019"
+    // },
     {
         year: 2016,
         title: "Product Design @ Nubank",

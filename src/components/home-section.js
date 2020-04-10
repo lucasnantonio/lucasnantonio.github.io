@@ -18,18 +18,18 @@ const HomeSection = ({ title, date, description, posts, isAll, icon }) => {
               {/* <div className="pa3 br-pill b--near-white ba mr3 flex bw1">{icon}</div> */}
               <h2
                 className={
-                  "w-10 mr4 lh-solid f2 mv0 pv0 sans neue-regular black-80 fw5 tracked-tight"
+                  "w-10 mr4 lh-solid f3 mv0 pv0 sans neue-regular black-80 fw5 tracked-tight"
                 }
               >
                 {title}
               </h2>
-              <h3 className="f2 fw5 tracked-tight mt3 black-40 measure-narrow">{`${
-                title === "Nubank" ? 
-                  "Designing the largest neobank in the world." : 
-                title === "Petal" ?
-                  "The future of honest, accessible credit."
-                :
-                  "Personal and experimental"
+              <h3 className="f3 fw5 tracked-tight mt3 black-40 measure-narrow">{`${
+                title === "Nubank" ?
+                  "Designing the largest neobank in the world." :
+                  title === "Petal" ?
+                    "The future of honest, accessible credit."
+                    :
+                    "Personal and experimental"
                 }
                 `}</h3>
             </div>

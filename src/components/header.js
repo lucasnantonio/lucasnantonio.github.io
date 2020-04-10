@@ -28,67 +28,64 @@ const Header = ({
   prev,
   next,
 }) => (
-  <div>
-    <header
-      style={{
-        width: "100%",
-        left: 0,
-        right: 0,
-        marginRight: "auto",
-        marginLeft: "auto",
-        borderColor: "rgba(150,150,150,.1)",
-        background: "white"
-      }}
-      className={
-        "flex z-max space-between ph4 bb bw1"
-      }
-    >
-      <div
-        style={{ maxWidth: minWidth }}
-        className="w-100 flex justify-between center items-center"
-      >
-        <Link to="/" className={"link"}>
-          <h1 className="f3 fw5 tracked-tight black-80 neue-regular pv2">Lucas Neumann</h1>
-        </Link>
-        {!isIndex && 
-        <div className="flex">
-          {prev ? (
-            <Link to={prev.frontmatter.path}>
-              <span
-                style={{ transform: "rotateZ(180deg)" }}
-                className="flex justify-center center items-center align-center ma2 pa2 br-pill hover-bg-near-white bn pointer center items-center black-20 hover-dark-gray "
-              >
-                {caret}
-              </span>
-            </Link>
-          ) : (
-            <span
-              style={{ transform: "rotateZ(180deg)" }}
-              className="o-30 flex justify-center center items-center align-center ma2 pa2 br-pill bn center items-center black-10 hover-dark-gray "
-            >
-              {caret}
-            </span>
-          )}
-          {next ? (
-            <Link to={next.frontmatter.path}>
-              <span className="flex justify-center center items-center align-center ma2 pa2 br-pill hover-bg-near-white bn pointer center items-center black-20 hover-dark-gray ">
-                {caret}
-              </span>
-            </Link>
-          ) : (
-            <span className="o-30 flex justify-center center items-center align-center ma2 pa2 br-pill bn center items-center black-10 ">
-              {caret}
-            </span>
-          )}
-        </div>
+    <div>
+      <header
+        style={{
+          width: "100%",
+          left: 0,
+          right: 0,
+          marginRight: "auto",
+          marginLeft: "auto",
+          borderColor: "rgba(150,150,150,.1)",
+          background: "white"
+        }}
+        className={
+          "flex z-max space-between ph4 bb bw1"
         }
-      </div>
-    </header>
-    <div className="pb2 pt1">
-      <p className="f6 white"> _</p>
+      >
+        <div
+          style={{ maxWidth: minWidth }}
+          className="w-100 flex justify-between center items-center"
+        >
+          <Link to="/" className={"link"}>
+            <h1 className="f4 fw5 tracked-tight black-80 neue-regular pv2">Lucas Neumann</h1>
+          </Link>
+          {!isIndex &&
+            <div className="flex">
+              {prev ? (
+                <Link to={prev.frontmatter.path}>
+                  <span
+                    style={{ transform: "rotateZ(180deg)" }}
+                    className="flex justify-center center items-center align-center ma2 pa2 br-pill hover-bg-near-white bn pointer center items-center black-20 hover-dark-gray "
+                  >
+                    {caret}
+                  </span>
+                </Link>
+              ) : (
+                  <span
+                    style={{ transform: "rotateZ(180deg)" }}
+                    className="o-30 flex justify-center center items-center align-center ma2 pa2 br-pill bn center items-center black-10 hover-dark-gray "
+                  >
+                    {caret}
+                  </span>
+                )}
+              {next ? (
+                <Link to={next.frontmatter.path}>
+                  <span className="flex justify-center center items-center align-center ma2 pa2 br-pill hover-bg-near-white bn pointer center items-center black-20 hover-dark-gray ">
+                    {caret}
+                  </span>
+                </Link>
+              ) : (
+                  <span className="o-30 flex justify-center center items-center align-center ma2 pa2 br-pill bn center items-center black-10 ">
+                    {caret}
+                  </span>
+                )}
+            </div>
+          }
+        </div>
+      </header>
     </div>
-  </div>
-)
+  )
 
 Header.propTypes = {
   siteTitle: PropTypes.string,
