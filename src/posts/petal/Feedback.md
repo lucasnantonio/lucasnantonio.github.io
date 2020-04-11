@@ -6,6 +6,7 @@ subtitle: Measuring user satisfaction in an actionable way
 problem: How can we collect feedback that is specific, measurable, and actionable?
 solution: Atomized feedback entry-points deployed across the app
 impact: Actionable, continuous app satisfaction measurements
+myrole: Proposed, designed, and now manage the analysis of all incoming feedback
 category: Petal
 topics:
   - Product Design
@@ -18,6 +19,8 @@ soon: false
 team:
 - Dasmer Singh
 - Nicolas Moschopoulos
+link: http://www.petalcard.com
+link_label: Petalcard.com
 ---
 
 Receiving suggestions, feature requests, complaints, and bug reports from users, like any other type of customer-focused evidence, is essential fuel for high-performing technology teams. 

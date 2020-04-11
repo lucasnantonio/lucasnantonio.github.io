@@ -16,6 +16,8 @@ topics:
 published: true
 cover_image: "../../images/petal/automated-research-11.png"
 color: "#f7f7f7"
+link: http://www.petalcard.com
+link_label: Petalcard.com
 ---
 
 Most teams know that talking to users frequently is a key habit to increase empathy, de-risk projects, find innovation opportunities. At Petal, where "listen with curiosity" and "our job is never done" are company values, this is no different.

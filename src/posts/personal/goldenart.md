@@ -6,8 +6,8 @@ subtitle: My family's company website, my code sandbox.
 category: Others
 problem: Old, unmaintained Wordpress website with no flexibility for current content
 solution: Website redesigned and rebuilt from scratch using Node.js
-impact: Higher customer engagement and satisfaction, better usability & better client control over content
-myrole: CMS Information Architecture, Design and Code (Javascript, Node)
+impact: Higher customer engagement, better usability for both back-office and customers
+myrole: Content Information Architecture, Design and Code
 topics:
   - Product Design
   - Code

@@ -18,7 +18,7 @@ color: "#BB6BD9"
 cover_image: "../../images/nubank/nuconta-hero.png"
 published: true
 link: http://nubank.com.br/nuconta
-link_label: nubank.com.br
+link_label: Nubank.com.br
 where: São Paulo
 when: 2017-2018
 team:

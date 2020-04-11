@@ -11,8 +11,8 @@ published: true
 role:
   - design
   - user testing
-cover_image: "../../images/kano/kano.png"
-color: "#FF7A00"
+cover_image: "../../images/kano/kano-sem-fundo.png"
+color: "#ff9942"
 cover: true
 team:
   - Tommy Sahl

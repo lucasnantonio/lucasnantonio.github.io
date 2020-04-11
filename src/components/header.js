@@ -55,7 +55,7 @@ const Header = ({
               {prev ? (
                 <Link to={prev.frontmatter.path}>
                   <span
-                    style={{ transform: "rotateZ(180deg)" }}
+                    style={{ transition: "background-color .2s", transform: "rotateZ(180deg)" }}
                     className="flex justify-center center items-center align-center ma2 pa2 br-pill hover-bg-near-white bn pointer center items-center black-20 hover-dark-gray "
                   >
                     {caret}
@@ -63,7 +63,7 @@ const Header = ({
                 </Link>
               ) : (
                   <span
-                    style={{ transform: "rotateZ(180deg)" }}
+                    style={{ transition: "background-color .2s", transform: "rotateZ(180deg)" }}
                     className="o-30 flex justify-center center items-center align-center ma2 pa2 br-pill bn center items-center black-10 hover-dark-gray "
                   >
                     {caret}
@@ -71,12 +71,12 @@ const Header = ({
                 )}
               {next ? (
                 <Link to={next.frontmatter.path}>
-                  <span className="flex justify-center center items-center align-center ma2 pa2 br-pill hover-bg-near-white bn pointer center items-center black-20 hover-dark-gray ">
+                  <span style={{ transition: "background-color .2s" }} className="flex justify-center center items-center align-center ma2 pa2 br-pill hover-bg-near-white bn pointer center items-center black-20 hover-dark-gray ">
                     {caret}
                   </span>
                 </Link>
               ) : (
-                  <span className="o-30 flex justify-center center items-center align-center ma2 pa2 br-pill bn center items-center black-10 ">
+                  <span style={{ transition: "background-color .2s" }} className="o-30 flex justify-center center items-center align-center ma2 pa2 br-pill bn center items-center black-10 ">
                     {caret}
                   </span>
                 )}
