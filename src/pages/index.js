@@ -89,15 +89,21 @@ function IndexPage({
           {/* <h1 className="w-100 f3 fw5 tracked-tight mb3">
             {selectedTopics[0]}{" "}
           </h1> */}
-          <p className="f3 fw5 w-100 lh-copy black-40 tracked-tight measure">
-            {selectedTopics[0] === "Research"
-              ? "A lot of my time is invested in listening to users, advocating for their needs, collaborating with researchers, and creating the necessary workflows so that the team understands who they're designing for."
-              : selectedTopics[0] === "Product Design"
-                ? "Understand the user, frame the problem, ideate, prototype, test, deliver, measure, repeat. I have designed products that have reached millions of people, across the disciplines of service, industrial, and digital design."
-                : selectedTopics[0] === "Design Ops"
-                  ? "Designing design. Helping things scale at a healthy pace. Keeping the teams I work with happy, engaged and empowered."
-                  : "I'm a coding begginer and enthusiast. This portfolio website is in itself an experiment in learning React. Here are some other things I've played with:"}
-          </p>
+          <AnimatePresence>
+            <motion.p
+              transition={{ duration: .25 }}
+              initial={{ y: 30, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              exit={{ y: -30, opacity: 0, height: 0, overflow: "hidden", position: "absolute" }} key={selectedTopics[0]} className="f3 fw5 w-100 lh-copy black-40 tracked-tight measure">
+              {selectedTopics[0] === "Research"
+                ? "A lot of my time is invested in listening to users, advocating for their needs, collaborating with researchers, and creating the necessary workflows so that the team understands who they're designing for."
+                : selectedTopics[0] === "Product Design"
+                  ? "Understand the user, frame the problem, ideate, prototype, test, deliver, measure, repeat. I have designed products that have reached millions of people, across the disciplines of service, industrial, and digital design."
+                  : selectedTopics[0] === "Design Ops"
+                    ? "Designing design. Helping things scale at a healthy pace. Keeping the teams I work with happy, engaged and empowered."
+                    : "I'm a coding begginer and enthusiast. This portfolio website is in itself an experiment in learning React. Here are some other things I've played with:"}
+            </motion.p>
+          </AnimatePresence>
         </div>
       )}
 
