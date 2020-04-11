@@ -1,15 +1,15 @@
 export const LifeEvents = [
     {
-        year: "Now",
+        year: "Jun 2019—Now",
         title: "Design Lead @ Petal",
         description: "I recently packed my things in São Paulo and moved to New York City, to lead the small but mighty team designing the future of honest and accessible credit.",
         image: "PetalWelcome"
     },
-    {
-        year: 2020,
-        title: "FinLab field research ",
-        description: "Had the amazing opportunity to participate in FinLab's field research training, experiencing first-hand how the unbanked, lower income populations manage their cashflow."
-    },
+    // {
+    //     year: 2020,
+    //     title: "FinLab field research ",
+    //     description: "Had the amazing opportunity to participate in FinLab's field research training, experiencing first-hand how the unbanked, lower income populations manage their cashflow."
+    // },
     {
         year: 2019,
         title: "Moved to NYC",
@@ -18,7 +18,7 @@ export const LifeEvents = [
     },
     {
         year: 2019,
-        title: "Panel with Dan Ariely",
+        title: "That time I interviewed Dan Ariely",
         image: "Ariely",
         description: "Behavior sciences have always fascinated me and been a reliable source of insight for my design work. Dan Ariely is one of the top references in the field and interviewing him in front of hundreds of Nubank employees to inspire their work in helping people with their finances was a great honor."
     },
@@ -42,12 +42,14 @@ export const LifeEvents = [
     {
         year: "2014—2016",
         title: "Product Design @ Nossas",
-        description: "Nossas is an non-profit with a mission to empower city dwellers to challenge and pressure their local governments into action. I worked as their single UX and product to develop a platform to help communities share their causes."
+        description: "Nossas is an non-profit with a mission to empower city dwellers to challenge and pressure their local governments into action. I worked as their single designer to develop a platform to help communities tell the stories and raise money for their causes.",
+        image: "Nossas"
     },
     {
         year: 2013,
         title: "Service Design Internship @ Insitum (Now Fjord)",
-        description: "Insitum was a great formative experience, where I was lucky to experience extensive field research in remote areas of the country, as well as designing across the frontiers of service, industrial, and digital design."
+        description: "Insitum was a great formative experience, where I was lucky to experience extensive field research in remote areas of the country, as well as designing across the frontiers of service, industrial, and digital design.",
+        image: "InsitumIntern"
     },
     {
         year: 2014,
@@ -57,7 +59,9 @@ export const LifeEvents = [
     },
     {
         year: 2013,
-        title: "Student project featured in Wired.com and FastCompany"
+        title: "Student project featured in Wired.com and FastCompany",
+        description: "My thesis project for Central Saint Martins was physical device that would help remote workers manage their time and find work/life balance. Getting featured internationally opened doors I've never dreamed of.",
+        image: "Bossy"
     },
     {
         year: 2013,

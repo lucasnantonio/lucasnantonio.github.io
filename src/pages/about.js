@@ -5,7 +5,8 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { LifeEvents } from "../components/lifeEvents"
 import { minWidth } from "../components/utils"
-
+import { motion, AnimatePresence } from "framer-motion"
+import { initialFadeAnimation, fadeInAnimation } from '../components/utils';
 
 
 const LifeEvent = (data, { title, year, description, image, isMilestone, icon }, index) => {
@@ -80,18 +81,20 @@ const About = ({ data }) => {
   return (
     <Layout>
       <SEO title="About me" />
-      <div className="w-100 mv6 center ">
-        <div className="center" style={{ maxWidth: minWidth }}>
-          <h1 className="fw5 black-80 tracked-tight f3 mb0">About me</h1>
-          <h1 className="fw5 black-40 tracked-tight mt0 f3">Scroll down, let's travel back in time. <span className="black">🕰</span></h1>
+      <motion.div initial={initialFadeAnimation} animate={fadeInAnimation} transition={{ duration: 0.5 }}>
+        <div className="w-100 mv6 center ">
+          <div className="center" style={{ maxWidth: minWidth }}>
+            <h1 className="fw5 black-80 tracked-tight f3 mb0">About me</h1>
+            <h1 className="fw5 black-40 tracked-tight mt0 f3">Scroll down, let's travel back in time. <span className="black">🕰</span></h1>
+          </div>
         </div>
-      </div>
-      <div
-        style={{ maxWidth: minWidth }}
-        className="flex w-100 justify-between flex-column center"
-      >
-        {LifeEvents.map((item, index) => LifeEvent(data, item, index))}
-      </div>
+        <div
+          style={{ maxWidth: minWidth }}
+          className="flex w-100 justify-between flex-column center"
+        >
+          {LifeEvents.map((item, index) => LifeEvent(data, item, index))}
+        </div>
+      </motion.div>
     </Layout >
   )
 }
@@ -126,6 +129,15 @@ export const query = graphql`
       ...squareImage
     }
     NubankLead: file(relativePath: { eq: "life/nubank-lead.jpg" }) {
+      ...squareImage
+    }
+    InsitumIntern: file(relativePath: { eq: "life/insitum-intern.png" }) {
+      ...squareImage
+    }
+    Bossy: file(relativePath: { eq: "life/bossy-featured.png" }) {
+      ...squareImage
+    }
+    Nossas: file(relativePath: { eq: "life/nossas.jpg" }) {
       ...squareImage
     }
   }
