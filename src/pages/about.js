@@ -13,7 +13,7 @@ const LifeEvent = (data, { title, year, description, image, isMilestone, icon },
   const dotStyle = !isMilestone ? {
     marginLeft: "-.20rem",
     marginTop: ".55rem",
-    backgroundColor: "#222",
+    backgroundColor: index === 0 ? "#2cd477" : "#222",
     height: ".5rem",
     width: ".5rem",
   } : {
@@ -40,6 +40,13 @@ const LifeEvent = (data, { title, year, description, image, isMilestone, icon },
     ) : (
         <div key={title} className="flex">
           {index !== LifeEvents.length - 1 ? (<div className="relative mr4 bl bw1 b--light-gray mt4 mb1"></div>) : (<div className="relative mr4 bl bw1 b--white"></div>)}
+          {index === 0 &&
+            <motion.div
+              style={{ marginLeft: "-.20rem", marginTop: ".50rem", width: ".5rem", height: ".5rem" }}
+              initial={{ scale: 1, opacity: 1 }}
+              animate={{ scale: 5, opacity: 0, transition: { duration: 3, loop: Infinity } }}
+              className="absolute br-pill center flex items-center justify-center bg-light-green ">
+            </motion.div>}
           <div style={dotStyle} className="absolute br-pill"></div>
           <div className="pa4 pt0 w-70-l mb5">
             <div className="flex flex-column">
@@ -55,24 +62,6 @@ const LifeEvent = (data, { title, year, description, image, isMilestone, icon },
           </div>
         </div >
       )
-  )
-}
-
-const milestoneEvent = (data, { title, year, description, image }, index) => {
-
-  return (
-    <div key={title} className="flex">
-      {index !== LifeEvents.length - 1 ? (<div className="relative mr4 bl bw1 b--light-gray"></div>) : (<div className="relative mr4 bl bw1 b--white"></div>)}
-      <div className="pa4 ba br3 bw1 b--near-white w-70-l">
-        <div>
-          {console.log(image)}
-          {image && <Img className={""} fluid={data[image].childImageSharp.fluid}></Img>}
-          <div className="mb2">{year}</div>
-          <div className="f4 fw5 mb3 black-80">{title}</div>
-          <div className="measure lh-copy f4 black-80">{description}</div>
-        </div>
-      </div>
-    </div >
   )
 }
 
