@@ -46,8 +46,12 @@ function Filter({ title, selectedTopics, setSelectedTopics, isAll, setAll }) {
 			className={`pointer nowrap ma0 mr4 fw5 list tracked-tight mb0-l mb2`}
 			style={{
 				borderBottom: isSelected ? '3px solid black' : '3px solid transparent',
-				color: !isSelected && !isHovered ? 'rgba(0,0,0,.4)' : !isSelected && isHovered ? '#666' : 'black'
+				color:
+					!isSelected && !isHovered
+						? 'rgba(0,0,0,.4)'
+						: !isSelected && isHovered ? 'rgba(0,0,0,.8)' : 'black',
 				// backgroundColor: getBackgroundColor(),
+				transition: 'color .2s'
 			}}
 		>
 			{title}

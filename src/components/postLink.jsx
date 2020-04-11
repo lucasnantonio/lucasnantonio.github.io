@@ -61,7 +61,7 @@ function PostLink({ post, index }) {
 				<div className="w-100">
 					<div className="flex justify-between items-center">
 						<p
-							className={`neue-regular f3-l f4 measure-narrow mt3 mb2 fw5 tracked-tight ${isHovered
+							className={`neue-regular f3 measure-narrow mt3 mb2 fw5 tracked-tight ${isHovered
 								? 'u underline'
 								: ''}`}
 						>
