@@ -1,4 +1,4 @@
-import React, { useState, setState } from "react"
+import React, { useState, setState, useEffect } from "react"
 import { Link } from "gatsby"
 import Img from "gatsby-image/withIEPolyfill"
 import Layout from "../components/layout"
@@ -45,8 +45,6 @@ const LifeEvent = (data, { title, year, description, image, isMilestone, icon, i
             </div>
             {!reallyHidden && image && <Img className={"w-100 mt3"} fluid={data[image].childImageSharp.fluid}></Img>}
             {reallyHidden && <div onClick={() => { hidden ? setHidden(false) : setReallyHidden(false) }} className="dib f5 fw5 fl pa3 br3 hover-bg-near-white pointer" style={{ color: hidden ? "black" : "red", background: hidden ? "#f7f7f7" : "#ffe5e9" }}>{`${hidden ? 'Reveal' : 'Really reveal'}`}</div>}
-            {console.log(hidden)}
-            {console.log(reallyHidden)}
           </div>
         </div>
       </div >
@@ -93,14 +91,27 @@ const LifeEvent = (data, { title, year, description, image, isMilestone, icon, i
 
 const About = ({ data }) => {
   const [isScrolled, setScrolled] = useState(false)
-  window.onscroll = () => {
-    setScrolled(window.pageYOffset > 500)
+  useEffect(() => {
+    window.onscroll = () => {
+      setScrolled(window.pageYOffset > 500)
+    }
   }
+  )
   const backToTheFuture = () => {
+    const [isHovered, setHover] = useState(false)
     return (
       <AnimatePresence>
         {isScrolled &&
-          <motion.div initial={{ y: 100 }} animate={{ y: 0 }} exit={{ y: 100 }} onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })} style={{ right: 200, bottom: 20 }} className="z-max shadow-2 pa3 br-pill bg-white fixed center black pointer">Back to the future ↥</motion.div>}
+          <motion.div
+            onMouseEnter={() => setHover(true)}
+            onMouseLeave={() => setHover(false)}
+            onMouseDown={() => setHover(false)}
+            onMouseUp={() => setHover(true)}
+            initial={{ y: 100 }} animate={{ y: 0 }} exit={{ y: 100 }} onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+            style={{ transition: "box-shadow .2s", right: 200, bottom: 20, boxShadow: !isHovered ? "0 0 15px rgba(0,0,0,.25)" : "0 0 25px rgba(0,0,0,.2)", color: !isHovered ? "#666" : "#181818" }}
+            className="z-max pa3 br-pill bg-white fixed center black pointer">
+            Back to the future ↺
+            </motion.div>}
       </AnimatePresence>
     )
   }
@@ -108,7 +119,7 @@ const About = ({ data }) => {
     <Layout>
       <SEO title="About me" />
       {backToTheFuture()}
-      <motion.div className="bb bw1" initial={initialFadeAnimation} animate={fadeInAnimation} transition={{ duration: 0.5 }}>
+      <motion.div initial={initialFadeAnimation} animate={fadeInAnimation} transition={{ duration: 0.5 }}>
         <div className="w-100 mv6 center ">
           <div className="center" style={{ maxWidth: minWidth }}>
             <h1 className="fw5 black-80 tracked-tight f3 mb0">About me</h1>
