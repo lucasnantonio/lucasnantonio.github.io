@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState, setState } from "react"
 import { Link } from "gatsby"
 import Img from "gatsby-image/withIEPolyfill"
 import Layout from "../components/layout"
@@ -9,7 +9,10 @@ import { motion, AnimatePresence } from "framer-motion"
 import { initialFadeAnimation, fadeInAnimation } from '../components/utils';
 
 
-const LifeEvent = (data, { title, year, description, image, isMilestone, icon }, index) => {
+const LifeEvent = (data, { title, year, description, image, isMilestone, icon, isHidden }, index) => {
+  const [hidden, setHidden] = useState(true)
+  const [reallyHidden, setReallyHidden] = useState(true)
+
   const dotStyle = !isMilestone ? {
     marginLeft: "-.20rem",
     marginTop: ".55rem",
@@ -17,64 +20,99 @@ const LifeEvent = (data, { title, year, description, image, isMilestone, icon },
     height: ".5rem",
     width: ".5rem",
   } : {
-      marginLeft: "-1.5rem",
-      marginTop: "-.6rem",
-      backgroundColor: "#f3f3f3",
-      height: "3rem",
-      width: "3rem",
+      // marginLeft: "-1.5rem",
+      // marginTop: "-.6rem",
+      // backgroundColor: "#f3f3f3",
+      marginLeft: "-.20rem",
+      marginTop: ".55rem",
+      height: ".5rem",
+      width: ".5rem",
     }
 
   return (
-    isMilestone ? (
+    isHidden ? (
       <div key={title} className="flex">
-        {index !== LifeEvents.length - 1 ? (<div className="relative mr4 bl bw1 b--light-gray"></div>) : (<div className="relative mr4 bl bw1 b--white"></div>)
-        }
-        <div style={dotStyle} className="absolute br-pill center flex items-center justify-center">{icon}</div>
-        <div className="mb6">
-          <div className="flex items-center">
-            <div className="f3 fw5 black-80 ml4 fw5 tracked-tight">{title}</div>
-            <div className="ml2 black-40">{year}</div>
+        {index !== LifeEvents.length - 1 ? (<div className="relative mr4 bl bw1 b--light-gray mt4 mb1"></div>) : (<div className="relative mr4 bl bw1 b--white"></div>)}
+        <div style={dotStyle} className="absolute br-pill"></div>
+        <div className="pa4 pt0 w-70-l mb5">
+          <div className="flex flex-column items-start">
+            <div className="flex flex-column">
+              <div className="flex items-center mb4">
+                <div className="f3 fw5 black-80 fw5 tracked-tight mr2">{title} <span className="fw5 f4 black-40">{year}</span></div>
+
+              </div>
+              <div className="measure lh-copy f4 black-80 mb4">{description}</div>
+            </div>
+            {!reallyHidden && image && <Img className={"w-100 mt3"} fluid={data[image].childImageSharp.fluid}></Img>}
+            {reallyHidden && <div onClick={() => { hidden ? setHidden(false) : setReallyHidden(false) }} className="dib f5 fw5 fl pa3 br3 hover-bg-near-white pointer" style={{ color: hidden ? "black" : "red", background: hidden ? "#f7f7f7" : "#ffe5e9" }}>{`${hidden ? 'Reveal' : 'Really reveal'}`}</div>}
+            {console.log(hidden)}
+            {console.log(reallyHidden)}
           </div>
         </div>
       </div >
-    ) : (
+    ) :
+      isMilestone ? (
         <div key={title} className="flex">
-          {index !== LifeEvents.length - 1 ? (<div className="relative mr4 bl bw1 b--light-gray mt4 mb1"></div>) : (<div className="relative mr4 bl bw1 b--white"></div>)}
-          {index === 0 &&
-            <motion.div
-              style={{ marginLeft: "-.20rem", marginTop: ".50rem", width: ".5rem", height: ".5rem" }}
-              initial={{ scale: 1, opacity: 1 }}
-              animate={{ scale: 5, opacity: 0, transition: { duration: 3, loop: Infinity } }}
-              className="absolute br-pill center flex items-center justify-center bg-light-green ">
-            </motion.div>}
-          <div style={dotStyle} className="absolute br-pill"></div>
-          <div className="pa4 pt0 w-70-l mb5">
-            <div className="flex flex-column">
-              <div className="flex flex-column">
-                <div className="flex items-center mb4">
-                  <div className="f3 fw5 black-80 fw5 tracked-tight mr2">{title} <span className="fw5 f4 black-40">{year}</span></div>
-
-                </div>
-                <div className="measure lh-copy f4 black-80 mb4">{description}</div>
-              </div>
-              {image && <Img className={"w-100 mt3"} fluid={data[image].childImageSharp.fluid}></Img>}
+          {index !== LifeEvents.length - 1 ? (<div className="relative mr4 bl mt4 bw1 b--light-gray"></div>) : (<div className="relative mr4 bl bw1 b--white"></div>)
+          }
+          <div style={dotStyle} className="absolute br-pill center flex items-center justify-center">{icon}</div>
+          <div className="mb5 pb3">
+            <div className="flex items-center">
+              <div className="f3 fw5 black-80 ml4 fw5 tracked-tight">{title}</div>
+              <div className="ml2 fw5 f4 black-40">{year}</div>
             </div>
           </div>
         </div >
-      )
+      ) : (
+          <div key={title} className="flex">
+            {index !== LifeEvents.length - 1 ? (<div className="relative mr4 bl bw1 b--light-gray mt4 mb1"></div>) : (<div className="relative mr4 bl bw1 b--white"></div>)}
+            {index === 0 &&
+              <motion.div
+                style={{ marginLeft: "-.20rem", marginTop: ".50rem", width: ".5rem", height: ".5rem" }}
+                initial={{ scale: 1, opacity: 1 }}
+                animate={{ scale: 5, opacity: 0, transition: { duration: 3, loop: Infinity } }}
+                className="absolute br-pill center flex items-center justify-center bg-light-green ">
+              </motion.div>}
+            <div style={dotStyle} className="absolute br-pill"></div>
+            <div className={`pa4 pt0 w-70-l ${description && 'mb5'} `}>
+              <div className="flex flex-column">
+                <div className="flex flex-column">
+                  <div className="flex items-center mb4">
+                    <div className="f3 fw5 black-80 fw5 tracked-tight mr2">{title} <span className="fw5 f4 black-40">{year}</span></div>
+
+                  </div>
+                  <div className="measure lh-copy f4 black-40 mb4">{description}</div>
+                </div>
+                {image && <Img className={"w-100 mt3"} fluid={data[image].childImageSharp.fluid}></Img>}
+              </div>
+            </div>
+          </div >
+        )
   )
 }
 
 const About = ({ data }) => {
-  console.log(data)
+  const [isScrolled, setScrolled] = useState(false)
+  window.onscroll = () => {
+    setScrolled(window.pageYOffset > 500)
+  }
+  const backToTheFuture = () => {
+    return (
+      <AnimatePresence>
+        {isScrolled &&
+          <motion.div initial={{ y: 100 }} animate={{ y: 0 }} exit={{ y: 100 }} onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })} style={{ right: 200, bottom: 20 }} className="z-max shadow-2 pa3 br-pill bg-white fixed center black pointer">Back to the future ↥</motion.div>}
+      </AnimatePresence>
+    )
+  }
   return (
     <Layout>
       <SEO title="About me" />
-      <motion.div initial={initialFadeAnimation} animate={fadeInAnimation} transition={{ duration: 0.5 }}>
+      {backToTheFuture()}
+      <motion.div className="bb bw1" initial={initialFadeAnimation} animate={fadeInAnimation} transition={{ duration: 0.5 }}>
         <div className="w-100 mv6 center ">
           <div className="center" style={{ maxWidth: minWidth }}>
             <h1 className="fw5 black-80 tracked-tight f3 mb0">About me</h1>
-            <h1 className="fw5 black-40 tracked-tight mt0 f3">Scroll down, let's travel back in time. <span className="black">🕰</span></h1>
+            <h1 className="fw5 black-40 tracked-tight mt0 f3">Scroll down, let's travel back in time. <span className="black">⏱</span></h1>
           </div>
         </div>
         <div
@@ -102,6 +140,9 @@ export const squareImage = graphql`
 
 export const query = graphql`
   query {
+    TomerSharon: file(relativePath: { eq: "life/tomer-sharon.JPG" }) {
+      ...squareImage
+    }
     Ariely: file(relativePath: { eq: "life/ariely.jpg" }) {
       ...squareImage
     }
@@ -127,6 +168,21 @@ export const query = graphql`
       ...squareImage
     }
     Nossas: file(relativePath: { eq: "life/nossas.jpg" }) {
+      ...squareImage
+    }
+    Kano: file(relativePath: { eq: "life/kano-2.jpg" }) {
+      ...squareImage
+    }
+    CSM: file(relativePath: { eq: "life/csm.JPG" }) {
+      ...squareImage
+    }
+    FutureBrand: file(relativePath: { eq: "life/futurebrand.jpg" }) {
+      ...squareImage
+    }
+    Airbus: file(relativePath: { eq: "life/airbus.jpg" }) {
+      ...squareImage
+    }
+    FirstDesign: file(relativePath: { eq: "life/first-design.jpg" }) {
       ...squareImage
     }
   }
