@@ -1,4 +1,4 @@
-export const minWidth = "1000px"
+export const minWidth = "940px"
 export const topics = [
   "Product Design",
   "Research",
@@ -16,6 +16,6 @@ export const fadeInAnimation = {
   x: 0,
   opacity: 1,
 }
-export function capitalize(string) {
+export function capitalize (string) {
   return string.charAt(0).toUpperCase() + string.slice(1)
 }
