@@ -17,7 +17,6 @@ function PostLink({ post, index }) {
 		return <Tag key={item} title={item} />;
 	});
 	const [ isHovered, setHover ] = useState(false);
-
 	return (
 		<Link
 			onMouseEnter={() => setHover(!post.frontmatter.soon && true)}
@@ -46,12 +45,14 @@ function PostLink({ post, index }) {
 						/>
 					)}
 				</AnimatePresence>
-				<ImageWithBackground
-					cover={post.frontmatter.cover}
-					isHovered={isHovered}
-					image={post.frontmatter.cover_image}
-					color={post.frontmatter.color}
-				/>
+				{
+					<ImageWithBackground
+						cover={post.frontmatter.cover}
+						isHovered={isHovered}
+						image={post.frontmatter.cover_image}
+						color={post.frontmatter.color}
+					/>
+				}
 				{post.frontmatter.soon && (
 					<span
 						style={{ position: 'absolute', bottom: '.75rem', left: '.75rem' }}

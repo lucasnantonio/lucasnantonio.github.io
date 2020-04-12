@@ -15,7 +15,7 @@ topics:
   - Design Ops
 published: true
 cover_image: "../../images/petal/automated-research-11.png"
-color: "#f7f7f7"
+color: "#ffefeb"
 link: http://www.petalcard.com
 link_label: Petalcard.com
 ---

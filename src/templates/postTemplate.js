@@ -29,12 +29,14 @@ export default function Template({
 
   const getIconBackgroundColor = (color) => {
     const brightness = tinycolor(color).getLuminance();
+    console.log(brightness)
     return brightness <= 0.1 ? tinycolor(color).lighten(70) :
       brightness > 0.1 && brightness <= 0.4 ? tinycolor(color).lighten(30) :
         brightness > 0.4 && brightness <= 0.65 ? tinycolor(color).lighten(7) :
           brightness > 0.4 && brightness <= 0.65 ? tinycolor(color).lighten(15) :
-            brightness > 0.65 && brightness <= 0.9 ? tinycolor(color).lighten(19) :
-              tinycolor(color)
+            brightness > 0.65 && brightness <= 0.8 ? tinycolor(color).lighten(19) :
+              brightness > 0.8 && brightness <= 0.99 ? tinycolor(color).lighten(2) :
+                tinycolor(color)
   }
   const getIconColor = (color) => {
     const brightness = tinycolor(color).getLuminance();
@@ -171,7 +173,7 @@ export default function Template({
                 <h4 className="fw6 f4 mt3 mb0 flex center items-center">
                   {roundIcon(ic_problem)}
                   <span className="ml2">Problem</span> </h4>
-                <p className="lh-copy fw5 f4 black-40">{frontmatter.problem}</p>
+                <p className="lh-copy f4">{frontmatter.problem}</p>
               </div>
             )}
             {frontmatter.solution && (
@@ -179,7 +181,7 @@ export default function Template({
                 <h4 className="fw6 f4 mt3 mb0 flex center items-center">
                   {roundIcon(ic_solution)}
                   <span className="ml2">Approach</span></h4>
-                <p className="lh-copy fw5 f4 black-40">{frontmatter.solution}</p>
+                <p className="lh-copy f4">{frontmatter.solution}</p>
               </div>
             )}
           </div>
@@ -189,7 +191,7 @@ export default function Template({
                 <h4 className="fw6 f4 mt3 mb0 flex center items-center">
                   {roundIcon(ic_impact)}
                   <span className="ml2">Impact</span></h4>
-                <p className="lh-copy fw5 f4 black-40">{frontmatter.impact}</p>
+                <p className="lh-copy f4">{frontmatter.impact}</p>
               </div>
             )}
             {frontmatter.myrole && (
@@ -197,7 +199,7 @@ export default function Template({
                 <h4 className="fw6 f4 mt3 mb0 flex center items-center">
                   {roundIcon(ic_role)}
                   <span className="ml2">My role</span></h4>
-                <p className="lh-copy fw5 f4 black-40">{frontmatter.myrole}</p>
+                <p className="lh-copy f4">{frontmatter.myrole}</p>
               </div>
             )}
           </div>

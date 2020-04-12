@@ -3,9 +3,10 @@ path: "/blog/petal-insights"
 date: "2020-01-01"
 title: Insights
 subtitle: Helping customers control their spend
-problem: How can we collect feedback that is specific, measurable, and actionable?
-solution: Atomized, measurable feedback entry-points across the entire app.
-impact: Strong inflow of user-centered evidence that served as a base for product roadmapping.
+problem: How can we help new-to-credit customers understand and control their spend?
+solution: Hackaton project that became one of our main threads of work for the quarter.
+impact: Insights satisfaction score is 40% higher than other app sections.
+myrole: Product design & prototyping.
 category: Petal
 topics:
   - Product Design
@@ -13,58 +14,76 @@ published: true
 cover_image: "../../images/petal/petal-insights-13.png"
 color: "#FFE6E6"
 cover: true
-soon: true
+team:
+- Josh Kaplan
 ---
 
-Receiving suggestions, feature requests, complaints, and bug reports from users, like any other type of customer-focused evidence, is essencial fuel for high-performing technology teams.
+One of the biggest challenges of running a credit card business for new-to-credit customers is that this segment is extremely scared that they'll lose track of their spending. In order to mitigate these concerns, leadership challenged us with the following:
 
-Popular approaches to maintaining feedback channels, though, present interesting pitfalls that make the content hard to parse and act on.
+> __How might we help new-to-credit customers understand and control their spend so they're more comfortable and responsible using the Petal card?__
 
-The first problem is overloading the customer support team with product feedback and feature requests. At Petal, we work very closely with our Operations team to understand the input they get by interacting with users, but we like to think that their time and expertise is much better spent helping people in need than categorizing desired features.
+## Customer outcomes
+1. Understand if my spend is trending up or down compared to the past
+2. Understand where are my biggest opportunities to cut back
 
-The second problem is getting feedback that is too generic to be actionable. Here, NPS surveys and App Store reviews are king.
-While important for other purposes, they both suffer from the same gap: feedback here tends to be framed as "satisfaction with my experience in general", and thus less likely to be immediately insightful. Additionally, when submitting this type of review, customers are taken _away_ from the experience of the product, and having to lean on their memory to describe their troubles and suggestions.
+## Design questions
+1. Which visual representations are best suited for each outcome?
+2. How should we break down spend? By categories, by merchants, by place?
+3. How should we group spend across time? Daily, weekly, monthly?
+4. What is the hierarchy? What is more important?
+4. How simple or how deep should we let the data exploration be?
 
-Last, there's the problem of categorizing and quantifying. User-submitted messages that come via support, App Stores, or NPS are hard to group, parse, and measure. When reading feedback messages come in, it's easy to overreact to a sequence about a topic that is hot today, while ignoring another that has been coming consistently twice a day, for months.
+![Pie charts vs. Bar charts](../../images/petal/total-spend.png)
+![Pie charts vs. Bar charts](../../images/petal/category-spend.png)
 
-## Requirements
+## Releasing V1 as a way to learn
 
-Observing the pitfalls above, our requirements for our feedback tool were:
+Since this was a hackathon, in 2 days we were ready to ship a version that displayed total spend, categories and merchant spend, and recurring subscriptions. We were eager to put it out to some users and hear their feedback.
 
-1. Measurable. We want a number that tells us if feature A causes more dissatisfaction than feature B.
-2. Specific and actionable: We want the ability to learn about specific moments in the user's journey, specific pages in the app, and features we launch.
-3. Contextual: we want people to give feedback _in the moment_ they're interacting with something, not recalling it days or weeks after.
-4. Passive: we don't want feedback prompts to interrupt the action someone is trying to perform.
+<div style="background: #BCEDFF" class="w-100 pa4 tc">
+  <video class="w-100 mw5 br2" autoplay loop>
+  <source src="../../images/petal/insights-1.mp4" type="video/mp4">
+  </video>
+</div>
+<div style="background: #BCEDFF" class="w-100 pa4 tc mt5">
+  <video class="w-100 mw5 br2" autoplay loop>
+  <source src="../../images/petal/petal-feedback-flow.mp4" type="video/mp4">
+  </video>
+</div>
 
-So here's what we've built: a reusable feedback module that we can add to any page or flow in our app. By clicking it, users are able to provide immediate feedback about what they're trying to do and how they think we could improve it.
+## Learnings from user feedback
 
-First, users are prompted to submit a 5-scale score, followed by a text field to explain why.
+Using our [contextual feedback widget](/blog/petal-feedback), we quickly learned that [1] customers loved the new page and [2] they were eager to see more and have more controls. A few highlights:
 
-## Results
+1. Customers would like to click on a category and see the purchases contained in it.
 
-First of all, we can now look objectively at how our pages and features are being evaluated by our users, and prioritize which ones need more work:
+2. Customers would like to change the category associated with a purchase.
 
-(Image)
+3. Customers would like to change the date ranges for their dashboard. 
 
-We're then able to dig deeper in each one, read the text messages, and better understand what is causing the issues.
+Here's an example of how we'd allow for a deep dive in a merchant or category:
 
-Second, users are now much more likely to provide real, actionable suggestions.
+<div 
+style="background: #bdf5e8" 
+class=" w-100 pa4 tc mt5">
+  <video class="w-100 mw5 br2" autoplay loop>
+  <source src="../../images/petal/insights-2.mp4" type="video/mp4">
+  </video>
+</div>
 
-We went from seeing generic things like this:
+Which gives a chance to customize the theme based on the merchant's logo dominant color:
 
-"Zero stars. This app completely sucks."
+![](../../images/petal/insights-colors-4.png)
 
-To seeing this many more of these:
+And here's a proposal for date range editing:
 
-"Hi Petal, blind user here. Sliding the control to confirm this payment is very challenging to me using Voice Over".
+<div 
+style="background: #BCEDFF" 
+class=" w-100 pa4 tc mt5">
+  <video class="w-100 mw5 br2" autoplay loop>
+  <source src="../../images/petal/insights-4.mp4" type="video/mp4">
+  </video>
+</div>
 
-Or:
+This is just the beggining of Insights at Petal. Keep sending us your feedback :) 
 
-"I love AutoPay, but I wish I could choose the date it is scheduled in instead of the 26th of every month".
-
-Third, by deflecting these hundreds of messages from our customer support main inbox, we've helped them sort the signal from noise and better focus on servicing customers in real need.
-
-But here's the really, really special thing. We're investing heavily in listening with curiosity, every time we open the feedback inbox, we can feel our user appreciate being heard. Among the many messages that suggest improvements or point out gaps in our product, we also get an overwhelming amount of thankfulness
-for what how much we've evolved so far. \
-\
-We're in this business to build products not only _for_ customers, but _together with_ our customers, and showing vulnerability and openness to feedback is fundamental to creating a long-lasting relationship of mutual trust and accountability to improve the quality of the things we put out in our member's world.
