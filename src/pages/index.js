@@ -1,39 +1,24 @@
-import React, { useState, useEffect, isValidElement } from "react"
-import Layout from "../components/layout"
-import PostList from "../components/postList"
-import { CSSTransition } from "react-transition-group"
-import HomeSection from "../components/home-section"
-import SEO from "../components/seo"
-import Hello from "../components/hello"
-import Filters from "../components/filters"
-import Writing from "../components/writing"
-import { StaticQuery } from "gatsby"
-import { minWidth, topics, sizes } from "../components/utils"
-import { motion, AnimatePresence } from "framer-motion"
-import { initialFadeAnimation, fadeInAnimation } from "../components/utils"
-import { ic_petal_logo, ic_nu_logo, ic_others } from "../components/icons.js"
-import Img from "gatsby-image/withIEPolyfill"
+import React, { useState } from 'react'
+import Layout from '../components/layout'
+import PostList from '../components/postList'
+import HomeSection from '../components/home-section'
+import SEO from '../components/seo'
+import Hello from '../components/hello'
+import Filters from '../components/filters'
+import { minWidth, topics } from '../components/utils'
+import { motion, AnimatePresence } from 'framer-motion'
 
-function IndexPage({
+import { ic_petal_logo, ic_nu_logo, ic_others } from '../components/icons.js'
+
+function IndexPage ({
   data: {
     allMarkdownRemark: { edges: posts },
-    allImageSharp: { nodes: images },
-  },
+    allImageSharp: { nodes: images }
+  }
 }) {
-  const [isWorkInView, setWorkInView] = useState(false)
   const [isAll, setAll] = useState(true)
   const [selectedTopics, setSelectedTopics] = useState(topics)
 
-  const checkIfWorkIsInView = () => {
-    window.onscroll = () => {
-      document.getElementById("work") !== null &&
-        setWorkInView(
-          document.getElementById("work").getBoundingClientRect().top <= 0
-        )
-    }
-  }
-  // const nucontaImage = images.filter((item)=> item.fluid.originalName="nuconta-hero.png")
-  const nucontaImage = images.filter((item) => item.fluid.originalName === "nuconta-hero-copy.png")[0].fluid
   const publishedPosts = posts.filter(
     item => item.node.frontmatter.soon === null
   )
@@ -60,7 +45,7 @@ function IndexPage({
     >
       <SEO title="Home" />
       <div
-      // style={{background:"#f9f7f6"}} 
+      // style={{background:"#f9f7f6"}}
       // className="w-100 pb4 mb5 flex"
       >
         <div className="w-100 flex center  " style={{ maxWidth: minWidth }}>
@@ -91,16 +76,16 @@ function IndexPage({
           </h1> */}
           <AnimatePresence>
             <motion.p
-              transition={{ duration: .25 }}
+              transition={{ duration: 0.25 }}
               initial={{ y: 30, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
-              exit={{ y: -30, opacity: 0, height: 0, overflow: "hidden", position: "absolute" }} key={selectedTopics[0]} className="f3 fw5 w-100 lh-copy black-40 tracked-tight measure">
-              {selectedTopics[0] === "Research"
+              exit={{ y: -30, opacity: 0, height: 0, overflow: 'hidden', position: 'absolute' }} key={selectedTopics[0]} className="f3 fw5 w-100 lh-copy black-40 tracked-tight measure">
+              {selectedTopics[0] === 'Research'
                 ? "A lot of my time is invested in listening to users, advocating for their needs, collaborating with researchers, and creating the necessary workflows so that the team understands who they're designing for."
-                : selectedTopics[0] === "Product Design"
-                  ? "Understand the user, frame the problem, ideate, prototype, test, deliver, measure, repeat. I have designed products that have reached millions of people, across the disciplines of service, industrial, and digital design."
-                  : selectedTopics[0] === "Design Ops"
-                    ? "Designing design. Helping things scale at a healthy pace. Keeping the teams I work with happy, engaged and empowered."
+                : selectedTopics[0] === 'Product Design'
+                  ? 'Understand the user, frame the problem, ideate, prototype, test, deliver, measure, repeat. I have designed products that have reached millions of people, across the disciplines of service, industrial, and digital design.'
+                  : selectedTopics[0] === 'Design Ops'
+                    ? 'Designing design. Helping things scale at a healthy pace. Keeping the teams I work with happy, engaged and empowered.'
                     : "I'm a coding begginer and enthusiast. This portfolio website is in itself an experiment in learning React. Here are some other things I've played with:"}
             </motion.p>
           </AnimatePresence>
@@ -110,10 +95,10 @@ function IndexPage({
       <div id="work">
         <AnimatePresence>
           {isAll ? (
-            <motion.div transition={{ duration: .25 }}
+            <motion.div transition={{ duration: 0.25 }}
               initial={{ x: -20, opacity: 0 }}
               animate={{ x: 0, y: 0, opacity: 1 }}
-              exit={{ y: -30, opacity: 0, height: 0, overflow: "hidden", position: "absolute" }} style={{ maxWidth: minWidth }} className="center  ">
+              exit={{ y: -30, opacity: 0, height: 0, overflow: 'hidden', position: 'absolute' }} style={{ maxWidth: minWidth }} className="center  ">
               <HomeSection
                 isAll={isAll}
                 posts={getFilteredPosts()}
@@ -143,11 +128,7 @@ function IndexPage({
               />
             </motion.div>
 
-          ) : (
-              <div className="center  " style={{ maxWidth: minWidth }}>
-                <PostList posts={getFilteredPosts()} />
-              </div>
-            )}
+          ) : (<div className="center  " style={{ maxWidth: minWidth }}>               <PostList posts={getFilteredPosts()} />             </div>)}
         </AnimatePresence>
         {/* <Writing /> */}
       </div>
