@@ -98,6 +98,6 @@ One key component of the speed and quality of our workflow in this project was t
 
 Producing a well-crafted individual screen is satisfying, but we can never forget that every touchpoint is part of a broader ecosystem. Below is an example of how we kept track of every App screen, push notification, email, website page, and social media posts that first-time users would encounter.
 
-## Nuconta becomes the most downloaded banking app in the world.
+>  __Nuconta makes Nubank the [most downloaded banking app in the world](https://qz.com/1738245/nubanks-app-has-more-downloads-than-revolut-monzo-and-n26-combined/).__ — Quartz
 
 In an October report, Quartz noted that Nubank’s app has been downloaded 18 million times in the past year, more than Revolut, Monzo, and N26 combined. Nubank's monthly active users have risen 200% during that period, second only to Monzo.
