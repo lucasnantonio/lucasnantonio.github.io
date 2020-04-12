@@ -1,21 +1,53 @@
 ---
 path: "/blog/aposentar.me"
 date: "2016-04-08"
-title: Retirement calculator
-subtitle: An open-source and approachable way to plan your savings
+title: Open source retirement calculator
+subtitle: Personal project to learn React
 category: Others
 topics:
   - design
   - Code
 published: true
-soon: true
+soon: false
 cover_image: "../../images/aposentarme/aposentarme-2.png"
-problem: How to stay focused at work?
-solution: A device to help you find work-life balance.
-impact: Work published in Wired, FastCompany.
+problem: How might we help people understand what affects their retirement plans?
+solution: We were learning to code as we went, so didn't follow a strict design process
+myrole: Product Design & Code (React)
 color: "#b2e5fe"
 cover: false
+link_label: See live
+team: 
+- Guilherme Stoll
 link: "http://www.aposentar.me"
 ---
+<div class="bg-lightest-blue flex w-100 h-100">
+  <iframe id="d0e763cb-faed-49a2-9e5e-8ed9524593ce" src="https://www.vectary.com/viewer/v1/?model=d0e763cb-faed-49a2-9e5e-8ed9524593ce&env=theskyisonfire" frameborder="0" width="100%" height="480"></iframe>
+</div>
+<figcaption>In addition to learning React, I had a lot of fun playing with 3D to create our mascot</figcaption>
 
-Bossy was the result of my thesis project at Central Saint Martins in London.
+My buddy Guilherme and I were looking around for retirement simulators, and what we found online in Brazil was pretty bad. Calculators out there use too much jargon, or are simply financial tables that are not thought from the point of view of a person who is new to investing. So se wet out to design our own:
+
+> __How might we empower newbie investors to understand and play with the variables that impact their future, so they can adjust their plans and have a successful financial journey?__
+
+## Requirements
+1. Aimed at people who are new to investing, not experts.
+2. Ask questions in simple, human terms. No jargon.
+3. Give contextual help about people's situation.
+4. Be approachable, self-conscious and optimistic.
+5. Help us learn React and have fun.
+
+
+
+
+![We made the form as simple as possible](../../images/aposentarme/aposentarme-8.png)
+
+<figure>
+<div class="w-100 flex tc mt5">
+<img class="w-100 "src="../../images/aposentarme/aposentarme-7.gif">
+</figure>
+<figcaption>Embedded the form with personalized educational content</figcaption>
+</div>
+
+![The result page is easy to digest and share](../../images/aposentarme/aposentarme-6.png)
+
+Go see the project [live now](http://aposentar.me), or become a contributor on [Github](https://github.com/lucasnantonio/ff)
