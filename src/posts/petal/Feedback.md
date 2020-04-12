@@ -1,6 +1,6 @@
 ---
 path: "/blog/petal-feedback"
-date: "2020-01-15"
+date: "2020-02-15"
 title: Collecting in-app feedback
 subtitle: Measuring user satisfaction in an actionable way
 problem: How can we collect feedback that is specific, measurable, and actionable?

@@ -100,4 +100,6 @@ Producing a well-crafted individual screen is satisfying, but we can never forge
 
 >  __Nuconta makes Nubank the [most downloaded banking app in the world](https://qz.com/1738245/nubanks-app-has-more-downloads-than-revolut-monzo-and-n26-combined/).__ — Quartz
 
+![Nubank tops the downloads of all others challenger banks combined. ](../../images/nubank/nuconta-downloads.png)
+
 In an October report, Quartz noted that Nubank’s app has been downloaded 18 million times in the past year, more than Revolut, Monzo, and N26 combined. Nubank's monthly active users have risen 200% during that period, second only to Monzo.

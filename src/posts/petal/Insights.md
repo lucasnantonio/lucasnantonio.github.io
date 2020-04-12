@@ -1,6 +1,6 @@
 ---
 path: "/blog/petal-insights"
-date: "2020-01-01"
+date: "2020-03-01"
 title: Insights
 subtitle: Helping customers control their spend
 problem: How can we help new-to-credit customers understand and control their spend?

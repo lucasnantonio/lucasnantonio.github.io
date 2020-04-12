@@ -102,20 +102,20 @@ function IndexPage ({
               <HomeSection
                 isAll={isAll}
                 posts={getFilteredPosts()}
-                icon={ic_petal_logo}
-                title="Petal"
-                date="2019"
-                place="New York"
-                description="On a mission to build credit that is honest, simple, and accessible."
-              />
-              <HomeSection
-                isAll={isAll}
-                posts={getFilteredPosts()}
                 icon={ic_nu_logo}
                 title="Nubank"
                 date="2016—2019"
                 place="São Paulo"
                 description="During 3 years, I helped Nubank grow from 1 to 10 million customers, 1 to 3 products, and 6 to 35 designers."
+              />
+              <HomeSection
+                isAll={isAll}
+                posts={getFilteredPosts()}
+                icon={ic_petal_logo}
+                title="Petal"
+                date="2019"
+                place="New York"
+                description="On a mission to build credit that is honest, simple, and accessible."
               />
               <HomeSection
                 isAll={isAll}

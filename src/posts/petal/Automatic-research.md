@@ -1,6 +1,6 @@
 ---
 path: "/blog/automatic-research-recruiting"
-date: "2020-02-15"
+date: "2020-02-13"
 title: Automated User Research Recruiting
 subtitle: Talking to users every week
 problem: Recruiting users for research is time-consuming
