@@ -7,7 +7,7 @@ category: Others
 topics:
   - design
   - Code
-published: true
+published: false
 soon: true
 cover_image: "../../images/feito-3.png"
 problem: How to stay focused at work?
