@@ -33,8 +33,9 @@ One of the biggest challenges of running a credit card business for new-to-credi
 4. What is the hierarchy? What is more important?
 4. How simple or how deep should we let the data exploration be?
 
-![Pie charts vs. Bar charts](../../images/petal/total-spend.png)
-![Pie charts vs. Bar charts](../../images/petal/category-spend.png)
+![](../../images/petal/total-spend.png)
+![](../../images/petal/category-spend.png)
+![](../../images/petal/insights-nav.png)
 
 ## Releasing V1 as a way to learn
 
