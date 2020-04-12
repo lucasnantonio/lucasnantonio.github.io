@@ -1,4 +1,6 @@
 {
     "eslint.provideLintTask": true,
-    "editor.formatOnSave": true
+    "javascript.format.insertSpaceBeforeFunctionParenthesis": true,
+    "editor.formatOnSave": true,
+    "files.associations": {}
 }
