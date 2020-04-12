@@ -2,12 +2,12 @@
 path: "/blog/nubank/nuconta"
 date: "2017-09-04"
 title: Nubank Savings
-subtitle: Designing the largest digital banking app in the world
+subtitle: Designing the most used challenger banking app in the world
 category: "Nubank"
 problem: Brazilians are stuck with terrible banking account options.
 solution: A free, integrated, hybrid checking and savings account.
 impact: 10+ Million customers in the 1st year of launch.
-myrole: Co-led the 0-to-1 yearlong design process.
+myrole: Lead designer for the Savings Design Team
 topics:
   - Product Design
   - Research

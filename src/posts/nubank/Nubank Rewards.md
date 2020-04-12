@@ -2,7 +2,7 @@
 path: "/blog/nubank/nubank-rewards"
 date: "2016-12-01"
 title: Nubank Rewards
-subtitle: De-risking a high-stakes product launch through testing
+subtitle: De-risking Nubank's 2nd product launch through user research
 category: "Nubank"
 problem: A paid loyalty program was highly anticipated and high-risk for the company's future.
 solution: Nubank's first user testing program, designed to understand expectations and de-risk launch.
