@@ -85,5 +85,5 @@ class=" w-100 pa4 tc mt5">
   </video>
 </div>
 
-This is just the beggining of Insights at Petal. Keep sending us your feedback :) 
+This is just the beginning of Insights at Petal. Keep sending us your feedback :) 
 

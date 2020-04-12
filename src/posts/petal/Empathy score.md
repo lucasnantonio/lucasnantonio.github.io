@@ -10,7 +10,7 @@ category: Petal
 topics:
   - Design Ops
   - Research
-published: true
+published: false
 cover_image: "../../images/petal/user-empathy-3.png"
 color: "#8DE1FD"
 soon: true

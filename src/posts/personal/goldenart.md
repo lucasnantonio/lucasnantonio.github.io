@@ -41,7 +41,7 @@ One of the customer's biggest problems was picking a color finish from the catal
 
 ## Problems with the old version
 
-The client and I walked through the old website together and listed main issues that needed a fix. Visually, they felt like the website was too dark, and that functionally it was clunky, had many bugs, and was hard to maintain and update. The product pages opened in a lightbox, which made it difficult for users to save and share specific pages. Also, the website was not responsive, which increased a high mobile bounce rate.
+The client and I walked through the old website together and listed the main issues that needed a fix. Visually, they felt like the website was too dark, and that functionally it was clunky, had many bugs, and was hard to maintain and update. The product pages opened in a lightbox, which made it difficult for users to save and share specific pages. Also, the website was not responsive, which increased a high mobile bounce rate.
 
 ![The old website](../../images/golden-art/golden-art-old.png)
 
@@ -66,6 +66,6 @@ It is a very friendly platform, and it became the internal source of truth for a
 
 ## Results
 
-The new website has a much more coherent structure, with products divided by line and type. This makes it easier for a user, such as an architect, to find the kind of product they're looking for. It's easier for the client to add and change details about each product, attach technical drawings and 3D files, and now each product has dedicated shareable page.
+The new website has a much more coherent structure, with products divided by line and type. This makes it easier for a user, such as an architect, to find the kind of product they're looking for. It's easier for the client to add and change details about each product, attach technical drawings and 3D files, and now each product has a dedicated shareable page.
 
 To me, this was a challenging and fulfilling side project that quickly elevated my knowledge of web design and development. After working long hours to ship the website and after the multiple times I accidentally took it down, I'm now much more comfortable having technical discussions with folks in the product teams at work.
