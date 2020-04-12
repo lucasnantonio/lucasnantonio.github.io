@@ -6,20 +6,20 @@ import { initialFadeAnimation, fadeInAnimation } from '../components/utils';
 import { minWidth } from './utils';
 import { Link } from 'gatsby';
 
-function capitalizeFirstLetter(string) {
+function capitalizeFirstLetter (string) {
 	return string.charAt(0).toUpperCase() + string.slice(1);
 }
 
 const Hello = ({ setSelectedTopics, setAll }) => {
-	const [ visitor, setVisitor ] = useState(null);
-	function getVisitor() {
+	const [visitor, setVisitor] = useState(null);
+	function getVisitor () {
 		setVisitor(window.location.search.split('?')[1]);
 	}
 	useEffect(() => getVisitor());
 
-	function setTopic(item) {
+	function setTopic (item) {
 		setAll(false);
-		setSelectedTopics([ item ]);
+		setSelectedTopics([item]);
 	}
 
 	return (
@@ -31,13 +31,13 @@ const Hello = ({ setSelectedTopics, setAll }) => {
 							{visitor && `Hi there, ${capitalizeFirstLetter(atob(visitor))}!`}
 						</h1>
 					) : (
-						<h1 className="f3 neue-regular black lh-title mb0 fw5">Lucas Neumann</h1>
-					)}
-					<p className="f3 black-40 lh-copy mt0 fw5 measure-narrow">
+							<h1 className="f3 neue-regular black lh-title mb0 fw5">Lucas Neumann</h1>
+						)}
+					<p className="f3 black-40 lh-copy mt0 fw5 measure">
 						<br />
 						{`I help companies research, design, deliver and scale empowering experiences. `}
 						<a
-							className="link black-40 underline-hover hover-black"
+							className="link black-40 hover-black"
 							href="http://www.nubank.com.br/en"
 							target="blank"
 							style={{ cursor: 'ne-resize' }}
@@ -46,7 +46,7 @@ const Hello = ({ setSelectedTopics, setAll }) => {
 						</a>{' '}
 						alumnus, now design lead at{' '}
 						<a
-							className="link black-40 underline-hover hover-black"
+							className="link black-40 hover-black"
 							href="http://www.petalcard.com"
 							target="blank"
 							style={{ cursor: 'ne-resize' }}
@@ -54,8 +54,8 @@ const Hello = ({ setSelectedTopics, setAll }) => {
 							Petal
 						</a>
 						{`. `}
-						<Link to="/about" className="nowrap black-40 link black-40 hover-black-80">
-							More about me +
+						<Link style={{ borderBottomWidth: "3px" }} to="/about" className="black-40 link black-40 hover-black-80 bb b--black-10">
+							Read more
 						</Link>
 					</p>
 				</motion.div>
