@@ -72,7 +72,7 @@ const LifeEvent = (data, { title, year, description, image, isMilestone, icon, i
                 className="absolute br-pill center flex items-center justify-center bg-light-green ">
               </motion.div>}
             <div style={dotStyle} className="absolute br-pill"></div>
-            <div className={`pa4 pt0 w-70-l ${description && 'mb5'} `}>
+            <div className={`pa4 pt0 w-70-l ${description && image && 'mb5'} `}>
               <div className="flex flex-column">
                 <div className="flex flex-column">
                   <div className="flex items-center mb4">

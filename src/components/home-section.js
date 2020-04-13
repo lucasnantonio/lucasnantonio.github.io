@@ -23,9 +23,9 @@ const HomeSection = ({ title, date, description, posts, isAll, icon }) => {
               >
                 {title}
               </h2>
-              <h3 className="f3 fw5 tracked-tight mt3 black-40 measure-narrow">{`${
+              <h3 className="f3 fw5 tracked-tight mt3 black-40 measure">{`${
                 title === "Nubank" ?
-                  "Designing the largest neobank in the world." :
+                  "Designing the world's most downloaded neobank app." :
                   title === "Petal" ?
                     "The future of honest, accessible credit."
                     :

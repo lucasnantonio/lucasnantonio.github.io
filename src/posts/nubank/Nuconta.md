@@ -2,7 +2,7 @@
 path: "/blog/nubank/nuconta"
 date: "2017-09-04"
 title: Nubank Savings
-subtitle: Designing the most used challenger banking app in the world
+subtitle: An account to fight complexity and empower 20M+ people.
 category: "Nubank"
 problem: Brazilians are stuck with terrible banking account options.
 solution: A free, integrated, hybrid checking and savings account.
