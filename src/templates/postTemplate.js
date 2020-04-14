@@ -14,7 +14,7 @@ import {
   ic_role,
 } from "../components/icons.js"
 
-export default function Template({
+export default function Template ({
   data, // this prop will be injected by the GraphQL query below.
   pageContext,
 }) {
@@ -118,7 +118,7 @@ export default function Template({
     >
       {prev && (
         <div className={`f5  mr0  w-100  mb0-l mb4 ${next && "br-l bw1 b--near-white mr4-l pr4-l"}`}>
-          <div className="bg-near-white br3 mb4 flex center justify-center w-100">
+          <div className="bg-near-white br3 mb4 tc center justify-center w-100">
             <img className="mw5" src={prev.frontmatter.cover_image.publicURL}></img>
           </div>
           <div className=" lh-title f5 mr4 mb3">Previous</div>
@@ -134,7 +134,7 @@ export default function Template({
       {next && next.frontmatter && (
         <div className="w-100">
 
-          <div className="bg-near-white br3 mb4 flex center justify-center">
+          <div className="bg-near-white br3 tc mb4 center justify-center">
             <img className="mw5" src={next.frontmatter.cover_image.publicURL} />
           </div>
           <div className=" lh-title f5 mb3">Next</div>

@@ -30,8 +30,8 @@ team:
 
 NuConta is an unprecedented mix of current, savings, and payments accounts, all-in-one. Thanks to a one-year-long co-creative process, our team was able to design and ship a product that uniquely addresses customer needs.
 
-<div style="background: #BB6BD9" class="w-100 pa4 tc mt5 flex">
-<img class="w-50 flex br2 mw5 center " src="../../images/nubank/nuconta-001.gif" />
+<div style="background: #BB6BD9" class="w-100 pa4 tc mt5">
+<img class="w-50 br2 mw5 center " src="../../images/nubank/nuconta-001.gif" />
 </div>
 
 ![](../../images/nubank/nuconta-003.png)
