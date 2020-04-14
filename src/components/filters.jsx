@@ -9,7 +9,7 @@ import { motion } from 'framer-motion'
 
 function Filters ({ selectedTopics, setSelectedTopics, isAll, setAll, publishedPosts }) {
 	return (
-		<motion.div className="w-100-l w-50 flex flex-row-l flex-column items-start mb6 lh-copy f3">
+		<motion.div initial={{ opacity: 0, marginLeft: -20 }} animate={{ opacity: 1, marginLeft: 0 }} className="w-100-l w-50 flex flex-row-l flex-column items-start mb6 lh-copy f3">
 			<div className="mr3">
 				<AllFilter
 					selectedTopics={selectedTopics}
