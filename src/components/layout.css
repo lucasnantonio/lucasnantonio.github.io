@@ -93,6 +93,25 @@ div + p {
 	font-weight: 600;
 }
 
+.post-content table {
+	width:100%;
+	text-align: left;
+	font-size: 1.3em;
+	border-collapse: collapse;
+	vertical-align: text-top;
+}
+.post-content table th{
+	/* border-bottom: 2px solid #181818; */
+	padding-bottom: 1rem;
+	vertical-align: top;
+}
+
+.post-content table td{
+	width: 50%;
+	padding-top: 1rem;
+	vertical-align: top;
+}
+
 .post-content blockquote {
 	padding: 2.5rem;
 	margin: 4rem auto;
