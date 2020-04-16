@@ -120,10 +120,35 @@ const About = ({ data }) => {
       <SEO title="About me" />
       {backToTheFuture()}
       <motion.div initial={initialFadeAnimation} animate={fadeInAnimation} transition={{ duration: 0.5 }}>
-        <div className="w-100 mv6 center ">
-          <div className="center" style={{ maxWidth: minWidth }}>
-            <h1 className="fw5 black-80 tracked-tight f3 mb0">About me</h1>
-            <h1 className="fw5 black-40 tracked-tight mt0 f3">Scroll down, let's travel back in time. <span className="black">⏱</span></h1>
+        <div className="w-100 mt6 mb5 center ">
+          <div className="center flex justify-between" style={{ maxWidth: minWidth }}>
+            <div>
+              <h1 className="fw5 black-80 tracked-tight f3 mb0">About me</h1>
+              <h1 className="fw5 black-40 tracked-tight mt0 f3">Scroll down, let's travel back in time. <span className="black">⏱</span></h1>
+            </div>
+            <div className="flex-l dn flex-column lh-copy f5">
+              <h4 className="mb1 fw5">Contact</h4>
+              <a
+                className="link black-40 hover-black-80 underline-hover mr3"
+                href="mailto:lucasneumann.fau@gmail.com"
+              >
+                Email me
+        </a>
+              <a
+                target="_blank"
+                className="link black-40 hover-black-80 underline-hover mr3"
+                href="https://www.linkedin.com/in/lucasneumann/"
+              >
+                LinkedIn
+        </a>
+              <a
+                target="_blank"
+                className="link black-40 hover-black-80 underline-hover mr3"
+                href="https://twitter.com/@lucasnantonio"
+              >
+                Twitter
+        </a>
+            </div>
           </div>
         </div>
         <div
