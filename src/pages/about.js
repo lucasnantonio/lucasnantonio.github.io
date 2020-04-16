@@ -126,7 +126,7 @@ const About = ({ data }) => {
               <h1 className="fw5 black-80 tracked-tight f3 mb0">About me</h1>
               <h1 className="fw5 black-40 tracked-tight mt0 f3">Scroll down, let's travel back in time. <span className="black">⏱</span></h1>
             </div>
-            <div className="flex-l dn flex-column lh-copy f5">
+            <div className="flex-l dn flex-column lh-copy f">
               <h4 className="mb1 fw5">Contact</h4>
               <a
                 className="link black-40 hover-black-80 underline-hover mr3"
