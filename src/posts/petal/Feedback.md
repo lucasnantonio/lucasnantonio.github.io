@@ -57,8 +57,8 @@ So here's what we've built: a reusable feedback module that we can add to any pa
   </video>
 </div>
 
-![](../../images/petal/feedback-widgets.png)
-![We produced two versions of the CTA. A larger widget to be placed in main pages, and a smaller one to be placed in modals](../../images/petal/feedback-widgets-2.png)
+![](../../images/petal/feedback-widgets-3.png)
+![We produced two versions of the CTA. A larger widget to be placed in main pages, and a smaller one to be placed in modals](../../images/petal/feedback-widgets-4.png)
 
 
 ## Results
@@ -69,7 +69,7 @@ First of all, we can now look objectively at how our pages and features are bein
 
 Also, because the call to action is more contextual than an after-the-fact survey, individual messages become much, much more specific and actionable:
 
-![Refreshingly useful feedback](../../images/petal/feedback-contextual.png)
+![Refreshingly useful feedback](../../images/petal/feedback-contextual-3.png)
 
 By looking at and communicating the impact of design objectively, it becomes easier to earn a "seat at the table", since these measurements can bubble up to company objectives.
 

@@ -1,5 +1,4 @@
-import React, { useState, setState, useEffect } from "react"
-import { Link } from "gatsby"
+import React, { useState, useEffect } from "react"
 import Img from "gatsby-image/withIEPolyfill"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
