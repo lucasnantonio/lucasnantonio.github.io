@@ -9,18 +9,20 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        // The property ID; the tracking code won't be generated without it
+        trackingId: "UA-72558910-1",
+        head: true,
+        anonymize: true,
+      },
+    },
+    {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
-          {
-            resolve: `gatsby-plugin-google-analytics`,
-            options: {
-              // The property ID; the tracking code won't be generated without it
-              trackingId: "UA-72558910-1",
-              head: true,
-              anonymize: true,
-            },
-          },
+          `gatsby-remark-copy-linked-files`,
+
           `gatsby-remark-unwrap-images`,
           {
             resolve: `gatsby-remark-images`,
@@ -31,7 +33,6 @@ module.exports = {
               // pathPrefix: "/blog",
             },
           },
-          `gatsby-remark-copy-linked-files`,
           `gatsby-remark-smartypants`,
         ],
       },
