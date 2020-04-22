@@ -14,11 +14,12 @@ const LifeEvent = (data, { title, year, description, image, isMilestone, icon, i
   const [reallyHidden, setReallyHidden] = useState(true)
 
   const dotStyle = !isMilestone ? {
-    marginLeft: "-.20rem",
-    marginTop: ".55rem",
+    marginLeft: "-.35rem",
+    marginTop: ".35rem",
     backgroundColor: index === 0 ? "#2cd477" : "#222",
-    height: ".5rem",
-    width: ".5rem",
+    height: ".8rem",
+    width: ".8rem",
+    border: "2px solid white",
   } : {
       // marginLeft: "-1.5rem",
       // marginTop: "-.6rem",
