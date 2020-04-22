@@ -53,7 +53,7 @@ So here's what we've built: a reusable feedback module that we can add to any pa
 
 <div style="background: #8DE1FD" class="w-100 pa4 tc mt5">
   <video class="w-100 mw5 br2" autoplay loop>
-  <source src="../../images/petal/petal-feedback-flow.mp4" type="video/mp4">
+  <source src="../../images/petal/feedback-flow-3.mp4" type="video/mp4">
   </video>
 </div>
 
