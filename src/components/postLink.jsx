@@ -8,27 +8,27 @@ import { backgroundGray } from './utils';
 import tinycolor from 'tinycolor2';
 import { motion, AnimatePresence } from 'framer-motion';
 
-function isEven(n) {
+function isEven (n) {
 	n = Number(n);
 	return n === 0 || !!(n && !(n % 2));
 }
-function PostLink({ post, index }) {
+function PostLink ({ post, index }) {
 	const topicTags = post.frontmatter.topics.map((item) => {
 		return <Tag key={item} title={item} />;
 	});
-	const [ isHovered, setHover ] = useState(false);
+	const [isHovered, setHover] = useState(false);
 	return (
 		<Link
 			onMouseEnter={() => setHover(!post.frontmatter.soon && true)}
 			onMouseLeave={() => setHover(false)}
 			style={{ pointerEvents: post.frontmatter.soon && 'none' }}
 			className={`
-      ${post.frontmatter.size !== 'large' ? 'w-100' : 'w-100'}
-        link black fl flex flex-column  pb1
+      ${index === 0 ? 'flex-column' : 'flex-row'}
+        link black fl flex pb1 w-100
         `}
 			to={!post.frontmatter.soon ? post.frontmatter.path : null}
 		>
-			<div className="overflow-hidden relative">
+			<div className={`overflow-hidden relative ${index === 0 ? 'w-100' : 'w4'}`}>
 				<AnimatePresence>
 					{isHovered && (
 						<motion.div
@@ -47,6 +47,7 @@ function PostLink({ post, index }) {
 				</AnimatePresence>
 				{
 					<ImageWithBackground
+						index={index}
 						cover={post.frontmatter.cover}
 						isHovered={isHovered}
 						image={post.frontmatter.cover_image}

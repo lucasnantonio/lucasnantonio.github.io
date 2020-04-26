@@ -3,10 +3,11 @@ import React, { useState } from 'react';
 import Img from 'gatsby-image/withIEPolyfill';
 import { backgroundGray } from './utils';
 
-function ImageWithBackground({ image, color }) {
+function ImageWithBackground ({ image, color, index }) {
 	return (
 		<div
 			style={{
+				borderRadius: "4px",
 				backgroundColor: color
 				// backgroundColor: "skyblue",
 				// padding: "2rem",
@@ -14,15 +15,15 @@ function ImageWithBackground({ image, color }) {
 		>
 			{image.childImageSharp != undefined ? (
 				<Img
-					className="h-auto-l ph5-l"
+					className={`h-auto-l ${index === 0 && 'ph5-l'}`}
 					style={{ maxHeight: '32rem' }}
 					backgroundColor="#f0f0f0"
 					fluid={image.childImageSharp != undefined ? image.childImageSharp.fluid : image}
 					objectFit="contain"
 				/>
 			) : (
-				<img className="h-auto-l ph5-l" style={{ maxHeight: '32rem' }} src={image.publicURL} />
-			)}
+					<img className="h-auto-l ph5-l" style={{ maxHeight: '32rem' }} src={image.publicURL} />
+				)}
 		</div>
 	);
 }

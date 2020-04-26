@@ -13,9 +13,9 @@ const HomeSection = ({ title, date, description, posts, isAll, icon }) => {
     sectionPosts.length > 0 && (
       <div className={"w-100 flex flex-row mb3 pt4-ns"}>
         <div className="flex flex-column w-100">
-          {isAll && (
+          {/* {isAll && (
             <div className="flex flex-column mb5">
-              {/* <div className="pa3 br-pill b--near-white ba mr3 flex bw1">{icon}</div> */}
+              <div className="pa3 br-pill b--near-white ba mr3 flex bw1">{icon}</div>
               <h2
                 className={
                   "w-10 mr4 lh-solid f3 mv0 pv0 sans neue-regular black-80 fw5 tracked-tight"
@@ -33,7 +33,7 @@ const HomeSection = ({ title, date, description, posts, isAll, icon }) => {
                 }
                 `}</h3>
             </div>
-          )}
+          )} */}
           <PostList posts={sectionPosts} />
         </div>
       </div>
