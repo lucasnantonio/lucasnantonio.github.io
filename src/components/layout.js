@@ -12,7 +12,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import Header from "./header"
 import Footer from "./footer"
 import "../../node_modules/tachyons/css/tachyons.min.css"
-import "../MyFontsWebfontsKit.css"
+import "../fonts/inter.css"
 import "./layout.css"
 import { minWidth } from "./utils"
 

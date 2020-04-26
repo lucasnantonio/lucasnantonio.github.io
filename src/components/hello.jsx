@@ -54,8 +54,8 @@ const Hello = ({ setSelectedTopics, setAll }) => {
 							Petal
 						</a>
 						{`. `}
-						<Link style={{ borderBottomWidth: "3px" }} to="/about" className=" nowrap black-40 link black-40 hover-black-80 bb b--black-10">
-							Read more
+						<Link to="/about" className=" nowrap black-40 link black-40 hover-black-80 pt3">
+							Read More
 						</Link>
 					</p>
 				</motion.div>

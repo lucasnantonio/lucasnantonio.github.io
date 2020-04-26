@@ -1,6 +1,5 @@
-@import url("https://fonts.googleapis.com/css?family=Courier+Prime|DM+Sans:400,500|IBM+Plex+Mono|Space+Mono&display=swap");
 html {
-	font-family: "DM Sans";
+	font-family: "Inter";
 	font-size: 15px;
 	-ms-text-size-adjust: 100%;
 	-webkit-text-size-adjust: 100%;
@@ -18,7 +17,7 @@ h3,
 h4,
 h5 {
 	/* font-family: "Solanel Trial Light"; */
-	font-family: "DM Sans";
+	font-family: "Inter";
 	font-weight: 400;
 	color: #424242;
 }
@@ -167,27 +166,31 @@ div + p {
 @keyframes blinkingText {
 	0% {
 		color: lightpink;
-		content: " ❃";
+		content: " ↑";
 	}
-	20% {
+	15% {
 		color: skyblue;
-		content: " ✪";
+		content: " ↗";
 	}
-	40% {
+	30% {
 		color: goldenrod;
-		content: " ❋";
+		content: " →";
+	}
+	45% {
+		color: lightgreen;
+		content: " ↘";
 	}
 	60% {
 		color: lightcoral;
-		content: " ✹";
+		content: " ↓";
 	}
-	80% {
-		color: goldenrod;
-		content: " ✤";
+	75% {
+		color: tan;
+		content: " ↙";
 	}
 	100% {
-		color: teal;
-		content: " ✹";
+		color: slateblue;
+		content: " ←";
 	}
 }
 

@@ -46,17 +46,17 @@ export default function Template ({
   }
   const title = (
     <div className="flex flex-column pt3 pb5-l w-100">
-      <h1 className=" fw5 neue-regular f3 black-80 mt0 mb1 pb0 w-100 tracked-tight">
+      <h1 className=" fw5 neue-regular f3 black-80 mt0 mb1 pb0 w-100 tracked-tight lh-copy">
         {frontmatter.title}
       </h1>
-      <div className="fw5 measure w-60-l flex flex-row-l flex-column items-start f3 lh-title mt0 pt0 measure mb1 black-40 tracked-tight">
+      <div className="fw5 measure w-60-l flex flex-row-l flex-column items-start f3 lh-copy mt0 pt0 measure mb1 black-40 tracked-tight">
         {frontmatter.subtitle}
       </div>
     </div>
   )
 
   const metadata = (
-    <div className="fw5 black-30 mb3 pt3-l pt3 pb4 mw5 f7 lh-copy black-50 flex flex-column align-start items-start">
+    <div className="fw5 black-30 mb3 pt3-l pt3 pb4 mw5 f6 lh-copy black-50 flex flex-column align-start items-start">
       {frontmatter.link && frontmatter.link_label && (
         <a
           style={{ marginLeft: "-.25rem" }}
@@ -66,10 +66,9 @@ export default function Template ({
           // }}
           href={frontmatter.link}
           target="_blank"
-          className=" mb3 link  mt0-l  black-40 hover-black-80 pl1 br-pill f7 flex justify-between-l nowrap hover-bg-lightest-gray pointer hover-white"
+          className=" mb3 link  mt0-l  black-40 hover-black-80 pl1 br-pill f6 flex justify-between-l nowrap hover-bg-lightest-gray pointer hover-white"
         >
-          <span className="mr1 fw5">{frontmatter.link_label}</span>
-          <span className="">›</span>
+          <span className="mr1 fw5">{frontmatter.link_label} ‣</span>
         </a>
       )}
       <div className="">
@@ -121,14 +120,14 @@ export default function Template ({
           <div className="bg-near-white br3 mb4 tc center justify-center w-100">
             <img className="mw5" src={prev.frontmatter.cover_image.publicURL}></img>
           </div>
-          <div className=" lh-title f5 mr4 mb3">Previous</div>
+          <div className=" lh-title f5 mr4 mb3">← Previous</div>
           <Link
             to={prev.frontmatter.path}
-            className="flex link black underline-hover lh-title f3 black mb1 fw5"
+            className="flex link black underline-hover lh-copy f4 black mb1 fw5"
           >
             {prev.frontmatter.title}
           </Link>
-          <div className=" lh-title black-40 fw5 f3 mb3 ">{prev.frontmatter.subtitle}</div>
+          <div className=" lh-copy black-40 fw5 f4 mb3 ">{prev.frontmatter.subtitle}</div>
         </div>
       )}
       {next && next.frontmatter && (
@@ -137,14 +136,14 @@ export default function Template ({
           <div className="bg-near-white br3 tc mb4 center justify-center">
             <img className="mw5" src={next.frontmatter.cover_image.publicURL} />
           </div>
-          <div className=" lh-title f5 mb3">Next</div>
+          <div className=" lh-title f5 mb3">Next →</div>
           <Link
             to={next.frontmatter.path}
-            className="link black underline-hover flex w-100 lh-title fw5 f3 mb1"
+            className="link black underline-hover flex w-100 lh-copy fw5 f4 mb1"
           >
             {next.frontmatter.title}
           </Link>
-          <div className=" lh-title black-40 f3 mb3">{next.frontmatter.subtitle}</div>
+          <div className=" lh-title black-40 f4 lh-copy mb3">{next.frontmatter.subtitle}</div>
         </div>
       )}
     </div>

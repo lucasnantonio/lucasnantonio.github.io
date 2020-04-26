@@ -48,36 +48,36 @@ const Header = ({
           className="w-100 flex justify-between center items-center"
         >
           <Link to="/" className={"link"}>
-            <h1 className="f4 fw5 tracked-tight black-80 neue-regular pv2">Lucas Neumann</h1>
+            <h1 className="f3 fw5 tracked-tight black-80 neue-regular pv2">Lucas Neumann</h1>
           </Link>
           {!isIndex &&
             <div className="flex">
               {prev ? (
-                <Link to={prev.frontmatter.path}>
+                <Link to={prev.frontmatter.path} className={"link"}>
                   <span
-                    style={{ transition: "background-color .2s", transform: "rotateZ(180deg)" }}
-                    className="flex justify-center center items-center align-center ma2 pa2 br-pill hover-bg-near-white bn pointer center items-center black-20 hover-dark-gray "
+                    style={{ transition: "background-color .2s" }}
+                    className="flex justify-center center items-center align-center ma2 pa2 br-pill hover-bg-near-white bn pointer center items-center black-20 hover-dark-gray f3 "
                   >
-                    {caret}
+                    ←
                   </span>
                 </Link>
               ) : (
                   <span
-                    style={{ transition: "background-color .2s", transform: "rotateZ(180deg)" }}
-                    className="o-30 flex justify-center center items-center align-center ma2 pa2 br-pill bn center items-center black-10 hover-dark-gray "
+                    style={{ transition: "background-color .2s" }}
+                    className="o-30 flex justify-center center items-center align-center ma2 pa2 br-pill bn center items-center black-10 hover-dark-gray f3"
                   >
-                    {caret}
+                    ←
                   </span>
                 )}
               {next ? (
-                <Link to={next.frontmatter.path}>
-                  <span style={{ transition: "background-color .2s" }} className="flex justify-center center items-center align-center ma2 pa2 br-pill hover-bg-near-white bn pointer center items-center black-20 hover-dark-gray ">
-                    {caret}
+                <Link className="link" to={next.frontmatter.path}>
+                  <span style={{ transition: "background-color .2s" }} className="flex justify-center center items-center align-center ma2 pa2 br-pill hover-bg-near-white bn pointer center items-center black-20 hover-dark-gray f3">
+                    →
                   </span>
                 </Link>
               ) : (
-                  <span style={{ transition: "background-color .2s" }} className="o-30 flex justify-center center items-center align-center ma2 pa2 br-pill bn center items-center black-10 ">
-                    {caret}
+                  <span style={{ transition: "background-color .2s" }} className="o-30 flex justify-center center items-center align-center ma2 pa2 br-pill bn center items-center black-10 f3">
+                    →
                   </span>
                 )}
             </div>
