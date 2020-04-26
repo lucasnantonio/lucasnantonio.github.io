@@ -25,7 +25,11 @@ export const LifeEvents = [
         year: 2019,
         title: "Interviewing Dan Ariely",
         image: "Ariely",
-        description: "Behavior sciences have always fascinated me and been a reliable source of insight for my design work. Dan Ariely is one of the top references in the field and interviewing him in front of hundreds of Nubank employees to inspire their work in helping people with their finances was a great honor."
+        description: "Behavior sciences have always fascinated me and been a reliable source of insight for my design work. Dan Ariely is one of the top references in the field and interviewing him in front of hundreds of Nubank employees to inspire their work in helping people with their finances was a great honor.",
+        books: [{
+            title: "Predictably irrational",
+            image: "PredictablyIrrational"
+        }],
     },
     {
         year: 2019,

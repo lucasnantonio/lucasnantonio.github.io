@@ -8,7 +8,7 @@ import { motion, AnimatePresence } from "framer-motion"
 import { initialFadeAnimation, fadeInAnimation } from '../components/utils';
 
 
-const LifeEvent = (data, { title, year, description, image, isMilestone, icon, isHidden }, index) => {
+const LifeEvent = (data, { title, year, description, image, isMilestone, icon, isHidden, books }, index) => {
   const [hidden, setHidden] = useState(true)
   const [reallyHidden, setReallyHidden] = useState(true)
 
@@ -82,6 +82,13 @@ const LifeEvent = (data, { title, year, description, image, isMilestone, icon, i
                   <div className="measure lh-copy f4 black-40 mb4">{description}</div>
                 </div>
                 {image && <Img className={"w-100 mt3"} fluid={data[image].childImageSharp.fluid}></Img>}
+                {books && <div className="pa3 ba flex flex-column mt4">
+                  <h4 className="fw5 mt0 mb3">Reading list then</h4>
+                  <div className="flex pa2 pr3 br2 items-center self-start justify-start">
+                    {<Img className={"w2 br1 mr3"} fluid={data[books[0].image].childImageSharp.fluid}></Img>}
+                    {books[0].title}
+                  </div>
+                </div>}
               </div>
             </div>
           </div >
@@ -123,14 +130,14 @@ const About = ({ data }) => {
     <Layout>
       <SEO title="About me" />
       <motion.div initial={initialFadeAnimation} animate={fadeInAnimation} transition={{ duration: 0.5 }}>
-        <div className="w-100 mt6 mb5 center relative">
+        <div className="w-100 mt6 mb6 center relative bb b--near-white bw1 pb6">
           <div className="center flex justify-between" style={{ maxWidth: minWidth }}>
             <div>
-              <h1 className="fw5 black-80 tracked-tight f3 mb0">About me</h1>
-              <h1 className="fw5 black-40 tracked-tight mt0 f3">Scroll down, let's travel back in time. <span className="black">⏱</span></h1>
+              <h1 className="mt0 fw5 black-80 tracked-tight f3 mb0 measure lh-copy">I am a designer helping companies research, design, code (a little) and scale empowering experiences. Currently leading the design team at Petal in New York. Previously, I've worked at great design schools such as Nubank, Insitum/Fjord, Kano Computer, and FutureBrand.</h1>
+              {/* <h1 className="fw5 black-40 tracked-tight mt0 f3">Scroll down, let's travel back in time. <span className="black">⏱</span></h1> */}
             </div>
             <div className="flex-l dn flex-column lh-copy f">
-              <h4 className="mb1 fw5">Contact</h4>
+              {/* <h4 className="mb1 fw5">Contact</h4> */}
               <a
                 className="link black-40 hover-black-80 underline-hover mr3"
                 href="mailto:lucasneumann.fau@gmail.com"
@@ -223,6 +230,9 @@ export const query = graphql`
       ...squareImage
     }
     FirstDesign: file(relativePath: { eq: "life/first-design.jpg" }) {
+      ...squareImage
+    }
+    PredictablyIrrational: file(relativePath: { eq: "life/books/predictably-irrational.jpg" }) {
       ...squareImage
     }
   }
