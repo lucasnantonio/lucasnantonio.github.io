@@ -34,11 +34,11 @@ const LifeEvent = (data, { title, year, description, image, isMilestone, icon, i
       <div key={title} className="flex">
         {index !== LifeEvents.length - 1 ? (<div className="relative mr4 bl bw1 b--light-gray mt4 mb1"></div>) : (<div className="relative mr4 bl bw1 b--white"></div>)}
         <div style={dotStyle} className="absolute br-pill"></div>
-        <div className="pa4 pt0 w-100 mb5">
+        <div className="pa4 pt0 w-100 mb5 ml5-l ml2">
           <div className="flex flex-column items-start">
             <div className="flex flex-column">
-              <div className="flex items-center mb4">
-                <div className="f3 fw5 black-80 fw5 tracked-tight mr2">{title} <span className="fw5 f4 black-40">{year}</span></div>
+              <div className="flex items-center mb4 ">
+                <div className="f4 fw5 black-80 fw5 tracked-tight mr2">{title} <span className="fw5 f4 black-40">{year}</span></div>
 
               </div>
               <div className="measure lh-copy f4 black-80 mb4">{description}</div>
@@ -54,9 +54,9 @@ const LifeEvent = (data, { title, year, description, image, isMilestone, icon, i
           {index !== LifeEvents.length - 1 ? (<div className="relative mr4 bl mt4 bw1 b--light-gray"></div>) : (<div className="relative mr4 bl bw1 b--white"></div>)
           }
           <div style={dotStyle} className="absolute br-pill center flex items-center justify-center">{icon}</div>
-          <div className="mb5 pb3">
+          <div className="mb5 pb3 ml5-l ml2">
             <div className="flex items-center">
-              <div className="f3 fw5 black-80 ml4 fw5 tracked-tight">{title}</div>
+              <div className="f4 fw5 black-80 ml4 fw5 tracked-tight">{title}</div>
               <div className="ml2 fw5 f4 black-40">{year}</div>
             </div>
           </div>
@@ -73,13 +73,13 @@ const LifeEvent = (data, { title, year, description, image, isMilestone, icon, i
               </motion.div>}
             <div style={dotStyle} className="absolute br-pill"></div>
             <div className={`pa4 pt0 w-100 ${description && image && 'mb5'} `}>
-              <div className="flex flex-column">
+              <div className="flex flex-column ml5-l ml0">
                 <div className="flex flex-column">
                   <div className="flex items-center mb4">
-                    <div className="f3 fw5 black-80 fw5 tracked-tight mr2">{title} <span className="fw5 f4 black-40">{year}</span></div>
+                    <div className="f4 fw5 black-80 fw5 tracked-tight mr2">{title} <span className="fw5 f4 black-40">{year}</span></div>
 
                   </div>
-                  <div className="measure lh-copy f4 black-40 mb4">{description}</div>
+                  <div className="measure lh-copy f4 black-40 mb4 fw5">{description}</div>
                 </div>
                 {image && <Img className={"w-100 mt3"} fluid={data[image].childImageSharp.fluid}></Img>}
               </div>
@@ -123,40 +123,41 @@ const About = ({ data }) => {
     <Layout>
       <SEO title="About me" />
       <motion.div initial={initialFadeAnimation} animate={fadeInAnimation} transition={{ duration: 0.5 }}>
-        <div className="w-100 mt6 mb5 center relative">
-          <div className="center flex justify-between" style={{ maxWidth: minWidth }}>
-            <div>
-              <h1 className="fw5 black-80 tracked-tight f3 mb0">About me</h1>
-              <h1 className="fw5 black-40 tracked-tight mt0 f3">Scroll down, let's travel back in time. <span className="black">⏱</span></h1>
-            </div>
-            <div className="flex-l dn flex-column lh-copy f">
-              <h4 className="mb1 fw5">Contact</h4>
-              <a
-                className="link black-40 hover-black-80 underline-hover mr3"
-                href="mailto:lucasneumann.fau@gmail.com"
-              >
-                Email me
+        <div className="w-100 mt6-l mt5 mb5-l mb5 center relative bb pb6-l pb5 b--near-white bw1">
+          <div className="center flex justify-between flex-column" style={{ maxWidth: minWidth }}>
+            <div className="flex flex-row-l flex-column items-center-l ">
+              <img className="h4 w4 br-pill mr4 mb0-l mb4" src="https://pbs.twimg.com/profile_images/743210231963000832/rDY4LH1u_400x400.jpg"></img>
+              <div className="ml4-l mr3 lh-copy tracked-tight flex flex-column">
+                <h2 className="fw5 f3 mt0 lh-copt">In the past 10 years I’ve helped product teams research, design, code, and scale empowering experiences for millions of people.</h2>
+                <div className="flex lh-copy f4 fw5 mt0-l mt4">
+                  <a
+                    className="link black-40 hover-black-80 underline-hover mr3"
+                    href="mailto:lucasneumann.fau@gmail.com"
+                  >
+                    Email me
         </a>
-              <a
-                target="_blank"
-                className="link black-40 hover-black-80 underline-hover mr3"
-                href="https://www.linkedin.com/in/lucasneumann/"
-              >
-                LinkedIn
+                  <a
+                    target="_blank"
+                    className="link black-40 hover-black-80 underline-hover mr3"
+                    href="https://www.linkedin.com/in/lucasneumann/"
+                  >
+                    LinkedIn
         </a>
-              <a
-                target="_blank"
-                className="link black-40 hover-black-80 underline-hover mr3"
-                href="https://twitter.com/@lucasnantonio"
-              >
-                Twitter
+                  <a
+                    target="_blank"
+                    className="link black-40 hover-black-80 underline-hover mr3"
+                    href="https://twitter.com/@lucasnantonio"
+                  >
+                    Twitter
         </a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
         <div
           style={{ maxWidth: minWidth }}
-          className="flex w-100 justify-between flex-column center"
+          className="flex w-100 justify-between flex-column center pl5-l pl3"
         >
           {backToTheFuture()}
           {LifeEvents.map((item, index) => LifeEvent(data, item, index))}

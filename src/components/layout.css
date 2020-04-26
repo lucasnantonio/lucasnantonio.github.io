@@ -1,5 +1,6 @@
 html {
 	font-family: "Inter";
+	font-feature-settings: "ss01";
 	font-size: 14px;
 	-ms-text-size-adjust: 100%;
 	-webkit-text-size-adjust: 100%;
