@@ -9,7 +9,7 @@ topics:
 color: "#1E0630"
 cover_image: "../../images/nubank/nubank-leveling.png"
 image_cover_size: true
-published: true
+published: false
 soon: true
 learn_more:
 where: São Paulo

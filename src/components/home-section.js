@@ -16,7 +16,7 @@ const HomeSection = ({ title, date, description, posts, isAll, icon }) => {
           {isAll && (
             <div className="flex flex-column mb5">
               <div className="flex flex-row-l flex-column">
-                <div className="pa3 br-pill b--near-white ba mr3 flex bw1 br-pill h3 w3 mb0-l mb4">{icon}</div>
+                <div className="pa3 br-pill b--near-white ba mr4 flex bw1 br-pill h3 w3 mb0-l mb4">{icon}</div>
                 <div>
                   <h2
                     className={
