@@ -160,37 +160,37 @@ div + p {
 
 .blinking {
 	animation: blinkingText .80s infinite;
-	/* color: #999; */
+	color: #222;
 	/* transition: all .5s; */
 }
 
 @keyframes blinkingText {
 	0% {
-		color: lightpink;
+		/* color: lightpink; */
 		content: " ↑";
 	}
 	15% {
-		color: skyblue;
+		/* color: skyblue; */
 		content: " ↗";
 	}
 	30% {
-		color: goldenrod;
+		/* color: goldenrod; */
 		content: " →";
 	}
 	45% {
-		color: lightgreen;
+		/* color: lightgreen; */
 		content: " ↘";
 	}
 	60% {
-		color: lightcoral;
+		/* color: lightcoral; */
 		content: " ↓";
 	}
 	75% {
-		color: tan;
+		/* color: tan; */
 		content: " ↙";
 	}
 	100% {
-		color: slateblue;
+		/* color: slateblue; */
 		content: " ←";
 	}
 }
