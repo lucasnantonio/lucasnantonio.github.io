@@ -14,12 +14,12 @@ function Image ({ src, cover, color }) {
 
 function Content ({ title, subtitle, path }) {
     return (<>
-        <Link
+        <div
             to={path}
             className="link black underline-hover flex w-100 lh-copy fw5 f4 mb1"
         >
             {title}
-        </Link>
+        </div>
         <div className="lh-title black-40 f4 lh-copy mb3">{subtitle}</div>
     </>
     )

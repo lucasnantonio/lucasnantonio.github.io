@@ -21,6 +21,10 @@ team:
 - Nicolas Moschopoulos
 link: http://www.petalcard.com
 link_label: Petalcard.com
+learnings:
+- The shorter the distance between a user's pain and giving feedback, the more accurate and actionable it will be.
+- Your product is as good as your feedback loops.
+- The impact of design improvements is measurable and can lead to business and leadership action. 
 ---
 
 Receiving suggestions, feature requests, complaints, and bug reports from users, like any other type of customer-focused evidence, is essential fuel for high-performing technology teams. 
@@ -69,7 +73,7 @@ First of all, we can now look objectively at how our pages and features are bein
 
 Also, because the call to action is more contextual than an after-the-fact survey, individual messages become much, much more specific and actionable:
 
-![Refreshingly useful feedback](../../images/petal/feedback-contextual-3.png)
+![Refreshingly useful feedback](../../images/petal/feedback-contextual-4.png)
 
 By looking at and communicating the impact of design objectively, it becomes easier to earn a "seat at the table", since these measurements can bubble up to company objectives.
 

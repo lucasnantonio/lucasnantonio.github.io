@@ -16,7 +16,6 @@ const Star = ({ link, index, setHoveredIndex, isBlack }) => {
 
 const Feedback = () => {
 	const [hoveredIndex, setHoveredIndex] = useState(null)
-	console.log(hoveredIndex)
 	return (
 		<div className="flex-column">
 			<p className="f4 fw5 black mt0 lh-copy">Rate my website</p>

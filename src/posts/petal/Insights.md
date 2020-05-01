@@ -18,6 +18,10 @@ team:
 - Josh Kaplan
 link: http://www.petalcard.com
 link_label: Petalcard.com
+learnings:
+  - Hackathons are great. The team was highly engaged and we shipped an amazing feature users love. 
+  - In areas where personal preference is divisive, such as budgeting, "disagree & commit" is a highly valuable principle to keep the team moving. Ship a reasonable version, with well-documented hypothesis and assumptions, and learn from there.
+  - We didn't need advanced algorithms to deliver value to 80% of users. Most of their transactions tend to be with the same merchants and can be categorized with simple rules. Getting the other 20% right is another story, but not needed for an MVP like ours.
 ---
 
 One of the biggest challenges of running a credit card business for new-to-credit customers is that this segment is extremely scared that they'll lose track of their spending. In order to mitigate these concerns, leadership challenged us with the following:

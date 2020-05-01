@@ -5,6 +5,7 @@ import Img from "gatsby-image/withIEPolyfill"
 import { minWidth } from "../components/utils"
 import PreviousAndNext from "../components/previousAndNext"
 import PostMetadata from "../components/postMetadata"
+import Learnings from "../components/learnings"
 import PostSummary from "../components/postSummary"
 import { motion } from "framer-motion"
 import { initialFadeAnimation, fadeInAnimation } from "../components/utils"
@@ -82,6 +83,9 @@ export default function Template ({
       </motion.div>
       <PostSummary frontmatter={frontmatter} />
       {content}
+      {console.log(frontmatter)}
+      {console.log(frontmatter.learnings)}
+      {frontmatter.learnings && <Learnings list={frontmatter.learnings} />}
       <PreviousAndNext prev={prev} next={next}></PreviousAndNext>
     </Layout>
   )
@@ -103,6 +107,7 @@ export const pageQuery = graphql`
         color
         where
         learn_more
+        learnings
         team
         myrole
         link

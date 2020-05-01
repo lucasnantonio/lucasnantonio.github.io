@@ -177,6 +177,7 @@ export const pageQuery = graphql`
             solution
             impact
             learn_more
+            learnings
             category
             topics
             color

@@ -7,6 +7,9 @@ category: "Petal"
 topics:
   - Product Design
 color: "#f7bcbc"
+learnings:
+  - Ensuring the engineering team has a quota of design-led tasks every sprint was essential to getting some of this work prioritized.
+  - Accessibility is hard and getting it right deserves much more attention and resources than some small teams have.
 cover: true
 cover_image: "../../images/petal/before-and-after/petal-phone-hero.png"
 published: true
@@ -15,6 +18,7 @@ team:
   - Josh K
 link: http://www.petalcard.com
 link_label: Petalcard.com
+
 ---
 
 ## This is a collection of tactical, small design wins, a weekly log. Looking for a robust case study? [Try here.](/blog/nubank/nuconta)
