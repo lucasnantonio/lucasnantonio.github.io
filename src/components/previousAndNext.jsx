@@ -6,8 +6,8 @@ function Image ({ src, cover, color }) {
     return (
         <div
             style={{ backgroundColor: color }}
-            className={`bg-near-white br3 mb4 tc center items-center flex flex-column w-100 h5 ${cover && 'justify-end'}`}>
-            <img className="mw5" src={src}></img>
+            className={`overflow-hidden bg-near-white br3 mb4 tc center items-center flex flex-column w-100 h5 ${cover && 'justify-end'}`}>
+            <img className="h-100 grow" src={src}></img>
         </div>
     )
 }
@@ -20,7 +20,7 @@ function Content ({ title, subtitle, path }) {
         >
             {title}
         </Link>
-        <div className=" lh-title black-40 f4 lh-copy mb3">{subtitle}</div>
+        <div className="lh-title black-40 f4 lh-copy mb3">{subtitle}</div>
     </>
     )
 }
@@ -33,22 +33,26 @@ export default function PreviousAndNext ({ next, prev }) {
         >
             {prev && (
                 <div className={`f5  mr0  w-100  mb0-l mb4 ${next && "br-l bw1 b--near-white mr4-l pr4-l"}`}>
-                    <Image color={prev.frontmatter.color} src={prev.frontmatter.cover_image.publicURL} cover={prev.frontmatter.cover} color={prev.frontmatter.color} />
-                    <div className=" lh-title f5 mr4 mb3">← Previous</div>
-                    <Content
-                        title={prev.frontmatter.title}
-                        subtitle={prev.frontmatter.subtitle}
-                        path={prev.frontmatter.path} />
+                    <Link className="link" to={prev.frontmatter.path}>
+                        <Image color={prev.frontmatter.color} src={prev.frontmatter.cover_image.publicURL} cover={prev.frontmatter.cover} color={prev.frontmatter.color} />
+                        <div className="black-40 lh-title f5 mr4 mb3">← Previous</div>
+                        <Content
+                            title={prev.frontmatter.title}
+                            subtitle={prev.frontmatter.subtitle}
+                            path={prev.frontmatter.path} />
+                    </Link>
                 </div>
             )}
             {next && next.frontmatter && (
                 <div className="w-100">
-                    <Image color={next.frontmatter.color} src={next.frontmatter.cover_image.publicURL} cover={next.frontmatter.cover} />
-                    <div className=" lh-title f5 mb3">Next →</div>
-                    <Content
-                        title={next.frontmatter.title}
-                        subtitle={next.frontmatter.subtitle}
-                        path={next.frontmatter.path} />
+                    <Link className="link" to={next.frontmatter.path}>
+                        <Image color={next.frontmatter.color} src={next.frontmatter.cover_image.publicURL} cover={next.frontmatter.cover} />
+                        <div className="black-40 lh-title f5 mb3">Next →</div>
+                        <Content
+                            title={next.frontmatter.title}
+                            subtitle={next.frontmatter.subtitle}
+                            path={next.frontmatter.path} />
+                    </Link>
                 </div>
             )}
         </div>
