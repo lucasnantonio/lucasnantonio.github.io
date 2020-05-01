@@ -92,7 +92,6 @@ export default function Template ({
       className="center flex flex-column justify-end"
       style={{
         backgroundColor: frontmatter.color || "#f0f0f0",
-        // height: "35rem",
         maxHeight: "500px",
         overflow: 'hidden',
         padding: "0rem",
