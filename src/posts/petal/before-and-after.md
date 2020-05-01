@@ -1,32 +1,55 @@
 ---
 path: "/blog/petal-before-and-after"
 date: "2020-02-04"
-title: "Before and after bits"
-subtitle: Quick-wins and everyday work.
+title: "Every day quick-wins"
+subtitle: A journal of showing up everyday to make things a bit better.
 category: "Petal"
 topics:
   - design
-color: "#f2f2f2"
-cover_image: "../../images/petal.png"
-published: false
+color: "#f7bcbc"
+cover: true
+cover_image: "../../images/petal/before-and-after/petal-phone-hero.png"
+published: true
+team:
+- Maxwell H
+- Josh K
 ---
 
+This post is a collection of small design wins at Petal, a journal of work that doesn't necessarily get that much praise but adds up to a better experience over time. 
 
-| ![](../../images/petal/before-and-after/feed-before.png) | ![](../../images/petal/before-and-after/feed-after.png) | 
+If you're looking for a more robust case study, [read this](/blog/nubank/nuconta) instead.
+
+| <img src="../../images/petal/before-and-after/filters-before.gif"> | <img src="../../images/petal/before-and-after/filters-after-3.gif"> | 
 |--------- | --------|
 | __Before 🤔__        |__After ✨__         |
-| Users reported problems finding their stuff | 20% increased engagement with filters mentioned by users. | 
+| Customer support and usability testing revealed that users had trouble finding content that was two clicks away. | By exposing the filter labels, users don't need to guess what's inside the dropdown. Discoverability is increased. | 
 
-| ![](../../images/petal/before-and-after/bank-before.png) | ![](../../images/petal/before-and-after/bank-after.png) | 
+| ![](../../images/petal/before-and-after/feedItems-before.png) | ![](../../images/petal/before-and-after/feedItems-after.png) | 
 |--------- | --------|
 | __Before 🤔__        |__After ✨__         |
-| Users reported problems finding their stuff | 20% increased engagement with filters mentioned by users. | 
+| Merchants were named with the raw strings we received, and category icons were assigned. | With some quick Regex, we're able to clean up names and display curated logos for +50% of purchses. | 
 
-| ![](../../images/petal/before-and-after/bank-before.png) | ![](../../images/petal/before-and-after/bank-after.png) | 
+| ![](../../images/petal/before-and-after/modals-before-12.gif) | ![](../../images/petal/before-and-after/modals-after-12.gif) | 
 |--------- | --------|
-| __App cleanup__|
 | __Before 🤔__        |__After ✨__         |
-| Users reported problems finding their stuff | 20% increased engagement with filters mentioned by users. | 
+| Initial modals had CTA and dismiss actions too close to each other and taking too much space. Centered rendering also becomes a problem as out phones grow taller and taller. | Better distributed buttons allows for extra actions such as navigation and secondary CTAs. Also closer to thumb on tall phones. |
+
+
+| ![](../../images/petal/before-and-after/toast-before.png) | ![](../../images/petal/before-and-after/toast-after.png) | 
+|--------- | --------|
+| __Before 🤔__        |__After ✨__         |
+| Quite a few of our Petal's initial designs didn't meet Accessibility contrast guidelines   | It's a daily battle towards better legibility! | 
+
+| ![](../../images/petal/before-and-after/navigation-before-2.png) | ![](../../images/petal/before-and-after/navigation-after-2.png) | 
+|--------- | --------|
+| __Before 🤔__        |__After ✨__         |
+| As our app grew, our minimalist navigation starter to get too cryptic. Users relied on trial and error to find the desired content.   | Some Information Architecture gymnastics will soon enable us to achieve a much more understandable "home" for your money.  | 
+
+| ![](../../images/petal/before-and-after/toggles-before.png) | ![](../../images/petal/before-and-after/toggles-after.png) | 
+|--------- | --------|
+| __Before 🤔__        |__After ✨__         |
+| Our custom on/off indicators had low contrast and weren't considered "clickable" by users  | Using a more common pattern proved successful for user understanding. | 
+
 
 <!-- <div class="flex">
 <div class="w-50">

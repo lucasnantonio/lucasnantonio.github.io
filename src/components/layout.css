@@ -99,17 +99,23 @@ div + p {
 	font-size: 1.3em;
 	border-collapse: collapse;
 	vertical-align: text-top;
+	margin-top: 4rem;
+	margin-bottom: 10rem;
 }
 .post-content table th{
 	/* border-bottom: 2px solid #181818; */
 	padding-bottom: 1rem;
 	vertical-align: top;
 }
+.post-content table th .gatsby-resp-image-wrapper{
+margin-top: 0px;
+}
 
 .post-content table td{
 	width: 50%;
 	padding-top: 1rem;
 	vertical-align: top;
+	padding-right: 4rem;
 }
 
 .post-content blockquote {
