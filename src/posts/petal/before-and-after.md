@@ -1,11 +1,11 @@
 ---
 path: "/blog/petal-before-and-after"
-date: "2020-02-04"
-title: "Every day quick-wins"
-subtitle: A journal of showing up everyday to make things a bit better.
+date: "2020-04-28"
+title: "Everyday quick-wins"
+subtitle: A journal of small battles towards simplicity and meaning.
 category: "Petal"
 topics:
-  - design
+  - Product Design
 color: "#f7bcbc"
 cover: true
 cover_image: "../../images/petal/before-and-after/petal-phone-hero.png"
@@ -15,9 +15,7 @@ team:
 - Josh K
 ---
 
-This post is a collection of small design wins at Petal, a journal of work that doesn't necessarily get that much praise but adds up to a better experience over time. 
-
-If you're looking for a more robust case study, [read this](/blog/nubank/nuconta) instead.
+>   This post is a collection of small design wins at Petal, a journal of work that doesn't   necessarily get that much praise but adds up to a better experience over time. Looking for a more robust case study? [Try here.](/blog/nubank/nuconta)
 
 | <img src="../../images/petal/before-and-after/filters-before.gif"> | <img src="../../images/petal/before-and-after/filters-after-3.gif"> | 
 |--------- | --------|
@@ -38,7 +36,7 @@ If you're looking for a more robust case study, [read this](/blog/nubank/nuconta
 | ![](../../images/petal/before-and-after/toast-before.png) | ![](../../images/petal/before-and-after/toast-after.png) | 
 |--------- | --------|
 | __Before 🤔__        |__After ✨__         |
-| Quite a few of our Petal's initial designs didn't meet Accessibility contrast guidelines   | It's a daily battle towards better legibility! | 
+| Quite a few of Petal's initial designs didn't meet color contrast guidelines.   | It's a daily battle towards better legibility! | 
 
 | ![](../../images/petal/before-and-after/navigation-before-2.png) | ![](../../images/petal/before-and-after/navigation-after-2.png) | 
 |--------- | --------|

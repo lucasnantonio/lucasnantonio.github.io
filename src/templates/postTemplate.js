@@ -89,16 +89,18 @@ export default function Template ({
 
   const heroImage = (
     <div
-      className="center"
+      className="center flex flex-column justify-end"
       style={{
         backgroundColor: frontmatter.color || "#f0f0f0",
-        height: "600px",
+        // height: "35rem",
+        maxHeight: "500px",
+        overflow: 'hidden',
         padding: "0rem",
         maxWidth: minWidth,
       }}
     >
       <Img
-        className="h-100"
+        className=""
         fluid={frontmatter.cover_image.childImageSharp.fluid}
         color={frontmatter.color}
         objectFit="contain"
