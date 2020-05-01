@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Space+Mono&display=swap');
+
 html {
 	font-family: "Inter";
 	font-feature-settings: "ss01";
@@ -25,6 +27,11 @@ h5 {
 /* .neue-regular {
   font-family: "Darker Grotesk";
 } */
+
+.mono{
+	font-family: 'IBM Plex Mono', monospace;
+}
+
 .post-content p,
 .post-content h1,
 .post-content h2,

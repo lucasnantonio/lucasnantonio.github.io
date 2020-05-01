@@ -16,6 +16,8 @@ color: "#FFE6E6"
 cover: true
 team:
 - Josh Kaplan
+link: http://www.petalcard.com
+link_label: Petalcard.com
 ---
 
 One of the biggest challenges of running a credit card business for new-to-credit customers is that this segment is extremely scared that they'll lose track of their spending. In order to mitigate these concerns, leadership challenged us with the following:

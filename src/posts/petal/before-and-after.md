@@ -11,8 +11,10 @@ cover: true
 cover_image: "../../images/petal/before-and-after/petal-phone-hero.png"
 published: true
 team:
-- Maxwell H
-- Josh K
+  - Maxwell H
+  - Josh K
+link: http://www.petalcard.com
+link_label: Petalcard.com
 ---
 
 >   This post is a collection of small design wins at Petal, a journal of work that doesn't   necessarily get that much praise but adds up to a better experience over time. Looking for a more robust case study? [Try here.](/blog/nubank/nuconta)
