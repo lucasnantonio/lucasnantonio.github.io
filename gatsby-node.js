@@ -26,6 +26,8 @@ exports.createPages = ({ actions, graphql }) => {
               path
               title
               subtitle
+              cover
+              color
               cover_image {
                 publicURL
               }
