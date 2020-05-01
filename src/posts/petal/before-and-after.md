@@ -17,7 +17,8 @@ link: http://www.petalcard.com
 link_label: Petalcard.com
 ---
 
->   This post is a collection of small design wins at Petal, a journal of work that doesn't   necessarily get that much praise but adds up to a better experience over time. Looking for a more robust case study? [Try here.](/blog/nubank/nuconta)
+## This post is a collection of small design wins at Petal, a journal of work that doesn't   necessarily get that much praise but adds up to a better experience over time. 
+Looking for a more robust case study? [Try here.](/blog/nubank/nuconta)
 
 | <img src="../../images/petal/before-and-after/filters-before.gif"> | <img src="../../images/petal/before-and-after/filters-after-3.gif"> | 
 |--------- | --------|
@@ -39,6 +40,11 @@ link_label: Petalcard.com
 |--------- | --------|
 | __Before 🤔__        |__After ✨__         |
 | Quite a few of Petal's initial designs didn't meet color contrast guidelines.   | It's a daily battle towards better legibility! | 
+
+| ![](../../images/petal/before-and-after/light-fonts-before.png) | ![](../../images/petal/before-and-after/light-fonts-after.png) | 
+|--------- | --------|
+| __Before 🤔__        |__After ✨__         |
+| Thin, light-gray fonts were great to get Petal hyped for its "designer look".  | We banned light fonts and low-contrast text even from legal disclaimers. Going from light to regular goes a long way for legibility.  | 
 
 | ![](../../images/petal/before-and-after/navigation-before-2.png) | ![](../../images/petal/before-and-after/navigation-after-2.png) | 
 |--------- | --------|
