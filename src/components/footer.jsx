@@ -13,33 +13,42 @@ const Footer = () => {
 
         <div className=" flex flex-column lh-copy  mb0-l mb4">
           <p className="mt0 black-80 fw5">Lucas Neumann © Always</p>
-          <a
-            className="link black-40 hover-black-80 underline-hover mr3"
-            href="mailto:lucasneumann.fau@gmail.com"
-          >
-            Email me
+          <div className="flex flex-row-l flex-column">
+            <a
+              className="link black-40 hover-black-80 underline-hover mr3"
+              href="mailto:lucasneumann.fau@gmail.com"
+            >
+              Email me
         </a>
-          <a
-            target="_blank"
-            className="link black-40 hover-black-80 underline-hover mr3"
-            href="https://www.linkedin.com/in/lucasneumann/"
-          >
-            LinkedIn
+            <a
+              target="_blank"
+              className="link black-40 hover-black-80 underline-hover mr3"
+              href="https://www.linkedin.com/in/lucasneumann/"
+            >
+              LinkedIn
         </a>
-          <a
-            target="_blank"
-            className="link black-40 hover-black-80 underline-hover mr3"
-            href="https://medium.com/@lucasnantonio"
-          >
-            Medium
+            <a
+              target="_blank"
+              className="link black-40 hover-black-80 underline-hover mr3"
+              href="https://medium.com/@lucasnantonio"
+            >
+              Medium
         </a>
-          <a
-            target="_blank"
-            className="link black-40 hover-black-80 underline-hover mr3"
-            href="https://twitter.com/@lucasnantonio"
-          >
-            Twitter
+            <a
+              target="_blank"
+              className="link black-40 hover-black-80 underline-hover mr3"
+              href="https://twitter.com/@lucasnantonio"
+            >
+              Twitter
         </a>
+            <a
+              target="_blank"
+              className="link black-40 hover-black-80 underline-hover mr3"
+              href="https://github.com/lucasnantonio"
+            >
+              Github
+        </a>
+          </div>
         </div>
         <Feedback></Feedback>
       </div>
