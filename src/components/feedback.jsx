@@ -19,7 +19,7 @@ const Feedback = () => {
 	console.log(hoveredIndex)
 	return (
 		<div className="flex-column">
-			<p className="f4 fw5 black mt0">Rate my website</p>
+			<p className="f4 fw5 black mt0 lh-copy">Rate my website</p>
 			<div className="flex">
 				{links.map((link, index) => {
 					return <Star isBlack={hoveredIndex != null && hoveredIndex >= index} index={index} key={link} link={link} setHoveredIndex={setHoveredIndex}></Star>
