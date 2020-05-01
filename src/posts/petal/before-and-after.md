@@ -56,13 +56,7 @@ Looking for a more robust case study? [Try here.](/blog/nubank/nuconta)
 | __Before 🤔__        |__After ✨__         |
 | Our custom on/off indicators had low contrast and weren't considered "clickable" by users  | Using a more common pattern proved successful for user understanding. | 
 
-
-<!-- <div class="flex">
-<div class="w-50">
-__Before__Users reported difficulty finding their statements and payments
-</div>
-
-<div class="w-50">
-__After__20% higher clicks on statements and payments
-</div>
-</div> -->
+| ![](../../images/petal/before-and-after/transactions-before-3.png) | ![](../../images/petal/before-and-after/transactions-after-3.png) | 
+|--------- | --------|
+| __Before 🤔__        |__After ✨__         |
+| Our first iteration was a simple table with the raw data we got from the backend  | With time, we added clean brand names, logos, contact and dispute buttons. | 
