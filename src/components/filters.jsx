@@ -4,6 +4,7 @@ import AllFilter from './allFilter'
 import SurpriseButton from './SurpriseButton'
 import { topics } from './utils'
 import { motion } from 'framer-motion'
+import { Link } from 'gatsby';
 
 // const { minWidth, topics, sizes } = Utils
 
@@ -28,10 +29,15 @@ function Filters ({ selectedTopics, setSelectedTopics, isAll, setAll, publishedP
 					title={item}
 				/>
 			))}
-			<div className="flex items-end">
-				<SurpriseButton posts={publishedPosts} />
-			</div>
+			{/* <div className="flex items-end"> */}
+			{/* | <SurpriseButton posts={publishedPosts} /> */}
+			{/* </div> */}
 			{/* <div>Bio</div> */}
+			<Link className="link black-40 hover-black" to="/about">
+				<div className="bl-l bw1 pl4-l b--black-10">
+					<div className="f3 fw5">About</div>
+				</div>
+			</Link>
 		</motion.div>
 	)
 }

@@ -54,10 +54,8 @@ const Hello = ({ setSelectedTopics, setAll }) => {
 							Petal
 						</a>
 						{`. `}
-						<Link to="/about" className=" nowrap black-40 link black-40 hover-black-80 pt3">
-							Read More
-						</Link>
 					</p>
+
 				</motion.div>
 			</div>
 		</div>
