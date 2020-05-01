@@ -2,7 +2,7 @@
 path: "/blog/petal-before-and-after"
 date: "2020-04-28"
 title: "Everyday quick-wins"
-subtitle: A journal of small battles towards simplicity and meaning.
+subtitle: A journal of small steps towards simplicity and meaning.
 category: "Petal"
 topics:
   - Product Design
@@ -17,8 +17,7 @@ link: http://www.petalcard.com
 link_label: Petalcard.com
 ---
 
-## This post is a collection of small design wins at Petal, a journal of work that doesn't   necessarily get that much praise but adds up to a better experience over time. 
-Looking for a more robust case study? [Try here.](/blog/nubank/nuconta)
+## This is a collection of tactical, small design wins, a weekly log. Looking for a robust case study? [Try here.](/blog/nubank/nuconta)
 
 | <img src="../../images/petal/before-and-after/filters-before.gif"> | <img src="../../images/petal/before-and-after/filters-after-3.gif"> | 
 |--------- | --------|
