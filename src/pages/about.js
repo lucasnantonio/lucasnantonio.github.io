@@ -8,7 +8,7 @@ import { motion, AnimatePresence } from "framer-motion"
 import { initialFadeAnimation, fadeInAnimation } from '../components/utils';
 
 
-const LifeEvent = (data, { title, year, description, image, isMilestone, icon, isHidden }, index) => {
+const LifeEvent = (data, { title, year, description, image, isMilestone, icon, isHidden, link }, index) => {
   const [hidden, setHidden] = useState(true)
   const [reallyHidden, setReallyHidden] = useState(true)
 
@@ -30,62 +30,40 @@ const LifeEvent = (data, { title, year, description, image, isMilestone, icon, i
     }
 
   return (
-    isHidden ? (
-      <div key={title} className="flex">
-        {index !== LifeEvents.length - 1 ? (<div className="relative mr4 bl bw1 b--light-gray mt4 mb1"></div>) : (<div className="relative mr4 bl bw1 b--white"></div>)}
-        <div style={dotStyle} className="absolute br-pill"></div>
-        <div className="pa4 pt0 w-100 mb5 ml5-l ml2">
-          <div className="flex flex-column items-start">
-            <div className="flex flex-column">
-              <div className="flex items-center mb4 ">
-                <div className="f4 fw5 black-80 fw5 tracked-tight mr2">{title} <span className="fw5 f4 black-40">{year}</span></div>
-
-              </div>
-              <div className="measure lh-copy f4 black-80 mb4">{description}</div>
+    <div key={title} className="flex">
+      {index !== LifeEvents.length - 1 ? (<div className="relative mr4 bl bw1 b--light-gray mt4 mb1"></div>) : (<div className="relative mr4 bl bw1 b--white"></div>)}
+      {/* {index === 0 &&
+            <motion.div
+              style={{ marginLeft: "-.20rem", marginTop: ".70rem", width: ".5rem", height: ".5rem" }}
+              initial={{ scale: 1, opacity: 1 }}
+              animate={{ scale: 5, opacity: 0, transition: { duration: 3, loop: Infinity } }}
+              className="absolute br-pill center flex items-center justify-center bg-light-green ">
+            </motion.div>} */}
+      <div style={{ color: index === 0 ? "#39c070" : "black", marginLeft: icon ? "-.6rem" : "-.35rem" }} className="absolute br-pill center flex items-center justify-center f3">{icon || "•"}</div>
+      <div className={`pa4 pt0 w-100 ${description && image && 'mb5'} `}>
+        <div className="flex flex-column ml5-l ml0">
+          <div className="flex flex-column">
+            <div className="flex items-center mb4">
+              <div className="f4 fw5 black-80 fw5 tracked-tight mr2 lh-copy">{title}</div> <span className="fw5 f5 black-40 mono">{year}</span>
             </div>
-            {!reallyHidden && image && <Img className={"w-100 mt3"} fluid={data[image].childImageSharp.fluid}></Img>}
-            {reallyHidden && <div onClick={() => { hidden ? setHidden(false) : setReallyHidden(false) }} className="dib f5 fw5 fl pa3 br3 hover-bg-near-white pointer" style={{ color: hidden ? "black" : "red", background: hidden ? "#f7f7f7" : "#ffe5e9" }}>{`${hidden ? 'Reveal' : 'Really reveal'}`}</div>}
+            {description && <div className="measure lh-copy f4 black-40 mb4">{description}</div>}
+            {link && <a href={link} target="_blank" className="link hover-black measure lh-copy f4 black-40 underline-hover mb4">Read More →</a>}
           </div>
-        </div>
-      </div >
-    ) :
-      isMilestone ? (
-        <div key={title} className="flex">
-          {index !== LifeEvents.length - 1 ? (<div className="relative mr4 bl mt4 bw1 b--light-gray"></div>) : (<div className="relative mr4 bl bw1 b--white"></div>)
+          {!reallyHidden && image &&
+            <Img className={"w-50 mt3"} fluid={data[image].childImageSharp.fluid}></Img>
           }
-          <div style={dotStyle} className="absolute br-pill center flex items-center justify-center">{icon}</div>
-          <div className="mb5 pb3 ml5-l ml2">
-            <div className="flex items-center">
-              <div className="f4 fw5 black-80 ml4 fw5 tracked-tight">{title}</div>
-              <div className="ml2 fw5 f4 black-40">{year}</div>
-            </div>
-          </div>
-        </div >
-      ) : (
-          <div key={title} className="flex">
-            {index !== LifeEvents.length - 1 ? (<div className="relative mr4 bl bw1 b--light-gray mt4 mb1"></div>) : (<div className="relative mr4 bl bw1 b--white"></div>)}
-            {index === 0 &&
-              <motion.div
-                style={{ marginLeft: "-.20rem", marginTop: ".50rem", width: ".5rem", height: ".5rem" }}
-                initial={{ scale: 1, opacity: 1 }}
-                animate={{ scale: 5, opacity: 0, transition: { duration: 3, loop: Infinity } }}
-                className="absolute br-pill center flex items-center justify-center bg-light-green ">
-              </motion.div>}
-            <div style={dotStyle} className="absolute br-pill"></div>
-            <div className={`pa4 pt0 w-100 ${description && image && 'mb5'} `}>
-              <div className="flex flex-column ml5-l ml0">
-                <div className="flex flex-column">
-                  <div className="flex items-center mb4">
-                    <div className="f4 fw5 black-80 fw5 tracked-tight mr2">{title} <span className="fw5 f4 black-40">{year}</span></div>
-
-                  </div>
-                  <div className="measure lh-copy f4 black-40 mb4 fw5">{description}</div>
-                </div>
-                {image && <Img className={"w-100 mt3"} fluid={data[image].childImageSharp.fluid}></Img>}
-              </div>
-            </div>
-          </div >
-        )
+          {isHidden && reallyHidden &&
+            <div onClick={() => { hidden ? setHidden(false) : setReallyHidden(false) }}
+              className="dib self-start f5 fw5 fl pa3 br3 hover-bg-near-white pointer"
+              style={{ color: hidden ? "black" : "red", background: hidden ? "#f7f7f7" : "#ffe5e9" }}>
+              {`${hidden ? 'Reveal' : 'Really reveal?'}`}</div>
+          }
+          {!isHidden && image &&
+            <Img className={"w-100 mt3"} fluid={data[image].childImageSharp.fluid}></Img>
+          }
+        </div>
+      </div>
+    </div >
   )
 }
 
@@ -150,6 +128,14 @@ const About = ({ data }) => {
                   >
                     Twitter
         </a>
+                  <a
+                    target="_blank"
+                    className="link black-40 hover-black-80 underline-hover mr3"
+                    href="http://github.com/lucasnantonio/"
+                  >
+                    Github
+        </a>
+
                 </div>
               </div>
             </div>
