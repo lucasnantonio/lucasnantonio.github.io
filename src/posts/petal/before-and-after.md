@@ -11,7 +11,7 @@ learnings:
   - Ensuring the engineering team has a quota of design-led tasks every sprint was essential to getting some of this work prioritized.
   - Accessibility is hard and getting it right deserves much more attention and resources than some small teams have.
 cover: true
-cover_image: "../../images/petal/before-and-after/petal-phone-hero.png"
+cover_image: "../../images/petal/petal-phone-hero-2.png"
 published: true
 team:
   - Maxwell H
