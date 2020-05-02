@@ -167,7 +167,7 @@ export const squareImage = graphql`
 
 export const query = graphql`
   query {
-    TomerSharon: file(relativePath: { eq: "life/tomer-sharon.JPG" }) {
+    TomerSharon: file(relativePath: { eq: "life/tomer-sharon.png" }) {
       ...squareImage
     }
     Ariely: file(relativePath: { eq: "life/ariely.jpg" }) {
