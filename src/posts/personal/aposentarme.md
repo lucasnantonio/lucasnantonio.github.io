@@ -11,8 +11,8 @@ published: true
 soon: false
 cover_image: "../../images/aposentarme/aposentarme-2.png"
 problem: How might we help people understand what affects their retirement plans?
-solution: We were learning to code as we went, so didn't follow a strict design process
-myrole: Product Design & Code (React)
+solution: A quick calculator that is human, approachable, and educational.
+myrole: Product design, code (React), and 3d Modeling (Vectary) 
 color: "#b2e5fe"
 cover: false
 link_label: See live

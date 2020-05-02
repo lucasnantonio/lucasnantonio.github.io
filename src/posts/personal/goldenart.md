@@ -5,9 +5,8 @@ title: GoldenArt
 subtitle: My family's company website, my code sandbox.
 category: Others
 problem: Old, unmaintained Wordpress website with no flexibility for current content
-solution: Website redesigned and rebuilt from scratch using Node.js
-impact: Higher customer engagement, better usability for both back-office and customers
-myrole: Content Information Architecture, Design and Code
+solution: Website redesigned and rebuilt from scratch using Node.js and Airtable
+myrole: Redesigned information architecture of the product catalogue, design and code
 topics:
   - Product Design
   - Code

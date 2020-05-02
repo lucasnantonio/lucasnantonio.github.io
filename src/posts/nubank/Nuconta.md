@@ -7,7 +7,7 @@ category: "Nubank"
 problem: Brazilians are stuck with terrible banking account options.
 solution: A free, integrated, hybrid checking and savings account.
 impact: 10+ Million customers in the 1st year of launch.
-myrole: Lead designer for the Savings Design Team
+myrole: Lead designer for the team, which grew from 2 to 6 people.
 topics:
   - Product Design
   - Research

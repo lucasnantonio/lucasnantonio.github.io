@@ -26,60 +26,47 @@ const getIconColor = (color) => {
     brightness > 0.4 && brightness <= 0.7 ? tinycolor(color).darken(35) :
       tinycolor(color).darken(45)
 }
-
+const SummaryItem = ({ icon, title, text, color, noBorder }) => {
+  return (
+    <div
+      style={{ marginBottom: "-2px" }}
+      className={`${!noBorder && 'br-ns bbn-ns bb'} bw1 w-100 mb0-ns mb4 measure pl4 pt4 pr4 pb3 b--near-white flex flex-column items-start`}>
+      {icon}
+      <span
+        className="ttu mt4 fw5 f6 black">{title}</span>
+      <p className="lh-copy f4">{text}</p>
+    </div>
+  )
+}
 const PostSummary = ({ frontmatter }) => {
   const roundIcon = (icon) => {
-    return <span className="br-pill flex items-center mr2" style={{ padding: ".65rem", background: getIconBackgroundColor(frontmatter.color) }}>{icon(getIconColor(frontmatter.color))} </span>
+    return <span
+      className="br-pill flex items-center mr2"
+    // style={{ padding: ".65rem", background: getIconBackgroundColor(frontmatter.color) }}
+    >
+      {icon(getIconColor(frontmatter.color))}
+    </span>
   }
   return (frontmatter.solution ||
     frontmatter.problem ||
     frontmatter.impact ||
     frontmatter.myrole) && (
-      <div className="flex flex-column center items-center">
-        <div
-          style={{ maxWidth: minWidth }}
-          className=" center flex flex-row-ns flex-column justify-between pv4-ns pv4 br2 tl mt3 "
-        >
-          <div className="flex flex-row-ns flex-column">
-            {frontmatter.problem && (
-              <div className="mr5 w-100 mb0-ns mb4 measure">
 
-                <h4 className="fw6 f4 mt3 mb0 flex center items-center">
-                  {roundIcon(ic_problem)}
-                  <span className="ml2">Problem</span> </h4>
-                <p className="lh-copy f4">{frontmatter.problem}</p>
-              </div>
-            )}
-            {frontmatter.solution && (
-              <div className="mr5 w-100 mb0-ns mb4 measure">
-                <h4 className="fw6 f4 mt3 mb0 flex center items-center">
-                  {roundIcon(ic_solution)}
-                  <span className="ml2">Approach</span></h4>
-                <p className="lh-copy f4">{frontmatter.solution}</p>
-              </div>
-            )}
-          </div>
-          <div className="flex flex-row-ns flex-column">
-            {frontmatter.impact && (
-              <div className={`${frontmatter.myrole && "mr5"}  w-100 mb0-ns mb4 measure`}>
-                <h4 className="fw6 f4 mt3 mb0 flex center items-center">
-                  {roundIcon(ic_impact)}
-                  <span className="ml2">Impact</span></h4>
-                <p className="lh-copy f4">{frontmatter.impact}</p>
-              </div>
-            )}
-            {frontmatter.myrole && (
-              <div className=" w-100 mb0-ns mb4 measure">
-                <h4 className="fw6 f4 mt3 mb0 flex center items-center">
-                  {roundIcon(ic_role)}
-                  <span className="ml2">My role</span></h4>
-                <p className="lh-copy f4">{frontmatter.myrole}</p>
-              </div>
-            )}
-          </div>
-        </div>
-        <div style={{ borderColor: getIconBackgroundColor(frontmatter.color) }} className="w bt bw2"></div>
+      <div style={{ maxWidth: minWidth }} className="mt5 center flex flex-row-ns flex-column ba bw1 b--near-white br3">
+        {frontmatter.problem && (
+          <SummaryItem color={frontmatter.color} icon={roundIcon(ic_problem)} title="Problem" text={frontmatter.problem} />
+        )}
+        {frontmatter.solution && (
+          <SummaryItem color={frontmatter.color} icon={roundIcon(ic_solution)} title="Solution" text={frontmatter.solution} />
+        )}
+        {frontmatter.impact && (
+          <SummaryItem color={frontmatter.color} icon={roundIcon(ic_impact)} title="Impact" text={frontmatter.impact} />
+        )}
+        {frontmatter.myrole && (
+          <SummaryItem noBorder color={frontmatter.color} icon={roundIcon(ic_role)} title="My Role" text={frontmatter.myrole} />
+        )}
       </div>
+
     )
 }
 
