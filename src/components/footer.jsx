@@ -10,7 +10,6 @@ const Footer = () => {
     >
       <div className="ph0-l ph4 flex flex-row-l flex-column justify-between center items-start" style={{ maxWidth: minWidth }}>
 
-
         <div className=" flex flex-column lh-copy  mb0-l mb4">
           <p className="mt0 black-80 fw5">Lucas Neumann</p>
           <div className="flex flex-row-l flex-column">

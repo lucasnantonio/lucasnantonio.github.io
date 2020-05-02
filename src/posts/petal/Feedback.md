@@ -56,7 +56,7 @@ Observing the challenges above, our requirements for our feedback tool were:
 So here's what we've built: a reusable feedback module that we can add to any page or flow in our app. By clicking it, users are able to provide immediate feedback about what they're trying to do and how they think we could improve it. First, users are prompted to submit a 5-scale score, followed by a text field to explain why.
 
 <div style="background: #8DE1FD" class="w-100 pa4 tc mt5">
-  <video class="w-100 mw5 br2" autoplay loop>
+  <video class="w-100 mw5 br2" autoplay loop muted>
   <source src="../../images/petal/feedback-flow-3.mp4" type="video/mp4">
   </video>
 </div>

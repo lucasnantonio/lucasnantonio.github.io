@@ -48,12 +48,12 @@ One of the biggest challenges of running a credit card business for new-to-credi
 Since this was a hackathon, in 2 days we were ready to ship a version that displayed total spend, categories and merchant spend, and recurring subscriptions. We were eager to put it out to some users and hear their feedback.
 
 <div style="background: #BCEDFF" class="w-100 pa4 tc">
-  <video class="w-100 mw5 br2" autoplay loop>
+  <video class="w-100 mw5 br2" autoplay muted loop>
   <source src="../../images/petal/insights-1.mp4" type="video/mp4">
   </video>
 </div>
 <div style="background: #BCEDFF" class="w-100 pa4 tc mt5">
-  <video class="w-100 mw5 br2" autoplay loop>
+  <video class="w-100 mw5 br2" autoplay muted loop>
   <source src="../../images/petal/petal-feedback-flow.mp4" type="video/mp4">
   </video>
 </div>
@@ -73,7 +73,7 @@ Here's an example of how we'd allow for a deep dive in a merchant or category:
 <div 
 style="background: #bdf5e8" 
 class=" w-100 pa4 tc mt5">
-  <video class="w-100 mw5 br2" autoplay loop>
+  <video class="w-100 mw5 br2" autoplay muted loop>
   <source src="../../images/petal/insights-2.mp4" type="video/mp4">
   </video>
 </div>
@@ -87,7 +87,7 @@ And here's a proposal for date range editing:
 <div 
 style="background: #BCEDFF" 
 class=" w-100 pa4 tc mt5">
-  <video class="w-100 mw5 br2" autoplay loop>
+  <video class="w-100 mw5 br2" autoplay muted loop>
   <source src="../../images/petal/insights-4.mp4" type="video/mp4">
   </video>
 </div>

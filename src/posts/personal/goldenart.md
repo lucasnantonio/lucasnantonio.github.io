@@ -13,7 +13,7 @@ topics:
   - Code
 roles:
   - designer
-cover_image: "../../images/golden-art/golden-art-hero-2.png"
+cover_image: "../../images/golden-art/golden-art-hero.png"
 published: true
 learn_more: http://goldenart.com.br
 where: São Paulo
@@ -25,19 +25,35 @@ link_label: Goldenart.com
 
 This project is a very simple catalog, but I'm proud of it because it's the first full-stack website I've built and shipped while learning to code. It uses Airtable as the CMS, where the client can update the products' information and actually became the source of truth for the company's inventory. It was a steep learning curve and got me a decent understanding of Javascript, Node, and Express.
 
-<div class="w-100 bg-washed-red pa4 tc">
-  <video class="w-100 mw6 br2" autoplay loop>
-  <source src="../../images/golden-art/golden-art-1.mp4" type="video/mp4">
+<div class="w-100 bg-washed-red pa6-l pa4 tc mb4">
+  <video class="w-100 mw7 br2" autoplay loop muted>
+  <source src="../../images/golden-art/golden-art-scroll-2.mp4" type="video/mp4">
+  </video>
+</div>
+
+
+<div class="w-100 bg-washed-red pa6-l pa4 tc mb4">
+  <video class="w-100 mw7 br2" autoplay loop muted>
+  <source src="../../images/golden-art/golden-art-scroll.mp4" type="video/mp4">
+  </video>
+</div>
+
+
+<div class="w-100 bg-washed-red pa6-l pa4 tc">
+  <video class="w-100 mw7 br2" autoplay loop muted>
+  <source src="../../images/golden-art/golden-art-filters.mp4" type="video/mp4">
   </video>
 </div>
 
 One of the customer's biggest problems was picking a color finish from the catalogue. To this date, the company did not have a way to accurately represent all the colors available. We tried scanning and photographing the materials, but the best results came from 3D renderings. I had fun experimenting with Vectary, a browser-based 3D tool, to produce the images below:
 
-<div class="w-100 bg-washed-red pa4 tc">
-  <video class="w-100 mw6 br2" autoplay loop>
-  <source src="../../images/golden-art/golden-art-2.mp4" type="video/mp4">
+<div class="w-100 bg-washed-red pa6-l pa4 tc">
+  <video class="w-100 mw7 br2" loop muted autoplay>
+  <source src="../../images/golden-art/golden-art-colors.mp4" type="video/mp4">
   </video>
 </div>
+
+
 
 ## Problems with the old version
 
