@@ -57,6 +57,13 @@ export const LifeEvents = [
     },
     {
         year: "2017",
+        icon: "📰",
+        title: "Patent Issued",
+        description: "In partnership with Airbus, patented a system for recycling airline waste.",
+        link: "https://patents.justia.com/patent/9809239"
+    },
+    {
+        year: "2017",
         icon: "🎓",
         title: "DesignOps, Scaling User Research Workshop",
         description: "Attending the Design Ops Summit, and especially Tomer Sharon's workshop gave me a whole new way of thinking about the impact of design in organizations.",
