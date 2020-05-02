@@ -8,7 +8,7 @@ export default function PostMetadata ({ frontmatter }) {
                 <a
                     href={frontmatter.link}
                     target="_blank"
-                    className="pb1 bb b--near-white bw1 mb3 link mt0-l black-40 hover-black-80 f6 flex justify-between-l nowrap pointer hover-white"
+                    className="pb1 bb b--near-white bw1 mb3 link mt0-l black-30 hover-black-80 f6 flex justify-between-l nowrap pointer hover-white"
                 >{frontmatter.link_label}
                 </a>
             )}
