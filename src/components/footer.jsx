@@ -12,7 +12,7 @@ const Footer = () => {
 
 
         <div className=" flex flex-column lh-copy  mb0-l mb4">
-          <p className="mt0 black-80 fw5">Lucas Neumann © Always</p>
+          <p className="mt0 black-80 fw5">Lucas Neumann</p>
           <div className="flex flex-row-l flex-column">
             <a
               className="link black-40 hover-black-80 underline-hover mr3"
