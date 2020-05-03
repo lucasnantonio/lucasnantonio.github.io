@@ -48,7 +48,8 @@ const Header = ({
           className="w-100 flex justify-between center items-center"
         >
           <Link to="/" className={"link"}>
-            <h1 className="f3 fw5 tracked-tight black-80 neue-regular pv2">Lucas Neumann</h1>
+            <h1 style={{ fontSize: '19px' }}
+              className="f3 fw5 tracked-tight black-80 neue-regular pv2">Lucas Neumann</h1>
           </Link>
           {!isIndex &&
             <div className="flex">
@@ -84,7 +85,7 @@ const Header = ({
           }
         </div>
       </header>
-    </div>
+    </div >
   )
 
 Header.propTypes = {

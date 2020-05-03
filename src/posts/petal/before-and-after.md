@@ -21,7 +21,7 @@ link_label: Petalcard.com
 
 ---
 
-## This is a collection of tactical, small design wins, a weekly log. Looking for a robust case study? [Try here.](/blog/nubank/nuconta)
+## This is a collection of tactical, small design wins, a sort of journal. <br> Looking for a robust case study? [Try here.](/blog/nubank/nuconta)
 
 | <img src="../../images/petal/before-and-after/filters-before.gif"> | <img src="../../images/petal/before-and-after/filters-after-3.gif"> | 
 |--------- | --------|
