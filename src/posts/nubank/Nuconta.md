@@ -25,6 +25,15 @@ team:
   - Rachel Jordan
   - Erick Mazer
   - Vitor Gurgel
+learnings:
+  - Design and Engineering added immense value to product strategy by being involved before requirements were defined. It is what allowed us to create a type of bank account that didn't exist before, instead of making the existing ones incrementally better.
+  - Stakeholders that were involved in very early design stage stayed permanently engaged with making user-centered decisions.
+  - Even though the ultimate vision was a product "for every Brazilian" / "For everyone", it was important to start focused. Choosing 2 personas from the universe we mapped was essential to accelerate decision making.
+  - Agreeing on what the initial product does was as important as agreeing on what it does not do.  
+  - Designing the team (members, meeting cadence, lunches, co-designs, critiques) was as important as designing the product itself.
+  - Prototyping was paramount. Engineers' collboration with us on Framer elevated our user tests to a greater level of fidelity.
+  - A few heavy user customers are very vocal about their need for financial analysis and charts. But most customers don't really care for or seem to need them. 📊🤷‍♂️
+
   
 ---
 
