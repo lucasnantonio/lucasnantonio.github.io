@@ -1,13 +1,7 @@
 {
   "eslint.alwaysShowStatus": true,
-  "prettier.disableLanguages": [
-    "js"
-  ],
   "editor.codeActionsOnSave": {
     "source.fixAll": true
-  },
-  "[javascript]": {
-    "editor.formatOnSave": false
   },
   "grammarly.userWords": [
     "Dasmer",
