@@ -43,9 +43,9 @@ As part of the launch strategy, we needed to be ready with content-rich, self-se
     <img src="../../images/kano/kano-017.gif">
   </div>
 </figure>
-<div style="background-color: #FF842B"class="w-100 bg-washed-red ph4 pv5 tc">
-  <img src="../../images/kano/kano-group-2.png">
-</div>
+  <div style="background-color: #FF842B"class="w-100 bg-washed-red ph4 pv5 tc">
+    <img src="../../images/kano/kano-group-2.png">
+  </div>
 <figcaption>The troubleshooting onboarding screens</figcaption>
 
 ## Learnings

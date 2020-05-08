@@ -1,6 +1,24 @@
 {
-    "eslint.provideLintTask": true,
-    "javascript.format.insertSpaceBeforeFunctionParenthesis": true,
-    "editor.formatOnSave": true,
-    "files.associations": {}
+  "eslint.lintTask.enable": true,
+  "eslint.format.enable": true,
+  "eslint.codeActionsOnSave.mode": "problems",
+  "eslint.alwaysShowStatus": true,
+  "prettier.disableLanguages": [
+    "js"
+  ],
+  "javascript.format.insertSpaceBeforeFunctionParenthesis": true,
+  // "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true
+  },
+  "[javascript]": {
+    "editor.formatOnSave": false
+  },
+  "grammarly.userWords": [
+    "Dasmer",
+    "dasmer",
+    "myrole",
+    "nubank",
+    "nuconta"
+  ]
 }
