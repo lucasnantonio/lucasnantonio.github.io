@@ -1,13 +1,8 @@
 {
-  "eslint.lintTask.enable": true,
-  "eslint.format.enable": true,
-  "eslint.codeActionsOnSave.mode": "problems",
   "eslint.alwaysShowStatus": true,
   "prettier.disableLanguages": [
     "js"
   ],
-  "javascript.format.insertSpaceBeforeFunctionParenthesis": true,
-  // "editor.formatOnSave": true,
   "editor.codeActionsOnSave": {
     "source.fixAll": true
   },
