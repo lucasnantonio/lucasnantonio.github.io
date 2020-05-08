@@ -33,6 +33,11 @@ link_label: Petalcard.com
 | __Before 🤔__        |__After ✨__         |
 | Merchants were named with the raw strings we received, and category icons were assigned. | With some quick Regex, we're able to clean up names and display curated logos for +50% of purchses. | 
 
+| ![](../../images/petal/before-and-after/desktop-before.png) | ![](../../images/petal/before-and-after/desktop-after.png) | 
+|--------- | --------|
+| __Before 🤔__        |__After ✨__         |
+| Merchants were named with the raw strings we received, and category icons were assigned. | With some quick Regex, we're able to clean up names and display curated logos for +50% of purchses. | 
+
 | ![](../../images/petal/before-and-after/modals-before-12.gif) | ![](../../images/petal/before-and-after/modals-after-12.gif) | 
 |--------- | --------|
 | __Before 🤔__        |__After ✨__         |
