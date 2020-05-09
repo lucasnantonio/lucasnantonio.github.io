@@ -38,8 +38,9 @@ const LifeEvent = (
         ></img>
       </div>
       <div
-        className={`bb b--near-white w-100 pv5 pl5-l pv2 ml4
+        className={`b--near-white w-100 pv5 pl5-l pv2 ml4
       ${index === 0 && "bt"}
+      ${index !== LifeEvents.length - 1 && "bb"}
       `}
       >
         <div className="flex flex-column">

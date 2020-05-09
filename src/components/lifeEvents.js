@@ -190,7 +190,7 @@ export const LifeEvents = [
   {
     year: 2008,
     title: "My first design",
-    icon: school,
+    icon: job,
     description:
       "Still reading? As a reward, you can take a look at the first design I actually had a client for: my Prom logo. Disclaimer: It's not great!",
     image: "FirstDesign",
