@@ -4,9 +4,9 @@ export const ic_problem_2 = (color, backgroundColor) => {
   return (
 <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path fillRule="evenodd" clipRule="evenodd" d="M0 12C0 5.38364 5.38364 0 12 0C18.6164 0 24 5.38364 24 12C24 18.6164 18.6164 24 12 24C5.38364 24 0 18.6164 0 12Z" fill={backgroundColor}/>
-<circle cx="12" cy="12" r="9" fill={color}/>
-<circle cx="12" cy="12" r="6" fill="white"/>
-<circle cx="12" cy="12" r="3" fill={color}/>
+<circle cx="12" cy="12" r="8" fill={color}/>
+<circle cx="12" cy="12" r="5" fill="white"/>
+<circle cx="12" cy="12" r="2" fill={color}/>
 </svg>
   )
 }
@@ -36,12 +36,13 @@ export const ic_impact_2 = (color, backgroundColor) => {
 export const ic_role_2 = (color, backgroundColor) => {
   return (
 <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path fillRule="evenodd" clipRule="evenodd" d="M0 12C0 5.38364 5.38364 0 12 0C18.6164 0 24 5.38364 24 12C24 18.6164 18.6164 24 12 24C5.38364 24 0 18.6164 0 12Z" fill={backgroundColor}/>
-<path fillRule="evenodd" clipRule="evenodd" d="M9.09091 5.90909C6.27928 5.90909 4 8.18837 4 11C4 13.0664 5.23117 14.8453 7 15.6431V18.2967C7 19.2251 8.15506 19.6524 8.75925 18.9475L11.2078 16.0909H14.9091C17.7207 16.0909 20 13.8116 20 11C20 8.18837 17.7207 5.90909 14.9091 5.90909H9.09091Z" fill={color}/>
-<circle cx="8" cy="11" r="1" fill="white"/>
-<circle cx="12" cy="11" r="1" fill="white"/>
-<circle cx="16" cy="11" r="1" fill="white"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M0 12C0 5.38364 5.38364 0 12 0C18.6164 0 24 5.38364 24 12C24 18.6164 18.6164 24 12 24C5.38364 24 0 18.6164 0 12Z" fill={backgroundColor}/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M9.5 6C6.46243 6 4 8.46243 4 11.5C4 13.2079 4.7785 14.734 6 15.7428V18.6484C6 19.1126 6.57753 19.3262 6.87963 18.9738L8.63007 16.9316C8.91342 16.9766 9.20398 17 9.5 17H15.5C18.5376 17 21 14.5376 21 11.5C21 8.46243 18.5376 6 15.5 6H9.5Z" fill={color}/>
+<circle cx="8.5" cy="11.5" r="1.5" fill="white"/>
+<circle cx="12.5" cy="11.5" r="1.5" fill="white"/>
+<circle cx="16.5" cy="11.5" r="1.5" fill="white"/>
 </svg>
+
   )
 }
 export const ic_petal_logo = (
