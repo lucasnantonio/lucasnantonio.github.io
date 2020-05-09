@@ -1,5 +1,4 @@
 import React from "react"
-import { motion } from "framer-motion"
 import Code from "../images/icons/Code"
 import Design from "../images/icons/Design"
 import DesignOps from "../images/icons/DesignOps"
