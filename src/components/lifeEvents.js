@@ -52,6 +52,15 @@ export const LifeEvents = [
   },
   {
     year: 2019,
+    icon: award,
+    title: "Nubank becomes the most downloaded neobank app in the world.",
+    description:
+      "I'll never forget being part of building a product with such positive impact on people's financial lives.",
+    link:
+      "https://qz.com/1738245/nubanks-app-has-more-downloads-than-revolut-monzo-and-n26-combined/",
+  },
+  {
+    year: 2019,
     icon: speech,
     title: "Interviewing Dan Ariely",
     image: "Ariely",
@@ -115,6 +124,15 @@ export const LifeEvents = [
     image: "Airbus",
   },
   {
+    year: "2015",
+    icon: award,
+    title: "Redbull Basement Grant",
+    link:
+      "https://www.hypeness.com.br/2016/02/mapa-daqui-sistema-de-sinalizacao-colaborativa-ajuda-a-aproveitar-o-melhor-das-cidades-a-pe/",
+    description:
+      "Received a grant to work on an open-source, public wayfinding system for pedestrians. #WalkableCities",
+  },
+  {
     year: 2013,
     icon: job,
     title: "Service Design Internship, Insitum / Fjord",
@@ -164,7 +182,9 @@ export const LifeEvents = [
     year: 2012,
     icon: award,
     title: "EDP Design Challenge Award",
-    // description: "I designed a typographic poster for school using only pictures of my hands. It went viral on DeviantArt and was recently exhibited in a gallery in the Netherlands."
+    description: "Strategy and brand design for a renewable energy company",
+    link:
+      "https://brasil.edp.com/en/news/2012/03/28/edp-entrega-premio-university-challenge-2011",
   },
   {
     year: 2011,

@@ -132,7 +132,7 @@ const About = ({ data }) => {
               }}
               className="pa3 br-pill bg-white black pointer fw5"
             >
-              Back to the future ↺
+              Back to the future ↑
             </div>
           </motion.div>
         )}
