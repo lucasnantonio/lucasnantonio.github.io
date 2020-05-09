@@ -25,8 +25,8 @@ export default function PostSummaryIcon(icon, postColor) {
     return brightness <= 0.4
       ? tinycolor(postColor)
       : brightness > 0.4 && brightness <= 0.7
-      ? tinycolor(postColor).darken(10)
-      : tinycolor(postColor).darken(20)
+      ? tinycolor(postColor).darken(5)
+      : tinycolor(postColor).darken(15)
   }
 
   return (
