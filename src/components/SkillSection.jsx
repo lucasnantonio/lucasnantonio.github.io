@@ -59,20 +59,16 @@ export default function SkillSection({ skill }) {
                   top: -80,
                   left: -170,
                   opacity: 0,
-                  rotate: 10,
                 }}
                 animate={{
                   width: 600,
                   top: -150,
                   left: -190,
                   opacity: 1,
-                  rotate: -15,
                 }}
                 transition={{ duration: 1 }}
                 style={{
                   position: "absolute",
-                  left: "2.8rem",
-                  top: "5rem",
                   // transform: "scale(1.5)",
                   // transform: "rotate(-20deg)",
                 }}
