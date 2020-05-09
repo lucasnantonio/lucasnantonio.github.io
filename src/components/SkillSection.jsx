@@ -1,5 +1,5 @@
 import React from "react"
-import motion, { AnimatePresence } from "framer-motion"
+import { motion } from "framer-motion"
 import Code from "../images/icons/Code.svg"
 import Design from "../images/icons/Design.svg"
 import DesignOps from "../images/icons/DesignOps.svg"
@@ -52,16 +52,32 @@ export default function SkillSection({ skill }) {
                 {/* <h3 className="f3 fw6 mv0">{skill}</h3> */}
                 <p className="mv0 measure">{skillList[skill].text}</p>
               </div>
-              <img
+              <motion.img
+                key={skillList[skill]}
+                initial={{
+                  width: 500,
+                  top: -80,
+                  left: -170,
+                  opacity: 0,
+                  rotate: 10,
+                }}
+                animate={{
+                  width: 600,
+                  top: -150,
+                  left: -190,
+                  opacity: 1,
+                  rotate: -15,
+                }}
+                transition={{ duration: 1 }}
                 style={{
                   position: "absolute",
                   left: "2.8rem",
                   top: "5rem",
                   // transform: "scale(1.5)",
-                  transform: "scale(3.5) rotate(-20deg)",
+                  // transform: "rotate(-20deg)",
                 }}
                 src={skillList[skill].image}
-              ></img>
+              />
             </div>
           )
         })}
