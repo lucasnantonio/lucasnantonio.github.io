@@ -20,7 +20,7 @@ export const LifeEvents = [
   },
   {
     icon: award,
-    year: "2020",
+    year: "2019",
     title: "Petal Most Valuable Player",
     description:
       "My colleagues at Petal said nice things: “Lucas has helped shepherd so many critical changes which prioritize the Petal customer's experience. He does so with curiosity, willingness to collaborate, clarity and empathy. I think he's also a cultural bar raiser--he role models professional and courteous behavior, and seems to influence others around him to hold themselves to a higher standard as well. Lucas has made a significant impact on the business in a relatively short amount of time, and he should be formally celebrated for his contributions”",
