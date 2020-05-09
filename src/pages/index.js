@@ -1,20 +1,22 @@
-import React, { useState } from 'react'
-import Layout from '../components/layout'
-import PostList from '../components/postList'
-import HomeSection from '../components/home-section'
-import SEO from '../components/seo'
-import Hello from '../components/hello'
-import Filters from '../components/filters'
-import { minWidth, topics } from '../components/utils'
-import { motion, AnimatePresence } from 'framer-motion'
+import React, { useState } from "react"
+import Layout from "../components/layout"
+import PostList from "../components/postList"
+import HomeSection from "../components/home-section"
+import SEO from "../components/seo"
+import Hello from "../components/hello"
+import Filters from "../components/filters"
+import { minWidth, topics } from "../components/utils"
+import Code from "../images/icons/Code.svg"
+import SkillSection from "../components/SkillSection"
+import { motion, AnimatePresence } from "framer-motion"
 
-import { ic_petal_logo, ic_nu_logo, ic_others } from '../components/icons.js'
+import { ic_petal_logo, ic_nu_logo, ic_others } from "../components/icons.js"
 
-function IndexPage ({
+function IndexPage({
   data: {
     allMarkdownRemark: { edges: posts },
-    allImageSharp: { nodes: images }
-  }
+    allImageSharp: { nodes: images },
+  },
 }) {
   const [isAll, setAll] = useState(true)
   const [selectedTopics, setSelectedTopics] = useState(topics)
@@ -34,7 +36,7 @@ function IndexPage ({
       )
     }
   }
-
+  console.log(Code)
   return (
     <Layout
       isIndex
@@ -44,19 +46,12 @@ function IndexPage ({
       setSelectedTopics={setSelectedTopics}
     >
       <SEO title="Home" />
-      <div
-      // style={{background:"#f9f7f6"}}
-      // className="w-100 pb4 mb5 flex"
-      >
+      <div>
         <div className="w-100 flex center  " style={{ maxWidth: minWidth }}>
-
           <Hello setSelectedTopics={setSelectedTopics} setAll={setAll} />
-          {/* <Img objectFit="contain" className="w-70 overflow-x-visible" fluid={nucontaImage}></Img> */}
         </div>
       </div>
-      <div
-        style={{ maxWidth: minWidth }}
-        className="db-ns dn mr4 center  ">
+      <div style={{ maxWidth: minWidth }} className="db-l dn mr4 center  ">
         <Filters
           selectedTopics={selectedTopics}
           setSelectedTopics={setSelectedTopics}
@@ -65,40 +60,26 @@ function IndexPage ({
           posts={posts}
           publishedPosts={publishedPosts}
         />
+        {!isAll && <SkillSection skill={selectedTopics[0]}></SkillSection>}
       </div>
-      {!isAll && (
-        <div
-          style={{ maxWidth: minWidth }}
-          className="mt5 mb6 flex flex-column center  "
-        >
-          {/* <h1 className="w-100 f3 fw5 tracked-tight mb3">
-            {selectedTopics[0]}{" "}
-          </h1> */}
-          <AnimatePresence>
-            <motion.p
-              transition={{ duration: 0.25 }}
-              initial={{ y: 30, opacity: 0 }}
-              animate={{ y: 0, opacity: 1 }}
-              exit={{ y: -30, opacity: 0, height: 0, overflow: 'hidden', position: 'absolute' }} key={selectedTopics[0]} className="f3 fw5 w-100 lh-copy black-40 tracked-tight measure">
-              {selectedTopics[0] === 'Research'
-                ? "A lot of my time is invested in listening to users, advocating for their needs, collaborating with researchers, and creating the necessary workflows so that the team understands who they're designing for."
-                : selectedTopics[0] === 'Product Design'
-                  ? 'Understand the user, frame the problem, ideate, prototype, test, deliver, measure, repeat. I have designed products that have reached millions of people, across the disciplines of service, industrial, and digital design.'
-                  : selectedTopics[0] === 'Design Ops'
-                    ? 'Designing design. Helping things scale at a healthy pace. Keeping the teams I work with happy, engaged and empowered.'
-                    : "I'm a coding begginer and enthusiast. This portfolio website is in itself an experiment in learning React. Here are some other things I've played with:"}
-            </motion.p>
-          </AnimatePresence>
-        </div>
-      )}
 
       <div id="work">
         <AnimatePresence>
           {isAll ? (
-            <motion.div transition={{ duration: 0.25 }}
+            <motion.div
+              transition={{ duration: 0.25 }}
               initial={{ x: -20, opacity: 0 }}
               animate={{ x: 0, y: 0, opacity: 1 }}
-              exit={{ y: -30, opacity: 0, height: 0, overflow: 'hidden', position: 'absolute' }} style={{ maxWidth: minWidth }} className="center  ">
+              exit={{
+                y: -30,
+                opacity: 0,
+                height: 0,
+                overflow: "hidden",
+                position: "absolute",
+              }}
+              style={{ maxWidth: minWidth }}
+              className="center  "
+            >
               <HomeSection
                 isAll={isAll}
                 posts={getFilteredPosts()}
@@ -127,8 +108,12 @@ function IndexPage ({
                 description=""
               />
             </motion.div>
-
-          ) : (<div className="center  " style={{ maxWidth: minWidth }}>               <PostList posts={getFilteredPosts()} />             </div>)}
+          ) : (
+            <div className="center  " style={{ maxWidth: minWidth }}>
+              {" "}
+              <PostList posts={getFilteredPosts()} />{" "}
+            </div>
+          )}
         </AnimatePresence>
         {/* <Writing /> */}
       </div>
