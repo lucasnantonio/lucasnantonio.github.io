@@ -10,6 +10,7 @@ color: "#f7bcbc"
 learnings:
   - Ensuring the engineering team has a quota of design-led tasks every sprint was essential to getting some of this work prioritized.
   - Accessibility is hard and getting it right deserves much more attention and resources than some small teams have.
+  - Setting up a robust AB testing program was one most impactful investments we made as a team.
 cover: true
 cover_image: "../../images/petal/petal-phone-hero-2.png"
 published: true
