@@ -117,6 +117,16 @@ div + p {
 	margin-top: 4rem;
 	margin-bottom: 10rem;
 }
+
+.post-content em{
+	background-color: #fff3b3;
+	font-style: normal;
+	border-radius: 4px;
+	padding: 0px 4px;
+	border-bottom: 1px solid aliceblue;
+}
+
+
 .post-content table th{
 	/* border-bottom: 2px solid #181818; */
 	padding-bottom: 1rem;

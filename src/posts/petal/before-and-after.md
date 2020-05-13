@@ -26,7 +26,12 @@ link_label: Petalcard.com
 | <img src="../../images/petal/before-and-after/filters-before.gif"> | <img src="../../images/petal/before-and-after/filters-after-3.gif"> | 
 |--------- | --------|
 | __Before 🤔__        |__After ✨__         |
-| Customer support and usability testing revealed that users had trouble finding content that was two clicks away. | By exposing the filter labels, users don't need to guess what's inside the dropdown. Discoverability is increased. | 
+| Customer support and usability testing revealed that users had trouble filtering important content that was two clicks away. | By exposing the filter labels, users don't need to guess what's inside the dropdown. [*Engagement increased ~500%.*](https://share.getcloudapp.com/wbu05LEA) | 
+
+| ![](../../images/petal/before-and-after/bankLinking-before.png) | ![](../../images/petal/before-and-after/bankLinking-after.png) | 
+|--------- | --------|
+| __Before 🤔__        |__After ✨__         |
+| Highest point of friction for Petal users is linking their accounts. | By AB testing various hypothesis, we achieved a version that [*converts 117% more*](https://share.getcloudapp.com/p9u7Y00X) than the initial design. | 
 
 | ![](../../images/petal/before-and-after/feedItems-before.png) | ![](../../images/petal/before-and-after/feedItems-after.png) | 
 |--------- | --------|
@@ -41,7 +46,7 @@ link_label: Petalcard.com
 | ![](../../images/petal/before-and-after/modals-before-12.gif) | ![](../../images/petal/before-and-after/modals-after-12.gif) | 
 |--------- | --------|
 | __Before 🤔__        |__After ✨__         |
-| Initial modals had CTA and dismiss actions too close to each other and taking too much space. Centered rendering also becomes a problem as out phones grow taller and taller. | Better distributed buttons allows for extra actions such as navigation and secondary CTAs. Also closer to thumb on tall phones. |
+| Initial modals had CTA and dismiss actions too close to each other and taking too much space. Centered rendering also becomes a problem as out phones grow taller and taller. | Better distributed buttons allows for extra actions such as navigation and secondary CTAs and are more ergonomic on tall devices.|
 
 
 | ![](../../images/petal/before-and-after/toast-before.png) | ![](../../images/petal/before-and-after/toast-after.png) | 
