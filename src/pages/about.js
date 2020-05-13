@@ -6,6 +6,7 @@ import { LifeEvents } from "../components/lifeEvents"
 import { minWidth } from "../components/utils"
 import { motion, AnimatePresence } from "framer-motion"
 import { initialFadeAnimation, fadeInAnimation } from "../components/utils"
+import { Link } from "gatsby"
 
 const LifeEvent = (
   data,
@@ -67,10 +68,22 @@ const LifeEvent = (
             )}
           </div>
           {!reallyHidden && image && (
-            <Img
-              className={"w-50 mt4"}
-              fluid={data[image].childImageSharp.fluid}
-            ></Img>
+            <>
+              <Img
+                className={"w-50 mt4"}
+                fluid={data[image].childImageSharp.fluid}
+              ></Img>
+              <p className="f4 black-40">
+                Now, please don't leave with this as your last impression, go
+                look at{" "}
+                <Link
+                  className="link black underline black-40"
+                  to="/blog/petal-before-and-after"
+                >
+                  more recent work.
+                </Link>
+              </p>
+            </>
           )}
           {isHidden && reallyHidden && (
             <div
@@ -87,10 +100,12 @@ const LifeEvent = (
             </div>
           )}
           {!isHidden && image && (
-            <Img
-              className={"w-100 mt5"}
-              fluid={data[image].childImageSharp.fluid}
-            ></Img>
+            <>
+              <Img
+                className={"w-100 mt5"}
+                fluid={data[image].childImageSharp.fluid}
+              ></Img>
+            </>
           )}
         </div>
       </div>
