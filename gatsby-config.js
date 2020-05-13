@@ -30,10 +30,16 @@ module.exports = {
               maxWidth: 1800,
               linkImagesToOriginal: false,
               showCaptions: true,
-              // pathPrefix: "/blog",
             },
           },
           `gatsby-remark-smartypants`,
+          {
+            resolve: "gatsby-remark-external-links",
+            options: {
+              target: "_blank",
+              rel: "nofollow",
+            },
+          },
         ],
       },
     },
@@ -55,8 +61,8 @@ module.exports = {
       resolve: "gatsby-source-filesystem",
       options: {
         name: "fonts",
-        path: `${__dirname}/src/fonts/`
-      }
+        path: `${__dirname}/src/fonts/`,
+      },
     },
     {
       resolve: `gatsby-plugin-manifest`,
