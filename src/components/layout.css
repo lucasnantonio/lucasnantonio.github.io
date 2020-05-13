@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Space+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&display=swap');
+
 
 html {
 	font-family: "Inter";
@@ -29,7 +30,8 @@ h5 {
 } */
 
 .mono{
-	font-family: 'IBM Plex Mono', monospace;
+	font-family: 'DM Mono', monospace;
+	font-weight: 400;
 }
 
 .post-content p,
@@ -237,9 +239,6 @@ font-weight: 600;
 }
 .b {
 	font-weight: 400;
-}
-.mono {
-	font-family: "Space Mono";
 }
 .gatsby-resp-image-wrapper {
 	margin-top: 4rem;
