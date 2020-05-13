@@ -108,6 +108,14 @@ div + p {
 	font-weight: 600;
 }
 
+.post-content em{
+	background-color: #fff3b3;
+	font-style: normal;
+	border-radius: 4px;
+	padding: 0px 4px;
+	border-bottom: 1px solid aliceblue;
+}
+
 .post-content table {
 	width:100%;
 	text-align: left;
@@ -117,15 +125,6 @@ div + p {
 	margin-top: 4rem;
 	margin-bottom: 10rem;
 }
-
-.post-content em{
-	background-color: #fff3b3;
-	font-style: normal;
-	border-radius: 4px;
-	padding: 0px 4px;
-	border-bottom: 1px solid aliceblue;
-}
-
 
 .post-content table th{
 	/* border-bottom: 2px solid #181818; */
@@ -141,6 +140,13 @@ margin-top: 0px;
 	padding-top: 1rem;
 	vertical-align: top;
 	padding-right: 4rem;
+}
+
+.post-content table td strong{
+text-transform: uppercase;
+font-size: 1rem;
+letter-spacing: .02rem;
+font-weight: 600;
 }
 
 .post-content blockquote {
