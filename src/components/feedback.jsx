@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react"
+import React, { useState } from "react"
 import { motion } from "framer-motion"
 
 const links = [
@@ -9,7 +9,6 @@ const links = [
   "https://docs.google.com/forms/d/e/1FAIpQLSdAfwx_vRFGFGCRKnyJ19RkaE7ZZAhDPW-30RKjGsJnOjkuLQ/viewform?usp=pp_url&entry.1156352472=5",
 ]
 const Star = ({ link, index, setHoveredIndex, isBlack }) => {
-  const [isHovered, setHover] = useState(false)
   return (
     <motion.a
       whileHover={{
