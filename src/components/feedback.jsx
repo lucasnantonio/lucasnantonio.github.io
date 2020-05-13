@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react"
+import { motion } from "framer-motion"
 
 const links = [
   "https://docs.google.com/forms/d/e/1FAIpQLSdAfwx_vRFGFGCRKnyJ19RkaE7ZZAhDPW-30RKjGsJnOjkuLQ/viewform?usp=pp_url&entry.1156352472=1",
@@ -10,7 +11,13 @@ const links = [
 const Star = ({ link, index, setHoveredIndex, isBlack }) => {
   const [isHovered, setHover] = useState(false)
   return (
-    <a
+    <motion.a
+      whileHover={{
+        scale: 1.1,
+      }}
+      whileTap={{
+        scale: 0.9,
+      }}
       href={link}
       target="_blank"
       onMouseEnter={() => setHoveredIndex(index)}
@@ -18,7 +25,7 @@ const Star = ({ link, index, setHoveredIndex, isBlack }) => {
       className={`f3 pointer link pr2 ${isBlack ? "black" : "black-40"}`}
     >
       {isBlack ? "★" : "☆"}
-    </a>
+    </motion.a>
   )
 }
 
@@ -26,7 +33,9 @@ const Feedback = () => {
   const [hoveredIndex, setHoveredIndex] = useState(null)
   return (
     <div className="flex-column">
-      <p className="f4 fw5 black mt0 lh-copy">Feedback is a gift:</p>
+      <p className="f4 fw5 black mt0 lh-copy">
+        Feedback is a gift. <br></br>How would you rate my work?
+      </p>
       <div className="flex">
         {links.map((link, index) => {
           return (
