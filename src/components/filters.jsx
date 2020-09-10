@@ -19,7 +19,7 @@ function Filters ({ selectedTopics, setSelectedTopics, isAll, setAll, publishedP
 					setAll={setAll}
 				/>
 			</div>
-			{topics.map((item) => (
+			{/* {topics.map((item) => (
 				<Filter
 					selectedTopics={selectedTopics}
 					setSelectedTopics={setSelectedTopics}
@@ -28,13 +28,13 @@ function Filters ({ selectedTopics, setSelectedTopics, isAll, setAll, publishedP
 					setAll={setAll}
 					title={item}
 				/>
-			))}
+			))} */}
 			{/* <div className="flex items-end"> */}
 			{/* | <SurpriseButton posts={publishedPosts} /> */}
 			{/* </div> */}
 			{/* <div>Bio</div> */}
 			<Link className="link black-40 hover-black" to="/about">
-				<div className="bl-l bw1 pl4-l b--black-10">
+				<div className="pl4-l b--black-10">
 					<div className="f3 fw5">About</div>
 				</div>
 			</Link>

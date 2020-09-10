@@ -37,7 +37,7 @@ function AllFilter({ setSelectedTopics, isAll, setAll }) {
         // backgroundColor: getBackgroundColor(),
       }}
     >
-      All
+      Projects
     </div>
   )
 }
