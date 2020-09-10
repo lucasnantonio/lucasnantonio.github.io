@@ -4,6 +4,7 @@ import PostList from "../components/postList"
 import HomeSection from "../components/home-section"
 import SEO from "../components/seo"
 import Hello from "../components/hello"
+import About, {LifeEvent} from "../components/about"
 import Filters from "../components/filters"
 import { minWidth, topics } from "../components/utils"
 import Code from "../images/icons/Code.svg"
@@ -62,7 +63,9 @@ function IndexPage({
         />
         {!isAll && <SkillSection skill={selectedTopics[0]}></SkillSection>}
       </div>
-
+      <div id="about">
+        <About></About>
+      </div>
       <div id="work">
         <AnimatePresence>
           {isAll ? (
@@ -123,8 +126,63 @@ function IndexPage({
 
 export default IndexPage
 
+export const squareImage = graphql`
+  fragment squareImage on File {
+    childImageSharp {
+      fluid {
+        ...GatsbyImageSharpFluid
+      }
+    }
+  }
+`
+
 export const pageQuery = graphql`
   query {
+    TomerSharon: file(relativePath: { eq: "life/tomer-sharon.png" }) {
+      ...squareImage
+    }
+    Ariely: file(relativePath: { eq: "life/ariely.jpg" }) {
+      ...squareImage
+    }
+    HackConf2019: file(relativePath: { eq: "life/hack-conf-2019.png" }) {
+      ...squareImage
+    }
+    Podcast2019: file(relativePath: { eq: "life/podcast-interview.jpg" }) {
+      ...squareImage
+    }
+    PetalWelcome: file(relativePath: { eq: "life/petal-welcome.JPG" }) {
+      ...squareImage
+    }
+    School: file(relativePath: { eq: "life/school.JPG" }) {
+      ...squareImage
+    }
+    NubankLead: file(relativePath: { eq: "life/nubank-lead.jpg" }) {
+      ...squareImage
+    }
+    InsitumIntern: file(relativePath: { eq: "life/insitum-intern.png" }) {
+      ...squareImage
+    }
+    Bossy: file(relativePath: { eq: "life/bossy-featured.png" }) {
+      ...squareImage
+    }
+    Nossas: file(relativePath: { eq: "life/nossas.jpg" }) {
+      ...squareImage
+    }
+    Kano: file(relativePath: { eq: "life/kano-2.jpg" }) {
+      ...squareImage
+    }
+    CSM: file(relativePath: { eq: "life/csm.JPG" }) {
+      ...squareImage
+    }
+    FutureBrand: file(relativePath: { eq: "life/futurebrand.jpg" }) {
+      ...squareImage
+    }
+    Airbus: file(relativePath: { eq: "life/airbus.jpg" }) {
+      ...squareImage
+    }
+    FirstDesign: file(relativePath: { eq: "life/first-design.jpg" }) {
+      ...squareImage
+    }
     allImageSharp {
       nodes {
         fluid {

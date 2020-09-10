@@ -1,14 +1,14 @@
 import React, { useState, useEffect } from "react"
 import Img from "gatsby-image/withIEPolyfill"
-import Layout from "../components/layout"
-import SEO from "../components/seo"
-import { LifeEvents } from "../components/lifeEvents"
-import { minWidth } from "../components/utils"
+import Layout from "./layout"
+import SEO from "./seo"
+import { LifeEvents } from "./lifeEvents"
+import { minWidth } from "./utils"
 import { motion, AnimatePresence } from "framer-motion"
-import { initialFadeAnimation, fadeInAnimation } from "../components/utils"
+import { initialFadeAnimation, fadeInAnimation } from "./utils"
 import { Link } from "gatsby"
 
-const LifeEvent = (
+export const LifeEvent = (
   data,
   { title, year, description, image, icon, isHidden, link },
   index
@@ -99,14 +99,14 @@ const LifeEvent = (
               {`${hidden ? "Reveal" : "Really reveal?"}`}
             </div>
           )}
-          {!isHidden && image && (
+          {/* {!isHidden && image && (
             <>
               <Img
                 className={"w-100 mt5"}
                 fluid={data[image].childImageSharp.fluid}
               ></Img>
             </>
-          )}
+          )} */}
         </div>
       </div>
     </div>
@@ -120,43 +120,8 @@ const About = ({ data }) => {
       setScrolled(window.pageYOffset > 500)
     }
   })
-  const backToTheFuture = () => {
-    const [isHovered, setHover] = useState(false)
-    return (
-      <AnimatePresence>
-        {isScrolled && (
-          <motion.div
-            style={{ left: 0, right: 0, top: 30 }}
-            className="w-100 fixed z-max flex justify-center"
-            initial={{ y: 100 }}
-            animate={{ y: 0 }}
-            exit={{ y: 100 }}
-            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-          >
-            <div
-              onMouseEnter={() => setHover(true)}
-              onMouseLeave={() => setHover(false)}
-              onMouseDown={() => setHover(false)}
-              onMouseUp={() => setHover(true)}
-              style={{
-                transition: "box-shadow .2s",
-                boxShadow: !isHovered
-                  ? "0 0 15px rgba(0,0,0,.25)"
-                  : "0 0 25px rgba(0,0,0,.2)",
-                color: !isHovered ? "#666" : "#181818",
-              }}
-              className="pa3 br-pill bg-white black pointer fw5"
-            >
-              Back to the future ↑
-            </div>
-          </motion.div>
-        )}
-      </AnimatePresence>
-    )
-  }
+
   return (
-    <Layout>
-      <SEO title="About me" />
       <motion.div
         initial={initialFadeAnimation}
         animate={fadeInAnimation}
@@ -217,11 +182,9 @@ const About = ({ data }) => {
           style={{ maxWidth: minWidth }}
           className="flex w-100 justify-between flex-column center pl5-l pl3"
         >
-          {backToTheFuture()}
           {LifeEvents.map((item, index) => LifeEvent(data, item, index))}
         </div>
       </motion.div>
-    </Layout>
   )
 }
 
