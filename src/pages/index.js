@@ -68,17 +68,10 @@ function IndexPage({
               className="center  "
             >
               <HomeSection
-                isAll={isAll}
                 posts={posts}
-                icon={ic_petal_logo}
-                title="Petal"
-                date="2019"
-                place="New York"
-                description="On a mission to build credit that is honest, simple, and accessible."
               />
             </motion.div>
         </AnimatePresence>
-        {/* <Writing /> */}
       </div>
     }
     </Layout>
