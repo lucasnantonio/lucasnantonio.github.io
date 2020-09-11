@@ -6,7 +6,6 @@ import { ic_petal_logo } from "../components/icons.js"
 const HomeSection = ({ title, date, description, posts, isAll, icon }) => {
   const sectionPosts = posts.filter(
     item =>
-      item.node.frontmatter.category === title &&
       item.node.frontmatter.published === true
   )
   return (

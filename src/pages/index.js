@@ -21,23 +21,12 @@ function IndexPage({
 }) {
   const [isAll, setAll] = useState(true)
   const [selectedTopics, setSelectedTopics] = useState(topics)
+  const [selectedTab, setSelectedTab] = useState("Work")
 
   const publishedPosts = posts.filter(
     item => item.node.frontmatter.soon === null
   )
 
-  const getFilteredPosts = () => {
-    if (isAll) {
-      return posts
-    } else {
-      return posts.filter(item =>
-        item.node.frontmatter.topics.some(topic =>
-          selectedTopics.includes(topic)
-        )
-      )
-    }
-  }
-  console.log(Code)
   return (
     <Layout
       isIndex
@@ -48,27 +37,22 @@ function IndexPage({
     >
       <SEO title="Home" />
       <div>
-        <div className="w-100 flex center  " style={{ maxWidth: minWidth }}>
+        <div className="w-100 flex center mb0" style={{ maxWidth: minWidth }}>
           <Hello setSelectedTopics={setSelectedTopics} setAll={setAll} />
         </div>
       </div>
       <div style={{ maxWidth: minWidth }} className="db-l dn mr4 center  ">
-        <Filters
-          selectedTopics={selectedTopics}
-          setSelectedTopics={setSelectedTopics}
-          isAll={isAll}
-          setAll={setAll}
-          posts={posts}
-          publishedPosts={publishedPosts}
-        />
-        {!isAll && <SkillSection skill={selectedTopics[0]}></SkillSection>}
+      <div className="flex f3 fw5 black-40 tracked-tight mb4">
+      <div onClick={()=>setSelectedTab("Work")} className={`pb2 pointer mr4 ${selectedTab === "Work" && 'bb b--black-70 bw2 black'}`}>Projects</div>
+      <div onClick={()=>setSelectedTab("About")} className={`pb2 pointer ${selectedTab === "About" && 'bb b--black-70 bw2 black'}`}>About</div>
       </div>
+      </div>
+      {selectedTab === "About" ?
       <div id="about">
-        <About></About>
-      </div>
+        <About/>
+      </div> : 
       <div id="work">
         <AnimatePresence>
-          {isAll ? (
             <motion.div
               transition={{ duration: 0.25 }}
               initial={{ x: -20, opacity: 0 }}
@@ -85,41 +69,18 @@ function IndexPage({
             >
               <HomeSection
                 isAll={isAll}
-                posts={getFilteredPosts()}
+                posts={posts}
                 icon={ic_petal_logo}
                 title="Petal"
                 date="2019"
                 place="New York"
                 description="On a mission to build credit that is honest, simple, and accessible."
               />
-              <HomeSection
-                isAll={isAll}
-                posts={getFilteredPosts()}
-                icon={ic_nu_logo}
-                title="Nubank"
-                date="2016—2019"
-                place="São Paulo"
-                description="During 3 years, I helped Nubank grow from 1 to 10 million customers, 1 to 3 products, and 6 to 35 designers."
-              />
-              <HomeSection
-                isAll={isAll}
-                posts={getFilteredPosts()}
-                icon={ic_others}
-                title="Others"
-                date="2013"
-                place="London"
-                description=""
-              />
             </motion.div>
-          ) : (
-            <div className="center  " style={{ maxWidth: minWidth }}>
-              {" "}
-              <PostList posts={getFilteredPosts()} />{" "}
-            </div>
-          )}
         </AnimatePresence>
         {/* <Writing /> */}
       </div>
+    }
     </Layout>
   )
 }
