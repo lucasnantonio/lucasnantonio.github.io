@@ -7,7 +7,7 @@ import { minWidth } from "./utils"
 import { motion, AnimatePresence } from "framer-motion"
 import { initialFadeAnimation, fadeInAnimation } from "./utils"
 import { Link } from "gatsby"
-const Dot = () => (              <span style={{position: "absolute", width: "6px", height: "6px", background: "gray", borderRadius: "100%", left: "-18px", top: ".75rem"}}></span>)
+const Dot = ({black}) => (              <span style={{position: "absolute", width: "6px", height: "6px", background: black ? "black" : "lightgray", borderRadius: "100%", left: "-18px", top: ".75rem"}}></span>)
 
 const About = ({ data }) => {
   const [isScrolled, setScrolled] = useState(false)
@@ -42,36 +42,35 @@ const About = ({ data }) => {
                 <p>
                 Design has also given me the priviledge to follow my curiosities about the human mind, the built environment, society, science, and philosophy.
                 </p>
-                {/* <p>I currently work at Twitter, in New York.</p> */}
+                <p>I currently work at Twitter, in New York.</p>
               </div>
               </div>
             <div className="mt0-l mt5 w-100 ">
-            {/* <h4 className="mt0 fw7">Career</h4> */}
             <ul style={{paddingLeft: 20}} className="relative mt0">
               <div style={{lineHeight:"20rem", position: "absolute", top: 12, bottom: 12, left: 4.5, width: 1, border: "1px solid #f3f3f3", zIndex: -3}}></div>
-              {/* <li className="mb3 pl2 fw6 black">Twitter</li> */}
-              <li className="relative mb3 pl2 fw6 black-40 flex justify-between">
+              <li className="relative flex justify-between mb3 pl2 fw6 black"><Dot black/> Twitter <span className="black-80">2020</span></li>
+              <li className="relative mb3 pl2 fw6 black-20 flex justify-between">
               <Dot/>
                 Petal <span className="black-20">2019-2020</span></li>
-              <li className="relative mb3 pl2 fw6 black-40 flex justify-between">
+              <li className="relative mb3 pl2 fw6 black-20 flex justify-between">
               <Dot/>
                 Nubank <span className="black-20">2016-2019</span></li>
-              <li className="relative mb3 pl2 fw6 black-40 flex justify-between">
+              <li className="relative mb3 pl2 fw6 black-20 flex justify-between">
               <Dot/>
                 Airbus <span className="black-20">2016</span></li>
-              <li className="relative mb3 pl2 fw6 black-40 flex justify-between">
+              <li className="relative mb3 pl2 fw6 black-20 flex justify-between">
               <Dot/>
                 Redbull <span className="black-20">2015</span></li>
-              <li className="relative mb3 pl2 fw6 black-40 flex justify-between">
+              <li className="relative mb3 pl2 fw6 black-20 flex justify-between">
               <Dot/>
                 Nossas <span className="black-20">2015</span></li>
-              <li className="relative mb3 pl2 fw6 black-40 flex justify-between">
+              <li className="relative mb3 pl2 fw6 black-20 flex justify-between">
               <Dot/>
                 Insitum <span className="black-20">2014-2015</span></li>
-              <li className="relative mb3 pl2 fw6 black-40 flex justify-between">
+              <li className="relative mb3 pl2 fw6 black-20 flex justify-between">
               <Dot/>
                 Kano <span className="black-20">2014</span></li>
-              <li className="relative mb3 pl2 fw6 black-40 flex justify-between">
+              <li className="relative mb3 pl2 fw6 black-20 flex justify-between">
               <Dot/>
                 FutureBrand <span className="black-20">2011</span></li>
             </ul>
