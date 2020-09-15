@@ -7,7 +7,7 @@ import { minWidth } from "./utils"
 import { motion, AnimatePresence } from "framer-motion"
 import { initialFadeAnimation, fadeInAnimation } from "./utils"
 import { Link } from "gatsby"
-
+const Dot = () => (              <span style={{position: "absolute", width: "6px", height: "6px", background: "gray", borderRadius: "100%", left: "-18px", top: ".75rem"}}></span>)
 
 const About = ({ data }) => {
   const [isScrolled, setScrolled] = useState(false)
@@ -29,8 +29,9 @@ const About = ({ data }) => {
               style={{ maxWidth: minWidth }}
             >
               <img src="https://i.postimg.cc/Bv4LjfKD/Bild007-Neg-Nr-8.jpg"></img>
-                <div className="flex mt5 ">
-              <div style={{letterSpacing: -0.19}} className="mr6 measure black-70 ">
+                <div className="flex flex-row-l flex-column mt5 justify-between ">
+                <div className="w-100 mr6-l">
+              <div style={{letterSpacing: -0.19, maxWidth:"30em"}} className="black-70 ">
                 <p className="mt0">I've spent a decade learning about people, business, technology, and how to help them work in harmony.</p>
                 <p>
                 Most notably, I was part of the early design team at Nubank, now one of the largest digital banks in the world. Surrounded by brilliant people, I helped fight the complexity of money while growing a vibrant, diverse, international design organization.
@@ -43,19 +44,36 @@ const About = ({ data }) => {
                 </p>
                 {/* <p>I currently work at Twitter, in New York.</p> */}
               </div>
-            <div className="">
+              </div>
+            <div className="mt0-l mt5 w-100 ">
             {/* <h4 className="mt0 fw7">Career</h4> */}
             <ul style={{paddingLeft: 20}} className="relative mt0">
               <div style={{lineHeight:"20rem", position: "absolute", top: 12, bottom: 12, left: 4.5, width: 1, border: "1px solid #f3f3f3", zIndex: -3}}></div>
               {/* <li className="mb3 pl2 fw6 black">Twitter</li> */}
-              <li className="mb3 pl2 fw6 black-40">Petal <span className="black-20">2019-2020</span></li>
-              <li className="mb3 pl2 fw6 black-40">Nubank <span className="black-20">2016-2019</span></li>
-              <li className="mb3 pl2 fw6 black-40">Airbus <span className="black-20">2016</span></li>
-              <li className="mb3 pl2 fw6 black-40">Redbull <span className="black-20">2015</span></li>
-              <li className="mb3 pl2 fw6 black-40">Nossas <span className="black-20">2015</span></li>
-              <li className="mb3 pl2 fw6 black-40">Insitum <span className="black-20">2014-2015</span></li>
-              <li className="mb3 pl2 fw6 black-40">Kano <span className="black-20">2014</span></li>
-              <li className="mb3 pl2 fw6 black-40">FutureBrand <span className="black-20">2011</span></li>
+              <li className="relative mb3 pl2 fw6 black-40 flex justify-between">
+              <Dot/>
+                Petal <span className="black-20">2019-2020</span></li>
+              <li className="relative mb3 pl2 fw6 black-40 flex justify-between">
+              <Dot/>
+                Nubank <span className="black-20">2016-2019</span></li>
+              <li className="relative mb3 pl2 fw6 black-40 flex justify-between">
+              <Dot/>
+                Airbus <span className="black-20">2016</span></li>
+              <li className="relative mb3 pl2 fw6 black-40 flex justify-between">
+              <Dot/>
+                Redbull <span className="black-20">2015</span></li>
+              <li className="relative mb3 pl2 fw6 black-40 flex justify-between">
+              <Dot/>
+                Nossas <span className="black-20">2015</span></li>
+              <li className="relative mb3 pl2 fw6 black-40 flex justify-between">
+              <Dot/>
+                Insitum <span className="black-20">2014-2015</span></li>
+              <li className="relative mb3 pl2 fw6 black-40 flex justify-between">
+              <Dot/>
+                Kano <span className="black-20">2014</span></li>
+              <li className="relative mb3 pl2 fw6 black-40 flex justify-between">
+              <Dot/>
+                FutureBrand <span className="black-20">2011</span></li>
             </ul>
           </div>
           </div>
