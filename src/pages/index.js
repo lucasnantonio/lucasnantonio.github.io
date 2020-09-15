@@ -9,7 +9,7 @@ import Filters from "../components/filters"
 import { minWidth, topics } from "../components/utils"
 import Code from "../images/icons/Code.svg"
 import SkillSection from "../components/SkillSection"
-import { motion, AnimatePresence } from "framer-motion"
+import { motion, AnimatePresence, AnimateSharedLayout } from "framer-motion"
 
 import { ic_petal_logo, ic_nu_logo, ic_others } from "../components/icons.js"
 
@@ -41,12 +41,31 @@ function IndexPage({
           <Hello setSelectedTopics={setSelectedTopics} setAll={setAll} />
         </div>
       </div>
+      <AnimateSharedLayout>
       <div style={{ maxWidth: minWidth }} className="mr4 center  ">
       <div className="flex f3 fw5 black-40 tracked-tight mb4">
-      <div onClick={()=>setSelectedTab("Work")} className={`pb2 pointer mr4 ${selectedTab === "Work" && 'bb b--black-70 bw2 black'}`}>Work</div>
-      <div onClick={()=>setSelectedTab("About")} className={`pb2 pointer ${selectedTab === "About" && 'bb b--black-70 bw2 black'}`}>About</div>
+      <div onClick={()=>setSelectedTab("Work")} className={`pb2 pointer mr4 ${selectedTab === "Work" && 'black'}`}>Work
+      {selectedTab === "Work" &&         
+      <motion.div
+          layoutId="outline"
+          style={{marginTop: ".5rem", height:"3px", background: "black"}}
+          initial={false}
+
+        />}
+      </div>
+      <div onClick={()=>setSelectedTab("About")} className={`pb2 pointer ${selectedTab === "About" && 'black'}`}>About
+      {selectedTab === "About" &&         
+      <motion.div
+          layoutId="outline"
+          style={{marginTop: ".5rem", height:"3px", background: "black"}}
+          initial={false}
+
+        />}
+      
       </div>
       </div>
+      </div>
+      </AnimateSharedLayout>
       {selectedTab === "About" ?
       <div id="about">
         <About/>

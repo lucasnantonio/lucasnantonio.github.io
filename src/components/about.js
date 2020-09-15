@@ -30,8 +30,8 @@ const About = ({ data }) => {
             >
               <img src="https://i.postimg.cc/Bv4LjfKD/Bild007-Neg-Nr-8.jpg"></img>
                 <div className="flex flex-row-l flex-column mt5 justify-between ">
-                <div className="w-100 mr6-l">
-              <div style={{letterSpacing: -0.19, maxWidth:"30em"}} className="black-70 ">
+                <div>
+              <div style={{letterSpacing: -0.19, width:"30em"}} className="mr6-l mr0 black-70 ">
                 <p className="mt0">I've spent a decade learning about people, business, technology, and how to help them work in harmony.</p>
                 <p>
                 Most notably, I was part of the early design team at Nubank, now one of the largest digital banks in the world. Surrounded by brilliant people, I helped fight the complexity of money while growing a vibrant, diverse, international design organization.
