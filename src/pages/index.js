@@ -41,9 +41,9 @@ function IndexPage({
           <Hello setSelectedTopics={setSelectedTopics} setAll={setAll} />
         </div>
       </div>
-      <div style={{ maxWidth: minWidth }} className="db-l dn mr4 center  ">
+      <div style={{ maxWidth: minWidth }} className="mr4 center  ">
       <div className="flex f3 fw5 black-40 tracked-tight mb4">
-      <div onClick={()=>setSelectedTab("Work")} className={`pb2 pointer mr4 ${selectedTab === "Work" && 'bb b--black-70 bw2 black'}`}>Projects</div>
+      <div onClick={()=>setSelectedTab("Work")} className={`pb2 pointer mr4 ${selectedTab === "Work" && 'bb b--black-70 bw2 black'}`}>Work</div>
       <div onClick={()=>setSelectedTab("About")} className={`pb2 pointer ${selectedTab === "About" && 'bb b--black-70 bw2 black'}`}>About</div>
       </div>
       </div>

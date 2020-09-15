@@ -23,21 +23,42 @@ const About = ({ data }) => {
         animate={fadeInAnimation}
         transition={{ duration: 0.5 }}
       >
-        <div className="f3 fw4 lh-copy w-100 mt5 mb3 center relative pb6-l pb5 b--near-white bw1">
-          <div
-            className="center flex justify-between flex-column"
-            style={{ maxWidth: minWidth }}
-          >
-            <img src="https://i.postimg.cc/Bv4LjfKD/Bild007-Neg-Nr-8.jpg"></img>
-          <div className="measure black-70 mt5 tracked-tight">
-           <p>I've spent a decade learning about people, business, technology, and how to make them work in harmony.</p>
-           <p>
-           Most notably, I was part of the early design team at Nubank, now one of the largest digital banks in the world. Surrounded by amazing people, I helped challenge the monopoly, pain, and complexity of money, while growing a vibrant, user-centered, international design organization.
-           </p>
-           <p>
-           Design has taken me around the world, and I've bene lucky to have worked in different countries where I could immerse myself in different disciplines and problems. I have helped design a computer for all ages at Kano in the UK, a better banking system in São Paulo, and now live in New York where I work at Twitter serving the public conversation.
-           </p>
-           </div>
+        <div className="f4 fw4 lh-copy w-100 mt5 mb3 center relative pb6-l pb5 b--near-white bw1">
+            <div
+              className="center flex justify-between flex-column"
+              style={{ maxWidth: minWidth }}
+            >
+              <img src="https://i.postimg.cc/Bv4LjfKD/Bild007-Neg-Nr-8.jpg"></img>
+                <div className="flex mt5 ">
+              <div style={{letterSpacing: -0.19}} className="mr6 measure black-70 ">
+                <p className="mt0">I've spent a decade learning about people, business, technology, and how to help them work in harmony.</p>
+                <p>
+                Most notably, I was part of the early design team at Nubank, now one of the largest digital banks in the world. Surrounded by brilliant people, I helped fight the complexity of money while growing a vibrant, diverse, international design organization.
+                </p>
+                <p>
+                Design has taken me around the world to experience different cultures, disciplines and problems. I've delved into graphic, industrial, service, digital design, and code. I've worked with agencies, consultancies, non-profits, retailers, small and large tech companies. 
+                </p>
+                <p>
+                Design has also given me the priviledge to follow my curiosities about the human mind, the built environment, society, science, and philosophy.
+                </p>
+                {/* <p>I currently work at Twitter, in New York.</p> */}
+              </div>
+            <div className="">
+            {/* <h4 className="mt0 fw7">Career</h4> */}
+            <ul style={{paddingLeft: 20}} className="relative mt0">
+              <div style={{lineHeight:"20rem", position: "absolute", top: 12, bottom: 12, left: 4.5, width: 1, border: "1px solid #f3f3f3", zIndex: -3}}></div>
+              {/* <li className="mb3 pl2 fw6 black">Twitter</li> */}
+              <li className="mb3 pl2 fw6 black-40">Petal <span className="black-20">2019-2020</span></li>
+              <li className="mb3 pl2 fw6 black-40">Nubank <span className="black-20">2016-2019</span></li>
+              <li className="mb3 pl2 fw6 black-40">Airbus <span className="black-20">2016</span></li>
+              <li className="mb3 pl2 fw6 black-40">Redbull <span className="black-20">2015</span></li>
+              <li className="mb3 pl2 fw6 black-40">Nossas <span className="black-20">2015</span></li>
+              <li className="mb3 pl2 fw6 black-40">Insitum <span className="black-20">2014-2015</span></li>
+              <li className="mb3 pl2 fw6 black-40">Kano <span className="black-20">2014</span></li>
+              <li className="mb3 pl2 fw6 black-40">FutureBrand <span className="black-20">2011</span></li>
+            </ul>
+          </div>
+          </div>
           </div>
         </div>
 
