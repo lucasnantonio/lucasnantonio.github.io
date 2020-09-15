@@ -3,9 +3,10 @@ import PhraseWithFootnote from '../components/phraseWithFootnote';
 import { useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { initialFadeAnimation, fadeInAnimation } from '../components/utils';
+import TwitterLogo, { twitterLogo } from '../components/twitterLogo';
 import { minWidth } from './utils';
 import { Link } from 'gatsby';
-import { ic_twitter_logo } from "../components/icons.js"
+
 
 function capitalizeFirstLetter (string) {
 	return string.charAt(0).toUpperCase() + string.slice(1);
@@ -42,7 +43,7 @@ const Hello = ({ setSelectedTopics, setAll }) => {
 
 				</motion.div>
 			</div>
-			<div className="br-pill b--near-white ba pa3 flex bw1 br-pill h3 w3 mb0-l mb4">{ic_twitter_logo}</div>
+			<TwitterLogo />
 		</div>
 	);
 };
