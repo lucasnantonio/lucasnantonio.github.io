@@ -6,7 +6,7 @@ export default function TwitterLogo() {
   const [isHovered, setHovered] = useState(false)
   const twitterColor = "rgb(29, 161, 242)"
   return (
-    <a target="_blank" href="http://twitter.com/lucasnantonio">
+    <a style={{marginTop: "-1.25rem"}} target="_blank" href="http://twitter.com/lucasnantonio">
     <motion.div layout initial={{scale: 0}} animate={{scale:1}} whileTap={{scale: 0.9}} >
     <motion.svg  layout onMouseEnter={()=>setHovered(true)} onMouseLeave={()=>setHovered(false)} width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
 <motion.circle  initial={{scale: 0}} animate={{scale: isHovered ? .85 : 0}} cx="41" cy="41" r="39" fill={!isHovered ? "white" : twitterColor}/>
