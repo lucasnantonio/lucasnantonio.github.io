@@ -7,7 +7,7 @@ import { minWidth } from "./utils"
 import { motion, AnimatePresence } from "framer-motion"
 import { initialFadeAnimation, fadeInAnimation } from "./utils"
 import { Link } from "gatsby"
-const Dot = ({black}) => (              <span style={{position: "absolute", width: "7px", height: "7px", background: black ? "black" : "#eee", borderRadius: "100%", left: "-22px", top: ".45rem", border:"4px solid white"}}></span>)
+const Dot = ({black}) => (              <span style={{position: "absolute", width: "7px", height: "7px", background: black ? "black" : "#f7f7f7", borderRadius: "100%", left: "-22px", top: ".45rem", border:"4px solid white"}}></span>)
 
 const About = ({ data }) => {
   const [isScrolled, setScrolled] = useState(false)
@@ -23,25 +23,22 @@ const About = ({ data }) => {
         animate={fadeInAnimation}
         transition={{ duration: 0.5 }}
       >
-        <div className="f4 fw4 lh-copy w-100 mt5 mb3 center relative pb4 b--near-white bw1">
+        <div className="f4 fw4 lh-copy w-100 mt5 mb3 center relative pb0 b--near-white bw1">
             <div
               className="center flex justify-between flex-column"
               style={{ maxWidth: minWidth }}
             >
               <img src="https://i.postimg.cc/Bv4LjfKD/Bild007-Neg-Nr-8.jpg"></img>
-                <div className="flex flex-row-l flex-column mt6 justify-between ">
+                <div className="flex flex-row-l flex-column mt5 justify-between ">
                 <div>
-              <div style={{letterSpacing: -0.19, width:"25em"}} className="mr6-l mr0 black-80 fw5 lh-copy">
-                <p className="mt0 black-80">I'm now a decade into the journey of learning about people, business, technology, and how design helps them share a common language.</p>
+              <div style={{letterSpacing: -0.19, maxwWidth:"25em"}} className="mr6-l mr0 black-80 fw5 lh-copy">
+                <p className="mt0">
+                Design has given me the privilege to follow my curiosities about the human mind, the built environment, business, society, science, and philosophy. It has taken me around the world to experience different cultures, disciplines and problems. </p>
                 <p>
-                Most notably, I was part of the early design team at Nubank, fighting the complexity of money while growing a vibrant, diverse, international design organization.
+                Most notably, I was part of the early design team at Nubank, in São Paulo, fighting the complexity of money while growing a vibrant, diverse, international design organization.
                 </p>
-                <p>
-                Design has given me the privilege to follow my curiosities about the human mind, the built environment, society, science, and philosophy. It has taken me around the world to experience different cultures, disciplines and problems. 
-                
-                <p>Ask me about the time when I interviewed Dan Ariely on a stage, patented an airline recycling bin, made personas for cattle in a farm, co-founded a furniture shop, or when my work was featured in a Dutch sex exhibition.</p>
-                </p>
-                <p>I currently work as Staff Designer @ Twitter, in New York. <a target="_blank" href="http://twitter.com/lucasnantonio" className="blue u fw6 link">Follow me →</a></p>
+                <p>Ask me about the time when I interviewed Dan Ariely on a stage, patented an airplane waste recycling system, made personas for cows, co-founded a furniture shop, or when my work was featured in a Dutch sex exhibition.</p>
+                <p>I currently work as Staff Designer @ Twitter, in New York. <br/><a target="_blank" href="http://twitter.com/lucasnantonio" className="blue u fw6 link">Follow me →</a></p>
               </div>
               </div>
             <div className="mt0-l mt5 w-100 lh-copy">

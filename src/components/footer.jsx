@@ -6,11 +6,11 @@ import Feedback from "../components/feedback"
 const Footer = () => {
   return (
     <div
-      className="pv5 mt5 f4 w-100"
+      className="pv5 mt5 f4 w-100 ph0-l ph4"
     >
-      <div className="pt4 bt bw2 b--black ph0-l ph4 flex flex-row-l flex-column justify-between center items-start" style={{ maxWidth: minWidth }}>
+      <div className="pt4 bw2 b--black  flex flex-row-l flex-column justify-between center items-start" style={{ maxWidth: minWidth, borderTop: "3px solid black" }}>
 
-        <div className=" flex flex-column lh-copy mb0-l mb4">
+        <div className=" flex flex-column mb0-l mb4">
           <p className="mt0 black-80 fw6">Get in touch</p>
           <div className="flex flex-row-l flex-column fw5">
             <a
