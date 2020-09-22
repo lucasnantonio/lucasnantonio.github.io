@@ -18,7 +18,7 @@ const About = ({ data }) => {
   })
 
   return (
-        <div className="f4 fw4 w-100 lh-copy mt5 mb3 center pb0 b--near-white bw1">
+        <div className="f4 fw4 w-100 lh-copy mb3 center pb0 b--near-white bw1">
             <div
               className="center flex justify-between flex-column"
               style={{ maxWidth: minWidth }}

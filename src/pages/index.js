@@ -69,16 +69,20 @@ function IndexPage({
       </div>
       </AnimateSharedLayout>
       </motion.div>
+      <div className="overflow-y-hidden center pt4" style={{maxWidth:minWidth}}>
       <AnimatePresence exitBeforeEnter>
-      <motion.div initial={{x:-20, opacity: 0}} animate={{x:0, opacity:1}} exit={{x:20, opacity: 0}} key={selectedTab}>
       {selectedTab === "About" ?
+      <motion.div  transition={{duration: .3}} initial={{x:100, opacity: 0}} animate={{x:0, opacity:1}} exit={{x:100, opacity: 0}} key={"about"}>
         <About/>
-        : 
-        <HomeSection posts={posts} />
-      }
       </motion.div> 
+        : 
+        <motion.div  transition={{duration: .3}} initial={{x:-100, opacity: 0}} animate={{x:0, opacity:1}} exit={{x:-100, opacity: 0}} key={"work"}>
+        <HomeSection posts={posts} />
+        </motion.div> 
+      }
       
     </AnimatePresence>
+    </div>
     </Layout>
   )
 }
