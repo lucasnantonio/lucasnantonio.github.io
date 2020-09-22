@@ -63,13 +63,13 @@ const About = ({ data }) => {
                 
               <div style={{letterSpacing: -0.19, maxWidth:"25em"}} className=" ml6-l ml0 black-80 fw5 lh-copy w-100">
                 <p className="mt0">
-                Design has given me the privilege to follow my curiosities about the human mind, built environment, business, technology, science, and philosophy. It has taken me around the world to experience different teams, cultures, disciplines and problems.</p>
-                <p>I consider myself a design generalist and have worn many hats including designer, PM, researcher, manager, and code enthusiast over the years.</p>
+                Design has given me the chance to follow my curiosities about the human mind, built environment, business, technology, science, and philosophy. It has taken me around the world to experience different teams, cultures, disciplines, and problems.</p>
+                <p>I consider myself a design generalist and have worn many hats over the years, including designer, PM, researcher, manager, and code enthusiast.</p>
                 <p>
-                Most notably, I was part of the early design team at Nubank, in São Paulo, fighting the complexity of money while growing a vibrant, diverse, international design organization.
+                Most notably, I was part of the early design team at <a className="underline link black-80" href="https://nu.bank" target="_blank">Nubank</a>, in São Paulo, fighting the complexity of money while growing a vibrant, diverse, international design organization.
                 </p>
                 <p>Ask me about the time when I interviewed Dan Ariely on a stage, <a className="underline link black-80" href="https://patents.justia.com/patent/9809239" target="_blank">patented a recycling bin for airplanes</a>, made personas for cows, co-founded a furniture shop, or when <a className="underline link black-80" target="_blank" href="https://www.lorriewhittington.co.uk/wp-content/uploads/Handwritten-Typeface-by-Lucas-Neumann.jpg" >this poster</a> was featured in a <a className="underline link black-80" href="https://www.mu.nl/en/exhibitions/for-play-shaping-sexuality" target="_blank"> Dutch exhibition about sex</a>. You can also find stories about my early work on <a className="underline link black-80" target="_blank" href="https://www.fastcompany.com/3028572/this-simple-tool-will-help-you-stop-working-ridiculous-hours">FastCompany</a> and <a className="underline link black-80" href="https://www.wired.com/2014/04/work-2-0-a-web-connected-sticky-note-that-bosses-you-around/" target="_blank">Wired</a>.</p>
-                <p>I currently work as Staff Designer @ Twitter, in NYC. <br/><a target="_blank" href="http://twitter.com/lucasnantonio" className="blue u bb fw6 link black-80">Follow me →</a></p>
+                <p>I currently work as Staff Designer @ Twitter, in NYC. <br/><br/><a target="_blank" href="http://twitter.com/lucasnantonio" className="blue u bb fw6 link black-80">Follow me →</a></p>
               </div>  
           </div>
           </div>
