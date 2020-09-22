@@ -31,16 +31,15 @@ const Header = ({
     <div>
       <header
         style={{
-          width: "100%",
-          left: 0,
-          right: 0,
-          marginRight: "auto",
-          marginLeft: "auto",
-          borderColor: "rgba(150,150,150,.1)",
-          background: "white"
+          // width: "100%",
+          maxWidth: minWidth,
+          // marginRight: "auto",
+          // marginLeft: "auto",
+          // borderColor: "rgba(150,150,150,.1)",
+          // background: "white"
         }}
         className={
-          "flex z-max space-between ph4 bb bw1"
+          "flex z-max space-between bb bw2 mh4 center-l"
         }
       >
         <div
@@ -57,7 +56,7 @@ const Header = ({
                 <Link to={prev.frontmatter.path} className={"link"}>
                   <span
                     style={{ transition: "background-color .2s" }}
-                    className="flex justify-center center items-center align-center ma2 pa2 br-pill hover-bg-near-white bn pointer center items-center black-20 hover-dark-gray f3 "
+                    className="flex justify-center center items-center align-center ma2 pa2 br-pill hover-bg-near-white bn pointer center items-center black hover-dark-gray f3 "
                   >
                     ←
                   </span>
@@ -65,14 +64,14 @@ const Header = ({
               ) : (
                   <span
                     style={{ transition: "background-color .2s" }}
-                    className="o-30 flex justify-center center items-center align-center ma2 pa2 br-pill bn center items-center black-10 hover-dark-gray f3"
+                    className="o-30 flex justify-center center items-center align-center ma2 pa2 br-pill bn center items-center black hover-dark-gray f3"
                   >
                     ←
                   </span>
                 )}
               {next ? (
                 <Link className="link" to={next.frontmatter.path}>
-                  <span style={{ transition: "background-color .2s" }} className="flex justify-center center items-center align-center ma2 pa2 br-pill hover-bg-near-white bn pointer center items-center black-20 hover-dark-gray f3">
+                  <span style={{ transition: "background-color .2s" }} className="flex justify-center center items-center align-center ma2 pa2 br-pill hover-bg-near-white bn pointer center blac items-center hover-dark-gray f3">
                     →
                   </span>
                 </Link>
