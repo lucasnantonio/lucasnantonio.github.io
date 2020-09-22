@@ -7,7 +7,8 @@ function ImageWithBackground({ image, color }) {
 	return (
 		<div
 			style={{
-				backgroundColor: color
+				backgroundColor: color,
+				overflow: "hidden"
 				// backgroundColor: "skyblue",
 				// padding: "2rem",
 			}}
@@ -16,7 +17,7 @@ function ImageWithBackground({ image, color }) {
 				<Img
 					className="h-auto-l ph5-l"
 					style={{ maxHeight: '32rem' }}
-					backgroundColor="#f0f0f0"
+					// backgroundColor="#f0f0f0"
 					fluid={image.childImageSharp != undefined ? image.childImageSharp.fluid : image}
 					objectFit="contain"
 				/>

@@ -6,7 +6,7 @@ import Feedback from "../components/feedback"
 const Footer = () => {
   return (
     <div
-      className="pv5 mt5 f4 w-100 ph0-l ph4"
+      className="pv5 f4 w-100 ph0-l ph4"
     >
       <div className="pt4 bw2 b--black  flex flex-row-l flex-column justify-between center items-start" style={{ maxWidth: minWidth, borderTop: "3px solid black" }}>
 
