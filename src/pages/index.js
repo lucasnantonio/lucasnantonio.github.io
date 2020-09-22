@@ -23,6 +23,8 @@ function IndexPage({
   const [isAll, setAll] = useState(true)
   const [selectedTopics, setSelectedTopics] = useState(topics)
   const [selectedTab, setSelectedTab] = useState("Work")
+  const [isWorkHovered, setWorkHovered] = useState(false)
+  const [isAboutHovered, setAboutHovered] = useState(false)
 
   const publishedPosts = posts.filter(
     item => item.node.frontmatter.soon === null
@@ -46,22 +48,22 @@ function IndexPage({
       <AnimateSharedLayout>
       <div style={{ maxWidth: minWidth }} className="mr4 center  ">
       <div className="flex f3 fw5 black-40 tracked-tight mb4">
-      <div onClick={()=>setSelectedTab("Work")} className={`pb2 pointer mr4 ${selectedTab === "Work" && 'black'}`}>Work
+      <div onMouseEnter={()=>setWorkHovered(true)} onMouseLeave={()=>setWorkHovered(false)} onClick={()=>setSelectedTab("Work")} className={`pb2 pointer mr4 ${selectedTab === "Work" && 'black'}`}>Work
       {selectedTab === "Work" &&         
       <motion.div
           layoutId="outline"
           style={{marginTop: ".5rem", height:"3px", background: "black"}}
-          initial={false}
-
+          initial={{x:0}}
+          animate={{x: isAboutHovered && selectedTab != "About" ? 10 : 0}}
         ></motion.div>}
       </div>
-      <div onClick={()=>setSelectedTab("About")} className={`pb2 pointer ${selectedTab === "About" && 'black'}`}>About
+      <div onMouseEnter={()=>setAboutHovered(true)} onMouseLeave={()=>setAboutHovered(false)} onClick={()=>setSelectedTab("About")} className={`pb2 pointer ${selectedTab === "About" && 'black'}`}>About
       {selectedTab === "About" &&         
       <motion.div
           layoutId="outline"
           style={{marginTop: ".5rem", height:"3px", background: "black"}}
-          initial={false}
-
+          initial={{x:0}}
+          animate={{x: isWorkHovered && selectedTab != "Work" ? -10 : 0}}
         />}
       
       </div>

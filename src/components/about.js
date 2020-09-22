@@ -25,10 +25,10 @@ const About = ({ data }) => {
             >
               {/* IMAGE */}
               <img src="https://i.postimg.cc/Bv4LjfKD/Bild007-Neg-Nr-8.jpg"></img>
-              <div className="flex measure flex-column mt5">
+              <div style={{maxWidth:"25em"}} className="flex measure flex-column mt5">
               
               {/* ABOUT */}
-              <div style={{letterSpacing: -0.19, maxWidth:"25em"}} className="mt0-l black-80 fw5 lh-copy w-100">
+              <div style={{letterSpacing: -0.19}} className="mt0-l black-80 fw5 lh-copy w-100">
               <h3 className="fw6 f4 bb bw2 pb3 mb4">About me</h3>
                 <p className="mt0">I'm a designer who's had the chance to wear many hats over the years, including PM, researcher, team manager, mentor, and code enthusiast. Design has also given me the privilege to follow my endless curiosity for the human mind, built environment, business, technology, science, and philosophy. </p>
                 <p>
@@ -43,29 +43,29 @@ const About = ({ data }) => {
                 <h3 className="fw6 f4 bb bw2 pb3 mb4">Career</h3>
               <ul style={{paddingLeft: 20}} className="relative mt0">
               <div style={{position: "absolute", top: 12, bottom: 58, left: 4.5, width: 1, border: "1px solid #f3f3f3", zIndex: -3}}></div>
-              <li className="mb4 relative flex justify-between mt0 pl2 fw5 black"><Dot black/> Twitter <span className="black-80 ttu f7 tracked blue fw7"><motion.span style={{lineHeight: "2rem"}} initial={{opacity: .5}} animate={{opacity: 1}} transition={{repeat: Infinity, duration: 1.5}}>●</motion.span > NOW</span></li>
-              <li className="mb4 relative mt0 pl2 fw5 black-30 flex justify-between">
+              <li className="mb3 relative flex justify-between mt0 pl2 fw5 black"><Dot black/> Twitter <span className="black-80 ttu f6 tracked blue fw7"><motion.span style={{lineHeight: "2rem"}} initial={{opacity: .5}} animate={{opacity: 1}} transition={{repeat: Infinity, duration: 1.5}}>●</motion.span > NOW</span></li>
+              <li className="mb3 relative mt0 pl2 fw5 black-30 flex justify-between">
               <Dot/>
                 Petal <span className="f6 fw5">2019</span></li>
-              <li className="mb4 relative mt0 pl2 fw5 black-30 flex justify-between">
+              <li className="mb3 relative mt0 pl2 fw5 black-30 flex justify-between">
               <Dot/>
                 Nubank <span className="f6 fw5">2016</span></li>
-              <li className="mb4 relative mt0 pl2 fw5 black-30 flex justify-between">
+              <li className="mb3 relative mt0 pl2 fw5 black-30 flex justify-between">
               <Dot/>
                 Airbus <span className="f6 fw5">2016</span></li>
-              <li className="mb4 relative mt0 pl2 fw5 black-30 flex justify-between">
+              <li className="mb3 relative mt0 pl2 fw5 black-30 flex justify-between">
               <Dot/>
                 Redbull <span className="f6 fw5">2015</span></li>
-              <li className="mb4 relative mt0 pl2 fw5 black-30 flex justify-between">
+              <li className="mb3 relative mt0 pl2 fw5 black-30 flex justify-between">
               <Dot/>
                 Nossas <span className="f6 fw5">2015</span></li>
-              <li className="mb4 relative mt0 pl2 fw5 black-30 flex justify-between">
+              <li className="mb3 relative mt0 pl2 fw5 black-30 flex justify-between">
               <Dot/>
                 Insitum / Accenture <span className="f6 fw5">2014</span></li>
-              <li className="mb4 relative mt0 pl2 fw5 black-30 flex justify-between">
+              <li className="mb3 relative mt0 pl2 fw5 black-30 flex justify-between">
               <Dot/>
                 Kano Computer <span className="f6 fw5">2014</span></li>
-              <li className="mb4 relative mt0 pl2 fw5 flex  black-30 justify-between">
+              <li className="mb3 relative mt0 pl2 fw5 flex  black-30 justify-between">
               <Dot/>
                 FutureBrand <span className=" f6 fw5">2011</span></li>
                 <li className="dn white mb4 relative mt0 pl2 fw5 flex-l justify-between">
