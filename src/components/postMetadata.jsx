@@ -2,7 +2,7 @@ import React from "react"
 
 export default function PostMetadata({ frontmatter }) {
   return (
-    <div className="mono fw5 black-30 mb3 pt3-l pt3 pb4 mw5 f6 lh-copy black-50 flex flex-column align-start items-start">
+    <div className="fw5 black-30 mb3 pt3-l pt3 pb4 mw5 f6 lh-copy black-50 flex flex-column align-start items-start">
       {frontmatter.link && frontmatter.link_label && (
         <a
           href={frontmatter.link}

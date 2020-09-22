@@ -35,9 +35,8 @@ const Hello = ({ setSelectedTopics, setAll }) => {
 					) : (
 							<h1 className="f3 neue-regular black lh-title mb0 fw5">Lucas Neumann</h1>
 						)}
-					<p className="f3 black-40 lh-copy mt0 fw5 measure">
-						{/* <br /> */}
-						{/* {`Staff product designer at Twitter`} */}
+					<p className="f3 black-40 lh-copy mt0 fw5 measure mt2">
+						{`Product designer at Twitter`}
 					</p>
 					{/* <p className="f3 black-40 lh-copy mt5 fw5 measure">I've spent my last decade learning about how people think and making products that work better for them: I've helped design a make-your-own computer for all ages at Kano; democracy tools at Nossas; the world’s fastest growing neobank at Nubank, and a better credit card at Petal.</p> */}
 

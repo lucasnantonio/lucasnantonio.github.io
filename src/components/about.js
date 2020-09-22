@@ -7,7 +7,7 @@ import { minWidth } from "./utils"
 import { motion, AnimatePresence } from "framer-motion"
 import { initialFadeAnimation, fadeInAnimation } from "./utils"
 import { Link } from "gatsby"
-const Dot = ({black}) => (              <span style={{position: "absolute", width: "6px", height: "6px", background: black ? "black" : "lightgray", borderRadius: "100%", left: "-18px", top: ".75rem"}}></span>)
+const Dot = ({black}) => (              <span style={{position: "absolute", width: "7px", height: "7px", background: black ? "black" : "#eee", borderRadius: "100%", left: "-22px", top: ".45rem", border:"4px solid white"}}></span>)
 
 const About = ({ data }) => {
   const [isScrolled, setScrolled] = useState(false)
@@ -23,56 +23,55 @@ const About = ({ data }) => {
         animate={fadeInAnimation}
         transition={{ duration: 0.5 }}
       >
-        <div className="f4 fw4 lh-copy w-100 mt5 mb3 center relative pb6-l pb5 b--near-white bw1">
+        <div className="f4 fw4 lh-copy w-100 mt5 mb3 center relative pb4 b--near-white bw1">
             <div
               className="center flex justify-between flex-column"
               style={{ maxWidth: minWidth }}
             >
               <img src="https://i.postimg.cc/Bv4LjfKD/Bild007-Neg-Nr-8.jpg"></img>
-                <div className="flex flex-row-l flex-column mt5 justify-between ">
+                <div className="flex flex-row-l flex-column mt6 justify-between ">
                 <div>
-              <div style={{letterSpacing: -0.19, width:"30em"}} className="mr6-l mr0 black-70 ">
-                <p className="mt0">I've spent a decade learning about people, business, technology, and how to help them work in harmony.</p>
+              <div style={{letterSpacing: -0.19, width:"25em"}} className="mr6-l mr0 black-80 fw5 lh-copy">
+                <p className="mt0 black-80">I'm now a decade into the journey of learning about people, business, technology, and how design helps them share a common language.</p>
                 <p>
-                Most notably, I was part of the early design team at Nubank, now one of the largest digital banks in the world. Surrounded by brilliant people, I helped fight the complexity of money while growing a vibrant, diverse, international design organization.
+                Most notably, I was part of the early design team at Nubank, fighting the complexity of money while growing a vibrant, diverse, international design organization.
                 </p>
                 <p>
-                Design has taken me around the world to experience different cultures, disciplines and problems. I've delved into graphic, industrial, service, digital design, and code. I've worked with agencies, consultancies, non-profits, retailers, small and large tech companies. 
+                Design has given me the privilege to follow my curiosities about the human mind, the built environment, society, science, and philosophy. It has taken me around the world to experience different cultures, disciplines and problems. 
+                
+                <p>Ask me about the time when I interviewed Dan Ariely on a stage, patented an airline recycling bin, made personas for cattle in a farm, co-founded a furniture shop, or when my work was featured in a Dutch sex exhibition.</p>
                 </p>
-                <p>
-                Design has also given me the priviledge to follow my curiosities about the human mind, the built environment, society, science, and philosophy.
-                </p>
-                <p>I currently work at Twitter, in New York.</p>
+                <p>I currently work as Staff Designer @ Twitter, in New York. <a target="_blank" href="http://twitter.com/lucasnantonio" className="blue u fw6 link">Follow me →</a></p>
               </div>
               </div>
-            <div className="mt0-l mt5 w-100 ">
+            <div className="mt0-l mt5 w-100 lh-copy">
             <ul style={{paddingLeft: 20}} className="relative mt0">
-              <div style={{lineHeight:"20rem", position: "absolute", top: 12, bottom: 12, left: 4.5, width: 1, border: "1px solid #f3f3f3", zIndex: -3}}></div>
-              <li className="relative flex justify-between mb3 pl2 fw6 black"><Dot black/> Twitter <span className="black-80">2020</span></li>
-              <li className="relative mb3 pl2 fw6 black-20 flex justify-between">
+              <div style={{position: "absolute", top: 12, bottom: 12, left: 4.5, width: 1, border: "1px solid #f3f3f3", zIndex: -3}}></div>
+              <li className="mb3 relative flex justify-between mt0 pl2 fw5 black"><Dot black/> Twitter <span className="black-80 ttu f7 tracked blue fw7"><motion.span style={{lineHeight: "2rem"}} initial={{opacity: .5}} animate={{opacity: 1}} transition={{repeat: Infinity, duration: 1.5}}>●</motion.span > NOW</span></li>
+              <li className="mb3 relative mt0 pl2 fw5 black-30 flex justify-between">
               <Dot/>
-                Petal <span className="black-20">2019-2020</span></li>
-              <li className="relative mb3 pl2 fw6 black-20 flex justify-between">
+                Petal <span className="f6 fw5">2019</span></li>
+              <li className="mb3 relative mt0 pl2 fw5 black-30 flex justify-between">
               <Dot/>
-                Nubank <span className="black-20">2016-2019</span></li>
-              <li className="relative mb3 pl2 fw6 black-20 flex justify-between">
+                Nubank <span className="f6 fw5">2016</span></li>
+              <li className="mb3 relative mt0 pl2 fw5 black-30 flex justify-between">
               <Dot/>
-                Airbus <span className="black-20">2016</span></li>
-              <li className="relative mb3 pl2 fw6 black-20 flex justify-between">
+                Airbus <span className="f6 fw5">2016</span></li>
+              <li className="mb3 relative mt0 pl2 fw5 black-30 flex justify-between">
               <Dot/>
-                Redbull <span className="black-20">2015</span></li>
-              <li className="relative mb3 pl2 fw6 black-20 flex justify-between">
+                Redbull <span className="f6 fw5">2015</span></li>
+              <li className="mb3 relative mt0 pl2 fw5 black-30 flex justify-between">
               <Dot/>
-                Nossas <span className="black-20">2015</span></li>
-              <li className="relative mb3 pl2 fw6 black-20 flex justify-between">
+                Nossas <span className="f6 fw5">2015</span></li>
+              <li className="mb3 relative mt0 pl2 fw5 black-30 flex justify-between">
               <Dot/>
-                Insitum <span className="black-20">2014-2015</span></li>
-              <li className="relative mb3 pl2 fw6 black-20 flex justify-between">
+                Insitum <span className="f6 fw5">2014</span></li>
+              <li className="mb3 relative mt0 pl2 fw5 black-30 flex justify-between">
               <Dot/>
-                Kano <span className="black-20">2014</span></li>
-              <li className="relative mb3 pl2 fw6 black-20 flex justify-between">
+                Kano <span className="f6 fw5">2014</span></li>
+              <li className="mb3 relative mt0 pl2 fw5 flex  black-30 justify-between">
               <Dot/>
-                FutureBrand <span className="black-20">2011</span></li>
+                FutureBrand <span className=" f6 fw5">2011</span></li>
             </ul>
           </div>
           </div>

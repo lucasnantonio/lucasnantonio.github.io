@@ -51,7 +51,7 @@ function IndexPage({
           style={{marginTop: ".5rem", height:"3px", background: "black"}}
           initial={false}
 
-        />}
+        ></motion.div>}
       </div>
       <div onClick={()=>setSelectedTab("About")} className={`pb2 pointer ${selectedTab === "About" && 'black'}`}>About
       {selectedTab === "About" &&         
