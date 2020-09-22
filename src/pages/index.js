@@ -72,28 +72,12 @@ function IndexPage({
       {selectedTab === "About" ?
       <div id="about">
         <About/>
-      </div> : 
+      </div> 
+      : 
       <div id="work">
-        <AnimatePresence>
-            <motion.div
-              transition={{ duration: 0.25 }}
-              initial={{ x: -20, opacity: 0 }}
-              animate={{ x: 0, y: 0, opacity: 1 }}
-              exit={{
-                y: -30,
-                opacity: 0,
-                height: 0,
-                overflow: "hidden",
-                position: "absolute",
-              }}
-              style={{ maxWidth: minWidth }}
-              className="center  "
-            >
-              <HomeSection
-                posts={posts}
-              />
-            </motion.div>
-        </AnimatePresence>
+        <div style={{ maxWidth: minWidth }} className="center">
+          <HomeSection posts={posts} />
+        </div>
       </div>
     }
     </Layout>
