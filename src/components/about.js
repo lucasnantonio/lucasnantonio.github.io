@@ -18,12 +18,7 @@ const About = ({ data }) => {
   })
 
   return (
-      <motion.div
-        initial={initialFadeAnimation}
-        animate={fadeInAnimation}
-        transition={{ duration: 0.5 }}
-      >
-        <div className="f4 fw4 lh-copy w-100 mt5 mb3 center relative pb0 b--near-white bw1">
+        <div className="f4 fw4 w-100 lh-copy mt5 mb3 center pb0 b--near-white bw1">
             <div
               className="center flex justify-between flex-column"
               style={{ maxWidth: minWidth }}
@@ -72,8 +67,6 @@ const About = ({ data }) => {
           </div>
           </div>
         </div>
-
-      </motion.div>
   )
 }
 

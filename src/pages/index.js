@@ -69,17 +69,16 @@ function IndexPage({
       </div>
       </AnimateSharedLayout>
       </motion.div>
+      <AnimatePresence exitBeforeEnter>
+      <motion.div initial={{x:-20, opacity: 0}} animate={{x:0, opacity:1}} exit={{x:20, opacity: 0}} key={selectedTab}>
       {selectedTab === "About" ?
-      <div id="about">
         <About/>
-      </div> 
-      : 
-      <div id="work">
-        <div style={{ maxWidth: minWidth }} className="center">
-          <HomeSection posts={posts} />
-        </div>
-      </div>
-    }
+        : 
+        <HomeSection posts={posts} />
+      }
+      </motion.div> 
+      
+    </AnimatePresence>
     </Layout>
   )
 }
