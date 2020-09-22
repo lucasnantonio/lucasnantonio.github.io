@@ -40,7 +40,6 @@ const Layout = ({
     <>
       {!isIndex &&
         <Header
-          // isWorkInView={isWorkInView}
           siteTitle={data.site.siteMetadata.title}
           selectedTopics={selectedTopics}
           setSelectedTopics={setSelectedTopics}
@@ -56,7 +55,6 @@ const Layout = ({
         style={{
           margin: `0 auto`,
           paddingTop: 0,
-          // maxWidth: isIndex && minWidth,
         }}
       >
         <main>{children}</main>

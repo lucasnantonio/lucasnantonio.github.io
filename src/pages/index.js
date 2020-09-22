@@ -10,6 +10,7 @@ import { minWidth, topics } from "../components/utils"
 import Code from "../images/icons/Code.svg"
 import SkillSection from "../components/SkillSection"
 import { motion, AnimatePresence, AnimateSharedLayout } from "framer-motion"
+import { initialFadeAnimation, fadeInAnimation } from '../components/utils';
 
 import { ic_petal_logo, ic_nu_logo, ic_others } from "../components/icons.js"
 
@@ -41,6 +42,7 @@ function IndexPage({
           <Hello setSelectedTopics={setSelectedTopics} setAll={setAll} />
         </div>
       </div>
+      <motion.div initial={initialFadeAnimation} animate={fadeInAnimation} transition={{ duration: 0.5 }}>
       <AnimateSharedLayout>
       <div style={{ maxWidth: minWidth }} className="mr4 center  ">
       <div className="flex f3 fw5 black-40 tracked-tight mb4">
@@ -66,6 +68,7 @@ function IndexPage({
       </div>
       </div>
       </AnimateSharedLayout>
+      </motion.div>
       {selectedTab === "About" ?
       <div id="about">
         <About/>
