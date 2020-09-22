@@ -71,7 +71,7 @@ const Header = ({
                 )}
               {next ? (
                 <Link className="link" to={next.frontmatter.path}>
-                  <span style={{ transition: "background-color .2s" }} className="flex justify-center center items-center align-center ma2 pa2 br-pill hover-bg-near-white bn pointer center blac items-center hover-dark-gray f3">
+                  <span style={{ transition: "background-color .2s" }} className="flex justify-center center items-center align-center ma2 pa2 br-pill hover-bg-near-white bn pointer center black items-center hover-dark-gray f3">
                     →
                   </span>
                 </Link>
