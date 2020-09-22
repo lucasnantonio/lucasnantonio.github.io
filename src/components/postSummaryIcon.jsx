@@ -4,7 +4,6 @@ import tinycolor from "tinycolor2"
 export default function PostSummaryIcon(icon, postColor) {
   const getIconBackgroundColor = postColor => {
     const brightness = tinycolor(postColor).getLuminance()
-    console.log(brightness)
     return brightness <= 0.1
       ? tinycolor(postColor).lighten(70)
       : brightness > 0.1 && brightness <= 0.4

@@ -83,8 +83,6 @@ export default function Template ({
       </motion.div>
       <PostSummary frontmatter={frontmatter} />
       {content}
-      {console.log(frontmatter)}
-      {console.log(frontmatter.learnings)}
       {frontmatter.learnings && <Learnings list={frontmatter.learnings} />}
       <PreviousAndNext prev={prev} next={next}></PreviousAndNext>
     </Layout>
