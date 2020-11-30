@@ -15,7 +15,9 @@ function capitalizeFirstLetter (string) {
 const Hello = ({ setSelectedTopics, setAll }) => {
 	const [visitor, setVisitor] = useState(null);
 	function getVisitor () {
+		if (window.location.search.indexOf("ref") != 1){ 
 		setVisitor(window.location.search.split('?')[1]);
+		}
 	}
 	useEffect(() => getVisitor());
 
