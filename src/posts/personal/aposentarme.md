@@ -20,10 +20,8 @@ team:
 - Guilherme Stoll
 link: "http://www.aposentar.me"
 ---
-<div class="bg-lightest-blue flex w-100 h-100">
-  <iframe id="d0e763cb-faed-49a2-9e5e-8ed9524593ce" src="https://www.vectary.com/viewer/v1/?model=d0e763cb-faed-49a2-9e5e-8ed9524593ce&env=theskyisonfire" frameborder="0" width="100%" height="480"></iframe>
-</div>
-<figcaption>In addition to learning React, I had a lot of fun playing with 3D to create our mascot</figcaption>
+
+![In addition to learning React, I had a lot of fun playing with 3D to create our mascot](../../images/aposentarme/pig-pool.png)
 
 My buddy Guilherme and I were looking around for retirement simulators, and what we found online in Brazil was pretty bad. Calculators out there use too much jargon, or are simply financial tables that are not thought from the point of view of a person who is new to investing. So se wet out to design our own:
 
