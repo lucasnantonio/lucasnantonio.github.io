@@ -15,13 +15,13 @@ color: "#f3f3f3"
 link: "http://www.aposentar.me"
 ---
 
-Feito was a design shop I co-founded and ran for approximately 3 years with some friends. We saw decent success and created a celebrated community around this idea, but as it happens, our individual focuses were elsewhere, so we decided to sunset the project. This page is a celebration of the beautiful products we created together in partnership with some of the best Brazilian designers. 
-
-<div 
+<!-- Feito was a design shop I co-founded and ran for approximately 3 years with some friends. We saw decent success and created a celebrated community around this idea, but as it happens, our individual focuses were elsewhere, so we decided to sunset the project. This page is a celebration of the beautiful products we created together in partnership with some of the best Brazilian designers.  -->
+<!--
+<div
   markdown="1"
   style="
-    display: grid; 
-    grid-gap: 50px; 
+    display: grid;
+    grid-gap: 50px;
     grid-template-columns: auto auto;
     ">
   <img src="../../images/feito/feito-1.jpg"/>
@@ -32,4 +32,4 @@ Feito was a design shop I co-founded and ran for approximately 3 years with some
   <img src="../../images/feito/feito-5.jpg"/>
   <img src="../../images/feito/feito-6.jpg"/>
   <img src="../../images/feito/feito-7.jpg"/>
-<div>
+<div> -->
