@@ -1,24 +1,27 @@
 ---
 path: "/blog/behavioral-design"
 date: "2021-01-01"
-title: Behavioral Design Course 🇧🇷
-subtitle: A primer on cognitive psychology, choice architecture, nudges, and gamification. (Brazil only)
+title: Behavioral Design Course
+subtitle: Teaching an intro on cognitive psychology, choice architecture, nudges, and gamification.
 category: Others
 topics:
   - design
-  - Research
-  - Industrial
-published: false
+published: true
 role:
   - design
   - user testing
-cover_image: "../../images/life/behavior-design.png"
-problem: How to stay focused at work?
-solution: A device to help you find work-life balance.
-impact: Work published in Wired, FastCompany.
-color: "#FF7A00"
+cover_image: "../../images/behavioral-design.png"
+color: "#EAF5FD"
 size: "large"
 cover: false
 ---
 
-Bossy was the result of my thesis project at Central Saint Martins in London.
+I teach a course on Behavioral Design, remotely, for Brazilian students in a school called Aprender.Design. We cover:
+
+- Cognitive psychology
+- Choice architecture
+- Creating habits
+- Gamification techniques
+- Dark patterns, addiction, and ethics
+
+If you're interested, [learn more here](https://www.aprender.design/cursos/design-comportamental)
