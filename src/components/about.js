@@ -49,11 +49,11 @@ const About = ({ data }) => {
             </h3>
             <div className="measure">
               <p className="mt0 ">
-                I'm a designer who's had the chance to wear many hats over the
-                years, including PM, qualitative researcher, team manager,
-                mentor, and code enthusiast. Design has given me the privilege
-                to follow my curiosity for the human mind, built environment,
-                business, technology, science, and philosophy.{" "}
+                I'm a designer who's had the chance to wear many other hats
+                including PM, qualitative researcher, team manager, mentor, and
+                code tinkerer. Design has given me the privilege to follow my
+                curiosity for the human mind, built environment, business,
+                technology, science, and philosophy.{" "}
               </p>
               <p>
                 Most notably, I was part of the early design team at{" "}
