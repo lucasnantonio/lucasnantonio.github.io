@@ -1,19 +1,12 @@
+import { AnimatePresence, motion } from "framer-motion"
 import React, { useState } from "react"
-import Layout from "../components/layout"
-import PostList from "../components/postList"
-import HomeSection from "../components/home-section"
-import SEO from "../components/seo"
+import About from "../components/about"
 import Hello from "../components/hello"
-import About, { LifeEvent } from "../components/about"
+import HomeSection from "../components/home-section"
+import Layout from "../components/layout"
+import SEO from "../components/seo"
 import Tabs from "../components/tabs"
-import Filters from "../components/filters"
 import { minWidth, topics } from "../components/utils"
-import Code from "../images/icons/Code.svg"
-import SkillSection from "../components/SkillSection"
-import { motion, AnimatePresence, AnimateSharedLayout } from "framer-motion"
-import { initialFadeAnimation, fadeInAnimation } from "../components/utils"
-
-import { ic_petal_logo, ic_nu_logo, ic_others } from "../components/icons.js"
 
 function IndexPage({
   data: {

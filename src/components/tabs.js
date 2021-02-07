@@ -1,7 +1,10 @@
+import { AnimateSharedLayout, motion } from "framer-motion"
 import React from "react"
-import { motion, AnimatePresence, AnimateSharedLayout } from "framer-motion"
-import { initialFadeAnimation, fadeInAnimation } from "../components/utils"
-import { minWidth, topics } from "../components/utils"
+import {
+  fadeInAnimation,
+  initialFadeAnimation,
+  minWidth,
+} from "../components/utils"
 
 const Tabs = ({
   selectedTab,
@@ -19,8 +22,6 @@ const Tabs = ({
         <div style={{ maxWidth: minWidth }} className="mr4 center  ">
           <div className="flex f3 fw5 black-40 tracked-tight mb4">
             <div
-              //   onMouseEnter={() => setWorkHovered(true)}
-              //   onMouseLeave={() => setWorkHovered(false)}
               onClick={() => setSelectedTab("Work")}
               className={`pb2 pointer mr4 ${selectedTab === "Work" && "black"}`}
             >
@@ -41,8 +42,6 @@ const Tabs = ({
               )}
             </div>
             <div
-              //   onMouseEnter={() => setAboutHovered(true)}
-              //   onMouseLeave={() => setAboutHovered(false)}
               onClick={() => setSelectedTab("About")}
               className={`pb2 pointer ${selectedTab === "About" && "black"}`}
             >
