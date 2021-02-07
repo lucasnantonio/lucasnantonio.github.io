@@ -12,7 +12,6 @@ import { useStaticQuery, graphql } from "gatsby"
 import Header from "./header"
 import Footer from "./footer"
 import "../../node_modules/tachyons/css/tachyons.min.css"
-import "../fonts/inter.css"
 import "./layout.css"
 import { minWidth } from "./utils"
 
@@ -38,7 +37,7 @@ const Layout = ({
   `)
   return (
     <>
-      {!isIndex &&
+      {!isIndex && (
         <Header
           siteTitle={data.site.siteMetadata.title}
           selectedTopics={selectedTopics}
@@ -49,7 +48,7 @@ const Layout = ({
           prev={prev && prev}
           next={next && next}
         />
-      }
+      )}
       <div
         className="pt0 ph4"
         style={{

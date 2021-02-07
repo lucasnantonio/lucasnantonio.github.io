@@ -6,12 +6,40 @@ import {
   minWidth,
 } from "../components/utils"
 
-const Tabs = ({
-  selectedTab,
-  setSelectedTab,
-  isAboutHovered,
-  isWorkHovered,
-}) => {
+const Tab = ({ title, active, setTabList, tabList }) => {
+  return (
+    <div
+      key={title}
+      onClick={() => {
+        setTabList(
+          tabList.map(item => {
+            if (item.title === title) {
+              return { ...item, active: true }
+            } else {
+              return { ...item, active: false }
+            }
+          })
+        )
+      }}
+      className={`pb2 pointer mr4 ${active && "black"}`}
+    >
+      {title}
+      {active && (
+        <motion.div
+          layoutId="outline"
+          style={{
+            marginTop: ".5rem",
+            height: "3px",
+            background: "black",
+          }}
+          initial={{ x: 0 }}
+        ></motion.div>
+      )}
+    </div>
+  )
+}
+
+const Tabs = ({ setTabList, tabList }) => {
   return (
     <motion.div
       initial={initialFadeAnimation}
@@ -19,48 +47,19 @@ const Tabs = ({
       transition={{ duration: 0.5 }}
     >
       <AnimateSharedLayout>
-        <div style={{ maxWidth: minWidth }} className="mr4 center  ">
+        <div style={{ maxWidth: minWidth }} className="mr4 center">
           <div className="flex f3 fw5 black-40 tracked-tight mb4">
-            <div
-              onClick={() => setSelectedTab("Work")}
-              className={`pb2 pointer mr4 ${selectedTab === "Work" && "black"}`}
-            >
-              Work
-              {selectedTab === "Work" && (
-                <motion.div
-                  layoutId="outline"
-                  style={{
-                    marginTop: ".5rem",
-                    height: "3px",
-                    background: "black",
-                  }}
-                  initial={{ x: 0 }}
-                  animate={{
-                    x: isAboutHovered && selectedTab != "About" ? 10 : 0,
-                  }}
-                ></motion.div>
-              )}
-            </div>
-            <div
-              onClick={() => setSelectedTab("About")}
-              className={`pb2 pointer ${selectedTab === "About" && "black"}`}
-            >
-              About
-              {selectedTab === "About" && (
-                <motion.div
-                  layoutId="outline"
-                  style={{
-                    marginTop: ".5rem",
-                    height: "3px",
-                    background: "black",
-                  }}
-                  initial={{ x: 0 }}
-                  animate={{
-                    x: isWorkHovered && selectedTab != "Work" ? -10 : 0,
-                  }}
-                />
-              )}
-            </div>
+            {tabList.map(item => {
+              return (
+                <Tab
+                  key={item.title}
+                  setTabList={setTabList}
+                  tabList={tabList}
+                  title={item.title}
+                  active={item.active}
+                ></Tab>
+              )
+            })}
           </div>
         </div>
       </AnimateSharedLayout>

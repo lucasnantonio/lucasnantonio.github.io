@@ -1,7 +1,9 @@
 import { AnimatePresence, motion } from "framer-motion"
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 import About from "../components/about"
 import Hello from "../components/hello"
+import Writing from "../components/writing"
+import Reading from "../components/reading"
 import HomeSection from "../components/home-section"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -14,16 +16,20 @@ function IndexPage({
     allImageSharp: { nodes: images },
   },
 }) {
+  const [tabList, setTabList] = useState([
+    { title: "Work", active: true },
+    { title: "About", active: false },
+    { title: "Writing", active: false },
+    { title: "Reading", active: false },
+  ])
   const [isAll, setAll] = useState(true)
   const [selectedTopics, setSelectedTopics] = useState(topics)
   const [selectedTab, setSelectedTab] = useState("Work")
-  const [isWorkHovered, setWorkHovered] = useState(false)
-  const [isAboutHovered, setAboutHovered] = useState(false)
 
   const publishedPosts = posts.filter(
     item => item.node.frontmatter.soon === null
   )
-
+  let activeTab = tabList.find(el => el.active).title
   return (
     <Layout
       isIndex
@@ -34,39 +40,15 @@ function IndexPage({
     >
       <SEO title="Home" />
       <Hello setSelectedTopics={setSelectedTopics} setAll={setAll} />
-      <Tabs
-        selectedTab={selectedTab}
-        setSelectedTab={setSelectedTab}
-        isAboutHovered={isAboutHovered}
-        isWorkHovered={isWorkHovered}
-      ></Tabs>
+      <Tabs tabList={tabList} setTabList={setTabList}></Tabs>
       <div
         className="overflow-y-hidden center pt4"
         style={{ maxWidth: minWidth }}
       >
-        <AnimatePresence exitBeforeEnter>
-          {selectedTab === "About" ? (
-            <motion.div
-              transition={{ duration: 0.3 }}
-              initial={{ x: 100, opacity: 0 }}
-              animate={{ x: 0, opacity: 1 }}
-              exit={{ x: 100, opacity: 0 }}
-              key={"about"}
-            >
-              <About />
-            </motion.div>
-          ) : (
-            <motion.div
-              transition={{ duration: 0.3 }}
-              initial={{ x: -100, opacity: 0 }}
-              animate={{ x: 0, opacity: 1 }}
-              exit={{ x: -100, opacity: 0 }}
-              key={"work"}
-            >
-              <HomeSection posts={posts} />
-            </motion.div>
-          )}
-        </AnimatePresence>
+        {(activeTab === "About" && <About />) ||
+          (activeTab === "Work" && <HomeSection posts={posts} />) ||
+          (activeTab === "Writing" && <Writing />) ||
+          (activeTab === "Reading" && <Reading />)}
       </div>
     </Layout>
   )
