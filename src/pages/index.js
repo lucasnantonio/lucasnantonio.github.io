@@ -4,13 +4,14 @@ import PostList from "../components/postList"
 import HomeSection from "../components/home-section"
 import SEO from "../components/seo"
 import Hello from "../components/hello"
-import About, {LifeEvent} from "../components/about"
+import About, { LifeEvent } from "../components/about"
+import Tabs from "../components/tabs"
 import Filters from "../components/filters"
 import { minWidth, topics } from "../components/utils"
 import Code from "../images/icons/Code.svg"
 import SkillSection from "../components/SkillSection"
 import { motion, AnimatePresence, AnimateSharedLayout } from "framer-motion"
-import { initialFadeAnimation, fadeInAnimation } from '../components/utils';
+import { initialFadeAnimation, fadeInAnimation } from "../components/utils"
 
 import { ic_petal_logo, ic_nu_logo, ic_others } from "../components/icons.js"
 
@@ -39,52 +40,41 @@ function IndexPage({
       setSelectedTopics={setSelectedTopics}
     >
       <SEO title="Home" />
-      <div>
-        <div className="w-100 flex center mb0" style={{ maxWidth: minWidth }}>
-          <Hello setSelectedTopics={setSelectedTopics} setAll={setAll} />
-        </div>
+      <Hello setSelectedTopics={setSelectedTopics} setAll={setAll} />
+      <Tabs
+        selectedTab={selectedTab}
+        setSelectedTab={setSelectedTab}
+        isAboutHovered={isAboutHovered}
+        isWorkHovered={isWorkHovered}
+      ></Tabs>
+      <div
+        className="overflow-y-hidden center pt4"
+        style={{ maxWidth: minWidth }}
+      >
+        <AnimatePresence exitBeforeEnter>
+          {selectedTab === "About" ? (
+            <motion.div
+              transition={{ duration: 0.3 }}
+              initial={{ x: 100, opacity: 0 }}
+              animate={{ x: 0, opacity: 1 }}
+              exit={{ x: 100, opacity: 0 }}
+              key={"about"}
+            >
+              <About />
+            </motion.div>
+          ) : (
+            <motion.div
+              transition={{ duration: 0.3 }}
+              initial={{ x: -100, opacity: 0 }}
+              animate={{ x: 0, opacity: 1 }}
+              exit={{ x: -100, opacity: 0 }}
+              key={"work"}
+            >
+              <HomeSection posts={posts} />
+            </motion.div>
+          )}
+        </AnimatePresence>
       </div>
-      <motion.div initial={initialFadeAnimation} animate={fadeInAnimation} transition={{ duration: 0.5 }}>
-      <AnimateSharedLayout>
-      <div style={{ maxWidth: minWidth }} className="mr4 center  ">
-      <div className="flex f3 fw5 black-40 tracked-tight mb4">
-      <div onMouseEnter={()=>setWorkHovered(true)} onMouseLeave={()=>setWorkHovered(false)} onClick={()=>setSelectedTab("Work")} className={`pb2 pointer mr4 ${selectedTab === "Work" && 'black'}`}>Work
-      {selectedTab === "Work" &&         
-      <motion.div
-          layoutId="outline"
-          style={{marginTop: ".5rem", height:"3px", background: "black"}}
-          initial={{x:0}}
-          animate={{x: isAboutHovered && selectedTab != "About" ? 10 : 0}}
-        ></motion.div>}
-      </div>
-      <div onMouseEnter={()=>setAboutHovered(true)} onMouseLeave={()=>setAboutHovered(false)} onClick={()=>setSelectedTab("About")} className={`pb2 pointer ${selectedTab === "About" && 'black'}`}>About
-      {selectedTab === "About" &&         
-      <motion.div
-          layoutId="outline"
-          style={{marginTop: ".5rem", height:"3px", background: "black"}}
-          initial={{x:0}}
-          animate={{x: isWorkHovered && selectedTab != "Work" ? -10 : 0}}
-        />}
-      
-      </div>
-      </div>
-      </div>
-      </AnimateSharedLayout>
-      </motion.div>
-      <div className="overflow-y-hidden center pt4" style={{maxWidth:minWidth}}>
-      <AnimatePresence exitBeforeEnter>
-      {selectedTab === "About" ?
-      <motion.div  transition={{duration: .3}} initial={{x:100, opacity: 0}} animate={{x:0, opacity:1}} exit={{x:100, opacity: 0}} key={"about"}>
-        <About/>
-      </motion.div> 
-        : 
-        <motion.div  transition={{duration: .3}} initial={{x:-100, opacity: 0}} animate={{x:0, opacity:1}} exit={{x:-100, opacity: 0}} key={"work"}>
-        <HomeSection posts={posts} />
-        </motion.div> 
-      }
-      
-    </AnimatePresence>
-    </div>
     </Layout>
   )
 }
