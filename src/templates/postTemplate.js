@@ -10,23 +10,22 @@ import PostSummary from "../components/postSummary"
 import { motion } from "framer-motion"
 import { initialFadeAnimation, fadeInAnimation } from "../components/utils"
 
-
-export default function Template ({
+export default function Template({
   data, // this prop will be injected by the GraphQL query below.
   pageContext,
 }) {
   const { next, prev } = pageContext
   const { markdownRemark } = data // data.markdownRemark holds our post data
   const { frontmatter, html } = markdownRemark
-  String.prototype.capitalize = function () {
-    return this.replace(/(?:^|\s)\S/g, function (a) {
+  String.prototype.capitalize = function() {
+    return this.replace(/(?:^|\s)\S/g, function(a) {
       return a.toUpperCase()
     })
   }
 
   const title = (
     <div className="flex flex-column pt3 pb5-l w-100">
-      <h1 className=" fw5 neue-regular f3 black-80 mt0 mb1 pb0 w-100 tracked-tight lh-copy">
+      <h1 className=" fw5 f3 black-80 mt0 mb1 pb0 w-100 tracked-tight lh-copy">
         {frontmatter.title}
       </h1>
       <div className="fw5 measure w-60-l flex flex-row-l flex-column items-start f3 lh-copy mt0 pt0 measure mb1 black-40 tracked-tight">
@@ -41,7 +40,7 @@ export default function Template ({
       style={{
         backgroundColor: frontmatter.color || "#f0f0f0",
         maxHeight: "500px",
-        overflow: 'hidden',
+        overflow: "hidden",
         padding: "0rem",
         maxWidth: minWidth,
       }}
@@ -65,7 +64,11 @@ export default function Template ({
 
   return (
     <Layout prev={prev} next={next} isIndex={false}>
-      <motion.div transition={{ duration: .5 }} initial={initialFadeAnimation} animate={fadeInAnimation}>
+      <motion.div
+        transition={{ duration: 0.5 }}
+        initial={initialFadeAnimation}
+        animate={fadeInAnimation}
+      >
         <div
           style={{ maxWidth: minWidth }}
           className="flex w-100 justify-between flex-row-l flex-column center mt4 "

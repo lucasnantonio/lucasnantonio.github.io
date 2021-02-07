@@ -28,64 +28,72 @@ const Header = ({
   prev,
   next,
 }) => (
-    <div>
-      <header
-        style={{
-          // width: "100%",
-          maxWidth: minWidth,
-          // marginRight: "auto",
-          // marginLeft: "auto",
-          // borderColor: "rgba(150,150,150,.1)",
-          // background: "white"
-        }}
-        className={
-          "flex z-max space-between bb bw2 mh4 center-l"
-        }
+  <div>
+    <header
+      style={{
+        // width: "100%",
+        maxWidth: minWidth,
+        // marginRight: "auto",
+        // marginLeft: "auto",
+        // borderColor: "rgba(150,150,150,.1)",
+        // background: "white"
+      }}
+      className={"flex z-max space-between bb bw2 mh4 center-l"}
+    >
+      <div
+        style={{ maxWidth: minWidth }}
+        className="w-100 flex justify-between center items-center"
       >
-        <div
-          style={{ maxWidth: minWidth }}
-          className="w-100 flex justify-between center items-center"
-        >
-          <Link to="/" className={"link"}>
-            <h1 style={{ fontSize: '19px' }}
-              className="f3 fw5 tracked-tight black-80 neue-regular pv2">Lucas Neumann</h1>
-          </Link>
-          {!isIndex &&
-            <div className="flex">
-              {prev ? (
-                <Link to={prev.frontmatter.path} className={"link"}>
-                  <span
-                    style={{ transition: "background-color .2s" }}
-                    className="flex justify-center center items-center align-center ma2 pa2 br-pill hover-bg-near-white bn pointer center items-center black hover-dark-gray f3 "
-                  >
-                    ←
-                  </span>
-                </Link>
-              ) : (
-                  <span
-                    style={{ transition: "background-color .2s" }}
-                    className="o-30 flex justify-center center items-center align-center ma2 pa2 br-pill bn center items-center black hover-dark-gray f3"
-                  >
-                    ←
-                  </span>
-                )}
-              {next ? (
-                <Link className="link" to={next.frontmatter.path}>
-                  <span style={{ transition: "background-color .2s" }} className="flex justify-center center items-center align-center ma2 pa2 br-pill hover-bg-near-white bn pointer center black items-center hover-dark-gray f3">
-                    →
-                  </span>
-                </Link>
-              ) : (
-                  <span style={{ transition: "background-color .2s" }} className="o-30 flex justify-center center items-center align-center ma2 pa2 br-pill bn center items-center black-10 f3">
-                    →
-                  </span>
-                )}
-            </div>
-          }
-        </div>
-      </header>
-    </div >
-  )
+        <Link to="/" className={"link"}>
+          <h1
+            style={{ fontSize: "19px" }}
+            className="f3 fw5 tracked-tight black-80 pv2"
+          >
+            Lucas Neumann
+          </h1>
+        </Link>
+        {!isIndex && (
+          <div className="flex">
+            {prev ? (
+              <Link to={prev.frontmatter.path} className={"link"}>
+                <span
+                  style={{ transition: "background-color .2s" }}
+                  className="flex justify-center center items-center align-center ma2 pa2 br-pill hover-bg-near-white bn pointer center items-center black hover-dark-gray f3 "
+                >
+                  ←
+                </span>
+              </Link>
+            ) : (
+              <span
+                style={{ transition: "background-color .2s" }}
+                className="o-30 flex justify-center center items-center align-center ma2 pa2 br-pill bn center items-center black hover-dark-gray f3"
+              >
+                ←
+              </span>
+            )}
+            {next ? (
+              <Link className="link" to={next.frontmatter.path}>
+                <span
+                  style={{ transition: "background-color .2s" }}
+                  className="flex justify-center center items-center align-center ma2 pa2 br-pill hover-bg-near-white bn pointer center black items-center hover-dark-gray f3"
+                >
+                  →
+                </span>
+              </Link>
+            ) : (
+              <span
+                style={{ transition: "background-color .2s" }}
+                className="o-30 flex justify-center center items-center align-center ma2 pa2 br-pill bn center items-center black-10 f3"
+              >
+                →
+              </span>
+            )}
+          </div>
+        )}
+      </div>
+    </header>
+  </div>
+)
 
 Header.propTypes = {
   siteTitle: PropTypes.string,

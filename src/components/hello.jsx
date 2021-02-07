@@ -39,16 +39,14 @@ const Hello = ({ setSelectedTopics, setAll }) => {
               transition={{ duration: 0.5 }}
             >
               {visitor ? (
-                <h1 className="f3 neue-regular black lh-title mb0 fw5">
+                <h1 className="f3 black lh-title mb0 fw5">
                   {visitor &&
                     `Hi there, ${capitalizeFirstLetter(
                       atob(visitor)
                     )}! My name is Lucas.`}
                 </h1>
               ) : (
-                <h1 className="f3 neue-regular black lh-title mb0 fw5">
-                  Lucas Neumann
-                </h1>
+                <h1 className="f3 black lh-title mb0 fw5">Lucas Neumann</h1>
               )}
               <p className="f3 black-40 lh-copy mt0 fw5 measure mt2">
                 {`Product designer at Twitter`}

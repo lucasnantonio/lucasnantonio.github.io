@@ -180,14 +180,9 @@ h2,
 h3,
 h4,
 h5 {
-  /* font-family: "Solanel Trial Light"; */
-  font-family: "Public Sans";
   font-weight: 400;
   color: #424242;
 }
-/* .neue-regular {
-  font-family: "Darker Grotesk";
-} */
 
 .mono {
   font-family: "DM Mono", monospace;
