@@ -31,32 +31,28 @@ const About = ({ data }) => {
   })
 
   return (
-    <div className="f4 fw4 w-100 lh-copy mb3 pb0 b--near-white bw1">
+    <div className="f3 fw4 w-100 lh-copy mb3 pb0 b--near-white bw1">
       <div
         className="flex justify-between flex-column"
         style={{ maxWidth: minWidth }}
       >
         {/* IMAGE */}
         <img src="https://i.postimg.cc/QtxFVzBb/Bild007-Neg-Nr-8-1.jpg"></img>
-        <div className="flex flex-row-l flex-column mt5 mw-100-l">
+        <div className="flex flex-row-l flex-column mt4 mw-100-l">
           {/* ABOUT */}
-          <div
-            style={{ letterSpacing: -0.19 }}
-            className="mt0-l black-80 fw5 lh-copy w-100 pr4-l"
-          >
-            <h3 className="fw6 f4 bb bw2 b--near-white pb3 mb4 fw8">
-              About me
-            </h3>
-            <div className="measure">
-              <p className="mt0 ">
-                I'm a designer who's had the chance to wear many other hats
-                including PM, qualitative researcher, team manager, mentor, and
-                code tinkerer. Design has given me the privilege to follow my
-                curiosity for the human mind, built environment, business,
-                technology, science, and philosophy.{" "}
+          <div className="mt0-l black-80 lh-copy measure pr4-l f4">
+            <div>
+              <h2 className="fw6 f3 fw6 mt4">Hello! 👋</h2>
+              <p className="mt4">
+                I'm a Brazilian product designer living in New York. <br />
+                <br />I have been designing products and services since 2010,
+                and even though my roles have always been in design, I can
+                frequently be found exploring other disciplines that I'm curious
+                about, such as product management, qualitative research, code,
+                and team management.{" "}
               </p>
               <p>
-                Most notably, I was part of the early design team at{" "}
+                I was part of the early design team at{" "}
                 <a
                   className="underline link black-80"
                   href="https://nu.bank"
@@ -76,15 +72,17 @@ const About = ({ data }) => {
                 .
               </p>
               <p>
-                Ask me about the time when I interviewed Dan Ariely on a stage,{" "}
+                Ask me about the time when I interviewed Dan Ariely on a stage,
+                about my{" "}
                 <a
                   className="underline link black-80"
                   href="https://patents.justia.com/patent/9809239"
                   target="_blank"
                 >
-                  patented a recycling bin for airplanes
+                  patent to recycle bin for airplanes
                 </a>
-                , made personas for cows, co-founded a furniture shop, or when{" "}
+                , the time I made personas for cows, co-founded a furniture
+                shop, or when{" "}
                 <a
                   className="underline link black-80"
                   target="_blank"
@@ -101,7 +99,7 @@ const About = ({ data }) => {
                   {" "}
                   Dutch exhibition about sex
                 </a>
-                . You can also find stories about my early work on{" "}
+                . You can also find stories about my early work as a student on{" "}
                 <a
                   className="underline link black-80"
                   target="_blank"
@@ -121,58 +119,26 @@ const About = ({ data }) => {
               </p>
               <p>
                 I currently work as Staff Designer @ Twitter, in NYC. <br />
-                <br />
               </p>
             </div>
           </div>
 
           {/* CAREER */}
-          <div className="pl4-l pl0 w-100 lh-copy">
-            <h3 className="fw6 f4 bb bw2 pb3 mb4 b--near-white fw8">Career</h3>
+          {/* <div className="pl4-l pl0 w-40 lh-copy">
             <ul className="relative mt0 pl0">
-              <li className="mb3 relative flex justify-between mt0 fw5 black">
-                Twitter{" "}
-                <span className="black-80 ttu f6 tracked fw8 lh-copy">
-                  {/* <motion.span
-                    style={{ lineHeight: "2rem" }}
-                    initial={{ opacity: 0.5 }}
-                    animate={{ opacity: 1 }}
-                    transition={{ repeat: Infinity, duration: 1.5 }}
-                  >
-                    ●
-                  </motion.span>{" "} */}
-                  NOW
-                </span>
+              <li className="">
+                Twitter <span className="">NOW</span>
               </li>
-              <li className="relative pv3 fw5 black-40 flex justify-between bt bw2 b--near-white">
-                Petal <span className="f6 fw5">2019</span>
-              </li>
-              <li className="relative pv3 fw5 black-40 flex justify-between bt bw2 b--near-white">
-                Nubank <span className="f6 fw5">2016</span>
-              </li>
-              <li className="relative pv3 fw5 black-40 flex justify-between bt bw2 b--near-white">
-                Airbus <span className="f6 fw5">2016</span>
-              </li>
-              <li className="relative pv3 fw5 black-40 flex justify-between bt bw2 b--near-white">
-                Redbull <span className="f6 fw5">2015</span>
-              </li>
-              <li className="relative pv3 fw5 black-40 flex justify-between bt bw2 b--near-white">
-                Nossas <span className="f6 fw5">2015</span>
-              </li>
-              <li className="relative pv3 fw5 black-40 flex justify-between bt bw2 b--near-white">
-                Insitum / Accenture <span className="f6 fw5">2014</span>
-              </li>
-              <li className="relative pv3 fw5 black-40 flex justify-between bt bw2 b--near-white">
-                Kano Computer <span className="f6 fw5">2014</span>
-              </li>
-              <li className="relative pv3 fw5 flex  black-40 justify-between bt bw2 b--near-white">
-                FutureBrand <span className=" f6 fw5">2011</span>
-              </li>
-              <li className="dn white mb4 relative mt0 pl2 fw5 flex-l justify-between bt bw2 b--near-white">
-                Obscure small internships <span className=" f6 fw5">2010</span>
-              </li>
+              <li className="">Petal 2019</li>
+              <li className="">Nubank 2016</li>
+              <li className="">Airbus 2016</li>
+              <li className="">Redbull 2015</li>
+              <li className="">Nossas 2015</li>
+              <li className="">Insitum / Accenture 2014</li>
+              <li className="">Kano Computer 2014</li>
+              <li className="">FutureBrand 2011</li>
             </ul>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

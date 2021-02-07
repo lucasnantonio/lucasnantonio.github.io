@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 
 function Writing() {
   const articles = [
@@ -46,13 +46,33 @@ function Writing() {
         "https://medium.com/nubank-design/design-principles-at-nubank-d14317715bb1",
     },
   ]
-  const rows = articles.map(item => (
-    <div className="pv4 f4 bw2 bt b--near-white ">
-      <a href={item.url} target={"_blank"} className="link black">
+  const Item = ({ item }) => {
+    let [isHovered, setHover] = useState(false)
+    return (
+      <a
+        onMouseEnter={() => setHover(true)}
+        onMouseLeave={() => setHover(false)}
+        href={item.url}
+        target={"_blank"}
+        className=" pv4 f3 fw5 bw2 bt b--near-white flex justify-between relative link black"
+      >
         {item.title}
+        <span
+          className="absolute"
+          style={{
+            transition: "all .2s",
+            right: 0,
+            opacity: !isHovered ? "0" : "1",
+            top: !isHovered ? "3rem" : "2rem",
+          }}
+        >
+          →
+        </span>
       </a>
-    </div>
-  ))
+    )
+  }
+
+  const rows = articles.map(item => <Item item={item} />)
   return <div>{rows}</div>
 }
 
