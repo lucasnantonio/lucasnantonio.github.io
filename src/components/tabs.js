@@ -28,8 +28,8 @@ const Tab = ({ title, active, setTabList, tabList }) => {
         <motion.div
           layoutId="outline"
           style={{
-            marginTop: ".5rem",
-            height: "3px",
+            marginTop: "-.2rem",
+            height: "2px",
             background: "black",
           }}
           initial={{ x: 0 }}

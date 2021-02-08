@@ -1,12 +1,6 @@
-import React, { useState, useEffect } from "react"
-import Img from "gatsby-image/withIEPolyfill"
-import Layout from "./layout"
-import SEO from "./seo"
-import { LifeEvents } from "./lifeEvents"
+import { motion } from "framer-motion"
+import React, { useEffect, useState } from "react"
 import { minWidth } from "./utils"
-import { motion, AnimatePresence } from "framer-motion"
-import { initialFadeAnimation, fadeInAnimation } from "./utils"
-import { Link } from "gatsby"
 const Dot = ({ black }) => (
   <span
     style={{
@@ -31,100 +25,107 @@ const About = ({ data }) => {
   })
 
   return (
-    <div className="f3 fw4 w-100 lh-copy mb3 pb0 b--near-white bw1">
-      <div
-        className="flex justify-between flex-column"
-        style={{ maxWidth: minWidth }}
-      >
-        {/* IMAGE */}
-        <img src="https://i.postimg.cc/QtxFVzBb/Bild007-Neg-Nr-8-1.jpg"></img>
-        <div className="flex flex-row-l flex-column mt4 mw-100-l">
-          {/* ABOUT */}
-          <div className="mt0-l black-80 lh-copy measure pr4-l f4">
-            <div>
-              <h2 className="fw6 f3 fw6 mt4">Hello! 👋</h2>
-              <p className="mt4">
-                I'm a Brazilian product designer living in New York. <br />
-                <br />I have been designing products and services since 2010,
-                and even though my roles have always been in design, I can
-                frequently be found exploring other disciplines that I'm curious
-                about, such as product management, qualitative research, code,
-                and team management.{" "}
-              </p>
-              <p>
-                I was part of the early design team at{" "}
-                <a
-                  className="underline link black-80"
-                  href="https://nu.bank"
-                  target="_blank"
-                >
-                  Nubank
-                </a>
-                , in São Paulo, where we disrupted the complexity of Latin
-                American banks while growing a vibrant, diverse, international{" "}
-                <a
-                  className="underline link black-80"
-                  href="https://building.nubank.com.br/design/"
-                  target="_blank"
-                >
-                  design organization
-                </a>
-                .
-              </p>
-              <p>
-                Ask me about the time when I interviewed Dan Ariely on a stage,
-                about my{" "}
-                <a
-                  className="underline link black-80"
-                  href="https://patents.justia.com/patent/9809239"
-                  target="_blank"
-                >
-                  patent to recycle bin for airplanes
-                </a>
-                , the time I made personas for cows, co-founded a furniture
-                shop, or when{" "}
-                <a
-                  className="underline link black-80"
-                  target="_blank"
-                  href="https://www.lorriewhittington.co.uk/wp-content/uploads/Handwritten-Typeface-by-Lucas-Neumann.jpg"
-                >
-                  this poster
-                </a>{" "}
-                was featured in a{" "}
-                <a
-                  className="underline link black-80"
-                  href="https://www.mu.nl/en/exhibitions/for-play-shaping-sexuality"
-                  target="_blank"
-                >
-                  {" "}
-                  Dutch exhibition about sex
-                </a>
-                . You can also find stories about my early work as a student on{" "}
-                <a
-                  className="underline link black-80"
-                  target="_blank"
-                  href="https://www.fastcompany.com/3028572/this-simple-tool-will-help-you-stop-working-ridiculous-hours"
-                >
-                  FastCompany
-                </a>{" "}
-                and{" "}
-                <a
-                  className="underline link black-80"
-                  href="https://www.wired.com/2014/04/work-2-0-a-web-connected-sticky-note-that-bosses-you-around/"
-                  target="_blank"
-                >
-                  Wired
-                </a>
-                .
-              </p>
-              <p>
-                I currently work as Staff Designer @ Twitter, in NYC. <br />
-              </p>
+    <motion.div
+      key="about"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+    >
+      <div className="f3 fw4 w-100 lh-copy mb3 pb0 b--near-white bw1">
+        <div
+          className="flex justify-between flex-column"
+          style={{ maxWidth: minWidth }}
+        >
+          {/* IMAGE */}
+          <img src="https://i.postimg.cc/QtxFVzBb/Bild007-Neg-Nr-8-1.jpg"></img>
+          <div className="flex flex-row-l flex-column mt4 mw-100-l">
+            {/* ABOUT */}
+            <div className="mt0-l black-50 lh-copy measure pr4-l f4">
+              <div>
+                <h2 className="fw6 f3 fw6 mt4">Hello! 👋</h2>
+                <p className="mt4">
+                  I'm a Brazilian product designer living in New York. <br />
+                  <br />I have been designing products and services since 2010,
+                  and even though my roles have always been in design, I can
+                  frequently be found exploring other disciplines that I'm
+                  curious about, such as product management, qualitative
+                  research, code, and team management.{" "}
+                </p>
+                <p>
+                  I was part of the early design team at{" "}
+                  <a
+                    className="underline link black-50"
+                    href="https://nu.bank"
+                    target="_blank"
+                  >
+                    Nubank
+                  </a>
+                  , in São Paulo, where we disrupted the complexity of Latin
+                  American banks while growing a vibrant, diverse, international{" "}
+                  <a
+                    className="underline link black-50"
+                    href="https://building.nubank.com.br/design/"
+                    target="_blank"
+                  >
+                    design organization
+                  </a>
+                  .
+                </p>
+                <p>
+                  Ask me about the time when I interviewed Dan Ariely on a
+                  stage, about my{" "}
+                  <a
+                    className="underline link black-50"
+                    href="https://patents.justia.com/patent/9809239"
+                    target="_blank"
+                  >
+                    patent to recycle bin for airplanes
+                  </a>
+                  , the time I made personas for cows, co-founded a furniture
+                  shop, or when{" "}
+                  <a
+                    className="underline link black-50"
+                    target="_blank"
+                    href="https://www.lorriewhittington.co.uk/wp-content/uploads/Handwritten-Typeface-by-Lucas-Neumann.jpg"
+                  >
+                    this poster
+                  </a>{" "}
+                  was featured in a{" "}
+                  <a
+                    className="underline link black-50"
+                    href="https://www.mu.nl/en/exhibitions/for-play-shaping-sexuality"
+                    target="_blank"
+                  >
+                    {" "}
+                    Dutch exhibition about sex
+                  </a>
+                  . You can also find stories about my early work as a student
+                  on{" "}
+                  <a
+                    className="underline link black-50"
+                    target="_blank"
+                    href="https://www.fastcompany.com/3028572/this-simple-tool-will-help-you-stop-working-ridiculous-hours"
+                  >
+                    FastCompany
+                  </a>{" "}
+                  and{" "}
+                  <a
+                    className="underline link black-50"
+                    href="https://www.wired.com/2014/04/work-2-0-a-web-connected-sticky-note-that-bosses-you-around/"
+                    target="_blank"
+                  >
+                    Wired
+                  </a>
+                  .
+                </p>
+                <p>
+                  I currently work as Staff Designer @ Twitter, in NYC. <br />
+                </p>
+              </div>
             </div>
-          </div>
 
-          {/* CAREER */}
-          {/* <div className="pl4-l pl0 w-40 lh-copy">
+            {/* CAREER */}
+            {/* <div className="pl4-l pl0 w-40 lh-copy">
             <ul className="relative mt0 pl0">
               <li className="">
                 Twitter <span className="">NOW</span>
@@ -139,9 +140,10 @@ const About = ({ data }) => {
               <li className="">FutureBrand 2011</li>
             </ul>
           </div> */}
+          </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   )
 }
 

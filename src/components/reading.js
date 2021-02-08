@@ -1,4 +1,30 @@
-import React from "react"
+import React, { useState } from "react"
+import { motion } from "framer-motion"
+
+const Item = ({ item }) => {
+  let [hover, setHover] = useState(false)
+  return (
+    <div
+      onMouseEnter={() => setHover(true)}
+      onMouseLeave={() => setHover(false)}
+    >
+      <a
+        className="underline-none link black pv4 f3 bw2 bt b--near-white flex justify-between"
+        href={item.amazon_url}
+        target="_blank"
+      >
+        <div className="mr4">
+          <h2 className={`f3 fw5 ${hover && "underline"}`}>{item.title}</h2>
+          <div className="f4 pt2 measure black-50">{item.text}</div>
+          <div className="f5 pt4 fw5 flex flex-row-ns flex-column items-center-l items-start">
+            {" "}
+          </div>
+        </div>
+        {item.img && <img className="w4 h-100" src={item.img}></img>}
+      </a>
+    </div>
+  )
+}
 
 function Reading() {
   const books = [
@@ -113,46 +139,154 @@ function Reading() {
       img:
         "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1512417961l/36885304.jpg",
     },
+    {
+      year: 2020,
+      title: "At the Existentialist Café",
+      bookshop_url: "https://bookshop.org/a/9978/9781590518892",
+      amazon_url: "https://amzn.to/3aCN3Xi",
+      text:
+        "This is a long, but highly entertaining, funny, and informative book about existentialism. It helped me lighten my approach to moments of crisis and hard life decisions.",
+      img:
+        "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1498874825l/33945974.jpg",
+    },
+    {
+      year: 2020,
+      title: "The Order of Time",
+      bookshop_url: "https://bookshop.org/a/9978/9780735216112",
+      amazon_url: "https://amzn.to/3jsHCxZ",
+      text:
+        "This book is a transformative experience. Rovelli breaks all our assumptions about how the world works one by one, explaining contemporary physics in an approachable, poetic, and funny style. Mind blowing.",
+      img:
+        "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1516424407l/36442813._SY475_.jpg",
+    },
+    {
+      year: 2020,
+      title: "The Making of a Manager",
+      bookshop_url: "https://bookshop.org/a/9978/9780735219564",
+      amazon_url: "https://amzn.to/36QMHuV",
+      text:
+        "Excellent read for every designer growing into senior or managerial roles and wondering where to take their careers. Gives a lot of clarity about the IC/Management tracks and why management is a completely different job than being a senior design specialist.",
+      img:
+        "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1542183307l/42776244._SY475_.jpg",
+    },
+    {
+      year: 2020,
+      title: "Articulating design decisions",
+      bookshop_url: "https://bookshop.org/a/9978/9781492079224",
+      amazon_url: "https://amzn.to/2N8reGM",
+      text:
+        "This is one of the books that most transformed my design process and thinking, and the one I recommend the most to coleagues and friends. It helps bring a lot of clarity and intention to how we design and communicate with stakeholders.",
+      img:
+        "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1444575093l/27134224._SY475_.jpg",
+    },
+    {
+      year: 2020,
+      title: "Org Design for Design Orgs",
+      bookshop_url: "https://bookshop.org/a/9978/9781491938409",
+      amazon_url: "https://amzn.to/3rx7V9i",
+      text:
+        "This book was an essential resource when we were growing the team of designers at Nubank from 6 to the first 100. It brings clarity to different team structure types, career ladders, leveling, but also how to get the best results of your team while building a great culture.",
+      img:
+        "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1472163849l/31681314._SY475_.jpg",
+    },
+    {
+      year: 2020,
+      title: "Radical Candor",
+      bookshop_url: "https://bookshop.org/a/9978/9781250235374",
+      amazon_url: "https://amzn.to/3aLTXtp",
+      text:
+        "This book should be required reading for anyone in business. If everybody cared more about helping each other improve, and used some of these tools to do so effectively, we would all be better off as professionals and as people.",
+      img:
+        "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1482838407l/29939161.jpg",
+    },
+    {
+      year: 2020,
+      title: "Hit Refresh",
+      bookshop_url: "https://bookshop.org/a/9978/9780062959720",
+      amazon_url: "https://amzn.to/2MLm1oL",
+      text:
+        "I really enjoyed getting to know Satya's story and his remarkable process of turning Microsoft around. There are great insights here about bringing humanity to corporate culture.",
+      img:
+        "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1506565784l/30835567._SY475_.jpg",
+    },
+    {
+      year: 2020,
+      title: "The Secret History",
+      bookshop_url: "https://bookshop.org/a/9978/9781400031702",
+      amazon_url: "https://amzn.to/3aB6a3O",
+      text:
+        "The Goldfinch is one of my favorite books of all time, and I was very pleased to like The Secret History just as much. I love Donna Tartt's style and was hooked on this book from beginning to end.",
+      img:
+        "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1328325056l/13054604.jpg",
+    },
+    {
+      year: 2020,
+      title: "The Field Study Handbook",
+      amazon_url: "https://amzn.to/3jrGkDo",
+      text:
+        "Jan Chipchase has such an inspiring commitment to research and an infinite curiosity about how humans interact with technology and each other. His method is so adventurous, and at the same time so organized, it makes me feel bad for the cheap approach most companies use to learn from their customers. This is the real deal, and I wish more teams were willing to pack their bags and hit the road to learn.",
+      img:
+        "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1500552377l/35710804._SX318_.jpg",
+    },
+    {
+      year: 2020,
+      title: "Word by Word: The Secret Life of Dictionaries",
+      bookshop_url: "https://bookshop.org/a/9978/9781101970263",
+      amazon_url: "https://amzn.to/3rBbVFP",
+      text:
+        "I couldn't love this book more. The process of writing dictionaries is incredible. We can all learn from the passion and dedication of the people who work to document the meaning of the language we use.",
+      img:
+        "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1525124613l/40009274.jpg",
+    },
+
+    {
+      year: 2020,
+      title: "Seven Brief Lessons on Physics",
+      bookshop_url: "https://bookshop.org/a/9978/9780399184413",
+      amazon_url: "https://amzn.to/3ju7Xvy",
+      text:
+        "Such a beaufitul book. Carlo Rovelli has ways of explaining our universe with unparalleled poetry and passion.",
+      img:
+        "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1443551746l/25734172.jpg",
+    },
+    {
+      year: 2020,
+      title: "Validating Product Ideas",
+      amazon_url: "https://amzn.to/36ThuY7",
+      text:
+        "A great book for small teams with little or no research budget. Tomer Sharon's strategies helped me go straight to the point and achieve clarity on what we needed to learn and what tools to use in order to learn it.",
+      img:
+        "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1455483270l/29095887._SY475_.jpg",
+    },
+    {
+      year: 2020,
+      title: "Sapiens",
+      bookshop_url: "https://bookshop.org/a/9978/9780062316110",
+      amazon_url: "https://amzn.to/2YQKXNY",
+      text:
+        "I don't think I need to say much about this one, given its immense popularity. Such a great book for anyone.",
+      img:
+        "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1595674533l/23692271._SY475_.jpg",
+    },
   ]
-  const rows = books.map(item => (
-    <div className="pv4 f3 bw2 bt b--near-white flex justify-between">
-      <div className="mr4">
-        <a href={item.url} target={"_blank"} className="link black fw5">
-          {item.title}
-        </a>
-        <div className="f4 pt4 measure">{item.text}</div>
-        <div className="f5 pt4 fw5">
-          {" "}
-          Get from
-          <a
-            className="link blue pv1 ph2 bw1 b--light-blue hover-bg-blue hover-white br-pill ba mh2"
-            href={item.amazon_url}
-            target="_blank"
-          >
-            Amazon
-          </a>
-          <a
-            className="link blue pv1 ph2 bw1 b--light-blue hover-bg-blue hover-white br-pill ba"
-            href={item.bookshop_url}
-            target="_blank"
-          >
-            Local book shop
-          </a>
+  const rows = books.map(item => <Item item={item}></Item>)
+  return (
+    <motion.div
+      key="reading"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+    >
+      <div>
+        {rows}
+        <div className="mt3 bt bw2 b--near-white pt4">
+          <p className="measure lh-copy">
+            This page contains affiliate links from Amazon and Bookshop.org. If
+            you buy a book using these links, I may earn a comission.
+          </p>
         </div>
       </div>
-      {item.img && <img className="w5-l w4  h-100" src={item.img}></img>}
-    </div>
-  ))
-  return (
-    <div>
-      {rows}
-      <div className="mt3 bt bw2 b--near-white pt4">
-        <p className="measure lh-copy">
-          This page contains affiliate links from Amazon and Bookshop.org. If
-          you buy a book using these links, I may earn a comission.
-        </p>
-      </div>
-    </div>
+    </motion.div>
   )
 }
 

@@ -1,14 +1,14 @@
-import { AnimatePresence, motion } from "framer-motion"
-import React, { useState, useEffect } from "react"
+import { AnimatePresence } from "framer-motion"
+import React, { useState } from "react"
 import About from "../components/about"
 import Hello from "../components/hello"
-import Writing from "../components/writing"
-import Reading from "../components/reading"
 import HomeSection from "../components/home-section"
 import Layout from "../components/layout"
+import Reading from "../components/reading"
 import SEO from "../components/seo"
 import Tabs from "../components/tabs"
 import { minWidth, topics } from "../components/utils"
+import Writing from "../components/writing"
 
 function IndexPage({
   data: {
@@ -45,10 +45,12 @@ function IndexPage({
         className="overflow-y-hidden center pt4"
         style={{ maxWidth: minWidth }}
       >
-        {(activeTab === "About" && <About />) ||
-          (activeTab === "Work" && <HomeSection posts={posts} />) ||
-          (activeTab === "Writing" && <Writing />) ||
-          (activeTab === "Reading" && <Reading />)}
+        <AnimatePresence>
+          {(activeTab === "About" && <About />) ||
+            (activeTab === "Work" && <HomeSection posts={posts} />) ||
+            (activeTab === "Writing" && <Writing />) ||
+            (activeTab === "Reading" && <Reading />)}
+        </AnimatePresence>
       </div>
     </Layout>
   )
