@@ -45,11 +45,12 @@ const About = ({ data }) => {
                 <h2 className="fw6 f3 fw6 mt4">Hello! 👋</h2>
                 <p className="mt4">
                   I'm a Brazilian product designer living in New York. <br />
-                  <br />I have been designing products and services since 2010,
-                  and even though my roles have always been in design, I can
-                  frequently be found exploring other disciplines that I'm
-                  curious about, such as product management, qualitative
-                  research, code, and team management.{" "}
+                  <br />
+                  I've been designing products and services since 2010, and even
+                  though my home has always been with design, I can frequently
+                  be found exploring disciplines I'm curious about, such as
+                  product management, qualitative research, code, team
+                  management, and others.{" "}
                 </p>
                 <p>
                   I was part of the early design team at{" "}
