@@ -4,6 +4,12 @@ import { motion } from "framer-motion"
 function Writing() {
   const articles = [
     {
+      title: "A checklist for behavioral design",
+      subtitle:
+        "Understanding the why behind people's behaviors and designing helpful, ethical interventions.",
+      url: "https://uxdesign.cc/a-checklist-for-behavioral-design-fb768a8d5615",
+    },
+    {
       title: "Getting the O-1 US Visa as a designer",
       subtitle: "Tips for designers who want to come live and work in the US.",
       url:

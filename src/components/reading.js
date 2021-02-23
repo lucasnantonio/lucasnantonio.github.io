@@ -30,11 +30,20 @@ function Reading() {
   const books = [
     {
       year: 2020,
+      title: "Surely You're Joking, Mr. Feynman!",
+      amazon_url: "https://amzn.to/2ZgGqVg",
+      text:
+        "Scientists like Feynman are excellent reminders of how rarely we think clearly about a problem before jumping at solutions. Feynmann's life is a masterclass on being curious and asking questions until you understand how the world really works. And his writing style is light, funny and entertaining.",
+      img:
+        "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1504936953l/35167685.jpg",
+    },
+    {
+      year: 2020,
       title: "The happiness hypothesis",
       bookshop_url: "https://bookshop.org/a/9978/9780465028023",
       amazon_url: "https://amzn.to/3rucyRp",
       text:
-        "I love Haidt's ability to go both wide and deep to connect centuries-old wisdom with current science. A highly rewarding, always interesing book.",
+        "I love Haidt's ability to go both wide and deep to connect centuries-old wisdom with current science. A highly rewarding, always interesting book.",
       img:
         "https://images-production.bookshop.org/spree/images/attachments/9845057/original/9780465028023.jpg?1588290604",
     },
@@ -44,7 +53,7 @@ function Reading() {
       bookshop_url: "https://bookshop.org/a/9978/9780262539401",
       amazon_url: "https://amzn.to/3tAN32J",
       text:
-        "This is a good, foundational book on how Behavioral Insights evolved in the academic and business circles. It has examples from fields outside of technology so it helps expand our critial view.",
+        "This is a good, foundational book on how Behavioral Insights evolved in the academic and business circles. It has examples from fields outside of technology so it helps expand our critical view.",
       img:
         "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1597015463l/51456687.jpg",
     },
@@ -54,7 +63,7 @@ function Reading() {
       bookshop_url: "https://bookshop.org/a/9978/9780525541349",
       amazon_url: "https://amzn.to/36R5QwW",
       text:
-        "This is my second book from Olga Tokarczuk, and even thought very different from “Flights”, it didn't dissapoint me. I was hooked form the beginning. Her ability to see poetry in nature is very inspiring.",
+        "This is my second book from Olga Tokarczuk, and even though very different from “Flights”, it didn't dissapoint me. I was hooked from the beginning. Her ability to see poetry in nature is very inspiring.",
       img:
         "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1547225640l/42983724.jpg",
     },
@@ -65,7 +74,7 @@ function Reading() {
       bookshop_url: "https://bookshop.org/a/9978/9780199663835",
       amazon_url: "https://amzn.to/3rzrbTk",
       text:
-        "I love these tiny books from Oxford University Press. This one gave me an amazing first look at the world of buddhism.",
+        "I love these tiny books from Oxford University Press. This one gave me an amazing first look at the world of Buddhism.",
       img:
         "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1388193570l/74657.jpg",
     },
@@ -105,7 +114,7 @@ function Reading() {
       bookshop_url: "https://bookshop.org/a/9978/9780735224155",
       amazon_url: "https://amzn.to/3tDDz6C",
       text:
-        "There's a lot to question and to learn about the way we see and exist in the world. This book gave me great insight into the scaffolding we build in our minds to construct reality, and how psychadelics will open the way to new, more humane forms of consciousness.",
+        "There's a lot to question and to learn about the way we see and exist in the world. This book gave me great insight into the scaffolding we build in our minds to construct reality, and how psychedelics will open the way to new, more humane forms of consciousness.",
       img:
         "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1554267982l/44774807._SY475_.jpg",
     },
@@ -135,7 +144,7 @@ function Reading() {
       bookshop_url: "https://bookshop.org/a/9978/9780525534204",
       amazon_url: "https://amzn.to/2Mz5EM1",
       text:
-        "This is one of the most fascinating ficcion books I have ever read. It is hard, and infinitely enjoyable. Olga is a genius, and the complexity of her mind will leave an impact on me for years to come. I can't wait to read this book again.",
+        "This is one of the most fascinating fiction books I have ever read. It is hard, and infinitely enjoyable. Olga is a genius, and the complexity of her mind will leave an impact on me for years to come. I can't wait to read this book again.",
       img:
         "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1512417961l/36885304.jpg",
     },
@@ -155,7 +164,7 @@ function Reading() {
       bookshop_url: "https://bookshop.org/a/9978/9780735216112",
       amazon_url: "https://amzn.to/3jsHCxZ",
       text:
-        "This book is a transformative experience. Rovelli breaks all our assumptions about how the world works one by one, explaining contemporary physics in an approachable, poetic, and funny style. Mind blowing.",
+        "This book is a transformative experience. Rovelli breaks all our assumptions about how the world works one by one, explaining contemporary physics in an approachable, poetic, and funny style. Mind-blowing!",
       img:
         "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1516424407l/36442813._SY475_.jpg",
     },
@@ -165,7 +174,7 @@ function Reading() {
       bookshop_url: "https://bookshop.org/a/9978/9780735219564",
       amazon_url: "https://amzn.to/36QMHuV",
       text:
-        "Excellent read for every designer growing into senior or managerial roles and wondering where to take their careers. Gives a lot of clarity about the IC/Management tracks and why management is a completely different job than being a senior design specialist.",
+        "An excellent read for every designer growing into senior or managerial roles and wondering where to take their careers. It gives a lot of clarity about the IC/Management tracks and why management is a completely different job than being a senior design specialist.",
       img:
         "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1542183307l/42776244._SY475_.jpg",
     },
@@ -245,7 +254,7 @@ function Reading() {
       bookshop_url: "https://bookshop.org/a/9978/9780399184413",
       amazon_url: "https://amzn.to/3ju7Xvy",
       text:
-        "Such a beaufitul book. Carlo Rovelli has ways of explaining our universe with unparalleled poetry and passion.",
+        "Such a beautiful book. Carlo Rovelli has ways of explaining our universe with unparalleled poetry and passion.",
       img:
         "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1443551746l/25734172.jpg",
     },
