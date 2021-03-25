@@ -3,10 +3,10 @@ path: "/blog/birdwatch"
 date: "2021-01-25"
 title: Twitter Birdwatch
 subtitle: A community-driven solution to misleading information
-# problem: Recruiting users for research is time-consuming
-# solution: An automated, self-service scheduling workflow
+problem: The spread of online misinformation is too large to tackle with centralized tools.
+solution: Empower users to add and moderate context around misleading Tweets.
 # impact: Recurring interview sessions scheduled at the press of a button
-# myrole: Main advocate, project lead, and interviewer.
+myrole: Design lead
 topics:
   - product design
 team:
@@ -28,5 +28,7 @@ People come to Twitter to stay informed, and they want credible information to h
 Birdwatch participants can identify Tweets they believe are misleading, write notes that provide context on the Tweet, and rate the quality of other participants’ notes. Through consensus from a broad and diverse set of contributors, our eventual goal is that community-written notes will be visible directly on Tweets, available to everyone on Twitter.
 
 Currently, Birdwatch is in pilot mode for people in the US. We’re building it in the open, with the public’s input, and we’re taking significant steps to make Birdwatch transparent.
+
+https://twitter.com/birdwatch/status/1353774171684106243
 
 [**Learn more about Birdwatch →**](http://twitter.github.io/birdwatch)

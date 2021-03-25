@@ -21,8 +21,11 @@ module.exports = {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
+          {
+            resolve: "@weknow/gatsby-remark-twitter",
+            options: { align: "center", hideThread: false },
+          },
           `gatsby-remark-copy-linked-files`,
-
           `gatsby-remark-unwrap-images`,
           {
             resolve: `gatsby-remark-images`,
