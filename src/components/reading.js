@@ -29,6 +29,15 @@ const Item = ({ item }) => {
 function Reading() {
   const books = [
     {
+      year: 2021,
+      title: "Actionable Gamification",
+      amazon_url: "https://amzn.to/39rVftM",
+      text:
+        "Yu-Kai offers a powerful, elegant, and easy to learn model for those who design for behavior change. I see myself referring to and using his Octalysis regularly in my work. The book, unfortunately, is poorly edited, too long, and Yu-Kai uses it too much as a selling vessel for his other services.",
+      img:
+        "https://i2.wp.com/yukaichou.com/wp-content/uploads/2014/01/title_page.jpg?fit=600%2C872&ssl=1",
+    },
+    {
       year: 2020,
       title: "Surely You're Joking, Mr. Feynman!",
       amazon_url: "https://amzn.to/2ZgGqVg",
