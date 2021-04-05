@@ -30,6 +30,15 @@ function Reading() {
   const books = [
     {
       year: 2021,
+      title: "Living in information",
+      amazon_url: "https://amzn.to/3dtLBI0",
+      text:
+        "Jorge Arango's call to change the framing we use to design, from “products” or “services” to “information environments” is very compelling, and has helped broaden my view of my own work and responsibility.",
+      img:
+        "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1528202351l/40387467._SY475_.jpg",
+    },
+    {
+      year: 2021,
       title: "Actionable Gamification",
       amazon_url: "https://amzn.to/39rVftM",
       text:
