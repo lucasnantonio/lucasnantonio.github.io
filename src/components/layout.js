@@ -37,18 +37,7 @@ const Layout = ({
   `)
   return (
     <>
-      {!isIndex && (
-        <Header
-          siteTitle={data.site.siteMetadata.title}
-          selectedTopics={selectedTopics}
-          setSelectedTopics={setSelectedTopics}
-          isAll={isAll}
-          setAll={setAll}
-          isIndex={isIndex}
-          prev={prev && prev}
-          next={next && next}
-        />
-      )}
+      <Header siteTitle={data.site.siteMetadata.title} isIndex={isIndex} />
       <div
         className="pt0 ph4"
         style={{

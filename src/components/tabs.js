@@ -21,10 +21,10 @@ const Tab = ({ title, active, setTabList, tabList }) => {
           })
         )
       }}
-      className={`pb2 pointer mr4 ${active && "black"}`}
+      className={`pointer mr4 ${active && "black"}`}
     >
       {title}
-      {active && (
+      {/* {active && (
         <motion.div
           layoutId="outline"
           style={{
@@ -34,7 +34,7 @@ const Tab = ({ title, active, setTabList, tabList }) => {
           }}
           initial={{ x: 0 }}
         ></motion.div>
-      )}
+      )} */}
     </div>
   )
 }
@@ -48,7 +48,7 @@ const Tabs = ({ setTabList, tabList }) => {
     >
       <AnimateSharedLayout>
         <div style={{ maxWidth: minWidth }} className="mr4 center">
-          <div className="flex f3 fw5 black-40 tracked-tight mb4">
+          <div className="flex f3 fw5 black-40 tracked-tight">
             {tabList.map(item => {
               return (
                 <Tab

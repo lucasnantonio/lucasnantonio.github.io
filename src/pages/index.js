@@ -6,7 +6,7 @@ import HomeSection from "../components/home-section"
 import Layout from "../components/layout"
 import Reading from "../components/reading"
 import SEO from "../components/seo"
-import Tabs from "../components/tabs"
+
 import { minWidth, topics } from "../components/utils"
 import Writing from "../components/writing"
 
@@ -16,12 +16,6 @@ function IndexPage({
     allImageSharp: { nodes: images },
   },
 }) {
-  const [tabList, setTabList] = useState([
-    { title: "Work", active: true },
-    { title: "About", active: false },
-    { title: "Writing", active: false },
-    { title: "Reading", active: false },
-  ])
   const [isAll, setAll] = useState(true)
   const [selectedTopics, setSelectedTopics] = useState(topics)
   const [selectedTab, setSelectedTab] = useState("Work")
@@ -29,7 +23,8 @@ function IndexPage({
   const publishedPosts = posts.filter(
     item => item.node.frontmatter.soon === null
   )
-  let activeTab = tabList.find(el => el.active).title
+  const activeTab = "Work"
+  // let activeTab = tabList.find(el => el.active).title
   return (
     <Layout
       isIndex
@@ -39,8 +34,8 @@ function IndexPage({
       setSelectedTopics={setSelectedTopics}
     >
       <SEO title="Home" />
-      <Hello setSelectedTopics={setSelectedTopics} setAll={setAll} />
-      <Tabs tabList={tabList} setTabList={setTabList}></Tabs>
+      {/* <Hello setSelectedTopics={setSelectedTopics} setAll={setAll} /> */}
+
       <div
         className="overflow-y-hidden center pt4"
         style={{ maxWidth: minWidth }}

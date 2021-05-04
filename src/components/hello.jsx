@@ -28,7 +28,7 @@ const Hello = ({ setSelectedTopics, setAll }) => {
   return (
     <div>
       <div className="w-100 flex center mb0" style={{ maxWidth: minWidth }}>
-        <div className="w-100 mv6 flex justify-between">
+        <div className="w-100 mv4 flex justify-between">
           <div
             style={{ maxWidth: minWidth }}
             className="flex flex-column tracked-tight"
@@ -48,9 +48,6 @@ const Hello = ({ setSelectedTopics, setAll }) => {
               ) : (
                 <h1 className="f3 black lh-title mb0 fw5">Lucas Neumann</h1>
               )}
-              <p className="f3 black-40 lh-copy mt0 fw5 measure mt2">
-                {`Product designer at Twitter`}
-              </p>
             </motion.div>
           </div>
           <TwitterLogo />
