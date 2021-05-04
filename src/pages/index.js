@@ -16,23 +16,8 @@ function IndexPage({
     allImageSharp: { nodes: images },
   },
 }) {
-  const [isAll, setAll] = useState(true)
-  const [selectedTopics, setSelectedTopics] = useState(topics)
-  const [selectedTab, setSelectedTab] = useState("Work")
-
-  const publishedPosts = posts.filter(
-    item => item.node.frontmatter.soon === null
-  )
-  const activeTab = "Work"
-  // let activeTab = tabList.find(el => el.active).title
   return (
-    <Layout
-      isIndex
-      isAll={isAll}
-      setAll={setAll}
-      selectedTopics={selectedTopics}
-      setSelectedTopics={setSelectedTopics}
-    >
+    <Layout>
       <SEO title="Home" />
       {/* <Hello setSelectedTopics={setSelectedTopics} setAll={setAll} /> */}
 
@@ -40,12 +25,7 @@ function IndexPage({
         className="overflow-y-hidden center pt4"
         style={{ maxWidth: minWidth }}
       >
-        <AnimatePresence>
-          {(activeTab === "About" && <About />) ||
-            (activeTab === "Work" && <HomeSection posts={posts} />) ||
-            (activeTab === "Writing" && <Writing />) ||
-            (activeTab === "Reading" && <Reading />)}
-        </AnimatePresence>
+        <HomeSection posts={posts} />
       </div>
     </Layout>
   )

@@ -3,7 +3,7 @@ import React from "react"
 import { minWidth } from "../components/utils"
 import PostList from "./postList"
 
-const HomeSection = ({ title, date, description, posts, isAll, icon }) => {
+const HomeSection = ({ posts }) => {
   const sectionPosts = posts.filter(
     item => item.node.frontmatter.published === true
   )

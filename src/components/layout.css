@@ -189,6 +189,10 @@ h5 {
   font-weight: 400;
 }
 
+a:visited {
+  color: inherit;
+}
+
 .post-content p,
 .post-content h1,
 .post-content h2,

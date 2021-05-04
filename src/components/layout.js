@@ -15,17 +15,7 @@ import "../../node_modules/tachyons/css/tachyons.min.css"
 import "./layout.css"
 import { minWidth } from "./utils"
 
-const Layout = ({
-  children,
-  isWorkInView,
-  isAll,
-  setAll,
-  selectedTopics,
-  setSelectedTopics,
-  isIndex,
-  prev,
-  next,
-}) => {
+const Layout = ({ children, isIndex }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {

@@ -17,7 +17,7 @@ function Header() {
         style={{
           maxWidth: minWidth,
         }}
-        className={"flex z-max space-between mh4 center-l pv4"}
+        className={"flex z-max space-between mh4 center-l pb4 pt5"}
       >
         <div
           style={{ maxWidth: minWidth }}
@@ -26,7 +26,7 @@ function Header() {
           <Link to="/" className={"link"}>
             <h1 className="f3 fw5 tracked-tight black-80">Lucas Neumann</h1>
           </Link>
-          <div className="ph3">•</div>
+          <div className="ph3">・</div>
           <Tabs tabList={tabList} setTabList={setTabList}></Tabs>
         </div>
       </header>

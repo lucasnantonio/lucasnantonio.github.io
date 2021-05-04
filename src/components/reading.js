@@ -5,6 +5,7 @@ const Item = ({ item }) => {
   let [hover, setHover] = useState(false)
   return (
     <div
+      className="w-100"
       onMouseEnter={() => setHover(true)}
       onMouseLeave={() => setHover(false)}
     >
