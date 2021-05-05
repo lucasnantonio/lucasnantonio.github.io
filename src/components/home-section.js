@@ -9,7 +9,7 @@ const HomeSection = ({ posts }) => {
   )
   return (
     <div style={{ maxWidth: minWidth }} className="center">
-      <div className={"w-100 flex flex-row mb3"}>
+      <div className={"w-100 flex flex-row "}>
         <PostList posts={sectionPosts} />
       </div>
     </div>

@@ -72,7 +72,7 @@ export default function Template({
       >
         <div
           style={{ maxWidth: minWidth }}
-          className="flex w-100 justify-between flex-row-l flex-column center"
+          className="flex w-100 justify-between flex-row-l flex-column center "
         >
           {title}
           <PostMetadata frontmatter={frontmatter} />

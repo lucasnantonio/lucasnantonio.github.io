@@ -22,26 +22,24 @@ const Tab = ({ title, active, setTabList, tabList }) => {
 
 const Tabs = ({ setTabList, tabList, location }) => {
   return (
-    <div style={{ maxWidth: minWidth }}>
-      <div className="flex f3 fw5 tracked-tight">
-        {tabList.map(item => {
-          let isActive
-          if (location === "/" && item.title.toLowerCase() === "work") {
-            isActive = true
-          } else if (location.indexOf(item.title.toLowerCase()) === 1) {
-            isActive = true
-          }
-          return (
-            <Tab
-              key={item.title}
-              setTabList={setTabList}
-              tabList={tabList}
-              title={item.title}
-              active={isActive}
-            ></Tab>
-          )
-        })}
-      </div>
+    <div className="flex f3 fw5 tracked-tight w-auto-l w-100">
+      {tabList.map(item => {
+        let isActive
+        if (location === "/" && item.title.toLowerCase() === "work") {
+          isActive = true
+        } else if (location.indexOf(item.title.toLowerCase()) === 1) {
+          isActive = true
+        }
+        return (
+          <Tab
+            key={item.title}
+            setTabList={setTabList}
+            tabList={tabList}
+            title={item.title}
+            active={isActive}
+          ></Tab>
+        )
+      })}
     </div>
   )
 }

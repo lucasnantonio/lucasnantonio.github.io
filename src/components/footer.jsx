@@ -5,11 +5,11 @@ import Feedback from "../components/feedback"
 
 const Footer = () => {
   return (
-    <div
-      className="pv5 f4 w-100 ph0-l ph4"
-    >
-      <div className="pt4 bw2 b--black  flex flex-row-l flex-column justify-between center items-start" style={{ maxWidth: minWidth, borderTop: "3px solid black" }}>
-
+    <div className="pv5 f4 w-100 ph0-l ph4">
+      <div
+        className="pt4 flex flex-row-l flex-column justify-between center items-start bg-near-white pa4 br3"
+        style={{ maxWidth: minWidth }}
+      >
         <div className=" flex flex-column mb0-l mb4">
           <p className="mt0 black-80 fw6">Get in touch</p>
           <div className="flex flex-row-l flex-column fw5">
@@ -18,35 +18,35 @@ const Footer = () => {
               href="mailto:lucasneumann.fau@gmail.com"
             >
               Email me
-        </a>
+            </a>
             <a
               target="_blank"
               className="link black-40 hover-black-80 underline-hover mr3"
               href="https://www.linkedin.com/in/lucasneumann/"
             >
               LinkedIn
-        </a>
+            </a>
             <a
               target="_blank"
               className="link black-40 hover-black-80 underline-hover mr3"
               href="https://medium.com/@lucasnantonio"
             >
               Medium
-        </a>
+            </a>
             <a
               target="_blank"
               className="link black-40 hover-black-80 underline-hover mr3"
               href="https://twitter.com/@lucasnantonio"
             >
               Twitter
-        </a>
+            </a>
             <a
               target="_blank"
               className="link black-40 hover-black-80 underline-hover mr3"
               href="https://github.com/lucasnantonio"
             >
               Github
-        </a>
+            </a>
           </div>
         </div>
         <Feedback></Feedback>
