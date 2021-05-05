@@ -34,6 +34,15 @@ function Reading() {
   const books = [
     {
       year: 2021,
+      title: "Notes on the Synthesis of Form",
+      amazon_url: "https://amzn.to/3b4NQBl",
+      text:
+        "This book is fascinating. It's an attempt to look at the design process (analysis & synthesis) from a “mathematical”, or “first-principles” point of view, in order to find solutions outside of the preconceptions a designer might have when solving problems “intuitively”. It's a remarkable idea, but at times the language went over my head and there was a lot of repetition. ",
+      img:
+        "https://images-na.ssl-images-amazon.com/images/I/41F+fsRV8aL._SX328_BO1,204,203,200_.jpg",
+    },
+    {
+      year: 2021,
       title: "Living in information",
       amazon_url: "https://amzn.to/3dtLBI0",
       text:
