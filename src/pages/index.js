@@ -16,10 +16,7 @@ function IndexPage({
       <SEO title="Home" />
       {/* <Hello setSelectedTopics={setSelectedTopics} setAll={setAll} /> */}
 
-      <div
-        className="overflow-y-hidden center pt4"
-        style={{ maxWidth: minWidth }}
-      >
+      <div className="overflow-y-hidden center" style={{ maxWidth: minWidth }}>
         <HomeSection posts={posts} />
       </div>
     </Layout>

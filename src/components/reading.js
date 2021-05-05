@@ -297,7 +297,7 @@ function Reading() {
         "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1595674533l/23692271._SY475_.jpg",
     },
   ]
-  const rows = books.map(item => <Item item={item}></Item>)
+  const rows = books.map(item => <Item key={item.title} item={item}></Item>)
   return (
     <motion.div
       key="reading"

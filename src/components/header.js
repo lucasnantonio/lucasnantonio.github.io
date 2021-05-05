@@ -17,7 +17,7 @@ function Header({ location }) {
         style={{
           maxWidth: minWidth,
         }}
-        className={"flex z-max space-between mh4 center-l pb4 pt5"}
+        className={"flex z-max space-between mh4 center-l pb5 pt5"}
       >
         <div
           style={{ maxWidth: minWidth }}

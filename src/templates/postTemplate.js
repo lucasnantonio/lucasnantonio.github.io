@@ -25,7 +25,7 @@ export default function Template({
   }
 
   const title = (
-    <div className="flex flex-column pt3 pb5-l w-100">
+    <div className="flex flex-column pb5-l w-100">
       <h1 className=" fw5 f3 black-80 mt0 mb1 pb0 w-100 tracked-tight lh-copy">
         {frontmatter.title}
       </h1>
@@ -72,7 +72,7 @@ export default function Template({
       >
         <div
           style={{ maxWidth: minWidth }}
-          className="flex w-100 justify-between flex-row-l flex-column center mt4 "
+          className="flex w-100 justify-between flex-row-l flex-column center"
         >
           {title}
           <PostMetadata frontmatter={frontmatter} />
