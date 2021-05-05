@@ -3,9 +3,9 @@ import Writing from "../components/writing"
 import Layout from "../components/layout"
 import { minWidth, topics } from "../components/utils"
 
-const WritingPage = () => {
+const WritingPage = ({ location }) => {
   return (
-    <Layout>
+    <Layout location={location}>
       <div className=" center" style={{ maxWidth: minWidth }}>
         <Writing></Writing>
       </div>

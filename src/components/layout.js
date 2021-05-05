@@ -15,7 +15,7 @@ import "../../node_modules/tachyons/css/tachyons.min.css"
 import "./layout.css"
 import { minWidth } from "./utils"
 
-const Layout = ({ children, isIndex }) => {
+const Layout = ({ location, children, isIndex }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -27,7 +27,11 @@ const Layout = ({ children, isIndex }) => {
   `)
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata.title} isIndex={isIndex} />
+      <Header
+        location={location.pathname}
+        siteTitle={data.site.siteMetadata.title}
+        isIndex={isIndex}
+      />
       <div
         className="pt0 ph4"
         style={{

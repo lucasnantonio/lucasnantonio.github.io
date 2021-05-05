@@ -4,7 +4,7 @@ import React, { useState } from "react"
 import { minWidth } from "./utils"
 import Tabs from "../components/tabs"
 
-function Header() {
+function Header({ location }) {
   const [tabList, setTabList] = useState([
     { title: "Work", active: true },
     { title: "About", active: false },
@@ -27,7 +27,11 @@ function Header() {
             <h1 className="f3 fw5 tracked-tight black-80">Lucas Neumann</h1>
           </Link>
           <div className="ph3">・</div>
-          <Tabs tabList={tabList} setTabList={setTabList}></Tabs>
+          <Tabs
+            location={location}
+            tabList={tabList}
+            setTabList={setTabList}
+          ></Tabs>
         </div>
       </header>
     </div>

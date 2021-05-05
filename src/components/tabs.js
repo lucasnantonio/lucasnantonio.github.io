@@ -31,7 +31,8 @@ const Tab = ({ title, active, setTabList, tabList }) => {
   )
 }
 
-const Tabs = ({ setTabList, tabList }) => {
+const Tabs = ({ setTabList, tabList, location }) => {
+  console.log(location)
   return (
     <div style={{ maxWidth: minWidth }}>
       <div className="flex f3 fw5 tracked-tight">

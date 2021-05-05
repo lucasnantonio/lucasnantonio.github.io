@@ -11,6 +11,7 @@ import { motion } from "framer-motion"
 import { initialFadeAnimation, fadeInAnimation } from "../components/utils"
 
 export default function Template({
+  location,
   data, // this prop will be injected by the GraphQL query below.
   pageContext,
 }) {
@@ -63,7 +64,7 @@ export default function Template({
   )
 
   return (
-    <Layout prev={prev} next={next} isIndex={false}>
+    <Layout location={location} prev={prev} next={next} isIndex={false}>
       <motion.div
         transition={{ duration: 0.5 }}
         initial={initialFadeAnimation}

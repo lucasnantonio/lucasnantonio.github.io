@@ -1,23 +1,18 @@
-import { AnimatePresence } from "framer-motion"
-import React, { useState } from "react"
-import About from "../components/about"
-import Hello from "../components/hello"
+import React from "react"
 import HomeSection from "../components/home-section"
 import Layout from "../components/layout"
-import Reading from "../components/reading"
 import SEO from "../components/seo"
-
-import { minWidth, topics } from "../components/utils"
-import Writing from "../components/writing"
+import { minWidth } from "../components/utils"
 
 function IndexPage({
   data: {
     allMarkdownRemark: { edges: posts },
     allImageSharp: { nodes: images },
   },
+  location,
 }) {
   return (
-    <Layout>
+    <Layout location={location}>
       <SEO title="Home" />
       {/* <Hello setSelectedTopics={setSelectedTopics} setAll={setAll} /> */}
 
