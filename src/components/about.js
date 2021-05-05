@@ -37,7 +37,10 @@ const About = ({ data }) => {
           style={{ maxWidth: minWidth }}
         >
           {/* IMAGE */}
-          <img src="https://i.postimg.cc/QtxFVzBb/Bild007-Neg-Nr-8-1.jpg"></img>
+          <img
+            className="br2 ba b--black-10"
+            src="https://i.postimg.cc/QtxFVzBb/Bild007-Neg-Nr-8-1.jpg"
+          ></img>
           <div className="flex flex-row-l flex-column mt4 mw-100-l">
             {/* ABOUT */}
             <div className="mt0-l black-50 lh-copy measure pr4-l f4">

@@ -1,69 +1,46 @@
 import { AnimateSharedLayout, motion } from "framer-motion"
 import React from "react"
-import {
-  fadeInAnimation,
-  initialFadeAnimation,
-  minWidth,
-} from "../components/utils"
+import { Link } from "gatsby"
+import { minWidth } from "../components/utils"
 
 const Tab = ({ title, active, setTabList, tabList }) => {
+  const lowerCaseTitle = title.toLowerCase()
   return (
-    <div
-      key={title}
-      onClick={() => {
-        setTabList(
-          tabList.map(item => {
-            if (item.title === title) {
-              return { ...item, active: true }
-            } else {
-              return { ...item, active: false }
-            }
-          })
-        )
-      }}
-      className={`pb2 pointer mr4 ${active && "black"}`}
+    <Link
+      className="link"
+      to={lowerCaseTitle != "work" ? `/${lowerCaseTitle}` : `/`}
     >
-      {title}
-      {active && (
-        <motion.div
-          layoutId="outline"
-          style={{
-            marginTop: "-.2rem",
-            height: "2px",
-            background: "black",
-          }}
-          initial={{ x: 0 }}
-        ></motion.div>
-      )}
-    </div>
+      <div
+        key={title}
+        className={`pointer mr4 ${active ? "black" : "black-40"}`}
+      >
+        {title}
+      </div>
+    </Link>
   )
 }
 
-const Tabs = ({ setTabList, tabList }) => {
+const Tabs = ({ setTabList, tabList, location }) => {
   return (
-    <motion.div
-      initial={initialFadeAnimation}
-      animate={fadeInAnimation}
-      transition={{ duration: 0.5 }}
-    >
-      <AnimateSharedLayout>
-        <div style={{ maxWidth: minWidth }} className="mr4 center">
-          <div className="flex f3 fw5 black-40 tracked-tight mb4">
-            {tabList.map(item => {
-              return (
-                <Tab
-                  key={item.title}
-                  setTabList={setTabList}
-                  tabList={tabList}
-                  title={item.title}
-                  active={item.active}
-                ></Tab>
-              )
-            })}
-          </div>
-        </div>
-      </AnimateSharedLayout>
-    </motion.div>
+    <div className="flex f3 fw5 tracked-tight w-auto-l w-100">
+      {tabList.map(item => {
+        let isActive
+        if (location === "/" && item.title.toLowerCase() === "work") {
+          isActive = true
+        } else if (location.indexOf(item.title.toLowerCase()) === 1) {
+          isActive = true
+        }
+        return (
+          <Tab
+            key={item.title}
+            setTabList={setTabList}
+            tabList={tabList}
+            title={item.title}
+            active={isActive}
+          ></Tab>
+        )
+      })}
+    </div>
   )
 }
 

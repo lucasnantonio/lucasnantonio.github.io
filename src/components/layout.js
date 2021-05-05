@@ -5,27 +5,15 @@
  * See: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-import React from "react"
+import { graphql, useStaticQuery } from "gatsby"
 import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
-
-import Header from "./header"
-import Footer from "./footer"
+import React from "react"
 import "../../node_modules/tachyons/css/tachyons.min.css"
+import Footer from "./footer"
+import Header from "./header"
 import "./layout.css"
-import { minWidth } from "./utils"
 
-const Layout = ({
-  children,
-  isWorkInView,
-  isAll,
-  setAll,
-  selectedTopics,
-  setSelectedTopics,
-  isIndex,
-  prev,
-  next,
-}) => {
+const Layout = ({ location, children, isIndex }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -37,18 +25,11 @@ const Layout = ({
   `)
   return (
     <>
-      {!isIndex && (
-        <Header
-          siteTitle={data.site.siteMetadata.title}
-          selectedTopics={selectedTopics}
-          setSelectedTopics={setSelectedTopics}
-          isAll={isAll}
-          setAll={setAll}
-          isIndex={isIndex}
-          prev={prev && prev}
-          next={next && next}
-        />
-      )}
+      <Header
+        location={location.pathname}
+        siteTitle={data.site.siteMetadata.title}
+        isIndex={isIndex}
+      />
       <div
         className="pt0 ph4"
         style={{

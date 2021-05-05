@@ -1,56 +1,23 @@
-import { AnimatePresence } from "framer-motion"
-import React, { useState } from "react"
-import About from "../components/about"
-import Hello from "../components/hello"
+import React from "react"
 import HomeSection from "../components/home-section"
 import Layout from "../components/layout"
-import Reading from "../components/reading"
 import SEO from "../components/seo"
-import Tabs from "../components/tabs"
-import { minWidth, topics } from "../components/utils"
-import Writing from "../components/writing"
+import { minWidth } from "../components/utils"
 
 function IndexPage({
   data: {
     allMarkdownRemark: { edges: posts },
     allImageSharp: { nodes: images },
   },
+  location,
 }) {
-  const [tabList, setTabList] = useState([
-    { title: "Work", active: true },
-    { title: "About", active: false },
-    { title: "Writing", active: false },
-    { title: "Reading", active: false },
-  ])
-  const [isAll, setAll] = useState(true)
-  const [selectedTopics, setSelectedTopics] = useState(topics)
-  const [selectedTab, setSelectedTab] = useState("Work")
-
-  const publishedPosts = posts.filter(
-    item => item.node.frontmatter.soon === null
-  )
-  let activeTab = tabList.find(el => el.active).title
   return (
-    <Layout
-      isIndex
-      isAll={isAll}
-      setAll={setAll}
-      selectedTopics={selectedTopics}
-      setSelectedTopics={setSelectedTopics}
-    >
+    <Layout location={location}>
       <SEO title="Home" />
-      <Hello setSelectedTopics={setSelectedTopics} setAll={setAll} />
-      <Tabs tabList={tabList} setTabList={setTabList}></Tabs>
-      <div
-        className="overflow-y-hidden center pt4"
-        style={{ maxWidth: minWidth }}
-      >
-        <AnimatePresence>
-          {(activeTab === "About" && <About />) ||
-            (activeTab === "Work" && <HomeSection posts={posts} />) ||
-            (activeTab === "Writing" && <Writing />) ||
-            (activeTab === "Reading" && <Reading />)}
-        </AnimatePresence>
+      {/* <Hello setSelectedTopics={setSelectedTopics} setAll={setAll} /> */}
+
+      <div className="overflow-y-hidden center" style={{ maxWidth: minWidth }}>
+        <HomeSection posts={posts} />
       </div>
     </Layout>
   )

@@ -32,9 +32,7 @@ const Feedback = () => {
   const [hoveredIndex, setHoveredIndex] = useState(null)
   return (
     <div className="flex-column">
-      <p className="f4 fw6 black mt0 lh-copy">
-        What do you think of my work?
-      </p>
+      <p className="f4 fw6 black mt0 lh-copy">Feedback is a gift</p>
       <div className="flex">
         {links.map((link, index) => {
           return (

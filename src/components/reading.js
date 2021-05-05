@@ -5,6 +5,7 @@ const Item = ({ item }) => {
   let [hover, setHover] = useState(false)
   return (
     <div
+      className="w-100"
       onMouseEnter={() => setHover(true)}
       onMouseLeave={() => setHover(false)}
     >
@@ -20,7 +21,9 @@ const Item = ({ item }) => {
             {" "}
           </div>
         </div>
-        {item.img && <img className="w4 h-100" src={item.img}></img>}
+        {item.img && (
+          <img className="w4 h-100 br2 ba b--black-10" src={item.img}></img>
+        )}
       </a>
     </div>
   )
@@ -296,7 +299,7 @@ function Reading() {
         "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1595674533l/23692271._SY475_.jpg",
     },
   ]
-  const rows = books.map(item => <Item item={item}></Item>)
+  const rows = books.map(item => <Item key={item.title} item={item}></Item>)
   return (
     <motion.div
       key="reading"

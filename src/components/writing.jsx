@@ -74,7 +74,7 @@ function Writing() {
     )
   }
 
-  const rows = articles.map(item => <Item item={item} />)
+  const rows = articles.map(item => <Item key={item.title} item={item} />)
   return (
     <motion.div
       key="writing"
