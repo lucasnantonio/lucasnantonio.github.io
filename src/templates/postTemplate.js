@@ -37,7 +37,7 @@ export default function Template({
 
   const heroImage = (
     <div
-      className="center flex flex-column justify-end"
+      className="center flex flex-column justify-end br2"
       style={{
         backgroundColor: frontmatter.color || "#f0f0f0",
         maxHeight: "500px",
@@ -72,7 +72,7 @@ export default function Template({
       >
         <div
           style={{ maxWidth: minWidth }}
-          className="flex w-100 justify-between flex-row-l flex-column center "
+          className="flex w-100 justify-between flex-row-l flex-column center bt bw1 b--black-10 pt5"
         >
           {title}
           <PostMetadata frontmatter={frontmatter} />

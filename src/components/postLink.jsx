@@ -28,7 +28,7 @@ function PostLink({ post, index }) {
         `}
       to={!post.frontmatter.soon ? post.frontmatter.path : null}
     >
-      <div className="overflow-hidden relative">
+      <div className="overflow-hidden relative br2">
         <AnimatePresence>
           {isHovered && (
             <motion.div

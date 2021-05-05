@@ -31,4 +31,4 @@ Currently, Birdwatch is in pilot mode for people in the US. We’re building it 
 
 https://twitter.com/birdwatch/status/1353774171684106243
 
-[**Learn more about Birdwatch →**](http://twitter.github.io/birdwatch)
+<a style="color: white; background-color:#43B3F6; font-weight: bold" href="http://twitter.github.io/birdwatch" class="b justify-center flex w-100 white br-pill pa3 bn link">Learn more about Birdwatch →</a>

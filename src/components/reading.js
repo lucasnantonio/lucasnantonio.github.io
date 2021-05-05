@@ -21,7 +21,9 @@ const Item = ({ item }) => {
             {" "}
           </div>
         </div>
-        {item.img && <img className="w4 h-100" src={item.img}></img>}
+        {item.img && (
+          <img className="w4 h-100 br2 ba b--black-10" src={item.img}></img>
+        )}
       </a>
     </div>
   )
