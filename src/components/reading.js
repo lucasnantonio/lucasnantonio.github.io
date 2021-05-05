@@ -15,7 +15,8 @@ const Item = ({ item }) => {
         target="_blank"
       >
         <div className="mr4">
-          <h2 className={`f3 fw5 ${hover && "underline"}`}>{item.title}</h2>
+          {item.best && <div className="f6 fw7 pink">★ Life-changing</div>}
+          <h2 className={`f3 fw5 mt2 ${hover && "underline"}`}>{item.title}</h2>
           <div className="f4 pt2 measure black-50">{item.text}</div>
           <div className="f5 pt4 fw5 flex flex-row-ns flex-column items-center-l items-start">
             {" "}
@@ -59,6 +60,7 @@ function Reading() {
         "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1504936953l/35167685.jpg",
     },
     {
+      best: true,
       year: 2020,
       title: "The happiness hypothesis",
       bookshop_url: "https://bookshop.org/a/9978/9780465028023",
@@ -79,6 +81,7 @@ function Reading() {
         "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1597015463l/51456687.jpg",
     },
     {
+      best: true,
       year: 2020,
       title: "Drive Your Plow Over the Bones of the Dead",
       bookshop_url: "https://bookshop.org/a/9978/9780525541349",
@@ -120,6 +123,7 @@ function Reading() {
         "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1548098576l/39895846.jpg",
     },
     {
+      best: true,
       year: 2020,
       title: "On Writing Well",
       bookshop_url: "https://bookshop.org/a/9978/9780060891541",
@@ -160,6 +164,7 @@ function Reading() {
         "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1568586059l/51572616._SX318_SY475_.jpg",
     },
     {
+      best: true,
       year: 2020,
       title: "Flights",
       bookshop_url: "https://bookshop.org/a/9978/9780525534204",
@@ -180,6 +185,7 @@ function Reading() {
         "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1498874825l/33945974.jpg",
     },
     {
+      best: true,
       year: 2020,
       title: "The Order of Time",
       bookshop_url: "https://bookshop.org/a/9978/9780735216112",
@@ -200,6 +206,7 @@ function Reading() {
         "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1542183307l/42776244._SY475_.jpg",
     },
     {
+      best: true,
       year: 2020,
       title: "Articulating design decisions",
       bookshop_url: "https://bookshop.org/a/9978/9781492079224",
@@ -289,6 +296,7 @@ function Reading() {
         "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1455483270l/29095887._SY475_.jpg",
     },
     {
+      best: true,
       year: 2020,
       title: "Sapiens",
       bookshop_url: "https://bookshop.org/a/9978/9780062316110",
