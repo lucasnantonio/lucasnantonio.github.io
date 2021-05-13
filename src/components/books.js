@@ -1,8 +1,10 @@
+export const tags = ["All", "Design", "Non-fiction", "Fiction", "Business"]
 const books = [
   {
     year: 2021,
     title: "Notes on the Synthesis of Form",
     amazon_url: "https://amzn.to/3b4NQBl",
+    tag: "Design",
     text:
       "This book is fascinating. It's an attempt to look at the design process (analysis & synthesis) from a “mathematical”, or “first-principles” point of view, in order to find solutions outside of the preconceptions a designer might have when solving problems “intuitively”. It's a remarkable idea, but at times the language went over my head and there was a lot of repetition. ",
     img:
@@ -11,6 +13,7 @@ const books = [
   {
     year: 2021,
     title: "Living in information",
+    tag: "Design",
     amazon_url: "https://amzn.to/3dtLBI0",
     text:
       "Jorge Arango's call to change the framing we use to design, from “products” or “services” to “information environments” is very compelling, and has helped broaden my view of my own work and responsibility.",
@@ -20,6 +23,7 @@ const books = [
   {
     year: 2021,
     title: "Actionable Gamification",
+    tag: "Design",
     amazon_url: "https://amzn.to/39rVftM",
     text:
       "Yu-Kai offers a powerful, elegant, and easy to learn model for those who design for behavior change. I see myself referring to and using his Octalysis regularly in my work. The book, unfortunately, is poorly edited, too long, and Yu-Kai uses it too much as a selling vessel for his other services.",
@@ -29,6 +33,7 @@ const books = [
   {
     year: 2020,
     title: "Surely You're Joking, Mr. Feynman!",
+    tag: "Physics",
     amazon_url: "https://amzn.to/2ZgGqVg",
     text:
       "Scientists like Feynman are excellent reminders of how rarely we think clearly about a problem before jumping at solutions. Feynmann's life is a masterclass on being curious and asking questions until you understand how the world really works. And his writing style is light, funny and entertaining.",
@@ -39,6 +44,7 @@ const books = [
     best: true,
     year: 2020,
     title: "The happiness hypothesis",
+    tag: "Non-fiction",
     bookshop_url: "https://bookshop.org/a/9978/9780465028023",
     amazon_url: "https://amzn.to/3rucyRp",
     text:
@@ -49,6 +55,7 @@ const books = [
   {
     year: 2020,
     title: "Behavioral Insights",
+    tag: "Design",
     bookshop_url: "https://bookshop.org/a/9978/9780262539401",
     amazon_url: "https://amzn.to/3tAN32J",
     text:
@@ -60,6 +67,7 @@ const books = [
     best: true,
     year: 2020,
     title: "Drive Your Plow Over the Bones of the Dead",
+    tag: "Fiction",
     bookshop_url: "https://bookshop.org/a/9978/9780525541349",
     amazon_url: "https://amzn.to/36R5QwW",
     text:
@@ -71,6 +79,7 @@ const books = [
   {
     year: 2020,
     title: "Buddhism: A Very Short Introduction",
+    tag: "Non-fiction",
     bookshop_url: "https://bookshop.org/a/9978/9780199663835",
     amazon_url: "https://amzn.to/3rzrbTk",
     text:
@@ -81,6 +90,7 @@ const books = [
   {
     year: 2020,
     title: "Designing for Behavior Change",
+    tag: "Design",
     bookshop_url: "https://bookshop.org/a/9978/9781492056034",
     amazon_url: "https://amzn.to/3aDp0rc",
     text:
@@ -91,6 +101,7 @@ const books = [
   {
     year: 2020,
     title: "The Beauty of Everyday Things",
+    tag: "Design",
     bookshop_url: "https://bookshop.org/a/9978/9780241366356",
     amazon_url: "https://amzn.to/36R74bw",
     text:
@@ -102,6 +113,7 @@ const books = [
     best: true,
     year: 2020,
     title: "On Writing Well",
+    tag: "Design",
     bookshop_url: "https://bookshop.org/a/9978/9780060891541",
     amazon_url: "https://amzn.to/3rzsEJk",
     text:
@@ -112,6 +124,7 @@ const books = [
   {
     year: 2020,
     title: "How to Change Your Mind",
+    tag: "Non-fiction",
     bookshop_url: "https://bookshop.org/a/9978/9780735224155",
     amazon_url: "https://amzn.to/3tDDz6C",
     text:
@@ -122,6 +135,7 @@ const books = [
   {
     year: 2020,
     title: "Severance",
+    tag: "Fiction",
     bookshop_url: "https://bookshop.org/a/9978/9781250214997",
     amazon_url: "https://amzn.to/3tCqeM8",
     text:
@@ -132,6 +146,7 @@ const books = [
   {
     year: 2020,
     title: "A New Program for Graphic Design",
+    tag: "Design",
     bookshop_url: "https://bookshop.org/a/9978/9781941753217",
     amazon_url: "https://amzn.to/2MAkMc5",
     text:
@@ -143,6 +158,7 @@ const books = [
     best: true,
     year: 2020,
     title: "Flights",
+    tag: "Ficiton",
     bookshop_url: "https://bookshop.org/a/9978/9780525534204",
     amazon_url: "https://amzn.to/2Mz5EM1",
     text:
@@ -153,6 +169,7 @@ const books = [
   {
     year: 2020,
     title: "At the Existentialist Café",
+    tag: "Non-fiction",
     bookshop_url: "https://bookshop.org/a/9978/9781590518892",
     amazon_url: "https://amzn.to/3aCN3Xi",
     text:
@@ -164,6 +181,7 @@ const books = [
     best: true,
     year: 2020,
     title: "The Order of Time",
+    tag: "Philosphy",
     bookshop_url: "https://bookshop.org/a/9978/9780735216112",
     amazon_url: "https://amzn.to/3jsHCxZ",
     text:
@@ -174,6 +192,7 @@ const books = [
   {
     year: 2020,
     title: "The Making of a Manager",
+    tag: "Business",
     bookshop_url: "https://bookshop.org/a/9978/9780735219564",
     amazon_url: "https://amzn.to/36QMHuV",
     text:
@@ -185,6 +204,7 @@ const books = [
     best: true,
     year: 2020,
     title: "Articulating design decisions",
+    tag: "Design",
     bookshop_url: "https://bookshop.org/a/9978/9781492079224",
     amazon_url: "https://amzn.to/2N8reGM",
     text:
@@ -195,6 +215,7 @@ const books = [
   {
     year: 2020,
     title: "Org Design for Design Orgs",
+    tag: "Design",
     bookshop_url: "https://bookshop.org/a/9978/9781491938409",
     amazon_url: "https://amzn.to/3rx7V9i",
     text:
@@ -205,6 +226,7 @@ const books = [
   {
     year: 2020,
     title: "Radical Candor",
+    tag: "Business",
     bookshop_url: "https://bookshop.org/a/9978/9781250235374",
     amazon_url: "https://amzn.to/3aLTXtp",
     text:
@@ -215,6 +237,7 @@ const books = [
   {
     year: 2020,
     title: "Hit Refresh",
+    tag: "Business",
     bookshop_url: "https://bookshop.org/a/9978/9780062959720",
     amazon_url: "https://amzn.to/2MLm1oL",
     text:
@@ -225,6 +248,7 @@ const books = [
   {
     year: 2020,
     title: "The Secret History",
+    tag: "Fiction",
     bookshop_url: "https://bookshop.org/a/9978/9781400031702",
     amazon_url: "https://amzn.to/3aB6a3O",
     text:
@@ -235,6 +259,7 @@ const books = [
   {
     year: 2020,
     title: "The Field Study Handbook",
+    tag: "Design",
     amazon_url: "https://amzn.to/3jrGkDo",
     text:
       "Jan Chipchase has such an inspiring commitment to research and an infinite curiosity about how humans interact with technology and each other. His method is so adventurous, and at the same time so organized, it makes me feel bad for the cheap approach most companies use to learn from their customers. This is the real deal, and I wish more teams were willing to pack their bags and hit the road to learn.",
@@ -244,6 +269,7 @@ const books = [
   {
     year: 2020,
     title: "Word by Word: The Secret Life of Dictionaries",
+    tag: "Philosphy",
     bookshop_url: "https://bookshop.org/a/9978/9781101970263",
     amazon_url: "https://amzn.to/3rBbVFP",
     text:
@@ -255,6 +281,7 @@ const books = [
   {
     year: 2020,
     title: "Seven Brief Lessons on Physics",
+    tag: "Non-fiction",
     bookshop_url: "https://bookshop.org/a/9978/9780399184413",
     amazon_url: "https://amzn.to/3ju7Xvy",
     text:
@@ -265,6 +292,7 @@ const books = [
   {
     year: 2020,
     title: "Validating Product Ideas",
+    tag: "Design",
     amazon_url: "https://amzn.to/36ThuY7",
     text:
       "A great book for small teams with little or no research budget. Tomer Sharon's strategies helped me go straight to the point and achieve clarity on what we needed to learn and what tools to use in order to learn it.",
@@ -275,6 +303,7 @@ const books = [
     best: true,
     year: 2020,
     title: "Sapiens",
+    tag: "Non-fiction",
     bookshop_url: "https://bookshop.org/a/9978/9780062316110",
     amazon_url: "https://amzn.to/2YQKXNY",
     text:

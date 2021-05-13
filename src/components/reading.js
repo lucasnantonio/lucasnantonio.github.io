@@ -1,9 +1,38 @@
 import React, { useState } from "react"
 import { motion } from "framer-motion"
-import books from "./books"
+import books, { tags } from "./books"
 
-const Tag = ({ title }) => {
-  return <div>{title}</div>
+const Tag = ({ title, activeTag, setActiveTag }) => {
+  let [isHovered, setHover] = useState(false)
+  let isActive = title === activeTag
+  return (
+    <div
+      onClick={() => {
+        setActiveTag(title)
+      }}
+      onMouseEnter={() => setHover(true)}
+      onMouseLeave={() => setHover(false)}
+      className={`nowrap pointer f4 ph3 pv2 br-pill mr2 mb4 bw1 fw5 
+      ${isActive ? "blue bg-lightest-blue" : "black-40 bg-transparent"}
+      ${isHovered ? "blue" : ""} `}
+    >
+      {title}
+    </div>
+  )
+}
+
+const TagRow = ({ activeTag, setActiveTag }) => {
+  return (
+    <div className="flex pv2 b--near-white bb bw2 overflow-scroll">
+      {tags.map(item => (
+        <Tag
+          activeTag={activeTag}
+          setActiveTag={setActiveTag}
+          title={item}
+        ></Tag>
+      ))}
+    </div>
+  )
 }
 
 const Item = ({ item }) => {
@@ -15,13 +44,21 @@ const Item = ({ item }) => {
       onMouseLeave={() => setHover(false)}
     >
       <a
-        className="underline-none link black pv4 f3 bw2 bt b--near-white flex justify-between"
+        className="underline-none link black pv4 f3 bw2 bb b--near-white flex justify-between"
         href={item.amazon_url}
         target="_blank"
       >
         <div className="mr4">
-          {item.best && <div className="f6 fw7 pink">★ Life-changing</div>}
-          <h2 className={`f3 fw5 mt2 ${hover && "underline"}`}>{item.title}</h2>
+          <h2 className="flex items-center">
+            <span className={`f3 fw5 ${hover && "underline"}`}>
+              {item.title}{" "}
+            </span>
+            {item.best && (
+              <div className="f6 fw7 light-blue 1 flex items-center ml2 ttu pt1">
+                ★ Best
+              </div>
+            )}
+          </h2>
           <div className="f4 pt2 measure black-50">{item.text}</div>
           <div className="f5 pt4 fw5 flex flex-row-ns flex-column items-center-l items-start">
             {" "}
@@ -36,7 +73,16 @@ const Item = ({ item }) => {
 }
 
 function Reading() {
-  const rows = books.map(item => <Item key={item.title} item={item}></Item>)
+  const [activeTag, setActiveTag] = useState("All")
+  const rows = books
+    .filter(item => {
+      if (activeTag === "All") {
+        return true
+      } else {
+        return item.tag === activeTag
+      }
+    })
+    .map(item => <Item key={item.title} item={item}></Item>)
   return (
     <motion.div
       key="reading"
@@ -45,11 +91,11 @@ function Reading() {
       exit={{ opacity: 0 }}
     >
       <div>
+        <TagRow activeTag={activeTag} setActiveTag={setActiveTag}></TagRow>
         {rows}
-        <div className="mt3 bt bw2 b--near-white pt4">
+        <div className="mt3 pt4">
           <p className="measure lh-copy">
-            This page contains affiliate links from Amazon and Bookshop.org. If
-            you buy a book using these links, I may earn a comission.
+            This page contains affiliate links from Amazon.
           </p>
         </div>
       </div>

@@ -1,9 +1,10 @@
 import { AnimateSharedLayout, motion } from "framer-motion"
-import React from "react"
+import React, { useState } from "react"
 import { Link } from "gatsby"
 import { minWidth } from "../components/utils"
 
 const Tab = ({ title, active, setTabList, tabList }) => {
+  let [isHovered, setHovered] = useState(false)
   const lowerCaseTitle = title.toLowerCase()
   return (
     <Link
@@ -11,8 +12,12 @@ const Tab = ({ title, active, setTabList, tabList }) => {
       to={lowerCaseTitle != "work" ? `/${lowerCaseTitle}` : `/`}
     >
       <div
+        onMouseEnter={() => setHovered(true)}
+        onMouseLeave={() => setHovered(false)}
         key={title}
-        className={`pointer mr4 ${active ? "black" : "black-40"}`}
+        className={`pointer mr4 ${active ? "black" : ""} ${
+          isHovered ? "black-50" : "black-40"
+        }`}
       >
         {title}
       </div>
