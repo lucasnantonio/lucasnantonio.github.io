@@ -13,8 +13,8 @@ const Tag = ({ title, activeTag, setActiveTag }) => {
       onMouseEnter={() => setHover(true)}
       onMouseLeave={() => setHover(false)}
       className={`nowrap pointer f4 ph3 pv2 br-pill mr2 mb4 bw1 fw5 
-      ${isActive ? "blue bg-lightest-blue" : "black-40 bg-transparent"}
-      ${isHovered ? "blue" : ""} `}
+      ${isActive ? "white bg-black" : "bg-transparent"}
+      ${isHovered ? "black-50" : "black-40"} `}
     >
       {title}
     </div>
