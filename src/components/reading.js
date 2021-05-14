@@ -44,12 +44,12 @@ const Item = ({ item }) => {
       onMouseLeave={() => setHover(false)}
     >
       <a
-        className="underline-none link black pv4 f3 bw2 bb b--near-white flex justify-between"
+        className="underline-none link black pv5 f3 bw2 bb b--near-white flex justify-between"
         href={item.amazon_url}
         target="_blank"
       >
         <div className="mr4">
-          <h2 className="flex items-center">
+          <h2 className="mt0 flex">
             <span className={`f3 fw5 ${hover && "underline"}`}>
               {item.title}{" "}
             </span>
@@ -60,9 +60,6 @@ const Item = ({ item }) => {
             )}
           </h2>
           <div className="f4 pt2 measure black-50">{item.text}</div>
-          <div className="f5 pt4 fw5 flex flex-row-ns flex-column items-center-l items-start">
-            {" "}
-          </div>
         </div>
         {item.img && (
           <img className="w4 h-100 br2 ba b--black-10" src={item.img}></img>
