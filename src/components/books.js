@@ -2,6 +2,16 @@ export const tags = ["All", "Design", "Non-fiction", "Fiction", "Business"]
 const books = [
   {
     year: 2021,
+    title: "Breaking the social media prism",
+    amazon_url: "https://amzn.to/3ogjP6S",
+    tag: "Non-fiction",
+    text:
+      "Chris makes important claims and points to important solution spaces (some of which we're actively exploring at Birdwatch).I'm just not convinced it is successful as a book. It could use more rigorous editing, and indeed could probably be as effective as a long article.",
+    img:
+      "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1610926966l/55271765.jpg",
+  },
+  {
+    year: 2021,
     title: "Notes on the Synthesis of Form",
     amazon_url: "https://amzn.to/3b4NQBl",
     tag: "Design",
