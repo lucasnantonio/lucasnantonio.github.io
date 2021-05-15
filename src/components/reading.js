@@ -23,7 +23,10 @@ const Tag = ({ title, activeTag, setActiveTag }) => {
 
 const TagRow = ({ activeTag, setActiveTag }) => {
   return (
-    <div className="flex pv2 b--near-white bb bw2 overflow-scroll">
+    <div
+      style={{ marginLeft: "-2rem", marginRight: "-2rem" }}
+      className="ph4 flex pv2 b--near-white overflow-scroll"
+    >
       {tags.map(item => (
         <Tag
           activeTag={activeTag}

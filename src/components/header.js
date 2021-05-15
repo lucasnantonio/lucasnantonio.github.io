@@ -19,7 +19,7 @@ function Header({ location }) {
       }}
       className={"flex z-max space-between mh4 center-l pb5 pt5"}
     >
-      <div className="w-100 flex justify-between items-center">
+      <div className="w-100 flex justify-between items-center-l items-start">
         <div className="flex flex-row-l flex-column w-100 items-center">
           <Link to="/" className={"link w-auto-l w-100"}>
             <h1 className="f3 fw5 tracked-tight black-80 tl">Lucas Neumann</h1>
