@@ -51,18 +51,27 @@ const Item = ({ item }) => {
         href={item.amazon_url}
         target="_blank"
       >
-        <div className="mr4">
-          <h2 className="mt0 flex">
+        <div className="mr5">
+          <h2 className="mt0 lh-title flex flex-row-l flex-column-reverse items-center-l mb3">
             <span className={`f3 fw5 ${hover && "underline"}`}>
               {item.title}{" "}
             </span>
             {item.best && (
-              <div className="f6 fw7 light-blue 1 flex items-center ml2 ttu pt1">
-                ★ Best
-              </div>
+              <span className="dib f6 fw8 light-blue flex items-center ml2-l pb0-l pb2 ttu nowrap pt1">
+                <span
+                  style={{
+                    marginTop: "-.022rem",
+                    marginRight: "0.1rem",
+                    fontSize: "1rem",
+                  }}
+                >
+                  ★
+                </span>
+                Best
+              </span>
             )}
           </h2>
-          <div className="f4 pt2 measure black-50">{item.text}</div>
+          <div className="f4 measure black-50">{item.text}</div>
         </div>
         {item.img && (
           <img className="w4 h-100 br2 ba b--black-10" src={item.img}></img>
