@@ -9,6 +9,7 @@ import Learnings from "../components/learnings"
 import PostSummary from "../components/postSummary"
 import { motion } from "framer-motion"
 import { initialFadeAnimation, fadeInAnimation } from "../components/utils"
+import ImageWithBackground from "../components/imageWithBackground"
 
 export default function Template({
   location,
@@ -26,6 +27,12 @@ export default function Template({
 
   const title = (
     <div className="flex flex-column pb5-l w-100">
+      <motion.p
+        layoutId={`title+${frontmatter.title}`}
+        className={`f3 measure-narrow mt3 mb2 fw5 tracked-tight`}
+      >
+        {frontmatter.title}{" "}
+      </motion.p>
       <h1 className=" fw5 f3 black-80 mt0 mb1 pb0 w-100 tracked-tight lh-copy">
         {frontmatter.title}
       </h1>
@@ -36,23 +43,32 @@ export default function Template({
   )
 
   const heroImage = (
-    <div
-      className="center flex flex-column justify-end br2"
-      style={{
-        backgroundColor: frontmatter.color || "#f0f0f0",
-        maxHeight: "500px",
-        overflow: "hidden",
-        padding: "0rem",
-        maxWidth: minWidth,
-      }}
-    >
-      <Img
-        className=""
-        fluid={frontmatter.cover_image.childImageSharp.fluid}
-        color={frontmatter.color}
-        objectFit="contain"
-      />
-    </div>
+    <ImageWithBackground
+      image={frontmatter.cover_image.childImageSharp.fluid}
+      color={frontmatter.color}
+    />
+    // <div>
+    //   <div
+    //     className="center flex flex-column justify-end br2"
+    //     style={{
+    //       backgroundColor: frontmatter.color || "#f0f0f0",
+    //       maxHeight: "500px",
+    //       overflow: "hidden",
+    //       padding: "0rem",
+    //       maxWidth: minWidth,
+    //     }}
+    //   >
+    //     <Img
+    //       className=""
+    //       fluid={frontmatter.cover_image.childImageSharp.fluid}
+    //       color={frontmatter.color}
+    //       objectFit="contain"
+    //     />
+    //   </div>
+    //   <motion.div layoutId="test" initial={false}>
+    //     test motion
+    //   </motion.div>
+    // </div>
   )
 
   const content = (
@@ -65,6 +81,7 @@ export default function Template({
 
   return (
     <Layout location={location} prev={prev} next={next} isIndex={false}>
+      {heroImage}
       <motion.div
         transition={{ duration: 0.5 }}
         initial={initialFadeAnimation}
@@ -78,13 +95,7 @@ export default function Template({
           <PostMetadata frontmatter={frontmatter} />
         </div>
       </motion.div>
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 2 }}
-      >
-        {heroImage}
-      </motion.div>
+
       <PostSummary frontmatter={frontmatter} />
       {content}
       {frontmatter.learnings && <Learnings list={frontmatter.learnings} />}

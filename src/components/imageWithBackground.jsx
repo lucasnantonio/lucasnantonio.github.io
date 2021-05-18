@@ -1,31 +1,42 @@
 /* eslint-disable react/prop-types */
-import React, { useState } from 'react';
-import Img from 'gatsby-image/withIEPolyfill';
-import { backgroundGray } from './utils';
+import Img from "gatsby-image/withIEPolyfill"
+import React, { useState } from "react"
+import { AnimatePresence, motion } from "framer-motion"
+import tinycolor from "tinycolor2"
 
 function ImageWithBackground({ image, color }) {
-	return (
-		<div
-			style={{
-				backgroundColor: color,
-				overflow: "hidden"
-				// backgroundColor: "skyblue",
-				// padding: "2rem",
-			}}
-		>
-			{image.childImageSharp != undefined ? (
-				<Img
-					className="h-auto-l ph5-l"
-					style={{ maxHeight: '32rem' }}
-					// backgroundColor="#f0f0f0"
-					fluid={image.childImageSharp != undefined ? image.childImageSharp.fluid : image}
-					objectFit="contain"
-				/>
-			) : (
-				<img className="h-auto-l ph5-l" style={{ maxHeight: '32rem' }} src={image.publicURL} />
-			)}
-		</div>
-	);
+  const [isHovered, setHover] = useState(false)
+  return (
+    <div
+      onMouseEnter={() => setHover(true)}
+      onMouseLeave={() => setHover(false)}
+      className="flex center"
+      style={{
+        backgroundColor: color,
+        overflow: "hidden",
+      }}
+    >
+      {image.src === true}
+      <img className="center" style={{ maxHeight: "32rem" }} src={image.src} />
+      <AnimatePresence>
+        {isHovered && (
+          <motion.div
+            transition={{ ease: "easeOut", duration: 0.25 }}
+            initial={{ opacity: 0, top: "100%", scale: 1 }}
+            animate={{ opacity: 1, top: "100%", scale: 2 }}
+            exit={{ opacity: 0, top: "100%", scale: 1 }}
+            style={{
+              backgroundColor: tinycolor(color).darken(4),
+              position: "absolute",
+              top: "50%",
+              zIndex: "1",
+            }}
+            className="w-100 h-100 br-100"
+          />
+        )}
+      </AnimatePresence>
+    </div>
+  )
 }
 
-export default ImageWithBackground;
+export default ImageWithBackground
