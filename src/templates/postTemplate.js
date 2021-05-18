@@ -44,6 +44,7 @@ export default function Template({
 
   const heroImage = (
     <ImageWithBackground
+      hover={false}
       image={frontmatter.cover_image.childImageSharp.fluid}
       color={frontmatter.color}
     />

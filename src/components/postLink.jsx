@@ -12,11 +12,11 @@ function PostLink({ post }) {
       <Link
         className="link black fl flex flex-column  pb1 w-100"
         to={post.frontmatter.path}
-        style={{ backgroundColor: post.frontmatter.color }}
       >
         <div className="overflow-hidden relative br2">
           <div style={{ zIndex: "2" }}>
             <ImageWithBackground
+              hover={true}
               cover={post.frontmatter.cover}
               isHovered={isHovered}
               image={post.frontmatter.cover_image.childImageSharp.fluid}
