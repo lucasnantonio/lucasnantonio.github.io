@@ -26,14 +26,17 @@ export default function Template({
   }
 
   const title = (
-    <div className="flex flex-column pb5-l w-100">
-      <h1 className=" fw5 f3 black-80 mt0 mb1 pb0 w-100 tracked-tight lh-copy">
+    <motion.div
+      layoutId={`${frontmatter.title}+posttitle`}
+      className="flex flex-column pb5-l w-100"
+    >
+      <h1 className=" fw5 f1 black-80 mt0 mb1 pb0 w-100 tracked-tight lh-copy">
         {frontmatter.title}
       </h1>
       <div className="fw5 measure w-60-l flex flex-row-l flex-column items-start f3 lh-copy mt0 pt0 measure mb1 black-40 tracked-tight">
         {frontmatter.subtitle}
       </div>
-    </div>
+    </motion.div>
   )
 
   const heroImage = (
@@ -57,19 +60,14 @@ export default function Template({
   return (
     <Layout location={location} prev={prev} next={next} isIndex={false}>
       {heroImage}
-      <motion.div
-        transition={{ duration: 0.5 }}
-        initial={initialFadeAnimation}
-        animate={fadeInAnimation}
+
+      <div
+        style={{ maxWidth: minWidth }}
+        className="flex w-100 justify-between flex-row-l flex-column center pt5"
       >
-        <div
-          style={{ maxWidth: minWidth }}
-          className="flex w-100 justify-between flex-row-l flex-column center bt bw1 b--black-10 pt5"
-        >
-          {title}
-          <PostMetadata frontmatter={frontmatter} />
-        </div>
-      </motion.div>
+        {title}
+        <PostMetadata frontmatter={frontmatter} />
+      </div>
 
       <PostSummary frontmatter={frontmatter} />
       {content}
