@@ -38,6 +38,7 @@ export default function Template({
 
   const heroImage = (
     <ImageWithBackground
+      tall
       id={frontmatter.title}
       hover={false}
       image={frontmatter.cover_image.childImageSharp.fluid}

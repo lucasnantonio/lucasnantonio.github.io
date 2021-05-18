@@ -4,14 +4,15 @@ import React, { useState } from "react"
 import { AnimatePresence, motion } from "framer-motion"
 import tinycolor from "tinycolor2"
 
-function ImageWithBackground({ image, color, hover, id }) {
+function ImageWithBackground({ image, color, hover, id, tall }) {
   const [isHovered, setHover] = useState(false)
   return (
     <motion.div
       layoutId={`title+${id}+container`}
       onMouseEnter={() => setHover(true)}
       onMouseLeave={() => setHover(false)}
-      className="flex center w-100 overflow-hidden relative br2"
+      className={`flex center w-100 overflow-hidden relative br2  ${tall &&
+        "pt6"}`}
       style={{
         backgroundColor: color,
         overflow: "hidden",

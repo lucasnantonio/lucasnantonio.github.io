@@ -32,7 +32,7 @@ const Layout = ({ location, children, isIndex }) => {
         isIndex={isIndex}
       />
       <div
-        className="pt0 ph4"
+        className="pt0 ph0"
         style={{
           margin: `0 auto`,
           paddingTop: 0,
