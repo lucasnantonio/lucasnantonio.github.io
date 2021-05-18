@@ -8,16 +8,17 @@ function ImageWithBackground({ image, color, hover, id }) {
   const [isHovered, setHover] = useState(false)
   return (
     <motion.div
-      layoutId={`title+${id}`}
+      layoutId={`title+${id}+container`}
       onMouseEnter={() => setHover(true)}
       onMouseLeave={() => setHover(false)}
-      className="flex center"
+      className="flex center w-100 overflow-hidden relative br2"
       style={{
         backgroundColor: color,
         overflow: "hidden",
       }}
     >
-      <img
+      <motion.img
+        layoutId={`title+${id}+img`}
         className="center"
         style={{ maxHeight: "32rem", zIndex: 1 }}
         src={image.src}

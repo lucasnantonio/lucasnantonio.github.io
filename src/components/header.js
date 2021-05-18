@@ -4,6 +4,7 @@ import React, { useState } from "react"
 import { minWidth } from "./utils"
 import Tabs from "../components/tabs"
 import TwitterLogo, { twitterLogo } from "../components/twitterLogo"
+import { AnimatePresence, motion } from "framer-motion"
 
 function Header({ location }) {
   const [tabList, setTabList] = useState([
@@ -13,7 +14,8 @@ function Header({ location }) {
     { title: "Reading", active: false },
   ])
   return (
-    <header
+    <motion.header
+      layoutId="site-header"
       style={{
         maxWidth: minWidth,
       }}
@@ -33,7 +35,7 @@ function Header({ location }) {
         </div>
         <TwitterLogo></TwitterLogo>
       </div>
-    </header>
+    </motion.header>
   )
 }
 

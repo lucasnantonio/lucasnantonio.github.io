@@ -43,28 +43,6 @@ export default function Template({
       image={frontmatter.cover_image.childImageSharp.fluid}
       color={frontmatter.color}
     />
-    // <div>
-    //   <div
-    //     className="center flex flex-column justify-end br2"
-    //     style={{
-    //       backgroundColor: frontmatter.color || "#f0f0f0",
-    //       maxHeight: "500px",
-    //       overflow: "hidden",
-    //       padding: "0rem",
-    //       maxWidth: minWidth,
-    //     }}
-    //   >
-    //     <Img
-    //       className=""
-    //       fluid={frontmatter.cover_image.childImageSharp.fluid}
-    //       color={frontmatter.color}
-    //       objectFit="contain"
-    //     />
-    //   </div>
-    //   <motion.div layoutId="test" initial={false}>
-    //     test motion
-    //   </motion.div>
-    // </div>
   )
 
   const content = (
