@@ -27,12 +27,6 @@ export default function Template({
 
   const title = (
     <div className="flex flex-column pb5-l w-100">
-      <motion.p
-        layoutId={`title+${frontmatter.title}`}
-        className={`f3 measure-narrow mt3 mb2 fw5 tracked-tight`}
-      >
-        {frontmatter.title}{" "}
-      </motion.p>
       <h1 className=" fw5 f3 black-80 mt0 mb1 pb0 w-100 tracked-tight lh-copy">
         {frontmatter.title}
       </h1>
@@ -44,6 +38,7 @@ export default function Template({
 
   const heroImage = (
     <ImageWithBackground
+      id={frontmatter.title}
       hover={false}
       image={frontmatter.cover_image.childImageSharp.fluid}
       color={frontmatter.color}

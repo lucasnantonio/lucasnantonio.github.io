@@ -14,15 +14,14 @@ function PostLink({ post }) {
         to={post.frontmatter.path}
       >
         <div className="overflow-hidden relative br2">
-          <div style={{ zIndex: "2" }}>
-            <ImageWithBackground
-              hover={true}
-              cover={post.frontmatter.cover}
-              isHovered={isHovered}
-              image={post.frontmatter.cover_image.childImageSharp.fluid}
-              color={post.frontmatter.color}
-            />
-          </div>
+          <ImageWithBackground
+            id={post.frontmatter.title}
+            hover={true}
+            cover={post.frontmatter.cover}
+            isHovered={isHovered}
+            image={post.frontmatter.cover_image.childImageSharp.fluid}
+            color={post.frontmatter.color}
+          />
         </div>
         <div
           style={{ minHeight: "11rem" }}
@@ -30,14 +29,13 @@ function PostLink({ post }) {
         >
           <div className="w-100">
             <div className="flex justify-between items-center">
-              <motion.p
-                layoutId={`title+${post.frontmatter.title}`}
+              <p
                 className={`f3 measure-narrow mt3 mb2 fw5 tracked-tight ${
                   isHovered ? "u underline" : ""
                 }`}
               >
                 {post.frontmatter.title}{" "}
-              </motion.p>
+              </p>
             </div>
             <p
               className={

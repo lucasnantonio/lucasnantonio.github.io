@@ -4,10 +4,11 @@ import React, { useState } from "react"
 import { AnimatePresence, motion } from "framer-motion"
 import tinycolor from "tinycolor2"
 
-function ImageWithBackground({ image, color, hover }) {
+function ImageWithBackground({ image, color, hover, id }) {
   const [isHovered, setHover] = useState(false)
   return (
-    <div
+    <motion.div
+      layoutId={`title+${id}`}
       onMouseEnter={() => setHover(true)}
       onMouseLeave={() => setHover(false)}
       className="flex center"
@@ -16,7 +17,6 @@ function ImageWithBackground({ image, color, hover }) {
         overflow: "hidden",
       }}
     >
-      {image.src === true}
       <img
         className="center"
         style={{ maxHeight: "32rem", zIndex: 1 }}
@@ -39,7 +39,7 @@ function ImageWithBackground({ image, color, hover }) {
           />
         )}
       </AnimatePresence>
-    </div>
+    </motion.div>
   )
 }
 
