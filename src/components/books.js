@@ -2,6 +2,17 @@ export const tags = ["All", "Design", "Non-fiction", "Fiction", "Business"]
 const books = [
   {
     year: 2021,
+    title: "Conceptual Models: Core to Good Design",
+    amazon_url: "https://amzn.to/33UDTCG",
+    tag: "Design",
+    best: true,
+    text:
+      "This is an excellent, short, powerful reminder of an often skipped stage of the design process. It should be required reading to all designers. I just wish it had more examples.",
+    img:
+      "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1331793618l/13543510.jpg",
+  },
+  {
+    year: 2021,
     title: "Breaking the social media prism",
     amazon_url: "https://amzn.to/3ogjP6S",
     tag: "Non-fiction",
