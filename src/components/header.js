@@ -23,9 +23,12 @@ function Header({ location }) {
         className="w-100 flex justify-between items-center-l items-start center"
       >
         <div className="flex flex-row-l flex-column w-100 items-center">
-          <Link to="/" className={"link w-auto-l w-100"}>
-            <h1 className="f3 fw5 tracked-tight black-80 tl">Lucas Neumann</h1>
-          </Link>
+          <h1 className="f3 fw5 tracked-tight black-80 tl">
+            <Link to="/" className={"link w-auto-l w-100 black"}>
+              Lucas Neumann
+            </Link>
+          </h1>
+
           <div className="ph3 flex-l dn">・</div>
           <Tabs
             location={location}

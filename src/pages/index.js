@@ -14,7 +14,7 @@ function IndexPage({
   return (
     <Layout location={location}>
       <SEO title="Home" />
-      <div style={{ paddingTop: "12rem" }} className="overflow-y-hidden center">
+      <div style={{ paddingTop: "12rem" }} className="center">
         <HomeSection posts={posts} />
       </div>
     </Layout>
