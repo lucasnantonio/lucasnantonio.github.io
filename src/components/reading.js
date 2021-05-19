@@ -74,7 +74,11 @@ const Item = ({ item }) => {
           <div className="f4 measure black-50">{item.text}</div>
         </div>
         {item.img && (
-          <img className="w4 h-100 br2 ba b--black-10" src={item.img}></img>
+          <img
+            className={`w4 h-100 br2 ba b--black-10 ${item.best &&
+              "mt0-l mt4"}`}
+            src={item.img}
+          ></img>
         )}
       </a>
     </div>

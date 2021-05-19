@@ -3,6 +3,7 @@ import HomeSection from "../components/home-section"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { minWidth } from "../components/utils"
+import { AnimatePresence, motion } from "framer-motion"
 
 function IndexPage({
   data: {
@@ -15,10 +16,18 @@ function IndexPage({
     <Layout location={location}>
       <SEO title="Home" />
       <div style={{ maxWidth: minWidth }} className="center ph0-l ph4">
-        <h1 className="f1-l f2 fw7 lh-title pv7 tracked-tight">
-          Product designer working with Health at Twitter and teaching
-          Behavioral Design at Aprender.
-        </h1>
+        <AnimatePresence>
+          <motion.h1
+            exit={{ opacity: 0, y: 100 }}
+            initial={{ opacity: 0, y: 100 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7 }}
+            className="f1-l f2 fw7 lh-title pv7 tracked-tight"
+          >
+            Product designer working at Twitter and teaching Behavioral Design
+            at Aprender.
+          </motion.h1>
+        </AnimatePresence>
         <HomeSection posts={posts} />
       </div>
     </Layout>
