@@ -7,7 +7,7 @@ import PreviousAndNext from "../components/previousAndNext"
 import PostMetadata from "../components/postMetadata"
 import Learnings from "../components/learnings"
 import PostSummary from "../components/postSummary"
-import { motion } from "framer-motion"
+import { AnimatePresence, motion } from "framer-motion"
 import { initialFadeAnimation, fadeInAnimation } from "../components/utils"
 import ImageWithBackground from "../components/imageWithBackground"
 
@@ -60,19 +60,28 @@ export default function Template({
   return (
     <Layout location={location} prev={prev} next={next} isIndex={false}>
       {heroImage}
-
-      <div
-        style={{ maxWidth: minWidth }}
-        className="flex w-100 justify-between flex-row-l flex-column center pt5"
+      {/* <AnimatePresence> */}
+      <motion.div
+        key={frontmatter.title}
+        initial={{ opacity: 0, display: "none" }}
+        animate={{ opacity: 1, display: "block" }}
+        exit={{ opacity: 0, display: "none" }}
+        transition={{ duration: 1, delay: 0.25 }}
       >
-        {title}
-        <PostMetadata frontmatter={frontmatter} />
-      </div>
+        <div
+          style={{ maxWidth: minWidth }}
+          className="flex w-100 justify-between flex-row-l flex-column center pt5"
+        >
+          {title}
+          <PostMetadata frontmatter={frontmatter} />
+        </div>
 
-      <PostSummary frontmatter={frontmatter} />
-      {content}
-      {frontmatter.learnings && <Learnings list={frontmatter.learnings} />}
-      <PreviousAndNext prev={prev} next={next}></PreviousAndNext>
+        <PostSummary frontmatter={frontmatter} />
+        {content}
+        {frontmatter.learnings && <Learnings list={frontmatter.learnings} />}
+        <PreviousAndNext prev={prev} next={next}></PreviousAndNext>
+      </motion.div>
+      {/* </AnimatePresence> */}
     </Layout>
   )
 }
