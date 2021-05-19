@@ -22,7 +22,10 @@ function PostLink({ post }) {
         style={{ minHeight: "11rem" }}
         className="black pb4 mt2 flex justify-between"
       >
-        <div layoutId={`${post.frontmatter.title}+posttitle`} className="w-100">
+        <motion.div
+          layoutId={`${post.frontmatter.title}+posttitle`}
+          className="w-100"
+        >
           <div className="flex justify-between items-center">
             <p
               className={`f3 measure-narrow mt3 mb2 fw5 tracked-tight ${
@@ -39,7 +42,7 @@ function PostLink({ post }) {
           >
             {post.frontmatter.subtitle}
           </p>
-        </div>
+        </motion.div>
       </div>
     </Link>
   )

@@ -21,7 +21,7 @@ function ImageWithBackground({ image, color, hover, id, tall }) {
       <motion.img
         layoutId={`title+${id}+img`}
         className="center"
-        style={{ maxHeight: "32rem", zIndex: 1 }}
+        style={{ maxHeight: tall ? "42rem" : "32rem", zIndex: 1 }}
         src={image.src}
       />
       <AnimatePresence>

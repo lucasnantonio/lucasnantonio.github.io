@@ -1,22 +1,24 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
-import React, { useState } from "react"
+import React, { useEffect, useState } from "react"
 import { minWidth } from "./utils"
 import Tabs from "../components/tabs"
 import TwitterLogo, { twitterLogo } from "../components/twitterLogo"
-import { AnimatePresence, motion } from "framer-motion"
+import { AnimatePresence, motion, useViewportScroll } from "framer-motion"
 
 function Header({ location }) {
+  const { scrollY } = useViewportScroll()
   const [tabList, setTabList] = useState([
     { title: "Work", active: true },
     { title: "About", active: false },
     { title: "Writing", active: false },
     { title: "Reading", active: false },
   ])
+
   return (
     <motion.header
       layoutId="site-header"
-      className={"z-max space-between mh4 center-l pb5 pt5 fixed w-100"}
+      className={`z-max space-between mh4 center-l w-100 pt4 relative`}
     >
       <div
         style={{ maxWidth: minWidth }}

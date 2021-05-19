@@ -59,7 +59,7 @@ export default function Template({
 
   return (
     <Layout location={location} prev={prev} next={next} isIndex={false}>
-      {heroImage}
+      <div style={{ marginTop: "-6rem" }}>{heroImage}</div>
       {/* <AnimatePresence> */}
       <motion.div
         key={frontmatter.title}
