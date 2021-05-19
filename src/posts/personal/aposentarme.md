@@ -12,12 +12,12 @@ soon: false
 cover_image: "../../images/aposentarme/aposentarme-2.png"
 problem: How might we help people understand what affects their retirement plans?
 solution: A quick calculator that is human, approachable, and educational.
-myrole: Product design, code (React), and 3d Modeling (Vectary) 
+myrole: Product design, code (React), and 3d Modeling (Vectary)
 color: "#b2e5fe"
 cover: false
 link_label: See live
-team: 
-- Guilherme Stoll
+team:
+  - Guilherme Stoll
 link: "http://www.aposentar.me"
 ---
 
@@ -25,17 +25,15 @@ link: "http://www.aposentar.me"
 
 My buddy Guilherme and I were looking around for retirement simulators, and what we found online in Brazil was pretty bad. Calculators out there use too much jargon, or are simply financial tables that are not thought from the point of view of a person who is new to investing. So se wet out to design our own:
 
-> __How might we empower newbie investors to understand and play with the variables that impact their future, so they can adjust their plans and have a successful financial journey?__
+> How might we empower newbie investors to understand and play with the variables that impact their future, so they can adjust their plans and have a successful financial journey?
 
 ## Requirements
+
 1. Aimed at people who are new to investing, not experts.
 2. Ask questions in simple, human terms. No jargon.
 3. Give contextual help about people's situation.
 4. Be approachable, self-conscious and optimistic.
 5. Help us learn React and have fun.
-
-
-
 
 ![We made the form as simple as possible](../../images/aposentarme/aposentarme-8.png)
 

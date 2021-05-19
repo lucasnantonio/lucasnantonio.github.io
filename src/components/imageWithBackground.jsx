@@ -4,7 +4,7 @@ import React, { useState } from "react"
 import { AnimatePresence, motion } from "framer-motion"
 import tinycolor from "tinycolor2"
 
-function ImageWithBackground({ image, color, hover, id, tall }) {
+function ImageWithBackground({ image, color, hover, id, tall, xtall }) {
   const [isHovered, setHover] = useState(false)
   return (
     <motion.div
@@ -21,8 +21,8 @@ function ImageWithBackground({ image, color, hover, id, tall }) {
       <motion.img
         layoutId={`title+${id}+img`}
         className="center"
-        style={{ maxHeight: tall ? "42rem" : "32rem", zIndex: 1 }}
-        src={image.src}
+        style={{ maxHeight: xtall ? "" : tall ? "42rem" : "32rem", zIndex: 1 }}
+        src={image.src || image}
       />
       <AnimatePresence>
         {isHovered && hover && (

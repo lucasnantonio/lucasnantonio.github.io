@@ -18,13 +18,13 @@ function Header({ location }) {
   return (
     <motion.header
       layoutId="site-header"
-      className={`z-max space-between mh4 center-l w-100 pt4 relative`}
+      className={`z-max space-between mh4 center-l pt4 relative`}
     >
       <div
         style={{ maxWidth: minWidth }}
-        className="w-100 flex justify-between items-center-l items-start center"
+        className=" flex justify-between items-center-l items-start center"
       >
-        <div className="flex flex-row-l flex-column w-100 items-center">
+        <div className="flex flex-row-l flex-column w-100 items-center-l">
           <h1 className="f3 fw5 tracked-tight black-80 tl">
             <Link to="/" className={"link w-auto-l w-100 black"}>
               Lucas Neumann

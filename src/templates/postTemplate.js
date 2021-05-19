@@ -28,12 +28,12 @@ export default function Template({
   const title = (
     <motion.div
       layoutId={`${frontmatter.title}+posttitle`}
-      className="flex flex-column pb5-l w-100"
+      className="flex flex-column pv6-l pv5 w-100"
     >
-      <h1 className=" fw5 f1 black-80 mt0 mb1 pb0 w-100 tracked-tight lh-copy">
+      <h1 className=" fw7 f1-l f2 black-80 mt0 mb1 pb0 w-100 tracked-tight lh-title">
         {frontmatter.title}
       </h1>
-      <div className="fw5 measure w-60-l flex flex-row-l flex-column items-start f3 lh-copy mt0 pt0 measure mb1 black-40 tracked-tight">
+      <div className="f1-l f2 fw5 flex flex-row-l flex-column items-start lh-title mt0 pt0 mb1 black-40 tracked-tight">
         {frontmatter.subtitle}
       </div>
     </motion.div>
@@ -59,9 +59,10 @@ export default function Template({
 
   return (
     <Layout location={location} prev={prev} next={next} isIndex={false}>
-      <div style={{ marginTop: "-6rem" }}>{heroImage}</div>
+      <div style={{ marginTop: "-8rem" }}>{heroImage}</div>
       {/* <AnimatePresence> */}
       <motion.div
+        className={"ph0-l ph4"}
         key={frontmatter.title}
         initial={{ opacity: 0, display: "none" }}
         animate={{ opacity: 1, display: "block" }}
@@ -70,10 +71,10 @@ export default function Template({
       >
         <div
           style={{ maxWidth: minWidth }}
-          className="flex w-100 justify-between flex-row-l flex-column center pt5"
+          className="flex w-100 justify-between flex-row-l flex-column center bb b--near-white"
         >
           {title}
-          <PostMetadata frontmatter={frontmatter} />
+          {/* <PostMetadata frontmatter={frontmatter} /> */}
         </div>
 
         <PostSummary frontmatter={frontmatter} />

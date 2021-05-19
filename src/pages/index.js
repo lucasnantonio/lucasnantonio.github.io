@@ -14,7 +14,11 @@ function IndexPage({
   return (
     <Layout location={location}>
       <SEO title="Home" />
-      <div className="center pt4">
+      <div style={{ maxWidth: minWidth }} className="center ph0-l ph4">
+        <h1 className="f1-l f2 fw7 lh-title pv7 tracked-tight">
+          Product designer working with Health at Twitter and teaching
+          Behavioral Design at Aprender.
+        </h1>
         <HomeSection posts={posts} />
       </div>
     </Layout>

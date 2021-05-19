@@ -199,8 +199,8 @@ h5 {
 .post-content ol,
 .post-content hr {
   max-width: 42rem;
-  margin-left: auto;
-  margin-right: auto;
+  /* margin-left: auto;
+  margin-right: auto; */
   /* margin-top: 3rem; */
   margin-bottom: 3rem;
   font-size: 17px;
@@ -311,14 +311,31 @@ div + p {
 }
 
 .post-content blockquote {
-  padding: 2.5rem;
-  margin: 4rem auto;
-  border: 2px solid #eee;
-  border-radius: 16px;
+  /* padding: 2.5rem; */
+  margin: 4rem 0rem;
+  /* quotes: none; */
+  /* border: 2px solid #eee;
+  border-radius: 16px; */
+}
+.post-content blockquote p::before {
+  position: absolute;
+  content: "“";
+  transform: translate3d(-100%, 0, 0);
+}
+.post-content blockquote p::after {
+  /* padding: 2.5rem; */
+  content: "”";
+  box-sizing: inherit;
+  /* border: 2px solid #eee;
+  border-radius: 16px; */
 }
 .post-content blockquote p {
+  font-size: 2rem;
+  line-height: 1.4em;
   margin: 0px !important;
   margin-right: 0px;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.8);
 }
 .post-content p + p > span {
   margin-top: 3rem;

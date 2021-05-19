@@ -29,16 +29,13 @@ learnings:
   - Design and Engineering added immense value to product strategy by being involved before requirements were defined. It is what allowed us to create a type of bank account that didn't exist before, instead of making the existing ones incrementally better.
   - Stakeholders that were involved in very early design stage stayed permanently engaged with making user-centered decisions.
   - Even though the ultimate vision was a product "for every Brazilian" / "For everyone", it was important to start focused. Choosing 2 personas from the universe we mapped was essential to accelerate decision making.
-  - Agreeing on what the initial product does was as important as agreeing on what it does not do.  
+  - Agreeing on what the initial product does was as important as agreeing on what it does not do.
   - Designing the team (members, meeting cadence, lunches, co-designs, critiques) was as important as designing the product itself.
   - Prototyping was paramount. Engineers' collboration with us on Framer elevated our user tests to a greater level of fidelity.
   - A few heavy user customers are very vocal about their need for financial analysis and charts. But most customers don't really care for or seem to need them. 📊🤷‍♂️
-
-  
 ---
 
 NuConta is an unprecedented mix of current, savings, and payments accounts, all-in-one. Thanks to a one-year-long co-creative process, our team was able to design and ship a product that uniquely addresses customer needs, becoming [the most downloaded neo-banking app in the world](https://qz.com/1738245/nubanks-app-has-more-downloads-than-revolut-monzo-and-n26-combined/).
-
 
 ![](../../images/nubank/nuconta-000.png)
 
@@ -66,7 +63,7 @@ By combining the data from these interviews with others conducted in our lab, an
 
 With well-defined personas, we now had a lens through which we could look at the problem. Our initial mission, which was very broad, could now be better expressed in sentences that the whole team could agree on:
 
-> __How might we design an evolution of the current and savings accounts, for people looking for a more accessible and easy-to-use bank?__
+> How might we design an evolution of the current and savings accounts, for people looking for a more accessible and easy-to-use bank?
 
 We learned from this process that defining a problem is sometimes harder than sitting down to solve it. After dozens of long work days, heated meetings, lots of head-scratching, word-smithing, and sense-making about the material collected during research, the team was finally committed to a unified vision of the product that reflected our customer’s pains and needs instead of our own. We were now ready to deep dive into exploring solutions that would eventually become NuConta.
 
@@ -77,7 +74,6 @@ The first thing we do at Nubank once we have a sound problem definition is what 
 ![](../../images/nubank/nuconta-020.png)
 ![](../../images/nubank/nuconta-021.jpeg)
 ![](../../images/nubank/nuconta-022.png)
-
 
 Only after extensive discussion and brainstorming, we felt ready to start wireframes and pixel pushing: we tried dozens of versions of the UI of onboarding flows, empty states, investment simulators, charts (OMG so many charts), financial goals, investment streaks, etc. We allowed ourselves to go quite crazy in the beginning, bypassing many rules of our current design system, and then adjusted as we got closer to the final result.
 
@@ -107,7 +103,7 @@ One key component of the speed and quality of our workflow in this project was t
 
 Producing a well-crafted individual screen is satisfying, but we can never forget that every touchpoint is part of a broader ecosystem. Below is an example of how we kept track of every App screen, push notification, email, website page, and social media posts that first-time users would encounter.
 
->  __Nuconta makes Nubank the [most downloaded banking app in the world](https://qz.com/1738245/nubanks-app-has-more-downloads-than-revolut-monzo-and-n26-combined/).__ — Quartz
+> Nuconta makes Nubank the [most downloaded banking app in the world](https://qz.com/1738245/nubanks-app-has-more-downloads-than-revolut-monzo-and-n26-combined/). — Quartz
 
 ![Nubank tops the downloads of all others challenger banks combined. ](../../images/nubank/nuconta-downloads.png)
 

@@ -20,11 +20,10 @@ const SummaryItem = ({
   return (
     <div
       style={{ marginBottom: "-2px" }}
-      className={`${!noBorder &&
-        "br-ns bbn-ns bb"} bw1 w-100 mb0-ns mb4 measure pl4 pt4 pr4 pb3 b--near-white flex flex-column items-start`}
+      className={`bb b--near-white w-100 mb0-ns mb4 measure pt4 pr4 pb4 flex flex-column items-start`}
     >
       {icon}
-      <span className="ttu mt4 fw5 f6 black">{title}</span>
+      <span className="ttu mt4 fw7 f6 black">{title}</span>
       <p className="lh-copy f4">{text}</p>
     </div>
   )
@@ -37,7 +36,7 @@ const PostSummary = ({ frontmatter }) => {
       frontmatter.myrole) && (
       <div
         style={{ maxWidth: minWidth }}
-        className="mt5 center flex flex-row-ns flex-column ba bw1 b--near-white br3"
+        className="pt4 center flex flex-row-ns flex-column br3"
       >
         {frontmatter.problem && (
           <SummaryItem

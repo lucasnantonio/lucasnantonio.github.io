@@ -24,7 +24,7 @@ learnings:
   - We didn't need advanced algorithms to deliver value to 80% of users. Most of their transactions tend to be with the same merchants and can be categorized with simple rules. Getting the other 20% right is another story, but not needed for an MVP like ours.
 ---
 
-> "How might we help new-to-credit customers understand and control their spend so they're more comfortable and responsible using the Petal card?"
+> How might we help new-to-credit customers understand and control their spend so they're more comfortable and responsible using the Petal card?
 
 ## Customer outcomes
 

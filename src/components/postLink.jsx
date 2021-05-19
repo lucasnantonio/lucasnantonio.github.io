@@ -28,7 +28,7 @@ function PostLink({ post }) {
         >
           <div className="flex justify-between items-center">
             <p
-              className={`f3 measure-narrow mt3 mb2 fw5 tracked-tight ${
+              className={`f3 measure-narrow mt3 mb2 fw6 tracked-tight ${
                 isHovered ? "u underline" : ""
               }`}
             >
