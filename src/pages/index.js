@@ -15,7 +15,7 @@ function IndexPage({
   return (
     <Layout location={location}>
       <SEO title="Home" />
-      <div style={{ maxWidth: minWidth }} className="center ph0-l ph4">
+      <motion.div style={{ maxWidth: minWidth }} className="center ph0-l ph4">
         <AnimatePresence>
           <motion.h1
             layoutId="site-title"
@@ -27,14 +27,14 @@ function IndexPage({
             }}
             animate={{ opacity: 1, y: 0, marginTop: 200, marginBottom: 200 }}
             transition={{ duration: 0.55 }}
-            className="f1-l f2 fw7 lh-title tracked-tight"
+            className="fw7 f1 lh-title tracked-tight measure-narrow"
           >
-            Product designer working at Twitter and teaching Behavioral Design
-            at Aprender.
+            Product designer at Twitter and behavioral design teacher at
+            Aprender.
           </motion.h1>
         </AnimatePresence>
         <HomeSection posts={posts} />
-      </div>
+      </motion.div>
     </Layout>
   )
 }

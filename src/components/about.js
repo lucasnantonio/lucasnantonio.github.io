@@ -1,40 +1,31 @@
-import { motion } from "framer-motion"
+import { AnimatePresence, motion } from "framer-motion"
 import React, { useEffect, useState } from "react"
 import { minWidth, topics } from "../components/utils"
 import ImageWithBackground from "../components/imageWithBackground"
 const About = () => {
   return (
-    <motion.div
-      key="about"
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      exit={{ opacity: 0 }}
-    >
-      <motion.img
-        initial={{
-          opacity: 0,
-          y: 25,
-        }}
+    <motion.div key="about">
+      <AnimatePresence>
+        <motion.h1
+          initial={{
+            y: 25,
+            marginTop: 200,
+            marginBottom: 200,
+          }}
+          animate={{ y: 0, marginTop: 200, marginBottom: 200 }}
+          transition={{ duration: 0.55 }}
+          layoutId="site-title"
+          className="fw7 f1 lh-title tracked-tight measure-narrow"
+        >
+          Product designer at Twitter and behavioral design teacher at Aprender.
+        </motion.h1>
+      </AnimatePresence>
+      <motion.div
+        initial={{ opacity: 0, y: 25 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.55 }}
-        className="br2 ba b--black-10 mt4"
-        src="https://i.postimg.cc/QtxFVzBb/Bild007-Neg-Nr-8-1.jpg"
-      ></motion.img>
-      <motion.h1
-        // layoutId="site-title"
-        initial={{
-          opacity: 0,
-          marginTop: 75,
-          marginBottom: 75,
-        }}
-        animate={{ opacity: 1, marginTop: 50, marginBottom: 50 }}
-        transition={{ duration: 0.55 }}
-        className="fw7 lh-title tracked-tight measure-narrow"
+        className="f3 fw4 lh-copy mb3 black-50 lh-copy tracked-tight measure pb6"
       >
-        Product designer working at Twitter and teaching Behavioral Design at
-        Aprender.
-      </motion.h1>
-      <div className="f3 fw4 lh-copy mb3 black-50 lh-copy f4 measure">
         <p>
           I've been designing products and services since 2010, and even though
           my home has always been with design, I can frequently be found
@@ -110,7 +101,7 @@ const About = () => {
         <p>
           I currently work as Staff Designer @ Twitter, in NYC. <br />
         </p>
-      </div>
+      </motion.div>
     </motion.div>
   )
 }

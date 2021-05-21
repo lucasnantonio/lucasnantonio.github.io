@@ -1,15 +1,12 @@
-import React from "react"
+import { motion } from "framer-motion"
 import { graphql } from "gatsby"
+import React from "react"
+import ImageWithBackground from "../components/imageWithBackground"
 import Layout from "../components/layout"
-import Img from "gatsby-image/withIEPolyfill"
-import { minWidth } from "../components/utils"
-import PreviousAndNext from "../components/previousAndNext"
-import PostMetadata from "../components/postMetadata"
 import Learnings from "../components/learnings"
 import PostSummary from "../components/postSummary"
-import { AnimatePresence, motion } from "framer-motion"
-import { initialFadeAnimation, fadeInAnimation } from "../components/utils"
-import ImageWithBackground from "../components/imageWithBackground"
+import PreviousAndNext from "../components/previousAndNext"
+import { minWidth } from "../components/utils"
 
 export default function Template({
   location,
@@ -26,10 +23,7 @@ export default function Template({
   }
 
   const title = (
-    <motion.div
-      layoutId={`${frontmatter.title}+posttitle`}
-      className="flex flex-column pv6-l pv5 w-100"
-    >
+    <motion.div className="flex flex-column pv6-l pv5 w-100">
       <h1 className=" fw7 f1-l f2 black-80 mt0 mb1 pb0 w-100 tracked-tight lh-title">
         {frontmatter.title}
       </h1>

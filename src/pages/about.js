@@ -7,7 +7,7 @@ import { AnimatePresence, motion } from "framer-motion"
 const AboutPage = ({ location }) => {
   return (
     <Layout location={location}>
-      <div style={{ maxWidth: minWidth }} className="center pt4 ph0-l ph4">
+      <div style={{ maxWidth: minWidth }} className="center ph0-l ph4">
         <About></About>
       </div>
     </Layout>

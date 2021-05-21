@@ -38,7 +38,7 @@ const TagRow = ({ activeTag, setActiveTag }) => {
   return (
     <div
       style={{ marginLeft: "-2rem", marginRight: "-2rem" }}
-      className="ph4 flex pv2 b--near-white overflow-scroll"
+      className="ph4 flex pv5 b--near-white overflow-scroll"
     >
       {tags.map(item => (
         <Tag
@@ -72,7 +72,7 @@ const Item = ({ item }) => {
       >
         <div className="mr5">
           <h2 className="mt0 lh-title flex flex-row-l flex-column-reverse items-center-l mb3">
-            <span className={`f3 fw5 ${hover && "underline"}`}>
+            <span className={`f2 fw7 tracked-tight ${hover && "underline"}`}>
               {item.title}{" "}
             </span>
             {item.best && (
