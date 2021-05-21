@@ -29,7 +29,7 @@ const About = () => {
         }}
         animate={{ opacity: 1, marginTop: 50, marginBottom: 50 }}
         transition={{ duration: 0.55 }}
-        className="f1-l f2 fw7 lh-title tracked-tight measure-narrow"
+        className="fw7 lh-title tracked-tight measure-narrow"
       >
         Product designer working at Twitter and teaching Behavioral Design at
         Aprender.
