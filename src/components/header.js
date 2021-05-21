@@ -17,6 +17,8 @@ function Header({ location }) {
 
   return (
     <motion.header
+      initial={{ opacity: 0, y: 0 }}
+      animate={{ opacity: 1, y: 0 }}
       layoutId="site-header"
       className={`z-max space-between mh4 center-l pt4 relative`}
     >

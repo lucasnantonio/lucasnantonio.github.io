@@ -10,13 +10,13 @@ const About = () => {
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
     >
-      <div style={{ marginTop: "-6rem" }}>
+      {/* <div style={{ marginTop: "-6rem" }}>
         <ImageWithBackground
           xtall
           color={"#eee"}
           image={"https://i.postimg.cc/c46b23LW/Frame-2.png"}
         ></ImageWithBackground>
-      </div>
+      </div> */}
       <div className=" center" style={{ maxWidth: minWidth }}>
         <div className="f3 fw4 w-100 lh-copy mb3 pb0 b--near-white bw1">
           <div className="flex justify-between flex-column">
