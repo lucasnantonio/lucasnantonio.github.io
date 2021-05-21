@@ -10,104 +10,106 @@ const About = () => {
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
     >
-      {/* <div style={{ marginTop: "-6rem" }}>
-        <ImageWithBackground
-          xtall
-          color={"#eee"}
-          image={"https://i.postimg.cc/c46b23LW/Frame-2.png"}
-        ></ImageWithBackground>
-      </div> */}
-      <div className=" center" style={{ maxWidth: minWidth }}>
-        <div className="f3 fw4 w-100 lh-copy mb3 pb0 b--near-white bw1">
-          <div className="flex justify-between flex-column">
-            <div className="flex flex-row-l flex-column mt4 mw-100-l">
-              {/* ABOUT */}
-              <div className="mt0-l black-50 lh-copy measure f4">
-                <div>
-                  <h2 className="fw6 f1 fw7 pv5">About</h2>
-                  <p>
-                    I've been designing products and services since 2010, and
-                    even though my home has always been with design, I can
-                    frequently be found exploring disciplines I'm curious about,
-                    such as product management, qualitative research, code, team
-                    management, and others.{" "}
-                  </p>
-                  <p>
-                    I was part of the early design team at{" "}
-                    <a
-                      className="underline link black-50"
-                      href="https://nu.bank"
-                      target="_blank"
-                    >
-                      Nubank
-                    </a>
-                    , in São Paulo, where we disrupted the complexity of Latin
-                    American banks while growing a vibrant, diverse,
-                    international{" "}
-                    <a
-                      className="underline link black-50"
-                      href="https://building.nubank.com.br/design/"
-                      target="_blank"
-                    >
-                      design organization
-                    </a>
-                    .
-                  </p>
-                  <p>
-                    Ask me about the time when I interviewed Dan Ariely on a
-                    stage, about my{" "}
-                    <a
-                      className="underline link black-50"
-                      href="https://patents.justia.com/patent/9809239"
-                      target="_blank"
-                    >
-                      patent to recycle bin for airplanes
-                    </a>
-                    , the time I made personas for cows, co-founded a furniture
-                    shop, or when{" "}
-                    <a
-                      className="underline link black-50"
-                      target="_blank"
-                      href="https://www.lorriewhittington.co.uk/wp-content/uploads/Handwritten-Typeface-by-Lucas-Neumann.jpg"
-                    >
-                      this poster
-                    </a>{" "}
-                    was featured in a{" "}
-                    <a
-                      className="underline link black-50"
-                      href="https://www.mu.nl/en/exhibitions/for-play-shaping-sexuality"
-                      target="_blank"
-                    >
-                      {" "}
-                      Dutch exhibition about sex
-                    </a>
-                    . You can also find stories about my early work as a student
-                    on{" "}
-                    <a
-                      className="underline link black-50"
-                      target="_blank"
-                      href="https://www.fastcompany.com/3028572/this-simple-tool-will-help-you-stop-working-ridiculous-hours"
-                    >
-                      FastCompany
-                    </a>{" "}
-                    and{" "}
-                    <a
-                      className="underline link black-50"
-                      href="https://www.wired.com/2014/04/work-2-0-a-web-connected-sticky-note-that-bosses-you-around/"
-                      target="_blank"
-                    >
-                      Wired
-                    </a>
-                    .
-                  </p>
-                  <p>
-                    I currently work as Staff Designer @ Twitter, in NYC. <br />
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+      <motion.img
+        initial={{
+          opacity: 0,
+          y: 25,
+        }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.55 }}
+        className="br2 ba b--black-10 mt4"
+        src="https://i.postimg.cc/QtxFVzBb/Bild007-Neg-Nr-8-1.jpg"
+      ></motion.img>
+      <motion.h1
+        // layoutId="site-title"
+        initial={{
+          opacity: 0,
+          marginTop: 75,
+          marginBottom: 75,
+        }}
+        animate={{ opacity: 1, marginTop: 50, marginBottom: 50 }}
+        transition={{ duration: 0.55 }}
+        className="f1-l f2 fw7 lh-title tracked-tight measure-narrow"
+      >
+        Product designer working at Twitter and teaching Behavioral Design at
+        Aprender.
+      </motion.h1>
+      <div className="f3 fw4 lh-copy mb3 black-50 lh-copy f4 measure">
+        <p>
+          I've been designing products and services since 2010, and even though
+          my home has always been with design, I can frequently be found
+          exploring disciplines I'm curious about, such as product management,
+          qualitative research, code, team management, and others.{" "}
+        </p>
+        <p>
+          I was part of the early design team at{" "}
+          <a
+            className="underline link black-50"
+            href="https://nu.bank"
+            target="_blank"
+          >
+            Nubank
+          </a>
+          , in São Paulo, where we disrupted the complexity of Latin American
+          banks while growing a vibrant, diverse, international{" "}
+          <a
+            className="underline link black-50"
+            href="https://building.nubank.com.br/design/"
+            target="_blank"
+          >
+            design organization
+          </a>
+          .
+        </p>
+        <p>
+          Ask me about the time when I interviewed Dan Ariely on a stage, about
+          my{" "}
+          <a
+            className="underline link black-50"
+            href="https://patents.justia.com/patent/9809239"
+            target="_blank"
+          >
+            patent to recycle bin for airplanes
+          </a>
+          , the time I made personas for cows, co-founded a furniture shop, or
+          when{" "}
+          <a
+            className="underline link black-50"
+            target="_blank"
+            href="https://www.lorriewhittington.co.uk/wp-content/uploads/Handwritten-Typeface-by-Lucas-Neumann.jpg"
+          >
+            this poster
+          </a>{" "}
+          was featured in a{" "}
+          <a
+            className="underline link black-50"
+            href="https://www.mu.nl/en/exhibitions/for-play-shaping-sexuality"
+            target="_blank"
+          >
+            {" "}
+            Dutch exhibition about sex
+          </a>
+          . You can also find stories about my early work as a student on{" "}
+          <a
+            className="underline link black-50"
+            target="_blank"
+            href="https://www.fastcompany.com/3028572/this-simple-tool-will-help-you-stop-working-ridiculous-hours"
+          >
+            FastCompany
+          </a>{" "}
+          and{" "}
+          <a
+            className="underline link black-50"
+            href="https://www.wired.com/2014/04/work-2-0-a-web-connected-sticky-note-that-bosses-you-around/"
+            target="_blank"
+          >
+            Wired
+          </a>
+          .
+        </p>
+        <p>
+          I currently work as Staff Designer @ Twitter, in NYC. <br />
+        </p>
       </div>
     </motion.div>
   )

@@ -1,5 +1,19 @@
 import React, { useState } from "react"
 import { motion } from "framer-motion"
+const container = {
+  hidden: { opacity: 0 },
+  show: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.1,
+    },
+  },
+}
+
+const article = {
+  hidden: { opacity: 0, y: 25 },
+  show: { opacity: 1, y: 0, transition: { duration: 0.55 } },
+}
 
 function Writing() {
   const articles = [
@@ -59,7 +73,9 @@ function Writing() {
   const Item = ({ item }) => {
     let [isHovered, setHover] = useState(false)
     return (
-      <a
+      <motion.a
+        variants={article}
+        key={item.title}
         onMouseEnter={() => setHover(true)}
         onMouseLeave={() => setHover(false)}
         href={item.url}
@@ -70,7 +86,7 @@ function Writing() {
           <h2 className={`f3 fw5 ${isHovered && "underline"}`}>{item.title}</h2>
           <div className="f4 pt0 measure black-50 pb3">{item.subtitle}</div>
         </div>
-      </a>
+      </motion.a>
     )
   }
 
@@ -78,11 +94,12 @@ function Writing() {
   return (
     <motion.div
       key="writing"
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
+      variants={container}
+      initial="hidden"
+      animate="show"
       exit={{ opacity: 0 }}
     >
-      <div>{rows}</div>
+      {rows}
     </motion.div>
   )
 }

@@ -60,21 +60,20 @@ export default function Template({
   return (
     <Layout location={location} prev={prev} next={next} isIndex={false}>
       <div style={{ marginTop: "-8rem" }}>{heroImage}</div>
-      {/* <AnimatePresence> */}
+
       <motion.div
         className={"ph0-l ph4"}
         key={frontmatter.title}
         initial={{ opacity: 0, display: "none" }}
         animate={{ opacity: 1, display: "block" }}
         exit={{ opacity: 0, display: "none" }}
-        transition={{ duration: 1, delay: 0.25 }}
+        transition={{ duration: 0.55, delay: 0.25 }}
       >
         <div
           style={{ maxWidth: minWidth }}
           className="flex w-100 justify-between flex-row-l flex-column center bb b--near-white"
         >
           {title}
-          {/* <PostMetadata frontmatter={frontmatter} /> */}
         </div>
 
         <PostSummary frontmatter={frontmatter} />

@@ -18,11 +18,16 @@ function IndexPage({
       <div style={{ maxWidth: minWidth }} className="center ph0-l ph4">
         <AnimatePresence>
           <motion.h1
-            exit={{ opacity: 0, y: 25 }}
-            initial={{ opacity: 0, y: 25 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7 }}
-            className="f1-l f2 fw7 lh-title pv7 tracked-tight"
+            layoutId="site-title"
+            initial={{
+              opacity: 0,
+              y: 25,
+              marginTop: 200,
+              marginBottom: 200,
+            }}
+            animate={{ opacity: 1, y: 0, marginTop: 200, marginBottom: 200 }}
+            transition={{ duration: 0.55 }}
+            className="f1-l f2 fw7 lh-title tracked-tight"
           >
             Product designer working at Twitter and teaching Behavioral Design
             at Aprender.
