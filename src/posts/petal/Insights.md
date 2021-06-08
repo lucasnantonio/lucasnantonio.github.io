@@ -91,5 +91,3 @@ class=" w-100 pa4 tc mt5">
   <source src="../../images/petal/insights-4.mp4" type="video/mp4">
   </video>
 </div>
-
-This is just the beginning of Insights at Petal. Keep sending us your feedback :)

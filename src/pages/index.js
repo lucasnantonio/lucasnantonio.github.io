@@ -16,23 +16,22 @@ function IndexPage({
     <Layout location={location}>
       <SEO title="Home" />
       <motion.div style={{ maxWidth: minWidth }} className="center ph0-l ph4">
-        <AnimatePresence>
-          <motion.h1
-            layoutId="site-title"
-            initial={{
-              opacity: 0,
-              y: 25,
-              marginTop: 200,
-              marginBottom: 200,
-            }}
-            animate={{ opacity: 1, y: 0, marginTop: 200, marginBottom: 200 }}
-            transition={{ duration: 0.55 }}
-            className="fw7 f1 lh-title tracked-tight measure-narrow"
-          >
-            Product designer at Twitter and behavioral design teacher at
-            Aprender.
-          </motion.h1>
-        </AnimatePresence>
+        <motion.h1
+          layoutId="site-title"
+          initial={{
+            opacity: 0,
+            y: 25,
+            marginTop: 200,
+            marginBottom: 200,
+          }}
+          animate={{ opacity: 1, y: 0, marginTop: 200, marginBottom: 200 }}
+          transition={{ duration: 0.55 }}
+          className="fw7 f2 lh-title tracked-tight measure-narrow"
+        >
+          Product designer at Twitter & <br></br> Behavioral design teacher at
+          Aprender.
+        </motion.h1>
+
         <HomeSection posts={posts} />
       </motion.div>
     </Layout>

@@ -84,7 +84,7 @@ function Writing() {
       >
         <div>
           <h2
-            className={`f2 fw7 mb3 tracked-tight ${isHovered && "underline"}`}
+            className={`f3 fw7 mb3 tracked-tight ${isHovered && "underline"}`}
           >
             {item.title}
           </h2>

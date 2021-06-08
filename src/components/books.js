@@ -17,7 +17,7 @@ const books = [
     amazon_url: "https://amzn.to/3ogjP6S",
     tag: "Non-fiction",
     text:
-      "Chris makes important claims and points to important solution spaces (some of which we're actively exploring at Birdwatch).I'm just not convinced it is successful as a book. It could use more rigorous editing, and indeed could probably be as effective as a long article.",
+      "Chris makes important claims about polarization in social media and points to important solution spaces (some of which we're actively exploring at Birdwatch).",
     img:
       "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1610926966l/55271765.jpg",
   },

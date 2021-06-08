@@ -23,11 +23,11 @@ export default function Template({
   }
 
   const title = (
-    <motion.div className="flex flex-column pv6-l pv5 w-100">
-      <h1 className=" fw7 f1-l f2 black-80 mt0 mb1 pb0 w-100 tracked-tight lh-title">
+    <motion.div className="flex flex-column pv6-l pv5">
+      <h1 className=" fw7 f2 black-80 mt0 mb1 pb0 w-100 tracked-tight lh-title measure-narrow">
         {frontmatter.title}
       </h1>
-      <div className="f1-l f2 fw5 flex flex-row-l flex-column items-start lh-title mt0 pt0 mb1 black-40 tracked-tight">
+      <div className=" f2 fw5 flex flex-row-l flex-column items-start lh-title mt0 pt0 mb1 black-40 tracked-tight measure-narrow">
         {frontmatter.subtitle}
       </div>
     </motion.div>

@@ -4,36 +4,66 @@ import { minWidth, topics } from "../components/utils"
 import ImageWithBackground from "../components/imageWithBackground"
 const About = () => {
   return (
-    <motion.div key="about">
-      <AnimatePresence>
-        <motion.h1
-          initial={{
-            y: 25,
-            marginTop: 200,
-            marginBottom: 200,
-          }}
-          animate={{ y: 0, marginTop: 200, marginBottom: 200 }}
-          transition={{ duration: 0.55 }}
-          layoutId="site-title"
-          className="fw7 f1 lh-title tracked-tight measure-narrow"
-        >
-          Product designer at Twitter and behavioral design teacher at Aprender.
-        </motion.h1>
-      </AnimatePresence>
+    <motion.div
+      key="about"
+      style={{ maxWidth: minWidth }}
+      className="center ph0-l ph4"
+    >
+      <motion.h1
+        layoutId="site-title"
+        initial={{
+          opacity: 0,
+          y: 25,
+          marginTop: 200,
+          marginBottom: 200,
+        }}
+        animate={{ opacity: 1, y: 0, marginTop: 200, marginBottom: 200 }}
+        transition={{ duration: 0.55 }}
+        className="fw7 f2 lh-title tracked-tight measure-narrow"
+      >
+        Product designer at Twitter & <br></br> Behavioral design teacher at
+        Aprender.
+      </motion.h1>
       <motion.div
         initial={{ opacity: 0, y: 25 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.55 }}
         className="f3 fw4 lh-copy mb3 black-50 lh-copy tracked-tight measure pb6"
       >
+        <p>I have been designing products and services since 2010.</p>
         <p>
-          I've been designing products and services since 2010, and even though
-          my home has always been with design, I can frequently be found
-          exploring disciplines I'm curious about, such as product management,
-          qualitative research, code, team management, and others.{" "}
+          I'm drawn to teams working on difficult issues, and can frequently be
+          found stepping outside the design role into product management,
+          research, code, writing, or whatever it takes to help teams learn and
+          the customer succeed.
         </p>
         <p>
-          I was part of the early design team at{" "}
+          Currently, at Twitter, I'm helping build{" "}
+          <a
+            className="underline link black-50"
+            href="https://twitter.github.io/birdwatch/"
+            target="_blank"
+          >
+            Birdwatch
+          </a>
+          , a moonshot project that aims to tackle online misinformation through
+          descentralization and community.
+        </p>
+
+        <p>
+          I also teach a class about Behavioral Design at{" "}
+          <a
+            className="underline link black-50"
+            href="https://aprender.design"
+            target="_blank"
+          >
+            Aprender
+          </a>
+          , an online design school in Brazil.
+        </p>
+
+        <p>
+          Previously, I was part of the early team at{" "}
           <a
             className="underline link black-50"
             href="https://nu.bank"
@@ -41,8 +71,8 @@ const About = () => {
           >
             Nubank
           </a>
-          , in São Paulo, where we disrupted the complexity of Latin American
-          banks while growing a vibrant, diverse, international{" "}
+          , building the world's biggest digital bank from scratch while growing
+          a vibrant, diverse, international{" "}
           <a
             className="underline link black-50"
             href="https://building.nubank.com.br/design/"
@@ -53,53 +83,54 @@ const About = () => {
           .
         </p>
         <p>
-          Ask me about the time when I interviewed Dan Ariely on a stage, about
-          my{" "}
+          I have helped design online platforms for activism at Nossas; patented
+          a{" "}
           <a
             className="underline link black-50"
             href="https://patents.justia.com/patent/9809239"
             target="_blank"
           >
-            patent to recycle bin for airplanes
-          </a>
-          , the time I made personas for cows, co-founded a furniture shop, or
-          when{" "}
-          <a
-            className="underline link black-50"
-            target="_blank"
-            href="https://www.lorriewhittington.co.uk/wp-content/uploads/Handwritten-Typeface-by-Lucas-Neumann.jpg"
-          >
-            this poster
-          </a>{" "}
-          was featured in a{" "}
-          <a
-            className="underline link black-50"
-            href="https://www.mu.nl/en/exhibitions/for-play-shaping-sexuality"
-            target="_blank"
-          >
             {" "}
-            Dutch exhibition about sex
-          </a>
-          . You can also find stories about my early work as a student on{" "}
-          <a
-            className="underline link black-50"
-            target="_blank"
-            href="https://www.fastcompany.com/3028572/this-simple-tool-will-help-you-stop-working-ridiculous-hours"
-          >
-            FastCompany
+            recycling system{" "}
           </a>{" "}
-          and{" "}
+          for airplanes with Airbus; ran an online{" "}
           <a
             className="underline link black-50"
-            href="https://www.wired.com/2014/04/work-2-0-a-web-connected-sticky-note-that-bosses-you-around/"
             target="_blank"
+            href="https://www.instagram.com/projetofeito/"
           >
-            Wired
+            furniture shop
           </a>
-          .
-        </p>
-        <p>
-          I currently work as Staff Designer @ Twitter, in NYC. <br />
+          , and helped{" "}
+          <a
+            className="underline link black-50"
+            target="_blank"
+            href="https://www.kano.me"
+          >
+            Kano
+          </a>{" "}
+          build the first version of their computer that teaches kids how to
+          code.
+          <p>
+            {" "}
+            You can also find stories about my student work on{" "}
+            <a
+              className="underline link black-50"
+              target="_blank"
+              href="https://www.fastcompany.com/3028572/this-simple-tool-will-help-you-stop-working-ridiculous-hours"
+            >
+              FastCompany
+            </a>{" "}
+            and{" "}
+            <a
+              className="underline link black-50"
+              href="https://www.wired.com/2014/04/work-2-0-a-web-connected-sticky-note-that-bosses-you-around/"
+              target="_blank"
+            >
+              Wired
+            </a>
+            .
+          </p>
         </p>
       </motion.div>
     </motion.div>
