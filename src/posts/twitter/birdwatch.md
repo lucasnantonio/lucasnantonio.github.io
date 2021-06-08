@@ -21,8 +21,6 @@ link_label: Birdwatch Guide
 
 <br>
 
-# Empowering the Twitter community to create a better-informed world.
-
 People come to Twitter to stay informed, and they want credible information to help them do so. This isn’t always easy with the spread of misleading information online. Birdwatch is a community-driven approach to addressing this problem, seeking to create a better-informed world.
 
 Birdwatch participants can identify Tweets they believe are misleading, write notes that provide context on the Tweet, and rate the quality of other participants’ notes. Through consensus from a broad and diverse set of contributors, our eventual goal is that community-written notes will be visible directly on Tweets, available to everyone on Twitter.
@@ -31,4 +29,4 @@ Currently, Birdwatch is in pilot mode for people in the US. We’re building it 
 
 https://twitter.com/birdwatch/status/1353774171684106243
 
-<a style="color: white; background-color:#43B3F6; font-weight: bold" href="http://twitter.github.io/birdwatch" class="b justify-center flex white br-pill pa3 bn link w-50-l w-100">Learn more about Birdwatch →</a>
+<a style="color: white; background-color:#43B3F6; font-weight: bold" href="http://twitter.github.io/birdwatch" class="b justify-center white br-pill pa3 ph4 bn link">Learn more about Birdwatch →</a>
