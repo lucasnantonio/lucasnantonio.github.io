@@ -83,12 +83,10 @@ function Writing() {
         className=" pv4 f3 bw2 bt b--near-white flex justify-between relative link black"
       >
         <div>
-          <h2
-            className={`f3 fw7 mb3 tracked-tight ${isHovered && "underline"}`}
-          >
+          <h2 className={`f3 mb3 tracked-tight ${isHovered && "underline"}`}>
             {item.title}
           </h2>
-          <div className="f4 pt0 measure black-50 pb3">{item.subtitle}</div>
+          <div className="f4 pt0 measure black-40 pb3">{item.subtitle}</div>
         </div>
       </motion.a>
     )

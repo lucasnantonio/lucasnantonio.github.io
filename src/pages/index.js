@@ -26,7 +26,7 @@ function IndexPage({
           }}
           animate={{ opacity: 1, y: 0, marginTop: 200, marginBottom: 200 }}
           transition={{ duration: 0.55 }}
-          className="fw7 f2 lh-title tracked-tight measure-narrow"
+          className="fw4 f3 tracked-tight lh-copy"
         >
           Product designer at Twitter & <br></br> Behavioral design teacher at
           Aprender.

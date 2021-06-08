@@ -72,7 +72,7 @@ const Item = ({ item }) => {
       >
         <div className="mr5">
           <h2 className="mt0 lh-title flex flex-row-l flex-column-reverse items-center-l mb3">
-            <span className={`f3 fw7 tracked-tight ${hover && "underline"}`}>
+            <span className={`f3 tracked-tight ${hover && "underline"}`}>
               {item.title}{" "}
             </span>
             {item.best && (

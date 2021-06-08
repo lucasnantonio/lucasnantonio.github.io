@@ -19,7 +19,7 @@ const About = () => {
         }}
         animate={{ opacity: 1, y: 0, marginTop: 200, marginBottom: 200 }}
         transition={{ duration: 0.55 }}
-        className="fw7 f2 lh-title tracked-tight measure-narrow"
+        className="fw4 f3 tracked-tight lh-copy"
       >
         Product designer at Twitter & <br></br> Behavioral design teacher at
         Aprender.
@@ -32,10 +32,10 @@ const About = () => {
       >
         <p>I have been designing products and services since 2010.</p>
         <p>
-          I'm drawn to teams working on difficult issues, and can frequently be
-          found stepping outside the design role into product management,
-          research, code, writing, or whatever it takes to help teams learn and
-          the customer succeed.
+          I'm drawn to teams working on difficult and meaningful issues, and can
+          frequently be found stepping outside the design role into product
+          management, research, code, writing or whatever is necessary to bring
+          clarity to a problem.
         </p>
         <p>
           Currently, at Twitter, I'm helping build{" "}

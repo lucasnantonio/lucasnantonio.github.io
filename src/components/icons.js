@@ -3,47 +3,28 @@ import React from "react"
 export const ic_problem_2 = (color, backgroundColor) => {
   return (
     <svg
-      width="32"
-      height="32"
-      viewBox="0 0 24 24"
-      fill="none"
       xmlns="http://www.w3.org/2000/svg"
+      height="24px"
+      viewBox="0 0 24 24"
+      width="24px"
+      fill="#000000"
     >
-      <path
-        fillRule="evenodd"
-        clipRule="evenodd"
-        d="M0 12C0 5.38364 5.38364 0 12 0C18.6164 0 24 5.38364 24 12C24 18.6164 18.6164 24 12 24C5.38364 24 0 18.6164 0 12Z"
-        fill={backgroundColor}
-      />
-      <circle cx="12" cy="12" r="8" fill={color} />
-      <circle cx="12" cy="12" r="5" fill="white" />
-      <circle cx="12" cy="12" r="2" fill={color} />
+      <path d="M0 0h24v24H0V0z" fill="none" />
+      <path d="M11 15h2v2h-2zm0-8h2v6h-2zm.99-5C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z" />
     </svg>
   )
 }
 export const ic_solution_2 = (color, backgroundColor) => {
   return (
     <svg
-      width="32"
-      height="32"
-      viewBox="0 0 24 24"
-      fill="none"
       xmlns="http://www.w3.org/2000/svg"
+      height="24px"
+      viewBox="0 0 24 24"
+      width="24px"
+      fill="#000000"
     >
-      <path
-        fillRule="evenodd"
-        clipRule="evenodd"
-        d="M0 12C0 5.38364 5.38364 0 12 0C18.6164 0 24 5.38364 24 12C24 18.6164 18.6164 24 12 24C5.38364 24 0 18.6164 0 12Z"
-        fill={backgroundColor}
-      />
-      <circle cx="12" cy="12" r="8" fill={color} />
-      <path
-        d="M8.5 12L11 14.5L15.5 10"
-        stroke="white"
-        strokeWidth="2"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
+      <path d="M0 0h24v24H0V0zm0 0h24v24H0V0z" fill="none" />
+      <path d="M16.59 7.58L10 14.17l-3.59-3.58L5 12l5 5 8-8zM12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z" />
     </svg>
   )
 }
@@ -51,26 +32,14 @@ export const ic_solution_2 = (color, backgroundColor) => {
 export const ic_impact_2 = (color, backgroundColor) => {
   return (
     <svg
-      width="32"
-      height="32"
-      viewBox="0 0 24 24"
-      fill="none"
       xmlns="http://www.w3.org/2000/svg"
+      height="24px"
+      viewBox="0 0 24 24"
+      width="24px"
+      fill="#000000"
     >
-      <path
-        fillRule="evenodd"
-        clipRule="evenodd"
-        d="M0 12C0 5.38364 5.38364 0 12 0C18.6164 0 24 5.38364 24 12C24 18.6164 18.6164 24 12 24C5.38364 24 0 18.6164 0 12Z"
-        fill={backgroundColor}
-      />
-      <circle cx="12" cy="12" r="8" fill={color} />
-      <path
-        d="M12 15V9M12 9L9 12M12 9L15 12"
-        stroke="white"
-        strokeWidth="2"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
+      <path d="M0 0h24v24H0z" fill="none" />
+      <path d="M16 6l2.29 2.29-4.88 4.88-4-4L2 16.59 3.41 18l6-6 4 4 6.3-6.29L22 12V6z" />
     </svg>
   )
 }
@@ -78,27 +47,17 @@ export const ic_impact_2 = (color, backgroundColor) => {
 export const ic_role_2 = (color, backgroundColor) => {
   return (
     <svg
-      width="32"
-      height="32"
-      viewBox="0 0 24 24"
-      fill="none"
       xmlns="http://www.w3.org/2000/svg"
+      height="24px"
+      viewBox="0 0 24 24"
+      width="24px"
+      fill="#000000"
     >
+      <path d="M0 0h24v24H0z" fill="none" />
       <path
-        fillRule="evenodd"
-        clipRule="evenodd"
-        d="M0 12C0 5.38364 5.38364 0 12 0C18.6164 0 24 5.38364 24 12C24 18.6164 18.6164 24 12 24C5.38364 24 0 18.6164 0 12Z"
-        fill={backgroundColor}
+        d="M14 6V4h-4v2h4zM4 8v11h16V8H4zm16-2c1.11 0 2 .89 2 2v11c0 1.11-.89 2-2 2H4c-1.11 0-2-.89-2-2l.01-11c0-1.11.88-2 1.99-2h4V4c0-1.11.89-2 2-2h4c1.11 0 2 .89 2 2v2h4z"
+        fill-rule="evenodd"
       />
-      <path
-        fillRule="evenodd"
-        clipRule="evenodd"
-        d="M9.5 6C6.46243 6 4 8.46243 4 11.5C4 13.2079 4.7785 14.734 6 15.7428V18.6484C6 19.1126 6.57753 19.3262 6.87963 18.9738L8.63007 16.9316C8.91342 16.9766 9.20398 17 9.5 17H15.5C18.5376 17 21 14.5376 21 11.5C21 8.46243 18.5376 6 15.5 6H9.5Z"
-        fill={color}
-      />
-      <circle cx="8.5" cy="11.5" r="1.5" fill="white" />
-      <circle cx="12.5" cy="11.5" r="1.5" fill="white" />
-      <circle cx="16.5" cy="11.5" r="1.5" fill="white" />
     </svg>
   )
 }

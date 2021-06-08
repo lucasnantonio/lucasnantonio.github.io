@@ -24,16 +24,16 @@ function Header({ location }) {
     >
       <div
         style={{ maxWidth: minWidth }}
-        className=" flex justify-between items-center-l items-start center"
+        className="flex justify-between items-center-l items-start center fw4"
       >
         <div className="flex flex-row-l flex-column w-100 items-center-l">
-          <h1 className="f3 fw5 tracked-tight black-80 tl">
+          <h1 className="f3 tracked-tight tl fw4">
             <Link to="/" className={"link w-auto-l w-100 black"}>
               Lucas Neumann
             </Link>
           </h1>
 
-          <div className="ph3 flex-l dn">・</div>
+          <div className="ph3 flex-l dn fw4">・</div>
           <Tabs
             location={location}
             tabList={tabList}
