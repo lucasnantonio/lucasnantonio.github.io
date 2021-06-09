@@ -340,6 +340,15 @@ div + p {
   font-weight: 700;
   color: rgba(0, 0, 0, 0.8);
 }
+
+.post-content p {
+  float: right;
+}
+
+.post-content h1 {
+  margin-bottom: -3rem;
+}
+
 .post-content p + p > span {
   margin-top: 3rem;
 }

@@ -25,8 +25,8 @@ const Tag = ({ title, activeTag, setActiveTag }) => {
       }}
       onMouseEnter={() => setHover(true)}
       onMouseLeave={() => setHover(false)}
-      className={`nowrap pointer f4 ph3 pv2 br-pill mr2 mb4 bw1 fw5 
-      ${isActive ? "white bg-black" : "bg-transparent"}
+      className={`nowrap pointer f4 ph3 pv2 mr2 bw2 fw5 b--black 
+      ${isActive ? "bb black" : "bg-transparent"}
       ${isHovered ? "black-50" : "black-40"} `}
     >
       {title}
@@ -37,8 +37,8 @@ const Tag = ({ title, activeTag, setActiveTag }) => {
 const TagRow = ({ activeTag, setActiveTag }) => {
   return (
     <div
-      style={{ marginLeft: "-2rem", marginRight: "-2rem" }}
-      className="ph4 flex pv5 b--near-white overflow-scroll"
+      // style={{ marginLeft: "-2rem", marginRight: "-2rem" }}
+      className="flex pt5 b--near-white overflow-scroll bb bw1 mb4"
     >
       {tags.map(item => (
         <Tag

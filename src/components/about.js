@@ -34,7 +34,7 @@ const About = () => {
         <p>
           I'm drawn to teams working on difficult and meaningful issues, and can
           frequently be found stepping outside the design role into product
-          management, research, code, writing or whatever is necessary to bring
+          management, research, code, writing, or whatever is necessary to bring
           clarity to a problem.
         </p>
         <p>
@@ -47,7 +47,7 @@ const About = () => {
             Birdwatch
           </a>
           , a moonshot project that aims to tackle online misinformation through
-          descentralization and community.
+          decentralization.
         </p>
 
         <p>
