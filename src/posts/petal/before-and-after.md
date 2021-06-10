@@ -21,7 +21,9 @@ link: http://www.petalcard.com
 link_label: Petalcard.com
 ---
 
-This is a collection of tactical, small design wins, a sort of journal. During my time at Petal, I tried to document design experiments like these and their results. <br> Looking for a robust case study? [Try here.](/blog/nubank/nuconta)
+# Intro
+
+During my time at Petal, I tried to document design experiments like these and their results. This is a collection of tactical, small design wins, a sort of journal. Looking for a robust case study? [Try here.](/blog/nubank/nuconta)
 
 | <img src="../../images/petal/before-and-after/filters-before.gif">                                                           | <img src="../../images/petal/before-and-after/filters-after-3.gif">                                                                                          |
 | ---------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |

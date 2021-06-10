@@ -167,7 +167,7 @@ html {
   font-size: 14px;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
-  color: #666;
+  /* color: #666; */
 }
 .black {
   color: #424242;
@@ -265,12 +265,12 @@ div + p {
   margin-top: 4rem;
 }
 
-.post-content h1,
+/* .post-content h1,
 .post-content h2,
 .post-content h3,
 .post-content h4 {
   font-weight: 600;
-}
+} */
 
 .post-content em {
   background-color: #fff3b3;
@@ -303,7 +303,12 @@ div + p {
   width: 50%;
   padding-top: 1rem;
   vertical-align: top;
-  padding-right: 4rem;
+}
+
+@media screen and (min-width: 600px) {
+  .post-content table td {
+    padding-right: 4rem;
+  }
 }
 
 .post-content table td strong {
@@ -341,12 +346,19 @@ div + p {
   color: rgba(0, 0, 0, 0.8);
 }
 
-.post-content p {
-  float: right;
-}
-
-.post-content h1 {
-  margin-bottom: -3rem;
+@media screen and (min-width: 600px) {
+  .post-content p,
+  ol {
+    max-width: 50%;
+    margin-left: 50%;
+  }
+  .post-content h1 {
+    margin-bottom: -3rem;
+    margin-top: 3rem;
+  }
+  .learnings-header {
+    margin-bottom: -4rem;
+  }
 }
 
 .post-content p + p > span {
@@ -433,27 +445,28 @@ div + p {
 }
 ol {
   list-style: none;
-  padding-left: 4rem;
+  /* padding-left: 4rem; */
 }
 ol li {
   counter-increment: li;
   position: relative;
   margin-bottom: 2rem;
+  color: #444;
 }
 ol li:before {
   content: counter(li);
   position: absolute;
-  left: -4rem;
-  top: 0rem;
-  color: white;
-  font-size: 1rem;
+  left: -3rem;
+  top: 0.2rem;
+  color: rgb(68, 68, 68);
+  font-size: 0.85rem;
   font-weight: 600;
-  height: 0.7rem;
-  line-height: 0.75rem;
+  height: 1.5rem;
+  line-height: 1.5rem;
   text-align: center;
-  width: 0.7rem;
-  background-color: #222;
-  padding: 0.75rem;
+  width: 1.5rem;
+  border: 2px solid #666;
+  /* padding: 0.6rem; */
   border-radius: 100%;
 }
 

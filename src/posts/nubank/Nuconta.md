@@ -2,7 +2,7 @@
 path: "/blog/nubank/nuconta"
 date: "2017-09-04"
 title: Nubank Savings
-subtitle: An account to fight complexity and empower 20M+ people.
+subtitle: An account to fight complexity and empower 40M+ people.
 category: "Nubank"
 problem: Brazilians are stuck with terrible banking account options.
 solution: A free, integrated, hybrid checking and savings account.
@@ -35,6 +35,8 @@ learnings:
   - A few heavy user customers are very vocal about their need for financial analysis and charts. But most customers don't really care for or seem to need them. 📊🤷‍♂️
 ---
 
+# Introduction
+
 NuConta is an unprecedented mix of current, savings, and payments accounts, all-in-one. Thanks to a one-year-long co-creative process, our team was able to design and ship a product that uniquely addresses customer needs, becoming [the most downloaded neo-banking app in the world](https://qz.com/1738245/nubanks-app-has-more-downloads-than-revolut-monzo-and-n26-combined/).
 
 ![](../../images/nubank/nuconta-000.png)
@@ -47,7 +49,7 @@ NuConta is an unprecedented mix of current, savings, and payments accounts, all-
 ![](../../images/nubank/nuconta-0009.png)
 ![](../../images/nubank/nuconta-0019.png)
 
-## Problem discovery
+# Problem discovery
 
 We were committed to challenging our most basic assumptions about how people understand and use banking services, so our initial conversations were purposefully broad and naive. We started with a simple list of questions, but we frequently adjusted along the way.
 
@@ -55,7 +57,7 @@ We ran in-depth interviews with people from different ages and backgrounds in th
 
 ![Listening, listening, listening. All we did at the discovery phase.](../../images/nubank/nuconta-research.png)
 
-## Problem definition
+# Problem definition
 
 By combining the data from these interviews with others conducted in our lab, and also talking to a lot of our employees about their finances, we were able to come up with eight personas that represent a gradient of behavior and demographic patterns.
 
@@ -67,7 +69,7 @@ With well-defined personas, we now had a lens through which we could look at the
 
 We learned from this process that defining a problem is sometimes harder than sitting down to solve it. After dozens of long work days, heated meetings, lots of head-scratching, word-smithing, and sense-making about the material collected during research, the team was finally committed to a unified vision of the product that reflected our customer’s pains and needs instead of our own. We were now ready to deep dive into exploring solutions that would eventually become NuConta.
 
-## Generating solutions
+# Generating solutions
 
 The first thing we do at Nubank once we have a sound problem definition is what we call a co-design session, which helps us come up with more ideas, better questions, surface constraints and strong stakeholder opinions.
 
@@ -79,7 +81,7 @@ Only after extensive discussion and brainstorming, we felt ready to start wirefr
 
 ![So many explorations!](../../images/nubank/nuconta-024.png)
 
-### Prototyping
+# Prototyping
 
 We made every kind of prototype you could imagine when exploring solutions for NuConta. We made cheap paper prototypes to test copywriting and general information architecture. We made quick Keynote animations to show engineers the vision for a specific interaction. We built screens and flows on Principle to test signup flows and empty states. Some prototypes even had fake branding and visuals so we could go outside the building and show it around in stealth mode.
 
@@ -89,17 +91,13 @@ Starting with simpler, lower fidelity prototypes allowed us to trim the rough ed
 
 <!-- ![](../../images/nubank/nuconta-027.gif) -->
 
-## Delivering the MVP
-
-#### Designing for transparency, with transparency
-
 ![To increase transparency and collaboration, we fully transitioned to Figma during Nuconta's development](../../images/nubank/nuconta-028.png)
 
 One key component of the speed and quality of our workflow in this project was to use Figma in the early stages of the UI design process, because of the high level of collaboration and transparency it allows. Just like our live streamed user tests, Figma makes it frictionless for stakeholders to watch, participate, and gain empathy for the design process in real time.
 
-#### Mapping the whole experience
-
 ![Mapping the launch experience across Website, App, Social Media, Support, and Emails ](../../images/nubank/nuconta-029.png)
+
+# Mapping the whole experience
 
 Producing a well-crafted individual screen is satisfying, but we can never forget that every touchpoint is part of a broader ecosystem. Below is an example of how we kept track of every App screen, push notification, email, website page, and social media posts that first-time users would encounter.
 

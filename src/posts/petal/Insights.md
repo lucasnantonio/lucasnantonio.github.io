@@ -24,14 +24,16 @@ learnings:
   - We didn't need advanced algorithms to deliver value to 80% of users. Most of their transactions tend to be with the same merchants and can be categorized with simple rules. Getting the other 20% right is another story, but not needed for an MVP like ours.
 ---
 
-> How might we help new-to-credit customers understand and control their spend so they're more comfortable and responsible using the Petal card?
+# Introduction
 
-## Customer outcomes
+How might we help new-to-credit customers understand and control their spend so they're more comfortable and responsible using the Petal card?
+
+# Customer outcomes
 
 1. Understand if my spend is trending up or down compared to the past
 2. Understand where are my biggest opportunities to cut back
 
-## Design questions
+# Design questions
 
 1. Which visual representations are best suited for each outcome?
 2. How should we break down spend? By categories, by merchants, by place?
@@ -43,7 +45,7 @@ learnings:
 ![](../../images/petal/category-spend.png)
 ![](../../images/petal/insights-nav.png)
 
-## Releasing V1 as a way to learn
+# Releasing V1 as a way to learn
 
 Since this was a hackathon, in 2 days we were ready to ship a version that displayed total spend, categories and merchant spend, and recurring subscriptions. We were eager to put it out to some users and hear their feedback.
 
@@ -58,7 +60,7 @@ Since this was a hackathon, in 2 days we were ready to ship a version that displ
   </video>
 </div>
 
-## Learnings from user feedback
+# Learnings from user feedback
 
 Using our [contextual feedback widget](/blog/petal-feedback), we quickly learned that [1] customers loved the new page and [2] they were eager to see more and have more controls. A few highlights:
 

@@ -27,7 +27,7 @@ function ImageWithBackground({ image, color, hover, id, tall, xtall }) {
       <AnimatePresence>
         {isHovered && hover && (
           <motion.div
-            transition={{ ease: "easeOut", duration: 0.55 }}
+            transition={{ ease: "easeOut", duration: 0.25 }}
             initial={{ opacity: 0, top: "100%", scale: 1 }}
             animate={{ opacity: 1, top: "100%", scale: 2 }}
             exit={{ opacity: 0, top: "100%", scale: 1 }}

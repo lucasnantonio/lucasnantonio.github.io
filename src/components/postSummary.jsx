@@ -19,12 +19,13 @@ const SummaryItem = ({
 }) => {
   return (
     <div
-      style={{ marginBottom: "-2px" }}
-      className={`bb b--near-white w-100 mb0-ns mb4 measure pt4 pr4 pb4 flex flex-column items-start`}
+      className={`bb b--near-white w-25-l mb0-ns mb4 measure pt4 pr4 pb4 flex flex-column items-start`}
     >
-      {icon}
-      <span className="ttu mt4 fw7 f6 black">{title}</span>
-      <p className="lh-copy f4 black">{text}</p>
+      <div className="flex items-center">
+        {icon}
+        <span className="f4 black fw6">{title}</span>
+      </div>
+      <p className="lh-copy f4 black mt3">{text}</p>
     </div>
   )
 }
