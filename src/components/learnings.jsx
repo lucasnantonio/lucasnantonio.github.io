@@ -3,7 +3,10 @@ import { minWidth } from "../components/utils"
 import publication from "../images/icons/Publication.svg"
 export default function Learnings({ list }) {
   return (
-    <div style={{ maxWidth: minWidth }} className="br3 center mt4">
+    <div
+      style={{ maxWidth: minWidth }}
+      className="br3 center mt4 bt b--near-white pv4"
+    >
       <div className="flex items-center learnings-header">
         <img
           className={"mr3"}

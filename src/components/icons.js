@@ -7,7 +7,7 @@ export const ic_problem_2 = (color, backgroundColor) => {
       height="24px"
       viewBox="0 0 24 24"
       width="24px"
-      fill={color}
+      fill="#444"
     >
       <path d="M0 0h24v24H0V0z" fill="none" />
       <path d="M11 15h2v2h-2zm0-8h2v6h-2zm.99-5C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z" />
@@ -21,7 +21,7 @@ export const ic_solution_2 = (color, backgroundColor) => {
       height="24px"
       viewBox="0 0 24 24"
       width="24px"
-      fill={color}
+      fill="#444"
     >
       <path d="M0 0h24v24H0z" fill="none" />
       <path d="M19 9l1.25-2.75L23 5l-2.75-1.25L19 1l-1.25 2.75L15 5l2.75 1.25L19 9zm-7.5.5L9 4 6.5 9.5 1 12l5.5 2.5L9 20l2.5-5.5L17 12l-5.5-2.5zM19 15l-1.25 2.75L15 19l2.75 1.25L19 23l1.25-2.75L23 19l-2.75-1.25L19 15z" />
@@ -36,7 +36,7 @@ export const ic_impact_2 = (color, backgroundColor) => {
       height="24px"
       viewBox="0 0 24 24"
       width="24px"
-      fill={color}
+      fill="#444"
     >
       <path d="M0 0h24v24H0z" fill="none" />
       <path d="M16 6l2.29 2.29-4.88 4.88-4-4L2 16.59 3.41 18l6-6 4 4 6.3-6.29L22 12V6z" />
@@ -51,7 +51,7 @@ export const ic_role_2 = (color, backgroundColor) => {
       height="24px"
       viewBox="0 0 24 24"
       width="24px"
-      fill={color}
+      fill="#444"
     >
       <path d="M0 0h24v24H0z" fill="none" />
       <path

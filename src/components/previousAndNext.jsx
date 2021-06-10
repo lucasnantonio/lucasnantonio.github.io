@@ -1,6 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 import { minWidth } from "../components/utils"
+import ImageWithBackground from "../components/imageWithBackground"
 
 function Image({ src, cover, color }) {
   return (
@@ -40,10 +41,12 @@ export default function PreviousAndNext({ next, prev }) {
             "br-l bw1 b--near-white"}`}
         >
           <Link className="link" to={prev.frontmatter.path}>
-            <Image
-              color={prev.frontmatter.color}
-              src={prev.frontmatter.cover_image.publicURL}
-              cover={prev.frontmatter.cover}
+            <ImageWithBackground
+              fixed
+              cover
+              id={prev.frontmatter.title}
+              hover={false}
+              image={prev.frontmatter.cover_image.publicURL}
               color={prev.frontmatter.color}
             />
             <div className="pa4">
@@ -60,10 +63,18 @@ export default function PreviousAndNext({ next, prev }) {
       {next && next.frontmatter && (
         <div className="w-100">
           <Link className="link" to={next.frontmatter.path}>
-            <Image
+            {/* <Image
               color={next.frontmatter.color}
               src={next.frontmatter.cover_image.publicURL}
               cover={next.frontmatter.cover}
+            /> */}
+            <ImageWithBackground
+              fixed
+              cover
+              id={next.frontmatter.title}
+              hover={false}
+              image={next.frontmatter.cover_image.publicURL}
+              color={next.frontmatter.color}
             />
             <div className="pa4">
               <div className="black-40 lh-title f5 mb3">Next →</div>

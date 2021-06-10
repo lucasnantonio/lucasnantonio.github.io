@@ -7,7 +7,7 @@ const About = () => {
     <motion.div
       key="about"
       style={{ maxWidth: minWidth }}
-      className="center ph0-l ph4"
+      className="center ph0-l"
     >
       <motion.h1
         layoutId="site-title"
@@ -46,7 +46,7 @@ const About = () => {
           >
             Birdwatch
           </a>
-          , a moonshot project that aims to tackle online misinformation through
+          , an experiment that aims to tackle online misinformation through
           decentralization.
         </p>
 

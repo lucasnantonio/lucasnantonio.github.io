@@ -25,7 +25,7 @@ const SummaryItem = ({
         {icon}
         <span className="f4 black fw6">{title}</span>
       </div>
-      <p className="lh-copy f4 black mt3">{text}</p>
+      <p className="lh-copy f4 black-50 mt3">{text}</p>
     </div>
   )
 }

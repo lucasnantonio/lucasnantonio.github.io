@@ -24,18 +24,15 @@ export default function Template({
   }
 
   const title = (
-    <motion.div className="flex flex-colum justify-between items-start w-100">
-      <div className="w-50">
-        <p className={`f3 measure-narrow mt3 mb2 tracked-tight`}>
-          {frontmatter.title}{" "}
-        </p>
-        <p className={"f3 tracked-tight black-40 lh-copy pv0 mb0 mt0"}>
-          {frontmatter.subtitle}
-        </p>
-      </div>
-      <div className="w-25">
+    <motion.div className="flex flex-row-l flex-column justify-between items-start w-100 mt4">
+      <div className="w-50-l">
+        <p className={`f3 measure-narrow mt1 mb2`}>{frontmatter.title} </p>
         <PostMetadata frontmatter={frontmatter}></PostMetadata>
       </div>
+
+      <p className={"w-50-l f3 black-50 lh-copy pv0 mb0-l mb4 mt0"}>
+        {frontmatter.subtitle}
+      </p>
     </motion.div>
   )
 
@@ -66,11 +63,11 @@ export default function Template({
         initial={{ opacity: 0, display: "none" }}
         animate={{ opacity: 1, display: "block" }}
         exit={{ opacity: 0, display: "none" }}
-        transition={{ duration: 0.55, delay: 0.25 }}
+        transition={{ duration: 1, delay: 0.25 }}
       >
         <div
           style={{ maxWidth: minWidth }}
-          className="pv5 flex w-100 justify-between flex-row center bb b--near-white"
+          className="pt5 flex w-100 justify-between flex-row center bb b--near-white"
         >
           <AnimateSharedLayout>{title}</AnimateSharedLayout>
         </div>

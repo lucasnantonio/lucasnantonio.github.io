@@ -211,6 +211,10 @@ h5 {
   letter-spacing: -0.013rem;
 }
 
+.post-content p {
+  color: rgba(0, 0, 0, 0.5);
+}
+
 .post-content ul {
   padding-left: 1.5rem;
 }
@@ -303,6 +307,7 @@ div + p {
   width: 50%;
   padding-top: 1rem;
   vertical-align: top;
+  color: rgba(0, 0, 0, 0.5);
 }
 
 @media screen and (min-width: 600px) {
@@ -451,21 +456,21 @@ ol li {
   counter-increment: li;
   position: relative;
   margin-bottom: 2rem;
-  color: #444;
+  color: rgba(0, 0, 0, 0.5);
 }
 ol li:before {
   content: counter(li);
   position: absolute;
   left: -3rem;
   top: 0.2rem;
-  color: rgb(68, 68, 68);
+  color: rgba(0, 0, 0, 0.5);
   font-size: 0.85rem;
   font-weight: 600;
   height: 1.5rem;
   line-height: 1.5rem;
   text-align: center;
   width: 1.5rem;
-  border: 2px solid #666;
+  border: 2px solid rgba(0, 0, 0, 0.5);
   /* padding: 0.6rem; */
   border-radius: 100%;
 }
