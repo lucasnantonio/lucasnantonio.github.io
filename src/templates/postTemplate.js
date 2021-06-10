@@ -23,14 +23,6 @@ export default function Template({
   }
 
   const title = (
-    // <motion.div className="flex flex-column pv5-l pv5">
-    //   <h1 className="f3 black mt0 mb1 pb0 w-100 tracked-tight lh-copy ">
-    //     {frontmatter.title}
-    //   </h1>
-    //   <div className="f3 flex flex-row-l flex-column items-start lh-title mt0 pt0 mb1 black-40 tracked-tight ">
-    //     {frontmatter.subtitle}
-    //   </div>
-    // </motion.div>
     <motion.div className="w-100">
       <div className="flex justify-between items-center">
         <p className={`f3 measure-narrow mt3 mb2 tracked-tight`}>

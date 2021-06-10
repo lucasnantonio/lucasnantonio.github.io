@@ -20,6 +20,7 @@ when: 2017-2018
 color: "pink"
 link: "http://www.goldenart.com.br"
 link_label: Goldenart.com
+impact: A flexible website that the client can update using Airtable
 ---
 
 This project is a very simple catalog, but I'm proud of it because it's the first full-stack website I've built and shipped while learning to code. It uses Airtable as the CMS, where the client can update the products' information and actually became the source of truth for the company's inventory. It was a steep learning curve and got me a decent understanding of Javascript, Node, and Express.
@@ -30,13 +31,11 @@ This project is a very simple catalog, but I'm proud of it because it's the firs
   </video>
 </div>
 
-
 <div class="w-100 bg-washed-red pa6-l pa4 tc mb4">
   <video class="w-100 mw7 br2" autoplay loop muted>
   <source src="../../images/golden-art/golden-art-scroll.mp4" type="video/mp4">
   </video>
 </div>
-
 
 <div class="w-100 bg-washed-red pa6-l pa4 tc">
   <video class="w-100 mw7 br2" autoplay loop muted>
@@ -52,9 +51,7 @@ One of the customer's biggest problems was picking a color finish from the catal
   </video>
 </div>
 
-
-
-## Problems with the old version
+# Problems with the old version
 
 The client and I walked through the old website together and listed the main issues that needed a fix. Visually, they felt like the website was too dark, and that functionally it was clunky, had many bugs, and was hard to maintain and update. The product pages opened in a lightbox, which made it difficult for users to save and share specific pages. Also, the website was not responsive, which increased a high mobile bounce rate.
 
@@ -66,7 +63,7 @@ The client and I walked through the old website together and listed the main iss
 4. The bottom menu was fixed, which occupied too much real estate.
 5. The client had little control over the order in which the products were displayed.
 
-## CMS architecture and backend
+# CMS architecture and backend
 
 GoldenArt has over 500 products in their catalog. The old Wordpress website was painful because it required the company to keep the CMS up-to-date with their in-house catalog system, which was an Excel spreadsheet. In researching solutions to this problem, I found Airtable, and the client and I fell in love with it.
 
@@ -79,7 +76,7 @@ GoldenArt has over 500 products in their catalog. The old Wordpress website was 
 
 It is a very friendly platform, and it became the internal source of truth for all the information about the product lines, which gets shared with their partners and clients. As they change the info on Airtable, the website is updated in real-time.
 
-## Results
+# Results
 
 The new website has a much more coherent structure, with products divided by line and type. This makes it easier for a user, such as an architect, to find the kind of product they're looking for. It's easier for the client to add and change details about each product, attach technical drawings and 3D files, and now each product has a dedicated shareable page.
 

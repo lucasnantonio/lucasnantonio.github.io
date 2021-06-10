@@ -8,9 +8,6 @@ topics:
   - design
   - Research
 published: true
-role:
-  - design
-  - user testing
 cover_image: "../../images/kano/kano-sem-fundo.png"
 color: "#ff9942"
 cover: true
@@ -18,6 +15,10 @@ team:
   - Tommy Sahl
 link: http://kano.me
 link_label: Kano.me
+problem: Shipping the first version of a computer that teaches kids to code
+solution: Rounds of research, user experience mapping, and last-minute fixes
+myrole: Intern
+impact: Successful delivery of one of UK's biggest Kickstarter projects
 ---
 
 In the summer of 2014, I got my first job with digital products at Kano Computer, a record-breaking Kickstarter.com startup, as their incredible teams sprinted to ship the first version of Kano.
