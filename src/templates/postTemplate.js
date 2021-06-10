@@ -6,6 +6,7 @@ import Layout from "../components/layout"
 import Learnings from "../components/learnings"
 import PostSummary from "../components/postSummary"
 import PreviousAndNext from "../components/previousAndNext"
+import PostMetadata from "../components/postMetadata"
 import { minWidth } from "../components/utils"
 
 export default function Template({
@@ -23,15 +24,18 @@ export default function Template({
   }
 
   const title = (
-    <motion.div className="w-100">
-      <div className="flex justify-between items-center">
+    <motion.div className="flex flex-colum justify-between items-start w-100">
+      <div className="w-50">
         <p className={`f3 measure-narrow mt3 mb2 tracked-tight`}>
           {frontmatter.title}{" "}
         </p>
+        <p className={"f3 tracked-tight black-40 lh-copy pv0 mb0 mt0"}>
+          {frontmatter.subtitle}
+        </p>
       </div>
-      <p className={"f3 tracked-tight black-40 lh-copy pv0 mb0 mt0 w-100"}>
-        {frontmatter.subtitle}
-      </p>
+      <div className="w-25">
+        <PostMetadata frontmatter={frontmatter}></PostMetadata>
+      </div>
     </motion.div>
   )
 
@@ -66,7 +70,7 @@ export default function Template({
       >
         <div
           style={{ maxWidth: minWidth }}
-          className="pv5 flex w-100 justify-between flex-row-l flex-column center bb b--near-white"
+          className="pv5 flex w-100 justify-between flex-row center bb b--near-white"
         >
           <AnimateSharedLayout>{title}</AnimateSharedLayout>
         </div>
