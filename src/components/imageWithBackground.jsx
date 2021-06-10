@@ -12,7 +12,7 @@ function ImageWithBackground({ fixed, image, color, hover, id, tall, xtall }) {
       onMouseEnter={() => setHover(true)}
       onMouseLeave={() => setHover(false)}
       className={`flex center w-100 overflow-hidden relative br2  ${tall &&
-        "pt6"}`}
+        "pt7"}`}
       style={{
         backgroundColor: color,
         overflow: "hidden",
@@ -20,9 +20,15 @@ function ImageWithBackground({ fixed, image, color, hover, id, tall, xtall }) {
     >
       <motion.img
         layoutId={`title+${id}+img`}
-        className="center"
+        className="center h-100"
         style={{
-          height: xtall ? "50rem" : tall ? "42rem" : fixed ? "20rem" : "32rem",
+          maxHeight: xtall
+            ? "50rem"
+            : tall
+            ? "42rem"
+            : fixed
+            ? "20rem"
+            : "32rem",
           zIndex: 1,
         }}
         src={image.src || image}

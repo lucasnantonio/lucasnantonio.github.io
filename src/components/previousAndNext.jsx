@@ -42,10 +42,10 @@ export default function PreviousAndNext({ next, prev }) {
         >
           <Link className="link" to={prev.frontmatter.path}>
             <ImageWithBackground
+              hover={true}
               fixed
               cover
               id={prev.frontmatter.title}
-              hover={false}
               image={prev.frontmatter.cover_image.publicURL}
               color={prev.frontmatter.color}
             />
@@ -72,7 +72,6 @@ export default function PreviousAndNext({ next, prev }) {
               fixed
               cover
               id={next.frontmatter.title}
-              hover={false}
               image={next.frontmatter.cover_image.publicURL}
               color={next.frontmatter.color}
             />

@@ -19,13 +19,13 @@ const SummaryItem = ({
 }) => {
   return (
     <div
-      className={`bb b--near-white w-25-l mb0-ns mb4 measure pt4 pr4 pb4 flex flex-column items-start`}
+      className={`bb b--near-white w-25-l mb0-ns measure pr4 flex flex-column items-start pv5`}
     >
       <div className="flex items-center">
-        {icon}
-        <span className="f4 black fw6">{title}</span>
+        <div style={{ width: "1.9rem" }}>{icon}</div>
+        <span className="f3 black">{title}</span>
       </div>
-      <p className="lh-copy f4 black-50 mt3">{text}</p>
+      <p className="lh-copy f4 black-50 mt4">{text}</p>
     </div>
   )
 }
@@ -37,7 +37,7 @@ const PostSummary = ({ frontmatter }) => {
       frontmatter.myrole) && (
       <div
         style={{ maxWidth: minWidth }}
-        className="pt4 center flex flex-row-ns flex-column br3"
+        className="center flex flex-row-ns flex-column br3"
       >
         {frontmatter.problem && (
           <SummaryItem
