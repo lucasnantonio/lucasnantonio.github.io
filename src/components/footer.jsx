@@ -11,20 +11,20 @@ const Footer = () => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 0.25 }}
-        className="pv5 f4 w-100 ph0-l ph4"
+        className="pv5 f3 w-100 ph0-l ph4"
       >
         <div
-          className="pt4 flex flex-row-l flex-column justify-between center items-start bg-near-white pa4 br3"
+          className="flex flex-row-l flex-column justify-between center items-start bg-near-white pa5 br3"
           style={{ maxWidth: minWidth }}
         >
           <div className=" flex flex-column mb0-l mb4">
-            <p className="mt0 black-80 fw6">Get in touch</p>
-            <div className="flex flex-row-l flex-column fw5">
+            <p className="mt0 black-80">Get in touch</p>
+            <div className="flex flex-row-l flex-column">
               <a
                 className="link black-40 hover-black-80 underline-hover mr3"
                 href="mailto:lucasneumann.fau@gmail.com"
               >
-                Email me
+                Email
               </a>
               <a
                 target="_blank"

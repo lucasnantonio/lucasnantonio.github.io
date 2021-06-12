@@ -323,43 +323,22 @@ div + p {
   font-weight: 600;
 }
 
-.post-content blockquote {
-  /* padding: 2.5rem; */
-  margin: 4rem 0rem;
-  /* quotes: none; */
-  /* border: 2px solid #eee;
-  border-radius: 16px; */
-}
-.post-content blockquote p::before {
-  position: absolute;
-  content: "“";
-  transform: translate3d(-100%, 0, 0);
-}
-.post-content blockquote p::after {
-  /* padding: 2.5rem; */
-  content: "”";
-  box-sizing: inherit;
-  /* border: 2px solid #eee;
-  border-radius: 16px; */
-}
-.post-content blockquote p {
-  font-size: 2rem;
-  line-height: 1.4em;
-  margin: 0px !important;
-  margin-right: 0px;
-  font-weight: 700;
-  color: rgba(0, 0, 0, 0.8);
-}
-
 @media screen and (min-width: 600px) {
   .post-content p,
-  ol {
+  ol,
+  blockquote {
     max-width: 50%;
     margin-left: 50%;
+  }
+  blockquote p {
+    margin-left: 0px !important;
+    max-width: 100% !important;
+    color: #444 !important;
   }
   .post-content h1 {
     margin-bottom: -3rem;
     margin-top: 3rem;
+    max-width: 50%;
   }
   .learnings-header {
     margin-bottom: -4rem;

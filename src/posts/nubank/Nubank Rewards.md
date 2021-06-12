@@ -18,6 +18,7 @@ image_cover_size: true
 published: true
 learn_more:
 where: São Paulo
+myrole: Research and user experience design.
 when: Dec 2016
 team:
   - Guilherme Neumann

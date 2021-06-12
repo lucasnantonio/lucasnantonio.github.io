@@ -54,7 +54,7 @@ const About = () => {
           I also teach a class about Behavioral Design at{" "}
           <a
             className="underline link black-50"
-            href="https://aprender.design"
+            href="https://www.aprender.design"
             target="_blank"
           >
             Aprender

@@ -48,10 +48,10 @@ Last, there's the problem of categorizing and quantifying. User-submitted messag
 
 Observing the challenges above, our requirements for our feedback tool were:
 
-1. **Measurable** We want to output a number that tells us if feature A causes more dissatisfaction than feature B.
-2. **Specific and actionable** We want the ability to learn about specific moments in the user's journey, specific pages in the app, and features we launch.
-3. **Contextual** We want people to give feedback _in the moment_ they're interacting with something, not recalling it days or weeks after.
-4. **Passive** We don't want feedback prompts to interrupt the action someone is trying to perform.
+1. Measurable: We want to output a number that tells us if feature A causes more dissatisfaction than feature B.
+2. Specific and actionable: We want the ability to learn about specific moments in the user's journey, specific pages in the app, and features we launch.
+3. Contextual: We want people to give feedback _in the moment_ they're interacting with something, not recalling it days or weeks after.
+4. Passive: We don't want feedback prompts to interrupt the action someone is trying to perform.
 
 # The design
 

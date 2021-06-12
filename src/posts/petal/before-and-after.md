@@ -55,10 +55,10 @@ During my time at Petal, I tried to document design experiments like these and t
 | **Before**                                                                    | **After ✓**                                              |
 | Quite a few of Petal's initial designs didn't meet color contrast guidelines. | It's a daily battle towards better legibility!           |
 
-| ![](../../images/petal/before-and-after/light-fonts-before.png)               | ![](../../images/petal/before-and-after/light-fonts-after.png)                                                                       |
-| ----------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
-| **Before**                                                                    | **After ✓**                                                                                                                          |
-| Thin, light-gray fonts were great to get Petal hyped for its "designer look". | We banned light fonts and low-contrast text even from legal disclaimers. Going from light to regular goes a long way for legibility. |
+| ![](../../images/petal/before-and-after/light-fonts-before.png)                                              | ![](../../images/petal/before-and-after/light-fonts-after.png)                                                                              |
+| ------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Before**                                                                                                   | **After ✓**                                                                                                                                 |
+| Initially, thin, light-gray fonts were "in fashion" and useful to get Petal "hyped" for its "designer look". | We replaced low-contrast text even from legal disclaimers. Switching from light to regular font weight also goes a long way for legibility. |
 
 | ![](../../images/petal/before-and-after/navigation-before-2.png)                                                                    | ![](../../images/petal/before-and-after/navigation-after-2.png)                                                           |
 | ----------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |

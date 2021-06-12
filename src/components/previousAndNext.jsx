@@ -71,6 +71,7 @@ export default function PreviousAndNext({ next, prev }) {
             <ImageWithBackground
               fixed
               cover
+              hover
               id={next.frontmatter.title}
               image={next.frontmatter.cover_image.publicURL}
               color={next.frontmatter.color}

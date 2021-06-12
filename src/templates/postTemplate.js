@@ -40,7 +40,7 @@ export default function Template({
     <ImageWithBackground
       tall
       id={frontmatter.title}
-      hover={false}
+      hover
       image={frontmatter.cover_image.childImageSharp.fluid}
       color={frontmatter.color}
     />

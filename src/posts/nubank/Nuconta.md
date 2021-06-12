@@ -6,8 +6,8 @@ subtitle: An account to fight complexity and empower 40M+ people.
 category: "Nubank"
 problem: Brazilians are stuck with terrible banking account options.
 solution: A free, integrated, hybrid checking and savings account.
-impact: 10+ Million customers in the 1st year of launch.
-myrole: Lead designer for the team, which grew from 2 to 6 people.
+impact: 40+ Million customers, largest digital bank in the world.
+myrole: I co-led the design with Erick M. from zero to one, and later became the team's manager
 topics:
   - Product Design
   - Research
@@ -101,7 +101,7 @@ One key component of the speed and quality of our workflow in this project was t
 
 Producing a well-crafted individual screen is satisfying, but we can never forget that every touchpoint is part of a broader ecosystem. Below is an example of how we kept track of every App screen, push notification, email, website page, and social media posts that first-time users would encounter.
 
-> Nuconta makes Nubank the [most downloaded banking app in the world](https://qz.com/1738245/nubanks-app-has-more-downloads-than-revolut-monzo-and-n26-combined/). — Quartz
+> Nuconta makes Nubank the [largest digital bank in the world](https://qz.com/1738245/nubanks-app-has-more-downloads-than-revolut-monzo-and-n26-combined/). — Quartz
 
 ![Nubank tops the downloads of all others challenger banks combined. ](../../images/nubank/nuconta-downloads.png)
 
