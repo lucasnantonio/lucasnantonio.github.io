@@ -21,35 +21,35 @@ const Footer = () => {
             <p className="mt0 black-80">Get in touch</p>
             <div className="flex flex-row-l flex-column">
               <a
-                className="link black-40 hover-black-80 underline-hover mr3"
+                className="link black-40 hover-black-80 underline-hover mr3 mb0-l mb3"
                 href="mailto:lucasneumann.fau@gmail.com"
               >
                 Email
               </a>
               <a
                 target="_blank"
-                className="link black-40 hover-black-80 underline-hover mr3"
+                className="link black-40 hover-black-80 underline-hover mr3 mb0-l mb3"
                 href="https://www.linkedin.com/in/lucasneumann/"
               >
                 LinkedIn
               </a>
               <a
                 target="_blank"
-                className="link black-40 hover-black-80 underline-hover mr3"
+                className="link black-40 hover-black-80 underline-hover mr3 mb0-l mb3"
                 href="https://medium.com/@lucasnantonio"
               >
                 Medium
               </a>
               <a
                 target="_blank"
-                className="link black-40 hover-black-80 underline-hover mr3"
+                className="link black-40 hover-black-80 underline-hover mr3 mb0-l mb3"
                 href="https://twitter.com/@lucasnantonio"
               >
                 Twitter
               </a>
               <a
                 target="_blank"
-                className="link black-40 hover-black-80 underline-hover mr3"
+                className="link black-40 hover-black-80 underline-hover mr3 mb0-l mb3"
                 href="https://github.com/lucasnantonio"
               >
                 Github

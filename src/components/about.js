@@ -83,8 +83,15 @@ const About = () => {
           .
         </p>
         <p>
-          I have helped design online platforms for activism at Nossas; patented
-          a{" "}
+          I have helped design online platforms for activism at{" "}
+          <a
+            className="underline link black-50"
+            href="https://nossas.org/"
+            target="_blank"
+          >
+            Nossas
+          </a>
+          ; patented a{" "}
           <a
             className="underline link black-50"
             href="https://patents.justia.com/patent/9809239"
