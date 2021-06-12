@@ -17,23 +17,25 @@ cover_image: "../../images/petal/petal-feedback-2.png"
 color: "#8DE1FD"
 soon: false
 team:
-- Dasmer Singh
-- Nicolas Moschopoulos
+  - Dasmer Singh
+  - Nicolas Moschopoulos
 link: http://www.petalcard.com
 link_label: Petalcard.com
 learnings:
-- The shorter the distance between a user's pain and giving feedback, the more accurate and actionable it will be.
-- Your product is as good as your feedback loops.
-- The impact of design improvements is measurable and can lead to business and leadership action. 
+  - The shorter the distance between a user's pain and giving feedback, the more accurate and actionable it will be.
+  - Your product is as good as your feedback loops.
+  - The impact of design improvements is measurable and can lead to business and leadership action.
 ---
 
-Receiving suggestions, feature requests, complaints, and bug reports from users, like any other type of customer-focused evidence, is essential fuel for high-performing technology teams. 
+# Intro
+
+Receiving suggestions, feature requests, complaints, and bug reports from users, like any other type of customer-focused evidence, is essential fuel for high-performing technology teams.
 
 NPS and satisfaction surveys, App Store Reviews, and customer support logs are all important sources of evidence for product decisions, but tend to be too generic, noisy, hard to categorize and measure, making it difficult for teams to focus on the right things and objectively measure the impact of product changes.
 
 How can we optimize the feedback channels so that we get measurable, contextual, precise, actionable information?
 
-<!-- 
+<!--
 
 The first problem is overloading the customer support team with product feedback and feature requests. At Petal, we work very closely with our Operations team to understand the input they get by interacting with users, but we like to think that their time and expertise is much better spent helping people in need than categorizing desired features.
 
@@ -42,16 +44,16 @@ While important for other purposes, they both suffer from the same gap: feedback
 
 Last, there's the problem of categorizing and quantifying. User-submitted messages that come via support, App Stores, or NPS are hard to group, parse, and measure. When reading feedback messages come in, it's easy to overreact to a sequence about a topic that is hot today, while ignoring another that has been coming consistently twice a day, for months. -->
 
-## Requirements
+# Requirements
 
 Observing the challenges above, our requirements for our feedback tool were:
 
-1. __Measurable__ We want to output a number that tells us if feature A causes more dissatisfaction than feature B.
-2. __Specific and actionable__ We want the ability to learn about specific moments in the user's journey, specific pages in the app, and features we launch.
-3. __Contextual__ We want people to give feedback _in the moment_ they're interacting with something, not recalling it days or weeks after.
-4. __Passive__ We don't want feedback prompts to interrupt the action someone is trying to perform.
+1. Measurable: We want to output a number that tells us if feature A causes more dissatisfaction than feature B.
+2. Specific and actionable: We want the ability to learn about specific moments in the user's journey, specific pages in the app, and features we launch.
+3. Contextual: We want people to give feedback _in the moment_ they're interacting with something, not recalling it days or weeks after.
+4. Passive: We don't want feedback prompts to interrupt the action someone is trying to perform.
 
-## The design
+# The design
 
 So here's what we've built: a reusable feedback module that we can add to any page or flow in our app. By clicking it, users are able to provide immediate feedback about what they're trying to do and how they think we could improve it. First, users are prompted to submit a 5-scale score, followed by a text field to explain why.
 
@@ -64,8 +66,7 @@ So here's what we've built: a reusable feedback module that we can add to any pa
 ![](../../images/petal/feedback-widgets-3.png)
 ![We produced two versions of the CTA. A larger widget to be placed in main pages, and a smaller one to be placed in modals](../../images/petal/feedback-widgets-4.png)
 
-
-## Results
+# Results
 
 First of all, we can now look objectively at how our pages and features are being evaluated by our users, and prioritize which ones need more work:
 
@@ -80,4 +81,3 @@ By looking at and communicating the impact of design objectively, it becomes eas
 ![Assessing the impact of design changes in user feedback scores](../../images/petal/feedback-chart-3.png)
 
 ![Assessing the impact of design changes in user feedback scores](../../images/petal/feedback-chart-2.png)
-

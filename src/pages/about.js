@@ -1,12 +1,12 @@
 import React from "react"
 import About from "../components/about"
 import Layout from "../components/layout"
-import { minWidth, topics } from "../components/utils"
+import { minWidth } from "../components/utils"
 
 const AboutPage = ({ location }) => {
   return (
     <Layout location={location}>
-      <div className=" center" style={{ maxWidth: minWidth }}>
+      <div style={{ maxWidth: minWidth }} className="center ph0-l ph4">
         <About></About>
       </div>
     </Layout>

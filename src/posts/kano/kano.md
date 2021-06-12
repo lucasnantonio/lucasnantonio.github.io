@@ -2,15 +2,12 @@
 path: "/blog/kano"
 date: "2014-05-04"
 title: Kano Computer
-subtitle: My first internship in UX
+subtitle: A computer that anyone can make
 category: Others
 topics:
   - design
   - Research
-published: true
-role:
-  - design
-  - user testing
+published: false
 cover_image: "../../images/kano/kano-sem-fundo.png"
 color: "#ff9942"
 cover: true
@@ -18,11 +15,15 @@ team:
   - Tommy Sahl
 link: http://kano.me
 link_label: Kano.me
+problem: Shipping the first version of a computer that teaches kids to code
+solution: Rounds of research, user experience mapping, and last-minute fixes
+myrole: User research and UX design.
+impact: Successful delivery of one of UK's biggest Kickstarter projects
 ---
 
 In the summer of 2014, I got my first job with digital products at Kano Computer, a record-breaking Kickstarter.com startup, as their incredible teams sprinted to ship the first version of Kano.
 
-## Assorted deliverables to help the company succeed
+# Assorted deliverables to help the company succeed
 
 A the time I joined, the product was expected to ship in 4 months. Kano is a physical computer, which means it ships with an OS that wouldn't get an update until the user had been successfully onboarded and connected to WiFi on their homes. During my internship, I wore multiple hats to help the team ensure that users would be correctly onboarded — and have fun! — in their first experience with the product. I touched everything from usability testing with kids in school, to copywriting, usability heuristic reviews, and UI design.
 

@@ -5,6 +5,7 @@
  * See: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
+import { AnimateSharedLayout } from "framer-motion"
 import { graphql, useStaticQuery } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
@@ -31,7 +32,7 @@ const Layout = ({ location, children, isIndex }) => {
         isIndex={isIndex}
       />
       <div
-        className="pt0 ph4"
+        className="pt0 ph0"
         style={{
           margin: `0 auto`,
           paddingTop: 0,

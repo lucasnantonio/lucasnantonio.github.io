@@ -19,58 +19,58 @@ team:
   - Josh K
 link: http://www.petalcard.com
 link_label: Petalcard.com
-
 ---
 
-## This is a collection of tactical, small design wins, a sort of journal. <br> Looking for a robust case study? [Try here.](/blog/nubank/nuconta)
+# Intro
 
-| <img src="../../images/petal/before-and-after/filters-before.gif"> | <img src="../../images/petal/before-and-after/filters-after-3.gif"> | 
-|--------- | --------|
-| __Before__        |__After ✓__         |
-| Customer support and usability testing revealed that users had trouble filtering important content that was two clicks away. | By exposing the filter labels, users don't need to guess what's inside the dropdown. [*Engagement increased ~500%.*](https://share.getcloudapp.com/wbu05LEA) | 
+During my time at Petal, I tried to document design experiments like these and their results. This is a collection of tactical, small design wins, a sort of journal. Looking for a robust case study? [Try here.](/blog/nubank/nuconta)
 
-| ![](../../images/petal/before-and-after/bankLinking-before.png) | ![](../../images/petal/before-and-after/bankLinking-after.png) | 
-|--------- | --------|
-| __Before__        |__After ✓__         |
-| Highest point of friction for Petal users is linking their accounts. | By AB testing many hypothesis, we achieved a version that [*converts 117% more*](https://share.getcloudapp.com/p9u7Y00X) than the initial design. | 
+| <img src="../../images/petal/before-and-after/filters-before.gif">                                                           | <img src="../../images/petal/before-and-after/filters-after-3.gif">                                                                                          |
+| ---------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **Before**                                                                                                                   | **After ✓**                                                                                                                                                  |
+| Customer support and usability testing revealed that users had trouble filtering important content that was two clicks away. | By exposing the filter labels, users don't need to guess what's inside the dropdown. [_Engagement increased ~500%._](https://share.getcloudapp.com/wbu05LEA) |
 
-| ![](../../images/petal/before-and-after/feedItems-before.png) | ![](../../images/petal/before-and-after/feedItems-after.png) | 
-|--------- | --------|
-| __Before__        |__After ✓__         |
-| Merchants were named with the raw strings we received, and category icons were assigned. | With some quick Regex, we're able to clean up names and display curated logos for +50% of purchases. | 
+| ![](../../images/petal/before-and-after/bankLinking-before.png)      | ![](../../images/petal/before-and-after/bankLinking-after.png)                                                                                    |
+| -------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Before**                                                           | **After ✓**                                                                                                                                       |
+| Highest point of friction for Petal users is linking their accounts. | By AB testing many hypothesis, we achieved a version that [_converts 117% more_](https://share.getcloudapp.com/p9u7Y00X) than the initial design. |
 
-| ![](../../images/petal/before-and-after/desktop-before.png) | ![](../../images/petal/before-and-after/desktop-after.png) | 
-|--------- | --------|
-| __Before__        |__After ✓__         |
-| Our desktop app was left aside for a while, missing some important navigation and styling alignments with the mobile app | Unified design allowed more consistent, accessible experience, shared components and simpler code.  | 
+| ![](../../images/petal/before-and-after/feedItems-before.png)                            | ![](../../images/petal/before-and-after/feedItems-after.png)                                         |
+| ---------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- |
+| **Before**                                                                               | **After ✓**                                                                                          |
+| Merchants were named with the raw strings we received, and category icons were assigned. | With some quick Regex, we're able to clean up names and display curated logos for +50% of purchases. |
 
-| ![](../../images/petal/before-and-after/modals-before-12.gif) | ![](../../images/petal/before-and-after/modals-after-12.gif) | 
-|--------- | --------|
-| __Before__        |__After ✓__         |
-| Initial modals had CTA and dismiss actions too close to each other and taking too much space. Centered rendering also becomes a problem as out phones grow taller and taller. | Better distributed buttons allows for extra actions such as navigation and secondary CTAs and are more ergonomic on tall devices.|
+| ![](../../images/petal/before-and-after/desktop-before.png)                                                              | ![](../../images/petal/before-and-after/desktop-after.png)                                         |
+| ------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------- |
+| **Before**                                                                                                               | **After ✓**                                                                                        |
+| Our desktop app was left aside for a while, missing some important navigation and styling alignments with the mobile app | Unified design allowed more consistent, accessible experience, shared components and simpler code. |
 
+| ![](../../images/petal/before-and-after/modals-before-12.gif)                                                                                                                 | ![](../../images/petal/before-and-after/modals-after-12.gif)                                                                      |
+| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
+| **Before**                                                                                                                                                                    | **After ✓**                                                                                                                       |
+| Initial modals had CTA and dismiss actions too close to each other and taking too much space. Centered rendering also becomes a problem as out phones grow taller and taller. | Better distributed buttons allows for extra actions such as navigation and secondary CTAs and are more ergonomic on tall devices. |
 
-| ![](../../images/petal/before-and-after/toast-before.png) | ![](../../images/petal/before-and-after/toast-after.png) | 
-|--------- | --------|
-| __Before__        |__After ✓__         |
-| Quite a few of Petal's initial designs didn't meet color contrast guidelines.   | It's a daily battle towards better legibility! | 
+| ![](../../images/petal/before-and-after/toast-before.png)                     | ![](../../images/petal/before-and-after/toast-after.png) |
+| ----------------------------------------------------------------------------- | -------------------------------------------------------- |
+| **Before**                                                                    | **After ✓**                                              |
+| Quite a few of Petal's initial designs didn't meet color contrast guidelines. | It's a daily battle towards better legibility!           |
 
-| ![](../../images/petal/before-and-after/light-fonts-before.png) | ![](../../images/petal/before-and-after/light-fonts-after.png) | 
-|--------- | --------|
-| __Before__        |__After ✓__         |
-| Thin, light-gray fonts were great to get Petal hyped for its "designer look".  | We banned light fonts and low-contrast text even from legal disclaimers. Going from light to regular goes a long way for legibility.  | 
+| ![](../../images/petal/before-and-after/light-fonts-before.png)                                              | ![](../../images/petal/before-and-after/light-fonts-after.png)                                                                              |
+| ------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Before**                                                                                                   | **After ✓**                                                                                                                                 |
+| Initially, thin, light-gray fonts were "in fashion" and useful to get Petal "hyped" for its "designer look". | We replaced low-contrast text even from legal disclaimers. Switching from light to regular font weight also goes a long way for legibility. |
 
-| ![](../../images/petal/before-and-after/navigation-before-2.png) | ![](../../images/petal/before-and-after/navigation-after-2.png) | 
-|--------- | --------|
-| __Before__        |__After ✓__         |
-| As our app grew, our minimalist navigation starter to get too cryptic. Users relied on trial and error to find the desired content.   | Some Information Architecture gymnastics will soon enable us to achieve a much more understandable "home" for your money.  | 
+| ![](../../images/petal/before-and-after/navigation-before-2.png)                                                                    | ![](../../images/petal/before-and-after/navigation-after-2.png)                                                           |
+| ----------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
+| **Before**                                                                                                                          | **After ✓**                                                                                                               |
+| As our app grew, our minimalist navigation starter to get too cryptic. Users relied on trial and error to find the desired content. | Some Information Architecture gymnastics will soon enable us to achieve a much more understandable "home" for your money. |
 
-| ![](../../images/petal/before-and-after/toggles-before.png) | ![](../../images/petal/before-and-after/toggles-after.png) | 
-|--------- | --------|
-| __Before__        |__After ✓__         |
-| Our custom on/off indicators had low contrast and weren't considered "clickable" by users  | Using a more common pattern proved successful for user understanding. | 
+| ![](../../images/petal/before-and-after/toggles-before.png)                               | ![](../../images/petal/before-and-after/toggles-after.png)            |
+| ----------------------------------------------------------------------------------------- | --------------------------------------------------------------------- |
+| **Before**                                                                                | **After ✓**                                                           |
+| Our custom on/off indicators had low contrast and weren't considered "clickable" by users | Using a more common pattern proved successful for user understanding. |
 
-| ![](../../images/petal/before-and-after/transactions-before-3.png) | ![](../../images/petal/before-and-after/transactions-after-3.png) | 
-|--------- | --------|
-| __Before__        |__After ✓__         |
-| Our first iteration was a simple table with the raw data we got from the backend  | With time, we added clean brand names, logos, contact and dispute buttons. | 
+| ![](../../images/petal/before-and-after/transactions-before-3.png)               | ![](../../images/petal/before-and-after/transactions-after-3.png)          |
+| -------------------------------------------------------------------------------- | -------------------------------------------------------------------------- |
+| **Before**                                                                       | **After ✓**                                                                |
+| Our first iteration was a simple table with the raw data we got from the backend | With time, we added clean brand names, logos, contact and dispute buttons. |

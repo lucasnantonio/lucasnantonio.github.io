@@ -1,25 +1,26 @@
 ---
+
 path: "/blog/nubank/design-team"
 date: "2017-06-01"
 title: "Design Team Principles"
 subtitle: Defining why and how we work
 category: "Nubank"
 topics:
-  - Design Ops
-color: "#20212b"
-cover_image: "../../images/nubank/nubank-team-logo.png"
-image_cover_size: true
-published: true
-learn_more:
-where: São Paulo
-when: Dec 2017
-team:
-  - Ricardo Sato
-  - Guilherme Neumann
-  - Erick Mazer
-link: https://medium.com/nubank-design
-link_label: Nubank Design
 
+- Design Ops
+  color: "#eee"
+  cover_image: "../../images/nubank/nubank-team-logo.png"
+  image_cover_size: true
+  published: true
+  learn_more:
+  where: São Paulo
+  when: Dec 2017
+  team:
+- Ricardo Sato
+- Guilherme Neumann
+- Erick Mazer
+  link: https://medium.com/nubank-design
+  link_label: Nubank Design
 ---
 
 In May 2016, Nubank was in the process of growing from a living-room sized startup to a much larger and complex organization. This growth impacted many teams, and design was no exception.
@@ -27,9 +28,9 @@ To help us navigate this fast-paced transformation, our team started exploring w
 
 ![Our principles featured on our welcome swag](../../images/nubank/nubank-principles.jpeg)
 
-## Inspiration
-
 ![Dieter Rams](../../images/nubank/principles-1.png)
+
+# Inspiration
 
 Design principles are not new. Dieter Rams’ famous 10 principles of good design, formulated during the seventies, was useful not only to his team at Braun, but also as a teaching tool and a personal message to the outside world about what he believed led to better designed products. Needless to say, this list has become such timeless advice that it now hangs in walls of designers building all types of product around the world, both in physical and digital media.
 
@@ -39,29 +40,25 @@ The list goes on: Google, Asana, Microsoft and even the UK Government have inves
 
 ![Brainstorm process for our Design Principles](../../images/nubank/principles-2.jpeg)
 
-## Goals
-
-### Align our practice with the company’s values
+# Start with the company’s values
 
 Corporate values are a very important tool to keep the company’s direction consistent. However, they don't always translate directly to design, and it’s not always clear how to make design decisions based on them. Having a separate, but aligned list of design principles allows us to keep in touch with main values while making consistent technical decisions.
 Establish the team’s common vision
 The list helps the design team keep a common ground of what we believe good design is for Nubank as a product, regardless of individual opinions, skills, interests, and backgrounds. Also, writing something down collectively was in itself an invaluable exercise of team bonding and exchanging of ideas.
 
-### Communication
+# Start a conversation about design
 
 Similarly to Rams, we felt the need to communicate to other, non-design teams what design is, how it can best serve the company’s goals, and how to assess if a project decision will lead to good or poor design. A list of principles shares a lot of the same benefits as personas, there’s a lot of value in having something you can present, point to, and bring to meetings whenever needed.
 
-### Empowerment
+# Empowerment
 
 We try to treat our principles as “lines on the sand” we’ll not cross, as professionals. By having them, we keep a reminder that we have the right to question demands, especially when they come in a way we think could be prejudicial or unethical for our profession or team. We do, for example, challenge requests that misunderstand the design team for an internal agency or “polish factory”.
 
-### Critique
+# Critique
 
 As a team, principles help us reflect on more solid, logical arguments when giving feedback to a colleague’s work in a way that is not only based on personal opinions. They also serve as a checklist we can use to assess a project’s health and direction, both during the process and after the results are out.
 
----
-
-# Our principles
+---# Our principles
 
 1. ## Start early
 

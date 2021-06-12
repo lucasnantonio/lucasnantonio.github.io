@@ -23,7 +23,7 @@ module.exports = {
         plugins: [
           {
             resolve: "@weknow/gatsby-remark-twitter",
-            options: { align: "center", hideThread: false },
+            options: { hideThread: false },
           },
           `gatsby-remark-copy-linked-files`,
           `gatsby-remark-unwrap-images`,

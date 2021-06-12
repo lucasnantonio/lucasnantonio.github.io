@@ -1,152 +1,145 @@
-import { motion } from "framer-motion"
+import { AnimatePresence, motion } from "framer-motion"
 import React, { useEffect, useState } from "react"
-import { minWidth } from "./utils"
-const Dot = ({ black }) => (
-  <span
-    style={{
-      position: "absolute",
-      width: "7px",
-      height: "7px",
-      background: black ? "black" : "#f7f7f7",
-      borderRadius: "100%",
-      left: "-22px",
-      top: ".45rem",
-      border: "4px solid white",
-    }}
-  ></span>
-)
-
-const About = ({ data }) => {
-  const [isScrolled, setScrolled] = useState(false)
-  useEffect(() => {
-    window.onscroll = () => {
-      setScrolled(window.pageYOffset > 500)
-    }
-  })
-
+import { minWidth, topics } from "../components/utils"
+import ImageWithBackground from "../components/imageWithBackground"
+const About = () => {
   return (
     <motion.div
       key="about"
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      exit={{ opacity: 0 }}
+      style={{ maxWidth: minWidth }}
+      className="center ph0-l"
     >
-      <div className="f3 fw4 w-100 lh-copy mb3 pb0 b--near-white bw1">
-        <div
-          className="flex justify-between flex-column"
-          style={{ maxWidth: minWidth }}
-        >
-          {/* IMAGE */}
-          <img
-            className="br2 ba b--black-10"
-            src="https://i.postimg.cc/QtxFVzBb/Bild007-Neg-Nr-8-1.jpg"
-          ></img>
-          <div className="flex flex-row-l flex-column mt4 mw-100-l">
-            {/* ABOUT */}
-            <div className="mt0-l black-50 lh-copy measure pr4-l f4">
-              <div>
-                <h2 className="fw6 f3 fw6 mt4">Hello! 👋</h2>
-                <p className="mt4">
-                  I'm a Brazilian product designer living in New York. <br />
-                  <br />
-                  I've been designing products and services since 2010, and even
-                  though my home has always been with design, I can frequently
-                  be found exploring disciplines I'm curious about, such as
-                  product management, qualitative research, code, team
-                  management, and others.{" "}
-                </p>
-                <p>
-                  I was part of the early design team at{" "}
-                  <a
-                    className="underline link black-50"
-                    href="https://nu.bank"
-                    target="_blank"
-                  >
-                    Nubank
-                  </a>
-                  , in São Paulo, where we disrupted the complexity of Latin
-                  American banks while growing a vibrant, diverse, international{" "}
-                  <a
-                    className="underline link black-50"
-                    href="https://building.nubank.com.br/design/"
-                    target="_blank"
-                  >
-                    design organization
-                  </a>
-                  .
-                </p>
-                <p>
-                  Ask me about the time when I interviewed Dan Ariely on a
-                  stage, about my{" "}
-                  <a
-                    className="underline link black-50"
-                    href="https://patents.justia.com/patent/9809239"
-                    target="_blank"
-                  >
-                    patent to recycle bin for airplanes
-                  </a>
-                  , the time I made personas for cows, co-founded a furniture
-                  shop, or when{" "}
-                  <a
-                    className="underline link black-50"
-                    target="_blank"
-                    href="https://www.lorriewhittington.co.uk/wp-content/uploads/Handwritten-Typeface-by-Lucas-Neumann.jpg"
-                  >
-                    this poster
-                  </a>{" "}
-                  was featured in a{" "}
-                  <a
-                    className="underline link black-50"
-                    href="https://www.mu.nl/en/exhibitions/for-play-shaping-sexuality"
-                    target="_blank"
-                  >
-                    {" "}
-                    Dutch exhibition about sex
-                  </a>
-                  . You can also find stories about my early work as a student
-                  on{" "}
-                  <a
-                    className="underline link black-50"
-                    target="_blank"
-                    href="https://www.fastcompany.com/3028572/this-simple-tool-will-help-you-stop-working-ridiculous-hours"
-                  >
-                    FastCompany
-                  </a>{" "}
-                  and{" "}
-                  <a
-                    className="underline link black-50"
-                    href="https://www.wired.com/2014/04/work-2-0-a-web-connected-sticky-note-that-bosses-you-around/"
-                    target="_blank"
-                  >
-                    Wired
-                  </a>
-                  .
-                </p>
-                <p>
-                  I currently work as Staff Designer @ Twitter, in NYC. <br />
-                </p>
-              </div>
-            </div>
+      <motion.h1
+        layoutId="site-title"
+        initial={{
+          opacity: 0,
+          y: 25,
+          marginTop: 200,
+          marginBottom: 200,
+        }}
+        animate={{ opacity: 1, y: 0, marginTop: 200, marginBottom: 200 }}
+        transition={{ duration: 0.55 }}
+        className="fw4 f3 tracked-tight lh-copy"
+      >
+        Product designer at Twitter & <br></br> Behavioral design teacher at
+        Aprender.
+      </motion.h1>
+      <motion.div
+        initial={{ opacity: 0, y: 25 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.55 }}
+        className="f3 fw4 lh-copy mb3 black-50 lh-copy tracked-tight measure pb6"
+      >
+        <p>I have been designing products and services since 2010.</p>
+        <p>
+          I'm drawn to teams working on difficult and meaningful issues, and can
+          frequently be found stepping outside the design role into product
+          management, research, code, writing, or whatever is necessary to bring
+          clarity to a problem.
+        </p>
+        <p>
+          Currently, at Twitter, I'm helping build{" "}
+          <a
+            className="underline link black-50"
+            href="https://twitter.github.io/birdwatch/"
+            target="_blank"
+          >
+            Birdwatch
+          </a>
+          , an experiment that aims to tackle online misinformation through
+          decentralization.
+        </p>
 
-            {/* CAREER */}
-            {/* <div className="pl4-l pl0 w-40 lh-copy">
-            <ul className="relative mt0 pl0">
-              <li className="">
-                Twitter <span className="">NOW</span>
-              </li>
-              <li className="">Petal 2019</li>
-              <li className="">Nubank 2016</li>
-              <li className="">Airbus 2016</li>
-              <li className="">Redbull 2015</li>
-              <li className="">Nossas 2015</li>
-              <li className="">Insitum / Accenture 2014</li>
-              <li className="">Kano Computer 2014</li>
-              <li className="">FutureBrand 2011</li>
-            </ul>
-          </div> */}
-          </div>
-        </div>
-      </div>
+        <p>
+          I also teach a class about Behavioral Design at{" "}
+          <a
+            className="underline link black-50"
+            href="https://www.aprender.design"
+            target="_blank"
+          >
+            Aprender
+          </a>
+          , an online design school in Brazil.
+        </p>
+
+        <p>
+          Previously, I was part of the early team at{" "}
+          <a
+            className="underline link black-50"
+            href="https://nu.bank"
+            target="_blank"
+          >
+            Nubank
+          </a>
+          , building the world's biggest digital bank from scratch while growing
+          a vibrant, diverse, international{" "}
+          <a
+            className="underline link black-50"
+            href="https://building.nubank.com.br/design/"
+            target="_blank"
+          >
+            design organization
+          </a>
+          .
+        </p>
+        <p>
+          I have helped design online platforms for activism at{" "}
+          <a
+            className="underline link black-50"
+            href="https://nossas.org/"
+            target="_blank"
+          >
+            Nossas
+          </a>
+          ; patented a{" "}
+          <a
+            className="underline link black-50"
+            href="https://patents.justia.com/patent/9809239"
+            target="_blank"
+          >
+            {" "}
+            recycling system{" "}
+          </a>{" "}
+          for airplanes with Airbus; ran an online{" "}
+          <a
+            className="underline link black-50"
+            target="_blank"
+            href="https://www.instagram.com/projetofeito/"
+          >
+            furniture shop
+          </a>
+          , and helped{" "}
+          <a
+            className="underline link black-50"
+            target="_blank"
+            href="https://www.kano.me"
+          >
+            Kano
+          </a>{" "}
+          build the first version of their computer that teaches kids how to
+          code.
+          <p>
+            {" "}
+            You can also find stories about my student work on{" "}
+            <a
+              className="underline link black-50"
+              target="_blank"
+              href="https://www.fastcompany.com/3028572/this-simple-tool-will-help-you-stop-working-ridiculous-hours"
+            >
+              FastCompany
+            </a>{" "}
+            and{" "}
+            <a
+              className="underline link black-50"
+              href="https://www.wired.com/2014/04/work-2-0-a-web-connected-sticky-note-that-bosses-you-around/"
+              target="_blank"
+            >
+              Wired
+            </a>
+            .
+          </p>
+        </p>
+      </motion.div>
     </motion.div>
   )
 }

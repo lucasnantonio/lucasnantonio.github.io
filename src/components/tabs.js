@@ -15,7 +15,7 @@ const Tab = ({ title, active, setTabList, tabList }) => {
         onMouseEnter={() => setHovered(true)}
         onMouseLeave={() => setHovered(false)}
         key={title}
-        className={`pointer mr4 ${active ? "black" : ""} ${
+        className={`pointer mr4 fw4 ${active ? "black" : ""} ${
           isHovered ? "black-50" : "black-40"
         }`}
       >

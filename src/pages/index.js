@@ -3,6 +3,7 @@ import HomeSection from "../components/home-section"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { minWidth } from "../components/utils"
+import { AnimatePresence, motion } from "framer-motion"
 
 function IndexPage({
   data: {
@@ -14,9 +15,25 @@ function IndexPage({
   return (
     <Layout location={location}>
       <SEO title="Home" />
-      <div className="overflow-y-hidden center" style={{ maxWidth: minWidth }}>
+      <motion.div style={{ maxWidth: minWidth }} className="center ph0-l ph4">
+        <motion.h1
+          layoutId="site-title"
+          initial={{
+            opacity: 0,
+            y: 25,
+            marginTop: 200,
+            marginBottom: 200,
+          }}
+          animate={{ opacity: 1, y: 0, marginTop: 200, marginBottom: 200 }}
+          transition={{ duration: 0.55 }}
+          className="fw4 f3 tracked-tight lh-copy"
+        >
+          Product designer at Twitter & <br></br> Behavioral design teacher at
+          Aprender.
+        </motion.h1>
+
         <HomeSection posts={posts} />
-      </div>
+      </motion.div>
     </Layout>
   )
 }

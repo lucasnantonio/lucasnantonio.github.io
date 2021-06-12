@@ -1,5 +1,4 @@
-import React, { useState } from "react"
-import { graphql } from "gatsby"
+import React from "react"
 import PostLink from "./postLink"
 
 const PostList = ({ posts }) => {

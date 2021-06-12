@@ -36,7 +36,7 @@ const Hello = ({ setSelectedTopics, setAll }) => {
             <motion.div
               initial={initialFadeAnimation}
               animate={fadeInAnimation}
-              transition={{ duration: 0.5 }}
+              transition={{ duration: 0.55 }}
             >
               {visitor ? (
                 <h1 className="f3 black lh-title mb0 fw5">

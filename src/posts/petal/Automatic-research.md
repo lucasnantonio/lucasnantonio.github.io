@@ -20,6 +20,8 @@ link: http://www.petalcard.com
 link_label: Petalcard.com
 ---
 
+# Intro
+
 Most teams know that talking to users frequently is a key habit to increase empathy, de-risk projects, find innovation opportunities. At Petal, where "listen with curiosity" and "our job is never done" are company values, this is no different.
 
 In practice, though, scheduling and executing user interviews is messy, time-consuming and can feel like a burden for teams that are used to moving fast. Querying the base, emailing back-and-forth to find the best time, screening, and signing NDA docs with multiple candidates at the same time can easily eat away a good chunk of someone's calendar.
@@ -28,9 +30,9 @@ When kicking off Petal's research program, it has been our goal from the start t
 
 Instead of designing a specific research study or topic, for this project our philosophy was "let's get the users coming, and no matter what we show them, we'll learn something every week"
 
-## The workflow
-
 ![Diagram of the apps we used to automate recruiting](../../images/petal/automated-research-workflow-4.png)
+
+# The workflow
 
 1. NPS survey
 2. Opt-in
@@ -46,15 +48,15 @@ If they say yes, they're taken to a quick screener designed to filter out techni
 
 A Zoom call is created, and they get a last confirmation email with instructions on how to get prepared for the call.
 
-## Results
-
 ![Schedule full of interviews!](../../images/petal/automated-research-schedule-4.png)
+
+# Results
 
 When we turned the workflow on, we got 10 users scheduled in a week's time, and that's with a low sample of NPS surveys sent. Getting this same number with a hands-on recruiting outreach would have taken much longer, and now we have the ability turn it on or off depending on the demand.
 
 ![And of course, the moment of truth :)](../../images/petal/automated-research-user.png)
 
-## Next Steps
+# Next Steps
 
 This automated flow, of course, does not cover all the user research bases. It's biased towards people who have already been using the card; towards people who are comfortable going through our many partners' tools; and does not help us conduct studies with people in a specific state or journey.
 

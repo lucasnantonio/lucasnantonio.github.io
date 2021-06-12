@@ -6,7 +6,7 @@ subtitle: Teaching an intro on cognitive psychology, choice architecture, nudges
 category: Others
 topics:
   - design
-published: true
+published: false
 role:
   - design
   - user testing

@@ -1,14 +1,13 @@
-import React from "react"
+import { motion, AnimateSharedLayout } from "framer-motion"
 import { graphql } from "gatsby"
+import React from "react"
+import ImageWithBackground from "../components/imageWithBackground"
 import Layout from "../components/layout"
-import Img from "gatsby-image/withIEPolyfill"
-import { minWidth } from "../components/utils"
-import PreviousAndNext from "../components/previousAndNext"
-import PostMetadata from "../components/postMetadata"
 import Learnings from "../components/learnings"
 import PostSummary from "../components/postSummary"
-import { motion } from "framer-motion"
-import { initialFadeAnimation, fadeInAnimation } from "../components/utils"
+import PreviousAndNext from "../components/previousAndNext"
+import PostMetadata from "../components/postMetadata"
+import { minWidth } from "../components/utils"
 
 export default function Template({
   location,
@@ -25,34 +24,26 @@ export default function Template({
   }
 
   const title = (
-    <div className="flex flex-column pb5-l w-100">
-      <h1 className=" fw5 f3 black-80 mt0 mb1 pb0 w-100 tracked-tight lh-copy">
-        {frontmatter.title}
-      </h1>
-      <div className="fw5 measure w-60-l flex flex-row-l flex-column items-start f3 lh-copy mt0 pt0 measure mb1 black-40 tracked-tight">
-        {frontmatter.subtitle}
+    <motion.div className="flex flex-row-l flex-column justify-between items-start w-100 mt4">
+      <div className="w-50-l">
+        <p className={`f3 measure-narrow mt1 mb2`}>{frontmatter.title} </p>
+        <PostMetadata frontmatter={frontmatter}></PostMetadata>
       </div>
-    </div>
+
+      <p className={"w-50-l f3 black-50 lh-copy pv0 mb0-l mb4 mt0"}>
+        {frontmatter.subtitle}
+      </p>
+    </motion.div>
   )
 
   const heroImage = (
-    <div
-      className="center flex flex-column justify-end br2"
-      style={{
-        backgroundColor: frontmatter.color || "#f0f0f0",
-        maxHeight: "500px",
-        overflow: "hidden",
-        padding: "0rem",
-        maxWidth: minWidth,
-      }}
-    >
-      <Img
-        className=""
-        fluid={frontmatter.cover_image.childImageSharp.fluid}
-        color={frontmatter.color}
-        objectFit="contain"
-      />
-    </div>
+    <ImageWithBackground
+      tall
+      id={frontmatter.title}
+      hover
+      image={frontmatter.cover_image.childImageSharp.fluid}
+      color={frontmatter.color}
+    />
   )
 
   const content = (
@@ -65,30 +56,28 @@ export default function Template({
 
   return (
     <Layout location={location} prev={prev} next={next} isIndex={false}>
+      <div style={{ marginTop: "-8rem" }}>{heroImage}</div>
       <motion.div
-        transition={{ duration: 0.5 }}
-        initial={initialFadeAnimation}
-        animate={fadeInAnimation}
+        className={"ph0-l ph4"}
+        // key={frontmatter.title}
+        initial={{ opacity: 0, display: "none" }}
+        animate={{ opacity: 1, display: "block" }}
+        exit={{ opacity: 0, display: "none" }}
+        transition={{ duration: 1, delay: 0.25 }}
       >
         <div
           style={{ maxWidth: minWidth }}
-          className="flex w-100 justify-between flex-row-l flex-column center bt bw1 b--black-10 pt5"
+          className="pt5 flex w-100 justify-between flex-row center bb b--near-white"
         >
-          {title}
-          <PostMetadata frontmatter={frontmatter} />
+          <AnimateSharedLayout>{title}</AnimateSharedLayout>
         </div>
+
+        <PostSummary frontmatter={frontmatter} />
+        {content}
+        {frontmatter.learnings && <Learnings list={frontmatter.learnings} />}
+        <PreviousAndNext prev={prev} next={next}></PreviousAndNext>
       </motion.div>
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 2 }}
-      >
-        {heroImage}
-      </motion.div>
-      <PostSummary frontmatter={frontmatter} />
-      {content}
-      {frontmatter.learnings && <Learnings list={frontmatter.learnings} />}
-      <PreviousAndNext prev={prev} next={next}></PreviousAndNext>
+      {/* </AnimatePresence> */}
     </Layout>
   )
 }

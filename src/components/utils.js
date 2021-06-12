@@ -1,4 +1,4 @@
-export const minWidth = "940px"
+export const minWidth = "900px"
 export const topics = [
   "Product Design",
   "Research",

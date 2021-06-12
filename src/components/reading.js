@@ -1,7 +1,20 @@
 import React, { useState } from "react"
 import { motion } from "framer-motion"
 import books, { tags } from "./books"
+const container = {
+  hidden: { opacity: 0 },
+  show: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.1,
+    },
+  },
+}
 
+const book = {
+  hidden: { opacity: 0, y: 25 },
+  show: { opacity: 1, y: 0, transition: { duration: 0.55 } },
+}
 const Tag = ({ title, activeTag, setActiveTag }) => {
   let [isHovered, setHover] = useState(false)
   let isActive = title === activeTag
@@ -12,8 +25,8 @@ const Tag = ({ title, activeTag, setActiveTag }) => {
       }}
       onMouseEnter={() => setHover(true)}
       onMouseLeave={() => setHover(false)}
-      className={`nowrap pointer f4 ph3 pv2 br-pill mr2 mb4 bw1 fw5 
-      ${isActive ? "white bg-black" : "bg-transparent"}
+      className={`nowrap pointer f4 ph3 pv2 mr2 bw2 fw5 b--black 
+      ${isActive ? "bb black" : "bg-transparent"}
       ${isHovered ? "black-50" : "black-40"} `}
     >
       {title}
@@ -24,8 +37,8 @@ const Tag = ({ title, activeTag, setActiveTag }) => {
 const TagRow = ({ activeTag, setActiveTag }) => {
   return (
     <div
-      style={{ marginLeft: "-2rem", marginRight: "-2rem" }}
-      className="ph4 flex pv2 b--near-white overflow-scroll"
+      // style={{ marginLeft: "-2rem", marginRight: "-2rem" }}
+      className="flex pt5 b--near-white overflow-scroll bb bw1 mb4"
     >
       {tags.map(item => (
         <Tag
@@ -41,7 +54,13 @@ const TagRow = ({ activeTag, setActiveTag }) => {
 const Item = ({ item }) => {
   let [hover, setHover] = useState(false)
   return (
-    <div
+    <motion.div
+      variants={book}
+      key={item.title}
+      onMouseEnter={() => setHover(true)}
+      onMouseLeave={() => setHover(false)}
+      href={item.url}
+      target={"_blank"}
       className="w-100"
       onMouseEnter={() => setHover(true)}
       onMouseLeave={() => setHover(false)}
@@ -53,7 +72,7 @@ const Item = ({ item }) => {
       >
         <div className="mr5">
           <h2 className="mt0 lh-title flex flex-row-l flex-column-reverse items-center-l mb3">
-            <span className={`f3 fw5 ${hover && "underline"}`}>
+            <span className={`f3 tracked-tight ${hover && "underline"}`}>
               {item.title}{" "}
             </span>
             {item.best && (
@@ -74,10 +93,14 @@ const Item = ({ item }) => {
           <div className="f4 measure black-50">{item.text}</div>
         </div>
         {item.img && (
-          <img className="w4 h-100 br2 ba b--black-10" src={item.img}></img>
+          <img
+            className={`w4 h-100 br2 ba b--black-10 ${item.best &&
+              "mt0-l mt4"}`}
+            src={item.img}
+          ></img>
         )}
       </a>
-    </div>
+    </motion.div>
   )
 }
 
@@ -99,7 +122,13 @@ function Reading() {
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
     >
-      <div>
+      <motion.div
+        key="writing"
+        variants={container}
+        initial="hidden"
+        animate="show"
+        exit={{ opacity: 0 }}
+      >
         <TagRow activeTag={activeTag} setActiveTag={setActiveTag}></TagRow>
         {rows}
         <div className="mt3 pt4">
@@ -107,7 +136,7 @@ function Reading() {
             This page contains affiliate links from Amazon.
           </p>
         </div>
-      </div>
+      </motion.div>
     </motion.div>
   )
 }

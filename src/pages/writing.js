@@ -6,7 +6,7 @@ import { minWidth, topics } from "../components/utils"
 const WritingPage = ({ location }) => {
   return (
     <Layout location={location}>
-      <div className=" center" style={{ maxWidth: minWidth }}>
+      <div className=" center mt5 ph0-l ph4" style={{ maxWidth: minWidth }}>
         <Writing></Writing>
       </div>
     </Layout>
