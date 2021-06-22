@@ -1,14 +1,13 @@
+import { motion } from "framer-motion"
 import React from "react"
 import HomeSection from "../components/home-section"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { minWidth } from "../components/utils"
-import { AnimatePresence, motion } from "framer-motion"
 
 function IndexPage({
   data: {
     allMarkdownRemark: { edges: posts },
-    allImageSharp: { nodes: images },
   },
   location,
 }) {
