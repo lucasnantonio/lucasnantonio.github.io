@@ -1,6 +1,8 @@
 import React, { useState } from "react"
 import { motion } from "framer-motion"
 import books, { tags } from "./books"
+import sparkles from "../images/icons/best.svg"
+
 const container = {
   hidden: { opacity: 0 },
   show: {
@@ -15,6 +17,7 @@ const book = {
   hidden: { opacity: 0, y: 25 },
   show: { opacity: 1, y: 0, transition: { duration: 0.55 } },
 }
+
 const Tag = ({ title, activeTag, setActiveTag }) => {
   let [isHovered, setHover] = useState(false)
   let isActive = title === activeTag
@@ -29,7 +32,22 @@ const Tag = ({ title, activeTag, setActiveTag }) => {
       ${isActive ? "bb black" : "bg-transparent"}
       ${isHovered ? "black-50" : "black-40"} `}
     >
-      {title}
+      {title === "Best" ? (
+        <span>
+          <img
+            style={{
+              width: "16px",
+              marginBottom: "-1.5px",
+              marginRight: "4px",
+              // opacity: activeTag === "Best" ? 1 : 0.5,
+            }}
+            src={sparkles}
+          ></img>
+          {title}
+        </span>
+      ) : (
+        title
+      )}
     </div>
   )
 }
@@ -76,15 +94,25 @@ const Item = ({ item }) => {
               {item.title}{" "}
             </span>
             {item.best && (
-              <span className="dib f6 fw8 light-blue flex items-center ml2-l pb0-l pb2 ttu nowrap pt1">
+              <span
+                // style={{ color: "" }}
+                className="dib f4 fw5 flex black-50 items-center ml2-l pb0-l pb2 nowrap pt1"
+              >
                 <span
                   style={{
                     marginTop: "-.022rem",
                     marginRight: "0.1rem",
-                    fontSize: "1rem",
                   }}
                 >
-                  ★
+                  <img
+                    style={{
+                      width: "16px",
+                      marginBottom: "-1.5px",
+                      opacity: 1,
+                      marginRight: "4px",
+                    }}
+                    src={sparkles}
+                  ></img>
                 </span>
                 Best
               </span>
@@ -110,6 +138,8 @@ function Reading() {
     .filter(item => {
       if (activeTag === "All") {
         return true
+      } else if (activeTag === "Best") {
+        return item.best
       } else {
         return item.tag === activeTag
       }

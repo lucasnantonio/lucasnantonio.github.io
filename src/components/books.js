@@ -1,4 +1,11 @@
-export const tags = ["All", "Design", "Non-fiction", "Fiction", "Business"]
+export const tags = [
+  "All",
+  "Design",
+  "Non-fiction",
+  "Fiction",
+  "Business",
+  "Best",
+]
 const books = [
   {
     year: 2021,
