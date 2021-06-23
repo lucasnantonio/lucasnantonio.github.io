@@ -68,6 +68,13 @@ module.exports = {
       },
     },
     {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "notes",
+        path: `/Users/lucasn/Dropbox/Lucas/Notes/Literature Notes`,
+      },
+    },
+    {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `gatsby-starter-default`,
