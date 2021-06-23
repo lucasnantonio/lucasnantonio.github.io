@@ -1,7 +1,6 @@
-import { AnimatePresence, motion } from "framer-motion"
-import React, { useEffect, useState } from "react"
-import { minWidth, topics } from "../components/utils"
-import ImageWithBackground from "../components/imageWithBackground"
+import { motion } from "framer-motion"
+import React from "react"
+import { minWidth } from "../components/utils"
 const About = () => {
   return (
     <motion.div

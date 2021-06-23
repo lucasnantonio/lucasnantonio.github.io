@@ -1,7 +1,6 @@
 /* eslint-disable react/prop-types */
-import Img from "gatsby-image/withIEPolyfill"
-import React, { useState } from "react"
 import { AnimatePresence, motion } from "framer-motion"
+import React, { useState } from "react"
 import tinycolor from "tinycolor2"
 
 function ImageWithBackground({ fixed, image, color, hover, id, tall, xtall }) {

@@ -1,13 +1,12 @@
 import React from "react"
-import { minWidth } from "../components/utils"
-import PostSummaryIcon from "../components/postSummaryIcon"
 import {
-  ic_problem_2,
-  ic_solution_2,
   ic_impact_2,
+  ic_problem_2,
   ic_role_2,
+  ic_solution_2,
 } from "../components/icons.js"
-import tinycolor from "tinycolor2"
+import PostSummaryIcon from "../components/postSummaryIcon"
+import { minWidth } from "../components/utils"
 
 const SummaryItem = ({
   icon,

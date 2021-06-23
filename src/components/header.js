@@ -1,10 +1,10 @@
+import { motion, useViewportScroll } from "framer-motion"
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
-import React, { useEffect, useState } from "react"
-import { minWidth } from "./utils"
+import React, { useState } from "react"
 import Tabs from "../components/tabs"
-import TwitterLogo, { twitterLogo } from "../components/twitterLogo"
-import { AnimatePresence, motion, useViewportScroll } from "framer-motion"
+import TwitterLogo from "../components/twitterLogo"
+import { minWidth } from "./utils"
 
 function Header({ location }) {
   const { scrollY } = useViewportScroll()

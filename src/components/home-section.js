@@ -1,7 +1,7 @@
+import { motion } from "framer-motion"
 import React from "react"
 import { minWidth } from "../components/utils"
 import PostList from "./postList"
-import { motion } from "framer-motion"
 
 const HomeSection = ({ posts }) => {
   const sectionPosts = posts.filter(

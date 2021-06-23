@@ -1,9 +1,7 @@
-import { AnimatePresence, motion } from "framer-motion"
+import { motion } from "framer-motion"
 import { Link } from "gatsby"
 import React, { useState } from "react"
-import tinycolor from "tinycolor2"
 import ImageWithBackground from "./imageWithBackground"
-import Tag from "./Tag"
 
 function PostLink({ post }) {
   const [isHovered, setHover] = useState(false)

@@ -1,8 +1,7 @@
-import React, { useState } from "react"
-import PhraseWithFootnote from "../components/phraseWithFootnote"
-import { minWidth } from "../components/utils"
-import Feedback from "../components/feedback"
 import { AnimatePresence, motion } from "framer-motion"
+import React from "react"
+import Feedback from "../components/feedback"
+import { minWidth } from "../components/utils"
 
 const Footer = () => {
   return (

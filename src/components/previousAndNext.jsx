@@ -1,7 +1,7 @@
-import React from "react"
 import { Link } from "gatsby"
-import { minWidth } from "../components/utils"
+import React from "react"
 import ImageWithBackground from "../components/imageWithBackground"
+import { minWidth } from "../components/utils"
 
 function Image({ src, cover, color }) {
   return (

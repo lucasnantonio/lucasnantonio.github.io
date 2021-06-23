@@ -1,11 +1,8 @@
-import React, { useState } from "react"
-import PhraseWithFootnote from "../components/phraseWithFootnote"
-import { useEffect } from "react"
 import { motion } from "framer-motion"
-import { initialFadeAnimation, fadeInAnimation } from "../components/utils"
-import TwitterLogo, { twitterLogo } from "../components/twitterLogo"
+import React, { useEffect, useState } from "react"
+import TwitterLogo from "../components/twitterLogo"
+import { fadeInAnimation, initialFadeAnimation } from "../components/utils"
 import { minWidth } from "./utils"
-import { Link } from "gatsby"
 
 function capitalizeFirstLetter(string) {
   return string.charAt(0).toUpperCase() + string.slice(1)

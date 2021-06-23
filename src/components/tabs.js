@@ -1,7 +1,5 @@
-import { AnimateSharedLayout, motion } from "framer-motion"
-import React, { useState } from "react"
 import { Link } from "gatsby"
-import { minWidth } from "../components/utils"
+import React, { useState } from "react"
 
 const Tab = ({ title, active, setTabList, tabList }) => {
   let [isHovered, setHovered] = useState(false)

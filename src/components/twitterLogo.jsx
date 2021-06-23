@@ -1,6 +1,5 @@
-import React, { useState } from "react"
-import { ic_twitter_logo, ic_twitter_logo_white } from "../components/icons.js"
 import { motion } from "framer-motion"
+import React, { useState } from "react"
 
 export default function TwitterLogo() {
   const [isHovered, setHovered] = useState(false)

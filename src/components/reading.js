@@ -1,7 +1,7 @@
-import React, { useState } from "react"
 import { motion } from "framer-motion"
-import books, { tags } from "./books"
+import React, { useState } from "react"
 import sparkles from "../images/icons/best.svg"
+import books, { tags } from "./books"
 
 const container = {
   hidden: { opacity: 0 },

@@ -1,7 +1,7 @@
+import award from "../images/icons/Award.svg"
 import job from "../images/icons/Job.svg"
 import publication from "../images/icons/Publication.svg"
 import school from "../images/icons/School.svg"
-import award from "../images/icons/Award.svg"
 import speech from "../images/icons/Speech.svg"
 
 export const LifeEvents = [

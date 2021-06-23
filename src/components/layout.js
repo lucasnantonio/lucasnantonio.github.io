@@ -5,7 +5,6 @@
  * See: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-import { AnimateSharedLayout } from "framer-motion"
 import { graphql, useStaticQuery } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
