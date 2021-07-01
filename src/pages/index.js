@@ -4,6 +4,7 @@ import HomeSection from "../components/home-section"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { minWidth } from "../components/utils"
+import { graphql } from "gatsby"
 
 function IndexPage({
   data: {

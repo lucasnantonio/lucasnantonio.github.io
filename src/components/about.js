@@ -1,6 +1,8 @@
 import { motion } from "framer-motion"
 import React from "react"
 import { minWidth } from "../components/utils"
+import { graphql } from "gatsby"
+
 const About = () => {
   return (
     <motion.div
@@ -144,63 +146,3 @@ const About = () => {
 }
 
 export default About
-
-export const squareImage = graphql`
-  fragment squareImage on File {
-    childImageSharp {
-      fluid {
-        ...GatsbyImageSharpFluid
-      }
-    }
-  }
-`
-
-export const query = graphql`
-  query {
-    TomerSharon: file(relativePath: { eq: "life/tomer-sharon.png" }) {
-      ...squareImage
-    }
-    Ariely: file(relativePath: { eq: "life/ariely.jpg" }) {
-      ...squareImage
-    }
-    HackConf2019: file(relativePath: { eq: "life/hack-conf-2019.png" }) {
-      ...squareImage
-    }
-    Podcast2019: file(relativePath: { eq: "life/podcast-interview.jpg" }) {
-      ...squareImage
-    }
-    PetalWelcome: file(relativePath: { eq: "life/petal-welcome.JPG" }) {
-      ...squareImage
-    }
-    School: file(relativePath: { eq: "life/school.JPG" }) {
-      ...squareImage
-    }
-    NubankLead: file(relativePath: { eq: "life/nubank-lead.jpg" }) {
-      ...squareImage
-    }
-    InsitumIntern: file(relativePath: { eq: "life/insitum-intern.png" }) {
-      ...squareImage
-    }
-    Bossy: file(relativePath: { eq: "life/bossy-featured.png" }) {
-      ...squareImage
-    }
-    Nossas: file(relativePath: { eq: "life/nossas.jpg" }) {
-      ...squareImage
-    }
-    Kano: file(relativePath: { eq: "life/kano-2.jpg" }) {
-      ...squareImage
-    }
-    CSM: file(relativePath: { eq: "life/csm.JPG" }) {
-      ...squareImage
-    }
-    FutureBrand: file(relativePath: { eq: "life/futurebrand.jpg" }) {
-      ...squareImage
-    }
-    Airbus: file(relativePath: { eq: "life/airbus.jpg" }) {
-      ...squareImage
-    }
-    FirstDesign: file(relativePath: { eq: "life/first-design.jpg" }) {
-      ...squareImage
-    }
-  }
-`
