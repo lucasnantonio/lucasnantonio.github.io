@@ -19,3 +19,21 @@ export const fadeInAnimation = {
 export function capitalize(string) {
   return string.charAt(0).toUpperCase() + string.slice(1)
 }
+
+export function getUniqueTags(notes) {
+  return notes.reduce((acc, note) => {
+    note.node.frontmatter.tags.forEach(tag => {
+      if (acc.indexOf(tag) === -1) {
+        acc.push(tag)
+      }
+      // order tags by the amount of objects in the notes array that contain them in the node.frontmatter.tags array
+      acc.sort((a, b) => {
+        return (
+          notes.filter(n => n.node.frontmatter.tags.indexOf(a) > -1).length -
+          notes.filter(n => n.node.frontmatter.tags.indexOf(b) > -1).length
+        )
+      })
+    })
+    return acc
+  }, [])
+}

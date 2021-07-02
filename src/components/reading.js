@@ -18,7 +18,7 @@ const book = {
   show: { opacity: 1, y: 0, transition: { duration: 0.55 } },
 }
 
-const Tag = ({ title, activeTag, setActiveTag }) => {
+const Tab = ({ title, activeTag, setActiveTag }) => {
   let [isHovered, setHover] = useState(false)
   let isActive = title === activeTag
   return (
@@ -59,11 +59,11 @@ const TagRow = ({ activeTag, setActiveTag }) => {
       className="flex pt5 b--near-white overflow-scroll bb bw1 mb4"
     >
       {tags.map(item => (
-        <Tag
+        <Tab
           activeTag={activeTag}
           setActiveTag={setActiveTag}
           title={item}
-        ></Tag>
+        ></Tab>
       ))}
     </div>
   )

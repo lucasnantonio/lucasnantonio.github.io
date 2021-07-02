@@ -1,16 +1,8 @@
-import Layout from "../components/layout"
-import { minWidth } from "../components/utils"
-import React from "react"
 import { graphql } from "gatsby"
-
-const Note = ({ title, tags, html }) => {
-  return (
-    <div key={title}>
-      <h1>{title}</h1>
-      <div className="lh-copy" dangerouslySetInnerHTML={{ __html: html }} />
-    </div>
-  )
-}
+import React from "react"
+import Layout from "../components/layout"
+import NotesLayout from "../components/notesLayout"
+import { Note } from "./Note"
 
 const NotesPage = ({
   data: {
@@ -18,23 +10,19 @@ const NotesPage = ({
   },
   location,
 }) => {
-  console.log(notes)
   return (
     <Layout location={location}>
-      <div className=" center mt5 ph0-l ph4" style={{ maxWidth: minWidth }}>
-        <div>mynotes</div>
-        {notes.map(item => {
-          return (
-            <>
-              <Note
-                key={item.node.frontmatter.title}
-                title={item.node.frontmatter.title}
-                html={item.node.html}
-              ></Note>
-            </>
-          )
-        })}
-      </div>
+      <NotesLayout notes={notes}>
+        <div className="w-100">
+          {notes.map(item => {
+            return (
+              <>
+                <Note key={item.node.frontmatter.title} data={item.node}></Note>
+              </>
+            )
+          })}
+        </div>
+      </NotesLayout>
     </Layout>
   )
 }

@@ -1,7 +1,7 @@
 import React from "react"
 import { capitalize } from "./utils"
 
-function Tag({ title }) {
+function Tab({ title }) {
   return (
     <span
       key={title}
@@ -12,4 +12,4 @@ function Tag({ title }) {
   )
 }
 
-export default Tag
+export default Tab

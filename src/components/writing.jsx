@@ -19,7 +19,7 @@ const article = {
 function Writing() {
   const [activeTag, setActiveTag] = useState("All")
 
-  const Tag = ({ title, activeTag, setActiveTag }) => {
+  const Tab = ({ title, activeTag, setActiveTag }) => {
     let [isHovered, setHover] = useState(false)
     let isActive = title === activeTag
     return (
@@ -45,11 +45,11 @@ function Writing() {
         className="flex pt5 b--near-white overflow-scroll bb bw1 mb4"
       >
         {tags.map(item => (
-          <Tag
+          <Tab
             activeTag={activeTag}
             setActiveTag={setActiveTag}
             title={item}
-          ></Tag>
+          ></Tab>
         ))}
       </div>
     )

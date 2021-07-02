@@ -13,6 +13,7 @@ function Header({ location }) {
     { title: "About", active: false },
     { title: "Writing", active: false },
     { title: "Reading", active: false },
+    { title: "Notes", active: false },
   ])
 
   return (

@@ -6,6 +6,24 @@
 
 // You can delete this file if you're not using it
 
+const getUniqueTags = notes => {
+  return notes.reduce((acc, note) => {
+    note.node.frontmatter.tags.forEach(tag => {
+      if (acc.indexOf(tag) === -1) {
+        acc.push(tag)
+      }
+      // order tags by the amount of objects in the notes array that contain them in the node.frontmatter.tags array
+      acc.sort((a, b) => {
+        return (
+          notes.filter(n => n.node.frontmatter.tags.indexOf(a) > -1).length -
+          notes.filter(n => n.node.frontmatter.tags.indexOf(b) > -1).length
+        )
+      })
+    })
+    return acc
+  }, [])
+}
+
 const path = require(`path`)
 
 exports.onCreateNode = ({ node, getNode, actions }) => {
@@ -23,10 +41,10 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
 
 exports.createPages = ({ actions, graphql }) => {
   const { createPage } = actions
-
+  const noteTagTemplate = path.resolve(`src/templates/noteTagTemplate.js`)
   const blogPostTemplate = path.resolve(`src/templates/postTemplate.js`)
 
-  return graphql(`
+  const postPages = graphql(`
     {
       allMarkdownRemark(
         sort: { order: ASC, fields: [frontmatter___date] }
@@ -65,4 +83,46 @@ exports.createPages = ({ actions, graphql }) => {
       })
     })
   })
+
+  const tagPages = graphql(`
+    query {
+      allMarkdownRemark(
+        filter: {
+          fields: { collection: { eq: "notes" } }
+          frontmatter: { title: { ne: "" } }
+        }
+      ) {
+        totalCount
+        edges {
+          node {
+            fields {
+              collection
+            }
+            frontmatter {
+              title
+              source
+              tags
+            }
+            html
+          }
+        }
+      }
+    }
+  `).then(result => {
+    if (result.errors) {
+      return Promise.reject(result.errors)
+    }
+    console.log(result)
+    const notes = result.data.allMarkdownRemark.edges
+    console.log(notes)
+    const tags = getUniqueTags(notes)
+    return tags.forEach((tag, index) => {
+      createPage({
+        path: `/notes/${tag}`,
+        component: noteTagTemplate,
+        context: { tag: tag, notes: notes }, // additional data can be passed via context
+      })
+    })
+  })
+  return Promise.all([postPages, tagPages])
 }

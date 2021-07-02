@@ -1,26 +1,23 @@
 ---
-
 path: "/blog/nubank/design-team"
 date: "2017-06-01"
 title: "Design Team Principles"
 subtitle: Defining why and how we work
 category: "Nubank"
 topics:
-
-- Design Ops
-  color: "#eee"
-  cover_image: "../../images/nubank/nubank-team-logo.png"
-  image_cover_size: true
-  published: true
-  learn_more:
-  where: São Paulo
-  when: Dec 2017
-  team:
-- Ricardo Sato
-- Guilherme Neumann
-- Erick Mazer
-  link: https://medium.com/nubank-design
-  link_label: Nubank Design
+color: "#eee"
+cover_image: "../../images/nubank/nubank-team-logo.png"
+image_cover_size: true
+published: true
+learn_more:
+where: São Paulo
+when: Dec 2017
+team:
+  - Ricardo Sato
+  - Guilherme Neumann
+  - Erick Mazer
+link: https://medium.com/nubank-design
+link_label: Nubank Design
 ---
 
 In May 2016, Nubank was in the process of growing from a living-room sized startup to a much larger and complex organization. This growth impacted many teams, and design was no exception.
