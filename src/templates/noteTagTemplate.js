@@ -12,7 +12,10 @@ export default function Template({
   return (
     <Layout location={location}>
       <NotesLayout notes={pageContext.notes}>
-        <h1>{pageContext.tag}</h1>
+        <h1>
+          <span className="black-40 mr3">#</span>
+          {pageContext.tag}
+        </h1>
         {pageContext.notes
           .filter(note => note.node.frontmatter.tags.includes(pageContext.tag))
           .map(note => (

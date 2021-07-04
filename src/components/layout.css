@@ -459,7 +459,17 @@ ol li:before {
   letter-spacing: -0.04em;
 }
 
-.note ol,
-.note ul {
+.note-content ol,
+.note-content ul {
   padding-left: 1.5rem;
+}
+
+.note-content h1:first-of-type {
+  display: none;
+}
+
+.note-content h1,
+h2,
+h3 {
+  font-size: 1em;
 }
