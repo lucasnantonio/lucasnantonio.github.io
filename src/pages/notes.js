@@ -14,7 +14,7 @@ const NotesPage = ({
   return (
     <Layout location={location}>
       <NotesLayout notes={notes}>
-        <div className=" mb4  pb6  bb ph3">
+        <div className=" mb4  pb6  bb ph4">
           <div className="flex flex-column">
             {/* <img className={"mr2"} style={{ width: "24px" }} src={leaf}></img> */}
             <h1 className="f3 black mt0">Welcome to my public notes.</h1>

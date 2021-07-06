@@ -66,21 +66,18 @@ function Writing() {
           href={item.url}
           target={"_blank"}
           style={{ gridColumn: "4/15" }}
-          className={`pa4 f3 b--near-white  lh-copy layout-grid link black ${isHovered &&
+          className={`ph4 pv3 bb f3 lh-copy layout-grid link black ${isHovered &&
             "bg-near-white ease bg-animate"}`}
         >
-          <h2
-            style={{ gridColumn: "1/5" }}
-            className={`f4 mb2 tracked-tight fw4 mt0`}
-          >
+          <h2 style={{ gridColumn: "1/15" }} className={`f4 fw4`}>
             {item.title}
           </h2>
-          <div
+          {/* <div
             style={{ gridColumn: "6/15" }}
             className="f4 pt0 black-50 pb3 measure"
           >
             {item.subtitle}
-          </div>
+          </div> */}
         </a>
       </div>
     )

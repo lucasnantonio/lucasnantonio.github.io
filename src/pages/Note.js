@@ -13,7 +13,7 @@ export const Note = ({ data, format }) => {
 
   return format === "note" ? (
     <div>
-      <div className={`link pb4 note lh-copy ph3`} key={title}>
+      <div className={`link pb4 note lh-copy ph4`} key={title}>
         <h1 className="f3 black mt0 ">{title}</h1>
         {format === "note" && (
           <div className="flex items-center">
@@ -66,7 +66,7 @@ export const Note = ({ data, format }) => {
     <Link
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
-      className={` ph3 flex flex-column link layout-grid bb b--near-white pt3 pb4 note ${isHovered &&
+      className={` pa4 link layout-grid pt3 pb4 note ${isHovered &&
         "bg-near-white ease bg-animate"}`}
       to={`/notes/note/${title}`}
     >

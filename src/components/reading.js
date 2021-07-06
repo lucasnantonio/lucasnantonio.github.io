@@ -91,7 +91,7 @@ const Item = ({ item }) => {
       >
         <div className="mr5">
           <h2 className="lh-title flex flex-row-l flex-column-reverse items-center-l mb3">
-            <span className={`f4 tracked-tight`}>{item.title} </span>
+            <span className={`f4`}>{item.title} </span>
             {item.best && (
               <span
                 // style={{ color: "" }}

@@ -6,6 +6,7 @@ export default function TwitterLogo() {
   const twitterColor = "rgb(29, 161, 242)"
   return (
     <a
+      className="tr"
       style={{ gridColumn: "14/15" }}
       target="_blank"
       href="http://twitter.com/lucasnantonio"
@@ -13,8 +14,8 @@ export default function TwitterLogo() {
       <svg
         onMouseEnter={() => setHovered(true)}
         onMouseLeave={() => setHovered(false)}
-        width="40"
-        height="40"
+        width="32"
+        height="32"
         viewBox="0 0 80 80"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
