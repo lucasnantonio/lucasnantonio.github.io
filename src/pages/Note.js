@@ -19,7 +19,7 @@ export const Note = ({ data, format }) => {
           <div className="flex items-center">
             <div
               style={{ width: "max-content" }}
-              className="flex nowrap items-center black-50 b--black-10 mw6"
+              className="flex nowrap items-center black-50 mw6"
             >
               <img
                 className={"mh1 pt1"}
@@ -57,7 +57,7 @@ export const Note = ({ data, format }) => {
           </div>
         )}
         <div
-          className="lh-copy f4 measure fw4 black note-content pt3 mt4 bt b--near-white"
+          className="lh-copy f4 measure fw4 black note-content pt3 mt4"
           dangerouslySetInnerHTML={{ __html: html }}
         />
       </div>

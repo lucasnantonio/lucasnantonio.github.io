@@ -26,9 +26,9 @@ const About = () => {
         Product designer at Twitter & <br></br> Behavioral design teacher at
         Aprender.
       </motion.h1>
-      <motion.div
+      <div
         initial={{ opacity: 0, y: 25 }}
-        animate={{ opacity: 1, y: -100 }}
+        animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.55 }}
         className="f4  lh-copy mb3 black lh-copy measure ph4"
         style={{ gridColumn: "4/15" }}
@@ -142,7 +142,7 @@ const About = () => {
             .
           </p>
         </p>
-      </motion.div>
+      </div>
     </motion.div>
   )
 }

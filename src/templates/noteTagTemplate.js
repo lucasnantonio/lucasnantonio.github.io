@@ -11,8 +11,8 @@ export default function Template({
   return (
     <Layout location={location}>
       <NotesLayout notes={pageContext.notes}>
-        <h1 className="mt0 f4 pt0 pb3">
-          <span className="black-40 mr2 fw7">#</span>
+        <h1 className="mt0 f3 pt0 pb6 bb mb0">
+          <span className="black-40 mr2">#</span>
           {pageContext.tag}
         </h1>
         {pageContext.notes

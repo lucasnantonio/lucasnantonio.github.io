@@ -20,8 +20,8 @@ const NotesPage = ({
             <h1 className="f3 black mt0">Welcome to my public notes.</h1>
           </div>
           <p className="f3 black-50 lh-copy mt0 mb2 measure">
-            This is an experimental "digital garden" for me to store, organize,
-            and share what I've been thinking about over time.
+            An experimental space for me to store, organize, and share what I've
+            been reading and thinking about.
           </p>
         </div>
         <div className="w-100">
