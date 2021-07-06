@@ -14,10 +14,12 @@ const NotesPage = ({
   return (
     <Layout location={location}>
       <NotesLayout notes={notes}>
-        <div className=" mb4  pb6  bb ph4">
+        <div className=" mb4  pa6 bg-washed-green ">
           <div className="flex flex-column">
             {/* <img className={"mr2"} style={{ width: "24px" }} src={leaf}></img> */}
-            <h1 className="f3 black mt0">Welcome to my public notes.</h1>
+            <h1 className="f3 mt0 dark-green">
+              Welcome to my public notebook.
+            </h1>
           </div>
           <p className="f3 black-50 lh-copy mt0 mb2 measure">
             An experimental space for me to store, organize, and share what I've

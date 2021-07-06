@@ -66,7 +66,7 @@ function Writing() {
           href={item.url}
           target={"_blank"}
           style={{ gridColumn: "4/15" }}
-          className={`ph4 pv3 bb f3 lh-copy layout-grid link black ${isHovered &&
+          className={`ph4 pv3 f3 lh-copy layout-grid link black ${isHovered &&
             "bg-near-white ease bg-animate"}`}
         >
           <h2 style={{ gridColumn: "1/15" }} className={`f4 fw4`}>
@@ -100,6 +100,17 @@ function Writing() {
       animate="show"
       exit={{ opacity: 0 }}
     >
+      <div className="layout-grid mt6">
+        <div className="bb ph4 pb6" style={{ gridColumn: "4/15" }}>
+          <div className="flex flex-column">
+            {/* <img className={"mr2"} style={{ width: "24px" }} src={leaf}></img> */}
+            <h1 className="f3 black mt0">Writing</h1>
+          </div>
+          <p className="f3 black-50 lh-copy mt0 mb2 measure">
+            Sometimes I publish longform thoughts and ideas on Medium:
+          </p>
+        </div>
+      </div>
       {rows}
     </motion.div>
   )
