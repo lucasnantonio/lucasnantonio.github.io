@@ -13,10 +13,10 @@ export const Note = ({ data, format }) => {
 
   return format === "note" ? (
     <div>
-      <div className={`link pb4 note lh-copy ph4`} key={title}>
-        <h1 className="f3 black mt0 ">{title}</h1>
+      <div className={`link pa5 ba b--near-white note lh-copy`} key={title}>
+        <h1 className="f3 black mt0">{title}</h1>
         {format === "note" && (
-          <div className="flex items-center">
+          <div className="flex items-center bb b--near-white pb4">
             <div
               style={{ width: "max-content" }}
               className="flex nowrap items-center black-50 mw6"
@@ -66,8 +66,8 @@ export const Note = ({ data, format }) => {
     <Link
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
-      className={`flex pa4 link pt3 pb4 note ${isHovered &&
-        "bg-near-white ease bg-animate w-100"}`}
+      className={`ml4 flex pa4 ba b--near-white link pt3 pb4 note ${isHovered &&
+        "bg-near-white bg-animate"}`}
       to={`/notes/note/${title}`}
     >
       <h1 className="f4 black mb0 w-third">{title}</h1>

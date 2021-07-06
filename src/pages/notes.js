@@ -14,6 +14,13 @@ const NotesPage = ({
   },
   location,
 }) => {
+  const getRandomNote = () => {
+    const randomIndex = Math.floor(Math.random() * notes.length)
+    return notes[randomIndex].node.frontmatter.title
+  }
+
+  const randomNote = getRandomNote()
+
   return (
     <Layout location={location}>
       <NotesLayout notes={notes}>
@@ -35,21 +42,21 @@ const NotesPage = ({
         <div className="flex">
           <Link
             to="/notes/book-notes"
-            className="tc link black bg-animate pa6 w-third ba hover-bg-near-white pointer b--black-10 ml4 f4"
+            className="tc link black bg-animate pa6 w-third ba hover-bg-near-white pointer b--near-white ml4 f4"
           >
             <img style={{ width: "24px" }} src={book}></img>
             Books
           </Link>
           <Link
             to="/notes/best"
-            className="tc link black bg-animate pa6 w-third ba hover-bg-near-white pointer b--black-10 ml4 f4"
+            className="tc link black bg-animate pa6 w-third ba hover-bg-near-white pointer b--near-white ml4 f4"
           >
             <img style={{ width: "24px" }} src={best}></img>
             Best
           </Link>
           <Link
-            to="/notes/book-notes"
-            className="tc link black bg-animate pa6 w-third ba hover-bg-near-white pointer b--black-10 ml4 f4"
+            to={`/notes/note/${randomNote}`}
+            className="tc link black bg-animate pa6 w-third ba hover-bg-near-white pointer b--near-white ml4 f4"
           >
             <img style={{ width: "24px" }} src={pizza}></img>
             Random
