@@ -5,6 +5,7 @@
  */
 
 // You can delete this file if you're not using it
+const { createFilePath } = require(`gatsby-source-filesystem`)
 
 const getUniqueTags = notes => {
   return notes.reduce((acc, note) => {
@@ -42,6 +43,7 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
 exports.createPages = ({ actions, graphql }) => {
   const { createPage } = actions
   const noteTagTemplate = path.resolve(`src/templates/noteTagTemplate.js`)
+  const noteTemplate = path.resolve(`src/templates/noteTemplate.js`)
   const blogPostTemplate = path.resolve(`src/templates/postTemplate.js`)
 
   const postPages = graphql(`
@@ -84,7 +86,7 @@ exports.createPages = ({ actions, graphql }) => {
     })
   })
 
-  const tagPages = graphql(`
+  const notePages = graphql(`
     query {
       allMarkdownRemark(
         filter: {
@@ -112,9 +114,50 @@ exports.createPages = ({ actions, graphql }) => {
     if (result.errors) {
       return Promise.reject(result.errors)
     }
-    console.log(result)
     const notes = result.data.allMarkdownRemark.edges
-    console.log(notes)
+    return notes.forEach((note, index) => {
+      createPage({
+        path: `notes/note/${note.node.frontmatter.title}`,
+        component: noteTemplate,
+        context: {
+          note: note,
+          notes: notes,
+          title: note.node.frontmatter.title,
+        }, // additional data can be passed via context
+      })
+    })
+  })
+
+  const tagPages = graphql(`
+    query {
+      allMarkdownRemark(
+        filter: {
+          fields: { collection: { eq: "notes" } }
+          frontmatter: { title: { ne: "" } }
+        }
+      ) {
+        totalCount
+        edges {
+          node {
+            excerpt
+            fields {
+              collection
+            }
+            frontmatter {
+              title
+              source
+              tags
+            }
+            html
+          }
+        }
+      }
+    }
+  `).then(result => {
+    if (result.errors) {
+      return Promise.reject(result.errors)
+    }
+    const notes = result.data.allMarkdownRemark.edges
     const tags = getUniqueTags(notes)
     return tags.forEach((tag, index) => {
       createPage({
@@ -124,5 +167,5 @@ exports.createPages = ({ actions, graphql }) => {
       })
     })
   })
-  return Promise.all([postPages, tagPages])
+  return Promise.all([postPages, tagPages, notePages])
 }

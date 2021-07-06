@@ -26,14 +26,14 @@ function PostLink({ post }) {
         >
           <div className="flex justify-between items-center">
             <p
-              className={`f3 measure-narrow mt3 mb2 tracked-tight ${
+              className={`f3 measure-narrow mt3 mb2 ${
                 isHovered ? "u underline" : ""
               }`}
             >
               {post.frontmatter.title}{" "}
             </p>
           </div>
-          <p className={"f3 tracked-tight black-40 lh-copy pv0 mb0 mt0 w-100"}>
+          <p className={"f3 black-40 lh-copy pv0 mb0 mt0 w-100"}>
             {post.frontmatter.subtitle}
           </p>
         </motion.div>

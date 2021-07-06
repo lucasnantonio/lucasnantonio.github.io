@@ -5,7 +5,11 @@ export default function TwitterLogo() {
   const [isHovered, setHovered] = useState(false)
   const twitterColor = "rgb(29, 161, 242)"
   return (
-    <a target="_blank" href="http://twitter.com/lucasnantonio">
+    <a
+      style={{ gridColumn: "14/15" }}
+      target="_blank"
+      href="http://twitter.com/lucasnantonio"
+    >
       <svg
         onMouseEnter={() => setHovered(true)}
         onMouseLeave={() => setHovered(false)}

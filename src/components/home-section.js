@@ -11,8 +11,7 @@ const HomeSection = ({ posts }) => {
     <motion.div
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.55 }}
-      style={{ maxWidth: minWidth }}
-      className="center"
+      style={{ gridColumn: "1/15" }}
     >
       <div className={"w-100 flex flex-row "}>
         <PostList posts={sectionPosts} />

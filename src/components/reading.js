@@ -56,7 +56,7 @@ const TagRow = ({ activeTag, setActiveTag }) => {
   return (
     <div
       // style={{ marginLeft: "-2rem", marginRight: "-2rem" }}
-      className="flex pt5 b--near-white overflow-scroll bb bw1 mb4"
+      className="flex overflow-scroll bw1 mb4"
     >
       {tags.map(item => (
         <Tab
@@ -84,15 +84,14 @@ const Item = ({ item }) => {
       onMouseLeave={() => setHover(false)}
     >
       <a
-        className="underline-none link black pv5 f3 bw2 bb b--near-white flex justify-between"
+        className={`flex justify-between link ba b--near-white ph4 pt3 pb4 note ${hover &&
+          "bg-near-white ease bg-animate"}`}
         href={item.amazon_url}
         target="_blank"
       >
         <div className="mr5">
-          <h2 className="mt0 lh-title flex flex-row-l flex-column-reverse items-center-l mb3">
-            <span className={`f3 tracked-tight ${hover && "underline"}`}>
-              {item.title}{" "}
-            </span>
+          <h2 className="lh-title flex flex-row-l flex-column-reverse items-center-l mb3">
+            <span className={`f4 tracked-tight`}>{item.title} </span>
             {item.best && (
               <span
                 // style={{ color: "" }}
@@ -118,7 +117,7 @@ const Item = ({ item }) => {
               </span>
             )}
           </h2>
-          <div className="f4 measure black-50">{item.text}</div>
+          <div className="f4 measure black">{item.text}</div>
         </div>
         {item.img && (
           <img

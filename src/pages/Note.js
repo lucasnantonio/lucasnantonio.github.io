@@ -1,8 +1,9 @@
-import React from "react"
 import link from "../images/icons/link.svg"
 import Link from "gatsby-link"
+import React, { useState } from "react"
 
 export const Note = ({ data, format }) => {
+  const [isHovered, setIsHovered] = useState(false)
   const {
     fields,
     frontmatter: { title, tags, source },
@@ -11,41 +12,73 @@ export const Note = ({ data, format }) => {
   } = data
 
   return format === "note" ? (
-    <div
-      className="link ba b--near-white ph4 pt3 pb4 note overflow-hidden"
-      key={title}
-    >
-      <h1 className="f3 fw5 black">{title}</h1>
-      {source && format === "note" && (
-        <div
-          style={{ width: "max-content" }}
-          className="flex nowrap items-center pa1 black-50 ba br-pill b--black-10 mw6"
-        >
-          <img className={"mh1"} style={{ width: "16px" }} src={link}></img>
-          <div
-            className="dib mw5 pr1"
-            style={{
-              overflow: "hidden",
-              whiteSpace: "nowrap",
-              textOverflow: "ellipsis",
-            }}
-          >
-            {source.split("https://")[1]}
+    <div>
+      <div className={`link pb4 note lh-copy ph3`} key={title}>
+        <h1 className="f3 black mt0 ">{title}</h1>
+        {format === "note" && (
+          <div className="flex items-center">
+            <div
+              style={{ width: "max-content" }}
+              className="flex nowrap items-center black-50 b--black-10 mw6"
+            >
+              <img
+                className={"mh1 pt1"}
+                style={{ width: "18px" }}
+                src={link}
+              ></img>
+              <a
+                href={source}
+                target="_blank"
+                className="f4 dib mw5 pr1 link black-50 underline-hover"
+                style={{
+                  overflow: "hidden",
+                  whiteSpace: "nowrap",
+                  textOverflow: "ellipsis",
+                }}
+              >
+                {source ? source.split("https://")[1] : "No source  "}
+              </a>
+            </div>
+            {tags &&
+              tags.map((tag, i) => (
+                <div
+                  key={i}
+                  className="flex nowrap items-center ml1 black-50 b--black-10 mw6"
+                >
+                  <Link
+                    to={`/notes/${tag}`}
+                    target="_blank"
+                    className="f4 dib mw5 pr1 link black-50 underline-hover"
+                  >
+                    # {tag}
+                  </Link>
+                </div>
+              ))}
           </div>
-        </div>
-      )}
-      <div
-        className="lh-copy f4 black-50 note-content"
-        dangerouslySetInnerHTML={{ __html: html }}
-      />
+        )}
+        <div
+          className="lh-copy f4 measure fw4 black note-content pt3 mt4 bt b--near-white"
+          dangerouslySetInnerHTML={{ __html: html }}
+        />
+      </div>
     </div>
   ) : (
     <Link
-      className="flex flex-column link ba b--near-white ph4 pt3 pb4 note"
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
+      className={` ph3 flex flex-column link layout-grid bb b--near-white pt3 pb4 note ${isHovered &&
+        "bg-near-white ease bg-animate"}`}
       to={`/notes/note/${title}`}
     >
-      <h1 className="f4 fw5 black mb0">{title}</h1>
-      <div className="lh-copy f4 black-50 note-content mt3">{excerpt}</div>
+      <h1 className="f4 black mb0" style={{ gridColumn: "1/5" }}>
+        {title}
+      </h1>
+      <div
+        className="lh-copy f4 black-50 note-content mt3"
+        style={{ gridColumn: "6/15" }}
+      >
+        {excerpt}
+      </div>
     </Link>
   )
 }

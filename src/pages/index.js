@@ -15,7 +15,10 @@ function IndexPage({
   return (
     <Layout location={location}>
       <SEO title="Home" />
-      <motion.div style={{ maxWidth: minWidth }} className="center ph0-l ph4">
+      <motion.div
+        style={{ maxWidth: minWidth }}
+        className="ph0-l layout-grid center"
+      >
         <motion.h1
           layoutId="site-title"
           initial={{
@@ -24,9 +27,10 @@ function IndexPage({
             marginTop: 200,
             marginBottom: 200,
           }}
+          style={{ gridColumn: "4/15" }}
           animate={{ opacity: 1, y: 0, marginTop: 200, marginBottom: 200 }}
           transition={{ duration: 0.55 }}
-          className="fw4 f3 tracked-tight lh-copy"
+          className="fw4 f3 lh-copy ph4"
         >
           Product designer at Twitter & <br></br> Behavioral design teacher at
           Aprender.

@@ -29,8 +29,8 @@ function Writing() {
         }}
         onMouseEnter={() => setHover(true)}
         onMouseLeave={() => setHover(false)}
-        className={`nowrap pointer f4 ph3 pv2 mr2 bw2 fw5 b--black 
-        ${isActive ? "bb black" : "bg-transparent"}
+        className={`nowrap pointer f4 ph3 pv2 mr2 fw5 b--black 
+        ${isActive ? "black" : "bg-transparent"}
         ${isHovered ? "black-50" : "black-40"} `}
       >
         {title}
@@ -42,7 +42,7 @@ function Writing() {
     return (
       <div
         // style={{ marginLeft: "-2rem", marginRight: "-2rem" }}
-        className="flex pt5 b--near-white overflow-scroll bb bw1 mb4"
+        className="flex pt5 overflow-scroll bb bw1 pb3"
       >
         {tags.map(item => (
           <Tab
@@ -58,22 +58,31 @@ function Writing() {
   const Item = ({ item }) => {
     let [isHovered, setHover] = useState(false)
     return (
-      <motion.a
-        variants={article}
-        key={item.title}
-        onMouseEnter={() => setHover(true)}
-        onMouseLeave={() => setHover(false)}
-        href={item.url}
-        target={"_blank"}
-        className=" pv4 f3 bw2 bb b--near-white flex justify-between relative link black"
-      >
-        <div>
-          <h2 className={`f3 mb3 tracked-tight ${isHovered && "underline"}`}>
+      <div className="layout-grid">
+        <a
+          key={item.title}
+          onMouseEnter={() => setHover(true)}
+          onMouseLeave={() => setHover(false)}
+          href={item.url}
+          target={"_blank"}
+          style={{ gridColumn: "4/15" }}
+          className={`pa4 f3 b--near-white link black ${isHovered &&
+            "bg-near-white ease bg-animate"}`}
+        >
+          <h2
+            style={{ gridColumn: "4/8" }}
+            className={`f4 mb2 tracked-tight fw4 mt0`}
+          >
             {item.title}
           </h2>
-          <div className="f4 pt0 measure black-40 pb3">{item.subtitle}</div>
-        </div>
-      </motion.a>
+          <div
+            style={{ gridColumn: "8/15" }}
+            className="f4 pt0 black-50 pb3 measure"
+          >
+            {item.subtitle}
+          </div>
+        </a>
+      </div>
     )
   }
 
@@ -94,7 +103,6 @@ function Writing() {
       animate="show"
       exit={{ opacity: 0 }}
     >
-      <TagRow activeTag={activeTag} setActiveTag={setActiveTag}></TagRow>
       {rows}
     </motion.div>
   )

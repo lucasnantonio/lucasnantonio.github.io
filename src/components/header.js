@@ -18,29 +18,25 @@ function Header({ location }) {
 
   return (
     <motion.header
+      style={{ maxWidth: minWidth }}
       initial={{ opacity: 0, y: 0 }}
       animate={{ opacity: 1, y: 0 }}
       layoutId="site-header"
-      className={`z-max space-between mh4 center-l pt4 relative`}
+      className={`mh4 pt4 center `}
     >
-      <div
-        style={{ maxWidth: minWidth }}
-        className="flex justify-between items-center-l items-start center fw4"
-      >
-        <div className="flex flex-row-l flex-column w-100 items-center-l">
-          <h1 className="f3 tracked-tight tl fw4">
-            <Link to="/" className={"link w-auto-l w-100 black"}>
-              Lucas Neumann
-            </Link>
-          </h1>
+      <div className="layout-grid items-center z-max relative f4 bb pb2">
+        <h1 style={{ gridColumn: "1/4" }} className=" f4 black tl fw4">
+          <Link to="/" className={"link w-auto-l w-100 black"}>
+            Lucas Neumann
+          </Link>
+        </h1>
 
-          <div className="ph3 flex-l dn fw4">・</div>
-          <Tabs
-            location={location}
-            tabList={tabList}
-            setTabList={setTabList}
-          ></Tabs>
-        </div>
+        <Tabs
+          location={location}
+          tabList={tabList}
+          setTabList={setTabList}
+        ></Tabs>
+
         <TwitterLogo></TwitterLogo>
       </div>
     </motion.header>

@@ -170,7 +170,7 @@ html {
   /* color: #666; */
 }
 .black {
-  color: #424242;
+  color: #111;
 }
 body {
   margin: 0;
@@ -183,7 +183,7 @@ h3,
 h4,
 h5 {
   font-weight: 400;
-  color: #424242;
+  color: #111;
 }
 
 .mono {
@@ -200,7 +200,7 @@ h5 {
 .post-content ul,
 .post-content ol,
 .post-content hr {
-  color: #424242;
+  color: #111;
   max-width: 42rem;
   /* margin-left: auto;
   margin-right: auto; */
@@ -226,7 +226,7 @@ h5 {
 }
 
 .post-content strong {
-  color: #424242;
+  color: #111;
 }
 
 ol li h2 {
@@ -428,17 +428,17 @@ div + p {
 .gatsby-resp-image-wrapper {
   margin-top: 4rem;
 }
-ol {
+.post-content ol {
   list-style: none;
   /* padding-left: 4rem; */
 }
-ol li {
+.post-content ol li {
   counter-increment: li;
   position: relative;
   margin-bottom: 2rem;
   color: rgba(0, 0, 0, 0.5);
 }
-ol li:before {
+.post-content ol li:before {
   content: counter(li);
   position: absolute;
   left: -3rem;
@@ -459,6 +459,11 @@ ol li:before {
   letter-spacing: -0.04em;
 }
 
+.note-content ol li,
+.note-content ul li {
+  margin-bottom: 1rem;
+}
+
 .note-content ol,
 .note-content ul {
   padding-left: 1.5rem;
@@ -472,4 +477,38 @@ ol li:before {
 h2,
 h3 {
   font-size: 1em;
+  font-weight: 800;
+}
+
+.note-content blockquote {
+  margin-left: 0px;
+  max-width: 100%;
+  border-left: 4px solid #ccc;
+  padding-left: 1.5rem;
+}
+
+.note-content ol {
+  margin-left: 0rem;
+  max-width: 100%;
+}
+
+.note-content figure {
+  margin: 2rem 0rem;
+  padding: 0px;
+}
+
+.note-content .gatsby-resp-image-wrapper {
+  margin: 0px;
+  border: 1px solid #eee;
+}
+
+* {
+  font-family: "Gt America" !important;
+}
+
+.layout-grid {
+  display: grid;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  grid-template-columns: repeat(14, 1fr);
 }

@@ -47,7 +47,7 @@ export default function Template({
   )
 
   const content = (
-    <div className="pt4 flex flex-row-l flex-column w-100">
+    <div className="pt4 flex flex-row-l flex-column w-100 post-content">
       <div style={{ maxWidth: minWidth }} className="post-content center w-100">
         <div className="lh-copy" dangerouslySetInnerHTML={{ __html: html }} />
       </div>

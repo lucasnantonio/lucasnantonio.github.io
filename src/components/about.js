@@ -8,7 +8,7 @@ const About = () => {
     <motion.div
       key="about"
       style={{ maxWidth: minWidth }}
-      className="center ph0-l"
+      className="center ph0-l layout-grid"
     >
       <motion.h1
         layoutId="site-title"
@@ -20,16 +20,18 @@ const About = () => {
         }}
         animate={{ opacity: 1, y: 0, marginTop: 200, marginBottom: 200 }}
         transition={{ duration: 0.55 }}
-        className="fw4 f3 tracked-tight lh-copy"
+        className="fw4 f3 lh-copy ph4"
+        style={{ gridColumn: "4/15" }}
       >
         Product designer at Twitter & <br></br> Behavioral design teacher at
         Aprender.
       </motion.h1>
       <motion.div
         initial={{ opacity: 0, y: 25 }}
-        animate={{ opacity: 1, y: 0 }}
+        animate={{ opacity: 1, y: -100 }}
         transition={{ duration: 0.55 }}
-        className="f3 fw4 lh-copy mb3 black-50 lh-copy tracked-tight measure pb6"
+        className="f4  lh-copy mb3 black lh-copy measure ph4"
+        style={{ gridColumn: "4/15" }}
       >
         <p>I have been designing products and services since 2010.</p>
         <p>
@@ -41,7 +43,7 @@ const About = () => {
         <p>
           Currently, at Twitter, I'm helping build{" "}
           <a
-            className="underline link black-50"
+            className="underline link black"
             href="https://twitter.github.io/birdwatch/"
             target="_blank"
           >
@@ -54,7 +56,7 @@ const About = () => {
         <p>
           I also teach a class about Behavioral Design at{" "}
           <a
-            className="underline link black-50"
+            className="underline link black"
             href="https://www.aprender.design"
             target="_blank"
           >
@@ -66,7 +68,7 @@ const About = () => {
         <p>
           Previously, I was part of the early team at{" "}
           <a
-            className="underline link black-50"
+            className="underline link black"
             href="https://nu.bank"
             target="_blank"
           >
@@ -75,7 +77,7 @@ const About = () => {
           , building the world's biggest digital bank from scratch while growing
           a vibrant, diverse, international{" "}
           <a
-            className="underline link black-50"
+            className="underline link black"
             href="https://building.nubank.com.br/design/"
             target="_blank"
           >
@@ -86,7 +88,7 @@ const About = () => {
         <p>
           I have helped design online platforms for activism at{" "}
           <a
-            className="underline link black-50"
+            className="underline link black"
             href="https://nossas.org/"
             target="_blank"
           >
@@ -94,7 +96,7 @@ const About = () => {
           </a>
           ; patented a{" "}
           <a
-            className="underline link black-50"
+            className="underline link black"
             href="https://patents.justia.com/patent/9809239"
             target="_blank"
           >
@@ -103,7 +105,7 @@ const About = () => {
           </a>{" "}
           for airplanes with Airbus; ran an online{" "}
           <a
-            className="underline link black-50"
+            className="underline link black"
             target="_blank"
             href="https://www.instagram.com/projetofeito/"
           >
@@ -111,7 +113,7 @@ const About = () => {
           </a>
           , and helped{" "}
           <a
-            className="underline link black-50"
+            className="underline link black"
             target="_blank"
             href="https://www.kano.me"
           >
@@ -123,7 +125,7 @@ const About = () => {
             {" "}
             You can also find stories about my student work on{" "}
             <a
-              className="underline link black-50"
+              className="underline link black"
               target="_blank"
               href="https://www.fastcompany.com/3028572/this-simple-tool-will-help-you-stop-working-ridiculous-hours"
             >
@@ -131,7 +133,7 @@ const About = () => {
             </a>{" "}
             and{" "}
             <a
-              className="underline link black-50"
+              className="underline link black"
               href="https://www.wired.com/2014/04/work-2-0-a-web-connected-sticky-note-that-bosses-you-around/"
               target="_blank"
             >
