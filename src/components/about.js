@@ -2,36 +2,19 @@ import { motion } from "framer-motion"
 import React from "react"
 import { minWidth } from "../components/utils"
 import { graphql } from "gatsby"
+import { Headline } from "../components/headline"
 
 const About = () => {
   return (
-    <motion.div
-      key="about"
-      style={{ maxWidth: minWidth }}
-      className="center ph0-l layout-grid"
-    >
-      <motion.h1
-        layoutId="site-title"
-        initial={{
-          opacity: 0,
-          y: 25,
-          marginTop: 200,
-          marginBottom: 200,
-        }}
-        animate={{ opacity: 1, y: 0, marginTop: 200, marginBottom: 200 }}
-        transition={{ duration: 0.55 }}
-        className="fw4 f3 lh-copy ph4"
-        style={{ gridColumn: "4/15" }}
-      >
-        Product designer at Twitter & <br></br> Behavioral design teacher at
-        Aprender.
-      </motion.h1>
+    <div style={{ maxWidth: minWidth }} className="ph0-l layout-grid center">
+      <Headline></Headline>
+      <img
+        style={{ gridColumn: "sidebar-start / main-end" }}
+        src="https://i.postimg.cc/QtxFVzBb/Bild007-Neg-Nr-8-1.jpg"
+      ></img>
       <div
-        initial={{ opacity: 0, y: 25 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.55 }}
-        className="f4  lh-copy mb3 black lh-copy measure ph4"
-        style={{ gridColumn: "4/15" }}
+        className=" pv6 f4 lh-copy mb3 black lh-copy measure ph4"
+        style={{ gridColumn: "main-start / main-end" }}
       >
         <p>I have been designing products and services since 2010.</p>
         <p>
@@ -143,7 +126,7 @@ const About = () => {
           </p>
         </p>
       </div>
-    </motion.div>
+    </div>
   )
 }
 

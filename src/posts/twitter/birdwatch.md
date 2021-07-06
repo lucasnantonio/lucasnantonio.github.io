@@ -14,7 +14,7 @@ team:
 category: Twitter
 published: true
 cover_image: "../../images/twitter/birdwatch-hero.png"
-color: "#6BC9FB"
+color: "lightblue"
 link: http://twitter.github.io/birdwatch
 link_label: Birdwatch Guide
 impact: Currently in pilot mode, results will be shared publicly as we iterate.

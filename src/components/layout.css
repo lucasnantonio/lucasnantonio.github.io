@@ -508,7 +508,7 @@ h3 {
 
 .layout-grid {
   display: grid;
+  grid-template-columns: [sidebar-start] 1fr [sidebar-end main-start] 4fr [main-end];
   grid-column-gap: 20px;
   grid-row-gap: 20px;
-  grid-template-columns: repeat(14, 1fr);
 }

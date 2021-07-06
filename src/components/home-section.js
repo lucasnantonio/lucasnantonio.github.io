@@ -8,15 +8,15 @@ const HomeSection = ({ posts }) => {
     item => item.node.frontmatter.published === true
   )
   return (
-    <motion.div
+    <div
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.55 }}
-      style={{ gridColumn: "1/15" }}
+      style={{ gridColumn: "sidebar-start / main-end" }}
     >
       <div className={"w-100 flex flex-row "}>
         <PostList posts={sectionPosts} />
       </div>
-    </motion.div>
+    </div>
   )
 }
 

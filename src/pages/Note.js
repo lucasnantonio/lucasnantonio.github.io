@@ -66,17 +66,12 @@ export const Note = ({ data, format }) => {
     <Link
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
-      className={` pa4 link layout-grid pt3 pb4 note ${isHovered &&
-        "bg-near-white ease bg-animate"}`}
+      className={`flex pa4 link pt3 pb4 note ${isHovered &&
+        "bg-near-white ease bg-animate w-100"}`}
       to={`/notes/note/${title}`}
     >
-      <h1 className="f4 black mb0" style={{ gridColumn: "1/5" }}>
-        {title}
-      </h1>
-      <div
-        className="lh-copy f4 black-50 note-content mt3"
-        style={{ gridColumn: "6/15" }}
-      >
+      <h1 className="f4 black mb0 w-third">{title}</h1>
+      <div className="lh-copy f4 black-50 note-content mt3 w-two-thirds ml4">
         {excerpt}
       </div>
     </Link>

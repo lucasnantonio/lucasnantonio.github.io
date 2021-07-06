@@ -9,7 +9,10 @@ const NotesLayout = ({ children, notes }) => {
       className="flex center mt6 ph0-l ph4 layout-grid"
       style={{ maxWidth: minWidth }}
     >
-      <div style={{ gridColumn: "1/3" }} className="mr5 pr4">
+      <div
+        style={{ gridColumn: "sidebar-start / sidebar-end" }}
+        className="mr5 pr4"
+      >
         <Link to="/notes" className="link black-50 mb3" activeClassName="black">
           <div className="mb3">All</div>
         </Link>
@@ -17,7 +20,7 @@ const NotesLayout = ({ children, notes }) => {
           <Tag key={tag} title={tag} />
         ))}
       </div>
-      <div style={{ gridColumn: "4/15" }} className="">
+      <div style={{ gridColumn: "main-start / main-end" }} className="">
         {children}
       </div>
     </div>

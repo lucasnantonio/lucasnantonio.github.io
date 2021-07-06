@@ -25,7 +25,7 @@ const Tab = ({ title, active, setTabList, tabList }) => {
 
 const Tabs = ({ setTabList, tabList, location }) => {
   return (
-    <div className="flex fw5 w-auto-l w-100 ph4" style={{ gridColumn: "4/8" }}>
+    <div className="flex">
       {tabList.map(item => {
         let isActive
         if (location === "/" && item.title.toLowerCase() === "work") {

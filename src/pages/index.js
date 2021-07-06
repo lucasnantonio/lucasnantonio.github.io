@@ -5,6 +5,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { minWidth } from "../components/utils"
 import { graphql } from "gatsby"
+import { Headline } from "../components/headline"
 
 function IndexPage({
   data: {
@@ -15,29 +16,10 @@ function IndexPage({
   return (
     <Layout location={location}>
       <SEO title="Home" />
-      <motion.div
-        style={{ maxWidth: minWidth }}
-        className="ph0-l layout-grid center"
-      >
-        <motion.h1
-          layoutId="site-title"
-          initial={{
-            opacity: 0,
-            y: 25,
-            marginTop: 200,
-            marginBottom: 200,
-          }}
-          style={{ gridColumn: "4/15" }}
-          animate={{ opacity: 1, y: 0, marginTop: 200, marginBottom: 200 }}
-          transition={{ duration: 0.55 }}
-          className="fw4 f3 lh-copy ph4"
-        >
-          Product designer at Twitter & <br></br> Behavioral design teacher at
-          Aprender.
-        </motion.h1>
-
+      <div style={{ maxWidth: minWidth }} className="ph0-l layout-grid center">
+        <Headline></Headline>
         <HomeSection posts={posts} />
-      </motion.div>
+      </div>
     </Layout>
   )
 }
